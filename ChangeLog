@@ -1,3 +1,7 @@
+2004-01-09    <clarkbw@cvs.gnome.org>
+
+	* gnomeblog.schemas.in: removed the useless use_blogger_dot_com entry
+
 2004-01-08    <clarkbw@cvs.gnome.org>
 
 	* gnomeblog.schemas.in: s/gnome-blogger/gnome-blog

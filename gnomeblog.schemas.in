@@ -4,17 +4,6 @@
     <!-- General preferences -->        
 
     <schema>
-      <key>/schemas/apps/gnome-blog/use_blogger_dot_com</key>
-      <applyto>/apps/gnome-blog/use_blogger_dot_com</applyto>
-      <owner>gnome-blog</owner>
-      <type>bool</type>
-      <default>false</default>
-      <locale name="C">
-         <short>Post blog entries to Blogger.com</short>
-      </locale>
-    </schema>
-
-    <schema>
       <key>/schemas/apps/gnome-blog/initialized</key>
       <applyto>/apps/gnome-blog/initialized</applyto>
       <owner>gnome-blog</owner>

@@ -126,7 +126,7 @@ class BloggerPrefs(gtk.Dialog):
         elif blog_type == "blogger.com":
             url = "http://plant.blogger.com/api/RPC2"
             url_ending = ""
-            protocol = _("bloggerAPI")
+            protocol = "bloggerAPI"
             url_description = _("XML-RPC URL:")
         elif blog_type == "advogato.org":
             url = "http://www.advogato.org/XMLRPC"

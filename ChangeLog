@@ -1,3 +1,7 @@
+2004-01-15    <clarkbw@cvs.gnome.org>
+
+	* blogger_prefs.py: removed useless translation
+
 2004-01-13  Tommi Komulainen  <tommi.komulainen@iki.fi>
 	
 	* blog_poster.py: Disable post button until there's an entry to post.

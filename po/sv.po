@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
-"POT-Creation-Date: 2003-09-14 13:02+0200\n"
-"PO-Revision-Date: 2003-09-14 13:03+0200\n"
+"POT-Creation-Date: 2003-09-15 02:32+0200\n"
+"PO-Revision-Date: 2003-09-15 02:35+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -34,6 +34,42 @@ msgstr "_Om..."
 #: GNOME_BlogApplet.xml.h:2
 msgid "_Preferences..."
 msgstr "_Inställningar..."
+
+#: gnome-blog.desktop.in.h:2
+msgid "Post an entry to a web log"
+msgstr "Posta ett inlägg i en webblogg"
+
+#: gnomeblog.schemas.in.h:1
+msgid "Password to use in accessing the blog"
+msgstr "Lösenord för att komma åt webbloggen"
+
+#: gnomeblog.schemas.in.h:2
+msgid "Post blog entries to Blogger.com"
+msgstr "Posta webbloggsinlägg till Blogger.com"
+
+#: gnomeblog.schemas.in.h:3
+msgid "Protocol to use in accessing the blog"
+msgstr "Protokoll att använda för åtkomst av webbloggen"
+
+#: gnomeblog.schemas.in.h:4
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr "Ändelse för att fästa bas-URL:en (t.ex. \"xmlrpc.cgi\")"
+
+#: gnomeblog.schemas.in.h:5
+msgid "The application's preferences have been initialized"
+msgstr "Programmets inställningar har initierats"
+
+#: gnomeblog.schemas.in.h:6
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr "Id eller namnet för den webblog som ska användas på XML-RPC-servern"
+
+#: gnomeblog.schemas.in.h:7
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr "URL till den bloggerAPI-kompatibla XML-RPC-servern"
+
+#: gnomeblog.schemas.in.h:8
+msgid "Username to use in accessing the blog"
+msgstr "Användarnamn för att komma åt webbloggen"
 
 #. !/usr/bin/env python
 #. FIXME: need to get this path from auto*
@@ -74,39 +110,55 @@ msgstr "Webbloggsinlägget är tomt"
 msgid "Blogger Preferences"
 msgstr "Inställningar för webbloggare"
 
-#: blogger_prefs.py:37
+#: blogger_prefs.py:38
 msgid "Self-Run MovableType"
 msgstr "MovableType för självkörning"
 
-#: blogger_prefs.py:38
+#: blogger_prefs.py:39
 msgid "Self-Run Pybloxsom"
 msgstr "Pybloxsom för självkörning"
 
-#: blogger_prefs.py:39
+#: blogger_prefs.py:40
 msgid "Self-Run Other"
 msgstr "Annat för självkörning"
 
-#: blogger_prefs.py:56
+#: blogger_prefs.py:44
+msgid "Blog Type:"
+msgstr "Webbloggstyp:"
+
+#: blogger_prefs.py:53
+msgid "Blog Protocol:"
+msgstr "Webbloggsprotokoll:"
+
+#: blogger_prefs.py:57
 msgid "Blog Base URL:"
 msgstr "Webbloggsbas-URL:"
 
-#: blogger_prefs.py:58
+#: blogger_prefs.py:59
 msgid "Blog Name:"
 msgstr "Webbloggsnamn:"
 
-#: blogger_prefs.py:60
+#: blogger_prefs.py:61
 msgid "Lookup Blogs"
 msgstr "Slå upp webbloggar"
 
-#: blogger_prefs.py:113 blogger_prefs.py:128 blogger_prefs.py:133
+#: blogger_prefs.py:71
+msgid "Username:"
+msgstr "Användarnamn:"
+
+#: blogger_prefs.py:72
+msgid "Password:"
+msgstr "Lösenord:"
+
+#: blogger_prefs.py:114 blogger_prefs.py:129 blogger_prefs.py:134
 msgid "XML-RPC URL:"
 msgstr "XML-RPC-URL:"
 
-#: blogger_prefs.py:118 blogger_prefs.py:123
+#: blogger_prefs.py:119 blogger_prefs.py:124
 msgid "Base Blog URL:"
 msgstr "Baswebbloggs-URL:"
 
-#: blogger_prefs.py:127
+#: blogger_prefs.py:128
 msgid "bloggerAPI"
 msgstr "bloggerAPI"
 
@@ -152,46 +204,58 @@ msgstr ""
 "\n"
 "E-posta detta felmeddelande till seth@gnome.org så att jag kan åtgärda det."
 
-#: gnomeblog.schemas.in.h:1
-msgid "Password to use in accessing the blog"
-msgstr "Lösenord för att komma åt webbloggen"
+#. Hack for addHyperlink with old pygtk's
+#. this is an older version of pygtk that doesn't
+#. have a way to create anonymous tags, hack around it
+#. Found Hyperlink, activating
+#: rich_entry.py:88
+msgid "Add _Link"
+msgstr "Lägg till _länk"
 
-#: gnomeblog.schemas.in.h:2
-msgid "Post blog entries to Blogger.com"
-msgstr "Posta webbloggsinlägg till Blogger.com"
+#: rich_entry.py:93
+msgid "Add Link"
+msgstr "Lägg till länk"
 
-#: gnomeblog.schemas.in.h:3
-msgid "Protocol to use in accessing the blog"
-msgstr "Protokoll att använda för åtkomst av webbloggen"
+#: rich_entry.py:94
+msgid "_Add Link"
+msgstr "_Lägg till länk"
 
-#: gnomeblog.schemas.in.h:4
-msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
-msgstr "Ändelse för att fästa bas-URL:en (t.ex. \"xmlrpc.cgi\")"
+#: rich_entry.py:101
+msgid "Text:"
+msgstr "Text:"
 
-#: gnomeblog.schemas.in.h:5
-msgid "The application's preferences have been initialized"
-msgstr "Programmets inställningar har initierats"
+#: rich_entry.py:104
+msgid "URL:"
+msgstr "URL:"
 
-#: gnomeblog.schemas.in.h:6
-msgid "The id or name of the particular blog to use on the XML-RPC server"
-msgstr "Id eller namnet för den webblog som ska användas på XML-RPC-servern"
+#~ msgid "Title"
+#~ msgstr "Titel"
 
-#: gnomeblog.schemas.in.h:7
-msgid "URL to the bloggerAPI compatible XML-RPC server"
-msgstr "URL till den bloggerAPI-kompatibla XML-RPC-servern"
+#~ msgid "Blog Type"
+#~ msgstr "Webbloggstyp"
 
-#: gnomeblog.schemas.in.h:8
-msgid "Username to use in accessing the blog"
-msgstr "Användarnamn för att komma åt webbloggen"
+#~ msgid "Blog Protocol"
+#~ msgstr "Webbloggsprotokoll"
 
-#: gnome-blog.desktop.in.h:2
-msgid "Post an entry to a web log"
-msgstr "Posta ett inlägg i en webblogg"
+#~ msgid "Blog Base URL"
+#~ msgstr "Webbloggsbas-URL"
+
+#~ msgid "Blog Name"
+#~ msgstr "Webbloggsnamn"
+
+#~ msgid "Username"
+#~ msgstr "Användarnamn"
+
+#~ msgid "Password"
+#~ msgstr "Lösenord"
+
+#~ msgid "Text"
+#~ msgstr "Text"
+
+#~ msgid "URL"
+#~ msgstr "URL"
 
 #~ msgid "Blogging Tool"
-#~ msgstr "Webbloggsverktyg"
-
-#~ msgid "Blogging tool"
 #~ msgstr "Webbloggsverktyg"
 
 #~ msgid "Preferences"
@@ -208,12 +272,3 @@ msgstr "Posta ett inlägg i en webblogg"
 
 #~ msgid "Preferences..."
 #~ msgstr "Inställningar..."
-
-#~ msgid "Password"
-#~ msgstr "Lösenord"
-
-#~ msgid "URL"
-#~ msgstr "URL"
-
-#~ msgid "Username"
-#~ msgstr "Användarnamn"

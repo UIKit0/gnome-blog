@@ -1,5 +1,8 @@
 2003-11-14  Bryan W Clark  <clarkbw@cvs.gnome.org>
 
+	* gnome-blog-poster (BloggerApp.__init__): Bug fix for initial
+	preferences on the reg app.
+
 	* blogger_prefs.py: String "Pybloxsom" should be "Pyblosxom"
 	bug # 126508
 

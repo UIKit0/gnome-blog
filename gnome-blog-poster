@@ -21,14 +21,16 @@ gettext.textdomain('gnome-blog')
 class BloggerApp:
     def __init__(self):
         self.prefs_key = "/apps/gnome-blog"
+
+        poster = blog_poster.BlogPoster(prefs_key=self.prefs_key,
+                                        on_entry_posted=self._onEntryPosted)
+
         client = gconf.client_get_default()
         value = client.get_bool(self.prefs_key + "/initialized")
         if (value == None or value == gtk.FALSE):
-            self._showPrefDialog()
+            poster._showPrefDialog()
             client.set_bool(self.prefs_key + "/initialized", gtk.TRUE)
             
-        poster = blog_poster.BlogPoster(prefs_key=self.prefs_key,
-                                        on_entry_posted=self._onEntryPosted)
         
         poster_window = gtk.Window(gtk.WINDOW_TOPLEVEL)
         poster_window.set_title(_("Post Blog Entry"))

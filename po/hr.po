@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog 0\n"
-"POT-Creation-Date: 2004-02-01 16:59+0100\n"
-"PO-Revision-Date: 2004-02-05 23:47+CET\n"
+"POT-Creation-Date: 2004-03-20 14:51+0100\n"
+"PO-Revision-Date: 2004-03-20 14:51+CET\n"
 "Last-Translator: auto\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "MIME-Version: 1.0\n"
@@ -50,31 +50,31 @@ msgstr ""
 msgid "Create a blog entry for %s at %s"
 msgstr ""
 
-#: blog_poster.py:32
+#: blog_poster.py:44
 msgid "_Post Entry"
 msgstr ""
 
-#: blog_poster.py:51
+#: blog_poster.py:63
 msgid "Preferences..."
 msgstr "Podešenja..."
 
-#: blog_poster.py:63
+#: blog_poster.py:75
 msgid "Title:"
 msgstr "Naslov:"
 
-#: blog_poster.py:98
+#: blog_poster.py:110
 msgid "Couldn't upload images"
 msgstr ""
 
-#: blog_poster.py:98
+#: blog_poster.py:110
 msgid "The blog protocol in use does not support uploading images"
 msgstr ""
 
-#: blog_poster.py:134
+#: blog_poster.py:157
 msgid "Blog Entry is Blank"
 msgstr ""
 
-#: blog_poster.py:134
+#: blog_poster.py:157
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
@@ -165,33 +165,75 @@ msgstr ""
 msgid "Username to use in accessing the blog"
 msgstr ""
 
-#: protocols/advogato.py:23 protocols/advogato.py:26 protocols/advogato.py:38
-#: protocols/bloggerAPI.py:59 protocols/bloggerAPI.py:85
-#: protocols/livejournal.py:30 protocols/livejournal.py:59
+#: hig_alert.py:13
+#, python-format
+msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
+msgstr ""
+
+#: hig_alert.py:15
+#, python-format
+msgid ""
+"Unknown username %s or password trying to post blog entry to XML-RPC server %"
+"s."
+msgstr ""
+
+#: hig_alert.py:17
+#, python-format
+msgid ""
+"Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
+"reported: %s."
+msgstr ""
+
+#: hig_alert.py:19
+#, python-format
+msgid ""
+"The bloggerAPI server (%s) reported an error I don't understand: '%s, %s'. \n"
+"\n"
+"Please email this error message to seth@gnome.org so I can address it."
+msgstr ""
+
+#: protocols/advogato.py:27 protocols/advogato.py:30 protocols/advogato.py:42
+#: protocols/bloggerAPI.py:62 protocols/bloggerAPI.py:90
+#: protocols/livejournal.py:35 protocols/livejournal.py:64
 msgid "Could not post Blog entry"
 msgstr ""
 
-#: protocols/advogato.py:23
+#: protocols/advogato.py:27
 msgid "Your username is invalid. Please double-check the preferences."
 msgstr ""
 
-#: protocols/advogato.py:26 protocols/livejournal.py:30
+#: protocols/advogato.py:30 protocols/livejournal.py:35
 msgid "Your username or password is invalid. Please double-check the preferences."
 msgstr ""
 
-#: protocols/advogato.py:35 protocols/bloggerAPI.py:82
-#: protocols/livejournal.py:56
+#: protocols/advogato.py:39 protocols/bloggerAPI.py:87
+#: protocols/livejournal.py:61
 msgid "Could not post blog entry"
 msgstr ""
 
-#: protocols/bloggerAPI.py:33 protocols/bloggerAPI.py:36
+#: protocols/advogato.py:42 protocols/bloggerAPI.py:39
+#: protocols/bloggerAPI.py:90
+#, python-format
+msgid ""
+"URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
+"reported: %s."
+msgstr ""
+
+#: protocols/bloggerAPI.py:36 protocols/bloggerAPI.py:39
 msgid "Could not get list of blogs"
 msgstr ""
 
-#: protocols/bloggerAPI.py:59
+#: protocols/bloggerAPI.py:62
 msgid ""
 "No XML-RPC server URL to post blog entries to is set, or the value could not "
 "be retrieved from GConf. Your entry will remain in the blogger window."
+msgstr ""
+
+#: protocols/livejournal.py:64
+#, python-format
+msgid ""
+"URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
+"reported: %s."
 msgstr ""
 
 #: rich_entry.py:135 rich_entry.py:143
@@ -204,9 +246,8 @@ msgid "Error loading %s was: %s"
 msgstr ""
 
 #: rich_entry.py:194
-#, fuzzy
 msgid "Add _Link..."
-msgstr "_Dodaj link"
+msgstr "_Dodaj vezu..."
 
 #: rich_entry.py:199
 msgid "Add Link"

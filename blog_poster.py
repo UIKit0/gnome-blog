@@ -58,6 +58,14 @@ class BlogPoster(gtk.Frame):
         buttonBox.pack_start(boldToggle, expand=gtk.FALSE)
         buttonBox.pack_start(italicToggle, expand=gtk.FALSE)        
 
+        self.titleEntry = gtk.Entry()
+
+        titleBox = gtk.HBox()
+        titleBox.set_spacing(6)
+        titleBox.pack_start(gtk.Label("Title:"), expand=gtk.FALSE)
+        titleBox.pack_start(self.titleEntry)
+
+        box.pack_start(titleBox)
         box.pack_start(scroller)
         box.pack_start(buttonBox)
 
@@ -139,10 +147,8 @@ class BlogPoster(gtk.Frame):
         # Get a list of lines in HTML so we can add <p> tags
         html_lines = html.split('\n')
 
-        if (len(html_lines) > 0):
-            html = html_lines[0] + "\n"
-            for line in html_lines[1:]:
-                html = html + "<p>" + line + "</p>\n"
+        for line in html_lines:
+            html = html + "<p>" + line + "</p>\n"
 
         return html
         
@@ -150,9 +156,12 @@ class BlogPoster(gtk.Frame):
         global gconf_prefix, appkey
         
         html_text = self._getHTMLText(self.blogBuffer)
+        title = self.titleEntry.get_text()
 
+        html_text = title + "\n" + html_text
+        
         # Don't post silly blog entries like blank ones
-        if (not self.postIsReasonable(html_text)):
+        if (not self._postIsReasonable(html_text)):
             return
 
         client = gconf.client_get_default()
@@ -170,10 +179,15 @@ class BlogPoster(gtk.Frame):
 
         if (successful_post):
             # Only delete the entry if posting was successful
-            self.blogBuffer.delete(self.blogBuffer.get_start_iter(),
-                                   self.blogBuffer.get_end_iter())
+            self._clearBlogEntryText()
 
-    def postIsReasonable(self, text):
+    def _clearBlogEntryText(self):
+        self.blogBuffer.delete(self.blogBuffer.get_start_iter(),
+                               self.blogBuffer.get_end_iter())
+        self.titleEntry.delete_text(0, -1)
+        
+
+    def _postIsReasonable(self, text):
         # Popup a dialogue confirming even if its deemed
         # unreasonable
         if (text == None or text == ""):

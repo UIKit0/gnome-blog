@@ -1,5 +1,12 @@
 2003-09-02  Seth Nickell  <snickell@stanford.edu>
 
+	* blog_poster.py:
+
+	Add a "Title" entry instead of relying on the good
+	graces of my users to follow pybloxsom standards ;-)
+
+2003-09-02  Seth Nickell  <snickell@stanford.edu>
+
 	* TODO:
 
 	Brief sketch of some things I'm interested in doing next.

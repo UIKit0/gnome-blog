@@ -124,7 +124,7 @@ class BloggerPrefs(gtk.Dialog):
             protocol = "bloggerAPI"
             url_description = _("Base Blog URL:")
         elif blog_type == "blogger.com":
-            url = "http://plant.blogger.com/api/RPC2"
+            url = "http://www.blogger.com/api/RPC2"
             url_ending = ""
             protocol = "bloggerAPI"
             url_description = _("XML-RPC URL:")

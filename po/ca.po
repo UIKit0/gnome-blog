@@ -1,15 +1,15 @@
 # Catalan translation of gnome-blog.
-# Copyright © 2003 Free Software Foundation, Inc.
+# Copyright © 2003, 2004 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-blog package.
 # Aleix Badia i Bosch <abadia@ica.es>, 2003.
-# Jordi Mallach <jordi@sindominio.net>, 2003.
+# Jordi Mallach <jordi@sindominio.net>, 2003, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-11-12 16:30+0100\n"
-"PO-Revision-Date: 2003-11-12 16:39+0100\n"
+"POT-Creation-Date: 2004-01-08 19:01+0100\n"
+"PO-Revision-Date: 2004-01-08 19:03+0100\n"
 "Last-Translator: Aleix Badia i Bosch <abadia@ica.es>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "MIME-Version: 1.0\n"
@@ -62,7 +62,8 @@ msgstr "S'han inicialitzat les prefèrencies de l'aplicació"
 
 #: gnomeblog.schemas.in.h:6
 msgid "The id or name of the particular blog to use on the XML-RPC server"
-msgstr "L'identificador o nom del bloc particular a utilitzar al servidor de XML-RPC"
+msgstr ""
+"L'identificador o nom del bloc particular a utilitzar al servidor de XML-RPC"
 
 #: gnomeblog.schemas.in.h:7
 msgid "URL to the bloggerAPI compatible XML-RPC server"
@@ -72,8 +73,6 @@ msgstr "URL del servidor de XML-RPC compatible amb l'API de bloc"
 msgid "Username to use in accessing the blog"
 msgstr "Nom d'usuari per accedir al bloc"
 
-#. !/usr/bin/env python
-#. maybe someone can do this trick without string?
 #: blog_applet.py:31
 msgid "About"
 msgstr "Quant a"
@@ -82,23 +81,15 @@ msgstr "Quant a"
 msgid "Blog"
 msgstr "Bloc"
 
-#. self._showPrefDialog()
 #: blog_applet.py:67
 msgid "A GNOME Web Blogging Applet"
 msgstr "Miniaplicació de bloc web de GNOME"
 
-#. take the XML_RPC value from GConf
-#. split the URL up into http:, '', domainname, extra
-#. join back up the URL into http://domainname
 #: blog_applet.py:102
-msgid "Create a blog entry for "
-msgstr "Crea una entrada de bloc per "
+#, python-format
+msgid "Create a blog entry for %s at %s"
+msgstr "Crea una entrada de bloc per %s en %s"
 
-#: blog_applet.py:104
-msgid " at "
-msgstr " en "
-
-#. Set tooltip to the applet button
 #: blog_poster.py:32
 msgid "_Post Entry"
 msgstr "_Envia una entrada"
@@ -119,11 +110,6 @@ msgstr "No s'ha pogut pujar imatges"
 msgid "The blog protocol in use does not support uploading images"
 msgstr "El protocol de bloc en ús no suporta la pujada d'imatges"
 
-#. Don't post silly blog entries like blank ones
-#. Only delete the entry if posting was successful
-#. Call back our parent informing them the entry was posted
-#. Popup a dialogue confirming even if its deemed
-#. unreasonable
 #: blog_poster.py:121
 msgid "Blog Entry is Blank"
 msgstr "L'entrada del bloc és buida"
@@ -132,85 +118,95 @@ msgstr "L'entrada del bloc és buida"
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
-msgstr "No s'ha introduït cap text a la caixa d'entrada del bloc. Si us plau, introduïu el text i torneu a provar"
+msgstr ""
+"No s'ha introduït cap text a la caixa d'entrada del bloc. Si us plau, "
+"introduïu el text i torneu a provar"
 
 #: blogger_prefs.py:19
 msgid "Blogger Preferences"
 msgstr "Preferències del bloc"
 
-#: blogger_prefs.py:37
-msgid "Self-Run MovableType"
-msgstr "MovableType auto-executable"
-
 #: blogger_prefs.py:38
-msgid "Self-Run Pybloxsom"
-msgstr "Pybloxsom auto-executable"
+msgid "Self-Run MovableType"
+msgstr "MovableType personal"
 
 #: blogger_prefs.py:39
-msgid "Self-Run Other"
-msgstr "Altres auto-executables"
+msgid "Self-Run Pyblosxom"
+msgstr "Pybloxsom personal"
 
-#: blogger_prefs.py:43
+#: blogger_prefs.py:40
+msgid "Self-Run Other"
+msgstr "Altre personal"
+
+#: blogger_prefs.py:44
 msgid "Blog Type:"
 msgstr "Tipus de bloc:"
 
-#: blogger_prefs.py:52
+#: blogger_prefs.py:54
 msgid "Blog Protocol:"
 msgstr "Protocol del bloc:"
 
-#: blogger_prefs.py:56
+#: blogger_prefs.py:58
 msgid "Blog Base URL:"
 msgstr "URL principal del bloc:"
 
-#: blogger_prefs.py:58
+#: blogger_prefs.py:60
 msgid "Blog Name:"
 msgstr "Nom del bloc:"
 
-#: blogger_prefs.py:60
+#: blogger_prefs.py:62
 msgid "Lookup Blogs"
 msgstr "Cerca els blocs"
 
-#: blogger_prefs.py:70
+#: blogger_prefs.py:72
 msgid "Username:"
 msgstr "Nom d'usuari:"
 
-#: blogger_prefs.py:71
+#: blogger_prefs.py:73
 msgid "Password:"
 msgstr "Contrasenya:"
 
-#: blogger_prefs.py:113 blogger_prefs.py:128 blogger_prefs.py:133
+#: blogger_prefs.py:115 blogger_prefs.py:130 blogger_prefs.py:135
+#: blogger_prefs.py:141
 msgid "XML-RPC URL:"
 msgstr "URL de XML-RPC:"
 
-#: blogger_prefs.py:118 blogger_prefs.py:123
+#: blogger_prefs.py:120 blogger_prefs.py:125
 msgid "Base Blog URL:"
 msgstr "URL del bloc principal:"
 
-#: blogger_prefs.py:127
+#: blogger_prefs.py:129
 msgid "bloggerAPI"
 msgstr "API del bloc"
 
-#. FIXME: popup an error dialog
 #: hig_alert.py:7
 #, python-format
 msgid ""
 "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: <span style="
 "\"italic\">%s</span>."
-msgstr "L'URL \"%s\" no és, probablement, una API de bloc vàlida. El servidor de XML-RPC informa: <span style=\"italic\">%s</span>."
+msgstr ""
+"L'URL \"%s\" no és, probablement, una API de bloc vàlida. El servidor de XML-"
+"RPC informa: <span style=\"italic\">%s</span>."
 
 #: hig_alert.py:9
 #, python-format
 msgid ""
 "Unknown username <span weight=\"bold\">%s</span> or password trying to post "
 "blog entry to XML-RPC server <span style=\"italic\">%s</span>."
-msgstr "S'està intentant enviar una entrada a un servidor XML-RPC <span style=\"italic\">%s</span> fent servir un nom d'usuari <span weight=\"bold\">%s</span> o contrasenya desconeguts."
+msgstr ""
+"S'està intentant enviar una entrada a un servidor XML-RPC <span style="
+"\"italic\">%s</span> fent servir un nom d'usuari <span weight=\"bold\">%s</"
+"span> o contrasenya desconeguts."
 
 #: hig_alert.py:11
 #, python-format
 msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
 "reported: <span style=\"italic\">%s</span>."
-msgstr "No s'ha pogut enviar al bloc \"%s\" a l'API de bloc del servidor de XML-RPC \"%s\". Els servidor ha retornat la següent informació: <span style=\"italic\">%s</span>."
+msgstr ""
+"No s'ha pogut enviar al bloc \"%s\" a l'API de bloc del servidor de XML-RPC "
+"\"%s\". Els servidor ha retornat la següent informació: <span style=\"italic"
+"\">%s</span>."
 
 #: hig_alert.py:13
 #, python-format
@@ -220,47 +216,37 @@ msgid ""
 "\n"
 "Please email this error message to seth@gnome.org so I can address it."
 msgstr ""
-"L'API del servidor de bloc (%s) informa d'un error desconegut: \"%s, <span style=\"italic\">%s</span>\". \n"
+"L'API del servidor de bloc (%s) informa d'un error desconegut: \"%s, <span "
+"style=\"italic\">%s</span>\". \n"
 "\n"
-"Envieu un correu electrònic amb el missatge d'error a seth@gnome.org per poder-lo solucionar, si us plau."
+"Envieu un correu electrònic amb el missatge d'error a seth@gnome.org per "
+"poder-lo solucionar, si us plau."
 
-#. GtkTextView already defines drag and drop targets, get them
-#. Unfortunately old_targets string field has a funny type
-#. that needs to be explicitly converted to string
-#. Add the DND type that we support and set the new list of types
-#. Hack for addHyperlink with old pygtk's
-#. this is an older version of pygtk that doesn't
-#. have a way to create anonymous tags, hack around it
-#. 398 means text/uri-list
-#: rich_entry.py:131 rich_entry.py:139
+#: rich_entry.py:136 rich_entry.py:145
 msgid "Could not load dragged in image"
 msgstr "No s'ha pogut carregar la imatge arrossegada"
 
-#: rich_entry.py:132 rich_entry.py:140
+#: rich_entry.py:137 rich_entry.py:146
 #, python-format
-msgid "Error loading <span style='italic'>%s</span> was: %s"
-msgstr "S'ha produït un error en carregar <span style='italic'>%s</span>: %s"
+msgid "Error loading %s was: %s"
+msgstr "L'error en carregar %s ha sigut: %s"
 
-#. Create a new image tag
-#. Insert the pixbuf, and then set the new image
-#. tag around it so that we can generate its HTML later
-#. Found Hyperlink, activating
-#: rich_entry.py:190
+#: rich_entry.py:196
 msgid "Add _Link..."
 msgstr "Afegeix un en_llaç..."
 
-#: rich_entry.py:195
+#: rich_entry.py:201
 msgid "Add Link"
 msgstr "Afegeix un enllaç"
 
-#: rich_entry.py:196
+#: rich_entry.py:202
 msgid "_Add Link"
 msgstr "_Afegeix un enllaç"
 
-#: rich_entry.py:203
+#: rich_entry.py:210
 msgid "Text:"
 msgstr "Text:"
 
-#: rich_entry.py:206
+#: rich_entry.py:213
 msgid "URL:"
 msgstr "URL:"

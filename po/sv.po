@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
-"POT-Creation-Date: 2003-09-02 10:32+0200\n"
-"PO-Revision-Date: 2003-09-02 10:34+0200\n"
+"POT-Creation-Date: 2003-09-04 02:39+0200\n"
+"PO-Revision-Date: 2003-09-04 02:41+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -24,6 +24,10 @@ msgid "Blogging tool"
 msgstr "Webbloggsverktyg"
 
 #: GNOME_BlogApplet.xml.h:1
+msgid "_About..."
+msgstr "_Om..."
+
+#: GNOME_BlogApplet.xml.h:2
 msgid "_Preferences..."
 msgstr "_Inställningar..."
 
@@ -50,6 +54,15 @@ msgstr "URL till den bloggerAPI-kompatibla XML-RPC-servern"
 #: gnomeblog.schemas.in.h:6
 msgid "Username to use in accessing the blog"
 msgstr "Användarnamn för att komma åt webbloggen"
+
+#~ msgid "About"
+#~ msgstr "Om"
+
+#~ msgid "About..."
+#~ msgstr "Om..."
+
+#~ msgid "_About"
+#~ msgstr "_Om"
 
 #~ msgid "Blog"
 #~ msgstr "Webblogg"

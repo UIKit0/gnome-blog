@@ -98,11 +98,10 @@ class BloggerApplet(gnome.applet.Applet):
         blog_split = string.split(blog_url,"/",3);
         # join back up the URL into http://domainname
         blog_url = string.join(blog_split[:3],"/")
-        
-        tooltip = _("Create a blog entry for ") \
-                  + client.get_string(self.prefs_key + "/blog_username") \
-                  + _(" at ") \
-                  + blog_url
+
+        tooltip = _("Create a blog entry for %s at %s") % \
+                  ( client.get_string(self.prefs_key + "/blog_username"), \
+                    blog_url )
         
         # Set tooltip to the applet button
         self.applet_tooltips.set_tip(self.toggle,tooltip)        

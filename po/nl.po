@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog head\n"
-"POT-Creation-Date: 2003-10-24 03:43+0200\n"
-"PO-Revision-Date: 2003-10-24 21:40+0100\n"
+"POT-Creation-Date: 2003-10-31 03:46+0100\n"
+"PO-Revision-Date: 2003-10-31 21:33+0100\n"
 "Last-Translator: Elros Cyriatan <cyriatan@fastmail.fm>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
 "MIME-Version: 1.0\n"
@@ -130,15 +130,15 @@ msgstr "Blogger voorkeuren"
 
 #: blogger_prefs.py:37
 msgid "Self-Run MovableType"
-msgstr ""
+msgstr "Zelf-Uitvoeren VerplaatsbareSoort"
 
 #: blogger_prefs.py:38
 msgid "Self-Run Pybloxsom"
-msgstr ""
+msgstr "Zelf-Uitvoeren Pybloxsom"
 
 #: blogger_prefs.py:39
 msgid "Self-Run Other"
-msgstr ""
+msgstr "Zelf-Uitvoeren Anders"
 
 #: blogger_prefs.py:43
 msgid "Blog Type:"

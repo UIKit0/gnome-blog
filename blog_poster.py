@@ -9,6 +9,13 @@ from gnomeblog import rich_entry
 from gnomeblog import blog
 from gnomeblog import blogger_prefs
 
+#check if pygtkspell is installed
+try:
+    import gtkspell
+    use_gtkspell = 1
+except:
+    use_gtkspell = 0
+
 gconf_prefix = None
 
 class BlogPoster(gtk.Frame):
@@ -28,6 +35,11 @@ class BlogPoster(gtk.Frame):
         box.set_spacing(6)
         
         self.blogEntry   = rich_entry.RichEntry()
+
+	#if we are using gtkspell, attach it to the blogEntry
+	if use_gtkspell:
+		gtkspell.Spell(self.blogEntry)
+
         scroller         = gtk.ScrolledWindow()
         self.postButton  = gtk.Button(_("_Post Entry"))
         
@@ -96,8 +108,19 @@ class BlogPoster(gtk.Frame):
                 image.opening_tag = '<img src="%s"/>' % (image.uri)
         except blog.FeatureNotSupported, e:
             hig_alert.reportError(_("Couldn't upload images"), _("The blog protocol in use does not support uploading images"))
+
+        #we must turn off the spell checker so as not to confuse
+        #the markup to html converter
+        if use_gtkspell:
+            spell = gtkspell.get_from_text_view(self.blogEntry)
+            spell.detach()
         
         html_text = self.blogEntry.getHTML()
+
+	#turn spelling back on
+        if use_gtkspell:
+            gtkspell.Spell(self.blogEntry)
+
         print "Text is: {\n %s \n }\n" % (html_text)
         title = self.titleEntry.get_text()
 

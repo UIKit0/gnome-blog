@@ -1,3 +1,7 @@
+2004-03-08  John (J5) Palmieri <johnp@martianrock.com>
+
+	* blog_poster.py: spell checking is now enabled if pygtkspell is installed
+
 2004-02-26  John (J5) Palmieri <johnp@martianrock.com>
 
 	* protocols/livejournal.py:

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-12 02:44-0500\n"
+"POT-Creation-Date: 2005-01-12 03:10-0500\n"
 "PO-Revision-Date: 2003-11-20 00:20+0000\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
@@ -267,32 +267,32 @@ msgid ""
 "reported: %s."
 msgstr ""
 
-#: rich_entry.py:143 rich_entry.py:151
+#: rich_entry.py:144 rich_entry.py:152
 msgid "Could not load dragged in image"
 msgstr "Incapaz de ler imagem arrastada"
 
-#: rich_entry.py:144 rich_entry.py:152
+#: rich_entry.py:145 rich_entry.py:153
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "Erro ao ler %s era: %s"
 
-#: rich_entry.py:209
+#: rich_entry.py:210
 msgid "Add _Link..."
 msgstr "Adicionar _Link..."
 
-#: rich_entry.py:214
+#: rich_entry.py:215
 msgid "Add Link"
 msgstr "Adicionar Link"
 
-#: rich_entry.py:215
+#: rich_entry.py:216
 msgid "_Add Link"
 msgstr "_Adicionar Link"
 
-#: rich_entry.py:223
+#: rich_entry.py:224
 msgid "Text:"
 msgstr "Texto:"
 
-#: rich_entry.py:226
+#: rich_entry.py:227
 msgid "URL:"
 msgstr "URL:"
 

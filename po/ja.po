@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-12 02:44-0500\n"
+"POT-Creation-Date: 2005-01-12 03:10-0500\n"
 "PO-Revision-Date: 2004-04-08 01:10+0900\n"
 "Last-Translator: Takeshi AIHANA <aihana@gnome.gr.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
@@ -268,31 +268,31 @@ msgstr ""
 "URL '%s' は正しい LiveJournal XML-RPC サーバではないようです (ウェブ・サーバ"
 "からの報告: %s)"
 
-#: rich_entry.py:143 rich_entry.py:151
+#: rich_entry.py:144 rich_entry.py:152
 msgid "Could not load dragged in image"
 msgstr "ドラッグした画像をロードできませんでした"
 
-#: rich_entry.py:144 rich_entry.py:152
+#: rich_entry.py:145 rich_entry.py:153
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "%s をロードする際にエラー: %s"
 
-#: rich_entry.py:209
+#: rich_entry.py:210
 msgid "Add _Link..."
 msgstr "リンクの追加(_L)..."
 
-#: rich_entry.py:214
+#: rich_entry.py:215
 msgid "Add Link"
 msgstr "リンクの追加"
 
-#: rich_entry.py:215
+#: rich_entry.py:216
 msgid "_Add Link"
 msgstr "リンクの追加(_A)"
 
-#: rich_entry.py:223
+#: rich_entry.py:224
 msgid "Text:"
 msgstr "内容:"
 
-#: rich_entry.py:226
+#: rich_entry.py:227
 msgid "URL:"
 msgstr "URL:"

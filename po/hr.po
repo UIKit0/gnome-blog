@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-12 02:44-0500\n"
+"POT-Creation-Date: 2005-01-12 03:10-0500\n"
 "PO-Revision-Date: 2004-03-20 14:51+CET\n"
 "Last-Translator: auto\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -250,31 +250,31 @@ msgid ""
 "reported: %s."
 msgstr ""
 
-#: rich_entry.py:143 rich_entry.py:151
+#: rich_entry.py:144 rich_entry.py:152
 msgid "Could not load dragged in image"
 msgstr ""
 
-#: rich_entry.py:144 rich_entry.py:152
+#: rich_entry.py:145 rich_entry.py:153
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr ""
 
-#: rich_entry.py:209
+#: rich_entry.py:210
 msgid "Add _Link..."
 msgstr "_Dodaj vezu..."
 
-#: rich_entry.py:214
+#: rich_entry.py:215
 msgid "Add Link"
 msgstr "Dodaj link"
 
-#: rich_entry.py:215
+#: rich_entry.py:216
 msgid "_Add Link"
 msgstr "_Dodaj link"
 
-#: rich_entry.py:223
+#: rich_entry.py:224
 msgid "Text:"
 msgstr "Tekst:"
 
-#: rich_entry.py:226
+#: rich_entry.py:227
 msgid "URL:"
 msgstr "URL:"

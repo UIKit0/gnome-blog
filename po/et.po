@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-12 02:44-0500\n"
+"POT-Creation-Date: 2005-01-12 03:10-0500\n"
 "PO-Revision-Date: 2004-04-07 08:23+0300\n"
 "Last-Translator: Priit Laes <amd@tt.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
@@ -257,31 +257,31 @@ msgstr ""
 "URL '%s' ei tundu olevat korrektne LiveJournal'i XML-RPC server. Veebiserver "
 "teatas: %s."
 
-#: rich_entry.py:143 rich_entry.py:151
+#: rich_entry.py:144 rich_entry.py:152
 msgid "Could not load dragged in image"
 msgstr ""
 
-#: rich_entry.py:144 rich_entry.py:152
+#: rich_entry.py:145 rich_entry.py:153
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "Viga %s laadimisel: %s"
 
-#: rich_entry.py:209
+#: rich_entry.py:210
 msgid "Add _Link..."
 msgstr "Lisa _viit..."
 
-#: rich_entry.py:214
+#: rich_entry.py:215
 msgid "Add Link"
 msgstr "Lisa viit"
 
-#: rich_entry.py:215
+#: rich_entry.py:216
 msgid "_Add Link"
 msgstr "_Lisa viit"
 
-#: rich_entry.py:223
+#: rich_entry.py:224
 msgid "Text:"
 msgstr "Tekst:"
 
-#: rich_entry.py:226
+#: rich_entry.py:227
 msgid "URL:"
 msgstr "URL:"

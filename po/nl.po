@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog head\n"
-"POT-Creation-Date: 2003-10-31 03:46+0100\n"
-"PO-Revision-Date: 2003-10-31 21:33+0100\n"
+"POT-Creation-Date: 2003-11-07 03:38+0100\n"
+"PO-Revision-Date: 2003-11-07 11:15+0100\n"
 "Last-Translator: Elros Cyriatan <cyriatan@fastmail.fm>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
 "MIME-Version: 1.0\n"
@@ -73,18 +73,27 @@ msgid "Username to use in accessing the blog"
 msgstr "Gebruikersnaam om te gebruiken bij toegang tot de blog"
 
 #. !/usr/bin/env python
-#: blog_applet.py:29
+#. maybe someone can do this trick without string?
+#: blog_applet.py:31
 msgid "About"
 msgstr "Info"
 
-#: blog_applet.py:32
+#: blog_applet.py:34
 msgid "Blog"
 msgstr "Blog"
 
-#: blog_applet.py:61
+#: blog_applet.py:66
 msgid "A GNOME Web Blogging Applet"
 msgstr "Een GNOME Web blogging applet"
 
+#. take the XML_RPC value from GConf
+#. split the URL up into http:, '', domainname, extra
+#. join back up the URL into http://domainname
+#: blog_applet.py:101
+msgid "Create a blog entry for "
+msgstr "Een blog ingang maken voor"
+
+#. Set tooltip to the applet button
 #: blog_poster.py:31
 msgid "_Post Entry"
 msgstr "Ingang _verzenden"
@@ -231,11 +240,11 @@ msgstr ""
 #. this is an older version of pygtk that doesn't
 #. have a way to create anonymous tags, hack around it
 #. 398 means text/uri-list
-#: rich_entry.py:116 rich_entry.py:124
+#: rich_entry.py:131 rich_entry.py:139
 msgid "Could not load dragged in image"
 msgstr "Kon de versleepte afbeelding niet laden"
 
-#: rich_entry.py:117 rich_entry.py:125
+#: rich_entry.py:132 rich_entry.py:140
 #, python-format
 msgid "Error loading <span style='italic'>%s</span> was: %s"
 msgstr "Fout bij laden <span style='italic'>%s</span> was: %s"
@@ -244,22 +253,22 @@ msgstr "Fout bij laden <span style='italic'>%s</span> was: %s"
 #. Insert the pixbuf, and then set the new image
 #. tag around it so that we can generate its HTML later
 #. Found Hyperlink, activating
-#: rich_entry.py:175
+#: rich_entry.py:190
 msgid "Add _Link"
 msgstr "_Koppeling toevoegen"
 
-#: rich_entry.py:180
+#: rich_entry.py:195
 msgid "Add Link"
 msgstr "Koppeling toevoegen"
 
-#: rich_entry.py:181
+#: rich_entry.py:196
 msgid "_Add Link"
 msgstr "Koppeling _toevoegen"
 
-#: rich_entry.py:188
+#: rich_entry.py:203
 msgid "Text:"
 msgstr "Tekst:"
 
-#: rich_entry.py:191
+#: rich_entry.py:206
 msgid "URL:"
 msgstr "URL:"

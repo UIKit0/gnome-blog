@@ -1,31 +1,30 @@
 # English/Canada translation of gnome-blog.
-# Copyright (C) 2004 THE gnome-blog'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the gnome-blog package.
+# Copyright (C) 2004 Adam Weinberger and the GNOME Foundation
+# This file is distributed under the same licence as the gnome-blog package.
 # Adam Weinberger <adamw@gnome.org>, 2004.
-# , fuzzy
 # 
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-05-01 13:00-0400\n"
-"PO-Revision-Date: 2004-05-01 13:01-0400\n"
+"POT-Creation-Date: 2004-12-26 03:31-0500\n"
+"PO-Revision-Date: 2004-12-26 13:01-0400\n"
 "Last-Translator: Adam Weinberger <adamw@gnome.org>\n"
 "Language-Team: English/Canada <adamw@FreeBSD.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
 
-#: GNOME_BlogApplet.server.in.h:1
+#: GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr "Accessories"
 
-#: GNOME_BlogApplet.server.in.h:2 gnome-blog.desktop.in.h:1
+#: GNOME_BlogApplet.server.in.in.h:2 gnome-blog.desktop.in.h:1
 msgid "Blog Entry Poster"
 msgstr "Blog Entry Poster"
 
-#: GNOME_BlogApplet.server.in.h:3
+#: GNOME_BlogApplet.server.in.in.h:3
 msgid "Post entries to a web log"
 msgstr "Post entries to a web log"
 
@@ -45,11 +44,11 @@ msgstr "About"
 msgid "Blog"
 msgstr "Blog"
 
-#: blog_applet.py:67
+#: blog_applet.py:69
 msgid "A GNOME Web Blogging Applet"
 msgstr "A GNOME Web Blogging Applet"
 
-#: blog_applet.py:102
+#: blog_applet.py:104
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Create a blog entry for %s at %s"
@@ -58,27 +57,27 @@ msgstr "Create a blog entry for %s at %s"
 msgid "_Post Entry"
 msgstr "_Post Entry"
 
-#: blog_poster.py:63
+#: blog_poster.py:69
 msgid "Preferences..."
 msgstr "Preferences..."
 
-#: blog_poster.py:75
+#: blog_poster.py:81
 msgid "Title:"
 msgstr "Title:"
 
-#: blog_poster.py:110
+#: blog_poster.py:116
 msgid "Couldn't upload images"
 msgstr "Couldn't upload images"
 
-#: blog_poster.py:110
+#: blog_poster.py:116
 msgid "The blog protocol in use does not support uploading images"
 msgstr "The blog protocol in use does not support uploading images"
 
-#: blog_poster.py:157
+#: blog_poster.py:163
 msgid "Blog Entry is Blank"
 msgstr "Blog Entry is Blank"
 
-#: blog_poster.py:157
+#: blog_poster.py:163
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
@@ -99,43 +98,47 @@ msgid "Self-Run Pyblosxom"
 msgstr "Self-Run Pyblosxom"
 
 #: blogger_prefs.py:40
+msgid "Self-Run WordPress"
+msgstr "Self-Run WordPress"
+
+#: blogger_prefs.py:41
 msgid "Self-Run Other"
 msgstr "Self-Run Other"
 
-#: blogger_prefs.py:44
+#: blogger_prefs.py:45
 msgid "Blog Type:"
 msgstr "Blog Type:"
 
-#: blogger_prefs.py:54
+#: blogger_prefs.py:55
 msgid "Blog Protocol:"
 msgstr "Blog Protocol:"
 
-#: blogger_prefs.py:58
+#: blogger_prefs.py:59
 msgid "Blog Base URL:"
 msgstr "Blog Base URL:"
 
-#: blogger_prefs.py:60
+#: blogger_prefs.py:61
 msgid "Blog Name:"
 msgstr "Blog Name:"
 
-#: blogger_prefs.py:62
+#: blogger_prefs.py:63
 msgid "Lookup Blogs"
 msgstr "Lookup Blogs"
 
-#: blogger_prefs.py:72
+#: blogger_prefs.py:73
 msgid "Username:"
 msgstr "Username:"
 
-#: blogger_prefs.py:73
+#: blogger_prefs.py:74
 msgid "Password:"
 msgstr "Password:"
 
-#: blogger_prefs.py:115 blogger_prefs.py:130 blogger_prefs.py:135
-#: blogger_prefs.py:141
+#: blogger_prefs.py:116 blogger_prefs.py:136 blogger_prefs.py:141
+#: blogger_prefs.py:147
 msgid "XML-RPC URL:"
 msgstr "XML-RPC URL:"
 
-#: blogger_prefs.py:120 blogger_prefs.py:125
+#: blogger_prefs.py:121 blogger_prefs.py:126 blogger_prefs.py:131
 msgid "Base Blog URL:"
 msgstr "Base Blog URL:"
 
@@ -257,32 +260,31 @@ msgstr ""
 "URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
 "reported: %s."
 
-#: rich_entry.py:135 rich_entry.py:143
+#: rich_entry.py:142 rich_entry.py:150
 msgid "Could not load dragged in image"
 msgstr "Could not load dragged-in image"
 
-#: rich_entry.py:136 rich_entry.py:144
+#: rich_entry.py:143 rich_entry.py:151
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "Error loading %s was: %s"
 
-#: rich_entry.py:194
+#: rich_entry.py:208
 msgid "Add _Link..."
 msgstr "Add _Link..."
 
-#: rich_entry.py:199
+#: rich_entry.py:213
 msgid "Add Link"
 msgstr "Add Link"
 
-#: rich_entry.py:200
+#: rich_entry.py:214
 msgid "_Add Link"
 msgstr "_Add Link"
 
-#: rich_entry.py:208
+#: rich_entry.py:222
 msgid "Text:"
 msgstr "Text:"
 
-#: rich_entry.py:211
+#: rich_entry.py:225
 msgid "URL:"
 msgstr "URL:"
-

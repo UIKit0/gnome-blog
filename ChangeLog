@@ -1,3 +1,18 @@
+2003-09-04  Seth Nickell  <snickell@stanford.edu>
+
+	* Makefile.am:
+	* blog_poster.py:
+	* html_converter.py:
+	* rich_entry.py:
+	* style_toggle.py:
+
+	Create a new RichEntry widget which is a
+	sub-class of TextView but provides the sort
+	of nice HTML editing features we want. Abstract
+	style_toggles further and move them into this
+	class, and add preliminary support for
+	hyperlinks.
+	
 2003-09-04  James Willcox  <jwillcox@gnome.org>
 
 	* blog.py:

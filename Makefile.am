@@ -11,10 +11,11 @@ python_PYTHON = 		\
 	blog_poster.py 		\
 	aligned_window.py 	\
 	hig_alert.py 		\
-	style_toggle.py		\
 	blogger_prefs.py	\
 	gconf_widgets.py	\
-	blog.py		\
+	blog.py			\
+	rich_entry.py		\
+	html_converter.py	\
 	gnome_blog_globals.py
 
 pixmapsdir = $(datadir)/pixmaps

@@ -3,7 +3,7 @@ import pango
 import gconf
 
 import hig_alert
-import style_toggle
+import rich_entry
 import blog
 
 gconf_prefix = "/apps/gnome-blogger"
@@ -24,14 +24,10 @@ class BlogPoster(gtk.Frame):
         box.set_border_width(6)
         box.set_spacing(6)
         
-        self.blogBuffer  = gtk.TextBuffer()
-        self.blogEntry   = gtk.TextView(self.blogBuffer)
+        self.blogEntry   = rich_entry.RichEntry()
         scroller         = gtk.ScrolledWindow()
         self.postButton  = gtk.Button("Post Entry")
         
-        self.blogEntry.set_editable(gtk.TRUE)
-        self.blogEntry.set_wrap_mode(gtk.WRAP_WORD)
-
         scroller.add(self.blogEntry)
         scroller.set_policy(gtk.POLICY_NEVER, gtk.POLICY_AUTOMATIC)
         scroller.set_size_request(400, 300)
@@ -45,14 +41,14 @@ class BlogPoster(gtk.Frame):
         buttonBox.set_spacing(6)
         buttonBox.pack_end(self.postButtonAlignment)
 
-        bold_tag = self.blogBuffer.create_tag("bold")
-        bold_tag.set_property("weight", pango.WEIGHT_BOLD)
-        boldToggle = style_toggle.StyleToggle(gtk.STOCK_BOLD, bold_tag, "strong", self.blogEntry)
-        
-        italic_tag = self.blogBuffer.create_tag("italic")
-        italic_tag.set_property("style", pango.STYLE_ITALIC)
-        italicToggle = style_toggle.StyleToggle(gtk.STOCK_ITALIC, italic_tag, "em", self.blogEntry)
-        
+        boldToggle   = self.blogEntry.createStyleToggle([("weight", pango.WEIGHT_BOLD)], gtk.STOCK_BOLD, "strong")
+        italicToggle = self.blogEntry.createStyleToggle([("style", pango.STYLE_ITALIC)], gtk.STOCK_ITALIC, "em")        
+
+        #link_tag = self.blogBuffer.create_tag("a")
+        #link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
+        #link_tag.set_property("foreground", "#0000FF")
+        #linkButton = InsertButton
+
         buttonBox.pack_start(boldToggle, expand=gtk.FALSE)
         buttonBox.pack_start(italicToggle, expand=gtk.FALSE)        
 
@@ -71,64 +67,14 @@ class BlogPoster(gtk.Frame):
         box.show_all()
 
 
-
-    def _getHTMLText(self, buffer):
-        html = ""
-        
-        iter = buffer.get_start_iter()
-        tagFound = gtk.TRUE
-
-        open_tags = []
-        
-        while(tagFound == gtk.TRUE):
-            turnontags = iter.get_toggled_tags(gtk.TRUE)
-            turnofftags = iter.get_toggled_tags(gtk.FALSE)
-
-            for tag in turnofftags:
-                tags_to_reopen = []
-                opentag = open_tags.pop()
-                while (opentag != tag):
-                    html = html + opentag.closing_tag
-                    tags_to_reopen.append(opentag)
-                    opentag = open_tags.pop()
-
-                html = html + tag.closing_tag
-
-                for reopen in tags_to_reopen:
-                    open_tags.append(reopen)
-                    html = html + reopen.opening_tag
-            
-            for tag in turnontags:
-                open_tags.append(tag)
-                html = html + tag.opening_tag
-
-                
-                
-            last_iter = iter.copy()
-            tagFound = iter.forward_to_tag_toggle(None)
-            if (not tagFound):
-                iter = buffer.get_end_iter()
-
-            new_text = buffer.get_text(last_iter, iter, gtk.TRUE)
-            html = html + new_text
-
-        # Get a list of lines in HTML so we can add <p> tags
-        html_lines = html.split('\n')
-
-        html = ""
-
-        for line in html_lines:
-            html = html + "<p>" + line + "</p>\n"
-
-        return html
-
         
     def _onPostButtonClicked(self, button):
         global gconf_prefix, appkey
         
-        html_text = self._getHTMLText(self.blogBuffer)
+        html_text = self.blogEntry.getHTML()
+        print ("Text is: {\n %s \n }\n" % (html_text))
         title = self.titleEntry.get_text()
-        
+
         # Don't post silly blog entries like blank ones
         if (not self._postIsReasonable(html_text)):
             return
@@ -140,8 +86,7 @@ class BlogPoster(gtk.Frame):
             self._clearBlogEntryText()
 
     def _clearBlogEntryText(self):
-        self.blogBuffer.delete(self.blogBuffer.get_start_iter(),
-                               self.blogBuffer.get_end_iter())
+        self.blogEntry.clear()
         self.titleEntry.delete_text(0, -1)
         
 

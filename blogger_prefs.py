@@ -35,7 +35,7 @@ class BloggerPrefs(gtk.Dialog):
                                          ("Advogato", "advogato.org"),
                                          ("-", ""),
                                          (_("Self-Run MovableType"), "custom-mt"),
-                                         (_("Self-Run Pybloxsom"), "custom-pybloxsom"),
+                                         (_("Self-Run Pyblosxom"), "custom-pybloxsom"),
                                          (_("Self-Run Other"), "custom")])
 
         blogTypeBox = gtk.HBox()

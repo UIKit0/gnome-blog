@@ -1,3 +1,8 @@
+2003-11-14  Bryan W Clark  <clarkbw@cvs.gnome.org>
+
+	* blogger_prefs.py: String "Pybloxsom" should be "Pyblosxom"
+	bug # 126508
+
 2003-11-13  Bryan W Clark  <clarkbw@cvs.gnome.org>
 
 	* blog_applet.py: fixed traslation bug #126509

@@ -22,7 +22,7 @@ class OptionMenu(gtk.OptionMenu):
             string = string_value_pair[0]
             value  = string_value_pair[1]
 
-            if (string == "-"):
+            if string == "-":
                 self.menu.append(gtk.SeparatorMenuItem())
             else:
                 self.menu.append(gtk.MenuItem(string))
@@ -34,19 +34,19 @@ class OptionMenu(gtk.OptionMenu):
         self._setMenuFromValue(gconf_value)
         
     def _setMenuFromValue (self, gconf_value):
-        if (len(self.values) < 1):
+        if not self.values:
             return
         
         i = 0
         value_set = 0
         for value in self.values:
-            if (value == gconf_value):
+            if value == gconf_value:
                 self.set_history(i)
                 value_set = 1
                 break
             i = i + 1
 
-        if (not value_set):
+        if not value_set:
             self.set_history(0)
             self.client.set_string(self.gconf_key, self.values[0])
             
@@ -80,7 +80,7 @@ class Entry(gtk.Entry):
         self.client = gconf.client_get_default()
         self.notify = self.client.notify_add(self.gconf_key, self._onGConfChange)
         string = self.client.get_string(self.gconf_key)
-        if (string != None):
+        if string != None:
             self.set_text(string)
 
         self.connect("changed", self._onEntryChange)
@@ -102,7 +102,7 @@ class CheckButton(gtk.CheckButton):
         self.notify = self.client.notify_add(self.gconf_key, self._onGConfChange)
 
         bool = self.client.get_bool(self.gconf_key)
-        if (bool != None):
+        if bool != None:
             self.set_active(bool)
 
         self.connect("toggled", self._onCheckboxToggled)

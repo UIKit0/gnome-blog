@@ -26,13 +26,13 @@ class RichEntry(gtk.TextView):
         self.linknum = 0
 
     def addHyperlink(self, iter, text, uri, on_activate):
-        if ((gtk.pygtk_version[0] < 2) and (gtk.pygtk_version[1] < 100)
-            and (gtk.pygtk_version[2] < 16)):
+        if (gtk.pygtk_version[0] < 2 and gtk.pygtk_version[1] < 100
+            and gtk.pygtk_version[2] < 16):
             # this is an older version of pygtk that doesn't
             # have a way to create anonymous tags, hack around it
             link_tag = self.buffer.create_tag("link%d" % (self.linknum))
             self.linknum = self.linknum + 1
-            print ("Old Pygtk, using hack to work around lack of anonymous tags")
+            print "Old Pygtk, using hack to work around lack of anonymous tags"
         else:
             link_tag = self.buffer.create_tag()
             
@@ -62,20 +62,20 @@ class RichEntry(gtk.TextView):
         return StyleToggle(stock_button, tag, html_tag, self)
         
     def _onEventAfter(self, widget, event):
-        if ((event.type != gtk.gdk.BUTTON_RELEASE) or (event.button != 1)):
+        if event.type != gtk.gdk.BUTTON_RELEASE or event.button != 1:
             return gtk.FALSE
 
         bounds = self.buffer.get_selection_bounds()
-        if (bounds == ()):
+        if not bounds:
             return gtk.FALSE
 
-        (x, y) = self.window_to_buffer_coords (gtk.TEXT_WINDOW_WIDGET, int(event.x), int(event.y))
+        x, y = self.window_to_buffer_coords (gtk.TEXT_WINDOW_WIDGET, int(event.x), int(event.y))
 
         iter = self.get_iter_at_location(x, y)
 
         for tag in iter.get_tags():
             try:
-                if (tag.hyperlink == gtk.TRUE):
+                if tag.hyperlink == gtk.TRUE:
                     # Found Hyperlink, activating
                     tag.on_activate(tag.uri)
             except AttributeError:
@@ -124,14 +124,14 @@ class InsertHyperlinkButton(gtk.Button):
 
         response = dialog.run()
 
-        if (response == gtk.RESPONSE_ACCEPT):
+        if response == gtk.RESPONSE_ACCEPT:
             iter = self.rich_entry.buffer.get_iter_at_mark(self.rich_entry.buffer.get_mark("insert"))
             self.rich_entry.addHyperlink(iter, textEntry.get_text(), urlEntry.get_text(), self._onHyperlinkClicked)
 
         dialog.hide()
             
     def _onHyperlinkClicked(self, uri):
-        print ("Clicked %s" % (uri))
+        print "Clicked %s" % (uri)
         
 class StyleToggle(gtk.ToggleButton):
     def __init__(self, stock_icon_id, tag, htmltag, text_view):
@@ -154,24 +154,24 @@ class StyleToggle(gtk.ToggleButton):
         self.text_buffer.connect("mark-set", self._onMarkSet)
 
     def _onStyleToggleActivate(self, toggle):
-        if (self.programmatic_toggle == gtk.TRUE):
+        if self.programmatic_toggle:
             return
         
         selection = self.text_buffer.get_selection_bounds()
         
-        if (not selection == ()):
+        if selection:
             # There's a selection, apply/remove style tag to it
             
-            if (self.get_active()):
+            if self.get_active():
                 self.text_buffer.apply_tag(self.style_tag, selection[0], selection[1])
             else:
                 self.text_buffer.remove_tag(self.style_tag, selection[0], selection[1])
                     
     def _onMarkSet(self, textbuffer, iter, mark):
-        if (mark == self.cursor_mark):
+        if mark == self.cursor_mark:
             
             self.programmatic_toggle = gtk.TRUE
-            if (iter.has_tag(self.style_tag)):
+            if iter.has_tag(self.style_tag):
                 self.set_active(gtk.TRUE)
             else:
                 self.set_active(gtk.FALSE)

@@ -21,7 +21,7 @@ class BlogPoster(gtk.Frame):
         global gconf_prefix
         gconf_prefix = prefs_key
 
-        print ("Using gconf_prefix %s" % (gconf_prefix))
+        print "Using gconf_prefix %s" % (gconf_prefix)
             
         box = gtk.VBox()
         box.set_border_width(6)
@@ -56,7 +56,7 @@ class BlogPoster(gtk.Frame):
         buttonBox.pack_start(boldToggle, expand=gtk.FALSE)
         buttonBox.pack_start(italicToggle, expand=gtk.FALSE)        
         buttonBox.pack_start(linkButton, expand=gtk.FALSE)
-        if (extra_button != None):
+        if extra_button != None:
             buttonBox.pack_start(extra_button, expand=gtk.FALSE)
             
         self.titleEntry = gtk.Entry()
@@ -79,20 +79,20 @@ class BlogPoster(gtk.Frame):
         global gconf_prefix, appkey
         
         html_text = self.blogEntry.getHTML()
-        print ("Text is: {\n %s \n }\n" % (html_text))
+        print "Text is: {\n %s \n }\n" % (html_text)
         title = self.titleEntry.get_text()
 
         # Don't post silly blog entries like blank ones
-        if (not self._postIsReasonable(html_text)):
+        if not self._postIsReasonable(html_text):
             return
 
         successful_post = blog.postEntry(title, html_text, gconf_prefix)
 
-        if (successful_post):
+        if successful_post:
             # Only delete the entry if posting was successful
             self._clearBlogEntryText()
             # Call back our parent informing them the entry was posted
-            if (self.on_entry_posted != None):
+            if self.on_entry_posted != None:
                 self.on_entry_posted()
 
     def _clearBlogEntryText(self):
@@ -103,7 +103,7 @@ class BlogPoster(gtk.Frame):
     def _postIsReasonable(self, text):
         # Popup a dialogue confirming even if its deemed
         # unreasonable
-        if (text == None or text == ""):
+        if not text:
             hig_alert.reportError(_("Blog Entry is Blank", "No text was entered in the blog entry box. Please enter some text and try again"))
             return gtk.FALSE
         else:

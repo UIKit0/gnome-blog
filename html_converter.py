@@ -8,7 +8,7 @@ def getHTML(buffer):
     open_tags = [ para_tag ]
     html = "<p>" + _getTagsHTML(next_iter, open_tags)
 
-    while(not next_iter.is_end()):
+    while not next_iter.is_end():
         iter = next_iter
         next_iter = _getNextIter(iter)
 
@@ -27,7 +27,7 @@ def _getNextIter(iter):
 
     position = nextTagIter.compare(endLineIter)
 
-    if (tagFound and (position == -1)):
+    if tagFound and position == -1:
         next_iter = nextTagIter
     else:
         next_iter = endLineIter
@@ -40,14 +40,14 @@ def _getTags(iter):
     turnontags  = iter.get_toggled_tags(gtk.TRUE)
     turnofftags = iter.get_toggled_tags(gtk.FALSE)
 
-    if (iter.is_end()):
+    if iter.is_end():
         # Iter is at the end of the buffer
         turnofftags.append(para_tag)
-    elif (iter.ends_line()):
+    elif iter.ends_line():
         turnofftags.append(para_tag)
         turnontags.insert(0, para_tag)
         
-    return (turnofftags, turnontags)
+    return turnofftags, turnontags
 
 def _getTagsHTML(iter, open_tags):
     (turnofftags, turnontags) = _getTags(iter)
@@ -71,7 +71,7 @@ def _turnOffTags(turnofftags, open_tags):
     for tag in turnofftags:
         tags_to_reopen = []
         opentag = open_tags.pop()
-        while (opentag != tag):
+        while opentag != tag:
             html = html + opentag.closing_tag
             tags_to_reopen.append(opentag)
             opentag = open_tags.pop()

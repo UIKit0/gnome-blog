@@ -45,14 +45,14 @@ class BloggerApplet(gnome.applet.Applet):
         self.poster_window = aligned_window.AlignedWindow(self.toggle)
         self.poster_window.set_modal(gtk.TRUE)
         self.prefs_key = self.get_preferences_key()
-        print ("Applet prefs located at %s" % (self.prefs_key))
+        print "Applet prefs located at %s" % (self.prefs_key)
         self.poster = blog_poster.BlogPoster(prefs_key=self.prefs_key, on_entry_posted=self._onEntryPosted)
         self.poster_window.add(self.poster)
         self.poster.show()
 
         client = gconf.client_get_default()
         value = client.get_bool(self.prefs_key + "/initialized")
-        if (value == None or value == gtk.FALSE):
+        if value == None or value == gtk.FALSE:
             self._showPrefDialog()
             client.set_bool(self.prefs_key + "/initialized", gtk.TRUE)
         
@@ -73,7 +73,7 @@ class BloggerApplet(gnome.applet.Applet):
         self._showPrefDialog()
         
     def _onToggle(self, toggle):
-        if (toggle.get_active()):
+        if toggle.get_active():
             self.poster_window.positionWindow()            
             self.poster_window.show()
             self.poster.grab_focus()
@@ -84,7 +84,7 @@ class BloggerApplet(gnome.applet.Applet):
         self.toggle.set_active(gtk.FALSE)
 
     def _onButtonPress(self, toggle, event):
-        if (event.button != 1):
+        if event.button != 1:
             toggle.stop_emission("button-press-event")
             
         
@@ -93,11 +93,11 @@ gobject.type_register(BloggerApplet)
 
 
 def foo(applet, iid):
-    print ("Returning blogger applet")
+    print "Returning blogger applet"
     return applet.init()
 
 gnome.applet.bonobo_factory("OAFIID:GNOME_BlogApplet_Factory", 
                             BloggerApplet.__gtype__, 
                             "Blog", "0", foo)
 
-print ("Done waiting in factory, returning... If this seems wrong, perhaps there is another copy of the Blog factory running?")
+print "Done waiting in factory, returning... If this seems wrong, perhaps there is another copy of the Blog factory running?"

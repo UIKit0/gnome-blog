@@ -107,27 +107,27 @@ class BloggerPrefs(gtk.Dialog):
 
 	print 'blog type: ' + blog_type
 
-        if (blog_type == "custom"):
+        if blog_type == "custom":
             url = None
             url_ending = ""
             protocol = None
             url_description = _("XML-RPC URL:")
-        elif (blog_type == "custom-mt"):
+        elif blog_type == "custom-mt":
             url = None
             url_ending = "/mt-xmlrpc.cgi"
             protocol = "MetaWeblog"
             url_description = _("Base Blog URL:")
-        elif (blog_type == "custom-pybloxsom"):
+        elif blog_type == "custom-pybloxsom":
             url = None
             url_ending = "/xmlrpc.cgi"
             protocol = "bloggerAPI"
             url_description = _("Base Blog URL:")
-        elif (blog_type == "blogger.com"):
+        elif blog_type == "blogger.com":
             url = "http://plant.blogger.com/api/RPC2"
             url_ending = ""
             protocol = _("bloggerAPI")
             url_description = _("XML-RPC URL:")
-        elif (blog_type == "advogato.org"):
+        elif blog_type == "advogato.org":
             url = "http://www.advogato.org/XMLRPC"
             url_ending = ""
             protocol = "advogato"
@@ -135,9 +135,9 @@ class BloggerPrefs(gtk.Dialog):
 	    lookup = gtk.FALSE
         else:
             # FIXME: popup an error dialog
-            print ("Unknown blog type (!)")
+            print "Unknown blog type (!)"
 
-        if (url != None):
+        if url != None:
             self.urlEntry.set_sensitive(gtk.FALSE)
             self.urlLabel.set_sensitive(gtk.FALSE)
             client.set_string(gconf_prefix + "/xmlrpc_url", url)
@@ -145,7 +145,7 @@ class BloggerPrefs(gtk.Dialog):
             self.urlEntry.set_sensitive(gtk.TRUE)
             self.urlLabel.set_sensitive(gtk.TRUE)
 
-        if (protocol != None):
+        if protocol != None:
             self.blogProtocolMenu.set_sensitive(gtk.FALSE)
             self.blogProtocolLabel.set_sensitive(gtk.FALSE)
             print 'Setting: ' + gconf_prefix + '/blog_protocol' + ' to ' + protocol
@@ -154,7 +154,7 @@ class BloggerPrefs(gtk.Dialog):
             self.blogProtocolMenu.set_sensitive(gtk.TRUE)
             self.blogProtocolLabel.set_sensitive(gtk.TRUE)
 
-        if (url_description):
+        if url_description:
             self.urlLabel.set_text(url_description)
 
         client.set_string(gconf_prefix + "/url_ending", url_ending)

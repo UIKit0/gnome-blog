@@ -17,7 +17,7 @@ class AlignedWindow(gtk.Window):
 
         # Get the dimensions/position of the widgetToAlignWith
         self.widgetToAlignWith.realize()
-        (entryX, entryY) = self.widgetToAlignWith.window.get_origin()
+	entryX, entryY = self.widgetToAlignWith.window.get_origin()
         entryWidth  = (self.widgetToAlignWith.window.get_geometry())[2]
         entryHeight = (self.widgetToAlignWith.window.get_geometry())[3]
 

@@ -7,11 +7,12 @@ from gettext import gettext as _
 from gnomeblog import hig_alert
 from gnomeblog import rich_entry
 from gnomeblog import blog
+from gnomeblog import blogger_prefs
 
 gconf_prefix = None
 
 class BlogPoster(gtk.Frame):
-    def __init__(self, prefs_key="/apps/gnome-blog", extra_button=None, on_entry_posted=None):
+    def __init__(self, prefs_key="/apps/gnome-blog",on_entry_posted=None):
         gtk.Frame.__init__(self)
         self.set_shadow_type(gtk.SHADOW_OUT)
 
@@ -47,16 +48,13 @@ class BlogPoster(gtk.Frame):
         italicToggle = self.blogEntry.createStyleToggle([("style", pango.STYLE_ITALIC)], gtk.STOCK_ITALIC, "em")        
         linkButton   = rich_entry.InsertHyperlinkButton(self.blogEntry)
         
-        #link_tag = self.blogBuffer.create_tag("a")
-        #link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
-        #link_tag.set_property("foreground", "#0000FF")
-        #linkButton = InsertButton
+        self.prefs_button = gtk.Button(_("Preferences..."))
+        self.prefs_button.connect("clicked", self._onPrefsButtonClicked)
 
         buttonBox.pack_start(boldToggle, expand=gtk.FALSE)
         buttonBox.pack_start(italicToggle, expand=gtk.FALSE)        
         buttonBox.pack_start(linkButton, expand=gtk.FALSE)
-        if extra_button != None:
-            buttonBox.pack_start(extra_button, expand=gtk.FALSE)
+        buttonBox.pack_start(self.prefs_button, expand=gtk.FALSE)
             
         self.titleEntry = gtk.Entry()
 
@@ -106,7 +104,15 @@ class BlogPoster(gtk.Frame):
     def _clearBlogEntryText(self):
         self.blogEntry.clear()
         self.titleEntry.delete_text(0, -1)
-        
+
+    def _onPrefsButtonClicked(self, button):
+        self._showPrefDialog()
+
+    def _showPrefDialog(self):
+        prefs_dialog = blogger_prefs.BloggerPrefs(gconf_prefix)
+        prefs_dialog.show()
+        prefs_dialog.run()
+        prefs_dialog.hide()
 
     def _postIsReasonable(self, text):
         # Popup a dialogue confirming even if its deemed
@@ -116,3 +122,8 @@ class BlogPoster(gtk.Frame):
             return gtk.FALSE
         else:
             return gtk.TRUE
+
+class BlogPosterSimple(BlogPoster):
+    def __init__(self, prefs_key="/apps/gnome-blog", on_entry_posted=None):    
+        BlogPoster.__init__(self,prefs_key,on_entry_posted)
+        self.prefs_button.hide_all();

@@ -1,5 +1,20 @@
 2003-11-07  Bryan W Clark  <clarkbw@cvs.gnome.org>
 
+	* rich_entry.py: added ellipsis to Add Link button > HIG compiance
+
+	* gnome-blog-poster: 
+	Ripped out the pref button from here and moved it to BlogPoster
+	class.
+
+	* blog_applet.py: 
+	Uses the BlogPosterSimple class to clear out the pref button,
+	tried to reuse as much of the poster class stuff as possible in
+	this file.
+
+	* blog_poster.py (BlogPoster.__init__): 
+	Created a BlogPosterSimple class that hides the pref button, which
+	has now been moved into the BlogPoster class 
+
 	* blog_applet.py: missed a string for translation
 
 2003-11-03  Bryan W Clark  <clarkbw@clarkson.edu>

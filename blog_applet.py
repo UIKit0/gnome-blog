@@ -47,14 +47,15 @@ class BloggerApplet(gnome.applet.Applet):
         self.poster_window.set_modal(gtk.TRUE)
         self.prefs_key = self.get_preferences_key()
         print "Applet prefs located at %s" % (self.prefs_key)
-        self.poster = blog_poster.BlogPoster(prefs_key=self.prefs_key, on_entry_posted=self._onEntryPosted)
+        self.poster = blog_poster.BlogPosterSimple(prefs_key=self.prefs_key, on_entry_posted=self._onEntryPosted)
         self.poster_window.add(self.poster)
         self.poster.show()
 
         client = gconf.client_get_default()
         value = client.get_bool(self.prefs_key + "/initialized")
         if value == None or value == gtk.FALSE:
-            self._showPrefDialog()
+            self.poster._showPrefDialog()
+#            self._showPrefDialog()
             client.set_bool(self.prefs_key + "/initialized", gtk.TRUE)
 
         self._createToolTip(client)

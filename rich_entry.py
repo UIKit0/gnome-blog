@@ -187,7 +187,7 @@ class RichEntry(gtk.TextView):
 
 class InsertHyperlinkButton(gtk.Button):
     def __init__(self, rich_entry):
-        gtk.Button.__init__(self, _("Add _Link"))
+        gtk.Button.__init__(self, _("Add _Link..."))
         self.rich_entry = rich_entry
         self.connect("clicked", self._onClicked)
 

@@ -10,7 +10,7 @@
 
 	* blog_applet.py, blog_poster.py, blogger_prefs.py
 	hig_alert.py: prettify imports
-	
+	snorp	
 2003-09-14  Christian Neumair  <chris@gnome-de.org>
 
 	* configure.in:

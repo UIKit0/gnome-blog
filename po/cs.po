@@ -1,14 +1,15 @@
 # Czech translation of gnome-blog.
-# Copyright (C) 2003 gnome-blog'S COPYRIGHT HOLDER
+# Copyright (C) 2003, 2004 gnome-blog'S COPYRIGHT HOLDER
+# Copyright (C) 2004 Miloslav Trmac <mitr@volny.cz>
 # This file is distributed under the same license as the gnome-blog package.
-# Miloslav Trmac <mitr@volny.cz>, 2003.
+# Miloslav Trmac <mitr@volny.cz>, 2003, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-11-18 03:48+0100\n"
-"PO-Revision-Date: 2003-11-18 13:23+0100\n"
+"POT-Creation-Date: 2004-01-12 04:24+0100\n"
+"PO-Revision-Date: 2004-01-12 10:03+0100\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -44,35 +45,29 @@ msgid "Password to use in accessing the blog"
 msgstr "Heslo, které používat pro přístup k blogu"
 
 #: gnomeblog.schemas.in.h:2
-msgid "Post blog entries to Blogger.com"
-msgstr "Odeslat položky blogu na Blogger.com"
-
-#: gnomeblog.schemas.in.h:3
 msgid "Protocol to use in accessing the blog"
 msgstr "Protokol, který používat pro přístup k blogu"
 
-#: gnomeblog.schemas.in.h:4
+#: gnomeblog.schemas.in.h:3
 msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
 msgstr "Přípona, kterou připojit k základnímu URL (např. \"xmlrpc.cgi\")"
 
-#: gnomeblog.schemas.in.h:5
+#: gnomeblog.schemas.in.h:4
 msgid "The application's preferences have been initialized"
 msgstr "Byla inicializována nastavení aplikace"
 
-#: gnomeblog.schemas.in.h:6
+#: gnomeblog.schemas.in.h:5
 msgid "The id or name of the particular blog to use on the XML-RPC server"
 msgstr "Id nebo vnázev blogy, který používat na serveru XML-RPC"
 
-#: gnomeblog.schemas.in.h:7
+#: gnomeblog.schemas.in.h:6
 msgid "URL to the bloggerAPI compatible XML-RPC server"
 msgstr "URL k serveru XML-RPC kompatibilnímu s bloggerAPI"
 
-#: gnomeblog.schemas.in.h:8
+#: gnomeblog.schemas.in.h:7
 msgid "Username to use in accessing the blog"
 msgstr "Jméno uživatele, které používat pro přístup k blogu"
 
-#. !/usr/bin/env python
-#. maybe someone can do this trick without string?
 #: blog_applet.py:31
 msgid "About"
 msgstr "O aplikaci"
@@ -81,20 +76,15 @@ msgstr "O aplikaci"
 msgid "Blog"
 msgstr "Blog"
 
-#. self._showPrefDialog()
 #: blog_applet.py:67
 msgid "A GNOME Web Blogging Applet"
 msgstr "GNOME aplet pro blogování na WWW"
 
-#. take the XML_RPC value from GConf
-#. split the URL up into http:, '', domainname, extra
-#. join back up the URL into http://domainname
 #: blog_applet.py:102
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Vytvořit položku blogu pro %s na %s"
 
-#. Set tooltip to the applet button
 #: blog_poster.py:32
 msgid "_Post Entry"
 msgstr "_Vystavit položku"
@@ -115,11 +105,6 @@ msgstr "Nemohu vystavit obrázky"
 msgid "The blog protocol in use does not support uploading images"
 msgstr "Používaný protokol blogu nepodporuje vystavení obrázků"
 
-#. Don't post silly blog entries like blank ones
-#. Only delete the entry if posting was successful
-#. Call back our parent informing them the entry was posted
-#. Popup a dialogue confirming even if its deemed
-#. unreasonable
 #: blog_poster.py:121
 msgid "Blog Entry is Blank"
 msgstr "Položka blogu je prázdná"
@@ -136,141 +121,120 @@ msgstr ""
 msgid "Blogger Preferences"
 msgstr "Nastavení blogování"
 
-#: blogger_prefs.py:37
+#: blogger_prefs.py:38
 msgid "Self-Run MovableType"
 msgstr "Vlastní MovableType"
 
-#: blogger_prefs.py:38
+#: blogger_prefs.py:39
 msgid "Self-Run Pyblosxom"
 msgstr "Vlastní Pyblosxom"
 
-#: blogger_prefs.py:39
+#: blogger_prefs.py:40
 msgid "Self-Run Other"
 msgstr "Jiné vlastní"
 
-#: blogger_prefs.py:43
+#: blogger_prefs.py:44
 msgid "Blog Type:"
 msgstr "Typ blogu:"
 
-#: blogger_prefs.py:52
+#: blogger_prefs.py:54
 msgid "Blog Protocol:"
 msgstr "Protokol blogu:"
 
-#: blogger_prefs.py:56
+#: blogger_prefs.py:58
 msgid "Blog Base URL:"
 msgstr "Základní URL blogu:"
 
-#: blogger_prefs.py:58
+#: blogger_prefs.py:60
 msgid "Blog Name:"
 msgstr "Název blogu:"
 
-#: blogger_prefs.py:60
+#: blogger_prefs.py:62
 msgid "Lookup Blogs"
 msgstr "Vyhledat blogy"
 
-#: blogger_prefs.py:70
+#: blogger_prefs.py:72
 msgid "Username:"
 msgstr "Jméno uživatele:"
 
-#: blogger_prefs.py:71
+#: blogger_prefs.py:73
 msgid "Password:"
 msgstr "Heslo:"
 
-#: blogger_prefs.py:113 blogger_prefs.py:128 blogger_prefs.py:133
+#: blogger_prefs.py:115 blogger_prefs.py:130 blogger_prefs.py:135
+#: blogger_prefs.py:141
 msgid "XML-RPC URL:"
 msgstr "URL XML-RPC:"
 
-#: blogger_prefs.py:118 blogger_prefs.py:123
+#: blogger_prefs.py:120 blogger_prefs.py:125
 msgid "Base Blog URL:"
 msgstr "Základní URL blogu:"
 
-#: blogger_prefs.py:127
+#: blogger_prefs.py:129
 msgid "bloggerAPI"
 msgstr "bloggerAPI"
 
-#. FIXME: popup an error dialog
-#: hig_alert.py:7
+#: hig_alert.py:13
+#, python-format
+msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
+msgstr "URL '%s' možná není platné bloggerAPI. Server XML-RPC odpověděl: %s."
+
+#: hig_alert.py:15
 #, python-format
 msgid ""
-"URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: <span style="
-"\"italic\">%s</span>."
-msgstr ""
-"URL '%s' možná není platné bloggerAPI. Server XML-RPC odpověděl: <span style="
-"\"italic\">%s</span>."
+"Unknown username %s or password trying to post blog entry to XML-RPC server %"
+"s."
+msgstr "Neznámé jméno uživatele %s nebo heslo při pokusu vystavit položku blogu na XML-RPC server %s."
 
-#: hig_alert.py:9
-#, python-format
-msgid ""
-"Unknown username <span weight=\"bold\">%s</span> or password trying to post "
-"blog entry to XML-RPC server <span style=\"italic\">%s</span>."
-msgstr ""
-"Neznámé jméno uživatele <span weight=\"bold\">%s</span> nebo heslo při "
-"pokusu vystavit položku blogu na XML-RPC server <span style=\"italic\">%s</"
-"span>."
-
-#: hig_alert.py:11
+#: hig_alert.py:17
 #, python-format
 msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
-"reported: <span style=\"italic\">%s</span>."
-msgstr ""
-"Nemohu vystavit na blog '%s' na XML-RPC serveru bloggerAPI '%s'. Server "
-"odpověděl: <span style=\"italic\">%s</span>."
+"reported: %s."
+msgstr "Nemohu vystavit na blog '%s' na XML-RPC serveru bloggerAPI '%s'. Server odpověděl: %s."
 
-#: hig_alert.py:13
+#: hig_alert.py:19
 #, python-format
 msgid ""
-"The bloggerAPI server (%s) reported an error I don't understand: '%s, <span "
-"style=\"italic\">%s</span>'. \n"
+"The bloggerAPI server (%s) reported an error I don't understand: '%s, %s'. \n"
 "\n"
 "Please email this error message to seth@gnome.org so I can address it."
 msgstr ""
-"Server bloggerAPI (%s) ohlásil chybu, které nerozumím: '%s, <span style="
-"\"italic\">%s</span>'. \n"
+"Server bloggerAPI (%s) ohlásil chybu, které nerozumím: '%s, %s.\n"
 "\n"
-"Pošlete prosím o tomto hlášení chyby e-mail na seth@gnome.org, abych na to "
-"mohl reagovat."
+"Pošlete prosím o tomto hlášení chyby e-mail na seth@gnome.org, abych na to mohl reagovat."
 
-#. Hack for addHyperlink with old pygtk's
-#. GtkTextView already defines drag and drop targets, get them
-#. Unfortunately old_targets string field has a funny type
-#. that needs to be explicitly converted to string
-#. Add the DND type that we support and set the new list of types
-#. this is an older version of pygtk that doesn't
-#. have a way to create anonymous tags, hack around it
-#. 398 means text/uri-list
-#: rich_entry.py:136 rich_entry.py:145
+#: rich_entry.py:135 rich_entry.py:143
 msgid "Could not load dragged in image"
 msgstr "Nemohu načíst přetažený obrázek"
 
-#: rich_entry.py:137 rich_entry.py:146
+#: rich_entry.py:136 rich_entry.py:144
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "Chyba při načítání %s byla: %s"
 
-#. Create a new image tag
-#. Insert the pixbuf, and then set the new image
-#. tag around it so that we can generate its HTML later
-#. Found Hyperlink, activating
-#: rich_entry.py:196
+#: rich_entry.py:194
 msgid "Add _Link..."
 msgstr "Přidat _odkaz..."
 
-#: rich_entry.py:201
+#: rich_entry.py:199
 msgid "Add Link"
 msgstr "Přidat odkaz"
 
-#: rich_entry.py:202
+#: rich_entry.py:200
 msgid "_Add Link"
 msgstr "_Přidat odkaz"
 
-#: rich_entry.py:210
+#: rich_entry.py:208
 msgid "Text:"
 msgstr "Text:"
 
-#: rich_entry.py:213
+#: rich_entry.py:211
 msgid "URL:"
 msgstr "URL:"
+
+#~ msgid "Post blog entries to Blogger.com"
+#~ msgstr "Odeslat položky blogu na Blogger.com"
 
 #~ msgid "Blogging Tool"
 #~ msgstr "Nástroj pro blogování"

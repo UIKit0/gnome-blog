@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-01-21 04:04+0100\n"
-"PO-Revision-Date: 2004-01-21 17:52+0100\n"
+"POT-Creation-Date: 2004-01-24 04:16+0100\n"
+"PO-Revision-Date: 2004-01-27 22:43+0100\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -160,7 +160,7 @@ msgstr "Byla inicializována nastavení aplikace"
 
 #: gnomeblog.schemas.in.h:5
 msgid "The id or name of the particular blog to use on the XML-RPC server"
-msgstr "Id nebo vnázev blogy, který používat na serveru XML-RPC"
+msgstr "Id nebo název blogu, který používat na serveru XML-RPC"
 
 #: gnomeblog.schemas.in.h:6
 msgid "URL to the bloggerAPI compatible XML-RPC server"
@@ -218,7 +218,8 @@ msgstr "Vaše jméno uživatele není platné. Zkontrolujte prosím nastavení."
 #: protocols/advogato.py:26 protocols/livejournal.py:30
 msgid ""
 "Your username or password is invalid. Please double-check the preferences."
-msgstr "Vaše jméno uživatele nebo heslo není platné. Zkontrolujte prosím nastavení."
+msgstr ""
+"Vaše jméno uživatele nebo heslo není platné. Zkontrolujte prosím nastavení."
 
 #: protocols/advogato.py:35 protocols/bloggerAPI.py:82
 #: protocols/livejournal.py:56
@@ -231,7 +232,9 @@ msgstr "Nemohu odeslat položku blogu"
 msgid ""
 "URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
 "reported: %s."
-msgstr "URL '%s' zřejmě není platný XML-RPC server bloggerAPI. WWW server odpověděl: %s."
+msgstr ""
+"URL '%s' zřejmě není platný XML-RPC server bloggerAPI. WWW server odpověděl: "
+"%s."
 
 #: protocols/bloggerAPI.py:33 protocols/bloggerAPI.py:36
 msgid "Could not get list of blogs"
@@ -241,14 +244,18 @@ msgstr "Nemohu získat seznam blogů"
 msgid ""
 "No XML-RPC server URL to post blog entries to is set, or the value could not "
 "be retrieved from GConf. Your entry will remain in the blogger window."
-msgstr "Není nastaveno URL serveru XML-RPC, kam odesílat položky blogu, nebo hodnotu nelze získat z GConf. Vaše položka zůstane v okně blogování."
+msgstr ""
+"Není nastaveno URL serveru XML-RPC, kam odesílat položky blogu, nebo hodnotu "
+"nelze získat z GConf. Vaše položka zůstane v okně blogování."
 
 #: protocols/livejournal.py:59
 #, python-format
 msgid ""
 "URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
 "reported: %s."
-msgstr "URL '%s' zřejmě není platný XML-RPC server LiveJournal. WWW server odpověděl: %s."
+msgstr ""
+"URL '%s' zřejmě není platný XML-RPC server LiveJournal. WWW server "
+"odpověděl: %s."
 
 #: rich_entry.py:135 rich_entry.py:143
 msgid "Could not load dragged in image"

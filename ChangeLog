@@ -1,3 +1,9 @@
+2003-10-23  Seth Nickell  <seth@gnome.org>
+
+	* protocols/MetaWeblog.py:
+
+	Add skeleton for uploading images to MetaWeblog
+
 2003-10-22  Seth Nickell  <seth@gnome.org>
 
 	* blogger_prefs.py:

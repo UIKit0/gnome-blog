@@ -1,4 +1,5 @@
 import xmlrpclib
+import base64
 
 import gtk
 import gconf
@@ -6,14 +7,12 @@ import gconf
 from gnomeblog import hig_alert
 from gnomeblog import bloggerAPI
 
-appkey = "6BF507937414229AEB450AB075001667C8BC8338"
-
 class Blog(bloggerAPI.Blog):
     def __init__(self):
         bloggerAPI.Blog.__init__(self)
 
-    def postEntry (self, username, password, base_url, title, entry, client, gconf_prefix):
-        global appkey
+    def postEntry (self, username, password, base_url, title,
+                   entry, client, gconf_prefix):
 
         url = self._getURL(base_url, client, gconf_prefix)
 
@@ -42,4 +41,29 @@ class Blog(bloggerAPI.Blog):
 
         return success
 
+    def uploadImage (self, username, password, base_url,
+                     file_name, file_contents, mime_type, gconf_prefix):
+
+        url = self._getURL(base_url, client, gconf_prefix)
+
+        blog_id  = client.get_string(gconf_prefix + "/blog_id")
+
+        success = gtk.TRUE
+        
+        server = xmlrpclib.Server(url)
+
+        content = {}
+        content['name'] = filename
+        content['type'] = mime_type
+        content['bits'] = base64.encodestring(file_contents)
+
+        try:
+            server.metaWeblog.newMediaObject(blog_id, username, password, content)
+        except xmlrpclib.Fault, e:
+            hig_alert.handleBloggerAPIFault(e, "Could not post Image", username, blog_id, url)
+            success = gtk.FALSE
+        except xmlrpclib.ProtocolError, e:
+            hig_alert.reportError("Could not post Blog entry", 'URL \'%s\' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: <span style=\"italic\">%s</span>.' % (url, e.errmsg))
+            success = gtk.FALSE
+            
 blog = Blog()

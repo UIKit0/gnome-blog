@@ -62,28 +62,38 @@ class BlogPoster(gtk.Frame):
  
     def _postEntry (self, username, password, blog_id, url, text):
         if (url == None):
-            self.reportError("Could not post Blog entry", "No XML-RPC server URL to post blog entries to is set, or the value could not be retrieved from GConf. Your entry will remain in the blogger window.")
+            hig_alert.reportError("Could not post Blog entry", "No XML-RPC server URL to post blog entries to is set, or the value could not be retrieved from GConf. Your entry will remain in the blogger window.")
             return gtk.FALSE
 
         success = gtk.TRUE
-        
+
+        print ("Getting server...")
+
         server = xmlrpclib.Server(url)
 
         try:
+            print ("Doing post")
             server.blogger.newPost(appkey, blog_id, username, password,
-                                   text, 1)
+                                   text, xmlrpclib.True)
         except xmlrpclib.Fault, e:
             primary = "Could not post Blog entry"
+            print ("Error: %s" % e)
             if (e == 'Method Error'):
-                self.reportError(primary, 'URL \'%s\' may not be a valid bloggerAPI. XML-RPC Server reported: <span style=\"italic\">%s</span>. Your entry will remain in the blogger window.' % (url, e.faultString))
+                hig_alert.reportError(primary, 'URL \'%s\' may not be a valid bloggerAPI. XML-RPC Server reported: <span style=\"italic\">%s</span>. Your entry will remain in the blogger window.' % (url, e.faultString))
             elif (e == 'PasswordError'):
-                self.reportError(primary, 'Invalid username (%s) or password trying to post blog entry to XML-RPC server \'%s\'. Your entry will remain in the blogger window.' % (username, url))
+                hig_alert.reportError(primary, 'Invalid username (%s) or password trying to post blog entry to XML-RPC server \'%s\'. Your entry will remain in the blogger window.' % (username, url))
             elif (e == 'PostError'):
-                self.reportError(primary, 'Could not post to blog \'%s\' at bloggerAPI XML-RPC server \'%s\'. Server reported: <span style=\"italic\">%s</span>. Your entry will remain in the blogger window.' % (blog_id, url, e.faultString))
+                hig_alert.reportError(primary, 'Could not post to blog \'%s\' at bloggerAPI XML-RPC server \'%s\'. Server reported: <span style=\"italic\">%s</span>. Your entry will remain in the blogger window.' % (blog_id, url, e.faultString))
+            else:
+                hig_alert.reportError(primary, 'The bloggerAPI server returned the error: \'%s\'. Please send this error message to seth@gnome.org so I can address it.' % (e.faultString))
             success = gtk.FALSE
         except xmlrpclib.ProtocolError, e:
-            self.reportError("Could not post Blog entry", 'URL \'%s\' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: <span style=\"italic\">%s</span>. Your entry will remain in the blogger window.' % (url, e.errmsg))
+            print ("here")
+            hig_alert.reportError("Could not post Blog entry", 'URL \'%s\' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: <span style=\"italic\">%s</span>. Your entry will remain in the blogger window.' % (url, e.errmsg))
             success = gtk.FALSE
+
+        print ("Success is....")
+        print (success)
 
         return success
 
@@ -145,6 +155,8 @@ class BlogPoster(gtk.Frame):
         blog_id  = client.get_string(gconf_prefix + "blog_id")
         url      = client.get_string(gconf_prefix + "xmlrpc_url")
 
+        print ("Text %s" % html_text)
+
         successful_post = self._postEntry(username, password, blog_id, url, html_text)
 
         if (successful_post):
@@ -152,17 +164,11 @@ class BlogPoster(gtk.Frame):
             self.blogBuffer.delete(self.blogBuffer.get_start_iter(),
                                    self.blogBuffer.get_end_iter())
 
-    def reportError(self, primaryText, secondaryText):
-        alert = hig_alert.HIGAlert(primaryText, secondaryText,
-                                   buttons = (gtk.STOCK_OK, gtk.RESPONSE_ACCEPT))
-        alert.run()
-        alert.hide()
-
     def postIsReasonable(self, text):
         # Popup a dialogue confirming even if its deemed
         # unreasonable
         if (text == None or text == ""):
-            self.reportError("Blog Entry is Blank", "No text was entered in the blog entry box. Please enter some text and try again")
+            hig_alert.reportError("Blog Entry is Blank", "No text was entered in the blog entry box. Please enter some text and try again")
             return gtk.FALSE
         else:
             return gtk.TRUE

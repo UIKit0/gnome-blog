@@ -4,6 +4,16 @@
     <!-- General preferences -->        
 
     <schema>
+      <key>/schemas/apps/gnome-blogger/use_blogger_dot_com</key>
+      <applyto>/apps/gnome-blogger/use_blogger_dot_com</applyto>
+      <owner>gnome-blogger</owner>
+      <type>bool</type>
+      <locale name="C">
+         <short>Post blog entries to Blogger.com</short>
+      </locale>
+    </schema>
+
+    <schema>
       <key>/schemas/apps/gnome-blogger/blog_username</key>
       <applyto>/apps/gnome-blogger/blog_username</applyto>
       <owner>gnome-blogger</owner>

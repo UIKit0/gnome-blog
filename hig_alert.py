@@ -3,6 +3,12 @@ pygtk.require('2.0')
 
 import gtk
 
+def reportError(primaryText, secondaryText):
+    alert = hig_alert.HIGAlert(primaryText, secondaryText,
+                               buttons = (gtk.STOCK_OK, gtk.RESPONSE_ACCEPT))
+    alert.run()
+    alert.hide()
+
 class HIGAlert(gtk.Dialog):
     def __init__(self, primaryText, secondaryText, parent=None, flags=0, buttons=None):
         gtk.Dialog.__init__(self, primaryText, parent, flags, buttons)

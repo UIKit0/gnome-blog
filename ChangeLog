@@ -1,3 +1,16 @@
+2003-08-31  Seth Nickell  <snickell@stanford.edu>
+
+	* Makefile.am:
+	* blog_poster.py:
+	* blogger_applet.py:
+	* blogger_prefs.py:
+	* gconf_widgets.py:
+	* gnomeblogger.schemas.in:
+	* hig_alert.py:
+
+	Add support for getting a list of Blogs at the address so
+	people don't have to know the ID.
+	
 2003-08-29  Seth Nickell  <snickell@stanford.edu>
 
 	* blog_poster.py:

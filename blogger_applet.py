@@ -23,8 +23,9 @@ class BloggerApplet(gnome.applet.Applet):
 
         button_box = gtk.HBox()
         button_box.pack_start(gtk.Label("Blog"))
-        button_box.pack_start(gtk.Arrow(gtk.ARROW_DOWN, gtk.SHADOW_IN))
-        
+        self.arrow = gtk.Arrow(gtk.ARROW_DOWN, gtk.SHADOW_IN)
+        button_box.pack_start(self.arrow)
+
         self.toggle.add(button_box)
         
         self.add(self.toggle)

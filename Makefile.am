@@ -8,7 +8,8 @@ python_PYTHON = 		\
 	aligned_window.py 	\
 	hig_alert.py 		\
 	style_toggle.py		\
-	blogger_prefs.py
+	blogger_prefs.py	\
+	gconf_widgets.py
 
 pixmapsdir = $(datadir)/pixmaps
 pixmaps_DATA = gnome-blogger.png

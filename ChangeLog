@@ -1,5 +1,11 @@
 2003-09-02  Seth Nickell  <snickell@stanford.edu>
 
+	* blogger_prefs.py:
+
+	Get James' password box back.
+
+2003-09-02  Seth Nickell  <snickell@stanford.edu>
+
 	* Makefile.am:
 	* blog.py:
 	* blog_poster.py:

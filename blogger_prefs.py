@@ -72,7 +72,7 @@ class BloggerPrefs(gtk.Dialog):
         table.attach(self.blogProtocolMenu, 1, 3, 0, 1)
         table.attach(self.urlEntry, 1, 3, 1, 2)
         table.attach(gconf_widgets.Entry(gconf_prefix + "/blog_username"), 1, 3, 2, 3)
-        table.attach(gconf_widgets.Entry(gconf_prefix + "/blog_password"), 1, 3, 3, 4)
+        table.attach(gconf_widgets.Entry(gconf_prefix + "/blog_password", gtk.TRUE), 1, 3, 3, 4)
         table.attach(self.blogMenu, 1, 2, 4, 5)
         table.attach(lookupButton, 2, 3, 4, 5, xoptions=gtk.FILL)
 

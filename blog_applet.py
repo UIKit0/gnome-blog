@@ -18,7 +18,7 @@ from gnomeblog import blogger_prefs
 from gnomeblog import gnome_blog_globals
 
 #FIXME: need to get this path from auto*
-gettext.bindtextdomain('gnome-blog', gnmoe_blog_globals.localedir)
+gettext.bindtextdomain('gnome-blog', gnome_blog_globals.localedir)
 gettext.textdomain('gnome-blog')
 
 class BloggerApplet(gnome.applet.Applet):

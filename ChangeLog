@@ -1,6 +1,12 @@
 2003-09-05  Seth Nickell  <snickell@stanford.edu>
 
 	* blog_applet.py:
+
+	Fix dumb typo.
+
+2003-09-05  Seth Nickell  <snickell@stanford.edu>
+
+	* blog_applet.py:
 	* blog_poster.py:
 	* blogger_prefs.py:
 	* gnome_blog_globals.py.in:

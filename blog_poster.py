@@ -5,14 +5,16 @@ import gtk
 import gconf
 import xmlrpclib
 
+import hig_alert
+
 gconf_prefix = "/apps/gnome-blogger/"
-appkey = "gnome-blogger"
+appkey = "6BF507937414229AEB450AB075001667C8BC8338"
 
 class BlogPoster(gtk.Frame):
     def __init__(self):
         gtk.Frame.__init__(self)
         self.set_shadow_type(gtk.SHADOW_OUT)
-        
+
         box = gtk.VBox()
 
         self.blogBuffer  = gtk.TextBuffer()
@@ -52,22 +54,46 @@ class BlogPoster(gtk.Frame):
         username = client.get_string(gconf_prefix + "blog_username")
         password = client.get_string(gconf_prefix + "blog_password")
         blog_id  = client.get_string(gconf_prefix + "blog_id")
-        url      = client.get_string(gconf_prefix + "xml_rpc_url")
+        url      = client.get_string(gconf_prefix + "xmlrpc_url")
 
+        if (url == None):
+            self.reportError("Could not post Blog entry", "No XML-RPC server URL to post blog entries to is set, or the value could not be retrieved from GConf. Your entry will remain in the blogger window.")
+            return
+        
         server = xmlrpclib.Server(url)
-        #FIXME: handle exceptions
-        server.blogger.newPost(appkey, blog_id, username, password,
-                               entryText, 1)
 
-        self.blogBuffer.delete(self.blogBuffer.get_start_iter(),
-                               self.blogBuffer.get_end_iter())
+        try:
+            server.blogger.newPost(appkey, blog_id, username, password,
+                                   entryText, 1)
+        except xmlrpclib.Fault, e:
+            primary = "Could not post Blog entry"
+            if (e == 'Method Error'):
+                self.reportError(primary, 'URL \'%s\' may not be a valid bloggerAPI. XML-RPC Server reported: <span style=\"italic\">%s</span>. Your entry will remain in the blogger window.' % (url, e.faultString))
+            elif (e == 'PasswordError'):
+                self.reportError(primary, 'Invalid username (%s) or password trying to post blog entry to XML-RPC server \'%s\'. Your entry will remain in the blogger window.' % (username, url))
+            elif (e == 'PostError'):
+                self.reportError(primary, 'Could not post to blog \'%s\' at bloggerAPI XML-RPC server \'%s\'. Server reported: <span style=\"italic\">%s</span>. Your entry will remain in the blogger window.' % (blog_id, url, e.faultString))
+        except xmlrpclib.ProtocolError, e:
+            self.reportError("Could not post Blog entry", 'URL \'%s\' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: <span style=\"italic\">%s</span>. Your entry will remain in the blogger window.' % (url, e.errmsg))
+        else:
+            # Only delete the entry if posting was successful
+            self.blogBuffer.delete(self.blogBuffer.get_start_iter(),
+                                   self.blogBuffer.get_end_iter())
+
+            
         
         print ("Posting blog:\n%s" % (entryText))
+
+    def reportError(self, primaryText, secondaryText):
+        alert = hig_alert.HIGAlert(primaryText, secondaryText,
+                                   buttons = (gtk.STOCK_OK, gtk.RESPONSE_ACCEPT))
+        alert.run()
+        alert.hide()
 
     def postIsReasonable(self, text):
         # Popup a dialogue confirming even if its deemed
         # unreasonable
-        if (text == ""):
-            return false
+        if (text == None or text == ""):
+            return gtk.FALSE
         else:
-            return true
+            return gtk.TRUE

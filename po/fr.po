@@ -1,0 +1,227 @@
+# French translation of gnome-blog.
+# Copyright (C) 2003 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-blog package.
+# Baptiste MILLE-MATHIAS <bmm80@ifrance.com>, 2003.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-blog 0.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-09-19 12:12+0200\n"
+"PO-Revision-Date: 2003-09-19 12:08+0200\n"
+"Last-Translator: Baptiste MILLE-MATHIAS <bmm80@ifrance.com>\n"
+"Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: GNOME_BlogApplet.server.in.h:1
+msgid "Accessories"
+msgstr "Accessoires"
+
+#: GNOME_BlogApplet.server.in.h:2 gnome-blog.desktop.in.h:1
+msgid "Blog Entry Poster"
+msgstr "Posteur de l'entrée du blog"
+
+#: GNOME_BlogApplet.server.in.h:3
+msgid "Post entries to a web log"
+msgstr "Poster une entrée à un web log"
+
+#: GNOME_BlogApplet.xml.h:1
+msgid "_About..."
+msgstr "À _propos..."
+
+#: GNOME_BlogApplet.xml.h:2
+msgid "_Preferences..."
+msgstr "_Préférences..."
+
+#: gnome-blog.desktop.in.h:2
+msgid "Post an entry to a web log"
+msgstr "Postez une entrée dans un web log"
+
+#: gnomeblog.schemas.in.h:1
+msgid "Password to use in accessing the blog"
+msgstr "Mot de passe permettant l'accès au blog"
+
+#: gnomeblog.schemas.in.h:2
+msgid "Post blog entries to Blogger.com"
+msgstr "Poster les entrées blog à Blogger.com"
+
+#: gnomeblog.schemas.in.h:3
+msgid "Protocol to use in accessing the blog"
+msgstr "Protocole à utiliser pour accèder au blog"
+
+#: gnomeblog.schemas.in.h:4
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr "Suffixe à ajouter à l'url de base (ex : \"xmlrpc.cgi\")"
+
+#: gnomeblog.schemas.in.h:5
+msgid "The application's preferences have been initialized"
+msgstr "Les préférences de l'application ont été initialisées"
+
+#: gnomeblog.schemas.in.h:6
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr ""
+"L'identifiant ou le nomdu blog particulier à utiliser sur le serveur XML-RPC"
+
+#: gnomeblog.schemas.in.h:7
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr "URL du serveur compatible XML-RPC BloggerAPI"
+
+#: gnomeblog.schemas.in.h:8
+msgid "Username to use in accessing the blog"
+msgstr "Nom d'utilisateur permettant l'accès au blog"
+
+#. !/usr/bin/env python
+#: blog_applet.py:29
+msgid "About"
+msgstr "À propos"
+
+#: blog_applet.py:32
+msgid "Blog"
+msgstr "Blog"
+
+#: blog_applet.py:61
+msgid "A GNOME Web Blogging Applet"
+msgstr "Une applet GNOME pour blogguer"
+
+#: blog_poster.py:31
+msgid "_Post Entry"
+msgstr "_Poster l'entrée"
+
+#. link_tag = self.blogBuffer.create_tag("a")
+#. link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
+#. link_tag.set_property("foreground", "#0000FF")
+#. linkButton = InsertButton
+#: blog_poster.py:65
+msgid "Title:"
+msgstr "Titre :"
+
+#. Don't post silly blog entries like blank ones
+#. Only delete the entry if posting was successful
+#. Call back our parent informing them the entry was posted
+#. Popup a dialogue confirming even if its deemed
+#. unreasonable
+#: blog_poster.py:106
+msgid "Blog Entry is Blank"
+msgstr "L'entrée du blog est vide"
+
+#: blogger_prefs.py:19
+msgid "Blogger Preferences"
+msgstr "Préférences du blogger"
+
+#: blogger_prefs.py:37
+msgid "Self-Run MovableType"
+msgstr ""
+
+#: blogger_prefs.py:38
+msgid "Self-Run Pybloxsom"
+msgstr ""
+
+#: blogger_prefs.py:39
+msgid "Self-Run Other"
+msgstr ""
+
+#: blogger_prefs.py:43
+msgid "Blog Type:"
+msgstr "Type de blog :"
+
+#: blogger_prefs.py:52
+msgid "Blog Protocol:"
+msgstr "Protocole de blog :"
+
+#: blogger_prefs.py:56
+msgid "Blog Base URL:"
+msgstr "URL de base du blog :"
+
+#: blogger_prefs.py:58
+msgid "Blog Name:"
+msgstr "Nom du blog :"
+
+#: blogger_prefs.py:60
+msgid "Lookup Blogs"
+msgstr ""
+
+#: blogger_prefs.py:70
+msgid "Username:"
+msgstr "Nom d'utilisateur :"
+
+#: blogger_prefs.py:71
+msgid "Password:"
+msgstr "Mot de passe :"
+
+#: blogger_prefs.py:113 blogger_prefs.py:128 blogger_prefs.py:133
+msgid "XML-RPC URL:"
+msgstr "URL XLM-RPC :"
+
+#: blogger_prefs.py:118 blogger_prefs.py:123
+msgid "Base Blog URL:"
+msgstr "URL de base du blog :"
+
+#: blogger_prefs.py:127
+msgid "bloggerAPI"
+msgstr "bloggerAPI"
+
+#. FIXME: popup an error dialog
+#: hig_alert.py:7
+#, python-format
+msgid ""
+"URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: <span style="
+"\"italic\">%s</span>."
+msgstr ""
+"L'URL « %s » semble ne pas être une bloggerAPI valide. Le serveur XML-RPC a "
+"rapporté : <span style=\"italic\">%s</span>."
+
+#: hig_alert.py:9
+#, python-format
+msgid ""
+"Unknown username <span weight=\"bold\">%s</span> or password trying to post "
+"blog entry to XML-RPC server <span style=\"italic\">%s</span>."
+msgstr ""
+
+#: hig_alert.py:11
+#, python-format
+msgid ""
+"Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
+"reported: <span style=\"italic\">%s</span>."
+msgstr ""
+"Impossible de poster dans le blog « %s » sur le serveur bloggerAPI XML-RPC. "
+"Le serveur a rapporté : <span·style=\"italic\">%s</span>."
+
+#: hig_alert.py:13
+#, python-format
+msgid ""
+"The bloggerAPI server (%s) reported an error I don't understand: '%s, <span "
+"style=\"italic\">%s</span>'. \n"
+"\n"
+"Please email this error message to seth@gnome.org so I can address it."
+msgstr ""
+"Le serveur bloggerAPI (%s) a rapporté une erreur que je ne comprends pas : "
+"« %s, <span style=\"italic\">%s</span> ». \n"
+"\n"
+"Veuillez envoyer par mail ce message d'erreur à seth@gnome.org ainsi je "
+"pourrais lui adresser."
+
+#. Hack for addHyperlink with old pygtk's
+#. this is an older version of pygtk that doesn't
+#. have a way to create anonymous tags, hack around it
+#. Found Hyperlink, activating
+#: rich_entry.py:88
+msgid "Add _Link"
+msgstr "Ajouter un _lien"
+
+#: rich_entry.py:93
+msgid "Add Link"
+msgstr "Ajouter un lien"
+
+#: rich_entry.py:94
+msgid "_Add Link"
+msgstr "A_jouter un lien"
+
+#: rich_entry.py:101
+msgid "Text:"
+msgstr "Texte :"
+
+#: rich_entry.py:104
+msgid "URL:"
+msgstr "URL :"

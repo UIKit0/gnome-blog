@@ -17,8 +17,8 @@ PKG_CHECK_MODULES(PYGTK, pygtk-2.0)
 AC_SUBST(PYGTK_CFLAGS)
 AC_SUBST(PYGTK_LIBS)
 
-ALL_LINGUAS="de es ja nl pl pt sr sr@Latn sv it pt_BR"
-                                                                                
+ALL_LINGUAS="de es fr ja nl pl pt sr sr@Latn sv it pt_BR"
+
 GETTEXT_PACKAGE=gnome-blog
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [The gettext package])

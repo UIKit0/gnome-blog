@@ -1,6 +1,3 @@
-import pygtk
-pygtk.require('2.0')
-
 import gtk
 
 def handleBloggerAPIFault(e, primary, username, blog_id, url):
@@ -42,14 +39,14 @@ class HIGAlert(gtk.Dialog):
         
         vbox = gtk.VBox()
 
-        primaryLabel = gtk.Label()
+        primaryLabel = gtk.Label("")
         primaryLabel.set_use_markup(gtk.TRUE)
         primaryLabel.set_markup('<span weight="bold" size="larger">%s</span>\n' % (primaryText))
         primaryLabel.set_line_wrap(gtk.TRUE)
         primaryLabel.set_alignment(0.0, 0.0)
         primaryLabel.set_selectable(gtk.TRUE)
         
-        secondaryLabel = gtk.Label()
+        secondaryLabel = gtk.Label("")
         secondaryLabel.set_use_markup(gtk.TRUE)
         secondaryLabel.set_markup(secondaryText)
         secondaryLabel.set_line_wrap(gtk.TRUE)

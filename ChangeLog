@@ -1,5 +1,19 @@
 2003-09-01  Seth Nickell  <snickell@stanford.edu>
 
+	* GNOME_BlogApplet.server.in:
+	* aligned_window.py:
+	* blog_applet.py:
+	* blog_poster.py:
+	* blogger_prefs.py:
+	* gconf_widgets.py:
+	* hig_alert.py:
+	* style_toggle.py:
+
+	Remove dependency on CVS gnome-python so that it'll
+	work on (at least) RH9.
+	
+2003-09-01  Seth Nickell  <snickell@stanford.edu>
+
 	* gnome-blog.spec.in:
 
 	Make it so we can build RPMS.

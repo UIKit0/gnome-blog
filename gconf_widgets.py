@@ -1,6 +1,3 @@
-import pygtk
-pygtk.require('2.0')
-
 import gtk
 import gconf
 
@@ -50,7 +47,7 @@ class OptionMenu(gtk.OptionMenu):
             self.client.set_string(self.gconf_key, self.values[0])
             
     def _onGConfChange (self, client, cnxn_id, entry, what):
-        gconf_value = entry.value.to_string()
+        gconf_value = entry.value.get_string()
         self._setMenuFromValue(gconf_value)
 
     def _onChanged(self, optionmenu):
@@ -61,7 +58,7 @@ class OptionMenu(gtk.OptionMenu):
 
 class Entry(gtk.Entry):
     def _onGConfChange (self, client, cnxn_id, entry, what):
-        self.set_text(entry.value.to_string())
+        self.set_text(entry.value.get_string())
 
     def _onEntryChange (self, entry):
         text = entry.get_text()

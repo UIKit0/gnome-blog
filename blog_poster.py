@@ -1,6 +1,3 @@
-import pygtk
-pygtk.require('2.0')
-
 import gtk
 import pango
 import gconf
@@ -18,10 +15,13 @@ class BlogPoster(gtk.Frame):
         gtk.Frame.__init__(self)
         self.set_shadow_type(gtk.SHADOW_OUT)
 
+        global gconf_prefix
+
         if (prefs_key != None):
-            global gconf_prefix
             gconf_prefix = prefs_key
-        
+
+        print ("Using gconf_prefix %s" % (gconf_prefix))
+            
         box = gtk.VBox()
         box.set_border_width(6)
         box.set_spacing(6)
@@ -47,10 +47,12 @@ class BlogPoster(gtk.Frame):
         buttonBox.set_spacing(6)
         buttonBox.pack_end(self.postButtonAlignment)
 
-        bold_tag = self.blogBuffer.create_tag("bold", weight=pango.WEIGHT_BOLD)
+        bold_tag = self.blogBuffer.create_tag("bold")
+        bold_tag.set_property("weight", pango.WEIGHT_BOLD)
         boldToggle = style_toggle.StyleToggle(gtk.STOCK_BOLD, bold_tag, "strong", self.blogEntry)
         
-        italic_tag = self.blogBuffer.create_tag("italic", style=pango.STYLE_ITALIC)
+        italic_tag = self.blogBuffer.create_tag("italic")
+        italic_tag.set_property("style", pango.STYLE_ITALIC)
         italicToggle = style_toggle.StyleToggle(gtk.STOCK_ITALIC, italic_tag, "em", self.blogEntry)
         
         buttonBox.pack_start(boldToggle, expand=gtk.FALSE)
@@ -127,7 +129,7 @@ class BlogPoster(gtk.Frame):
             if (not tagFound):
                 iter = buffer.get_end_iter()
 
-            new_text = buffer.get_text(last_iter, iter)
+            new_text = buffer.get_text(last_iter, iter, gtk.TRUE)
             html = html + new_text
 
         # Get a list of lines in HTML so we can add <p> tags
@@ -150,11 +152,13 @@ class BlogPoster(gtk.Frame):
             return
 
         client = gconf.client_get_default()
+
+        print ("GConf_prefix is ", gconf_prefix)
         
-        username = client.get_string(gconf_prefix + "blog_username")
-        password = client.get_string(gconf_prefix + "blog_password")
-        blog_id  = client.get_string(gconf_prefix + "blog_id")
-        url      = client.get_string(gconf_prefix + "xmlrpc_url")
+        username = client.get_string(gconf_prefix + "/blog_username")
+        password = client.get_string(gconf_prefix + "/blog_password")
+        blog_id  = client.get_string(gconf_prefix + "/blog_id")
+        url      = client.get_string(gconf_prefix + "/xmlrpc_url")
 
         print ("Text %s" % html_text)
 

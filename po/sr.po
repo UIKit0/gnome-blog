@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-11-14 16:39+0100\n"
-"PO-Revision-Date: 2003-11-14 16:40+0100\n"
+"POT-Creation-Date: 2003-11-17 22:55+0100\n"
+"PO-Revision-Date: 2003-11-17 23:01+0100\n"
 "Last-Translator: Данило Шеган <danilo@prevod.org>\n"
 "Language-Team: Serbian (sr) <serbiangnome-lista@nongnu.org>\n"
 "MIME-Version: 1.0\n"
@@ -234,44 +234,44 @@ msgstr ""
 "Молим пошаљите е-поштом ову поруку о грешци на seth@gnome.org како би могао "
 "да је обрадим."
 
+#. Hack for addHyperlink with old pygtk's
 #. GtkTextView already defines drag and drop targets, get them
 #. Unfortunately old_targets string field has a funny type
 #. that needs to be explicitly converted to string
 #. Add the DND type that we support and set the new list of types
-#. Hack for addHyperlink with old pygtk's
 #. this is an older version of pygtk that doesn't
 #. have a way to create anonymous tags, hack around it
 #. 398 means text/uri-list
-#: rich_entry.py:131 rich_entry.py:139
+#: rich_entry.py:136 rich_entry.py:145
 msgid "Could not load dragged in image"
 msgstr "Не могу да учитам превучену слику"
 
-#: rich_entry.py:132 rich_entry.py:140
+#: rich_entry.py:137 rich_entry.py:146
 #, python-format
-msgid "Error loading <span style='italic'>%s</span> was: %s"
-msgstr "Грешка при учитавању <span style='italic'>%s</span> је била: %s"
+msgid "Error loading %s was: %s"
+msgstr "Грешка при учитавању %s је била: %s"
 
 #. Create a new image tag
 #. Insert the pixbuf, and then set the new image
 #. tag around it so that we can generate its HTML later
 #. Found Hyperlink, activating
-#: rich_entry.py:190
+#: rich_entry.py:196
 msgid "Add _Link..."
 msgstr "Додај _везу..."
 
-#: rich_entry.py:195
+#: rich_entry.py:201
 msgid "Add Link"
 msgstr "Додај везу"
 
-#: rich_entry.py:196
+#: rich_entry.py:202
 msgid "_Add Link"
 msgstr "Додај _везу"
 
-#: rich_entry.py:203
+#: rich_entry.py:210
 msgid "Text:"
 msgstr "Текст:"
 
-#: rich_entry.py:206
+#: rich_entry.py:213
 msgid "URL:"
 msgstr "Адреса:"
 

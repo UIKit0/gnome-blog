@@ -1,0 +1,170 @@
+# Catalan translation of gnome-blog.
+# Copyright © 2003 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-blog package.
+# Aleix Badia i Bosch <abadia@ica.es>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-blog\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-09-09 04:14+0200\n"
+"PO-Revision-Date: 2003-10-29 20:14+0100\n"
+"Last-Translator: Aleix Badia i Bosch <abadia@ica.es>\n"
+"Language-Team: Catalan <tradgnome@softcatala.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
+
+#: GNOME_BlogApplet.server.in.h:1
+msgid "Blogging Tool"
+msgstr "Eina de bitàcola"
+
+#: GNOME_BlogApplet.server.in.h:2
+msgid "Blogging tool"
+msgstr "Eina de bitàcola"
+
+#: GNOME_BlogApplet.xml.h:1
+msgid "_About..."
+msgstr "_Quant a..."
+
+#: GNOME_BlogApplet.xml.h:2
+msgid "_Preferences..."
+msgstr "_Preferències..."
+
+#: gnomeblog.schemas.in.h:1
+msgid "Password to use in accessing the blog"
+msgstr "Contrasenya per accedir a la bitàcola"
+
+#: gnomeblog.schemas.in.h:2
+msgid "Post blog entries to Blogger.com"
+msgstr "Enviar entrades de la bitàcola a Blogger.com"
+
+#: gnomeblog.schemas.in.h:3
+msgid "Protocol to use in accessing the blog"
+msgstr "Protocol per accedir a la bitàcola"
+
+#: gnomeblog.schemas.in.h:4
+msgid "The application's preferences have been initialized"
+msgstr "S'han inicialitzat les prefèrencies de l'aplicació"
+
+#: gnomeblog.schemas.in.h:5
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr "L'identificador o nom de la bitàcola particular a utilitzar al servidor de XML-RPC"
+
+#: gnomeblog.schemas.in.h:6
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr "URL del servidor de XML-RPC compatible amb l'API de bitàcola"
+
+#: gnomeblog.schemas.in.h:7
+msgid "Username to use in accessing the blog"
+msgstr "Nom d'usuari per accedir a la bitàcola"
+
+#. !/usr/bin/env python
+#. FIXME: need to get this path from auto*
+#: blog_applet.py:31
+msgid "About"
+msgstr "Quant a"
+
+#: blog_applet.py:34
+msgid "Blog"
+msgstr "Bitàcola"
+
+#: blog_applet.py:63
+msgid "A GNOME Web Blogging Applet"
+msgstr "Miniaplicació de bitàcola web de GNOME"
+
+#: blog_poster.py:32
+msgid "_Post Entry"
+msgstr "_Envia una entrada"
+
+#. link_tag = self.blogBuffer.create_tag("a")
+#. link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
+#. link_tag.set_property("foreground", "#0000FF")
+#. linkButton = InsertButton
+#: blog_poster.py:64
+msgid "Title:"
+msgstr "Títol:"
+
+#. Don't post silly blog entries like blank ones
+#. Only delete the entry if posting was successful
+#. Popup a dialogue confirming even if its deemed
+#. unreasonable
+#: blog_poster.py:102
+msgid "Blog Entry is Blank"
+msgstr "L'entrada de la bitàcola està buida"
+
+#: blogger_prefs.py:20
+msgid "Blogger Preferences"
+msgstr "Preferències de la bitàcola"
+
+#: blogger_prefs.py:39
+msgid "Self-Run MovableType"
+msgstr "MovableType auto-executable"
+
+#: blogger_prefs.py:40
+msgid "Self-Run Pybloxsom"
+msgstr "Pybloxsom auto-executable"
+
+#: blogger_prefs.py:41
+msgid "Self-Run Other"
+msgstr "Altres auto-executables"
+
+#: blogger_prefs.py:58
+msgid "Blog Base URL:"
+msgstr "URL principal de la bitàcola:"
+
+#: blogger_prefs.py:60
+msgid "Blog Name:"
+msgstr "Nom de la bitàcola:"
+
+#: blogger_prefs.py:62
+msgid "Lookup Blogs"
+msgstr "Cerca les bitàcoles"
+
+#: blogger_prefs.py:114 blogger_prefs.py:126 blogger_prefs.py:130
+msgid "XML-RPC URL:"
+msgstr "URL de XML-RPC:"
+
+#: blogger_prefs.py:118 blogger_prefs.py:122
+msgid "Base Blog URL:"
+msgstr "URL de la bitàcola principal:"
+
+#: blogger_prefs.py:125
+msgid "bloggerAPI"
+msgstr "API de bitàcola"
+
+#. FIXME: popup an error dialog
+#: hig_alert.py:8
+#, python-format
+msgid ""
+"URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: <span style="
+"\"italic\">%s</span>."
+msgstr "L'URL \"%s\" no és, probablement, una API de bitàcola vàlida. El servidor de XML-RPC informa: <span style=\"italic\">%s</span>."
+
+#: hig_alert.py:10
+#, python-format
+msgid ""
+"Unknown username <span weight=\"bold\">%s</span> or password trying to post "
+"blog entry to XML-RPC server <span style=\"italic\">%s</span>."
+msgstr "El nom d'usuari <span weight=\"bold\">%s</span> o contrasenya desconeguts està intentant enviar una entrada de bitàcola al servidor de XML-RPC <span style=\"italic\">%s</span>."
+
+#: hig_alert.py:12
+#, python-format
+msgid ""
+"Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
+"reported: <span style=\"italic\">%s</span>."
+msgstr "No s'ha pogut enviar a la bitàcola \"%s\" a l'API de bitàcola del servidor de XML-RPC \"%s\". Els servidor ha retornat la següent informació: <span style=\"italic\">%s</span>."
+
+#: hig_alert.py:14
+#, python-format
+msgid ""
+"The bloggerAPI server (%s) reported an error I don't understand: '%s, <span "
+"style=\"italic\">%s</span>'. \n"
+"\n"
+"Please email this error message to seth@gnome.org so I can address it."
+msgstr ""
+"L'API del servidor de bitàcola (%s) informa d'un error desconegut: \"%s, <span style=\"italic\">%s</span>\". \n"
+"\n"
+"Envieu un correu electrònic amb el missatge d'error a seth@gnome.org per poder-lo solucionar, si us plau."
+

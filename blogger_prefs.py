@@ -64,7 +64,7 @@ class BloggerPrefs(gtk.Dialog):
         self.urlEntry.set_width_chars(45)
         table.attach(self.urlEntry, 1, 3, 0, 1)
         table.attach(gconf_widgets.Entry(gconf_prefix + "/blog_username"), 1, 3, 1, 2)
-        table.attach(gconf_widgets.Entry(gconf_prefix + "/blog_password"), 1, 3, 2, 3)
+        table.attach(gconf_widgets.Entry(gconf_prefix + "/blog_password", 1), 1, 3, 2, 3)
 ##        table.attach(gconf_widgets.Entry(gconf_prefix + "/blog_id"), 1, 2, 3, 4)
 
         self.blogMenu = gconf_widgets.OptionMenu(gconf_prefix + "/blog_id")

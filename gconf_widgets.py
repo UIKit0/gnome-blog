@@ -64,8 +64,12 @@ class Entry(gtk.Entry):
         text = entry.get_text()
         self.client.set_string(self.gconf_key, text)
         
-    def __init__(self, gconf_key):
+    def __init__(self, gconf_key, is_password=0):
         gtk.Entry.__init__(self)
+
+        if is_password:
+            self.set_visibility(gtk.FALSE)
+            self.set_invisible_char(u"*")
 
         self.gconf_key = gconf_key
 

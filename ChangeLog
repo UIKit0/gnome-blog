@@ -1,3 +1,10 @@
+2003-09-02  James Willcox  <jwillcox@gnome.org>
+
+	* blogger_prefs.py:
+	* gconf_widgets.py:
+
+	Make the password entry show asterisks instead of the actual password
+
 2003-09-02  Seth Nickell  <snickell@stanford.edu>
 
 	* blog_poster.py:

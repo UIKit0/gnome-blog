@@ -9,14 +9,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
-"POT-Creation-Date: 2003-09-05 00:04-0700\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-09-08 00:07+0200\n"
 "PO-Revision-Date: 2003-09-02 HO:MI+ZONE\n"
 "Last-Translator: Arkadiusz Lipiec <alipiec@elka.pw.edu.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 
 #: GNOME_BlogApplet.server.in.h:1
 msgid "Blogging Tool"
@@ -43,9 +43,8 @@ msgid "Post blog entries to Blogger.com"
 msgstr "Umieszczanie wpisów bloga na Blogger.com"
 
 #: gnomeblog.schemas.in.h:3
-#, fuzzy
 msgid "Protocol to use in accessing the blog"
-msgstr "Hasło dostępu do bloga"
+msgstr "Protokół dostępu do bloga"
 
 #: gnomeblog.schemas.in.h:4
 msgid "The application's preferences have been initialized"
@@ -67,13 +66,12 @@ msgstr "Nazwa użytkownika bloga"
 #. !/usr/bin/env python
 #. FIXME: need to get this path from auto*
 #: blog_applet.py:31
-#, fuzzy
 msgid "About"
-msgstr "_Informacje o..."
+msgstr "Informacje o programie"
 
 #: blog_applet.py:34
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
 #: blog_applet.py:63
 msgid "A GNOME Web Blogging Applet"
@@ -89,7 +87,7 @@ msgstr ""
 #. linkButton = InsertButton
 #: blog_poster.py:64
 msgid "Title:"
-msgstr ""
+msgstr "Tytuł:"
 
 #. Don't post silly blog entries like blank ones
 #. Only delete the entry if posting was successful
@@ -122,7 +120,7 @@ msgstr ""
 
 #: blogger_prefs.py:60
 msgid "Blog Name:"
-msgstr ""
+msgstr "Nazwa bloga:"
 
 #: blogger_prefs.py:62
 msgid "Lookup Blogs"

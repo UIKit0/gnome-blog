@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-09-15 19:57+0200\n"
-"PO-Revision-Date: 2003-09-16 02:44+0200\n"
+"POT-Creation-Date: 2004-01-01 20:23+0100\n"
+"PO-Revision-Date: 2004-01-01 20:27+0100\n"
 "Last-Translator: Francisco Javier F. Serrador <serrador@arrakis.es>\n"
 "Language-Team: Spanish <traductores@es.gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -64,7 +64,8 @@ msgstr "Las preferencias de la aplicación han sido inicializadas"
 
 #: gnomeblog.schemas.in.h:6
 msgid "The id or name of the particular blog to use on the XML-RPC server"
-msgstr "El ID o el nombre de un blog en particular a utilizar en el servidor XML-RPC"
+msgstr ""
+"El ID o el nombre de un blog en particular a utilizar en el servidor XML-RPC"
 
 #: gnomeblog.schemas.in.h:7
 msgid "URL to the bloggerAPI compatible XML-RPC server"
@@ -75,7 +76,7 @@ msgid "Username to use in accessing the blog"
 msgstr "Usuario a utilizar al acceder al blog"
 
 #. !/usr/bin/env python
-#. FIXME: need to get this path from auto*
+#. maybe someone can do this trick without string?
 #: blog_applet.py:31
 msgid "About"
 msgstr "Acerca de"
@@ -84,89 +85,113 @@ msgstr "Acerca de"
 msgid "Blog"
 msgstr "Blog"
 
-#: blog_applet.py:63
+#. self._showPrefDialog()
+#: blog_applet.py:67
 msgid "A GNOME Web Blogging Applet"
 msgstr "Un aplique de Web Blogging de GNOME"
 
+#. take the XML_RPC value from GConf
+#. split the URL up into http:, '', domainname, extra
+#. join back up the URL into http://domainname
+#: blog_applet.py:102
+#, python-format
+msgid "Create a blog entry for %s at %s"
+msgstr "Crear una entrada blog para %s en %s"
+
+#. Set tooltip to the applet button
 #: blog_poster.py:32
 msgid "_Post Entry"
 msgstr "_Publicar entrada"
 
-#. link_tag = self.blogBuffer.create_tag("a")
-#. link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
-#. link_tag.set_property("foreground", "#0000FF")
-#. linkButton = InsertButton
-#: blog_poster.py:66
+#: blog_poster.py:51
+msgid "Preferences..."
+msgstr "Preferencias..."
+
+#: blog_poster.py:63
 msgid "Title:"
 msgstr "Título:"
+
+#: blog_poster.py:85
+msgid "Couldn't upload images"
+msgstr "No se pudieron subir las imágenes"
+
+#: blog_poster.py:85
+msgid "The blog protocol in use does not support uploading images"
+msgstr "El protocolo blog en uso no soporta subir imágenes"
 
 #. Don't post silly blog entries like blank ones
 #. Only delete the entry if posting was successful
 #. Call back our parent informing them the entry was posted
 #. Popup a dialogue confirming even if its deemed
 #. unreasonable
-#: blog_poster.py:107
+#: blog_poster.py:121
 msgid "Blog Entry is Blank"
 msgstr "La entrada de blog esta vacía"
 
-#: blogger_prefs.py:20
+#: blog_poster.py:121
+msgid ""
+"No text was entered in the blog entry box. Please enter some text and try "
+"again"
+msgstr "No se introdujo texto en la caja de entrada del blog. Introduzca algo de texto e intente de nuevo"
+
+#: blogger_prefs.py:19
 msgid "Blogger Preferences"
 msgstr "Preferencias de Blogger"
 
-#: blogger_prefs.py:38
+#: blogger_prefs.py:37
 msgid "Self-Run MovableType"
 msgstr "Ejecutar automáticamente MovableType"
 
-#: blogger_prefs.py:39
-msgid "Self-Run Pybloxsom"
+#: blogger_prefs.py:38
+msgid "Self-Run Pyblosxom"
 msgstr "Ejecutar automáticamente Pybloxsom"
 
-#: blogger_prefs.py:40
+#: blogger_prefs.py:39
 msgid "Self-Run Other"
 msgstr "Ejecutar automáticamente otro"
 
-#: blogger_prefs.py:44
+#: blogger_prefs.py:43
 msgid "Blog Type:"
 msgstr "Tipo de Blog:"
 
-#: blogger_prefs.py:53
+#: blogger_prefs.py:52
 msgid "Blog Protocol:"
 msgstr "Protocolo del Blog:"
 
-#: blogger_prefs.py:57
+#: blogger_prefs.py:56
 msgid "Blog Base URL:"
 msgstr "URL base del blog:"
 
-#: blogger_prefs.py:59
+#: blogger_prefs.py:58
 msgid "Blog Name:"
 msgstr "Nombre del blog:"
 
-#: blogger_prefs.py:61
+#: blogger_prefs.py:60
 msgid "Lookup Blogs"
 msgstr "Buscar blogs"
 
-#: blogger_prefs.py:71
+#: blogger_prefs.py:70
 msgid "Username:"
 msgstr "Nombre de usuario:"
 
-#: blogger_prefs.py:72
+#: blogger_prefs.py:71
 msgid "Password:"
 msgstr "Contraseña:"
 
-#: blogger_prefs.py:114 blogger_prefs.py:129 blogger_prefs.py:134
+#: blogger_prefs.py:113 blogger_prefs.py:128 blogger_prefs.py:133
 msgid "XML-RPC URL:"
 msgstr "URL de XML-RPC:"
 
-#: blogger_prefs.py:119 blogger_prefs.py:124
+#: blogger_prefs.py:118 blogger_prefs.py:123
 msgid "Base Blog URL:"
 msgstr "URL base de blog:"
 
-#: blogger_prefs.py:128
+#: blogger_prefs.py:127
 msgid "bloggerAPI"
 msgstr "API de blogger"
 
 #. FIXME: popup an error dialog
-#: hig_alert.py:8
+#: hig_alert.py:7
 #, python-format
 msgid ""
 "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: <span style="
@@ -175,7 +200,7 @@ msgstr ""
 "La URL «%s» podría no ser una API válida de blogger. El servidor XML-RPC ha "
 "reportado: <span style=\"italic\">%s</span>."
 
-#: hig_alert.py:10
+#: hig_alert.py:9
 #, python-format
 msgid ""
 "Unknown username <span weight=\"bold\">%s</span> or password trying to post "
@@ -185,7 +210,7 @@ msgstr ""
 "al intentar publicar la entrada de blog en el servidor XML-RPC <span style="
 "\"italic\">%s</span>."
 
-#: hig_alert.py:12
+#: hig_alert.py:11
 #, python-format
 msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
@@ -194,7 +219,7 @@ msgstr ""
 "No se ha podido publicar en el blog «%s» en la API del servidor XML-RPC de "
 "blogger «%s». El servidor ha reportado: <span style=\"italic\">%s</span>."
 
-#: hig_alert.py:14
+#: hig_alert.py:13
 #, python-format
 msgid ""
 "The bloggerAPI server (%s) reported an error I don't understand: '%s, <span "
@@ -208,29 +233,45 @@ msgstr ""
 "solucionarlo."
 
 #. Hack for addHyperlink with old pygtk's
+#. GtkTextView already defines drag and drop targets, get them
+#. Unfortunately old_targets string field has a funny type
+#. that needs to be explicitly converted to string
+#. Add the DND type that we support and set the new list of types
 #. this is an older version of pygtk that doesn't
 #. have a way to create anonymous tags, hack around it
-#. Found Hyperlink, activating
-#: rich_entry.py:88
-msgid "Add _Link"
-msgstr "Añadir en_lace"
+#. 398 means text/uri-list
+#: rich_entry.py:136 rich_entry.py:145
+msgid "Could not load dragged in image"
+msgstr "No se pudo cargar la imagen arrastrada dentro"
 
-#: rich_entry.py:93
+#: rich_entry.py:137 rich_entry.py:146
+#, python-format
+msgid "Error loading %s was: %s"
+msgstr "El error al cargar %s fue: %s"
+
+#. Create a new image tag
+#. Insert the pixbuf, and then set the new image
+#. tag around it so that we can generate its HTML later
+#. Found Hyperlink, activating
+#: rich_entry.py:196
+msgid "Add _Link..."
+msgstr "Añadir en_lace..."
+
+#: rich_entry.py:201
 msgid "Add Link"
 msgstr "Añadir enlace"
 
-#: rich_entry.py:94
+#: rich_entry.py:202
 msgid "_Add Link"
 msgstr "_Añadir enlace"
 
-#: rich_entry.py:101
+#: rich_entry.py:210
 msgid "Text:"
 msgstr "Texto:"
 
-#: rich_entry.py:104
+#: rich_entry.py:213
 msgid "URL:"
 msgstr "URL:"
 
 #~ msgid "Blogging Tool"
 #~ msgstr "Herramienta de Blogging"
-

@@ -1,0 +1,11 @@
+Make StyleToggles (bold, italic, etc) work without having to select, so you can change the style at insertion.
+
+Support adding links
+
+Better feedback that a blog entry has been successfully posted.
+
+Better feedback that an entry is in the process of being posted.
+
+Allow images to be DNDd into the blog entry and then posted to the server
+
+Support more "standard websites" such as Advogato, LiveJournal, etc, and the APIs necessary to go with them.

@@ -4,14 +4,14 @@ pygtk.require('2.0')
 import gtk
 
 def handleBloggerAPIFault(e, primary, username, blog_id, url):
-    if (e == 'Method Error'):
+    if (e.faultCode == 'Method Error'):
         reportError(primary, 'URL \'%s\' may not be a valid bloggerAPI. XML-RPC Server reported: <span style=\"italic\">%s</span>.' % (url, e.faultString))
-    elif (e == 'PasswordError'):
-        reportError(primary, 'Invalid username (%s) or password trying to post blog entry to XML-RPC server \'%s\'.' % (username, url))
-    elif (e == 'PostError'):
+    elif (e.faultCode == 'PasswordError'):
+        reportError(primary, 'Unknown username <span weight="bold">%s</span> or password trying to post blog entry to XML-RPC server <span style="italic">%s</span>.' % (username, url))
+    elif (e.faultCode == 'PostError'):
         reportError(primary, 'Could not post to blog \'%s\' at bloggerAPI XML-RPC server \'%s\'. Server reported: <span style=\"italic\">%s</span>.' % (blog_id, url, e.faultString))
     else:
-        reportError(primary, 'The bloggerAPI server (%s) reported an error I don\'t understand: \'%s\'. \n\nPlease email this error message to seth@gnome.org so I can address it.' % (url, e.faultString))
+        reportError(primary, 'The bloggerAPI server (%s) reported an error I don\'t understand: \'%s, <span style="italic">%s</span>\'. \n\nPlease email this error message to seth@gnome.org so I can address it.' % (url, e.faultCode, e.faultString))
 
 def reportError(primaryText, secondaryText):
     alert = HIGAlert(primaryText, secondaryText,

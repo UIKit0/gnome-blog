@@ -1,5 +1,11 @@
 2003-08-31  Seth Nickell  <snickell@stanford.edu>
 
+	* hig_alert.py:
+
+	More rewording of alerts.
+
+2003-08-31  Seth Nickell  <snickell@stanford.edu>
+
 	* blog_poster.py:
 	* blogger_prefs.py:
 	* hig_alert.py:

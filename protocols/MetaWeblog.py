@@ -4,6 +4,9 @@ import base64
 import gtk
 import gconf
 
+import gettext
+_ = gettext.gettext
+
 from gnomeblog import hig_alert
 from gnomeblog import bloggerAPI
 
@@ -42,7 +45,7 @@ class Blog(bloggerAPI.Blog):
         return success
 
     def uploadImage (self, username, password, base_url,
-                     file_name, file_contents, mime_type, gconf_prefix):
+                     file_name, file_contents, mime_type, client, gconf_prefix):
 
         url = self._getURL(base_url, client, gconf_prefix)
 

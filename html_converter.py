@@ -28,8 +28,10 @@ def _getNextIter(iter):
     position = nextTagIter.compare(endLineIter)
 
     if tagFound and position == -1:
+        print ("Iter is for tag")
         next_iter = nextTagIter
     else:
+        print ("Iter is for endline")
         next_iter = endLineIter
 
     return next_iter

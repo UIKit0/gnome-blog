@@ -76,6 +76,15 @@ class BlogPoster(gtk.Frame):
         
     def _onPostButtonClicked(self, button):
         global gconf_prefix, appkey
+
+        images = self.blogEntry.getImages()
+
+        try:
+            for image in images:
+                image.uri = blog.uploadImage(image, gconf_prefix)
+                image.opening_tag = '<img src="%s"/>' % (image.uri)
+        except blog.FeatureNotSupported, e:
+            hig_alert.reportError(_("Couldn't upload images"), _("The blog protocol in use does not support uploading images"))
         
         html_text = self.blogEntry.getHTML()
         print "Text is: {\n %s \n }\n" % (html_text)
@@ -103,7 +112,7 @@ class BlogPoster(gtk.Frame):
         # Popup a dialogue confirming even if its deemed
         # unreasonable
         if not text:
-            hig_alert.reportError(_("Blog Entry is Blank", "No text was entered in the blog entry box. Please enter some text and try again"))
+            hig_alert.reportError(_("Blog Entry is Blank"), _("No text was entered in the blog entry box. Please enter some text and try again"))
             return gtk.FALSE
         else:
             return gtk.TRUE

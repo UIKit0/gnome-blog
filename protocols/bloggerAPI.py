@@ -3,6 +3,9 @@ import xmlrpclib
 import gtk
 import gconf
 
+import gettext
+_ = gettext.gettext
+
 from gnomeblog import hig_alert
 
 appkey = "6BF507937414229AEB450AB075001667C8BC8338"
@@ -27,10 +30,10 @@ class Blog:
         try:
             bloglist = server.blogger.getUsersBlogs(appkey, username, password)
         except xmlrpclib.Fault, e:
-            hig_alert.handleBloggerAPIFault(e, "Could not get list of blogs", username, None, url)
+            hig_alert.handleBloggerAPIFault(e, _("Could not get list of blogs"), username, None, url)
             return
         except xmlrpclib.ProtocolError, e:            
-            hig_alert.reportError("Could not get list of blogs", 'URL \'%s\' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: <span style=\"italic\">%s</span>.' % (url, e.errmsg))
+            hig_alert.reportError(_("Could not get list of blogs"), _('URL \'%s\' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: <span style=\"italic\">%s</span>.') % (url, e.errmsg))
             return
 
         if ((bloglist == None) or (len(bloglist) == 0)):
@@ -53,12 +56,20 @@ class Blog:
         url = self._getURL(base_url, client, gconf_prefix)
         
         if (base_url == None):
-            hig_alert.reportError("Could not post Blog entry", "No XML-RPC server URL to post blog entries to is set, or the value could not be retrieved from GConf. Your entry will remain in the blogger window.")
+            hig_alert.reportError(_("Could not post Blog entry"), _("No XML-RPC server URL to post blog entries to is set, or the value could not be retrieved from GConf. Your entry will remain in the blogger window."))
             return gtk.FALSE
 
         blog_id  = client.get_string(gconf_prefix + "/blog_id")
 
+        if (blog_id == None):
+            blog_id = ""
 
+        if (username == None):
+            username = ""
+
+        if (password == None):
+            password = ""
+            
         content = title + "\n" + entry
         success = gtk.TRUE
 
@@ -68,10 +79,10 @@ class Blog:
             server.blogger.newPost(appkey, blog_id, username, password,
                                    content, xmlrpclib.True)
         except xmlrpclib.Fault, e:
-            hig_alert.handleBloggerAPIFault(e, "Could not post blog entry", username, blog_id, url)
+            hig_alert.handleBloggerAPIFault(e, _("Could not post blog entry"), username, blog_id, url)
             success = gtk.FALSE
         except xmlrpclib.ProtocolError, e:
-            hig_alert.reportError("Could not post Blog entry", 'URL \'%s\' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: <span style=\"italic\">%s</span>.' % (url, e.errmsg))
+            hig_alert.reportError(_("Could not post Blog entry"), _('URL \'%s\' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: <span style=\"italic\">%s</span>.') % (url, e.errmsg))
             success = gtk.FALSE
 
         print ("Success is....")

@@ -1,5 +1,28 @@
 2003-10-23  Seth Nickell  <seth@gnome.org>
 
+	* blog.py:
+
+	Add support for the new uploadImage API
+	
+	* blog_poster.py:
+	* html_converter.py:
+	* rich_entry.py:
+
+	Go through and upload any images that have been dragged into
+	the rich text area.... At this point MetaWeblog should work
+	"in theory" though of course it won't actually since I haven't
+	tested it. Need to get a metaweblog API supporting blog working
+	for testing purposes anyway.
+	
+	* protocols/MetaWeblog.py:
+	* protocols/advogato.py:
+	* protocols/bloggerAPI.py:
+
+	Mark a bunch of strings for translation. Add 10x error
+	checking for Gman
+
+2003-10-23  Seth Nickell  <seth@gnome.org>
+
 	* protocols/MetaWeblog.py:
 
 	Add skeleton for uploading images to MetaWeblog

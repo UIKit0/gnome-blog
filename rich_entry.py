@@ -44,16 +44,23 @@ class RichEntry(gtk.TextView):
         # Hack for addHyperlink with old pygtk's
         self.linknum = 0
 
-    def addHyperlink(self, iter, text, uri, on_activate):
+        self.images = [ ]
+        
+
+    def _getUniqueTag(self):
         if (gtk.pygtk_version[0] < 2 and gtk.pygtk_version[1] < 100
             and gtk.pygtk_version[2] < 16):
             # this is an older version of pygtk that doesn't
             # have a way to create anonymous tags, hack around it
-            link_tag = self.buffer.create_tag("link%d" % (self.linknum))
+            link_tag = self.buffer.create_tag("unique%d" % (self.linknum))
             self.linknum = self.linknum + 1
             print "Old Pygtk, using hack to work around lack of anonymous tags"
         else:
             link_tag = self.buffer.create_tag()
+        return link_tag
+    
+    def addHyperlink(self, iter, text, uri, on_activate):
+        link_tag = self._getUniqueTag()
             
         link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
         link_tag.set_property("foreground", "#0000FF")
@@ -67,6 +74,9 @@ class RichEntry(gtk.TextView):
 
         self.buffer.insert_with_tags(iter, text, link_tag)
 
+    def getImages(self):
+        return self.images
+        
     def getHTML(self):
         return html_converter.getHTML(self.buffer)
 
@@ -83,7 +93,7 @@ class RichEntry(gtk.TextView):
     def _onDragDataReceived(self, widget, drag_context, window_x, window_y,
                             selection_data, info, timestamp):
         if (info == 398):
-            # 15 means text/uri-list
+            # 398 means text/uri-list
             assert(selection_data.format == 8)
             uri_list = selection_data.data
             uris = uri_list.split('\r\n')
@@ -100,21 +110,40 @@ class RichEntry(gtk.TextView):
                 loader = gtk.gdk.PixbufLoader()
 
                 try:
+                    file_info = gnome.vfs.get_file_info(uri, gnome.vfs.FILE_INFO_GET_MIME_TYPE)
                     file_contents = gnome.vfs.read_entire_file(uri)
                 except gnome.vfs.Error, e:
-                    hig_alert.reportError("Could not load dragged in image",
-                                          "Error loading <span style='italic'>%s</span> was: %s" % (uri, e))
+                    hig_alert.reportError(_("Could not load dragged in image"),
+                                          _("Error loading <span style='italic'>%s</span> was: %s") % (uri, e))
                 loader.write(file_contents)
                 try:
                     loader.close()
                     pixbuf = loader.get_pixbuf()                    
                 except gobject.GError, e:
                     pixbuf = None
-                    hig_alert.reportError("Could not load dragged in image",
-                                          "Error loading <span style='italic'>%s</span> was: %s" % (uri, e))
+                    hig_alert.reportError(_("Could not load dragged in image"),
+                                          _("Error loading <span style='italic'>%s</span> was: %s") % (uri, e))
                     
                 if (pixbuf):
+                    # Create a new image tag
+                    image_tag = self._getUniqueTag()
+                    image_tag.opening_tag = ""
+                    image_tag.closing_tag = ""
+                    image_tag.file_contents = file_contents
+                    paths = uri.split('/')
+                    image_tag.name = paths[len(paths) - 1]
+                    image_tag.mime_type = file_info.mime_type
+
+                    self.images.append(image_tag)
+                    
+                    # Insert the pixbuf, and then set the new image
+                    # tag around it so that we can generate its HTML later
+                    start_offset = dnd_iter.get_offset()
+
                     self.buffer.insert_pixbuf(dnd_iter, pixbuf)
+                    
+                    start = self.buffer.get_iter_at_offset(start_offset)
+                    self.buffer.apply_tag(image_tag, start, dnd_iter)
             
         else:
             print ("Some other sort of data received")

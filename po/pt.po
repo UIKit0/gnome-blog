@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: Duarte Loreto <happyguy_pt@hotmail.com>\n"
-"POT-Creation-Date: 2003-11-12 00:23+0000\n"
-"PO-Revision-Date: 2003-11-12 00:25+0000\n"
+"POT-Creation-Date: 2003-11-20 00:17+0000\n"
+"PO-Revision-Date: 2003-11-20 00:20+0000\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -90,12 +90,9 @@ msgstr "Uma Applet de Blogging Web GNOME"
 #. split the URL up into http:, '', domainname, extra
 #. join back up the URL into http://domainname
 #: blog_applet.py:102
-msgid "Create a blog entry for "
-msgstr "Criar uma entrada de blog para "
-
-#: blog_applet.py:104
-msgid " at "
-msgstr " em "
+#, python-format
+msgid "Create a blog entry for %s at %s"
+msgstr "Criar uma entrada de blog para %s em %s"
 
 #. Set tooltip to the applet button
 #: blog_poster.py:32
@@ -132,8 +129,8 @@ msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
 msgstr ""
-"Não foi introduzido texto na caixa de entrada de blog. Introduza algum "
-"texto e tente novamente"
+"Não foi introduzido texto na caixa de entrada de blog. Introduza algum texto "
+"e tente novamente"
 
 #: blogger_prefs.py:19
 msgid "Blogger Preferences"
@@ -144,8 +141,8 @@ msgid "Self-Run MovableType"
 msgstr "MovableType Gerido pelo Próprio"
 
 #: blogger_prefs.py:38
-msgid "Self-Run Pybloxsom"
-msgstr "Pybloxsom Gerido pelo Próprio"
+msgid "Self-Run Pyblosxom"
+msgstr "Pybloxsom Auto-Executado"
 
 #: blogger_prefs.py:39
 msgid "Self-Run Other"
@@ -233,46 +230,49 @@ msgstr ""
 "Por favor, envie esta mensagem de erro para seth@gnome.org para que possa "
 "ser analisada."
 
+#. Hack for addHyperlink with old pygtk's
 #. GtkTextView already defines drag and drop targets, get them
 #. Unfortunately old_targets string field has a funny type
 #. that needs to be explicitly converted to string
 #. Add the DND type that we support and set the new list of types
-#. Hack for addHyperlink with old pygtk's
 #. this is an older version of pygtk that doesn't
 #. have a way to create anonymous tags, hack around it
 #. 398 means text/uri-list
-#: rich_entry.py:131 rich_entry.py:139
+#: rich_entry.py:136 rich_entry.py:145
 msgid "Could not load dragged in image"
 msgstr "Incapaz de ler imagem arrastada"
 
-#: rich_entry.py:132 rich_entry.py:140
+#: rich_entry.py:137 rich_entry.py:146
 #, python-format
-msgid "Error loading <span style='italic'>%s</span> was: %s"
-msgstr "Erro ao ler <span style='italic'>%s</span> era: %s"
+msgid "Error loading %s was: %s"
+msgstr "Erro ao ler %s era: %s"
 
 #. Create a new image tag
 #. Insert the pixbuf, and then set the new image
 #. tag around it so that we can generate its HTML later
 #. Found Hyperlink, activating
-#: rich_entry.py:190
+#: rich_entry.py:196
 msgid "Add _Link..."
 msgstr "Adicionar _Link..."
 
-#: rich_entry.py:195
+#: rich_entry.py:201
 msgid "Add Link"
 msgstr "Adicionar Link"
 
-#: rich_entry.py:196
+#: rich_entry.py:202
 msgid "_Add Link"
 msgstr "_Adicionar Link"
 
-#: rich_entry.py:203
+#: rich_entry.py:210
 msgid "Text:"
 msgstr "Texto:"
 
-#: rich_entry.py:206
+#: rich_entry.py:213
 msgid "URL:"
 msgstr "URL:"
+
+#~ msgid " at "
+#~ msgstr " em "
 
 #~ msgid "Blogging Tool"
 #~ msgstr "Ferramenta de Blogging"

@@ -1,3 +1,8 @@
+2004-01-13  Tommi Komulainen  <tommi.komulainen@iki.fi>
+	
+	* blog_poster.py: Disable post button until there's an entry to post.
+	(#131377)
+
 2004-01-11    <clarkbw@cvs.gnome.org>
 
 	* TODO: updated the TODO

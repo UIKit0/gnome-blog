@@ -70,7 +70,20 @@ class BlogPoster(gtk.Frame):
         self.add(box)
         box.show_all()
 
+        self.titleEntry.connect('activate', lambda entry,box=box: box.child_focus(gtk.DIR_TAB_FORWARD))
 
+        self.titleEntry.connect('changed', self._checkEmptyPost)
+        self.blogEntry.buffer.connect('changed', self._checkEmptyPost)
+        self._checkEmptyPost()
+
+    def _checkEmptyPost(self, *args):
+        sensitive = 1
+        if not self.titleEntry.get_text().strip():
+            sensitive = 0
+        start,end = self.blogEntry.buffer.get_bounds()
+        if not start.get_visible_slice(end).strip():
+            sensitive = 0
+        self.postButton.set_sensitive(sensitive)
         
     def _onPostButtonClicked(self, button):
         global gconf_prefix, appkey

@@ -1,3 +1,7 @@
+2003-09-02  James Willcox  <jwillcox@gnome.org>
+
+	* aligned_window.py:  Show the window after moving it, not before
+
 2003-09-02  Danilo Šegan  <dsegan@gmx.net>
 
 	* configure.in: Added "sr" and "sr@Latn" to ALL_LINGUAS.

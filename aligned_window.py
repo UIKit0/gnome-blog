@@ -10,7 +10,6 @@ class AlignedWindow(gtk.Window):
 
     def positionWindow(self):
         # Get our own dimensions & position
-        self.show()
         self.realize()
         ourWidth  = (self.window.get_geometry())[2]
         ourHeight = (self.window.get_geometry())[3]
@@ -41,4 +40,5 @@ class AlignedWindow(gtk.Window):
         # -"Coordinates locked in captain."
         # -"Engage."
         self.move(newX, newY)
+        self.show()
 

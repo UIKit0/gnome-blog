@@ -1,4 +1,10 @@
+2005-01-12  John (J5) Palmieri  <johnp@redhat.com>
 
+	* gnome-blog-poster:
+
+	Rearange code so poster is initilized before it is used to
+	display the pref dialog.  This is why we need static typing.
+	To catch bugs like this.
 
 Release 0.8
 

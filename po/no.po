@@ -1,0 +1,296 @@
+# Norwegian translations for PACKAGE package.
+# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Kjartan Maraas <kmaraas@gnome.org>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-blog 0.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-01-25 17:00+0100\n"
+"PO-Revision-Date: 2004-01-25 17:03+0100\n"
+"Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
+"Language-Team: Norwegian <i18n-nb@lister.ping.uio.no>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: GNOME_BlogApplet.server.in.h:1
+msgid "Accessories"
+msgstr "Tilbehør"
+
+#. FIXME: popup an error dialog
+#: GNOME_BlogApplet.server.in.h:2 gnome-blog.desktop.in.h:1
+msgid "Blog Entry Poster"
+msgstr "Publisering av bloggoppføring"
+
+#: GNOME_BlogApplet.server.in.h:3
+msgid "Post entries to a web log"
+msgstr "Publiser oppføringer til en weblogg"
+
+#: GNOME_BlogApplet.xml.h:1
+msgid "_About..."
+msgstr "_Om..."
+
+#: GNOME_BlogApplet.xml.h:2
+msgid "_Preferences..."
+msgstr "_Brukervalg..."
+
+#. !/usr/bin/env python
+#. maybe someone can do this trick without string?
+#: blog_applet.py:31
+msgid "About"
+msgstr "Om"
+
+#: blog_applet.py:34
+msgid "Blog"
+msgstr "Blog"
+
+#. self._showPrefDialog()
+#: blog_applet.py:67
+msgid "A GNOME Web Blogging Applet"
+msgstr "Et webloggprogram for GNOME"
+
+#. take the XML_RPC value from GConf
+#. split the URL up into http:, '', domainname, extra
+#. join back up the URL into http://domainname
+#: blog_applet.py:102
+#, python-format
+msgid "Create a blog entry for %s at %s"
+msgstr "Lag en oppføring i weblog for %s på %s"
+
+#. Set tooltip to the applet button
+#: blog_poster.py:32
+msgid "_Post Entry"
+msgstr "_Publiser oppføring"
+
+#: blog_poster.py:51
+msgid "Preferences..."
+msgstr "Brukervalg..."
+
+#: blog_poster.py:63
+msgid "Title:"
+msgstr "Tittel:"
+
+#: blog_poster.py:98
+msgid "Couldn't upload images"
+msgstr "Kunne ikke laste opp bilder"
+
+#: blog_poster.py:98
+msgid "The blog protocol in use does not support uploading images"
+msgstr ""
+
+#. Don't post silly blog entries like blank ones
+#. Only delete the entry if posting was successful
+#. Call back our parent informing them the entry was posted
+#. Popup a dialogue confirming even if its deemed
+#. unreasonable
+#: blog_poster.py:134
+msgid "Blog Entry is Blank"
+msgstr ""
+
+#: blog_poster.py:134
+msgid ""
+"No text was entered in the blog entry box. Please enter some text and try "
+"again"
+msgstr ""
+
+#: blogger_prefs.py:19
+msgid "Blogger Preferences"
+msgstr "Brukervalg for blogger"
+
+#: blogger_prefs.py:38
+msgid "Self-Run MovableType"
+msgstr ""
+
+#: blogger_prefs.py:39
+msgid "Self-Run Pyblosxom"
+msgstr ""
+
+#: blogger_prefs.py:40
+msgid "Self-Run Other"
+msgstr ""
+
+#: blogger_prefs.py:44
+msgid "Blog Type:"
+msgstr ""
+
+#: blogger_prefs.py:54
+msgid "Blog Protocol:"
+msgstr ""
+
+#: blogger_prefs.py:58
+msgid "Blog Base URL:"
+msgstr ""
+
+#: blogger_prefs.py:60
+msgid "Blog Name:"
+msgstr ""
+
+#: blogger_prefs.py:62
+msgid "Lookup Blogs"
+msgstr ""
+
+#: blogger_prefs.py:72
+msgid "Username:"
+msgstr "Brukernavn:"
+
+#: blogger_prefs.py:73
+msgid "Password:"
+msgstr "Passord:"
+
+#: blogger_prefs.py:115 blogger_prefs.py:130 blogger_prefs.py:135
+#: blogger_prefs.py:141
+msgid "XML-RPC URL:"
+msgstr "XML-RPC URL:"
+
+#: blogger_prefs.py:120 blogger_prefs.py:125
+msgid "Base Blog URL:"
+msgstr ""
+
+#: gnome-blog.desktop.in.h:2
+msgid "Post an entry to a web log"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:1
+msgid "Password to use in accessing the blog"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:2
+msgid "Protocol to use in accessing the blog"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:3
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:4
+msgid "The application's preferences have been initialized"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:5
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:6
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:7
+msgid "Username to use in accessing the blog"
+msgstr ""
+
+#: hig_alert.py:13
+#, python-format
+msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
+msgstr ""
+
+#: hig_alert.py:15
+#, python-format
+msgid ""
+"Unknown username %s or password trying to post blog entry to XML-RPC server %"
+"s."
+msgstr ""
+
+#: hig_alert.py:17
+#, python-format
+msgid ""
+"Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
+"reported: %s."
+msgstr ""
+
+#: hig_alert.py:19
+#, python-format
+msgid ""
+"The bloggerAPI server (%s) reported an error I don't understand: '%s, %s'. \n"
+"\n"
+"Please email this error message to seth@gnome.org so I can address it."
+msgstr ""
+
+#. No blogs found!
+#: protocols/advogato.py:23 protocols/advogato.py:26 protocols/advogato.py:38
+#: protocols/bloggerAPI.py:59 protocols/bloggerAPI.py:85
+#: protocols/livejournal.py:30 protocols/livejournal.py:59
+msgid "Could not post Blog entry"
+msgstr ""
+
+#: protocols/advogato.py:23
+msgid "Your username is invalid. Please double-check the preferences."
+msgstr ""
+
+#: protocols/advogato.py:26 protocols/livejournal.py:30
+msgid ""
+"Your username or password is invalid. Please double-check the preferences."
+msgstr ""
+
+#: protocols/advogato.py:35 protocols/bloggerAPI.py:82
+#: protocols/livejournal.py:56
+msgid "Could not post blog entry"
+msgstr ""
+
+#: protocols/advogato.py:38 protocols/bloggerAPI.py:36
+#: protocols/bloggerAPI.py:85
+#, python-format
+msgid ""
+"URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
+"reported: %s."
+msgstr ""
+
+#: protocols/bloggerAPI.py:33 protocols/bloggerAPI.py:36
+msgid "Could not get list of blogs"
+msgstr ""
+
+#: protocols/bloggerAPI.py:59
+msgid ""
+"No XML-RPC server URL to post blog entries to is set, or the value could not "
+"be retrieved from GConf. Your entry will remain in the blogger window."
+msgstr ""
+
+#: protocols/livejournal.py:59
+#, python-format
+msgid ""
+"URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
+"reported: %s."
+msgstr ""
+
+#. Hack for addHyperlink with old pygtk's
+#. GtkTextView already defines drag and drop targets, get them
+#. Unfortunately old_targets string field has a funny type
+#. that needs to be explicitly converted to string
+#. Add the DND type that we support and set the new list of types
+#. this is an older version of pygtk that doesn't
+#. have a way to create anonymous tags, hack around it
+#. 398 means text/uri-list
+#: rich_entry.py:135 rich_entry.py:143
+msgid "Could not load dragged in image"
+msgstr ""
+
+#: rich_entry.py:136 rich_entry.py:144
+#, python-format
+msgid "Error loading %s was: %s"
+msgstr ""
+
+#. Create a new image tag
+#. Insert the pixbuf, and then set the new image
+#. tag around it so that we can generate its HTML later
+#. Found Hyperlink, activating
+#: rich_entry.py:194
+msgid "Add _Link..."
+msgstr "Legg til _lenke..."
+
+#: rich_entry.py:199
+msgid "Add Link"
+msgstr "Legg til lenke"
+
+#: rich_entry.py:200
+msgid "_Add Link"
+msgstr "L_egg til lenke"
+
+#: rich_entry.py:208
+msgid "Text:"
+msgstr "Tekst:"
+
+#: rich_entry.py:211
+msgid "URL:"
+msgstr "URL:"

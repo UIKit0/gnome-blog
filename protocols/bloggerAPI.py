@@ -10,9 +10,13 @@ appkey = "6BF507937414229AEB450AB075001667C8BC8338"
 class Blog:
     def __init__(self):
         pass
-    
-    def getBlogList(self, username, password, url, client, gconf_prefix):
 
+    def _getURL(self, base_url):
+        return base_url + "/xmlrpc.cgi"
+
+    def getBlogList(self, username, password, base_url, client, gconf_prefix):
+        url = self._getURL(base_url)
+        
         server = xmlrpclib.Server(url)
 
         try:
@@ -38,10 +42,12 @@ class Blog:
 
 
 
-    def postEntry (self, username, password, url, title, entry, client, gconf_prefix):
+    def postEntry (self, username, password, base_url, title, entry, client, gconf_prefix):
         global appkey
 
-        if (url == None):
+        url = self._getURL(base_url)
+
+        if (base_url == None):
             hig_alert.reportError("Could not post Blog entry", "No XML-RPC server URL to post blog entries to is set, or the value could not be retrieved from GConf. Your entry will remain in the blogger window.")
             return gtk.FALSE
 

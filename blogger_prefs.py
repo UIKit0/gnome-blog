@@ -48,11 +48,11 @@ class BloggerPrefs(gtk.Dialog):
         self.blogProtocolMenu.setStringValuePairs([("BloggerAPI", "bloggerAPI"),
                                                    ("Advogato", "advogato"),
                                                    ("MetaWeblog", "MetaWeblog")])
-        self.blogProtocolLabel = LeftLabel("Blog Protocol")
+        self.blogProtocolLabel = LeftLabel("Blog Protocol:")
         
         self.urlEntry = gconf_widgets.Entry(gconf_prefix + "/xmlrpc_url")
         self.urlEntry.set_width_chars(45)
-        self.urlLabel = LeftLabel("XML-RPC URL:")
+        self.urlLabel = LeftLabel("Blog Base URL:")
 
 	self.blogLabel = LeftLabel("Blog Name:")
         self.blogMenu = gconf_widgets.OptionMenu(gconf_prefix + "/blog_id")
@@ -108,18 +108,23 @@ class BloggerPrefs(gtk.Dialog):
         if (blog_type == "custom"):
             url = None
             protocol = None
+            url_description = "XML-RPC URL:"
         elif (blog_type == "custom-mt"):
             url = None
             protocol = "MetaWeblog"
+            url_description = "Base Blog URL:"
         elif (blog_type == "custom-pybloxsom"):
             url = None
             protocol = "bloggerAPI"
+            url_description = "Base Blog URL:"
         elif (blog_type == "blogger.com"):
             url = "http://plant.blogger.com/api/RPC2"
             protocol = "bloggerAPI"
+            url_description = "XML-RPC URL:"
         elif (blog_type == "advogato.org"):
             url = "http://www.advogato.org/XMLRPC"
             protocol = "advogato"
+            url_description = "XML-RPC URL:"
 	    lookup = gtk.FALSE
         else:
             # FIXME: popup an error dialog
@@ -141,6 +146,9 @@ class BloggerPrefs(gtk.Dialog):
         else:
             self.blogProtocolMenu.set_sensitive(gtk.TRUE)
             self.blogProtocolLabel.set_sensitive(gtk.TRUE)
+
+        if (url_description):
+            self.urlLabel.set_text(url_description)
 
 	self.lookupButton.set_sensitive(lookup)
         self.blogMenu.set_sensitive(lookup)

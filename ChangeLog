@@ -1,5 +1,18 @@
 2003-09-04  Seth Nickell  <snickell@stanford.edu>
 
+	* blogger_prefs.py:
+	* protocols/MetaWeblog.py:
+	* protocols/bloggerAPI.py:
+
+	Switch to using the blog's base URL rather than
+	requiring typing the whole XML-RPC cgi script
+	path (which nobody knew anyway). This'll break if
+	you don't follow the install instructions...but
+	you can still use the "Custom Blog" thing to hardcode
+	an XML-RPC URL, protocol, etc.
+	
+2003-09-04  Seth Nickell  <snickell@stanford.edu>
+
 	* configure.in:
 
 	Remove unnecessary statements (that were causing

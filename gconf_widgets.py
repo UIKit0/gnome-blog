@@ -33,14 +33,21 @@ class OptionMenu(gtk.OptionMenu):
         self._setMenuFromValue(gconf_value)
         
     def _setMenuFromValue (self, gconf_value):
+        if (len(self.values) < 1):
+            return
+        
         i = 0
+        value_set = 0
         for value in self.values:
-            print ("Comparing %s and %s" % (value, gconf_value))
             if (value == gconf_value):
-                print ("match")
                 self.set_history(i)
+                value_set = 1
                 break
             i = i + 1
+
+        if (not value_set):
+            self.set_history(0)
+            self.client.set_string(self.gconf_key, self.values[0])
             
     def _onGConfChange (self, client, cnxn_id, entry, what):
         gconf_value = entry.value.to_string()
@@ -50,8 +57,7 @@ class OptionMenu(gtk.OptionMenu):
         index = optionmenu.get_history()
         value = self.values[index]
         
-        client = gconf.client_get_default()
-        client.set_string(self.gconf_key, value)
+        self.client.set_string(self.gconf_key, value)
 
 class Entry(gtk.Entry):
     def _onGConfChange (self, client, cnxn_id, entry, what):
@@ -68,8 +74,9 @@ class Entry(gtk.Entry):
 
         self.client = gconf.client_get_default()
         self.notify = self.client.notify_add(self.gconf_key, self._onGConfChange)
-        
-        self.set_text(self.client.get_string(self.gconf_key))
+        string = self.client.get_string(self.gconf_key)
+        if (string != None):
+            self.set_text(string)
 
         self.connect("changed", self._onEntryChange)
 
@@ -89,5 +96,8 @@ class CheckButton(gtk.CheckButton):
         self.client = gconf.client_get_default()
         self.notify = self.client.notify_add(self.gconf_key, self._onGConfChange)
 
-        self.set_active(self.client.get_bool(self.gconf_key))
+        bool = self.client.get_bool(self.gconf_key)
+        if (bool != None):
+            self.set_active(bool)
+
         self.connect("toggled", self._onCheckboxToggled)

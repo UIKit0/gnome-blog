@@ -10,13 +10,17 @@ import xmlrpclib
 import hig_alert
 import style_toggle
 
-gconf_prefix = "/apps/gnome-blogger/"
+gconf_prefix = "/apps/gnome-blogger"
 appkey = "6BF507937414229AEB450AB075001667C8BC8338"
 
 class BlogPoster(gtk.Frame):
-    def __init__(self):
+    def __init__(self, prefs_key):
         gtk.Frame.__init__(self)
         self.set_shadow_type(gtk.SHADOW_OUT)
+
+        if (prefs_key != None):
+            global gconf_prefix
+            gconf_prefix = prefs_key
         
         box = gtk.VBox()
         box.set_border_width(6)

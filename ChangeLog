@@ -1,5 +1,16 @@
 2003-08-31  Seth Nickell  <snickell@stanford.edu>
 
+	* blog_poster.py:
+	* blogger_applet.py:
+	* blogger_prefs.py:
+	* gconf_widgets.py:
+
+	Integrate with Panel prefs, don't hardcode a prefs directory.
+	Eventually we'll also have an application version (should be
+	really easy).
+	
+2003-08-31  Seth Nickell  <snickell@stanford.edu>
+
 	* hig_alert.py:
 
 	More rewording of alerts.

@@ -17,11 +17,14 @@ class LeftLabel(gtk.Label):
         self.set_alignment(0.0, 0.5)
         
 class BloggerPrefs(gtk.Dialog):
-    def __init__(self):
+    def __init__(self, prefs_key):
         gtk.Dialog.__init__(self, title="Blogger Preferences", buttons=(gtk.STOCK_CLOSE, gtk.RESPONSE_CLOSE))
 
         global gconf_prefix
-        
+
+        if (prefs_key != None):
+            gconf_prefix = prefs_key
+
         client = gconf.client_get_default()
         client.add_dir(gconf_prefix, gconf.CLIENT_PRELOAD_ONELEVEL)
 

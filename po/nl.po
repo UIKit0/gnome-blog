@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog head\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-01-15 04:12+0100\n"
-"PO-Revision-Date: 2004-01-16 22:29+0100\n"
+"POT-Creation-Date: 2004-01-23 04:18+0100\n"
+"PO-Revision-Date: 2004-01-24 11:06+0100\n"
 "Last-Translator: Elros Cyriatan <cyriatan@fastmail.fm>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
 "MIME-Version: 1.0\n"
@@ -34,40 +34,6 @@ msgstr "_Info..."
 #: GNOME_BlogApplet.xml.h:2
 msgid "_Preferences..."
 msgstr "_Voorkeuren..."
-
-#: gnome-blog.desktop.in.h:2
-msgid "Post an entry to a web log"
-msgstr "Een ingang verzenden naar de web log"
-
-#: gnomeblog.schemas.in.h:1
-msgid "Password to use in accessing the blog"
-msgstr "Wachtwoord om te gebruiken bij toegang tot de blog"
-
-#: gnomeblog.schemas.in.h:2
-msgid "Protocol to use in accessing the blog"
-msgstr "Protocol om te gebruiken bij toegang tot de blog"
-
-#: gnomeblog.schemas.in.h:3
-msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
-msgstr "Achtervoegsel om te hangen aan de basis URL (bijv. \"xmlrpc.cgi\")"
-
-#: gnomeblog.schemas.in.h:4
-msgid "The application's preferences have been initialized"
-msgstr "De voorkeuren voor deze toepassing zijn geïnitialiseerd"
-
-#: gnomeblog.schemas.in.h:5
-msgid "The id or name of the particular blog to use on the XML-RPC server"
-msgstr ""
-"De id of naam van een bepaalde blog die moet worden gebruikt op de XML-RPC "
-"server"
-
-#: gnomeblog.schemas.in.h:6
-msgid "URL to the bloggerAPI compatible XML-RPC server"
-msgstr "URL van de bloggerAPI ondersteunende XML-RPC server"
-
-#: gnomeblog.schemas.in.h:7
-msgid "Username to use in accessing the blog"
-msgstr "Gebruikersnaam om te gebruiken bij toegang tot de blog"
 
 #: blog_applet.py:31
 msgid "About"
@@ -173,15 +139,45 @@ msgstr "XML-RPC URL:"
 msgid "Base Blog URL:"
 msgstr "Basis blog URL:"
 
-#: blogger_prefs.py:129
-msgid "bloggerAPI"
-msgstr "bloggerAPI"
+#: gnome-blog.desktop.in.h:2
+msgid "Post an entry to a web log"
+msgstr "Een ingang verzenden naar de web log"
+
+#: gnomeblog.schemas.in.h:1
+msgid "Password to use in accessing the blog"
+msgstr "Wachtwoord om te gebruiken bij toegang tot de blog"
+
+#: gnomeblog.schemas.in.h:2
+msgid "Protocol to use in accessing the blog"
+msgstr "Protocol om te gebruiken bij toegang tot de blog"
+
+#: gnomeblog.schemas.in.h:3
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr "Achtervoegsel om te hangen aan de basis URL (bijv. \"xmlrpc.cgi\")"
+
+#: gnomeblog.schemas.in.h:4
+msgid "The application's preferences have been initialized"
+msgstr "De voorkeuren voor deze toepassing zijn geïnitialiseerd"
+
+#: gnomeblog.schemas.in.h:5
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr ""
+"De id of naam van een bepaalde blog die moet worden gebruikt op de XML-RPC "
+"server"
+
+#: gnomeblog.schemas.in.h:6
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr "URL van de bloggerAPI ondersteunende XML-RPC server"
+
+#: gnomeblog.schemas.in.h:7
+msgid "Username to use in accessing the blog"
+msgstr "Gebruikersnaam om te gebruiken bij toegang tot de blog"
 
 #: hig_alert.py:13
 #, python-format
 msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
-msgstr "URL '%s' is mogelijk geen geldige bloggerAPI. XML-RPC server antwoordde: "
-"%s."
+msgstr ""
+"URL '%s' is mogelijk geen geldige bloggerAPI. XML-RPC server antwoordde: %s."
 
 #: hig_alert.py:15
 #, python-format
@@ -189,8 +185,8 @@ msgid ""
 "Unknown username %s or password trying to post blog entry to XML-RPC server %"
 "s."
 msgstr ""
-"Onbekende gebruikersnaam %s of wachtwoord bij "
-"proberen blog ingang te versturen naar XML-RPC server %s."
+"Onbekende gebruikersnaam %s of wachtwoord bij proberen blog ingang te "
+"versturen naar XML-RPC server %s."
 
 #: hig_alert.py:17
 #, python-format
@@ -208,11 +204,60 @@ msgid ""
 "\n"
 "Please email this error message to seth@gnome.org so I can address it."
 msgstr ""
-"De bloggerAPI server (%s) rapporteerde een fout die ik niet begrijp: '%s, "
-"%s'. \n"
+"De bloggerAPI server (%s) rapporteerde een fout die ik niet begrijp: '%s, %"
+"s'. \n"
 "\n"
 "Verzend alstublieft deze foutmelding naar seth@gnome.org zodat ik er wat aan "
 "kan doen."
+
+#: protocols/advogato.py:23 protocols/advogato.py:26 protocols/advogato.py:38
+#: protocols/bloggerAPI.py:59 protocols/bloggerAPI.py:85
+#: protocols/livejournal.py:30 protocols/livejournal.py:59
+msgid "Could not post Blog entry"
+msgstr "Kon Blog-ingang niet plaatsen"
+
+#: protocols/advogato.py:23
+msgid "Your username is invalid. Please double-check the preferences."
+msgstr "Uw gebruikersnaam is onjuist. Controleer alstublieft de voorkeuren."
+
+#: protocols/advogato.py:26 protocols/livejournal.py:30
+msgid ""
+"Your username or password is invalid. Please double-check the preferences."
+msgstr ""
+"Uw gebruikersnaam of wachtwoord is onjuist. Controleer alstublieft de voorkeuren."
+
+#: protocols/advogato.py:35 protocols/bloggerAPI.py:82
+#: protocols/livejournal.py:56
+msgid "Could not post blog entry"
+msgstr "Kon blog-ingang niet plaatsen"
+
+#: protocols/advogato.py:38 protocols/bloggerAPI.py:36
+#: protocols/bloggerAPI.py:85
+#, python-format
+msgid ""
+"URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
+"reported: %s."
+msgstr ""
+"URL '%s' ziet er niet uit als een geldige bloggerAPI. XML-RPC server. De webserver antwoordde: %s."
+
+#: protocols/bloggerAPI.py:33 protocols/bloggerAPI.py:36
+msgid "Could not get list of blogs"
+msgstr "Kon lijst van blogs niet opvragen"
+
+#: protocols/bloggerAPI.py:59
+msgid ""
+"No XML-RPC server URL to post blog entries to is set, or the value could not "
+"be retrieved from GConf. Your entry will remain in the blogger window."
+msgstr ""
+"Er is geen XML-RPC server URL ingesteld om blog-ingangen te plaatsen, of de waarde kon niet worden opgevraagd bij GConf. Uw ingang zal in het blogger-venster blijven."
+
+#: protocols/livejournal.py:59
+#, python-format
+msgid ""
+"URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
+"reported: %s."
+msgstr ""
+"URL '%s' ziet er niet uit als een geldige LiveJournal XML-RPC server. De webserver antwoordde: %s."
 
 #: rich_entry.py:135 rich_entry.py:143
 msgid "Could not load dragged in image"

@@ -147,6 +147,8 @@ class BlogPoster(gtk.Frame):
         # Get a list of lines in HTML so we can add <p> tags
         html_lines = html.split('\n')
 
+        html = ""
+
         for line in html_lines:
             html = html + "<p>" + line + "</p>\n"
 

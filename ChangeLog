@@ -2,6 +2,12 @@
 
 	* blog_poster.py:
 
+	Fix bug that caused it to post the entry twice.
+
+2003-09-02  Seth Nickell  <snickell@stanford.edu>
+
+	* blog_poster.py:
+
 	Add a "Title" entry instead of relying on the good
 	graces of my users to follow pybloxsom standards ;-)
 

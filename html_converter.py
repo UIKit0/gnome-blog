@@ -15,7 +15,7 @@ def getHTML(buffer):
         new_text = buffer.get_text(iter, next_iter, gtk.TRUE)
         html = html + new_text + _getTagsHTML(next_iter, open_tags)
 
-    return html
+    return html.decode('utf8')
 
   
 def _getNextIter(iter):

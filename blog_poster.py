@@ -128,7 +128,7 @@ class BlogPoster(gtk.Frame):
             gtkspell.Spell(self.blogEntry)
 
         print "Text is: {\n %s \n }\n" % (html_text)
-        title = self.titleEntry.get_text()
+        title = self.titleEntry.get_text().decode('utf-8')
 
         # Don't post silly blog entries like blank ones
         if not self._postIsReasonable(html_text):

@@ -1,5 +1,14 @@
 2005-01-12  Seth Nickell  <seth@gnome.org>
 
+	* blog_poster.py:
+	* html_converter.py:
+
+	Decode python strings pulled from GTK widgets as UTF-8.
+	With GTK+ they'll be UTF-8 anyway (not sure why
+	PyGTK doesn't just hand them back as type 'unicode')
+
+2005-01-12  Seth Nickell  <seth@gnome.org>
+
 	* blogger_prefs.py:
 
 	Change path to wordpress xml-rpc interface to include a

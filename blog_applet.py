@@ -20,6 +20,10 @@ from gnomeblog import gnome_blog_globals
 bindtextdomain('gnome-blog', gnome_blog_globals.localedir)
 textdomain('gnome-blog')
 
+icon_theme = gtk.icon_theme_get_default()
+icon_info = icon_theme.lookup_icon('gnome-blog', -1, 0)
+gtk.window_set_default_icon_from_file(icon_info.get_filename())
+        
 class BloggerApplet(gnome.applet.Applet):
     def __init__(self):
         self.__gobject_init__()

@@ -1,3 +1,12 @@
+2005-01-02  Seth Nickell  <seth@gnome.org>
+
+        Patch from Tommi Komulainen <tommi.komulainen@iki.fi>
+	
+	* blog_applet.py:
+	* gnome-blog-poster:
+
+	Set the default window icons.
+
 2004-12-25  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* configure.in: Add «nb» to ALL_LINGUAS.

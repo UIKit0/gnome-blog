@@ -12,8 +12,8 @@ FILE=configure.in
 
 DIE=0
 
-AUTOMAKE=automake
-ACLOCAL=aclocal
+AUTOMAKE=automake-1.8
+ACLOCAL=aclocal-1.8
 
 ($AUTOMAKE --version) < /dev/null > /dev/null 2>&1 || {
         AUTOMAKE=automake

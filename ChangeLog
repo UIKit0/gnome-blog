@@ -1,5 +1,13 @@
 2004-10-26  Seth Nickell  <seth@gnome.org>
 
+	* autogen.sh:
+
+	Hardcode 'automake-1.8' instead of just calling 'automake'.
+	Fixes #139648. Thanks to Alvaro del Castillo <acs@barrapunto.com>
+	for tracking down the issue
+
+2004-10-26  Seth Nickell  <seth@gnome.org>
+
         Patch from Toshio Kuratomi <toshio@tiki-lounge.com>
 
 	* GNOME_BlogApplet.server.in:

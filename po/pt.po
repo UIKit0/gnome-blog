@@ -6,28 +6,26 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
-"POT-Creation-Date: 2003-09-13 17:50-0700\n"
-"PO-Revision-Date: 2003-09-09 12:25+0000\n"
+"Report-Msgid-Bugs-To: Duarte Loreto <happyguy_pt@hotmail.com>\n"
+"POT-Creation-Date: 2003-09-14 12:59+0100\n"
+"PO-Revision-Date: 2003-09-14 13:02+0000\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 
 #: GNOME_BlogApplet.server.in.h:1
 msgid "Accessories"
-msgstr ""
+msgstr "Acessórios"
 
 #: GNOME_BlogApplet.server.in.h:2 gnome-blog.desktop.in.h:1
-#, fuzzy
 msgid "Blog Entry Poster"
-msgstr "Entrada de Blog está Vazia"
+msgstr "Colocador Entrada de Blog"
 
 #: GNOME_BlogApplet.server.in.h:3
-#, fuzzy
 msgid "Post entries to a web log"
-msgstr "Colocar entradas de blog no Blogger.com"
+msgstr "Colocar entradas num log web"
 
 #: GNOME_BlogApplet.xml.h:1
 msgid "_About..."
@@ -168,7 +166,7 @@ msgstr "Protocolo a utilizar ao aceder ao blog"
 
 #: gnomeblog.schemas.in.h:4
 msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
-msgstr ""
+msgstr "Sufixo a acrescentar ao URL base (por ex. \"xmlrpc.cgi\")"
 
 #: gnomeblog.schemas.in.h:5
 msgid "The application's preferences have been initialized"
@@ -188,7 +186,7 @@ msgstr "Nome de utilizador para aceder ao blog"
 
 #: gnome-blog.desktop.in.h:2
 msgid "Post an entry to a web log"
-msgstr ""
+msgstr "Colocar entradas num log web"
 
 #~ msgid "Blogging Tool"
 #~ msgstr "Ferramenta de Blogging"

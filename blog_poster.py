@@ -62,7 +62,7 @@ class BlogPoster(gtk.Frame):
         self.titleEntry = gtk.Entry()
 
         titleBox = gtk.HBox()
-        titleBox.set_spacing(6)
+        titleBox.set_spacing(12)
         titleBox.pack_start(gtk.Label(_("Title:")), expand=gtk.FALSE)
         titleBox.pack_start(self.titleEntry)
 

@@ -1,3 +1,15 @@
+2003-09-14  Christian Neumair  <chris@gnome-de.org>
+
+	* configure.in:
+
+	Add de to ALL_LINGUAS.
+
+	* blogger_prefs.py:
+	* blog_poster.py:
+	* rich_entry.py:
+
+	HIG work here and there, mark some missing strings for translation.
+
 2003-09-13  Seth Nickell  <seth@gnome.org>
 
 	* configure.in:

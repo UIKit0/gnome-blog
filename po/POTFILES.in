@@ -2,9 +2,10 @@
 # Please keep this file sorted alphabetically.
 GNOME_BlogApplet.server.in
 GNOME_BlogApplet.xml
+gnome-blog.desktop.in
+gnomeblog.schemas.in
 blog_applet.py
 blog_poster.py
 blogger_prefs.py
 hig_alert.py
-gnomeblog.schemas.in
-gnome-blog.desktop.in
+rich_entry.py

@@ -25,10 +25,11 @@ class BloggerPrefs(gtk.Dialog):
         client = gconf.client_get_default()
         client.add_dir(gconf_prefix, gconf.CLIENT_PRELOAD_ONELEVEL)
 
-        self.set_border_width(6)
+        self.set_border_width(5)
+        self.set_resizable(gtk.FALSE)
         self.set_has_separator(gtk.FALSE)
 
-        self.vbox.set_spacing(12)
+        self.vbox.set_spacing(2)
 
         blogTypeMenu = gconf_widgets.OptionMenu(gconf_prefix + "/blog_type")
         blogTypeMenu.setStringValuePairs([("Blogger.com", "blogger.com"),
@@ -39,8 +40,8 @@ class BloggerPrefs(gtk.Dialog):
                                          (_("Self-Run Other"), "custom")])
 
         blogTypeBox = gtk.HBox()
-        blogTypeBox.set_spacing(6)
-        blogTypeBox.pack_start(LeftLabel("Blog Type:"), expand=gtk.FALSE)
+        blogTypeBox.set_spacing(12)
+        blogTypeBox.pack_start(LeftLabel(_("Blog Type:")), expand=gtk.FALSE)
         blogTypeBox.pack_end(blogTypeMenu)
 
 
@@ -49,7 +50,7 @@ class BloggerPrefs(gtk.Dialog):
         self.blogProtocolMenu.setStringValuePairs([("BloggerAPI", "bloggerAPI"),
                                                    ("Advogato", "advogato"),
                                                    ("MetaWeblog", "MetaWeblog")])
-        self.blogProtocolLabel = LeftLabel("Blog Protocol:")
+        self.blogProtocolLabel = LeftLabel(_("Blog Protocol:"))
         
         self.urlEntry = gconf_widgets.Entry(gconf_prefix + "/xmlrpc_url")
         self.urlEntry.set_width_chars(45)
@@ -62,13 +63,13 @@ class BloggerPrefs(gtk.Dialog):
 
 
         table = gtk.Table(rows=4, columns=3)
-        table.set_row_spacings(12)
-        table.set_col_spacings(6)
+        table.set_row_spacings(6)
+        table.set_col_spacings(12)
 
         table.attach(self.blogProtocolLabel, 0, 1, 0, 1, xoptions=gtk.FILL)
         table.attach(self.urlLabel, 0, 1, 1, 2, xoptions=gtk.FILL)
-        table.attach(LeftLabel("Username:"), 0, 1, 2, 3, xoptions=gtk.FILL)
-        table.attach(LeftLabel("Password:"), 0, 1, 3, 4, xoptions=gtk.FILL)
+        table.attach(LeftLabel(_("Username:")), 0, 1, 2, 3, xoptions=gtk.FILL)
+        table.attach(LeftLabel(_("Password:")), 0, 1, 3, 4, xoptions=gtk.FILL)
         table.attach(self.blogLabel, 0, 1, 4, 5, xoptions=gtk.FILL)
 
         table.attach(self.blogProtocolMenu, 1, 3, 0, 1)
@@ -82,8 +83,8 @@ class BloggerPrefs(gtk.Dialog):
         vbox.pack_start(blogTypeBox)
         vbox.pack_start(gtk.HSeparator())
         vbox.pack_start(table)
-        vbox.set_spacing(12)
-        vbox.set_border_width(6)
+        vbox.set_spacing(6)
+        vbox.set_border_width(5)
         
         self.vbox.pack_start(vbox)
 

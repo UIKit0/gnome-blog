@@ -2,6 +2,9 @@ import gtk
 import gtk.gdk
 import pango
 
+import gettext
+_ = gettext.gettext
+
 from gnomeblog import html_converter
 
 class RichEntry(gtk.TextView):
@@ -82,31 +85,33 @@ class RichEntry(gtk.TextView):
 
 class InsertHyperlinkButton(gtk.Button):
     def __init__(self, rich_entry):
-        gtk.Button.__init__(self, "Add _Link")
+        gtk.Button.__init__(self, _("Add _Link"))
         self.rich_entry = rich_entry
         self.connect("clicked", self._onClicked)
 
     def _onClicked(self, button):
-        dialog = gtk.Dialog("Add Link", buttons=(gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
-                                                         "_Add Link", gtk.RESPONSE_ACCEPT))
+        dialog = gtk.Dialog(_("Add Link"), buttons=(gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
+                                                       _("_Add Link"), gtk.RESPONSE_ACCEPT))
 
-        dialog.set_border_width(6)
-        dialog.vbox.set_spacing(12)
+        dialog.set_has_separator(gtk.FALSE)
+        dialog.set_resizable(gtk.FALSE)
+        dialog.set_border_width(5)
+        dialog.vbox.set_spacing(2)
         
-        textLabel = gtk.Label("Text:")
+        textLabel = gtk.Label(_("Text:"))
         textLabel.set_alignment(0.0, 0.5)
 
-        urlLabel = gtk.Label("URL:")
+        urlLabel = gtk.Label(_("URL:"))
         urlLabel.set_alignment(0.0, 0.5)
 
         textEntry = gtk.Entry()
         urlEntry  = gtk.Entry()
 
         table = gtk.Table(rows=2, columns=2)
-        table.set_border_width(6)
+        table.set_border_width(5)
         
-        table.set_row_spacings(12)
-        table.set_col_spacings(5)
+        table.set_row_spacings(6)
+        table.set_col_spacings(12)
 
         table.attach(textLabel, 0, 1, 0, 1, xoptions=gtk.FILL)
         table.attach(urlLabel, 0, 1, 1, 2, xoptions=gtk.FILL)

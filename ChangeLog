@@ -1,3 +1,20 @@
+2003-09-01  Seth Nickell  <snickell@stanford.edu>
+
+	* AUTHORS:
+	* GNOME_BlogApplet.server.in:
+	* GNOME_BlogApplet.xml:
+	* GNOME_BloggerApplet.xml:
+	* Makefile.am:
+	* blog_applet.py:
+	* configure.in:
+	* gnome-blog.png:
+	* gnome-blog.spec.in:
+	* gnome-blogger.png:
+	* gnomeblog.schemas.in:
+	* gnomeblogger.schemas.in:
+
+	Do some rennaming to avoid violating the Blogger trademark.
+	
 2003-08-31  Seth Nickell  <snickell@stanford.edu>
 
 	* blog_poster.py:

@@ -1,9 +1,13 @@
 serverdir = $(libdir)/bonobo/servers
-server_DATA = GNOME_BloggerApplet.server
+server_in_files = GNOME_BlogApplet.server.in
+server_DATA = $(server_in_files:.server.in=.server)
+
+@INTLTOOL_SERVER_RULE@
 
 bin_SCRIPTS = blogger_applet.py
 
 python_PYTHON = 		\
+	blogger_applet.py	\
 	blog_poster.py 		\
 	aligned_window.py 	\
 	hig_alert.py 		\
@@ -30,13 +34,26 @@ schema_DATA = \
 
 @INTLTOOL_SCHEMAS_RULE@
 
-EXTRA_DIST = 			\
-	$(schema_in_files) 	\
-	$(ui_DATA)		\
-	$(pixmaps_DATA)
-
 install-data-local:
         GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) \
                 gconftool-2 --makefile-install-rule $(schema_DATA)
 
-CLEANFILES = $(schema_DATA)
+DISTCLEANFILES =                \
+	$(schema_DATA)		\
+	$(server_DATA)		\
+        intltool-extract        \
+        intltool-merge          \
+        intltool-update
+
+
+EXTRA_DIST = 			\
+	$(schema_in_files) 	\
+	$(ui_DATA)		\
+	$(pixmaps_DATA)		\
+	GNOME_BloggerApplet.server.in \
+        intltool-update.in      \
+        intltool-extract.in     \
+        intltool-merge.in       \
+	gnome-blogger.spec	\
+	gnome-blogger.spec.in
+

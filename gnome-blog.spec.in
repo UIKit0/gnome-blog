@@ -17,6 +17,7 @@ Prereq:         GConf2
 Prereq:         /usr/bin/gconftool-2
 
 BuildRequires:  pygtk2-devel >= %{gnome_python2_version}
+BuildRequires:	gettext
 
 %description
 GNOME panel object that allows convenient posting of blog entries to
@@ -51,16 +52,26 @@ GCONF_CONFIG_SOURCE=`gconftool-2 --get-default-source` gconftool-2 --makefile-in
 
 %files -f %name.lang
 %defattr(-, root, root)
-%doc AUTHORS COPYING ChangeLog INSTALL README NEWS
+%doc AUTHORS COPYING ChangeLog README
 %{_bindir}/*
 %{_sysconfdir}/gconf/schemas/gnomeblog.schemas
 %{_datadir}/pixmaps/gnome-blog.png
 %{_datadir}/gnome-2.0/ui/*.xml
 %{_datadir}/applications/*.desktop
 %{_libdir}/bonobo/servers/*.server
-%{_libdir}/python*/site-packages/*
+%dir %{_libdir}/python*/site-packages/gnomeblog/
+%{_libdir}/python*/site-packages/gnomeblog/*.py
+%{_libdir}/python*/site-packages/gnomeblog/gnome-blog-poster
+%{_libdir}/python*/site-packages/gnomeblog/*.pyc
+%ghost %{_libdir}/python*/site-packages/gnomeblog/*.pyo
 
 %changelog
+* Sat Apr 03 2004 Brian Pepple <bdpepple@ameritech.net>
+- Removed INSTALL doc, since it's the generic file.
+- Removed unneeded NEWS file.
+- Ghosted *.pyo files.
+- Added BuildRequires gettext.
+
 * Sun Dec 21 2003 Rob Love <rml@ximian.com>
 - Require gnome-python2-gnomevfs
 

@@ -27,6 +27,9 @@ class RichEntry(gtk.TextView):
         html_converter.para_tag.closing_tag = "</p>"
 
         self.connect("event-after", self._onEventAfter)
+        self.buffer.connect_after("insert_text", self._onInsertText)
+
+        self.toggle_list = [] 
 
         # Hack for addHyperlink with old pygtk's
         self.linknum = 0
@@ -107,7 +110,11 @@ class RichEntry(gtk.TextView):
         tag = self.buffer.create_tag(html_tag)
         for property in pango_markup_properties:
             tag.set_property(property[0], property[1])
-        return StyleToggle(stock_button, tag, html_tag, self)
+
+        toggle = StyleToggle(stock_button, tag, html_tag, self)
+        self.toggle_list.append(toggle)
+
+        return toggle 
 
     def _onDragDataReceived(self, widget, drag_context, window_x, window_y,
                             selection_data, info, timestamp):
@@ -166,7 +173,14 @@ class RichEntry(gtk.TextView):
             
         else:
             print ("Some other sort of data received")
-        
+
+    def _onInsertText(self, widget, pos, text, length):
+        for style in self.toggle_list:
+            if (style.get_active() == gtk.TRUE):
+                pos_end = pos.copy()
+                pos_end.backward_chars(length)
+                self.buffer.apply_tag(style.style_tag, pos, pos_end)
+
     def _onEventAfter(self, widget, event):
         if event.type != gtk.gdk.BUTTON_RELEASE or event.button != 1:
             return gtk.FALSE
@@ -264,6 +278,7 @@ class StyleToggle(gtk.ToggleButton):
         tag.closing_tag = '</%s>' % (htmltag)
 
         self.style_tag = tag
+        self.text_view = text_view
         self.text_buffer = text_view.get_buffer()
         self.cursor_mark = self.text_buffer.get_mark("insert")
         
@@ -284,12 +299,13 @@ class StyleToggle(gtk.ToggleButton):
         
         if selection:
             # There's a selection, apply/remove style tag to it
-            
             if self.get_active():
                 self.text_buffer.apply_tag(self.style_tag, selection[0], selection[1])
             else:
                 self.text_buffer.remove_tag(self.style_tag, selection[0], selection[1])
-                    
+
+        self.text_view.grab_focus()
+            
     def _onMarkSet(self, textbuffer, iter, mark):
         if mark == self.cursor_mark:
             

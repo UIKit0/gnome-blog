@@ -1,3 +1,12 @@
+2004-05-03  John (J5) Palmieri  <johnp@redhat.com>
+
+	* rich_entry: style toggles now work correctly
+	(RichEntry.__init__) registered text_insert signal and added toggle_list property
+        (RichEntry.createStyleToggle) style toggle now appended to the toggle_list property
+	(RichEntry._onInsertText) signal handler added
+	(StyleToggle.__init__) text_view is now saved as a property
+	(StyleToggle._onStyleToggleActivate) text_view is given back focus after style button is toggled
+
 2004-05-01  Adam Weinberger  <adamw@gnome.org>
 
 	* configure.in: Added en_CA to ALL_LINGUAS.

@@ -57,7 +57,7 @@ class BlogPoster(gtk.Frame):
         buttonBox.pack_end(self.postButtonAlignment)
 
         boldToggle   = self.blogEntry.createStyleToggle([("weight", pango.WEIGHT_BOLD)], gtk.STOCK_BOLD, "strong")
-        italicToggle = self.blogEntry.createStyleToggle([("style", pango.STYLE_ITALIC)], gtk.STOCK_ITALIC, "em")        
+        italicToggle = self.blogEntry.createStyleToggle([("style", pango.STYLE_ITALIC)], gtk.STOCK_ITALIC, "em")
         linkButton   = rich_entry.InsertHyperlinkButton(self.blogEntry)
         
         self.prefs_button = gtk.Button(_("Preferences..."))

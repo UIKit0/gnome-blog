@@ -12,9 +12,11 @@ from gnomeblog import blog
 gconf_prefix = None
 
 class BlogPoster(gtk.Frame):
-    def __init__(self, prefs_key="/apps/gnome-blog", extra_button=None):
+    def __init__(self, prefs_key="/apps/gnome-blog", extra_button=None, on_entry_posted=None):
         gtk.Frame.__init__(self)
         self.set_shadow_type(gtk.SHADOW_OUT)
+
+        self.on_entry_posted = on_entry_posted
 
         global gconf_prefix
         gconf_prefix = prefs_key
@@ -89,6 +91,9 @@ class BlogPoster(gtk.Frame):
         if (successful_post):
             # Only delete the entry if posting was successful
             self._clearBlogEntryText()
+            # Call back our parent informing them the entry was posted
+            if (self.on_entry_posted != None):
+                self.on_entry_posted()
 
     def _clearBlogEntryText(self):
         self.blogEntry.clear()

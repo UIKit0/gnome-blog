@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
-"POT-Creation-Date: 2003-09-13 17:27-0700\n"
+"POT-Creation-Date: 2003-09-13 17:34-0700\n"
 "PO-Revision-Date: 2003-09-06 01:59+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -51,7 +51,7 @@ msgstr "Webblogg"
 msgid "A GNOME Web Blogging Applet"
 msgstr "Ett GNOME-webbloggningspanelprogram"
 
-#: blog_poster.py:30
+#: blog_poster.py:32
 msgid "_Post Entry"
 msgstr "_Posta inlägg"
 
@@ -59,15 +59,16 @@ msgstr "_Posta inlägg"
 #. link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
 #. link_tag.set_property("foreground", "#0000FF")
 #. linkButton = InsertButton
-#: blog_poster.py:64
+#: blog_poster.py:66
 msgid "Title:"
 msgstr "Titel:"
 
 #. Don't post silly blog entries like blank ones
 #. Only delete the entry if posting was successful
+#. Call back our parent informing them the entry was posted
 #. Popup a dialogue confirming even if its deemed
 #. unreasonable
-#: blog_poster.py:102
+#: blog_poster.py:107
 msgid "Blog Entry is Blank"
 msgstr "Webbloggsinlägget är tomt"
 

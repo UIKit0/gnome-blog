@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog 0.6\n"
-"POT-Creation-Date: 2003-09-13 17:27-0700\n"
+"POT-Creation-Date: 2003-09-13 17:34-0700\n"
 "PO-Revision-Date: 2003-09-12 03:00+0200\n"
 "Last-Translator: Francesco Gigli <jaramir@libero.it>\n"
 "Language-Team: Italian <it@li.org>\n"
@@ -52,7 +52,7 @@ msgstr "Blog"
 msgid "A GNOME Web Blogging Applet"
 msgstr "Un'Applett GNOME per il Web Blogging"
 
-#: blog_poster.py:30
+#: blog_poster.py:32
 msgid "_Post Entry"
 msgstr "_Invia Articolo"
 
@@ -60,15 +60,16 @@ msgstr "_Invia Articolo"
 #. link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
 #. link_tag.set_property("foreground", "#0000FF")
 #. linkButton = InsertButton
-#: blog_poster.py:64
+#: blog_poster.py:66
 msgid "Title:"
 msgstr "Titolo:"
 
 #. Don't post silly blog entries like blank ones
 #. Only delete the entry if posting was successful
+#. Call back our parent informing them the entry was posted
 #. Popup a dialogue confirming even if its deemed
 #. unreasonable
-#: blog_poster.py:102
+#: blog_poster.py:107
 msgid "Blog Entry is Blank"
 msgstr "L'articolo e' Vuoto"
 

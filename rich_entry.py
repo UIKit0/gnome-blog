@@ -2,7 +2,6 @@ import gtk
 import gtk.gdk
 import pango
 
-
 from gnomeblog import html_converter
 
 class RichEntry(gtk.TextView):
@@ -20,8 +19,20 @@ class RichEntry(gtk.TextView):
 
         self.connect("event-after", self._onEventAfter)
 
+        # Hack for addHyperlink with old pygtk's
+        self.linknum = 0
+
     def addHyperlink(self, iter, text, uri, on_activate):
-        link_tag = self.buffer.create_tag()
+        if ((gtk.pygtk_version[0] < 2) and (gtk.pygtk_version[1] < 100)
+            and (gtk.pygtk_version[2] < 16)):
+            # this is an older version of pygtk that doesn't
+            # have a way to create anonymous tags, hack around it
+            link_tag = self.buffer.create_tag("link%d" % (self.linknum))
+            self.linknum = self.linknum + 1
+            print ("Old Pygtk, using hack to work around lack of anonymous tags")
+        else:
+            link_tag = self.buffer.create_tag()
+            
         link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
         link_tag.set_property("foreground", "#0000FF")
 

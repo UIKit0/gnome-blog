@@ -31,13 +31,18 @@ class BloggerApp:
         prefs_button.connect("clicked", self._onPrefsButtonClicked)
         
         poster        = blog_poster.BlogPoster(prefs_key=self.prefs_key,
-                                               extra_button=prefs_button)
+                                               extra_button=prefs_button,
+                                               on_entry_posted=self._onEntryPosted)
+        
         poster_window = gtk.Window(gtk.WINDOW_TOPLEVEL)
         poster_window.set_title(_("Post Blog Entry"))
         poster_window.connect('destroy', lambda w: gtk.main_quit())
         
         poster_window.add(poster)
         poster_window.show_all()
+
+    def _onEntryPosted(self):
+        gtk.main_quit()
         
     def _onPrefsButtonClicked(self, button):
         self._showPrefDialog()

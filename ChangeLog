@@ -1,5 +1,19 @@
 2003-09-13  Seth Nickell  <snickell@stanford.edu>
 
+	* blog_poster.py:
+	* gnome-blog-poster:
+
+	Close the standalone app after "Post Entry"
+	is clicked... probably need more feedback really.
+	
+	* rich_entry.py:
+
+	Hack around a lack of anonymous tags in RH9's 
+	version of gnome-python. Nasty, but we just create
+	a new tag name for every link they insert.
+
+2003-09-13  Seth Nickell  <snickell@stanford.edu>
+
 	* blog.py:
 	* blog_poster.py:
 	* blogger_prefs.py:

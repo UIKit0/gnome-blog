@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: Duarte Loreto <happyguy_pt@hotmail.com>\n"
-"POT-Creation-Date: 2003-09-16 19:16+0100\n"
-"PO-Revision-Date: 2003-09-16 19:20+0000\n"
+"POT-Creation-Date: 2003-11-12 00:23+0000\n"
+"PO-Revision-Date: 2003-11-12 00:25+0000\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -72,38 +72,68 @@ msgid "Username to use in accessing the blog"
 msgstr "Nome de utilizador para aceder ao blog"
 
 #. !/usr/bin/env python
-#: blog_applet.py:29
+#. maybe someone can do this trick without string?
+#: blog_applet.py:31
 msgid "About"
 msgstr "Sobre"
 
-#: blog_applet.py:32
+#: blog_applet.py:34
 msgid "Blog"
 msgstr "Blog"
 
-#: blog_applet.py:61
+#. self._showPrefDialog()
+#: blog_applet.py:67
 msgid "A GNOME Web Blogging Applet"
 msgstr "Uma Applet de Blogging Web GNOME"
 
-#: blog_poster.py:31
+#. take the XML_RPC value from GConf
+#. split the URL up into http:, '', domainname, extra
+#. join back up the URL into http://domainname
+#: blog_applet.py:102
+msgid "Create a blog entry for "
+msgstr "Criar uma entrada de blog para "
+
+#: blog_applet.py:104
+msgid " at "
+msgstr " em "
+
+#. Set tooltip to the applet button
+#: blog_poster.py:32
 msgid "_Post Entry"
 msgstr "_Colocar Entrada"
 
-#. link_tag = self.blogBuffer.create_tag("a")
-#. link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
-#. link_tag.set_property("foreground", "#0000FF")
-#. linkButton = InsertButton
-#: blog_poster.py:65
+#: blog_poster.py:51
+msgid "Preferences..."
+msgstr "Preferências..."
+
+#: blog_poster.py:63
 msgid "Title:"
 msgstr "Título:"
+
+#: blog_poster.py:85
+msgid "Couldn't upload images"
+msgstr "Incapaz de enviar imagens"
+
+#: blog_poster.py:85
+msgid "The blog protocol in use does not support uploading images"
+msgstr "O protocolo de blog utilizado não suporta o envio de imagens"
 
 #. Don't post silly blog entries like blank ones
 #. Only delete the entry if posting was successful
 #. Call back our parent informing them the entry was posted
 #. Popup a dialogue confirming even if its deemed
 #. unreasonable
-#: blog_poster.py:106
+#: blog_poster.py:121
 msgid "Blog Entry is Blank"
 msgstr "Entrada de Blog está Vazia"
+
+#: blog_poster.py:121
+msgid ""
+"No text was entered in the blog entry box. Please enter some text and try "
+"again"
+msgstr ""
+"Não foi introduzido texto na caixa de entrada de blog. Introduza algum "
+"texto e tente novamente"
 
 #: blogger_prefs.py:19
 msgid "Blogger Preferences"
@@ -203,27 +233,44 @@ msgstr ""
 "Por favor, envie esta mensagem de erro para seth@gnome.org para que possa "
 "ser analisada."
 
+#. GtkTextView already defines drag and drop targets, get them
+#. Unfortunately old_targets string field has a funny type
+#. that needs to be explicitly converted to string
+#. Add the DND type that we support and set the new list of types
 #. Hack for addHyperlink with old pygtk's
 #. this is an older version of pygtk that doesn't
 #. have a way to create anonymous tags, hack around it
-#. Found Hyperlink, activating
-#: rich_entry.py:88
-msgid "Add _Link"
-msgstr "Adicionar _Link"
+#. 398 means text/uri-list
+#: rich_entry.py:131 rich_entry.py:139
+msgid "Could not load dragged in image"
+msgstr "Incapaz de ler imagem arrastada"
 
-#: rich_entry.py:93
+#: rich_entry.py:132 rich_entry.py:140
+#, python-format
+msgid "Error loading <span style='italic'>%s</span> was: %s"
+msgstr "Erro ao ler <span style='italic'>%s</span> era: %s"
+
+#. Create a new image tag
+#. Insert the pixbuf, and then set the new image
+#. tag around it so that we can generate its HTML later
+#. Found Hyperlink, activating
+#: rich_entry.py:190
+msgid "Add _Link..."
+msgstr "Adicionar _Link..."
+
+#: rich_entry.py:195
 msgid "Add Link"
 msgstr "Adicionar Link"
 
-#: rich_entry.py:94
+#: rich_entry.py:196
 msgid "_Add Link"
 msgstr "_Adicionar Link"
 
-#: rich_entry.py:101
+#: rich_entry.py:203
 msgid "Text:"
 msgstr "Texto:"
 
-#: rich_entry.py:104
+#: rich_entry.py:206
 msgid "URL:"
 msgstr "URL:"
 

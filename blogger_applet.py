@@ -27,6 +27,7 @@ class BloggerApplet(gnome.applet.Applet):
         self.show_all()
 
         self.poster_window = aligned_window.AlignedWindow(self.toggle)
+        self.poster_window.set_modal(gtk.TRUE)
         self.poster = blog_poster.BlogPoster()
         self.poster_window.add(self.poster)
         self.poster.show()
@@ -35,8 +36,8 @@ class BloggerApplet(gnome.applet.Applet):
 
     def onToggle(self, toggle):
         if (toggle.get_active()):
+            self.poster_window.positionWindow()            
             self.poster_window.show()
-            self.poster_window.positionWindow()
             self.poster.grab_focus()
         else:
             self.poster_window.hide()

@@ -6,7 +6,9 @@ import gtk
 class AlignedWindow(gtk.Window):
 
     def __init__(self, widgetToAlignWith):
-        gtk.Window.__init__(self, gtk.WINDOW_POPUP)
+        gtk.Window.__init__(self, gtk.WINDOW_TOPLEVEL)
+        self.set_decorated(gtk.FALSE)
+        
         self.widgetToAlignWith = widgetToAlignWith
 
     def positionWindow(self):

@@ -7,22 +7,28 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog 0.6\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-09-11 14:54-0700\n"
+"POT-Creation-Date: 2003-09-13 16:41-0700\n"
 "PO-Revision-Date: 2003-09-12 03:00+0200\n"
 "Last-Translator: Francesco Gigli <jaramir@libero.it>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-1\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
 
 #: GNOME_BlogApplet.server.in.h:1
-msgid "Blogging Tool"
-msgstr "Attrezzo Bloggante"
+msgid "Accessories"
+msgstr ""
 
-#: GNOME_BlogApplet.server.in.h:2
-msgid "Blogging tool"
-msgstr "Attrezzo Bloggante"
+#: GNOME_BlogApplet.server.in.h:2 gnome-blog.desktop.in.h:1
+#, fuzzy
+msgid "Blog Entry Poster"
+msgstr "L'articolo e' Vuoto"
+
+#: GNOME_BlogApplet.server.in.h:3
+#, fuzzy
+msgid "Post entries to a web log"
+msgstr "Invia gli articoli a Blogger.com"
 
 #: GNOME_BlogApplet.xml.h:1
 msgid "_About..."
@@ -31,34 +37,6 @@ msgstr "_Informazioni"
 #: GNOME_BlogApplet.xml.h:2
 msgid "_Preferences..."
 msgstr "_Impostazioni"
-
-#: gnomeblog.schemas.in.h:1
-msgid "Password to use in accessing the blog"
-msgstr "Password da usare per accedere al Blog"
-
-#: gnomeblog.schemas.in.h:2
-msgid "Post blog entries to Blogger.com"
-msgstr "Invia gli articoli a Blogger.com"
-
-#: gnomeblog.schemas.in.h:3
-msgid "Protocol to use in accessing the blog"
-msgstr "Protocollo da usare per accedere al Blog"
-
-#: gnomeblog.schemas.in.h:4
-msgid "The application's preferences have been initialized"
-msgstr "Le impostazioni dell'applicazione sono state inizializzate"
-
-#: gnomeblog.schemas.in.h:5
-msgid "The id or name of the particular blog to use on the XML-RPC server"
-msgstr "Identificavo o nome del Blog da usare sul server XML-RPC"
-
-#: gnomeblog.schemas.in.h:6
-msgid "URL to the bloggerAPI compatible XML-RPC server"
-msgstr "URL delle bloggerAPI compattibili con il server XML-RPC"
-
-#: gnomeblog.schemas.in.h:7
-msgid "Username to use in accessing the blog"
-msgstr "nome utente per accedere al Blog"
 
 #. !/usr/bin/env python
 #. FIXME: need to get this path from auto*
@@ -74,7 +52,7 @@ msgstr "Blog"
 msgid "A GNOME Web Blogging Applet"
 msgstr "Un'Applett GNOME per il Web Blogging"
 
-#: blog_poster.py:32
+#: blog_poster.py:30
 msgid "_Post Entry"
 msgstr "_Invia Articolo"
 
@@ -122,15 +100,15 @@ msgstr "Nome del Blog:"
 msgid "Lookup Blogs"
 msgstr "Cerca i Blog"
 
-#: blogger_prefs.py:114 blogger_prefs.py:126 blogger_prefs.py:130
+#: blogger_prefs.py:115 blogger_prefs.py:130 blogger_prefs.py:135
 msgid "XML-RPC URL:"
 msgstr "URL XML-RPC:"
 
-#: blogger_prefs.py:118 blogger_prefs.py:122
+#: blogger_prefs.py:120 blogger_prefs.py:125
 msgid "Base Blog URL:"
 msgstr "URL base del Blog:"
 
-#: blogger_prefs.py:125
+#: blogger_prefs.py:129
 msgid "bloggerAPI"
 msgstr "bloggerAPI"
 
@@ -141,8 +119,8 @@ msgid ""
 "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: <span style="
 "\"italic\">%s</span>."
 msgstr ""
-"l'URL·'%s'·potrebbe non corrispondere ad una ·bloggerAPI valida.·Il server XML-RPC·riporta:·<span·style="
-"\"italic\">%s</span>."
+"l'URL·'%s'·potrebbe non corrispondere ad una ·bloggerAPI valida.·Il server "
+"XML-RPC·riporta:·<span·style=\"italic\">%s</span>."
 
 #: hig_alert.py:10
 #, python-format
@@ -150,8 +128,9 @@ msgid ""
 "Unknown username <span weight=\"bold\">%s</span> or password trying to post "
 "blog entry to XML-RPC server <span style=\"italic\">%s</span>."
 msgstr ""
-"Nome utente sconosciuto <span·weight=\"bold\">%s</span> o password errata cercando di postare "
-"l'articolo al server XML-RPC·<span·style=\"italic\">%s</span>."
+"Nome utente sconosciuto <span·weight=\"bold\">%s</span> o password errata "
+"cercando di postare l'articolo al server XML-RPC·<span·style=\"italic\">%s</"
+"span>."
 
 #: hig_alert.py:12
 #, python-format
@@ -159,8 +138,8 @@ msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
 "reported: <span style=\"italic\">%s</span>."
 msgstr ""
-"Impossibile portare al Blog·'%s'·corrispondere al·bloggerAPI·XML-RPC·server·'%s'.·Il server·"
-"riporta:·<span·style=\"italic\">%s</span>."
+"Impossibile portare al Blog·'%s'·corrispondere al·bloggerAPI·XML-"
+"RPC·server·'%s'.·Il server·riporta:·<span·style=\"italic\">%s</span>."
 
 #: hig_alert.py:14
 #, python-format
@@ -170,8 +149,49 @@ msgid ""
 "\n"
 "Please email this error message to seth@gnome.org so I can address it."
 msgstr ""
-"Il server bloggerAPI·(%s)·ha inviato un errore incomprensibile:·'%s,·<span·"
-"style=\"italic\">%s</span>'.·\n"
+"Il server bloggerAPI·(%s)·ha inviato un errore incomprensibile:·'%s,"
+"·<span·style=\"italic\">%s</span>'.·\n"
 "\n"
 "Si prega di segnalare questo errore mandando una email a seth@gnome.org"
 
+#: gnomeblog.schemas.in.h:1
+msgid "Password to use in accessing the blog"
+msgstr "Password da usare per accedere al Blog"
+
+#: gnomeblog.schemas.in.h:2
+msgid "Post blog entries to Blogger.com"
+msgstr "Invia gli articoli a Blogger.com"
+
+#: gnomeblog.schemas.in.h:3
+msgid "Protocol to use in accessing the blog"
+msgstr "Protocollo da usare per accedere al Blog"
+
+#: gnomeblog.schemas.in.h:4
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:5
+msgid "The application's preferences have been initialized"
+msgstr "Le impostazioni dell'applicazione sono state inizializzate"
+
+#: gnomeblog.schemas.in.h:6
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr "Identificavo o nome del Blog da usare sul server XML-RPC"
+
+#: gnomeblog.schemas.in.h:7
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr "URL delle bloggerAPI compattibili con il server XML-RPC"
+
+#: gnomeblog.schemas.in.h:8
+msgid "Username to use in accessing the blog"
+msgstr "nome utente per accedere al Blog"
+
+#: gnome-blog.desktop.in.h:2
+msgid "Post an entry to a web log"
+msgstr ""
+
+#~ msgid "Blogging Tool"
+#~ msgstr "Attrezzo Bloggante"
+
+#~ msgid "Blogging tool"
+#~ msgstr "Attrezzo Bloggante"

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
-"POT-Creation-Date: 2003-09-11 14:54-0700\n"
+"POT-Creation-Date: 2003-09-13 16:41-0700\n"
 "PO-Revision-Date: 2003-09-06 01:59+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -16,12 +16,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: GNOME_BlogApplet.server.in.h:1
-msgid "Blogging Tool"
-msgstr "Webbloggsverktyg"
+msgid "Accessories"
+msgstr ""
 
-#: GNOME_BlogApplet.server.in.h:2
-msgid "Blogging tool"
-msgstr "Webbloggsverktyg"
+#: GNOME_BlogApplet.server.in.h:2 gnome-blog.desktop.in.h:1
+#, fuzzy
+msgid "Blog Entry Poster"
+msgstr "Webbloggsinlägget är tomt"
+
+#: GNOME_BlogApplet.server.in.h:3
+#, fuzzy
+msgid "Post entries to a web log"
+msgstr "Posta webbloggsinlägg till Blogger.com"
 
 #: GNOME_BlogApplet.xml.h:1
 msgid "_About..."
@@ -30,34 +36,6 @@ msgstr "_Om..."
 #: GNOME_BlogApplet.xml.h:2
 msgid "_Preferences..."
 msgstr "_Inställningar..."
-
-#: gnomeblog.schemas.in.h:1
-msgid "Password to use in accessing the blog"
-msgstr "Lösenord för att komma åt webbloggen"
-
-#: gnomeblog.schemas.in.h:2
-msgid "Post blog entries to Blogger.com"
-msgstr "Posta webbloggsinlägg till Blogger.com"
-
-#: gnomeblog.schemas.in.h:3
-msgid "Protocol to use in accessing the blog"
-msgstr "Protokoll att använda för åtkomst av webbloggen"
-
-#: gnomeblog.schemas.in.h:4
-msgid "The application's preferences have been initialized"
-msgstr "Programmets inställningar har initierats"
-
-#: gnomeblog.schemas.in.h:5
-msgid "The id or name of the particular blog to use on the XML-RPC server"
-msgstr "Id eller namnet för den webblog som ska användas på XML-RPC-servern"
-
-#: gnomeblog.schemas.in.h:6
-msgid "URL to the bloggerAPI compatible XML-RPC server"
-msgstr "URL till den bloggerAPI-kompatibla XML-RPC-servern"
-
-#: gnomeblog.schemas.in.h:7
-msgid "Username to use in accessing the blog"
-msgstr "Användarnamn för att komma åt webbloggen"
 
 #. !/usr/bin/env python
 #. FIXME: need to get this path from auto*
@@ -73,7 +51,7 @@ msgstr "Webblogg"
 msgid "A GNOME Web Blogging Applet"
 msgstr "Ett GNOME-webbloggningspanelprogram"
 
-#: blog_poster.py:32
+#: blog_poster.py:30
 msgid "_Post Entry"
 msgstr "_Posta inlägg"
 
@@ -121,15 +99,15 @@ msgstr "Webbloggsnamn:"
 msgid "Lookup Blogs"
 msgstr "Slå upp webbloggar"
 
-#: blogger_prefs.py:114 blogger_prefs.py:126 blogger_prefs.py:130
+#: blogger_prefs.py:115 blogger_prefs.py:130 blogger_prefs.py:135
 msgid "XML-RPC URL:"
 msgstr "XML-RPC-URL:"
 
-#: blogger_prefs.py:118 blogger_prefs.py:122
+#: blogger_prefs.py:120 blogger_prefs.py:125
 msgid "Base Blog URL:"
 msgstr "Baswebbloggs-URL:"
 
-#: blogger_prefs.py:125
+#: blogger_prefs.py:129
 msgid "bloggerAPI"
 msgstr "bloggerAPI"
 
@@ -174,6 +152,48 @@ msgstr ""
 "<span style=\"italic\">%s</span>\". \n"
 "\n"
 "E-posta detta felmeddelande till seth@gnome.org så att jag kan åtgärda det."
+
+#: gnomeblog.schemas.in.h:1
+msgid "Password to use in accessing the blog"
+msgstr "Lösenord för att komma åt webbloggen"
+
+#: gnomeblog.schemas.in.h:2
+msgid "Post blog entries to Blogger.com"
+msgstr "Posta webbloggsinlägg till Blogger.com"
+
+#: gnomeblog.schemas.in.h:3
+msgid "Protocol to use in accessing the blog"
+msgstr "Protokoll att använda för åtkomst av webbloggen"
+
+#: gnomeblog.schemas.in.h:4
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:5
+msgid "The application's preferences have been initialized"
+msgstr "Programmets inställningar har initierats"
+
+#: gnomeblog.schemas.in.h:6
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr "Id eller namnet för den webblog som ska användas på XML-RPC-servern"
+
+#: gnomeblog.schemas.in.h:7
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr "URL till den bloggerAPI-kompatibla XML-RPC-servern"
+
+#: gnomeblog.schemas.in.h:8
+msgid "Username to use in accessing the blog"
+msgstr "Användarnamn för att komma åt webbloggen"
+
+#: gnome-blog.desktop.in.h:2
+msgid "Post an entry to a web log"
+msgstr ""
+
+#~ msgid "Blogging Tool"
+#~ msgstr "Webbloggsverktyg"
+
+#~ msgid "Blogging tool"
+#~ msgstr "Webbloggsverktyg"
 
 #~ msgid "Preferences"
 #~ msgstr "Inställningar"

@@ -1,5 +1,11 @@
 2003-09-13  Seth Nickell  <snickell@stanford.edu>
 
+	* Makefile.am:
+
+	Pass "make distcheck".
+
+2003-09-13  Seth Nickell  <snickell@stanford.edu>
+
 	* gnome-blog.spec.in:
 
 	Add the new binary and desktop entry.

@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
-"POT-Creation-Date: 2003-09-11 14:54-0700\n"
+"POT-Creation-Date: 2003-09-13 16:41-0700\n"
 "PO-Revision-Date: 2003-09-05 16:16+0200\n"
 "Last-Translator: Danilo Šegan <danilo@prevod.org>\n"
 "Language-Team: Serbian (sr) <serbiangnome-listaL@nongnu.org>\n"
@@ -17,12 +17,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: GNOME_BlogApplet.server.in.h:1
-msgid "Blogging Tool"
-msgstr "Alat za blogovanje"
+msgid "Accessories"
+msgstr ""
 
-#: GNOME_BlogApplet.server.in.h:2
-msgid "Blogging tool"
-msgstr "Alat za blogovanje"
+#: GNOME_BlogApplet.server.in.h:2 gnome-blog.desktop.in.h:1
+#, fuzzy
+msgid "Blog Entry Poster"
+msgstr "Unos za blog je prazan"
+
+#: GNOME_BlogApplet.server.in.h:3
+#, fuzzy
+msgid "Post entries to a web log"
+msgstr "Pošalji unos u blog na Blogger.com"
 
 #: GNOME_BlogApplet.xml.h:1
 msgid "_About..."
@@ -31,35 +37,6 @@ msgstr "_O programu..."
 #: GNOME_BlogApplet.xml.h:2
 msgid "_Preferences..."
 msgstr "_Postavke"
-
-#: gnomeblog.schemas.in.h:1
-msgid "Password to use in accessing the blog"
-msgstr "Lozinka kojom se pristupa blogu"
-
-#: gnomeblog.schemas.in.h:2
-msgid "Post blog entries to Blogger.com"
-msgstr "Pošalji unos u blog na Blogger.com"
-
-#: gnomeblog.schemas.in.h:3
-msgid "Protocol to use in accessing the blog"
-msgstr "Protokol kojim se pristupa blogu"
-
-#: gnomeblog.schemas.in.h:4
-msgid "The application's preferences have been initialized"
-msgstr "Učitane su postavke programa"
-
-#: gnomeblog.schemas.in.h:5
-msgid "The id or name of the particular blog to use on the XML-RPC server"
-msgstr ""
-"Identifikator ili ime određenog bloga koji da koristi na XML-RPC serveru"
-
-#: gnomeblog.schemas.in.h:6
-msgid "URL to the bloggerAPI compatible XML-RPC server"
-msgstr "Adresa za XML-RPC server saglasan sa bloggerAPI-jem"
-
-#: gnomeblog.schemas.in.h:7
-msgid "Username to use in accessing the blog"
-msgstr "Korisničko ime za pristup blogu"
 
 #. !/usr/bin/env python
 #. FIXME: need to get this path from auto*
@@ -75,7 +52,7 @@ msgstr "Blog"
 msgid "A GNOME Web Blogging Applet"
 msgstr "Programče za blogovanje iz Gnoma"
 
-#: blog_poster.py:32
+#: blog_poster.py:30
 msgid "_Post Entry"
 msgstr "_Pošalji unos"
 
@@ -123,15 +100,15 @@ msgstr "Ime bloga:"
 msgid "Lookup Blogs"
 msgstr "Pronađi blogove"
 
-#: blogger_prefs.py:114 blogger_prefs.py:126 blogger_prefs.py:130
+#: blogger_prefs.py:115 blogger_prefs.py:130 blogger_prefs.py:135
 msgid "XML-RPC URL:"
 msgstr "XML-RPC adresa:"
 
-#: blogger_prefs.py:118 blogger_prefs.py:122
+#: blogger_prefs.py:120 blogger_prefs.py:125
 msgid "Base Blog URL:"
 msgstr "Osnovna adresa bloga:"
 
-#: blogger_prefs.py:125
+#: blogger_prefs.py:129
 msgid "bloggerAPI"
 msgstr "bloggerAPI"
 
@@ -177,3 +154,46 @@ msgstr ""
 "\n"
 "Molim pošaljite e-poštom ovu poruku o grešci na seth@gnome.org kako bi mogao "
 "da je obradim."
+
+#: gnomeblog.schemas.in.h:1
+msgid "Password to use in accessing the blog"
+msgstr "Lozinka kojom se pristupa blogu"
+
+#: gnomeblog.schemas.in.h:2
+msgid "Post blog entries to Blogger.com"
+msgstr "Pošalji unos u blog na Blogger.com"
+
+#: gnomeblog.schemas.in.h:3
+msgid "Protocol to use in accessing the blog"
+msgstr "Protokol kojim se pristupa blogu"
+
+#: gnomeblog.schemas.in.h:4
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:5
+msgid "The application's preferences have been initialized"
+msgstr "Učitane su postavke programa"
+
+#: gnomeblog.schemas.in.h:6
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr ""
+"Identifikator ili ime određenog bloga koji da koristi na XML-RPC serveru"
+
+#: gnomeblog.schemas.in.h:7
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr "Adresa za XML-RPC server saglasan sa bloggerAPI-jem"
+
+#: gnomeblog.schemas.in.h:8
+msgid "Username to use in accessing the blog"
+msgstr "Korisničko ime za pristup blogu"
+
+#: gnome-blog.desktop.in.h:2
+msgid "Post an entry to a web log"
+msgstr ""
+
+#~ msgid "Blogging Tool"
+#~ msgstr "Alat za blogovanje"
+
+#~ msgid "Blogging tool"
+#~ msgstr "Alat za blogovanje"

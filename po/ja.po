@@ -6,22 +6,28 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog HEAD\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-09-14 01:35+0900\n"
+"POT-Creation-Date: 2003-09-13 16:41-0700\n"
 "PO-Revision-Date: 2003-09-14 01:34+0900\n"
 "Last-Translator: Takeshi AIHANA <aihana@gnome.gr.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
 
 #: GNOME_BlogApplet.server.in.h:1
-msgid "Blogging Tool"
-msgstr "Blogging ツール"
+msgid "Accessories"
+msgstr ""
 
-#: GNOME_BlogApplet.server.in.h:2
-msgid "Blogging tool"
-msgstr "'Blog' するツール"
+#: GNOME_BlogApplet.server.in.h:2 gnome-blog.desktop.in.h:1
+#, fuzzy
+msgid "Blog Entry Poster"
+msgstr "Blog のエントリが空です"
+
+#: GNOME_BlogApplet.server.in.h:3
+#, fuzzy
+msgid "Post entries to a web log"
+msgstr "Blogger.com へ 'blog' エントリを投稿します"
 
 #: GNOME_BlogApplet.xml.h:1
 msgid "_About..."
@@ -30,34 +36,6 @@ msgstr "情報(_A)..."
 #: GNOME_BlogApplet.xml.h:2
 msgid "_Preferences..."
 msgstr "設定(_P)..."
-
-#: gnomeblog.schemas.in.h:1
-msgid "Password to use in accessing the blog"
-msgstr "アクセスする 'blog' で使用するパスワードです"
-
-#: gnomeblog.schemas.in.h:2
-msgid "Post blog entries to Blogger.com"
-msgstr "Blogger.com へ 'blog' エントリを投稿します"
-
-#: gnomeblog.schemas.in.h:3
-msgid "Protocol to use in accessing the blog"
-msgstr "Blog にアクセスする際に使用するプロトコルです"
-
-#: gnomeblog.schemas.in.h:4
-msgid "The application's preferences have been initialized"
-msgstr "アプリケーションの設定が初期化されました"
-
-#: gnomeblog.schemas.in.h:5
-msgid "The id or name of the particular blog to use on the XML-RPC server"
-msgstr "XML-RPC サーバで使用する特定の 'blog' の名前/識別子 ID です"
-
-#: gnomeblog.schemas.in.h:6
-msgid "URL to the bloggerAPI compatible XML-RPC server"
-msgstr "XML-RPC サーバ互換の bloggerAPI に対する URL です"
-
-#: gnomeblog.schemas.in.h:7
-msgid "Username to use in accessing the blog"
-msgstr "アクセスする 'blog' で使用するユーザ名です"
 
 #. !/usr/bin/env python
 #. FIXME: need to get this path from auto*
@@ -73,7 +51,7 @@ msgstr "Blog"
 msgid "A GNOME Web Blogging Applet"
 msgstr "GNOME ウェブ・ロギング (Blogging) アプレット"
 
-#: blog_poster.py:32
+#: blog_poster.py:30
 msgid "_Post Entry"
 msgstr "エントリの投稿(_P)"
 
@@ -121,15 +99,15 @@ msgstr "Blog 名:"
 msgid "Lookup Blogs"
 msgstr "Blog の検索"
 
-#: blogger_prefs.py:114 blogger_prefs.py:126 blogger_prefs.py:130
+#: blogger_prefs.py:115 blogger_prefs.py:130 blogger_prefs.py:135
 msgid "XML-RPC URL:"
 msgstr "XML-RPC URL:"
 
-#: blogger_prefs.py:118 blogger_prefs.py:122
+#: blogger_prefs.py:120 blogger_prefs.py:125
 msgid "Base Blog URL:"
 msgstr "ベース Blog URL:"
 
-#: blogger_prefs.py:125
+#: blogger_prefs.py:129
 msgid "bloggerAPI"
 msgstr "bloggerAPI"
 
@@ -174,3 +152,45 @@ msgstr ""
 "\"italic\">%s</span>'\n"
 "\n"
 "このエラー・メッセージの内容を seth@gnome.org まで送付して下さい。"
+
+#: gnomeblog.schemas.in.h:1
+msgid "Password to use in accessing the blog"
+msgstr "アクセスする 'blog' で使用するパスワードです"
+
+#: gnomeblog.schemas.in.h:2
+msgid "Post blog entries to Blogger.com"
+msgstr "Blogger.com へ 'blog' エントリを投稿します"
+
+#: gnomeblog.schemas.in.h:3
+msgid "Protocol to use in accessing the blog"
+msgstr "Blog にアクセスする際に使用するプロトコルです"
+
+#: gnomeblog.schemas.in.h:4
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:5
+msgid "The application's preferences have been initialized"
+msgstr "アプリケーションの設定が初期化されました"
+
+#: gnomeblog.schemas.in.h:6
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr "XML-RPC サーバで使用する特定の 'blog' の名前/識別子 ID です"
+
+#: gnomeblog.schemas.in.h:7
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr "XML-RPC サーバ互換の bloggerAPI に対する URL です"
+
+#: gnomeblog.schemas.in.h:8
+msgid "Username to use in accessing the blog"
+msgstr "アクセスする 'blog' で使用するユーザ名です"
+
+#: gnome-blog.desktop.in.h:2
+msgid "Post an entry to a web log"
+msgstr ""
+
+#~ msgid "Blogging Tool"
+#~ msgstr "Blogging ツール"
+
+#~ msgid "Blogging tool"
+#~ msgstr "'Blog' するツール"

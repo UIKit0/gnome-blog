@@ -11,6 +11,7 @@ gnomeblogdir = $(pythondir)/gnomeblog
 gnomeblog_PYTHON = 		\
 	__init__.py		\
 	blog_applet.py		\
+	gnome-blog-poster	\
 	blog_poster.py 		\
 	aligned_window.py 	\
 	hig_alert.py 		\
@@ -54,6 +55,7 @@ install-data-local:
 DISTCLEANFILES =                \
 	$(schema_DATA)		\
 	$(server_DATA)		\
+	$(Desktop_DATA)		\
         intltool-extract        \
         intltool-merge          \
         intltool-update

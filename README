@@ -1,0 +1,3 @@
+gnome-blog is a panel object (aka applet) that can post to
+bloggerAPI compatible blogs including blogger.com, pyblosxom,
+and moveable-type. It requires a recent version of gnome-python.

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog 0.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-04 00:43-0500\n"
+"POT-Creation-Date: 2005-01-12 02:44-0500\n"
 "PO-Revision-Date: 2004-01-17 13:26+0100\n"
 "Last-Translator: Christophe Merlet (RedFox) <redfox@redfoxcenter.org>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
@@ -280,32 +280,32 @@ msgstr ""
 "L'URL « %s » ne semble pas être un serveur XML-RPC LiveJournal valide. Le "
 "serveur Web a rapporté : %s."
 
-#: rich_entry.py:142 rich_entry.py:150
+#: rich_entry.py:143 rich_entry.py:151
 msgid "Could not load dragged in image"
 msgstr "Impossible de charger l'image déposé"
 
-#: rich_entry.py:143 rich_entry.py:151
+#: rich_entry.py:144 rich_entry.py:152
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "L'erreur lors du chargement de %s était : %s"
 
-#: rich_entry.py:208
+#: rich_entry.py:209
 msgid "Add _Link..."
 msgstr "Ajouter un _lien..."
 
-#: rich_entry.py:213
+#: rich_entry.py:214
 msgid "Add Link"
 msgstr "Ajouter un lien"
 
-#: rich_entry.py:214
+#: rich_entry.py:215
 msgid "_Add Link"
 msgstr "A_jouter un lien"
 
-#: rich_entry.py:222
+#: rich_entry.py:223
 msgid "Text:"
 msgstr "Texte :"
 
-#: rich_entry.py:225
+#: rich_entry.py:226
 msgid "URL:"
 msgstr "URL :"
 

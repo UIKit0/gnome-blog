@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-04 00:43-0500\n"
+"POT-Creation-Date: 2005-01-12 02:44-0500\n"
 "PO-Revision-Date: 2003-10-24 02:36+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -269,33 +269,33 @@ msgid ""
 "reported: %s."
 msgstr ""
 
-#: rich_entry.py:142 rich_entry.py:150
+#: rich_entry.py:143 rich_entry.py:151
 msgid "Could not load dragged in image"
 msgstr "Kunde inte läsa in indragen bild"
 
-#: rich_entry.py:143 rich_entry.py:151
+#: rich_entry.py:144 rich_entry.py:152
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "Fel vid inläsning av %s var: %s"
 
-#: rich_entry.py:208
+#: rich_entry.py:209
 #, fuzzy
 msgid "Add _Link..."
 msgstr "Lägg till _länk"
 
-#: rich_entry.py:213
+#: rich_entry.py:214
 msgid "Add Link"
 msgstr "Lägg till länk"
 
-#: rich_entry.py:214
+#: rich_entry.py:215
 msgid "_Add Link"
 msgstr "_Lägg till länk"
 
-#: rich_entry.py:222
+#: rich_entry.py:223
 msgid "Text:"
 msgstr "Text:"
 
-#: rich_entry.py:225
+#: rich_entry.py:226
 msgid "URL:"
 msgstr "URL:"
 

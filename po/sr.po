@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-04 00:43-0500\n"
+"POT-Creation-Date: 2005-01-12 02:44-0500\n"
 "PO-Revision-Date: 2004-03-06 03:28+0100\n"
 "Last-Translator: Данило Шеган <danilo@prevod.org>\n"
 "Language-Team: Serbian (sr) <serbiangnome-lista@nongnu.org>\n"
@@ -274,32 +274,32 @@ msgstr ""
 "Адреса „%s“ изгледа не представља исправан ЛајвЏурнал (LiveJournal) XML-RPC "
 "сервер. Веб сервер је пријавио: %s."
 
-#: rich_entry.py:142 rich_entry.py:150
+#: rich_entry.py:143 rich_entry.py:151
 msgid "Could not load dragged in image"
 msgstr "Не могу да учитам превучену слику"
 
-#: rich_entry.py:143 rich_entry.py:151
+#: rich_entry.py:144 rich_entry.py:152
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "Грешка при учитавању %s је била: %s"
 
-#: rich_entry.py:208
+#: rich_entry.py:209
 msgid "Add _Link..."
 msgstr "Додај _везу..."
 
-#: rich_entry.py:213
+#: rich_entry.py:214
 msgid "Add Link"
 msgstr "Додај везу"
 
-#: rich_entry.py:214
+#: rich_entry.py:215
 msgid "_Add Link"
 msgstr "Додај _везу"
 
-#: rich_entry.py:222
+#: rich_entry.py:223
 msgid "Text:"
 msgstr "Текст:"
 
-#: rich_entry.py:225
+#: rich_entry.py:226
 msgid "URL:"
 msgstr "Адреса:"
 

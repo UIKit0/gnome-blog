@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: es\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-04 00:43-0500\n"
+"POT-Creation-Date: 2005-01-12 02:44-0500\n"
 "PO-Revision-Date: 2004-04-02 01:56+0200\n"
 "Last-Translator: Francisco Javier F. Serrador <serrador@cvs.gnome.org>\n"
 "Language-Team: Spanish <traductores@es.gnome.org>\n"
@@ -281,32 +281,32 @@ msgstr ""
 "La URL «%s» no parece ser un servicor XML-RPC LiveJournal válido. El "
 "servidor web devolvió: %s."
 
-#: rich_entry.py:142 rich_entry.py:150
+#: rich_entry.py:143 rich_entry.py:151
 msgid "Could not load dragged in image"
 msgstr "No se pudo cargar la imagen arrastrada dentro"
 
-#: rich_entry.py:143 rich_entry.py:151
+#: rich_entry.py:144 rich_entry.py:152
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "El error al cargar %s fue: %s"
 
-#: rich_entry.py:208
+#: rich_entry.py:209
 msgid "Add _Link..."
 msgstr "Añadir en_lace..."
 
-#: rich_entry.py:213
+#: rich_entry.py:214
 msgid "Add Link"
 msgstr "Añadir enlace"
 
-#: rich_entry.py:214
+#: rich_entry.py:215
 msgid "_Add Link"
 msgstr "_Añadir enlace"
 
-#: rich_entry.py:222
+#: rich_entry.py:223
 msgid "Text:"
 msgstr "Texto:"
 
-#: rich_entry.py:225
+#: rich_entry.py:226
 msgid "URL:"
 msgstr "URL:"
 

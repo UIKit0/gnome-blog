@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-04 00:43-0500\n"
+"POT-Creation-Date: 2005-01-12 02:44-0500\n"
 "PO-Revision-Date: 2004-09-03 18:27+0200\n"
 "Last-Translator: Laurent Dhima <laurenti@alblinux.net>\n"
 "Language-Team: Albanian <gnome-albanian-perkthyesit@lists.sourceforge.net>\n"
@@ -282,35 +282,35 @@ msgid ""
 "reported: %s."
 msgstr "URL nuk a XML server Web server."
 
-#: rich_entry.py:142 rich_entry.py:150
+#: rich_entry.py:143 rich_entry.py:151
 #, fuzzy
 msgid "Could not load dragged in image"
 msgstr "nuk ngarkoje në figurë"
 
-#: rich_entry.py:143 rich_entry.py:151
+#: rich_entry.py:144 rich_entry.py:152
 #, fuzzy, python-format
 msgid "Error loading %s was: %s"
 msgstr "Gabim"
 
-#: rich_entry.py:208
+#: rich_entry.py:209
 #, fuzzy
 msgid "Add _Link..."
 msgstr "Shto Lidhje."
 
-#: rich_entry.py:213
+#: rich_entry.py:214
 #, fuzzy
 msgid "Add Link"
 msgstr "Shto Lidhje"
 
-#: rich_entry.py:214
+#: rich_entry.py:215
 #, fuzzy
 msgid "_Add Link"
 msgstr "Shto Lidhje"
 
-#: rich_entry.py:222
+#: rich_entry.py:223
 msgid "Text:"
 msgstr "Teksti:"
 
-#: rich_entry.py:225
+#: rich_entry.py:226
 msgid "URL:"
 msgstr "URL:"

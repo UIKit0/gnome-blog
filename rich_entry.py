@@ -48,7 +48,8 @@ class RichEntry(gtk.TextView):
             targets.append((str(target[0]), target[1], target[2]))
 
         # Add the DND type that we support and set the new list of types
-        targets.append(("text/uri-list", 0, 398))
+        targets.insert(0, ("text/uri-list", 0, 398))
+
         self.drag_dest_set_target_list(targets)
         
         self.connect("drag-data-received", self._onDragDataReceived)
@@ -118,6 +119,7 @@ class RichEntry(gtk.TextView):
 
     def _onDragDataReceived(self, widget, drag_context, window_x, window_y,
                             selection_data, info, timestamp):
+
         if (info == 398):
             # 398 means text/uri-list
             assert(selection_data.format == 8)

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-04 00:43-0500\n"
+"POT-Creation-Date: 2005-01-12 02:44-0500\n"
 "PO-Revision-Date: 2004-04-09 23:31-0400\n"
 "Last-Translator: Gareth Owen <gowen72@yahoo.comg>\n"
 "Language-Team: \n"
@@ -268,31 +268,31 @@ msgstr ""
 "URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
 "reported: %s."
 
-#: rich_entry.py:142 rich_entry.py:150
+#: rich_entry.py:143 rich_entry.py:151
 msgid "Could not load dragged in image"
 msgstr "Could not load dragged in image"
 
-#: rich_entry.py:143 rich_entry.py:151
+#: rich_entry.py:144 rich_entry.py:152
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "Error loading %s was: %s"
 
-#: rich_entry.py:208
+#: rich_entry.py:209
 msgid "Add _Link..."
 msgstr "Add _Link..."
 
-#: rich_entry.py:213
+#: rich_entry.py:214
 msgid "Add Link"
 msgstr "Add Link"
 
-#: rich_entry.py:214
+#: rich_entry.py:215
 msgid "_Add Link"
 msgstr "_Add Link"
 
-#: rich_entry.py:222
+#: rich_entry.py:223
 msgid "Text:"
 msgstr "Text:"
 
-#: rich_entry.py:225
+#: rich_entry.py:226
 msgid "URL:"
 msgstr "URL:"

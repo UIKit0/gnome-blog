@@ -1,3 +1,11 @@
+2005-01-12  Seth Nickell  <seth@gnome.org>
+
+	* rich_entry.py:
+
+	Prepend (rather than appending) our "text/uri-list" target
+	to the list of DND targets on the TextView. Otherwise it comes in as
+	as string :-)
+	
 2005-01-04  Seth Nickell  <seth@gnome.org>
 
 	* blog.py:

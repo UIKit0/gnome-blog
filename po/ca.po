@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-04 00:43-0500\n"
+"POT-Creation-Date: 2005-01-12 02:44-0500\n"
 "PO-Revision-Date: 2004-03-24 12:55+0100\n"
 "Last-Translator: Aleix Badia i Bosch <abadia@ica.es>\n"
 "Language-Team: catalan <tradgnome@softcatala.org>\n"
@@ -266,31 +266,31 @@ msgid ""
 "reported: %s."
 msgstr ""
 
-#: rich_entry.py:142 rich_entry.py:150
+#: rich_entry.py:143 rich_entry.py:151
 msgid "Could not load dragged in image"
 msgstr "No s'ha pogut carregar la imatge arrossegada"
 
-#: rich_entry.py:143 rich_entry.py:151
+#: rich_entry.py:144 rich_entry.py:152
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "L'error en carregar %s ha sigut: %s"
 
-#: rich_entry.py:208
+#: rich_entry.py:209
 msgid "Add _Link..."
 msgstr "Afegeix un en_llaç..."
 
-#: rich_entry.py:213
+#: rich_entry.py:214
 msgid "Add Link"
 msgstr "Afegeix un enllaç"
 
-#: rich_entry.py:214
+#: rich_entry.py:215
 msgid "_Add Link"
 msgstr "_Afegeix un enllaç"
 
-#: rich_entry.py:222
+#: rich_entry.py:223
 msgid "Text:"
 msgstr "Text:"
 
-#: rich_entry.py:225
+#: rich_entry.py:226
 msgid "URL:"
 msgstr "URL:"

@@ -1,0 +1,60 @@
+# Copyright (C) 2001-2002 Free Software Foundation, Inc.
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Aktualną wersję tego pliku możesz odnaleźć w repozytorium cvs.gnome.pl
+# (:pserver:anonymous@cvs.gnome.pl:/home/cvs, puste hasło)
+# Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+# pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas na adres:
+# translators@gnome.pl
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-blog\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-09-03 08:52+0200\n"
+"PO-Revision-Date: 2003-09-02 HO:MI+ZONE\n"
+"Last-Translator: Arkadiusz Lipiec <alipiec@elka.pw.edu.pl>\n"
+"Language-Team: Polish <pl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: GNOME_BlogApplet.server.in.h:1
+msgid "Blogging Tool"
+msgstr "Narzędzie do blogowania"
+
+#: GNOME_BlogApplet.server.in.h:2
+msgid "Blogging tool"
+msgstr "Narzędzie do blogowania"
+
+#: GNOME_BlogApplet.xml.h:1
+msgid "_About..."
+msgstr "_Informacje o..."
+
+#: GNOME_BlogApplet.xml.h:2
+msgid "_Preferences..."
+msgstr "_Właściwości..."
+
+#: gnomeblog.schemas.in.h:1
+msgid "Password to use in accessing the blog"
+msgstr "Hasło dostępu do bloga"
+
+#: gnomeblog.schemas.in.h:2
+msgid "Post blog entries to Blogger.com"
+msgstr "Umieszczanie wpisów bloga na Blogger.com"
+
+#: gnomeblog.schemas.in.h:3
+msgid "The application's preferences have been initialized"
+msgstr "Ustawienia aplikacji były inicjowane"
+
+#: gnomeblog.schemas.in.h:4
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr ""
+"Identyfikator lub nazwa określonego bloga do użycia na serwerze XML-RPC"
+
+#: gnomeblog.schemas.in.h:5
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr "Adres URL serwera XML-RPC kompatybilnego z bloggerAPI"
+
+#: gnomeblog.schemas.in.h:6
+msgid "Username to use in accessing the blog"
+msgstr "Nazwa użytkownika bloga"

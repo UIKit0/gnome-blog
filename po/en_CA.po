@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-02 02:24-0500\n"
-"PO-Revision-Date: 2004-12-26 13:01-0400\n"
+"POT-Creation-Date: 2005-01-03 18:38-0500\n"
+"PO-Revision-Date: 2005-01-03 13:01-0400\n"
 "Last-Translator: Adam Weinberger <adamw@gnome.org>\n"
 "Language-Team: English/Canada <adamw@FreeBSD.org>\n"
 "MIME-Version: 1.0\n"
@@ -144,11 +144,11 @@ msgstr "Base Blog URL:"
 
 #: blogger_prefs.py:155
 msgid "Unknown blog type"
-msgstr ""
+msgstr "Unknown blog type"
 
 #: blogger_prefs.py:155
 msgid "The detected blog type is not among the list of supported blogs"
-msgstr ""
+msgstr "The detected blog type is not among the list of supported blogs"
 
 #: gnome-blog.desktop.in.h:2
 msgid "Post an entry to a web log"

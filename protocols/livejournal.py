@@ -8,6 +8,7 @@ _ = gettext.gettext
 
 from gnomeblog import hig_alert
 from gnomeblog import gnome_blog_globals
+from gnomeblog import proxy
 
 appkey = "6BF507937414229AEB450AB075001667C8BC8338"
 ver = 'GNOME-gnome-blog/' + gnome_blog_globals.version
@@ -17,7 +18,11 @@ class Blog:
         pass
 
     def postEntry (self, username, password, url, title, entry, client, gconf_prefix):
-        server = xmlrpclib.Server(url)
+
+        #check for GNOME proxy configurations and use if required
+        proxy_transport = proxy.GnomeProxyTransport(client)
+        server = proxy_transport.get_server(url);
+
         info = {
           'username': username,
           'password': password,

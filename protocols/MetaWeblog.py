@@ -9,6 +9,7 @@ _ = gettext.gettext
 
 from gnomeblog import hig_alert
 from gnomeblog import bloggerAPI
+from gnomeblog import proxy
 
 class Blog(bloggerAPI.Blog):
     def __init__(self):
@@ -27,7 +28,9 @@ class Blog(bloggerAPI.Blog):
 
         success = TRUE
 
-        server = xmlrpclib.Server(url)
+        #check for GNOME proxy configurations and use if required
+        proxy_transport = proxy.GnomeProxyTransport(client)
+        server = proxy_transport.get_server(url);
 
         content = {}
         content['title'] = title
@@ -53,7 +56,9 @@ class Blog(bloggerAPI.Blog):
 
         success = TRUE
         
-        server = xmlrpclib.Server(url)
+        #check for GNOME proxy configurations and use if required
+        proxy_transport = proxy.GnomeProxyTransport(client)
+        server = proxy_transport.get_server(url); 
 
         content = {}
         content['name'] = filename

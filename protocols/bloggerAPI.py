@@ -7,6 +7,7 @@ import gettext
 _ = gettext.gettext
 
 from gnomeblog import hig_alert
+from gnomeblog import proxy
 
 appkey = "6BF507937414229AEB450AB075001667C8BC8338"
 
@@ -25,7 +26,9 @@ class Blog:
 
         print ("Getting list for RPC interface %s" % (url))
         
-        server = xmlrpclib.Server(url)
+        #check for GNOME proxy configurations and use if required
+        proxy_transport = proxy.GnomeProxyTransport(client)
+        server = proxy_transport.get_server(url); 
 
         try:
             bloglist = server.blogger.getUsersBlogs(appkey, username, password)
@@ -73,7 +76,9 @@ class Blog:
         content = title + "\n" + entry
         success = TRUE
 
-        server = xmlrpclib.Server(url)
+        #check for GNOME proxy configurations and use if required
+        proxy_transport = proxy.GnomeProxyTransport(client)
+        server = proxy_transport.get_server(url); 
 
         try:
             server.blogger.newPost(appkey, blog_id, username, password,

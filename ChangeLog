@@ -1,3 +1,13 @@
+2004-02-26  John (J5) Palmieri <johnp@martianrock.com>
+
+	* protocols/livejournal.py:
+	* protocols/bloggerAPI.py:
+	* protocols/advogato.py:
+	* protocols/MetaWeblog.py:
+	Added code to allow posting through a web proxy using GNOME proxy settings
+
+	* proxy.py: Proxy code taken from PyBLO and modified to use GNOME proxy settings 
+
 2004-02-05  Robert Sedak  <robert.sedak@sk.htnet.hr>
 
         * configure.in: Added "hr" (Croatian) to ALL_LINGUAS.

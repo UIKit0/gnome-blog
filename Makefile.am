@@ -20,7 +20,8 @@ gnomeblog_PYTHON = 		\
 	blog.py			\
 	rich_entry.py		\
 	html_converter.py	\
-	gnome_blog_globals.py
+	gnome_blog_globals.py   \
+	proxy.py
 
 pixmapsdir = $(datadir)/pixmaps
 pixmaps_DATA = gnome-blog.png

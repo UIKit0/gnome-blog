@@ -1,5 +1,11 @@
 2003-09-13  Seth Nickell  <snickell@stanford.edu>
 
+	* gnome-blog.spec.in:
+
+	Add the new binary and desktop entry.
+	
+2003-09-13  Seth Nickell  <snickell@stanford.edu>
+
 	* configure.in:
 
 	Bump version to 0.7

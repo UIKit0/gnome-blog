@@ -8,8 +8,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
-"POT-Creation-Date: 2003-09-13 17:50-0700\n"
-"PO-Revision-Date: 2003-09-05 16:16+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-09-14 06:25+0200\n"
+"PO-Revision-Date: 2003-09-14 06:24+0200\n"
 "Last-Translator: Данило Шеган <danilo@prevod.org>\n"
 "Language-Team: Serbian (sr) <serbiangnome-listaL@nongnu.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,17 +19,15 @@ msgstr ""
 
 #: GNOME_BlogApplet.server.in.h:1
 msgid "Accessories"
-msgstr ""
+msgstr "Помоћни алати"
 
 #: GNOME_BlogApplet.server.in.h:2 gnome-blog.desktop.in.h:1
-#, fuzzy
 msgid "Blog Entry Poster"
-msgstr "Унос за блог је празан"
+msgstr "Пошиљалац уноса у блог"
 
 #: GNOME_BlogApplet.server.in.h:3
-#, fuzzy
 msgid "Post entries to a web log"
-msgstr "Пошаљи унос у блог на Blogger.com"
+msgstr "Пошаљи уносе у блог"
 
 #: GNOME_BlogApplet.xml.h:1
 msgid "_About..."
@@ -170,7 +169,7 @@ msgstr "Протокол којим се приступа блогу"
 
 #: gnomeblog.schemas.in.h:4
 msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
-msgstr ""
+msgstr "Додатак који се качи на основну адресу (нпр. „xmlrpc.cgi“)"
 
 #: gnomeblog.schemas.in.h:5
 msgid "The application's preferences have been initialized"
@@ -191,7 +190,7 @@ msgstr "Корисничко име за приступ блогу"
 
 #: gnome-blog.desktop.in.h:2
 msgid "Post an entry to a web log"
-msgstr ""
+msgstr "Пошаљите унос у веб дневник"
 
 #~ msgid "Blogging Tool"
 #~ msgstr "Алат за блоговање"

@@ -1,3 +1,18 @@
+2005-01-04  Seth Nickell  <seth@gnome.org>
+
+	* blog.py:
+
+	Work around... a buggy python? If I do __import__ on
+	bloggerAPI.py before "import xmlrpclib", the "import xmlrpclib"
+	in bloggerAPI.py dies with horrible C exceptions in the Python
+	interpreter. Ugh. So we now do an unnecessary "import xmlrpclib"
+	in blog.py.
+	
+	* blogger_prefs.py:
+
+	Go back to using "wordpress/xmlrpc.php" as before. We'll
+	address xmlrpc address alternatives better in a future release...
+	
 2005-01-02  Seth Nickell  <seth@gnome.org>
 
 	* Makefile.am:

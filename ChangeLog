@@ -1,5 +1,14 @@
 2003-09-01  Seth Nickell  <snickell@stanford.edu>
 
+	* Makefile.am:
+	* configure.in:
+
+	Finish rennaming, remove all instances of "blogger" except
+	in internal files (can worry about those later if anyone
+	actually cares)
+
+2003-09-01  Seth Nickell  <snickell@stanford.edu>
+
 	* AUTHORS:
 	* GNOME_BlogApplet.server.in:
 	* GNOME_BlogApplet.xml:

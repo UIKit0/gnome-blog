@@ -1,4 +1,4 @@
-AC_INIT(blogger_applet.py)
+AC_INIT(blog_applet.py)
 
 AM_CONFIG_HEADER(config.h)
 AM_INIT_AUTOMAKE(gnome-blog, 1.0)
@@ -49,5 +49,5 @@ AC_MSG_RESULT($PYGTK_H2DEF)
 
 AC_OUTPUT([
 Makefile
-gnome-blogger.spec
+gnome-blog.spec
 ])

@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-11-14 05:13+0100\n"
-"PO-Revision-Date: 2003-11-08 19:04+0100\n"
+"POT-Creation-Date: 2003-11-14 16:39+0100\n"
+"PO-Revision-Date: 2003-11-14 16:40+0100\n"
 "Last-Translator: Данило Шеган <danilo@prevod.org>\n"
 "Language-Team: Serbian (sr) <serbiangnome-lista@nongnu.org>\n"
 "MIME-Version: 1.0\n"
@@ -143,10 +143,9 @@ msgstr "Поставке Blogger-а"
 msgid "Self-Run MovableType"
 msgstr "Лични MovableType"
 
-# bug: Pyblosxom!
 #: blogger_prefs.py:38
-msgid "Self-Run Pybloxsom"
-msgstr "Лични Pybloxsom"
+msgid "Self-Run Pyblosxom"
+msgstr "Лични Pyblosxom"
 
 #: blogger_prefs.py:39
 msgid "Self-Run Other"

@@ -9,10 +9,10 @@ from gnomeblog import hig_alert
 from gnomeblog import rich_entry
 from gnomeblog import blog
 
-gconf_prefix = "/apps/gnome-blogger"
+gconf_prefix = None
 
 class BlogPoster(gtk.Frame):
-    def __init__(self, prefs_key="/apps/gnome-blogger", extra_button=None):
+    def __init__(self, prefs_key="/apps/gnome-blog", extra_button=None):
         gtk.Frame.__init__(self)
         self.set_shadow_type(gtk.SHADOW_OUT)
 

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog HEAD\n"
-"POT-Creation-Date: 2003-09-13 16:41-0700\n"
+"POT-Creation-Date: 2003-09-13 17:27-0700\n"
 "PO-Revision-Date: 2003-09-14 01:34+0900\n"
 "Last-Translator: Takeshi AIHANA <aihana@gnome.gr.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
@@ -75,39 +75,39 @@ msgstr "Blog のエントリが空です"
 msgid "Blogger Preferences"
 msgstr "Blogger の設定"
 
-#: blogger_prefs.py:39
+#: blogger_prefs.py:37
 msgid "Self-Run MovableType"
 msgstr "自動実行型 [MovableType]"
 
-#: blogger_prefs.py:40
+#: blogger_prefs.py:38
 msgid "Self-Run Pybloxsom"
 msgstr "自動実行型 [Pybloxsom]"
 
-#: blogger_prefs.py:41
+#: blogger_prefs.py:39
 msgid "Self-Run Other"
 msgstr "自動実行型 [その他]"
 
-#: blogger_prefs.py:58
+#: blogger_prefs.py:56
 msgid "Blog Base URL:"
 msgstr "Blog のベース URL:"
 
-#: blogger_prefs.py:60
+#: blogger_prefs.py:58
 msgid "Blog Name:"
 msgstr "Blog 名:"
 
-#: blogger_prefs.py:62
+#: blogger_prefs.py:60
 msgid "Lookup Blogs"
 msgstr "Blog の検索"
 
-#: blogger_prefs.py:115 blogger_prefs.py:130 blogger_prefs.py:135
+#: blogger_prefs.py:113 blogger_prefs.py:128 blogger_prefs.py:133
 msgid "XML-RPC URL:"
 msgstr "XML-RPC URL:"
 
-#: blogger_prefs.py:120 blogger_prefs.py:125
+#: blogger_prefs.py:118 blogger_prefs.py:123
 msgid "Base Blog URL:"
 msgstr "ベース Blog URL:"
 
-#: blogger_prefs.py:129
+#: blogger_prefs.py:127
 msgid "bloggerAPI"
 msgstr "bloggerAPI"
 

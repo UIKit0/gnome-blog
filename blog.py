@@ -19,6 +19,7 @@ def postEntry (title, entry, gconf_prefix):
         
 
 def _getSettings(client, gconf_prefix):
+    print ("Using prefix %s" % (gconf_prefix))
     username = client.get_string(gconf_prefix + "/blog_username")
     password = client.get_string(gconf_prefix + "/blog_password")
     protocol = client.get_string(gconf_prefix + "/blog_protocol")
@@ -27,5 +28,7 @@ def _getSettings(client, gconf_prefix):
     return (username, password, protocol, url)
 
 def _getBlogBackend(protocol):
-    protocolModule = __import__("gnomeblog.%s" % (protocol), globals(), locals(), ['blog'])
+    modulename = "gnomeblog.%s" % (protocol)
+    print ("Getting module %s" % modulename)
+    protocolModule = __import__(modulename, globals(), locals(), ['blog'])
     return protocolModule.blog

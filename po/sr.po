@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
-"POT-Creation-Date: 2003-09-13 16:41-0700\n"
+"POT-Creation-Date: 2003-09-13 17:27-0700\n"
 "PO-Revision-Date: 2003-09-05 16:16+0200\n"
 "Last-Translator: Данило Шеган <danilo@prevod.org>\n"
 "Language-Team: Serbian (sr) <serbiangnome-listaL@nongnu.org>\n"
@@ -76,39 +76,39 @@ msgstr "Унос за блог је празан"
 msgid "Blogger Preferences"
 msgstr "Поставке блогача"
 
-#: blogger_prefs.py:39
+#: blogger_prefs.py:37
 msgid "Self-Run MovableType"
 msgstr "Лични MovableType"
 
-#: blogger_prefs.py:40
+#: blogger_prefs.py:38
 msgid "Self-Run Pybloxsom"
 msgstr "Лични Pybloxsom"
 
-#: blogger_prefs.py:41
+#: blogger_prefs.py:39
 msgid "Self-Run Other"
 msgstr "Неки други лични"
 
-#: blogger_prefs.py:58
+#: blogger_prefs.py:56
 msgid "Blog Base URL:"
 msgstr "Основна адреса блога:"
 
-#: blogger_prefs.py:60
+#: blogger_prefs.py:58
 msgid "Blog Name:"
 msgstr "Име блога:"
 
-#: blogger_prefs.py:62
+#: blogger_prefs.py:60
 msgid "Lookup Blogs"
 msgstr "Пронађи блогове"
 
-#: blogger_prefs.py:115 blogger_prefs.py:130 blogger_prefs.py:135
+#: blogger_prefs.py:113 blogger_prefs.py:128 blogger_prefs.py:133
 msgid "XML-RPC URL:"
 msgstr "XML-RPC адреса:"
 
-#: blogger_prefs.py:120 blogger_prefs.py:125
+#: blogger_prefs.py:118 blogger_prefs.py:123
 msgid "Base Blog URL:"
 msgstr "Основна адреса блога:"
 
-#: blogger_prefs.py:129
+#: blogger_prefs.py:127
 msgid "bloggerAPI"
 msgstr "bloggerAPI"
 

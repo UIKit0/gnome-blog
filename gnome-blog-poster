@@ -30,7 +30,8 @@ class BloggerApp:
         prefs_button = gtk.Button(_("Preferences..."))
         prefs_button.connect("clicked", self._onPrefsButtonClicked)
         
-        poster        = blog_poster.BlogPoster(extra_button=prefs_button)
+        poster        = blog_poster.BlogPoster(prefs_key=self.prefs_key,
+                                               extra_button=prefs_button)
         poster_window = gtk.Window(gtk.WINDOW_TOPLEVEL)
         poster_window.set_title(_("Post Blog Entry"))
         poster_window.connect('destroy', lambda w: gtk.main_quit())

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
-"POT-Creation-Date: 2003-09-13 16:41-0700\n"
+"POT-Creation-Date: 2003-09-13 17:27-0700\n"
 "PO-Revision-Date: 2003-09-09 12:25+0000\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
@@ -75,39 +75,39 @@ msgstr "Entrada de Blog está Vazia"
 msgid "Blogger Preferences"
 msgstr "Propriedades Blogger"
 
-#: blogger_prefs.py:39
+#: blogger_prefs.py:37
 msgid "Self-Run MovableType"
 msgstr "MovableType Gerido pelo Próprio"
 
-#: blogger_prefs.py:40
+#: blogger_prefs.py:38
 msgid "Self-Run Pybloxsom"
 msgstr "Pybloxsom Gerido pelo Próprio"
 
-#: blogger_prefs.py:41
+#: blogger_prefs.py:39
 msgid "Self-Run Other"
 msgstr "Outro Gerido pelo Próprio"
 
-#: blogger_prefs.py:58
+#: blogger_prefs.py:56
 msgid "Blog Base URL:"
 msgstr "URL Base Blog:"
 
-#: blogger_prefs.py:60
+#: blogger_prefs.py:58
 msgid "Blog Name:"
 msgstr "Nome Blog:"
 
-#: blogger_prefs.py:62
+#: blogger_prefs.py:60
 msgid "Lookup Blogs"
 msgstr "Consultar Blogs"
 
-#: blogger_prefs.py:115 blogger_prefs.py:130 blogger_prefs.py:135
+#: blogger_prefs.py:113 blogger_prefs.py:128 blogger_prefs.py:133
 msgid "XML-RPC URL:"
 msgstr "URL XML-RPC:"
 
-#: blogger_prefs.py:120 blogger_prefs.py:125
+#: blogger_prefs.py:118 blogger_prefs.py:123
 msgid "Base Blog URL:"
 msgstr "URL Base Blog:"
 
-#: blogger_prefs.py:129
+#: blogger_prefs.py:127
 msgid "bloggerAPI"
 msgstr "bloggerAPI"
 

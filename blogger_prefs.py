@@ -8,7 +8,7 @@ from gnomeblog import gconf_widgets
 from gnomeblog import hig_alert
 from gnomeblog import blog
 
-gconf_prefix = "/apps/gnome-blogger"
+gconf_prefix = None
 
 class LeftLabel(gtk.Label):
     def __init__(self, string):
@@ -20,9 +20,7 @@ class BloggerPrefs(gtk.Dialog):
         gtk.Dialog.__init__(self, title=_("Blogger Preferences"), buttons=(gtk.STOCK_CLOSE, gtk.RESPONSE_CLOSE))
 
         global gconf_prefix
-
-        if (prefs_key != None):
-            gconf_prefix = prefs_key
+        gconf_prefix = prefs_key
 
         client = gconf.client_get_default()
         client.add_dir(gconf_prefix, gconf.CLIENT_PRELOAD_ONELEVEL)

@@ -1,5 +1,17 @@
 2003-09-13  Seth Nickell  <snickell@stanford.edu>
 
+	* blog.py:
+	* blog_poster.py:
+	* blogger_prefs.py:
+	* gnome-blog-poster:
+	* protocols/bloggerAPI.py:
+	* rich_entry.py:
+
+	Work out little kinks with RH9 support
+	and the standalone blog poster.
+	
+2003-09-13  Seth Nickell  <snickell@stanford.edu>
+
 	* Makefile.am:
 
 	Pass "make distcheck".

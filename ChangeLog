@@ -1,3 +1,8 @@
+2003-11-16  Bryan W Clark  <clarkbw@cvs.gnome.org>
+
+	* rich_entry.py (RichEntry._onDragDataReceived): 
+	fixed L10N errors reported in bug # 125352
+
 2003-11-14  Bryan W Clark  <clarkbw@cvs.gnome.org>
 
 	* gnome-blog-poster (BloggerApp.__init__): Bug fix for initial

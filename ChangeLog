@@ -1,5 +1,11 @@
 2003-09-11  Seth Nickell  <snickell@stanford.edu>
 
+	* configure.in:
+
+	Bump version number to 0.6, release
+
+2003-09-11  Seth Nickell  <snickell@stanford.edu>
+
 	* protocols/bloggerAPI.py:
 
 	Import the appkey from the global namespace.

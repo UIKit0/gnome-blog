@@ -39,4 +39,4 @@ intltool-update
 intltool-update.in
 gnome-blogger.schemas
 gnome_blog_globals.py
-
+gnome-blog.desktop

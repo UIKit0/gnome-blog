@@ -16,20 +16,7 @@ class RichEntry(gtk.TextView):
         self.buffer = gtk.TextBuffer()
         gtk.TextView.__init__(self, self.buffer)
 
-        # GtkTextView already defines drag and drop targets, get them
-        old_targets = self.drag_dest_get_target_list()
-
-        # Unfortunately old_targets string field has a funny type
-        # that needs to be explicitly converted to string
-        targets = []
-        for target in old_targets:
-            targets.append((str(target[0]), target[1], target[2]))
-
-        # Add the DND type that we support and set the new list of types
-        targets.append(("text/uri-list", 0, 398))
-        self.drag_dest_set_target_list(targets)
-        
-        self.connect("drag-data-received", self._onDragDataReceived)
+        self._initDND()
         
         self.set_editable(gtk.TRUE)
         self.set_wrap_mode(gtk.WRAP_WORD)
@@ -45,6 +32,23 @@ class RichEntry(gtk.TextView):
         self.linknum = 0
 
         self.images = [ ]
+
+    def _initDND(self):
+        
+        # GtkTextView already defines drag and drop targets, get them
+        old_targets = self.drag_dest_get_target_list()
+
+        # Unfortunately old_targets string field has a funny type
+        # that needs to be explicitly converted to string
+        targets = []
+        for target in old_targets:
+            targets.append((str(target[0]), target[1], target[2]))
+
+        # Add the DND type that we support and set the new list of types
+        targets.append(("text/uri-list", 0, 398))
+        self.drag_dest_set_target_list(targets)
+        
+        self.connect("drag-data-received", self._onDragDataReceived)
         
 
     def _getUniqueTag(self):
@@ -196,7 +200,8 @@ class InsertHyperlinkButton(gtk.Button):
     def _onClicked(self, button):
         dialog = gtk.Dialog(_("Add Link"), buttons=(gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
                                                        _("_Add Link"), gtk.RESPONSE_ACCEPT))
-
+        
+        dialog.set_default_response(gtk.RESPONSE_ACCEPT)
         dialog.set_has_separator(gtk.FALSE)
         dialog.set_resizable(gtk.FALSE)
         dialog.set_border_width(5)
@@ -210,6 +215,7 @@ class InsertHyperlinkButton(gtk.Button):
 
         textEntry = gtk.Entry()            
         urlEntry  = gtk.Entry()
+        urlEntry.set_activates_default(gtk.TRUE)
 
         selection = self.rich_entry.buffer.get_selection_bounds()
 
@@ -230,6 +236,11 @@ class InsertHyperlinkButton(gtk.Button):
         dialog.vbox.pack_start(table)
 
         table.show_all()
+
+        if selection:
+            urlEntry.grab_focus()
+        else:
+            textEntry.grab_focus()
 
         response = dialog.run()
 

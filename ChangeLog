@@ -3,6 +3,13 @@
 	* rich_entry.py (RichEntry._onDragDataReceived): 
 	fixed L10N errors reported in bug # 125352
 
+	(InsertHyperlinkButton.__init__): 
+	Added some default handlers for the add link button, this should
+	make it easier to add links using only the keyboard.
+
+	Also moved the DnD init stuff to _initDND(), that's Seth's mojo
+	and I don't want to play with right now.
+
 2003-11-14  Bryan W Clark  <clarkbw@cvs.gnome.org>
 
 	* gnome-blog-poster (BloggerApp.__init__): Bug fix for initial

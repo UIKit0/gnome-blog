@@ -2,9 +2,13 @@ serverdir = $(libdir)/bonobo/servers
 server_in_files = GNOME_BlogApplet.server.in
 server_DATA = $(server_in_files:.server.in=.server)
 
+$(server_in_files): $(server_in_files:.server.in=.server.in.in)
+	sed -e "s|\@LIBEXECDIR\@|$(libexecdir)|" $< > $@
+
 @INTLTOOL_SERVER_RULE@
 
-bin_SCRIPTS = blog_applet.py gnome-blog-poster
+bin_SCRIPTS = gnome-blog-poster
+libexec_SCRIPTS = blog_applet.py
 
 gnomeblogdir = $(pythondir)/gnomeblog
 
@@ -68,7 +72,7 @@ EXTRA_DIST =  			\
 	$(schema_in_files) 	\
 	$(ui_DATA)		\
 	$(pixmaps_DATA)		\
-	GNOME_BlogApplet.server.in \
+	GNOME_BlogApplet.server.in.in \
         intltool-update.in      \
         intltool-extract.in     \
         intltool-merge.in       \

@@ -1,5 +1,15 @@
 2004-10-26  Seth Nickell  <seth@gnome.org>
 
+        Patch from Toshio Kuratomi <toshio@tiki-lounge.com>
+
+	* GNOME_BlogApplet.server.in:
+	* GNOME_BlogApplet.server.in.in:
+	* Makefile.am:
+
+	Install applet into LIBEXECDIR instead of BINDIR
+
+2004-10-26  Seth Nickell  <seth@gnome.org>
+
         Patch from Brian Pepple <bdpepple@ameritech.net>
 	
 	* gnome-blog.spec.in:

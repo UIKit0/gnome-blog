@@ -33,6 +33,7 @@ class BloggerPrefs(gtk.Dialog):
         blogTypeMenu = gconf_widgets.OptionMenu(gconf_prefix + "/blog_type")
         blogTypeMenu.setStringValuePairs([("Blogger.com", "blogger.com"),
                                          ("Advogato", "advogato.org"),
+                                         ("LiveJournal", "livejournal.com"),
                                          ("-", ""),
                                          (_("Self-Run MovableType"), "custom-mt"),
                                          (_("Self-Run Pyblosxom"), "custom-pybloxsom"),
@@ -48,6 +49,7 @@ class BloggerPrefs(gtk.Dialog):
         self.blogProtocolMenu = gconf_widgets.OptionMenu(gconf_prefix + "/blog_protocol")
         self.blogProtocolMenu.setStringValuePairs([("BloggerAPI", "bloggerAPI"),
                                                    ("Advogato", "advogato"),
+                                                   ("LiveJournal", "livejournal"),
                                                    ("MetaWeblog", "MetaWeblog")])
         self.blogProtocolLabel = LeftLabel(_("Blog Protocol:"))
         
@@ -130,6 +132,12 @@ class BloggerPrefs(gtk.Dialog):
             url = "http://www.advogato.org/XMLRPC"
             url_ending = ""
             protocol = "advogato"
+            url_description = _("XML-RPC URL:")
+	    lookup = gtk.FALSE
+        elif (blog_type == "livejournal.com"):
+            url = "http://www.livejournal.com/interface/xmlrpc"
+            url_ending = ""
+            protocol = "livejournal"
             url_description = _("XML-RPC URL:")
 	    lookup = gtk.FALSE
         else:

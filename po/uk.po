@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-28 16:37+0300\n"
+"POT-Creation-Date: 2005-01-02 02:24-0500\n"
 "PO-Revision-Date: 2004-09-28 16:47+0300\n"
 "Last-Translator: Maxim Dziumanenko <mvd@mylinux.com.ua>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
@@ -15,15 +15,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: GNOME_BlogApplet.server.in.h:1
+#: GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr "Приладдя"
 
-#: GNOME_BlogApplet.server.in.h:2 gnome-blog.desktop.in.h:1
+#: GNOME_BlogApplet.server.in.in.h:2 gnome-blog.desktop.in.h:1
 msgid "Blog Entry Poster"
 msgstr "Програма надсилання елементів Blog"
 
-#: GNOME_BlogApplet.server.in.h:3
+#: GNOME_BlogApplet.server.in.in.h:3
 msgid "Post entries to a web log"
 msgstr "Надіслати елементи до веб-журналу"
 
@@ -35,19 +35,19 @@ msgstr "_Про програму..."
 msgid "_Preferences..."
 msgstr "П_араметри..."
 
-#: blog_applet.py:31
+#: blog_applet.py:35
 msgid "About"
 msgstr "Про програму"
 
-#: blog_applet.py:34
+#: blog_applet.py:38
 msgid "Blog"
 msgstr "Blog"
 
-#: blog_applet.py:67
+#: blog_applet.py:73
 msgid "A GNOME Web Blogging Applet"
 msgstr "Веб-блог аплет для GNOME"
 
-#: blog_applet.py:102
+#: blog_applet.py:108
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Створити blog-елемент для %s на %s"
@@ -56,32 +56,34 @@ msgstr "Створити blog-елемент для %s на %s"
 msgid "_Post Entry"
 msgstr "_Надіслати елемент"
 
-#: blog_poster.py:63
+#: blog_poster.py:69
 msgid "Preferences..."
 msgstr "Параметри..."
 
-#: blog_poster.py:75
+#: blog_poster.py:81
 msgid "Title:"
 msgstr "Заголовок:"
 
-#: blog_poster.py:110
+#: blog_poster.py:116
 msgid "Couldn't upload images"
 msgstr "Не відвантажити зображення"
 
-#: blog_poster.py:110
+#: blog_poster.py:116
 msgid "The blog protocol in use does not support uploading images"
-msgstr "Blog-протокол, що використовується, не підтримує відвантаження зображень"
+msgstr ""
+"Blog-протокол, що використовується, не підтримує відвантаження зображень"
 
-#: blog_poster.py:157
+#: blog_poster.py:163
 msgid "Blog Entry is Blank"
 msgstr "Порожній blog-елемент"
 
-#: blog_poster.py:157
+#: blog_poster.py:163
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
 msgstr ""
-"У полі вводу blog не було введено текст. Введіть якийсь текст та спробуйте знову"
+"У полі вводу blog не було введено текст. Введіть якийсь текст та спробуйте "
+"знову"
 
 #: blogger_prefs.py:19
 msgid "Blogger Preferences"
@@ -96,45 +98,58 @@ msgid "Self-Run Pyblosxom"
 msgstr "Pyblosxom з самозапуском"
 
 #: blogger_prefs.py:40
+#, fuzzy
+msgid "Self-Run WordPress"
+msgstr "Інший з самозапуском"
+
+#: blogger_prefs.py:41
 msgid "Self-Run Other"
 msgstr "Інший з самозапуском"
 
-#: blogger_prefs.py:44
+#: blogger_prefs.py:45
 msgid "Blog Type:"
 msgstr "Тип Blog:"
 
-#: blogger_prefs.py:54
+#: blogger_prefs.py:55
 msgid "Blog Protocol:"
 msgstr "Blog-протокол:"
 
-#: blogger_prefs.py:58
+#: blogger_prefs.py:59
 msgid "Blog Base URL:"
 msgstr "Базовий URL Blog:"
 
-#: blogger_prefs.py:60
+#: blogger_prefs.py:61
 msgid "Blog Name:"
 msgstr "Назва Blog:"
 
-#: blogger_prefs.py:62
+#: blogger_prefs.py:63
 msgid "Lookup Blogs"
 msgstr "Знайти Blog"
 
-#: blogger_prefs.py:72
+#: blogger_prefs.py:73
 msgid "Username:"
 msgstr "Ім'я користувача:"
 
-#: blogger_prefs.py:73
+#: blogger_prefs.py:74
 msgid "Password:"
 msgstr "Пароль:"
 
-#: blogger_prefs.py:115 blogger_prefs.py:130 blogger_prefs.py:135
-#: blogger_prefs.py:141
+#: blogger_prefs.py:116 blogger_prefs.py:136 blogger_prefs.py:141
+#: blogger_prefs.py:147
 msgid "XML-RPC URL:"
 msgstr "XML-RPC URL:"
 
-#: blogger_prefs.py:120 blogger_prefs.py:125
+#: blogger_prefs.py:121 blogger_prefs.py:126 blogger_prefs.py:131
 msgid "Base Blog URL:"
 msgstr "URL базового Blog:"
+
+#: blogger_prefs.py:155
+msgid "Unknown blog type"
+msgstr ""
+
+#: blogger_prefs.py:155
+msgid "The detected blog type is not among the list of supported blogs"
+msgstr ""
 
 #: gnome-blog.desktop.in.h:2
 msgid "Post an entry to a web log"
@@ -158,7 +173,8 @@ msgstr "Параметри програми було ініціалізован�
 
 #: gnomeblog.schemas.in.h:5
 msgid "The id or name of the particular blog to use on the XML-RPC server"
-msgstr "Ідентифікатор чи назва окремого blog, що використовується на сервері XML-RPC"
+msgstr ""
+"Ідентифікатор чи назва окремого blog, що використовується на сервері XML-RPC"
 
 #: gnomeblog.schemas.in.h:6
 msgid "URL to the bloggerAPI compatible XML-RPC server"
@@ -171,7 +187,9 @@ msgstr "Ім'я користувача, що використовується п
 #: hig_alert.py:13
 #, python-format
 msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
-msgstr "Посилання (URL) '%s' має бути правильним bloggerAPI. Сервер XML-RPC повідомив: %s."
+msgstr ""
+"Посилання (URL) '%s' має бути правильним bloggerAPI. Сервер XML-RPC "
+"повідомив: %s."
 
 #: hig_alert.py:15
 #, python-format
@@ -179,8 +197,8 @@ msgid ""
 "Unknown username %s or password trying to post blog entry to XML-RPC server %"
 "s."
 msgstr ""
-"Невідоме ім'я користувача %s або пароль при спробі надіслати blog-елемент на сервер XML-RPC %"
-"s."
+"Невідоме ім'я користувача %s або пароль при спробі надіслати blog-елемент на "
+"сервер XML-RPC %s."
 
 #: hig_alert.py:17
 #, python-format
@@ -188,7 +206,8 @@ msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
 "reported: %s."
 msgstr ""
-"Не вдається надіслати до blog '%s' на bloggerAPI сумісний сервер XML-RPC '%s'. Сервер повідомив: %s."
+"Не вдається надіслати до blog '%s' на bloggerAPI сумісний сервер XML-RPC '%"
+"s'. Сервер повідомив: %s."
 
 #: hig_alert.py:19
 #, python-format
@@ -197,7 +216,8 @@ msgid ""
 "\n"
 "Please email this error message to seth@gnome.org so I can address it."
 msgstr ""
-"Сервер bloggerAPI (%s) повідомив про помилку, яку неможливо розпізнати: '%s, %s'. \n"
+"Сервер bloggerAPI (%s) повідомив про помилку, яку неможливо розпізнати: '%s, "
+"%s'. \n"
 "\n"
 "Напишіть звіт про цю помилку на seth@gnome.org."
 
@@ -214,8 +234,7 @@ msgstr "Ваше ім'я користувача є неправильним. П�
 #: protocols/advogato.py:30 protocols/livejournal.py:35
 msgid ""
 "Your username or password is invalid. Please double-check the preferences."
-msgstr ""
-"Ваше ім'я користувача є неправильним. Перевірте параметри."
+msgstr "Ваше ім'я користувача є неправильним. Перевірте параметри."
 
 #: protocols/advogato.py:39 protocols/bloggerAPI.py:87
 #: protocols/livejournal.py:61
@@ -229,7 +248,8 @@ msgid ""
 "URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
 "reported: %s."
 msgstr ""
-"Посилання (URL) '%s' не схоже на правильний bloggerAPI сервер XML-RPC. Веб-сервер повідомив: %s."
+"Посилання (URL) '%s' не схоже на правильний bloggerAPI сервер XML-RPC. Веб-"
+"сервер повідомив: %s."
 
 #: protocols/bloggerAPI.py:36 protocols/bloggerAPI.py:39
 msgid "Could not get list of blogs"
@@ -240,8 +260,8 @@ msgid ""
 "No XML-RPC server URL to post blog entries to is set, or the value could not "
 "be retrieved from GConf. Your entry will remain in the blogger window."
 msgstr ""
-"Не встановлено URL сервера XML-RPC для надсилання blog-елементів, або "
-"не вдається отримати значення з GConf. Ваш елемент залишиться у вікні blogger-а."
+"Не встановлено URL сервера XML-RPC для надсилання blog-елементів, або не "
+"вдається отримати значення з GConf. Ваш елемент залишиться у вікні blogger-а."
 
 #: protocols/livejournal.py:64
 #, python-format
@@ -249,8 +269,8 @@ msgid ""
 "URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
 "reported: %s."
 msgstr ""
-"URL '%s' не схожий на правильний LiveJournal сервер XML-RPC. Веб-сервер повідомив: %s."
-
+"URL '%s' не схожий на правильний LiveJournal сервер XML-RPC. Веб-сервер "
+"повідомив: %s."
 
 #: rich_entry.py:142 rich_entry.py:150
 msgid "Could not load dragged in image"

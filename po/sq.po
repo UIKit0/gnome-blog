@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-19 11:40+0200\n"
+"POT-Creation-Date: 2005-01-02 02:24-0500\n"
 "PO-Revision-Date: 2004-09-03 18:27+0200\n"
 "Last-Translator: Laurent Dhima <laurenti@alblinux.net>\n"
 "Language-Team: Albanian <gnome-albanian-perkthyesit@lists.sourceforge.net>\n"
@@ -15,47 +15,42 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. GRUT modified this item
-#: GNOME_BlogApplet.server.in.h:1
+#: GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr "Aksesorë"
 
-#: GNOME_BlogApplet.server.in.h:2 gnome-blog.desktop.in.h:1
+#: GNOME_BlogApplet.server.in.in.h:2 gnome-blog.desktop.in.h:1
 #, fuzzy
 msgid "Blog Entry Poster"
 msgstr "Ditari"
 
-#: GNOME_BlogApplet.server.in.h:3
+#: GNOME_BlogApplet.server.in.in.h:3
 msgid "Post entries to a web log"
 msgstr "Posto zërat tek një web log"
 
-#. GRUT modified this item
 #: GNOME_BlogApplet.xml.h:1
 msgid "_About..."
 msgstr "_Informacione..."
 
-#. GRUT modified this item
 #: GNOME_BlogApplet.xml.h:2
 msgid "_Preferences..."
 msgstr "_Preferime..."
 
-#. GRUT modified this item
-#: blog_applet.py:31
+#: blog_applet.py:35
 msgid "About"
 msgstr "Informacione"
 
-#. GRUT modified this item
-#: blog_applet.py:34
+#: blog_applet.py:38
 msgid "Blog"
 msgstr "Ditari"
 
-#: blog_applet.py:67
+#: blog_applet.py:73
 #, fuzzy
 msgid "A GNOME Web Blogging Applet"
 msgstr "A GNOME Web Applet"
 
-#: blog_applet.py:102
-#, fuzzy
+#: blog_applet.py:108
+#, fuzzy, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Krijo a ditari për"
 
@@ -63,31 +58,29 @@ msgstr "Krijo a ditari për"
 msgid "_Post Entry"
 msgstr ""
 
-#. GRUT modified this item
-#: blog_poster.py:63
+#: blog_poster.py:69
 msgid "Preferences..."
 msgstr "Preferime..."
 
-#. GRUT modified this item
-#: blog_poster.py:75
+#: blog_poster.py:81
 msgid "Title:"
 msgstr "Titulli:"
 
-#: blog_poster.py:110
+#: blog_poster.py:116
 msgid "Couldn't upload images"
 msgstr ""
 
-#: blog_poster.py:110
+#: blog_poster.py:116
 #, fuzzy
 msgid "The blog protocol in use does not support uploading images"
 msgstr "ditari në nuk"
 
-#: blog_poster.py:157
+#: blog_poster.py:163
 #, fuzzy
 msgid "Blog Entry is Blank"
 msgstr "Ditari është Fshih"
 
-#: blog_poster.py:157
+#: blog_poster.py:163
 #, fuzzy
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
@@ -111,54 +104,65 @@ msgstr "Vetë Ekzekuto"
 
 #: blogger_prefs.py:40
 #, fuzzy
+msgid "Self-Run WordPress"
+msgstr "Vetë Ekzekuto Tjetër"
+
+#: blogger_prefs.py:41
+#, fuzzy
 msgid "Self-Run Other"
 msgstr "Vetë Ekzekuto Tjetër"
 
-#: blogger_prefs.py:44
+#: blogger_prefs.py:45
 #, fuzzy
 msgid "Blog Type:"
 msgstr "Ditari Lloji:"
 
-#: blogger_prefs.py:54
+#: blogger_prefs.py:55
 #, fuzzy
 msgid "Blog Protocol:"
 msgstr "Ditari Protokolli:"
 
-#: blogger_prefs.py:58
+#: blogger_prefs.py:59
 #, fuzzy
 msgid "Blog Base URL:"
 msgstr "Ditari Bazë URL:"
 
-#: blogger_prefs.py:60
+#: blogger_prefs.py:61
 #, fuzzy
 msgid "Blog Name:"
 msgstr "Ditari Emri:"
 
-#: blogger_prefs.py:62
+#: blogger_prefs.py:63
 #, fuzzy
 msgid "Lookup Blogs"
 msgstr "Mbikqyr Blogs"
 
-#. GRUT modified this item
-#: blogger_prefs.py:72
+#: blogger_prefs.py:73
 msgid "Username:"
 msgstr "Përdoruesi:"
 
-#. GRUT modified this item
-#: blogger_prefs.py:73
+#: blogger_prefs.py:74
 msgid "Password:"
 msgstr "Fjalëkalimi:"
 
-#: blogger_prefs.py:115 blogger_prefs.py:130 blogger_prefs.py:135
-#: blogger_prefs.py:141
+#: blogger_prefs.py:116 blogger_prefs.py:136 blogger_prefs.py:141
+#: blogger_prefs.py:147
 #, fuzzy
 msgid "XML-RPC URL:"
 msgstr "XML URL:"
 
-#: blogger_prefs.py:120 blogger_prefs.py:125
+#: blogger_prefs.py:121 blogger_prefs.py:126 blogger_prefs.py:131
 #, fuzzy
 msgid "Base Blog URL:"
 msgstr "Bazë Ditari URL:"
+
+#: blogger_prefs.py:155
+msgid "Unknown blog type"
+msgstr ""
+
+#: blogger_prefs.py:155
+msgid "The detected blog type is not among the list of supported blogs"
+msgstr ""
 
 #: gnome-blog.desktop.in.h:2
 #, fuzzy
@@ -201,26 +205,26 @@ msgid "Username to use in accessing the blog"
 msgstr "Përdoruesi në ditari"
 
 #: hig_alert.py:13
-#, fuzzy
+#, fuzzy, python-format
 msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
 msgstr "URL nuk a XML Serveri."
 
 #: hig_alert.py:15
-#, fuzzy
+#, fuzzy, python-format
 msgid ""
 "Unknown username %s or password trying to post blog entry to XML-RPC server %"
 "s."
 msgstr "Nuk njihet përdoruesi password ditari XML server."
 
 #: hig_alert.py:17
-#, fuzzy
+#, fuzzy, python-format
 msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
 "reported: %s."
 msgstr "nuk ditari XML server Serveri."
 
 #: hig_alert.py:19
-#, fuzzy
+#, fuzzy, python-format
 msgid ""
 "The bloggerAPI server (%s) reported an error I don't understand: '%s, %s'. \n"
 "\n"
@@ -241,7 +245,8 @@ msgstr "përdoruesi është I pavlefshëm preferimet."
 
 #: protocols/advogato.py:30 protocols/livejournal.py:35
 #, fuzzy
-msgid "Your username or password is invalid. Please double-check the preferences."
+msgid ""
+"Your username or password is invalid. Please double-check the preferences."
 msgstr "përdoruesi password është I pavlefshëm preferimet."
 
 #: protocols/advogato.py:39 protocols/bloggerAPI.py:87
@@ -252,7 +257,7 @@ msgstr "nuk ditari"
 
 #: protocols/advogato.py:42 protocols/bloggerAPI.py:39
 #: protocols/bloggerAPI.py:90
-#, fuzzy
+#, fuzzy, python-format
 msgid ""
 "URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
 "reported: %s."
@@ -271,7 +276,7 @@ msgid ""
 msgstr "Jo XML server URL ditari është nuk në dritare."
 
 #: protocols/livejournal.py:64
-#, fuzzy
+#, fuzzy, python-format
 msgid ""
 "URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
 "reported: %s."
@@ -283,7 +288,7 @@ msgid "Could not load dragged in image"
 msgstr "nuk ngarkoje në figurë"
 
 #: rich_entry.py:143 rich_entry.py:151
-#, fuzzy
+#, fuzzy, python-format
 msgid "Error loading %s was: %s"
 msgstr "Gabim"
 
@@ -302,13 +307,10 @@ msgstr "Shto Lidhje"
 msgid "_Add Link"
 msgstr "Shto Lidhje"
 
-#. GRUT modified this item
 #: rich_entry.py:222
 msgid "Text:"
 msgstr "Teksti:"
 
-#. GRUT modified this item
 #: rich_entry.py:225
 msgid "URL:"
 msgstr "URL:"
-

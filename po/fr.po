@@ -8,25 +8,24 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog 0.7\n"
-"POT-Creation-Date: 2004-04-08 17:15-0400\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-01-02 02:24-0500\n"
 "PO-Revision-Date: 2004-01-17 13:26+0100\n"
 "Last-Translator: Christophe Merlet (RedFox) <redfox@redfoxcenter.org>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 
-#: GNOME_BlogApplet.server.in.h:1
+#: GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr "Accessoires"
 
-#. FIXME: popup an error dialog
-#: GNOME_BlogApplet.server.in.h:2 gnome-blog.desktop.in.h:1
+#: GNOME_BlogApplet.server.in.in.h:2 gnome-blog.desktop.in.h:1
 msgid "Blog Entry Poster"
 msgstr "Posteur de l'entrée du blog"
 
-#: GNOME_BlogApplet.server.in.h:3
+#: GNOME_BlogApplet.server.in.in.h:3
 msgid "Post entries to a web log"
 msgstr "Poster une entrée à un web log"
 
@@ -38,67 +37,50 @@ msgstr "À _propos..."
 msgid "_Preferences..."
 msgstr "_Préférences..."
 
-#. !/usr/bin/env python
-#. maybe someone can do this trick without string?
-#: blog_applet.py:31
+#: blog_applet.py:35
 msgid "About"
 msgstr "À propos"
 
-#: blog_applet.py:34
+#: blog_applet.py:38
 msgid "Blog"
 msgstr "Blog"
 
-#. self._showPrefDialog()
-#: blog_applet.py:67
+#: blog_applet.py:73
 msgid "A GNOME Web Blogging Applet"
 msgstr "Une applet GNOME pour blogguer"
 
-#. take the XML_RPC value from GConf
-#. split the URL up into http:, '', domainname, extra
-#. join back up the URL into http://domainname
-#: blog_applet.py:102
+#: blog_applet.py:108
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Créer une entrée de blog pour %s à %s"
 
-#. Set tooltip to the applet button
-#. check if pygtkspell is installed
-#. if we are using gtkspell, attach it to the blogEntry
 #: blog_poster.py:44
 msgid "_Post Entry"
 msgstr "_Poster l'entrée"
 
-#: blog_poster.py:63
+#: blog_poster.py:69
 msgid "Preferences..."
 msgstr "Préférences..."
 
-#: blog_poster.py:75
+#: blog_poster.py:81
 msgid "Title:"
 msgstr "Titre :"
 
-#: blog_poster.py:110
+#: blog_poster.py:116
 msgid "Couldn't upload images"
 msgstr "Impossible de publier les images"
 
-#: blog_poster.py:110
+#: blog_poster.py:116
 msgid "The blog protocol in use does not support uploading images"
 msgstr ""
 "Le protocole du blog en cours d'utilisation ne supporte pas la publication "
 "d'images"
 
-#. we must turn off the spell checker so as not to confuse
-#. the markup to html converter
-#. turn spelling back on
-#. Don't post silly blog entries like blank ones
-#. Only delete the entry if posting was successful
-#. Call back our parent informing them the entry was posted
-#. Popup a dialogue confirming even if its deemed
-#. unreasonable
-#: blog_poster.py:157
+#: blog_poster.py:163
 msgid "Blog Entry is Blank"
 msgstr "L'entrée du blog est vide"
 
-#: blog_poster.py:157
+#: blog_poster.py:163
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
@@ -119,45 +101,58 @@ msgid "Self-Run Pyblosxom"
 msgstr "Self-Run Pyblosxom"
 
 #: blogger_prefs.py:40
+#, fuzzy
+msgid "Self-Run WordPress"
+msgstr "Self-Run Other"
+
+#: blogger_prefs.py:41
 msgid "Self-Run Other"
 msgstr "Self-Run Other"
 
-#: blogger_prefs.py:44
+#: blogger_prefs.py:45
 msgid "Blog Type:"
 msgstr "Type de blog :"
 
-#: blogger_prefs.py:54
+#: blogger_prefs.py:55
 msgid "Blog Protocol:"
 msgstr "Protocole de blog :"
 
-#: blogger_prefs.py:58
+#: blogger_prefs.py:59
 msgid "Blog Base URL:"
 msgstr "URL de base du blog :"
 
-#: blogger_prefs.py:60
+#: blogger_prefs.py:61
 msgid "Blog Name:"
 msgstr "Nom du blog :"
 
-#: blogger_prefs.py:62
+#: blogger_prefs.py:63
 msgid "Lookup Blogs"
 msgstr "Rechercher les blogs"
 
-#: blogger_prefs.py:72
+#: blogger_prefs.py:73
 msgid "Username:"
 msgstr "Nom d'utilisateur :"
 
-#: blogger_prefs.py:73
+#: blogger_prefs.py:74
 msgid "Password:"
 msgstr "Mot de passe :"
 
-#: blogger_prefs.py:115 blogger_prefs.py:130 blogger_prefs.py:135
-#: blogger_prefs.py:141
+#: blogger_prefs.py:116 blogger_prefs.py:136 blogger_prefs.py:141
+#: blogger_prefs.py:147
 msgid "XML-RPC URL:"
 msgstr "URL XLM-RPC :"
 
-#: blogger_prefs.py:120 blogger_prefs.py:125
+#: blogger_prefs.py:121 blogger_prefs.py:126 blogger_prefs.py:131
 msgid "Base Blog URL:"
 msgstr "URL de base du blog :"
+
+#: blogger_prefs.py:155
+msgid "Unknown blog type"
+msgstr ""
+
+#: blogger_prefs.py:155
+msgid "The detected blog type is not among the list of supported blogs"
+msgstr ""
 
 #: gnome-blog.desktop.in.h:2
 msgid "Post an entry to a web log"
@@ -230,7 +225,6 @@ msgstr ""
 "Veuillez envoyer par courriel ce message d'erreur à seth@gnome.org afin que "
 "je puisse le corriger."
 
-#. check for GNOME proxy configurations and use if required
 #: protocols/advogato.py:27 protocols/advogato.py:30 protocols/advogato.py:42
 #: protocols/bloggerAPI.py:62 protocols/bloggerAPI.py:90
 #: protocols/livejournal.py:35 protocols/livejournal.py:64
@@ -249,7 +243,6 @@ msgstr ""
 "Votre nom d'utilisateur ou mot de passe n'est pas valide. Veuillez vérifier "
 "vos préférences."
 
-#. check for GNOME proxy configurations and use if required
 #: protocols/advogato.py:39 protocols/bloggerAPI.py:87
 #: protocols/livejournal.py:61
 msgid "Could not post blog entry"
@@ -265,7 +258,6 @@ msgstr ""
 "L'URL « %s » semble ne pas être un serveur XML-RPC bloggerAPI valide. Le "
 "serveur Web a rapporté : %s."
 
-#. check for GNOME proxy configurations and use if required
 #: protocols/bloggerAPI.py:36 protocols/bloggerAPI.py:39
 msgid "Could not get list of blogs"
 msgstr "Impossible d'obtenir la liste des blogs"
@@ -288,44 +280,32 @@ msgstr ""
 "L'URL « %s » ne semble pas être un serveur XML-RPC LiveJournal valide. Le "
 "serveur Web a rapporté : %s."
 
-#. Hack for addHyperlink with old pygtk's
-#. GtkTextView already defines drag and drop targets, get them
-#. Unfortunately old_targets string field has a funny type
-#. that needs to be explicitly converted to string
-#. Add the DND type that we support and set the new list of types
-#. this is an older version of pygtk that doesn't
-#. have a way to create anonymous tags, hack around it
-#. 398 means text/uri-list
-#: rich_entry.py:135 rich_entry.py:143
+#: rich_entry.py:142 rich_entry.py:150
 msgid "Could not load dragged in image"
 msgstr "Impossible de charger l'image déposé"
 
-#: rich_entry.py:136 rich_entry.py:144
+#: rich_entry.py:143 rich_entry.py:151
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "L'erreur lors du chargement de %s était : %s"
 
-#. Create a new image tag
-#. Insert the pixbuf, and then set the new image
-#. tag around it so that we can generate its HTML later
-#. Found Hyperlink, activating
-#: rich_entry.py:194
+#: rich_entry.py:208
 msgid "Add _Link..."
 msgstr "Ajouter un _lien..."
 
-#: rich_entry.py:199
+#: rich_entry.py:213
 msgid "Add Link"
 msgstr "Ajouter un lien"
 
-#: rich_entry.py:200
+#: rich_entry.py:214
 msgid "_Add Link"
 msgstr "A_jouter un lien"
 
-#: rich_entry.py:208
+#: rich_entry.py:222
 msgid "Text:"
 msgstr "Texte :"
 
-#: rich_entry.py:211
+#: rich_entry.py:225
 msgid "URL:"
 msgstr "URL :"
 

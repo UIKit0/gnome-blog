@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gnome-blog 0.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-12-19 22:23+0100\n"
+"POT-Creation-Date: 2005-01-02 02:24-0500\n"
 "PO-Revision-Date: 2004-12-19 0:00+0100\n"
 "Last-Translator: Reinout van Schouwen <reinout@cs.vu.nl>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
@@ -35,19 +35,19 @@ msgstr "In_fo..."
 msgid "_Preferences..."
 msgstr "_Voorkeuren..."
 
-#: blog_applet.py:31
+#: blog_applet.py:35
 msgid "About"
 msgstr "Info"
 
-#: blog_applet.py:34
+#: blog_applet.py:38
 msgid "Blog"
 msgstr "Blog"
 
-#: blog_applet.py:69
+#: blog_applet.py:73
 msgid "A GNOME Web Blogging Applet"
 msgstr "Een weblog-applet voor GNOME"
 
-#: blog_applet.py:104
+#: blog_applet.py:108
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Een blog ingang maken voor %s bij %s"
@@ -142,6 +142,14 @@ msgstr "XML-RPC URL:"
 #: blogger_prefs.py:121 blogger_prefs.py:126 blogger_prefs.py:131
 msgid "Base Blog URL:"
 msgstr "Basis-URL van blog:"
+
+#: blogger_prefs.py:155
+msgid "Unknown blog type"
+msgstr ""
+
+#: blogger_prefs.py:155
+msgid "The detected blog type is not among the list of supported blogs"
+msgstr ""
 
 #: gnome-blog.desktop.in.h:2
 msgid "Post an entry to a web log"

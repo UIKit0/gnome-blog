@@ -8,25 +8,24 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
-"POT-Creation-Date: 2004-04-08 17:15-0400\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-01-02 02:24-0500\n"
 "PO-Revision-Date: 2004-03-06 03:28+0100\n"
 "Last-Translator: Данило Шеган <danilo@prevod.org>\n"
 "Language-Team: Serbian (sr) <serbiangnome-lista@nongnu.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 
-#: GNOME_BlogApplet.server.in.h:1
+#: GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr "Допунски програми"
 
-#. FIXME: popup an error dialog
-#: GNOME_BlogApplet.server.in.h:2 gnome-blog.desktop.in.h:1
+#: GNOME_BlogApplet.server.in.in.h:2 gnome-blog.desktop.in.h:1
 msgid "Blog Entry Poster"
 msgstr "Слање уноса у блогче"
 
-#: GNOME_BlogApplet.server.in.h:3
+#: GNOME_BlogApplet.server.in.in.h:3
 msgid "Post entries to a web log"
 msgstr "Пошаљи уносе у блогче"
 
@@ -38,65 +37,48 @@ msgstr "_О програму..."
 msgid "_Preferences..."
 msgstr "_Поставке"
 
-#. !/usr/bin/env python
-#. maybe someone can do this trick without string?
-#: blog_applet.py:31
+#: blog_applet.py:35
 msgid "About"
 msgstr "О програму"
 
-#: blog_applet.py:34
+#: blog_applet.py:38
 msgid "Blog"
 msgstr "Блогче"
 
-#. self._showPrefDialog()
-#: blog_applet.py:67
+#: blog_applet.py:73
 msgid "A GNOME Web Blogging Applet"
 msgstr "Програмче за блогчење из Гнома"
 
-#. take the XML_RPC value from GConf
-#. split the URL up into http:, '', domainname, extra
-#. join back up the URL into http://domainname
-#: blog_applet.py:102
+#: blog_applet.py:108
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Састави унос у блогче за корисника „%s“ на %s"
 
-#. Set tooltip to the applet button
-#. check if pygtkspell is installed
-#. if we are using gtkspell, attach it to the blogEntry
 #: blog_poster.py:44
 msgid "_Post Entry"
 msgstr "_Пошаљи унос"
 
-#: blog_poster.py:63
+#: blog_poster.py:69
 msgid "Preferences..."
 msgstr "Поставке..."
 
-#: blog_poster.py:75
+#: blog_poster.py:81
 msgid "Title:"
 msgstr "Наслов:"
 
-#: blog_poster.py:110
+#: blog_poster.py:116
 msgid "Couldn't upload images"
 msgstr "Не могу да пошаљем слике"
 
-#: blog_poster.py:110
+#: blog_poster.py:116
 msgid "The blog protocol in use does not support uploading images"
 msgstr "Протокол за блогче који се користи не подржава слање слика"
 
-#. we must turn off the spell checker so as not to confuse
-#. the markup to html converter
-#. turn spelling back on
-#. Don't post silly blog entries like blank ones
-#. Only delete the entry if posting was successful
-#. Call back our parent informing them the entry was posted
-#. Popup a dialogue confirming even if its deemed
-#. unreasonable
-#: blog_poster.py:157
+#: blog_poster.py:163
 msgid "Blog Entry is Blank"
 msgstr "Унос у блогче је празан"
 
-#: blog_poster.py:157
+#: blog_poster.py:163
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
@@ -117,45 +99,58 @@ msgid "Self-Run Pyblosxom"
 msgstr "Лични Pyblosxom"
 
 #: blogger_prefs.py:40
+#, fuzzy
+msgid "Self-Run WordPress"
+msgstr "Неки други лични"
+
+#: blogger_prefs.py:41
 msgid "Self-Run Other"
 msgstr "Неки други лични"
 
-#: blogger_prefs.py:44
+#: blogger_prefs.py:45
 msgid "Blog Type:"
 msgstr "Врста блогчета:"
 
-#: blogger_prefs.py:54
+#: blogger_prefs.py:55
 msgid "Blog Protocol:"
 msgstr "Протокол блогчета:"
 
-#: blogger_prefs.py:58
+#: blogger_prefs.py:59
 msgid "Blog Base URL:"
 msgstr "Основна адреса блогчета:"
 
-#: blogger_prefs.py:60
+#: blogger_prefs.py:61
 msgid "Blog Name:"
 msgstr "Име блогчета:"
 
-#: blogger_prefs.py:62
+#: blogger_prefs.py:63
 msgid "Lookup Blogs"
 msgstr "Пронађи блогчад"
 
-#: blogger_prefs.py:72
+#: blogger_prefs.py:73
 msgid "Username:"
 msgstr "Корисник:"
 
-#: blogger_prefs.py:73
+#: blogger_prefs.py:74
 msgid "Password:"
 msgstr "Лозинка:"
 
-#: blogger_prefs.py:115 blogger_prefs.py:130 blogger_prefs.py:135
-#: blogger_prefs.py:141
+#: blogger_prefs.py:116 blogger_prefs.py:136 blogger_prefs.py:141
+#: blogger_prefs.py:147
 msgid "XML-RPC URL:"
 msgstr "XML-RPC адреса:"
 
-#: blogger_prefs.py:120 blogger_prefs.py:125
+#: blogger_prefs.py:121 blogger_prefs.py:126 blogger_prefs.py:131
 msgid "Base Blog URL:"
 msgstr "Основна адреса блогчета:"
+
+#: blogger_prefs.py:155
+msgid "Unknown blog type"
+msgstr ""
+
+#: blogger_prefs.py:155
+msgid "The detected blog type is not among the list of supported blogs"
+msgstr ""
 
 #: gnome-blog.desktop.in.h:2
 msgid "Post an entry to a web log"
@@ -228,7 +223,6 @@ msgstr ""
 "Молим пошаљите е-поштом ову поруку о грешци на seth@gnome.org како би могао "
 "да је обрадим."
 
-#. check for GNOME proxy configurations and use if required
 #: protocols/advogato.py:27 protocols/advogato.py:30 protocols/advogato.py:42
 #: protocols/bloggerAPI.py:62 protocols/bloggerAPI.py:90
 #: protocols/livejournal.py:35 protocols/livejournal.py:64
@@ -244,7 +238,6 @@ msgid ""
 "Your username or password is invalid. Please double-check the preferences."
 msgstr "Ваше корисничко име или лозинка су неисправни. Проверите поставке."
 
-#. check for GNOME proxy configurations and use if required
 #: protocols/advogato.py:39 protocols/bloggerAPI.py:87
 #: protocols/livejournal.py:61
 msgid "Could not post blog entry"
@@ -260,7 +253,6 @@ msgstr ""
 "Адреса „%s“ можда не представља исправан bloggerAPI. XML-RPC сервер је "
 "пријавио: %s."
 
-#. check for GNOME proxy configurations and use if required
 #: protocols/bloggerAPI.py:36 protocols/bloggerAPI.py:39
 msgid "Could not get list of blogs"
 msgstr "Не могу да сазнам списак блогчади"
@@ -282,44 +274,32 @@ msgstr ""
 "Адреса „%s“ изгледа не представља исправан ЛајвЏурнал (LiveJournal) XML-RPC "
 "сервер. Веб сервер је пријавио: %s."
 
-#. Hack for addHyperlink with old pygtk's
-#. GtkTextView already defines drag and drop targets, get them
-#. Unfortunately old_targets string field has a funny type
-#. that needs to be explicitly converted to string
-#. Add the DND type that we support and set the new list of types
-#. this is an older version of pygtk that doesn't
-#. have a way to create anonymous tags, hack around it
-#. 398 means text/uri-list
-#: rich_entry.py:135 rich_entry.py:143
+#: rich_entry.py:142 rich_entry.py:150
 msgid "Could not load dragged in image"
 msgstr "Не могу да учитам превучену слику"
 
-#: rich_entry.py:136 rich_entry.py:144
+#: rich_entry.py:143 rich_entry.py:151
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "Грешка при учитавању %s је била: %s"
 
-#. Create a new image tag
-#. Insert the pixbuf, and then set the new image
-#. tag around it so that we can generate its HTML later
-#. Found Hyperlink, activating
-#: rich_entry.py:194
+#: rich_entry.py:208
 msgid "Add _Link..."
 msgstr "Додај _везу..."
 
-#: rich_entry.py:199
+#: rich_entry.py:213
 msgid "Add Link"
 msgstr "Додај везу"
 
-#: rich_entry.py:200
+#: rich_entry.py:214
 msgid "_Add Link"
 msgstr "Додај _везу"
 
-#: rich_entry.py:208
+#: rich_entry.py:222
 msgid "Text:"
 msgstr "Текст:"
 
-#: rich_entry.py:211
+#: rich_entry.py:225
 msgid "URL:"
 msgstr "Адреса:"
 

@@ -76,7 +76,8 @@ EXTRA_DIST =  			\
         intltool-update.in      \
         intltool-extract.in     \
         intltool-merge.in       \
-	gnome-blog.spec	\
-	gnome-blog.spec.in
+	gnome-blog.spec		\
+	gnome-blog.spec.in 	\
+	$(server_in_files)
 
 SUBDIRS = protocols po

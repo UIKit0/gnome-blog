@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-01 16:17+0200\n"
+"POT-Creation-Date: 2005-01-02 02:24-0500\n"
 "PO-Revision-Date: 2004-06-01 16:16+0200\n"
 "Last-Translator: <stefan.gollnow@web.de>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
@@ -16,15 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: GNOME_BlogApplet.server.in.h:1
+#: GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr "Zubehör"
 
-#: GNOME_BlogApplet.server.in.h:2 gnome-blog.desktop.in.h:1
+#: GNOME_BlogApplet.server.in.in.h:2 gnome-blog.desktop.in.h:1
 msgid "Blog Entry Poster"
 msgstr "Blog-Einträge verfassen"
 
-#: GNOME_BlogApplet.server.in.h:3
+#: GNOME_BlogApplet.server.in.in.h:3
 msgid "Post entries to a web log"
 msgstr "Einträge in einem Web-Log veröffentlichen"
 
@@ -36,19 +36,19 @@ msgstr "_Info..."
 msgid "_Preferences..."
 msgstr "_Einstellungen..."
 
-#: blog_applet.py:31
+#: blog_applet.py:35
 msgid "About"
 msgstr "Info"
 
-#: blog_applet.py:34
+#: blog_applet.py:38
 msgid "Blog"
 msgstr "Blog"
 
-#: blog_applet.py:67
+#: blog_applet.py:73
 msgid "A GNOME Web Blogging Applet"
 msgstr "Ein GNOME-Web-Blogging-Applet"
 
-#: blog_applet.py:102
+#: blog_applet.py:108
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Erstellen eines Blog-Eintrages für %s um %s"
@@ -57,28 +57,28 @@ msgstr "Erstellen eines Blog-Eintrages für %s um %s"
 msgid "_Post Entry"
 msgstr "Eintrag _veröffentlichen"
 
-#: blog_poster.py:63
+#: blog_poster.py:69
 msgid "Preferences..."
 msgstr "Einstellungen..."
 
-#: blog_poster.py:75
+#: blog_poster.py:81
 msgid "Title:"
 msgstr "Titel:"
 
-#: blog_poster.py:110
+#: blog_poster.py:116
 msgid "Couldn't upload images"
 msgstr "Konnte die Bilder nicht hochladen"
 
-#: blog_poster.py:110
+#: blog_poster.py:116
 msgid "The blog protocol in use does not support uploading images"
 msgstr ""
 "Das verwendete Blog-Protokoll unterstützt nicht das Hochladen von Bildern"
 
-#: blog_poster.py:157
+#: blog_poster.py:163
 msgid "Blog Entry is Blank"
 msgstr "Blog-Eintrag ist leer"
 
-#: blog_poster.py:157
+#: blog_poster.py:163
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
@@ -99,45 +99,58 @@ msgid "Self-Run Pyblosxom"
 msgstr "Selbst betrieben, Pybloxsom"
 
 #: blogger_prefs.py:40
+#, fuzzy
+msgid "Self-Run WordPress"
+msgstr "Selbst betrieben, andere"
+
+#: blogger_prefs.py:41
 msgid "Self-Run Other"
 msgstr "Selbst betrieben, andere"
 
-#: blogger_prefs.py:44
+#: blogger_prefs.py:45
 msgid "Blog Type:"
 msgstr "Blog-Typ:"
 
-#: blogger_prefs.py:54
+#: blogger_prefs.py:55
 msgid "Blog Protocol:"
 msgstr "Blog-Protokoll:"
 
-#: blogger_prefs.py:58
+#: blogger_prefs.py:59
 msgid "Blog Base URL:"
 msgstr "Blog-Basisadresse:"
 
-#: blogger_prefs.py:60
+#: blogger_prefs.py:61
 msgid "Blog Name:"
 msgstr "Blog-Name:"
 
-#: blogger_prefs.py:62
+#: blogger_prefs.py:63
 msgid "Lookup Blogs"
 msgstr "Blogs nachschlagen"
 
-#: blogger_prefs.py:72
+#: blogger_prefs.py:73
 msgid "Username:"
 msgstr "Benutzername:"
 
-#: blogger_prefs.py:73
+#: blogger_prefs.py:74
 msgid "Password:"
 msgstr "Passwort:"
 
-#: blogger_prefs.py:115 blogger_prefs.py:130 blogger_prefs.py:135
-#: blogger_prefs.py:141
+#: blogger_prefs.py:116 blogger_prefs.py:136 blogger_prefs.py:141
+#: blogger_prefs.py:147
 msgid "XML-RPC URL:"
 msgstr "XML-RPC-Adresse:"
 
-#: blogger_prefs.py:120 blogger_prefs.py:125
+#: blogger_prefs.py:121 blogger_prefs.py:126 blogger_prefs.py:131
 msgid "Base Blog URL:"
 msgstr "Blog-Basisadresse:"
+
+#: blogger_prefs.py:155
+msgid "Unknown blog type"
+msgstr ""
+
+#: blogger_prefs.py:155
+msgid "The detected blog type is not among the list of supported blogs"
+msgstr ""
 
 #: gnome-blog.desktop.in.h:2
 msgid "Post an entry to a web log"

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
-"POT-Creation-Date: 2003-09-11 14:54-0700\n"
+"POT-Creation-Date: 2004-04-08 17:15-0400\n"
 "PO-Revision-Date: 2003-09-12 09:38-0300\n"
 "Last-Translator: Andre Filipe de Assuncao e Brito <decko@noisemakers.org>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
@@ -15,12 +15,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: GNOME_BlogApplet.server.in.h:1
-msgid "Blogging Tool"
-msgstr "Ferramenta de Blogging"
+msgid "Accessories"
+msgstr ""
 
-#: GNOME_BlogApplet.server.in.h:2
-msgid "Blogging tool"
-msgstr "Ferramenta de blogging"
+#. FIXME: popup an error dialog
+#: GNOME_BlogApplet.server.in.h:2 gnome-blog.desktop.in.h:1
+#, fuzzy
+msgid "Blog Entry Poster"
+msgstr "Entrada de Blog está Vazia"
+
+#: GNOME_BlogApplet.server.in.h:3
+#, fuzzy
+msgid "Post entries to a web log"
+msgstr "Colocar entradas de blog no Blogger.com"
 
 #: GNOME_BlogApplet.xml.h:1
 msgid "_About..."
@@ -30,17 +37,142 @@ msgstr "_Sobre..."
 msgid "_Preferences..."
 msgstr "_Preferências..."
 
+#. !/usr/bin/env python
+#. maybe someone can do this trick without string?
+#: blog_applet.py:31
+msgid "About"
+msgstr "Sobre"
+
+#: blog_applet.py:34
+msgid "Blog"
+msgstr "Blog"
+
+#. self._showPrefDialog()
+#: blog_applet.py:67
+msgid "A GNOME Web Blogging Applet"
+msgstr "Uma Applet de Blogging Web GNOME"
+
+#. take the XML_RPC value from GConf
+#. split the URL up into http:, '', domainname, extra
+#. join back up the URL into http://domainname
+#: blog_applet.py:102
+#, python-format
+msgid "Create a blog entry for %s at %s"
+msgstr ""
+
+#. Set tooltip to the applet button
+#. check if pygtkspell is installed
+#. if we are using gtkspell, attach it to the blogEntry
+#: blog_poster.py:44
+msgid "_Post Entry"
+msgstr "_Colocar Entrada"
+
+#: blog_poster.py:63
+#, fuzzy
+msgid "Preferences..."
+msgstr "_Preferências..."
+
+#: blog_poster.py:75
+msgid "Title:"
+msgstr "Título:"
+
+#: blog_poster.py:110
+msgid "Couldn't upload images"
+msgstr ""
+
+#: blog_poster.py:110
+msgid "The blog protocol in use does not support uploading images"
+msgstr ""
+
+#. we must turn off the spell checker so as not to confuse
+#. the markup to html converter
+#. turn spelling back on
+#. Don't post silly blog entries like blank ones
+#. Only delete the entry if posting was successful
+#. Call back our parent informing them the entry was posted
+#. Popup a dialogue confirming even if its deemed
+#. unreasonable
+#: blog_poster.py:157
+msgid "Blog Entry is Blank"
+msgstr "Entrada de Blog está Vazia"
+
+#: blog_poster.py:157
+msgid ""
+"No text was entered in the blog entry box. Please enter some text and try "
+"again"
+msgstr ""
+
+#: blogger_prefs.py:19
+msgid "Blogger Preferences"
+msgstr "Preferencias Blogger"
+
+#: blogger_prefs.py:38
+msgid "Self-Run MovableType"
+msgstr "MovableType Gerado pelo Próprio"
+
+#: blogger_prefs.py:39
+#, fuzzy
+msgid "Self-Run Pyblosxom"
+msgstr "Pybloxsom Gerado pelo Próprio"
+
+#: blogger_prefs.py:40
+msgid "Self-Run Other"
+msgstr "Outro Gerado pelo Próprio"
+
+#: blogger_prefs.py:44
+#, fuzzy
+msgid "Blog Type:"
+msgstr "Nome Blog:"
+
+#: blogger_prefs.py:54
+#, fuzzy
+msgid "Blog Protocol:"
+msgstr "Ferramenta de blogging"
+
+#: blogger_prefs.py:58
+msgid "Blog Base URL:"
+msgstr "URL Base Blog:"
+
+#: blogger_prefs.py:60
+msgid "Blog Name:"
+msgstr "Nome Blog:"
+
+#: blogger_prefs.py:62
+msgid "Lookup Blogs"
+msgstr "Consultar Blogs"
+
+#: blogger_prefs.py:72
+msgid "Username:"
+msgstr ""
+
+#: blogger_prefs.py:73
+msgid "Password:"
+msgstr ""
+
+#: blogger_prefs.py:115 blogger_prefs.py:130 blogger_prefs.py:135
+#: blogger_prefs.py:141
+msgid "XML-RPC URL:"
+msgstr "URL XML-RPC:"
+
+#: blogger_prefs.py:120 blogger_prefs.py:125
+msgid "Base Blog URL:"
+msgstr "URL Base Blog:"
+
+#: gnome-blog.desktop.in.h:2
+msgid "Post an entry to a web log"
+msgstr ""
+
 #: gnomeblog.schemas.in.h:1
 msgid "Password to use in accessing the blog"
 msgstr "Senha a utilizar ao acessar o blog"
 
 #: gnomeblog.schemas.in.h:2
-msgid "Post blog entries to Blogger.com"
-msgstr "Colocar entradas de blog no Blogger.com"
-
-#: gnomeblog.schemas.in.h:3
 msgid "Protocol to use in accessing the blog"
 msgstr "Protocolo a utilizar ao acessar ao blog"
+
+#: gnomeblog.schemas.in.h:3
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr ""
 
 #: gnomeblog.schemas.in.h:4
 msgid "The application's preferences have been initialized"
@@ -58,108 +190,138 @@ msgstr "URL para o servidor XML-RPC compatível com bloggerAPI"
 msgid "Username to use in accessing the blog"
 msgstr "Nome do usuario para acessar o blog"
 
-#. !/usr/bin/env python
-#. FIXME: need to get this path from auto*
-#: blog_applet.py:31
-msgid "About"
-msgstr "Sobre"
+#: hig_alert.py:13
+#, fuzzy, python-format
+msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
+msgstr ""
+"URL '%s' pode não ser uma bloggerAPI válida. Servidor XML-RPC relatou: <span "
+"style=\"italic\">%s</span>."
 
-#: blog_applet.py:34
-msgid "Blog"
-msgstr "Blog"
-
-#: blog_applet.py:63
-msgid "A GNOME Web Blogging Applet"
-msgstr "Uma Applet de Blogging Web GNOME"
-
-#: blog_poster.py:32
-msgid "_Post Entry"
-msgstr "_Colocar Entrada"
-
-#. link_tag = self.blogBuffer.create_tag("a")
-#. link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
-#. link_tag.set_property("foreground", "#0000FF")
-#. linkButton = InsertButton
-#: blog_poster.py:64
-msgid "Title:"
-msgstr "Título:"
-
-#. Don't post silly blog entries like blank ones
-#. Only delete the entry if posting was successful
-#. Popup a dialogue confirming even if its deemed
-#. unreasonable
-#: blog_poster.py:102
-msgid "Blog Entry is Blank"
-msgstr "Entrada de Blog está Vazia"
-
-#: blogger_prefs.py:20
-msgid "Blogger Preferences"
-msgstr "Preferencias Blogger"
-
-#: blogger_prefs.py:39
-msgid "Self-Run MovableType"
-msgstr "MovableType Gerado pelo Próprio"
-
-#: blogger_prefs.py:40
-msgid "Self-Run Pybloxsom"
-msgstr "Pybloxsom Gerado pelo Próprio"
-
-#: blogger_prefs.py:41
-msgid "Self-Run Other"
-msgstr "Outro Gerado pelo Próprio"
-
-#: blogger_prefs.py:58
-msgid "Blog Base URL:"
-msgstr "URL Base Blog:"
-
-#: blogger_prefs.py:60
-msgid "Blog Name:"
-msgstr "Nome Blog:"
-
-#: blogger_prefs.py:62
-msgid "Lookup Blogs"
-msgstr "Consultar Blogs"
-
-#: blogger_prefs.py:114
-#: blogger_prefs.py:126
-#: blogger_prefs.py:130
-msgid "XML-RPC URL:"
-msgstr "URL XML-RPC:"
-
-#: blogger_prefs.py:118
-#: blogger_prefs.py:122
-msgid "Base Blog URL:"
-msgstr "URL Base Blog:"
-
-#: blogger_prefs.py:125
-msgid "bloggerAPI"
-msgstr "bloggerAPI"
-
-#. FIXME: popup an error dialog
-#: hig_alert.py:8
-#, python-format
-msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: <span style=\"italic\">%s</span>."
-msgstr "URL '%s' pode não ser uma bloggerAPI válida. Servidor XML-RPC relatou: <span style=\"italic\">%s</span>."
-
-#: hig_alert.py:10
-#, python-format
-msgid "Unknown username <span weight=\"bold\">%s</span> or password trying to post blog entry to XML-RPC server <span style=\"italic\">%s</span>."
-msgstr "Nome de usuario <span weight=\"bold\">%s</span> desconhecido ou senha invalida ao tentar colocar entrada no blog no servidor XML-RPC <span style=\"italic\">%s</span>."
-
-#: hig_alert.py:12
-#, python-format
-msgid "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server reported: <span style=\"italic\">%s</span>."
-msgstr "Não foi possivel colocar entrada no blog '%s' no servidor bloggerAPI XML-RPC '%s'. Servidor relatou: <span style=\"italic\">%s</span>."
-
-#: hig_alert.py:14
-#, python-format
+#: hig_alert.py:15
+#, fuzzy, python-format
 msgid ""
-"The bloggerAPI server (%s) reported an error I don't understand: '%s, <span style=\"italic\">%s</span>'. \n"
+"Unknown username %s or password trying to post blog entry to XML-RPC server %"
+"s."
+msgstr ""
+"Nome de usuario <span weight=\"bold\">%s</span> desconhecido ou senha "
+"invalida ao tentar colocar entrada no blog no servidor XML-RPC <span style="
+"\"italic\">%s</span>."
+
+#: hig_alert.py:17
+#, fuzzy, python-format
+msgid ""
+"Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
+"reported: %s."
+msgstr ""
+"Não foi possivel colocar entrada no blog '%s' no servidor bloggerAPI XML-RPC "
+"'%s'. Servidor relatou: <span style=\"italic\">%s</span>."
+
+#: hig_alert.py:19
+#, fuzzy, python-format
+msgid ""
+"The bloggerAPI server (%s) reported an error I don't understand: '%s, %s'. \n"
 "\n"
 "Please email this error message to seth@gnome.org so I can address it."
 msgstr ""
-"O servidor bloggerAPI (%s) relatou um erro que não é compreensível: '%s, <span style=\"italic\">%s</span>'. \n"
+"O servidor bloggerAPI (%s) relatou um erro que não é compreensível: '%s, "
+"<span style=\"italic\">%s</span>'. \n"
 "\n"
-"Por favor, envie esta mensagem de erro para seth@gnome.org para que possa ser analisada."
+"Por favor, envie esta mensagem de erro para seth@gnome.org para que possa "
+"ser analisada."
 
+#. check for GNOME proxy configurations and use if required
+#: protocols/advogato.py:27 protocols/advogato.py:30 protocols/advogato.py:42
+#: protocols/bloggerAPI.py:62 protocols/bloggerAPI.py:90
+#: protocols/livejournal.py:35 protocols/livejournal.py:64
+msgid "Could not post Blog entry"
+msgstr ""
 
+#: protocols/advogato.py:27
+msgid "Your username is invalid. Please double-check the preferences."
+msgstr ""
+
+#: protocols/advogato.py:30 protocols/livejournal.py:35
+msgid ""
+"Your username or password is invalid. Please double-check the preferences."
+msgstr ""
+
+#. check for GNOME proxy configurations and use if required
+#: protocols/advogato.py:39 protocols/bloggerAPI.py:87
+#: protocols/livejournal.py:61
+msgid "Could not post blog entry"
+msgstr ""
+
+#: protocols/advogato.py:42 protocols/bloggerAPI.py:39
+#: protocols/bloggerAPI.py:90
+#, fuzzy, python-format
+msgid ""
+"URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
+"reported: %s."
+msgstr ""
+"URL '%s' pode não ser uma bloggerAPI válida. Servidor XML-RPC relatou: <span "
+"style=\"italic\">%s</span>."
+
+#. check for GNOME proxy configurations and use if required
+#: protocols/bloggerAPI.py:36 protocols/bloggerAPI.py:39
+msgid "Could not get list of blogs"
+msgstr ""
+
+#: protocols/bloggerAPI.py:62
+msgid ""
+"No XML-RPC server URL to post blog entries to is set, or the value could not "
+"be retrieved from GConf. Your entry will remain in the blogger window."
+msgstr ""
+
+#: protocols/livejournal.py:64
+#, python-format
+msgid ""
+"URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
+"reported: %s."
+msgstr ""
+
+#. Hack for addHyperlink with old pygtk's
+#. GtkTextView already defines drag and drop targets, get them
+#. Unfortunately old_targets string field has a funny type
+#. that needs to be explicitly converted to string
+#. Add the DND type that we support and set the new list of types
+#. this is an older version of pygtk that doesn't
+#. have a way to create anonymous tags, hack around it
+#. 398 means text/uri-list
+#: rich_entry.py:135 rich_entry.py:143
+msgid "Could not load dragged in image"
+msgstr ""
+
+#: rich_entry.py:136 rich_entry.py:144
+#, python-format
+msgid "Error loading %s was: %s"
+msgstr ""
+
+#. Create a new image tag
+#. Insert the pixbuf, and then set the new image
+#. tag around it so that we can generate its HTML later
+#. Found Hyperlink, activating
+#: rich_entry.py:194
+msgid "Add _Link..."
+msgstr ""
+
+#: rich_entry.py:199
+msgid "Add Link"
+msgstr ""
+
+#: rich_entry.py:200
+msgid "_Add Link"
+msgstr ""
+
+#: rich_entry.py:208
+msgid "Text:"
+msgstr ""
+
+#: rich_entry.py:211
+msgid "URL:"
+msgstr ""
+
+#~ msgid "Blogging Tool"
+#~ msgstr "Ferramenta de Blogging"
+
+#~ msgid "bloggerAPI"
+#~ msgstr "bloggerAPI"

@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog head\n"
-"POT-Creation-Date: 2003-09-19 03:50+0200\n"
-"PO-Revision-Date: 2003-09-19 08:36+0100\n"
+"POT-Creation-Date: 2003-10-24 03:43+0200\n"
+"PO-Revision-Date: 2003-10-24 21:40+0100\n"
 "Last-Translator: Elros Cyriatan <cyriatan@fastmail.fm>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
 "MIME-Version: 1.0\n"
@@ -97,14 +97,32 @@ msgstr "Ingang _verzenden"
 msgid "Title:"
 msgstr "Titel:"
 
+#: blog_poster.py:87
+msgid "Couldn't upload images"
+msgstr "Kan afbeeldingen niet verzenden"
+
+#: blog_poster.py:87
+msgid "The blog protocol in use does not support uploading images"
+msgstr ""
+"Het blog protocol dat wordt gebruikt ondersteunt niet de verzenden van "
+"afbeeldingen"
+
 #. Don't post silly blog entries like blank ones
 #. Only delete the entry if posting was successful
 #. Call back our parent informing them the entry was posted
 #. Popup a dialogue confirming even if its deemed
 #. unreasonable
-#: blog_poster.py:106
+#: blog_poster.py:115
 msgid "Blog Entry is Blank"
 msgstr "Blog ingang is leeg"
+
+#: blog_poster.py:115
+msgid ""
+"No text was entered in the blog entry box. Please enter some text and try "
+"again"
+msgstr ""
+"Er is geen tekst ingevoerd in het blog invoervak. Voer alstublieft iets in "
+"en probeer opnieuw"
 
 #: blogger_prefs.py:19
 msgid "Blogger Preferences"
@@ -205,26 +223,43 @@ msgstr ""
 "Verzend alstublieft deze foutmelding naar seth@gnome.org zodat ik er wat aan "
 "kan doen."
 
+#. GtkTextView already defines drag and drop targets, get them
+#. Unfortunately old_targets string field has a funny type
+#. that needs to be explicitly converted to string
+#. Add the DND type that we support and set the new list of types
 #. Hack for addHyperlink with old pygtk's
 #. this is an older version of pygtk that doesn't
 #. have a way to create anonymous tags, hack around it
+#. 398 means text/uri-list
+#: rich_entry.py:116 rich_entry.py:124
+msgid "Could not load dragged in image"
+msgstr "Kon de versleepte afbeelding niet laden"
+
+#: rich_entry.py:117 rich_entry.py:125
+#, python-format
+msgid "Error loading <span style='italic'>%s</span> was: %s"
+msgstr "Fout bij laden <span style='italic'>%s</span> was: %s"
+
+#. Create a new image tag
+#. Insert the pixbuf, and then set the new image
+#. tag around it so that we can generate its HTML later
 #. Found Hyperlink, activating
-#: rich_entry.py:88
+#: rich_entry.py:175
 msgid "Add _Link"
 msgstr "_Koppeling toevoegen"
 
-#: rich_entry.py:93
+#: rich_entry.py:180
 msgid "Add Link"
 msgstr "Koppeling toevoegen"
 
-#: rich_entry.py:94
+#: rich_entry.py:181
 msgid "_Add Link"
 msgstr "Koppeling _toevoegen"
 
-#: rich_entry.py:101
+#: rich_entry.py:188
 msgid "Text:"
 msgstr "Tekst:"
 
-#: rich_entry.py:104
+#: rich_entry.py:191
 msgid "URL:"
 msgstr "URL:"

@@ -8,23 +8,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-01-24 04:16+0100\n"
-"PO-Revision-Date: 2004-01-27 22:43+0100\n"
+"POT-Creation-Date: 2004-12-26 19:17+0100\n"
+"PO-Revision-Date: 2004-12-26 23:49+0100\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: GNOME_BlogApplet.server.in.h:1
+#: GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr "Příslušenství"
 
-#: GNOME_BlogApplet.server.in.h:2 gnome-blog.desktop.in.h:1
+#: GNOME_BlogApplet.server.in.in.h:2 gnome-blog.desktop.in.h:1
 msgid "Blog Entry Poster"
 msgstr "Odesílač položek blogu"
 
-#: GNOME_BlogApplet.server.in.h:3
+#: GNOME_BlogApplet.server.in.in.h:3
 msgid "Post entries to a web log"
 msgstr "Odeslat položky do web logu"
 
@@ -44,40 +44,40 @@ msgstr "O aplikaci"
 msgid "Blog"
 msgstr "Blog"
 
-#: blog_applet.py:67
+#: blog_applet.py:69
 msgid "A GNOME Web Blogging Applet"
 msgstr "GNOME aplet pro blogování na WWW"
 
-#: blog_applet.py:102
+#: blog_applet.py:104
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Vytvořit položku blogu pro %s na %s"
 
-#: blog_poster.py:32
+#: blog_poster.py:44
 msgid "_Post Entry"
 msgstr "_Vystavit položku"
 
-#: blog_poster.py:51
+#: blog_poster.py:69
 msgid "Preferences..."
 msgstr "Nastavení..."
 
-#: blog_poster.py:63
+#: blog_poster.py:81
 msgid "Title:"
 msgstr "Nadpis:"
 
-#: blog_poster.py:98
+#: blog_poster.py:116
 msgid "Couldn't upload images"
 msgstr "Nemohu vystavit obrázky"
 
-#: blog_poster.py:98
+#: blog_poster.py:116
 msgid "The blog protocol in use does not support uploading images"
 msgstr "Používaný protokol blogu nepodporuje vystavení obrázků"
 
-#: blog_poster.py:134
+#: blog_poster.py:163
 msgid "Blog Entry is Blank"
 msgstr "Položka blogu je prázdná"
 
-#: blog_poster.py:134
+#: blog_poster.py:163
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
@@ -98,43 +98,47 @@ msgid "Self-Run Pyblosxom"
 msgstr "Vlastní Pyblosxom"
 
 #: blogger_prefs.py:40
+msgid "Self-Run WordPress"
+msgstr "Vlastní WordPress"
+
+#: blogger_prefs.py:41
 msgid "Self-Run Other"
 msgstr "Jiné vlastní"
 
-#: blogger_prefs.py:44
+#: blogger_prefs.py:45
 msgid "Blog Type:"
 msgstr "Typ blogu:"
 
-#: blogger_prefs.py:54
+#: blogger_prefs.py:55
 msgid "Blog Protocol:"
 msgstr "Protokol blogu:"
 
-#: blogger_prefs.py:58
+#: blogger_prefs.py:59
 msgid "Blog Base URL:"
 msgstr "Základní URL blogu:"
 
-#: blogger_prefs.py:60
+#: blogger_prefs.py:61
 msgid "Blog Name:"
 msgstr "Název blogu:"
 
-#: blogger_prefs.py:62
+#: blogger_prefs.py:63
 msgid "Lookup Blogs"
 msgstr "Vyhledat blogy"
 
-#: blogger_prefs.py:72
+#: blogger_prefs.py:73
 msgid "Username:"
 msgstr "Jméno uživatele:"
 
-#: blogger_prefs.py:73
+#: blogger_prefs.py:74
 msgid "Password:"
 msgstr "Heslo:"
 
-#: blogger_prefs.py:115 blogger_prefs.py:130 blogger_prefs.py:135
-#: blogger_prefs.py:141
+#: blogger_prefs.py:116 blogger_prefs.py:136 blogger_prefs.py:141
+#: blogger_prefs.py:147
 msgid "XML-RPC URL:"
 msgstr "URL XML-RPC:"
 
-#: blogger_prefs.py:120 blogger_prefs.py:125
+#: blogger_prefs.py:121 blogger_prefs.py:126 blogger_prefs.py:131
 msgid "Base Blog URL:"
 msgstr "Základní URL blogu:"
 
@@ -205,29 +209,29 @@ msgstr ""
 "Pošlete prosím o tomto hlášení chyby e-mail na seth@gnome.org, abych na to "
 "mohl reagovat."
 
-#: protocols/advogato.py:23 protocols/advogato.py:26 protocols/advogato.py:38
-#: protocols/bloggerAPI.py:59 protocols/bloggerAPI.py:85
-#: protocols/livejournal.py:30 protocols/livejournal.py:59
+#: protocols/advogato.py:27 protocols/advogato.py:30 protocols/advogato.py:42
+#: protocols/bloggerAPI.py:62 protocols/bloggerAPI.py:90
+#: protocols/livejournal.py:35 protocols/livejournal.py:64
 msgid "Could not post Blog entry"
 msgstr "Nemohu odeslat položku blogu"
 
-#: protocols/advogato.py:23
+#: protocols/advogato.py:27
 msgid "Your username is invalid. Please double-check the preferences."
 msgstr "Vaše jméno uživatele není platné. Zkontrolujte prosím nastavení."
 
-#: protocols/advogato.py:26 protocols/livejournal.py:30
+#: protocols/advogato.py:30 protocols/livejournal.py:35
 msgid ""
 "Your username or password is invalid. Please double-check the preferences."
 msgstr ""
 "Vaše jméno uživatele nebo heslo není platné. Zkontrolujte prosím nastavení."
 
-#: protocols/advogato.py:35 protocols/bloggerAPI.py:82
-#: protocols/livejournal.py:56
+#: protocols/advogato.py:39 protocols/bloggerAPI.py:87
+#: protocols/livejournal.py:61
 msgid "Could not post blog entry"
 msgstr "Nemohu odeslat položku blogu"
 
-#: protocols/advogato.py:38 protocols/bloggerAPI.py:36
-#: protocols/bloggerAPI.py:85
+#: protocols/advogato.py:42 protocols/bloggerAPI.py:39
+#: protocols/bloggerAPI.py:90
 #, python-format
 msgid ""
 "URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
@@ -236,11 +240,11 @@ msgstr ""
 "URL '%s' zřejmě není platný XML-RPC server bloggerAPI. WWW server odpověděl: "
 "%s."
 
-#: protocols/bloggerAPI.py:33 protocols/bloggerAPI.py:36
+#: protocols/bloggerAPI.py:36 protocols/bloggerAPI.py:39
 msgid "Could not get list of blogs"
 msgstr "Nemohu získat seznam blogů"
 
-#: protocols/bloggerAPI.py:59
+#: protocols/bloggerAPI.py:62
 msgid ""
 "No XML-RPC server URL to post blog entries to is set, or the value could not "
 "be retrieved from GConf. Your entry will remain in the blogger window."
@@ -248,7 +252,7 @@ msgstr ""
 "Není nastaveno URL serveru XML-RPC, kam odesílat položky blogu, nebo hodnotu "
 "nelze získat z GConf. Vaše položka zůstane v okně blogování."
 
-#: protocols/livejournal.py:59
+#: protocols/livejournal.py:64
 #, python-format
 msgid ""
 "URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
@@ -257,32 +261,32 @@ msgstr ""
 "URL '%s' zřejmě není platný XML-RPC server LiveJournal. WWW server "
 "odpověděl: %s."
 
-#: rich_entry.py:135 rich_entry.py:143
+#: rich_entry.py:142 rich_entry.py:150
 msgid "Could not load dragged in image"
 msgstr "Nemohu načíst přetažený obrázek"
 
-#: rich_entry.py:136 rich_entry.py:144
+#: rich_entry.py:143 rich_entry.py:151
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "Chyba při načítání %s byla: %s"
 
-#: rich_entry.py:194
+#: rich_entry.py:208
 msgid "Add _Link..."
 msgstr "Přidat _odkaz..."
 
-#: rich_entry.py:199
+#: rich_entry.py:213
 msgid "Add Link"
 msgstr "Přidat odkaz"
 
-#: rich_entry.py:200
+#: rich_entry.py:214
 msgid "_Add Link"
 msgstr "_Přidat odkaz"
 
-#: rich_entry.py:208
+#: rich_entry.py:222
 msgid "Text:"
 msgstr "Text:"
 
-#: rich_entry.py:211
+#: rich_entry.py:225
 msgid "URL:"
 msgstr "URL:"
 

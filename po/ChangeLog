@@ -1,3 +1,8 @@
+2004-12-25  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* nb.po: Add this.
+	* POTFILES.in: Fix a bit.
+
 2004-12-19  Vincent van Adrighem  <adrighem@gnome.org>
 
 	* nl.po: Translation updated by Reinout van Schouwen.

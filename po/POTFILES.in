@@ -1,6 +1,6 @@
 # List of source files containing translatable strings.
 # Please keep this file sorted alphabetically.
-GNOME_BlogApplet.server.in
+GNOME_BlogApplet.server.in.in
 GNOME_BlogApplet.xml
 blog_applet.py
 blog_poster.py

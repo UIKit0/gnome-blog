@@ -2,6 +2,13 @@
 
 	* blog_poster.py:
 	* blogger_applet.py:
+
+	Automatically insert <p> tags where newlines are.
+	
+2003-08-31  Seth Nickell  <snickell@stanford.edu>
+
+	* blog_poster.py:
+	* blogger_applet.py:
 	* blogger_prefs.py:
 	* gconf_widgets.py:
 

@@ -51,7 +51,6 @@ class BlogPoster(gtk.Frame):
         boldToggle = style_toggle.StyleToggle(gtk.STOCK_BOLD, bold_tag, "strong", self.blogEntry)
         
         italic_tag = self.blogBuffer.create_tag("italic", style=pango.STYLE_ITALIC)
-        italic_tag.html_tag = "em"
         italicToggle = style_toggle.StyleToggle(gtk.STOCK_ITALIC, italic_tag, "em", self.blogEntry)
         
         buttonBox.pack_start(boldToggle, expand=gtk.FALSE)
@@ -130,6 +129,14 @@ class BlogPoster(gtk.Frame):
 
             new_text = buffer.get_text(last_iter, iter)
             html = html + new_text
+
+        # Get a list of lines in HTML so we can add <p> tags
+        html_lines = html.split('\n')
+
+        if (len(html_lines) > 0):
+            html = html_lines[0] + "\n"
+            for line in html_lines[1:]:
+                html = html + "<p>" + line + "</p>\n"
 
         return html
         

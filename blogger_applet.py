@@ -36,7 +36,6 @@ class BloggerApplet(gnome.applet.Applet):
         self.poster_window = aligned_window.AlignedWindow(self.toggle)
         self.poster_window.set_modal(gtk.TRUE)
         self.prefs_key = self.get_preferences_key()
-        print ("Prefs key is %s" % (self.prefs_key))
         self.poster = blog_poster.BlogPoster(self.prefs_key)
         self.poster_window.add(self.poster)
         self.poster.show()

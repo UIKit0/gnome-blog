@@ -1,3 +1,16 @@
+2003-09-11  Seth Nickell  <snickell@stanford.edu>
+
+	* protocols/bloggerAPI.py:
+
+	Import the appkey from the global namespace.
+	
+	* rich_entry.py:
+
+	Insert a fixed number of pixels after each newline.
+	This is not a great solution, but it'll at least
+	provide basic feedback so people don't insert
+	extra newlines.
+
 2003-09-09  Duarte Loreto <happyguy_pt@hotmail.com>
 
 	* configure.in: Added Portuguese (pt) to ALL_LINGUAS.

@@ -12,7 +12,8 @@ class RichEntry(gtk.TextView):
         
         self.set_editable(gtk.TRUE)
         self.set_wrap_mode(gtk.WRAP_WORD)
-
+        self.set_pixels_below_lines(16)
+        
         html_converter.para_tag = self.buffer.create_tag("p")
         html_converter.para_tag.opening_tag = "<p>"
         html_converter.para_tag.closing_tag = "</p>"

@@ -15,7 +15,11 @@ class Blog:
         return base_url + "/xmlrpc.cgi"
 
     def getBlogList(self, username, password, base_url, client, gconf_prefix):
+        global appkey
+        
         url = self._getURL(base_url)
+
+        print ("Getting list for RPC interface %s" % (url))
         
         server = xmlrpclib.Server(url)
 

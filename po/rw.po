@@ -1,0 +1,335 @@
+# translation of gnome-blog to Kinyarwanda.
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-blog package.
+# Steve Murphy <murf@e-tools.com>, 2005
+# Steve performed initial rough translation from compendium built from translations provided by the following translators:
+# Philibert Ndandali  <ndandali@yahoo.fr>, 2005.
+# Viateur MUGENZI <muvia1@yahoo.fr>, 2005.
+# Noëlla Mupole <s24211045@tuks.co.za>, 2005.
+# Carole Karema <karemacarole@hotmail.com>, 2005.
+# JEAN BAPTISTE NGENDAHAYO <ngenda_denis@yahoo.co.uk>, 2005.
+# Augustin KIBERWA  <akiberwa@yahoo.co.uk>, 2005.
+# Donatien NSENGIYUMVA <ndonatienuk@yahoo.co.uk>, 2005..
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-blog HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-04-01 14:00-0700\n"
+"PO-Revision-Date: 2005-03-31 20:55-0700\n"
+"Last-Translator: Steve Murphy <murf@e-tools.com>\n"
+"Language-Team: Kinyarwanda <translation-team-rw@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"ULL NAME <EMAIL@ADDRESS>\n"
+
+#: GNOME_BlogApplet.server.in.in.h:1
+msgid "Accessories"
+msgstr ""
+
+#: GNOME_BlogApplet.server.in.in.h:2 gnome-blog.desktop.in.h:1
+msgid "Blog Entry Poster"
+msgstr ""
+
+#: GNOME_BlogApplet.server.in.in.h:3
+#, fuzzy
+msgid "Post entries to a web log"
+msgstr "Ibyinjijwe Kuri a Urubuga LOG"
+
+# offmgr/source\offapp\intro\intro.hrc:TEXT_DEFAULTABOUT.text
+#: GNOME_BlogApplet.xml.h:1
+#, fuzzy
+msgid "_About..."
+msgstr "Ibyerekeye"
+
+#: GNOME_BlogApplet.xml.h:2
+#, fuzzy
+msgid "_Preferences..."
+msgstr "Ibyahiswemo..."
+
+#: blog_applet.py:35
+msgid "About"
+msgstr "Bigyanye"
+
+#: blog_applet.py:38
+msgid "Blog"
+msgstr ""
+
+#: blog_applet.py:73
+#, fuzzy
+msgid "A GNOME Web Blogging Applet"
+msgstr "A"
+
+#: blog_applet.py:108
+#, fuzzy, python-format
+msgid "Create a blog entry for %s at %s"
+msgstr "a Icyinjijwe kugirango ku"
+
+#: blog_poster.py:44
+msgid "_Post Entry"
+msgstr ""
+
+#: blog_poster.py:69
+#, fuzzy
+msgid "Preferences..."
+msgstr "Ibyahiswemo..."
+
+# shell/source\win32\shlxthandler\shlxthdl.lng:%TITLE_COLON%.text
+#: blog_poster.py:81
+msgid "Title:"
+msgstr "Umutwe:"
+
+#: blog_poster.py:116
+#, fuzzy
+msgid "Couldn't upload images"
+msgstr "Ishusho"
+
+#: blog_poster.py:116
+#, fuzzy
+msgid "The blog protocol in use does not support uploading images"
+msgstr "Porotokole in Gukoresha OYA Gushigikira Ishusho"
+
+#: blog_poster.py:163
+#, fuzzy
+msgid "Blog Entry is Blank"
+msgstr "ni"
+
+#: blog_poster.py:163
+#, fuzzy
+msgid ""
+"No text was entered in the blog entry box. Please enter some text and try "
+"again"
+msgstr "Umwandiko in i Icyinjijwe Agasanduku Injiza Umwandiko Na"
+
+#: blogger_prefs.py:19
+msgid "Blogger Preferences"
+msgstr ""
+
+#: blogger_prefs.py:38
+msgid "Self-Run MovableType"
+msgstr ""
+
+#: blogger_prefs.py:39
+msgid "Self-Run Pyblosxom"
+msgstr ""
+
+#: blogger_prefs.py:40
+msgid "Self-Run WordPress"
+msgstr ""
+
+#: blogger_prefs.py:41
+msgid "Self-Run Other"
+msgstr ""
+
+#: blogger_prefs.py:45
+msgid "Blog Type:"
+msgstr ""
+
+#: blogger_prefs.py:55
+msgid "Blog Protocol:"
+msgstr ""
+
+#: blogger_prefs.py:59
+#, fuzzy
+msgid "Blog Base URL:"
+msgstr "Base"
+
+#: blogger_prefs.py:61
+msgid "Blog Name:"
+msgstr ""
+
+#: blogger_prefs.py:63
+msgid "Lookup Blogs"
+msgstr ""
+
+#: blogger_prefs.py:73
+#, fuzzy
+msgid "Username:"
+msgstr "Izina ry'ukoresha"
+
+# sc/source\ui\src\scstring.src:SCSTR_PASSWORD.text
+#: blogger_prefs.py:74
+msgid "Password:"
+msgstr "Ijambobanga:"
+
+#: blogger_prefs.py:116 blogger_prefs.py:136 blogger_prefs.py:141
+#: blogger_prefs.py:147
+msgid "XML-RPC URL:"
+msgstr ""
+
+#: blogger_prefs.py:121 blogger_prefs.py:126 blogger_prefs.py:131
+#, fuzzy
+msgid "Base Blog URL:"
+msgstr "Base"
+
+#: blogger_prefs.py:155
+#, fuzzy
+msgid "Unknown blog type"
+msgstr "Ubwoko"
+
+#: blogger_prefs.py:155
+#, fuzzy
+msgid "The detected blog type is not among the list of supported blogs"
+msgstr "Ubwoko ni OYA i Urutonde Bya"
+
+#: gnome-blog.desktop.in.h:2
+#, fuzzy
+msgid "Post an entry to a web log"
+msgstr "Icyinjijwe Kuri a Urubuga LOG"
+
+#: gnomeblog.schemas.in.h:1
+#, fuzzy
+msgid "Password to use in accessing the blog"
+msgstr "Kuri Gukoresha in i"
+
+#: gnomeblog.schemas.in.h:2
+#, fuzzy
+msgid "Protocol to use in accessing the blog"
+msgstr "Kuri Gukoresha in i"
+
+#: gnomeblog.schemas.in.h:3
+#, fuzzy
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr "g."
+
+#: gnomeblog.schemas.in.h:4
+#, fuzzy
+msgid "The application's preferences have been initialized"
+msgstr "Ibyahiswemo"
+
+#: gnomeblog.schemas.in.h:5
+#, fuzzy
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr "ID Cyangwa Izina: Bya i Kuri Gukoresha ku i Seriveri"
+
+#: gnomeblog.schemas.in.h:6
+#, fuzzy
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr "Kuri i Seriveri"
+
+#: gnomeblog.schemas.in.h:7
+#, fuzzy
+msgid "Username to use in accessing the blog"
+msgstr "Kuri Gukoresha in i"
+
+#: hig_alert.py:13
+#, fuzzy, python-format
+msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
+msgstr "Gicurasi OYA a Byemewe"
+
+#: hig_alert.py:15
+#, fuzzy, python-format
+msgid ""
+"Unknown username %s or password trying to post blog entry to XML-RPC server %"
+"s."
+msgstr ""
+"Izina ry'ukoresha Cyangwa Ijambobanga... Kuri Iposita Icyinjijwe Kuri "
+"Seriveri"
+
+#: hig_alert.py:17
+#, fuzzy, python-format
+msgid ""
+"Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
+"reported: %s."
+msgstr "OYA Iposita Kuri ku Seriveri"
+
+#: hig_alert.py:19
+#, fuzzy, python-format
+msgid ""
+"The bloggerAPI server (%s) reported an error I don't understand: '%s, %s'. \n"
+"\n"
+"Please email this error message to seth@gnome.org so I can address it."
+msgstr "Seriveri Ikosa imeli iyi Ikosa Ubutumwa Kuri org Aderesi"
+
+#: protocols/advogato.py:27 protocols/advogato.py:30 protocols/advogato.py:42
+#: protocols/bloggerAPI.py:62 protocols/bloggerAPI.py:90
+#: protocols/livejournal.py:35 protocols/livejournal.py:64
+#, fuzzy
+msgid "Could not post Blog entry"
+msgstr "OYA Iposita Icyinjijwe"
+
+#: protocols/advogato.py:27
+#, fuzzy
+msgid "Your username is invalid. Please double-check the preferences."
+msgstr "Izina ry'ukoresha ni Sibyo MAHARAKUBIRI Kugenzura... i Ibyahiswemo"
+
+#: protocols/advogato.py:30 protocols/livejournal.py:35
+#, fuzzy
+msgid ""
+"Your username or password is invalid. Please double-check the preferences."
+msgstr ""
+"Izina ry'ukoresha Cyangwa Ijambobanga... ni Sibyo MAHARAKUBIRI Kugenzura... "
+"i Ibyahiswemo"
+
+#: protocols/advogato.py:39 protocols/bloggerAPI.py:87
+#: protocols/livejournal.py:61
+#, fuzzy
+msgid "Could not post blog entry"
+msgstr "OYA Iposita Icyinjijwe"
+
+#: protocols/advogato.py:42 protocols/bloggerAPI.py:39
+#: protocols/bloggerAPI.py:90
+#, fuzzy, python-format
+msgid ""
+"URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
+"reported: %s."
+msgstr "OYA Kuri a Byemewe Seriveri Seriveri"
+
+#: protocols/bloggerAPI.py:36 protocols/bloggerAPI.py:39
+#, fuzzy
+msgid "Could not get list of blogs"
+msgstr "OYA Kubona Urutonde Bya"
+
+#: protocols/bloggerAPI.py:62
+#, fuzzy
+msgid ""
+"No XML-RPC server URL to post blog entries to is set, or the value could not "
+"be retrieved from GConf. Your entry will remain in the blogger window."
+msgstr ""
+"Seriveri Kuri Iposita Ibyinjijwe Kuri ni Gushyiraho Cyangwa i Agaciro OYA "
+"Bivuye Icyinjijwe in i Idirishya"
+
+#: protocols/livejournal.py:64
+#, fuzzy, python-format
+msgid ""
+"URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
+"reported: %s."
+msgstr "OYA Kuri a Byemewe Seriveri Seriveri"
+
+#: rich_entry.py:144 rich_entry.py:152
+#, fuzzy
+msgid "Could not load dragged in image"
+msgstr "OYA Ibirimo in Ishusho"
+
+#: rich_entry.py:145 rich_entry.py:153
+#, fuzzy, python-format
+msgid "Error loading %s was: %s"
+msgstr "Itangira..."
+
+# sfx2/sdi\sfxslots.src:SID_CREATELINK.text
+#: rich_entry.py:210
+#, fuzzy
+msgid "Add _Link..."
+msgstr "Kongeraho Ihuriro"
+
+# sfx2/sdi\sfxslots.src:SID_CREATELINK.text
+#: rich_entry.py:215
+msgid "Add Link"
+msgstr "Kongeraho Ihuriro"
+
+# sfx2/sdi\sfxslots.src:SID_CREATELINK.text
+#: rich_entry.py:216
+#, fuzzy
+msgid "_Add Link"
+msgstr "Kongeraho Ihuriro"
+
+# svx/source\dialog\imapdlg.src:RID_SVXDLG_IMAP.FT_TEXT.text
+#: rich_entry.py:224
+msgid "Text:"
+msgstr "Umwandiko:"
+
+# offmgr/source\offapp\dialog\hyprlink.src:RID_SVXDLG_HYPERLINK.FT_URL.text
+#: rich_entry.py:227
+msgid "URL:"
+msgstr "URL:"

@@ -1,3 +1,11 @@
+2003-09-02  Seth Nickell  <snickell@stanford.edu>
+
+	* HACKING:
+
+	Clarify commit stuff (if you know what you're doing, and
+	you're pretty sure its right, just commit). If I don't
+	like it, I'll change it.
+
 2003-09-02  Bastien Nocera  <hadess@hadess.net>
 
 	* blog_poster.py: use the advogato API if the server url is

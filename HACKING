@@ -1,0 +1,22 @@
+===Commit Permissions==
+Build sherrif commits are welcome.
+
+If you are an experienced GNOME hacker and confident that your code is right,
+you don't need maintainer approval to commit to HEAD. 
+
+If you are unsure of your change, please feel free to send the patch to
+seth@gnome.org and get our approval so we won't execute you when it breaks 
+things / does them wrong.
+
+===Prior to Checkin===
+Create a ChangeLog entry
+
+===FIXMEs===
+Use "FIXME" to augument code that needs more work, that is missing functionality or
+in general needs attention. Include a comprehensive comment explaining what is 
+missing, why you think something is broken, what you suggest as a fix, etc.
+FIXME entries are periodically converted into bugzilla bugs.
+Do not use any other format to draw attention to problems, comments that do
+not contain "FIXME" are not going to be found by our problem tracking tools.
+
+

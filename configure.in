@@ -47,7 +47,7 @@ PYGTK_H2DEF=`$PKG_CONFIG --variable=datadir pygtk-2.0`/pygtk/2.0/codegen/h2def.p
 AC_SUBST(PYGTK_H2DEF)
 AC_MSG_RESULT($PYGTK_H2DEF)
 
-ALL_LINGUAS="pl sr sr@Latn sv"
+ALL_LINGUAS="es pl sr sr@Latn sv"
                                                                                 
 GETTEXT_PACKAGE=gnome-blog
 AC_SUBST(GETTEXT_PACKAGE)

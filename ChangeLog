@@ -1,3 +1,19 @@
+2003-09-02  Seth Nickell  <snickell@stanford.edu>
+
+	* Makefile.am:
+	* blog.py:
+	* blog_poster.py:
+
+	Add a tiny bit of abstraction for handling protocol
+	and servers. You need to edit both blogger_prefs.py
+	and a bit in blog.py to add a new type.
+	
+	* blogger_prefs.py:
+	* gconf_widgets.py:
+
+	Improve Prefs dialog handling of different servers
+	and protocols.
+	
 2003-09-02  James Willcox  <jwillcox@gnome.org>
 
 	* blogger_prefs.py:

@@ -21,8 +21,12 @@ class OptionMenu(gtk.OptionMenu):
         for string_value_pair in string_value_pairs:
             string = string_value_pair[0]
             value  = string_value_pair[1]
-            
-            self.menu.append(gtk.MenuItem(string))
+
+            if (string == "-"):
+                self.menu.append(gtk.SeparatorMenuItem())
+            else:
+                self.menu.append(gtk.MenuItem(string))
+                
             self.values.append(value)
             
         self.menu.show_all()

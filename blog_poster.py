@@ -2,13 +2,11 @@ import gtk
 import pango
 import gconf
 
-import xmlrpclib
-
 import hig_alert
 import style_toggle
+import blog
 
 gconf_prefix = "/apps/gnome-blogger"
-appkey = "6BF507937414229AEB450AB075001667C8BC8338"
 
 class BlogPoster(gtk.Frame):
     def __init__(self, prefs_key):
@@ -72,37 +70,7 @@ class BlogPoster(gtk.Frame):
         self.add(box)
         box.show_all()
 
- 
-    def _postEntry (self, username, password, blog_id, url, text):
-        if (url == None):
-            hig_alert.reportError("Could not post Blog entry", "No XML-RPC server URL to post blog entries to is set, or the value could not be retrieved from GConf. Your entry will remain in the blogger window.")
-            return gtk.FALSE
 
-        success = gtk.TRUE
-
-        print ("Getting server...")
-
-        server = xmlrpclib.Server(url)
-
-        try:
-            print ("Doing post")
-	    if (url == "http://www.advogato.org/XMLRPC"):
-	      cookie = server.authenticate(username, password)
-	      server.diary.set(cookie, -1, text)
-            else:
-              server.blogger.newPost(appkey, blog_id, username, password,
-                                     text, xmlrpclib.True)
-        except xmlrpclib.Fault, e:
-            hig_alert.handleBloggerAPIFault(e, "Could not post blog entry", username, blog_id, url)
-            success = gtk.FALSE
-        except xmlrpclib.ProtocolError, e:
-            hig_alert.reportError("Could not post Blog entry", 'URL \'%s\' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: <span style=\"italic\">%s</span>.' % (url, e.errmsg))
-            success = gtk.FALSE
-
-        print ("Success is....")
-        print (success)
-
-        return success
 
     def _getHTMLText(self, buffer):
         html = ""
@@ -153,31 +121,19 @@ class BlogPoster(gtk.Frame):
             html = html + "<p>" + line + "</p>\n"
 
         return html
+
         
     def _onPostButtonClicked(self, button):
         global gconf_prefix, appkey
         
         html_text = self._getHTMLText(self.blogBuffer)
         title = self.titleEntry.get_text()
-
-        html_text = title + "\n" + html_text
         
         # Don't post silly blog entries like blank ones
         if (not self._postIsReasonable(html_text)):
             return
 
-        client = gconf.client_get_default()
-
-        print ("GConf_prefix is ", gconf_prefix)
-        
-        username = client.get_string(gconf_prefix + "/blog_username")
-        password = client.get_string(gconf_prefix + "/blog_password")
-        blog_id  = client.get_string(gconf_prefix + "/blog_id")
-        url      = client.get_string(gconf_prefix + "/xmlrpc_url")
-
-        print ("Text %s" % html_text)
-
-        successful_post = self._postEntry(username, password, blog_id, url, html_text)
+        successful_post = blog.postEntry(title, html_text, gconf_prefix)
 
         if (successful_post):
             # Only delete the entry if posting was successful

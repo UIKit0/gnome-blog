@@ -7,13 +7,14 @@ server_DATA = $(server_in_files:.server.in=.server)
 bin_SCRIPTS = blog_applet.py
 
 python_PYTHON = 		\
-	blog_applet.py	\
+	blog_applet.py		\
 	blog_poster.py 		\
 	aligned_window.py 	\
 	hig_alert.py 		\
 	style_toggle.py		\
 	blogger_prefs.py	\
-	gconf_widgets.py
+	gconf_widgets.py	\
+	blog.py
 
 pixmapsdir = $(datadir)/pixmaps
 pixmaps_DATA = gnome-blog.png

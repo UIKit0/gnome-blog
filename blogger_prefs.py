@@ -30,79 +30,110 @@ class BloggerPrefs(gtk.Dialog):
 
         self.vbox.set_spacing(12)
 
-##        blogTypeOptionMenu = gtk.OptionMenu()
-##        blogTypeOptionMenu.url_list = []
-
-##        blogTypeMenu = gtk.Menu()
-##        blogTypeMenu.append(gtk.MenuItem("Self-Hosted Blog"))
-##        blogTypeOptionMenu.url_list.append("")
-##        blogTypeMenu.append(gtk.MenuItem("Blogger.com"))
-##        blogTypeOptionMenu.url_list.append("http://plant.blogger.com/api/RPC2")
-##        blogTypeMenu.show_all()
-        
-##        menu = blogTypeOptionMenu.set_menu(blogTypeMenu)
-
-##        blogTypeOptionMenu.connect("changed", self._onBlogTypeChanged)
-##        blogTypeOptionMenu.set_history(0)
+        blogTypeMenu = gconf_widgets.OptionMenu(gconf_prefix + "/blog_type")
+        blogTypeMenu.setStringValuePairs([("Blogger.com", "blogger.com"),
+                                         ("Advogato", "advogato.org"),
+                                         ("-", ""),
+                                         ("Self-Run MovableType", "custom-mt"),
+                                         ("Self-Run Pybloxsom", "custom-pybloxsom"),
+                                         ("Self-Run Other", "custom")])
 
         blogTypeBox = gtk.HBox()
-        blogTypeBox.pack_start(gconf_widgets.CheckButton("Blog is on blogger.com",
-                                                         gconf_prefix + "/use_blogger_dot_com"))
-##        blogTypeBox.pack_start(LeftLabel("Blog Type:"))
-##        blogTypeBox.pack_end(blogTypeOptionMenu)
+        blogTypeBox.set_spacing(6)
+        blogTypeBox.pack_start(LeftLabel("Blog Type:"), expand=gtk.FALSE)
+        blogTypeBox.pack_end(blogTypeMenu)
+
+
+
+        self.blogProtocolMenu = gconf_widgets.OptionMenu(gconf_prefix + "/blog_protocol")
+        self.blogProtocolMenu.setStringValuePairs([("BloggerAPI", "bloggerAPI"),
+                                                  ("Advogato", "advogato")])
+        self.blogProtocolLabel = LeftLabel("Blog Protocol")
+        
+        self.urlEntry = gconf_widgets.Entry(gconf_prefix + "/xmlrpc_url")
+        self.urlEntry.set_width_chars(45)
+        self.urlLabel = LeftLabel("XML-RPC URL:")
+
+        self.blogMenu = gconf_widgets.OptionMenu(gconf_prefix + "/blog_id")
+        lookupButton = gtk.Button("Lookup Blogs")
+        lookupButton.connect("clicked", self._onLookupBlogsButton)
+
 
         table = gtk.Table(rows=4, columns=3)
         table.set_row_spacings(12)
         table.set_col_spacings(6)
-        
-        table.attach(LeftLabel("BloggerAPI URL:"), 0, 1, 0, 1, xoptions=gtk.FILL)
-        table.attach(LeftLabel("Username:"), 0, 1, 1, 2, xoptions=gtk.FILL)
-        table.attach(LeftLabel("Password:"), 0, 1, 2, 3, xoptions=gtk.FILL)
-        table.attach(LeftLabel("Blog Name:"), 0, 1, 3, 4, xoptions=gtk.FILL)
 
-        self.urlEntry = gconf_widgets.Entry(gconf_prefix + "/xmlrpc_url")
-        self.urlEntry.set_width_chars(45)
-        table.attach(self.urlEntry, 1, 3, 0, 1)
-        table.attach(gconf_widgets.Entry(gconf_prefix + "/blog_username"), 1, 3, 1, 2)
-        table.attach(gconf_widgets.Entry(gconf_prefix + "/blog_password", 1), 1, 3, 2, 3)
-##        table.attach(gconf_widgets.Entry(gconf_prefix + "/blog_id"), 1, 2, 3, 4)
+        table.attach(self.blogProtocolLabel, 0, 1, 0, 1, xoptions=gtk.FILL)
+        table.attach(self.urlLabel, 0, 1, 1, 2, xoptions=gtk.FILL)
+        table.attach(LeftLabel("Username:"), 0, 1, 2, 3, xoptions=gtk.FILL)
+        table.attach(LeftLabel("Password:"), 0, 1, 3, 4, xoptions=gtk.FILL)
+        table.attach(LeftLabel("Blog Name:"), 0, 1, 4, 5, xoptions=gtk.FILL)
 
-        self.blogMenu = gconf_widgets.OptionMenu(gconf_prefix + "/blog_id")
-        table.attach(self.blogMenu, 1, 2, 3, 4)
-
-        lookupButton = gtk.Button("Lookup Blogs")
-        lookupButton.connect("clicked", self._onLookupBlogsButton)
-
-        table.attach(lookupButton, 2, 3, 3, 4)
-
-        self.notify = client.notify_add(gconf_prefix + "/use_blogger_dot_com", self._gconfUseBloggerChange)
+        table.attach(self.blogProtocolMenu, 1, 3, 0, 1)
+        table.attach(self.urlEntry, 1, 3, 1, 2)
+        table.attach(gconf_widgets.Entry(gconf_prefix + "/blog_username"), 1, 3, 2, 3)
+        table.attach(gconf_widgets.Entry(gconf_prefix + "/blog_password"), 1, 3, 3, 4)
+        table.attach(self.blogMenu, 1, 2, 4, 5)
+        table.attach(lookupButton, 2, 3, 4, 5, xoptions=gtk.FILL)
 
         vbox = gtk.VBox()
         vbox.pack_start(blogTypeBox)
         vbox.pack_start(gtk.HSeparator())
         vbox.pack_start(table)
         vbox.set_spacing(12)
+        vbox.set_border_width(6)
         
         self.vbox.pack_start(vbox)
 
         vbox.show_all()
 
-    def _gconfUseBloggerChange (self, client, cnxn_id, entry, what):
-        use_blogger = entry.value.get_bool()
-        if (use_blogger):
+        self.notify = client.notify_add(gconf_prefix + "/blog_type", self._gconfBlogTypeChange)
+        blog_type = client.get_string(gconf_prefix + "/blog_type")
+        self._updateBlogType(blog_type)
+        
+
+    def _gconfBlogTypeChange (self, client, cnxn_id, entry, what):
+        blog_type = entry.value.get_string()
+
+        self._updateBlogType(blog_type)
+
+    def _updateBlogType(self, blog_type):
+        client = gconf.client_get_default()
+        
+        if (blog_type == "custom"):
+            url = None
+            protocol = None
+        elif (blog_type == "custom-mt"):
+            url = None
+            protocol = "bloggerAPI"
+        elif (blog_type == "custom-pybloxsom"):
+            url = None
+            protocol = "bloggerAPI"
+        elif (blog_type == "blogger.com"):
+            url = "http://plant.blogger.com/api/RPC2"
+            protocol = "bloggerAPI"
+        elif (blog_type == "advogato.org"):
+            url = "http://www.advogato.org/XMLRPC"
+            protocol = "advogato"
+        else:
+            # FIXME: popup an error dialog
+            print ("Unknown blog type (!)")
+
+        if (url != None):
             self.urlEntry.set_sensitive(gtk.FALSE)
-            client.set_string(gconf_prefix + "/xmlrpc_url", "http://plant.blogger.com/api/RPC2")
+            self.urlLabel.set_sensitive(gtk.FALSE)
+            client.set_string(gconf_prefix + "/xmlrpc_url", url)
         else:
             self.urlEntry.set_sensitive(gtk.TRUE)
-            
-##    def _onBlogTypeChanged(self, optionmenu):
-##        index = optionmenu.get_history()
-##        url = optionmenu.url_list[index]
+            self.urlLabel.set_sensitive(gtk.TRUE)            
 
-##        print ("URL is %s" % url)
-        
-##        client = gconf.client_get_default()
-##        client.set_string(gconf_prefix + "/xmlrpc_url", url)
+        if (protocol != None):
+            self.blogProtocolMenu.set_sensitive(gtk.FALSE)
+            self.blogProtocolLabel.set_sensitive(gtk.FALSE)
+            client.set_string(gconf_prefix + "/blog_protocol", protocol)
+        else:
+            self.blogProtocolMenu.set_sensitive(gtk.TRUE)
+            self.blogProtocolLabel.set_sensitive(gtk.TRUE)
 
     def _onLookupBlogsButton (self, button):
         client = gconf.client_get_default()

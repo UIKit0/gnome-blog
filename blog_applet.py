@@ -4,6 +4,8 @@ pygtk.require('2.0')
 
 import gtk
 import gobject
+import gnome
+import gnome.ui
 import gnome.applet
 
 import blog_poster
@@ -11,16 +13,16 @@ import aligned_window
 import blogger_prefs
 import gconf
 
+import gnome_blog_globals
+
 class BloggerApplet(gnome.applet.Applet):
     def __init__(self):
         self.__gobject_init__()
 
     def init(self):
         self.toggle = gtk.ToggleButton()
-        verbs = ("Pref", self._openPrefs)
-
         self.setup_menu_from_file (None, "GNOME_BlogApplet.xml",
-                                   None, [("Pref", self._openPrefs)])
+                                   None, [("About", self._showAboutDialog), ("Pref", self._openPrefs)])
 
         button_box = gtk.HBox()
         button_box.pack_start(gtk.Label("Blog"))
@@ -50,6 +52,11 @@ class BloggerApplet(gnome.applet.Applet):
         
         return gtk.TRUE
     
+    def _showAboutDialog(self, uicomponent, verb):
+        gnome.ui.About(gnome_blog_globals.name, gnome_blog_globals.version, "Copyright 2003 Seth Nickell",
+                       "A GNOME Web Blogging Applet",["Seth Nickell <seth@gnome.org>"],[],
+                       "",gtk.gdk.pixbuf_new_from_file(gnome_blog_globals.image_dir + "/gnome-blog.png")).show()
+
     def _showPrefDialog(self):
         prefs_dialog = blogger_prefs.BloggerPrefs(self.prefs_key)
         prefs_dialog.show()

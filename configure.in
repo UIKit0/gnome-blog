@@ -57,6 +57,7 @@ AM_GLIB_GNU_GETTEXT
 
 AC_OUTPUT([
 Makefile
+gnome_blog_globals.py
 gnome-blog.spec
 po/Makefile.in
 ])

@@ -38,4 +38,5 @@ intltool-merge.in
 intltool-update
 intltool-update.in
 gnome-blogger.schemas
+gnome_blog_globals.py
 

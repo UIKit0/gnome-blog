@@ -14,7 +14,8 @@ python_PYTHON = 		\
 	style_toggle.py		\
 	blogger_prefs.py	\
 	gconf_widgets.py	\
-	blog.py
+	blog.py		\
+	gnome_blog_globals.py
 
 pixmapsdir = $(datadir)/pixmaps
 pixmaps_DATA = gnome-blog.png

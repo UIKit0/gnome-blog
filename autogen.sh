@@ -6,7 +6,7 @@ test -z "$srcdir" && srcdir=.
 
 ORIGDIR=`pwd`
 cd $srcdir
-PROJECT=applet
+PROJECT=gnome-blog
 TEST_TYPE=-f
 FILE=configure.in
 

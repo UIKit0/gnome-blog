@@ -1,3 +1,22 @@
+2003-09-02  Alex Duggan  <aldug@astrolinux.com>
+
+	* GNOME_BlogApplet.xml:
+	* Makefile.am:
+	* blog_applet.py:
+	* configure.in:
+	* gnome_blog_globals.py.in:
+	* .cvsignore:
+	
+	Add an about dialog and a global variables script
+	
+	* blogger_applet.py:
+	
+	Removed from cvs
+	
+	* autogen.sh:
+	
+	s/applet/gnome-blog/
+
 2003-09-02  Seth Nickell  <snickell@stanford.edu>
 
 	* blogger_prefs.py:

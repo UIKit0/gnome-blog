@@ -1,5 +1,15 @@
 2004-10-26  Seth Nickell  <seth@gnome.org>
 
+        Patch from Maciej Katafiasz <mnews2@wp.pl>
+	
+	* blog_applet.py:
+	* blog_poster.py:
+	* gnome-blog-poster:
+
+	Add CTRL-I and CTRL-B accelerators for Italics and Bold.
+	
+2004-10-26  Seth Nickell  <seth@gnome.org>
+
 	* autogen.sh:
 
 	Hardcode 'automake-1.8' instead of just calling 'automake'.

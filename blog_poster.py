@@ -19,7 +19,7 @@ except:
 gconf_prefix = None
 
 class BlogPoster(gtk.Frame):
-    def __init__(self, prefs_key="/apps/gnome-blog",on_entry_posted=None):
+    def __init__(self, prefs_key="/apps/gnome-blog", on_entry_posted=None, accel_group=None):
         gtk.Frame.__init__(self)
         self.set_shadow_type(gtk.SHADOW_OUT)
 
@@ -60,6 +60,12 @@ class BlogPoster(gtk.Frame):
         italicToggle = self.blogEntry.createStyleToggle([("style", pango.STYLE_ITALIC)], gtk.STOCK_ITALIC, "em")
         linkButton   = rich_entry.InsertHyperlinkButton(self.blogEntry)
         
+        if (accel_group):
+            boldToggle.add_accelerator("clicked", accel_group, ord("B"),
+                                       gtk.gdk.CONTROL_MASK, 0)
+            italicToggle.add_accelerator("clicked", accel_group, ord("I"),
+                                         gtk.gdk.CONTROL_MASK, 0)
+
         self.prefs_button = gtk.Button(_("Preferences..."))
         self.prefs_button.connect("clicked", self._onPrefsButtonClicked)
 

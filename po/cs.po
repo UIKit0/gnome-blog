@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-02 02:24-0500\n"
-"PO-Revision-Date: 2004-12-26 23:49+0100\n"
+"POT-Creation-Date: 2005-01-02 11:04+0100\n"
+"PO-Revision-Date: 2005-01-02 14:57+0100\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -144,11 +144,11 @@ msgstr "Základní URL blogu:"
 
 #: blogger_prefs.py:155
 msgid "Unknown blog type"
-msgstr ""
+msgstr "Neznámý typ blogu"
 
 #: blogger_prefs.py:155
 msgid "The detected blog type is not among the list of supported blogs"
-msgstr ""
+msgstr "Detekovaný typ blogu není v seznamu podporovaných blogů"
 
 #: gnome-blog.desktop.in.h:2
 msgid "Post an entry to a web log"

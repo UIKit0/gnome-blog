@@ -4,9 +4,9 @@
     <!-- General preferences -->        
 
     <schema>
-      <key>/schemas/apps/gnome-blogger/use_blogger_dot_com</key>
-      <applyto>/apps/gnome-blogger/use_blogger_dot_com</applyto>
-      <owner>gnome-blogger</owner>
+      <key>/schemas/apps/gnome-blog/use_blogger_dot_com</key>
+      <applyto>/apps/gnome-blog/use_blogger_dot_com</applyto>
+      <owner>gnome-blog</owner>
       <type>bool</type>
       <default>false</default>
       <locale name="C">
@@ -15,9 +15,9 @@
     </schema>
 
     <schema>
-      <key>/schemas/apps/gnome-blogger/initialized</key>
-      <applyto>/apps/gnome-blogger/initialized</applyto>
-      <owner>gnome-blogger</owner>
+      <key>/schemas/apps/gnome-blog/initialized</key>
+      <applyto>/apps/gnome-blog/initialized</applyto>
+      <owner>gnome-blog</owner>
       <type>bool</type>
       <default>false</default>
       <locale name="C">
@@ -26,9 +26,9 @@
    </schema>
 
     <schema>
-      <key>/schemas/apps/gnome-blogger/blog_username</key>
-      <applyto>/apps/gnome-blogger/blog_username</applyto>
-      <owner>gnome-blogger</owner>
+      <key>/schemas/apps/gnome-blog/blog_username</key>
+      <applyto>/apps/gnome-blog/blog_username</applyto>
+      <owner>gnome-blog</owner>
       <type>string</type>
       <locale name="C">
          <short>Username to use in accessing the blog</short>
@@ -37,9 +37,9 @@
 
 
     <schema>
-      <key>/schemas/apps/gnome-blogger/blog_password</key>
-      <applyto>/apps/gnome-blogger/blog_password</applyto>
-      <owner>gnome-blogger</owner>
+      <key>/schemas/apps/gnome-blog/blog_password</key>
+      <applyto>/apps/gnome-blog/blog_password</applyto>
+      <owner>gnome-blog</owner>
       <type>string</type>
       <locale name="C">
          <short>Password to use in accessing the blog</short>
@@ -47,9 +47,9 @@
     </schema>
 
     <schema>
-      <key>/schemas/apps/gnome-blogger/blog_protocol</key>
-      <applyto>/apps/gnome-blogger/blog_protocol</applyto>
-      <owner>gnome-blogger</owner>
+      <key>/schemas/apps/gnome-blog/blog_protocol</key>
+      <applyto>/apps/gnome-blog/blog_protocol</applyto>
+      <owner>gnome-blog</owner>
       <type>string</type>
       <locale name="C">
          <short>Protocol to use in accessing the blog</short>
@@ -57,9 +57,9 @@
     </schema>
 
     <schema>
-      <key>/schemas/apps/gnome-blogger/blog_id</key>
-      <applyto>/apps/gnome-blogger/blog_id</applyto>
-      <owner>gnome-blogger</owner>
+      <key>/schemas/apps/gnome-blog/blog_id</key>
+      <applyto>/apps/gnome-blog/blog_id</applyto>
+      <owner>gnome-blog</owner>
       <type>string</type>
       <default>/</default>
       <locale name="C">
@@ -69,9 +69,9 @@
 
 
     <schema>
-      <key>/schemas/apps/gnome-blogger/xmlrpc_url</key>
-      <applyto>/apps/gnome-blogger/xmlrpc_url</applyto>
-      <owner>gnome-blogger</owner>
+      <key>/schemas/apps/gnome-blog/xmlrpc_url</key>
+      <applyto>/apps/gnome-blog/xmlrpc_url</applyto>
+      <owner>gnome-blog</owner>
       <type>string</type>
       <locale name="C">
          <short>URL to the bloggerAPI compatible XML-RPC server</short>
@@ -79,9 +79,9 @@
     </schema>
 
     <schema>
-      <key>/schemas/apps/gnome-blogger/url_ending</key>
-      <applyto>/apps/gnome-blogger/url_ending</applyto>
-      <owner>gnome-blogger</owner>
+      <key>/schemas/apps/gnome-blog/url_ending</key>
+      <applyto>/apps/gnome-blog/url_ending</applyto>
+      <owner>gnome-blog</owner>
       <type>string</type>
       <locale name="C">
          <short>Suffix to attach to the base URL (e.g. "xmlrpc.cgi")</short>

@@ -1,0 +1,56 @@
+# gnome-blog ja.po.
+# Copyright (C) 2003 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-blog package.
+# Takeshi AIHANA <aihana@gnome.gr.jp>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-blog HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-09-04 00:41+0900\n"
+"PO-Revision-Date: 2003-09-03 23:58+0900\n"
+"Last-Translator: Takeshi AIHANA <aihana@gnome.gr.jp>\n"
+"Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: GNOME_BlogApplet.server.in.h:1
+msgid "Blogging Tool"
+msgstr "Blogging ツール"
+
+#: GNOME_BlogApplet.server.in.h:2
+msgid "Blogging tool"
+msgstr "'Blog' するツール"
+
+#: GNOME_BlogApplet.xml.h:1
+msgid "_About..."
+msgstr "情報(_A)..."
+
+#: GNOME_BlogApplet.xml.h:2
+msgid "_Preferences..."
+msgstr "設定(_P)..."
+
+#: gnomeblog.schemas.in.h:1
+msgid "Password to use in accessing the blog"
+msgstr "アクセスする 'blog' で使用するパスワードです"
+
+#: gnomeblog.schemas.in.h:2
+msgid "Post blog entries to Blogger.com"
+msgstr "Blogger.com へ 'blog' エントリを投稿します"
+
+#: gnomeblog.schemas.in.h:3
+msgid "The application's preferences have been initialized"
+msgstr "アプリケーションの設定が初期化されました"
+
+#: gnomeblog.schemas.in.h:4
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr "XML-RPC サーバで使用する特定の 'blog' の名前/識別子 ID です"
+
+#: gnomeblog.schemas.in.h:5
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr "XML-RPC サーバ互換の bloggerAPI に対する URL です"
+
+#: gnomeblog.schemas.in.h:6
+msgid "Username to use in accessing the blog"
+msgstr "アクセスする 'blog' で使用するユーザ名です"

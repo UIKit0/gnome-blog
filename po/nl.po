@@ -6,13 +6,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog head\n"
-"POT-Creation-Date: 2003-11-07 03:38+0100\n"
-"PO-Revision-Date: 2003-11-07 11:15+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-11-21 03:49+0100\n"
+"PO-Revision-Date: 2003-11-21 19:16+0100\n"
 "Last-Translator: Elros Cyriatan <cyriatan@fastmail.fm>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bit"
 
 #: GNOME_BlogApplet.server.in.h:1
 msgid "Accessories"
@@ -82,35 +83,37 @@ msgstr "Info"
 msgid "Blog"
 msgstr "Blog"
 
-#: blog_applet.py:66
+#. self._showPrefDialog()
+#: blog_applet.py:67
 msgid "A GNOME Web Blogging Applet"
 msgstr "Een GNOME Web blogging applet"
 
 #. take the XML_RPC value from GConf
 #. split the URL up into http:, '', domainname, extra
 #. join back up the URL into http://domainname
-#: blog_applet.py:101
-msgid "Create a blog entry for "
-msgstr "Een blog ingang maken voor"
+#: blog_applet.py:102
+#, python-format
+msgid "Create a blog entry for %s at %s"
+msgstr "Een blog ingang maken voor %s bij %s"
 
 #. Set tooltip to the applet button
-#: blog_poster.py:31
+#: blog_poster.py:32
 msgid "_Post Entry"
 msgstr "Ingang _verzenden"
 
-#. link_tag = self.blogBuffer.create_tag("a")
-#. link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
-#. link_tag.set_property("foreground", "#0000FF")
-#. linkButton = InsertButton
-#: blog_poster.py:65
+#: blog_poster.py:51
+msgid "Preferences..."
+msgstr "Voorkeuren..."
+
+#: blog_poster.py:63
 msgid "Title:"
 msgstr "Titel:"
 
-#: blog_poster.py:87
+#: blog_poster.py:85
 msgid "Couldn't upload images"
 msgstr "Kan afbeeldingen niet verzenden"
 
-#: blog_poster.py:87
+#: blog_poster.py:85
 msgid "The blog protocol in use does not support uploading images"
 msgstr ""
 "Het blog protocol dat wordt gebruikt ondersteunt niet de verzenden van "
@@ -121,11 +124,11 @@ msgstr ""
 #. Call back our parent informing them the entry was posted
 #. Popup a dialogue confirming even if its deemed
 #. unreasonable
-#: blog_poster.py:115
+#: blog_poster.py:121
 msgid "Blog Entry is Blank"
 msgstr "Blog ingang is leeg"
 
-#: blog_poster.py:115
+#: blog_poster.py:121
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
@@ -142,7 +145,7 @@ msgid "Self-Run MovableType"
 msgstr "Zelf-Uitvoeren VerplaatsbareSoort"
 
 #: blogger_prefs.py:38
-msgid "Self-Run Pybloxsom"
+msgid "Self-Run Pyblosxom"
 msgstr "Zelf-Uitvoeren Pybloxsom"
 
 #: blogger_prefs.py:39
@@ -232,43 +235,43 @@ msgstr ""
 "Verzend alstublieft deze foutmelding naar seth@gnome.org zodat ik er wat aan "
 "kan doen."
 
+#. Hack for addHyperlink with old pygtk's
 #. GtkTextView already defines drag and drop targets, get them
 #. Unfortunately old_targets string field has a funny type
 #. that needs to be explicitly converted to string
 #. Add the DND type that we support and set the new list of types
-#. Hack for addHyperlink with old pygtk's
 #. this is an older version of pygtk that doesn't
 #. have a way to create anonymous tags, hack around it
 #. 398 means text/uri-list
-#: rich_entry.py:131 rich_entry.py:139
+#: rich_entry.py:136 rich_entry.py:145
 msgid "Could not load dragged in image"
 msgstr "Kon de versleepte afbeelding niet laden"
 
-#: rich_entry.py:132 rich_entry.py:140
+#: rich_entry.py:137 rich_entry.py:146
 #, python-format
-msgid "Error loading <span style='italic'>%s</span> was: %s"
-msgstr "Fout bij laden <span style='italic'>%s</span> was: %s"
+msgid "Error loading %s was: %s"
+msgstr "Fout bij laden %s was: %s"
 
 #. Create a new image tag
 #. Insert the pixbuf, and then set the new image
 #. tag around it so that we can generate its HTML later
 #. Found Hyperlink, activating
-#: rich_entry.py:190
-msgid "Add _Link"
-msgstr "_Koppeling toevoegen"
+#: rich_entry.py:196
+msgid "Add _Link..."
+msgstr "_Koppeling toevoegen..."
 
-#: rich_entry.py:195
+#: rich_entry.py:201
 msgid "Add Link"
 msgstr "Koppeling toevoegen"
 
-#: rich_entry.py:196
+#: rich_entry.py:202
 msgid "_Add Link"
 msgstr "Koppeling _toevoegen"
 
-#: rich_entry.py:203
+#: rich_entry.py:210
 msgid "Text:"
 msgstr "Tekst:"
 
-#: rich_entry.py:206
+#: rich_entry.py:213
 msgid "URL:"
 msgstr "URL:"

@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
-"POT-Creation-Date: 2003-09-05 00:04-0700\n"
-"PO-Revision-Date: 2003-09-03 20:25+0200\n"
+"POT-Creation-Date: 2003-09-05 16:16+0200\n"
+"PO-Revision-Date: 2003-09-05 16:16+0200\n"
 "Last-Translator: Danilo Šegan <danilo@prevod.org>\n"
 "Language-Team: Serbian (sr) <serbiangnome-listaL@nongnu.org>\n"
 "MIME-Version: 1.0\n"
@@ -41,9 +41,8 @@ msgid "Post blog entries to Blogger.com"
 msgstr "Pošalji unos u blog na Blogger.com"
 
 #: gnomeblog.schemas.in.h:3
-#, fuzzy
 msgid "Protocol to use in accessing the blog"
-msgstr "Lozinka kojom se pristupa blogu"
+msgstr "Protokol kojim se pristupa blogu"
 
 #: gnomeblog.schemas.in.h:4
 msgid "The application's preferences have been initialized"
@@ -65,21 +64,20 @@ msgstr "Korisničko ime za pristup blogu"
 #. !/usr/bin/env python
 #. FIXME: need to get this path from auto*
 #: blog_applet.py:31
-#, fuzzy
 msgid "About"
-msgstr "_O programu..."
+msgstr "O programu"
 
 #: blog_applet.py:34
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
 #: blog_applet.py:63
 msgid "A GNOME Web Blogging Applet"
-msgstr ""
+msgstr "Programče za blogovanje iz Gnoma"
 
 #: blog_poster.py:32
 msgid "_Post Entry"
-msgstr ""
+msgstr "_Pošalji unos"
 
 #. link_tag = self.blogBuffer.create_tag("a")
 #. link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
@@ -87,7 +85,7 @@ msgstr ""
 #. linkButton = InsertButton
 #: blog_poster.py:64
 msgid "Title:"
-msgstr ""
+msgstr "Naslov:"
 
 #. Don't post silly blog entries like blank ones
 #. Only delete the entry if posting was successful
@@ -95,48 +93,47 @@ msgstr ""
 #. unreasonable
 #: blog_poster.py:102
 msgid "Blog Entry is Blank"
-msgstr ""
+msgstr "Unos za blog je prazan"
 
 #: blogger_prefs.py:20
-#, fuzzy
 msgid "Blogger Preferences"
-msgstr "_Postavke"
+msgstr "Postavke blogača"
 
 #: blogger_prefs.py:39
 msgid "Self-Run MovableType"
-msgstr ""
+msgstr "Lični MovableType"
 
 #: blogger_prefs.py:40
 msgid "Self-Run Pybloxsom"
-msgstr ""
+msgstr "Lični Pybloxsom"
 
 #: blogger_prefs.py:41
 msgid "Self-Run Other"
-msgstr ""
+msgstr "Neki drugi lični"
 
 #: blogger_prefs.py:58
 msgid "Blog Base URL:"
-msgstr ""
+msgstr "Osnovna adresa bloga:"
 
 #: blogger_prefs.py:60
 msgid "Blog Name:"
-msgstr ""
+msgstr "Ime bloga:"
 
 #: blogger_prefs.py:62
 msgid "Lookup Blogs"
-msgstr ""
+msgstr "Pronađi blogove"
 
 #: blogger_prefs.py:114 blogger_prefs.py:126 blogger_prefs.py:130
 msgid "XML-RPC URL:"
-msgstr ""
+msgstr "XML-RPC adresa:"
 
 #: blogger_prefs.py:118 blogger_prefs.py:122
 msgid "Base Blog URL:"
-msgstr ""
+msgstr "Osnovna adresa bloga:"
 
 #: blogger_prefs.py:125
 msgid "bloggerAPI"
-msgstr ""
+msgstr "bloggerAPI"
 
 #. FIXME: popup an error dialog
 #: hig_alert.py:8
@@ -145,6 +142,8 @@ msgid ""
 "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: <span style="
 "\"italic\">%s</span>."
 msgstr ""
+"Adresa „%s“ možda ne predstavlja ispravan bloggerAPI. XML-RPC server je "
+"prijavio: <span style=\"italic\">%s</span>."
 
 #: hig_alert.py:10
 #, python-format
@@ -152,6 +151,9 @@ msgid ""
 "Unknown username <span weight=\"bold\">%s</span> or password trying to post "
 "blog entry to XML-RPC server <span style=\"italic\">%s</span>."
 msgstr ""
+"Nepoznato korisničko ime <span weight=\"bold\">%s</span> ili lozinka pri "
+"pokušaju slanja unosa u blog preko XML-RPC servera <span style=\"italic\">%s</"
+"span>."
 
 #: hig_alert.py:12
 #, python-format
@@ -159,6 +161,8 @@ msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
 "reported: <span style=\"italic\">%s</span>."
 msgstr ""
+"Ne može da pošalje u blog „%s“ pomoću bloggerAPI XML-RPC servera „%s“. Server "
+"je prijavio: <span style=\"italic\">%s</span>."
 
 #: hig_alert.py:14
 #, python-format
@@ -168,3 +172,8 @@ msgid ""
 "\n"
 "Please email this error message to seth@gnome.org so I can address it."
 msgstr ""
+"Server sa bloggerAPI-jem (%s) je prijavio grešku koju ne razumem: „%s, <span "
+"style=\"italic\">%s</span>“. \n"
+"\n"
+"Molim pošaljite e-poštom ovu poruku o grešci na seth@gnome.org kako bi mogao "
+"da je obradim."

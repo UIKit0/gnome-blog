@@ -11,14 +11,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: es\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-01-31 22:26+0100\n"
-"PO-Revision-Date: 2004-01-31 22:37+0100\n"
+"POT-Creation-Date: 2004-04-02 01:52+0200\n"
+"PO-Revision-Date: 2004-04-02 01:56+0200\n"
 "Last-Translator: Francisco Javier F. Serrador <serrador@cvs.gnome.org>\n"
 "Language-Team: Spanish <traductores@es.gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.0.2\n"
+"X-Generator: KBabel 1.3.1\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: GNOME_BlogApplet.server.in.h:1
 msgid "Accessories"
@@ -50,38 +51,38 @@ msgstr "Blog"
 
 #: blog_applet.py:67
 msgid "A GNOME Web Blogging Applet"
-msgstr "Un aplique de Web Blogging de GNOME"
+msgstr "Una miniaplicación de Web Blogging de GNOME"
 
 #: blog_applet.py:102
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Crear una entrada blog para %s en %s"
 
-#: blog_poster.py:32
+#: blog_poster.py:44
 msgid "_Post Entry"
 msgstr "_Publicar entrada"
 
-#: blog_poster.py:51
+#: blog_poster.py:63
 msgid "Preferences..."
 msgstr "Preferencias..."
 
-#: blog_poster.py:63
+#: blog_poster.py:75
 msgid "Title:"
 msgstr "Título:"
 
-#: blog_poster.py:98
+#: blog_poster.py:110
 msgid "Couldn't upload images"
 msgstr "No se pudieron subir las imágenes"
 
-#: blog_poster.py:98
+#: blog_poster.py:110
 msgid "The blog protocol in use does not support uploading images"
 msgstr "El protocolo blog en uso no soporta subir imágenes"
 
-#: blog_poster.py:134
+#: blog_poster.py:157
 msgid "Blog Entry is Blank"
-msgstr "La entrada de blog esta vacía"
+msgstr "La entrada de blog está vacía"
 
-#: blog_poster.py:134
+#: blog_poster.py:157
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
@@ -186,7 +187,9 @@ msgstr ""
 msgid ""
 "Unknown username %s or password trying to post blog entry to XML-RPC server %"
 "s."
-msgstr "Nombre de usuario %s o contraseña desconocido al intentar publicar la entrada de blog en el servidor XML-RPC %s."
+msgstr ""
+"Nombre de usuario %s o contraseña desconocido al intentar publicar la "
+"entrada de blog en el servidor XML-RPC %s."
 
 #: hig_alert.py:17
 #, python-format
@@ -205,55 +208,60 @@ msgid ""
 "Please email this error message to seth@gnome.org so I can address it."
 msgstr ""
 "El servidor de API de blogger (%s) ha reportado un error que no es "
-"comprensible: %s, %s. \n\n"
+"comprensible: %s, %s. \n"
+"\n"
 "Por favor envíe por correo-e este mensaje a seth@gnome.org para poder "
 "solucionarlo."
 
-#: protocols/advogato.py:23 protocols/advogato.py:26 protocols/advogato.py:38
-#: protocols/bloggerAPI.py:59 protocols/bloggerAPI.py:85
-#: protocols/livejournal.py:30 protocols/livejournal.py:59
+#: protocols/advogato.py:27 protocols/advogato.py:30 protocols/advogato.py:42
+#: protocols/bloggerAPI.py:62 protocols/bloggerAPI.py:90
+#: protocols/livejournal.py:35 protocols/livejournal.py:64
 msgid "Could not post Blog entry"
 msgstr "No se ha pudido publicar la entrada del Blog"
 
-#: protocols/advogato.py:23
+#: protocols/advogato.py:27
 msgid "Your username is invalid. Please double-check the preferences."
 msgstr "Su nombre de usuario en inválido. Compruebe atentamente las preferencias."
 
-#: protocols/advogato.py:26 protocols/livejournal.py:30
+#: protocols/advogato.py:30 protocols/livejournal.py:35
 msgid "Your username or password is invalid. Please double-check the preferences."
 msgstr "Su nombre de usuario o contraseñe es inválido. Compruebe las preferencias."
 
-#: protocols/advogato.py:35 protocols/bloggerAPI.py:82
-#: protocols/livejournal.py:56
+#: protocols/advogato.py:39 protocols/bloggerAPI.py:87
+#: protocols/livejournal.py:61
 msgid "Could not post blog entry"
 msgstr "No se pudo publicar la entrada del blog"
 
-#: protocols/advogato.py:38 protocols/bloggerAPI.py:36
-#: protocols/bloggerAPI.py:85
+#: protocols/advogato.py:42 protocols/bloggerAPI.py:39
+#: protocols/bloggerAPI.py:90
 #, python-format
 msgid ""
 "URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
 "reported: %s."
 msgstr ""
 "La URL «%s» podría no ser una API válida de blogger. El servidor XML-RPC ha "
-"reportado: %s."
+"informado: %s."
 
-#: protocols/bloggerAPI.py:33 protocols/bloggerAPI.py:36
+#: protocols/bloggerAPI.py:36 protocols/bloggerAPI.py:39
 msgid "Could not get list of blogs"
 msgstr "No se pudo obtener la lista de blogs"
 
-#: protocols/bloggerAPI.py:59
+#: protocols/bloggerAPI.py:62
 msgid ""
 "No XML-RPC server URL to post blog entries to is set, or the value could not "
 "be retrieved from GConf. Your entry will remain in the blogger window."
 msgstr ""
+"No hay establecido un URL de servidor RPC-XML para publicar entradas blog, o el valor no pudo "
+"obtenerse de GConf. Su entrada permanecerá en la ventana del blogger."
 
-#: protocols/livejournal.py:59
+#: protocols/livejournal.py:64
 #, python-format
 msgid ""
 "URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
 "reported: %s."
-msgstr "La URL «%s» no parece ser un servicor XML-RPC LiveJournal válido. El servidor web devolvió: %s."
+msgstr ""
+"La URL «%s» no parece ser un servicor XML-RPC LiveJournal válido. El "
+"servidor web devolvió: %s."
 
 #: rich_entry.py:135 rich_entry.py:143
 msgid "Could not load dragged in image"

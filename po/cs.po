@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-11-06 14:40+0100\n"
-"PO-Revision-Date: 2003-11-06 17:08+0100\n"
+"POT-Creation-Date: 2003-11-10 03:42+0100\n"
+"PO-Revision-Date: 2003-11-10 14:05+0100\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -81,35 +81,40 @@ msgstr "O aplikaci"
 msgid "Blog"
 msgstr "Blog"
 
-#: blog_applet.py:66
+#. self._showPrefDialog()
+#: blog_applet.py:67
 msgid "A GNOME Web Blogging Applet"
 msgstr "GNOME aplet pro blogování na WWW"
 
 #. take the XML_RPC value from GConf
 #. split the URL up into http:, '', domainname, extra
 #. join back up the URL into http://domainname
-#: blog_applet.py:101
+#: blog_applet.py:102
 msgid "Create a blog entry for "
 msgstr "Vytvořit položku blogu pro "
 
+#: blog_applet.py:104
+msgid " at "
+msgstr " na "
+
 #. Set tooltip to the applet button
-#: blog_poster.py:31
+#: blog_poster.py:32
 msgid "_Post Entry"
 msgstr "_Vystavit položku"
 
-#. link_tag = self.blogBuffer.create_tag("a")
-#. link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
-#. link_tag.set_property("foreground", "#0000FF")
-#. linkButton = InsertButton
-#: blog_poster.py:65
+#: blog_poster.py:51
+msgid "Preferences..."
+msgstr "Nastavení..."
+
+#: blog_poster.py:63
 msgid "Title:"
 msgstr "Nadpis:"
 
-#: blog_poster.py:87
+#: blog_poster.py:85
 msgid "Couldn't upload images"
 msgstr "Nemohu vystavit obrázky"
 
-#: blog_poster.py:87
+#: blog_poster.py:85
 msgid "The blog protocol in use does not support uploading images"
 msgstr "Používaný protokol blogu nepodporuje vystavení obrázků"
 
@@ -118,11 +123,11 @@ msgstr "Používaný protokol blogu nepodporuje vystavení obrázků"
 #. Call back our parent informing them the entry was posted
 #. Popup a dialogue confirming even if its deemed
 #. unreasonable
-#: blog_poster.py:115
+#: blog_poster.py:121
 msgid "Blog Entry is Blank"
 msgstr "Položka blogu je prázdná"
 
-#: blog_poster.py:115
+#: blog_poster.py:121
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
@@ -251,8 +256,8 @@ msgstr "Chyba při načítání <span style='italic'>%s</span> byla: %s"
 #. tag around it so that we can generate its HTML later
 #. Found Hyperlink, activating
 #: rich_entry.py:190
-msgid "Add _Link"
-msgstr "Přidat _odkaz"
+msgid "Add _Link..."
+msgstr "Přidat _odkaz..."
 
 #: rich_entry.py:195
 msgid "Add Link"

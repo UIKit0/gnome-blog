@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-11-05 16:49+0100\n"
-"PO-Revision-Date: 2003-11-05 16:54+0100\n"
+"POT-Creation-Date: 2003-11-07 22:55+0100\n"
+"PO-Revision-Date: 2003-11-07 22:55+0100\n"
 "Last-Translator: Данило Шеган <danilo@prevod.org>\n"
 "Language-Team: Serbian (sr) <serbiangnome-lista@nongnu.org>\n"
 "MIME-Version: 1.0\n"
@@ -63,7 +63,8 @@ msgstr "Учитане су поставке програма"
 
 #: gnomeblog.schemas.in.h:6
 msgid "The id or name of the particular blog to use on the XML-RPC server"
-msgstr "Идентификатор или име одређеног блогчета које да користи на XML-RPC серверу"
+msgstr ""
+"Идентификатор или име одређеног блогчета које да користи на XML-RPC серверу"
 
 #: gnomeblog.schemas.in.h:7
 msgid "URL to the bloggerAPI compatible XML-RPC server"
@@ -83,7 +84,8 @@ msgstr "О програму"
 msgid "Blog"
 msgstr "Блогче"
 
-#: blog_applet.py:66
+#. self._showPrefDialog()
+#: blog_applet.py:67
 msgid "A GNOME Web Blogging Applet"
 msgstr "Програмче за блогчење из Гнома"
 
@@ -91,28 +93,33 @@ msgstr "Програмче за блогчење из Гнома"
 #. take the XML_RPC value from GConf
 #. split the URL up into http:, '', domainname, extra
 #. join back up the URL into http://domainname
-#: blog_applet.py:101
+#: blog_applet.py:102
 msgid "Create a blog entry for "
 msgstr "Састави унос у блогче за "
 
+# bug: hard to translate
+#: blog_applet.py:104
+msgid " at "
+msgstr " на "
+
 #. Set tooltip to the applet button
-#: blog_poster.py:31
+#: blog_poster.py:32
 msgid "_Post Entry"
 msgstr "_Пошаљи унос"
 
-#. link_tag = self.blogBuffer.create_tag("a")
-#. link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
-#. link_tag.set_property("foreground", "#0000FF")
-#. linkButton = InsertButton
-#: blog_poster.py:65
+#: blog_poster.py:51
+msgid "Preferences..."
+msgstr "Поставке..."
+
+#: blog_poster.py:63
 msgid "Title:"
 msgstr "Наслов:"
 
-#: blog_poster.py:87
+#: blog_poster.py:85
 msgid "Couldn't upload images"
 msgstr "Не могу да пошаљем слике"
 
-#: blog_poster.py:87
+#: blog_poster.py:85
 msgid "The blog protocol in use does not support uploading images"
 msgstr "Протокол за блогче који се користи не подржава слање слика"
 
@@ -121,15 +128,17 @@ msgstr "Протокол за блогче који се користи не п�
 #. Call back our parent informing them the entry was posted
 #. Popup a dialogue confirming even if its deemed
 #. unreasonable
-#: blog_poster.py:115
+#: blog_poster.py:121
 msgid "Blog Entry is Blank"
 msgstr "Унос у блогче је празан"
 
-#: blog_poster.py:115
+#: blog_poster.py:121
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
-msgstr "Текст није унет у пољу за унос блогчета. Молим унесите неки текст и покушајте поново"
+msgstr ""
+"Текст није унет у пољу за унос блогчета. Молим унесите неки текст и "
+"покушајте поново"
 
 #: blogger_prefs.py:19
 msgid "Blogger Preferences"
@@ -203,14 +212,19 @@ msgstr ""
 msgid ""
 "Unknown username <span weight=\"bold\">%s</span> or password trying to post "
 "blog entry to XML-RPC server <span style=\"italic\">%s</span>."
-msgstr "Непознато корисничко име <span weight=\"bold\">%s</span> или лозинка при покушају слања уноса у блогче преко XML-RPC сервера <span style=\"italic\">%s</span>."
+msgstr ""
+"Непознато корисничко име <span weight=\"bold\">%s</span> или лозинка при "
+"покушају слања уноса у блогче преко XML-RPC сервера <span style=\"italic\">%"
+"s</span>."
 
 #: hig_alert.py:11
 #, python-format
 msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
 "reported: <span style=\"italic\">%s</span>."
-msgstr "Не може да пошаље у блогче „%s“ помоћу bloggerAPI XML-RPC сервера „%s“. Сервер је пријавио: <span style=\"italic\">%s</span>."
+msgstr ""
+"Не може да пошаље у блогче „%s“ помоћу bloggerAPI XML-RPC сервера „%s“. "
+"Сервер је пријавио: <span style=\"italic\">%s</span>."
 
 #: hig_alert.py:13
 #, python-format
@@ -248,8 +262,8 @@ msgstr "Грешка при учитавању <span style='italic'>%s</span> ј
 #. tag around it so that we can generate its HTML later
 #. Found Hyperlink, activating
 #: rich_entry.py:190
-msgid "Add _Link"
-msgstr "Додај _везу"
+msgid "Add _Link..."
+msgstr "Додај _везу..."
 
 #: rich_entry.py:195
 msgid "Add Link"

@@ -1,3 +1,6 @@
+2004-01-04  Rob Love  <rml@ximian.com>
+	* gnome-blog.spec.in: add missing dependency
+
 2004-01-01  Rachel Hestilow  <rachel@nullenvoid.com>
 
 	* blogger_prefs.py: Add livejournal backend option

@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
-"POT-Creation-Date: 2003-09-01 17:49-0700\n"
-"PO-Revision-Date: 2003-09-02 01:49+0200\n"
+"POT-Creation-Date: 2003-09-02 10:32+0200\n"
+"PO-Revision-Date: 2003-09-02 10:34+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -36,13 +36,38 @@ msgid "Post blog entries to Blogger.com"
 msgstr "Posta webbloggsinlägg till Blogger.com"
 
 #: gnomeblog.schemas.in.h:3
+msgid "The application's preferences have been initialized"
+msgstr "Programmets inställningar har initierats"
+
+#: gnomeblog.schemas.in.h:4
 msgid "The id or name of the particular blog to use on the XML-RPC server"
 msgstr "Id eller namnet för den webblog som ska användas på XML-RPC-servern"
 
-#: gnomeblog.schemas.in.h:4
+#: gnomeblog.schemas.in.h:5
 msgid "URL to the bloggerAPI compatible XML-RPC server"
 msgstr "URL till den bloggerAPI-kompatibla XML-RPC-servern"
 
-#: gnomeblog.schemas.in.h:5
+#: gnomeblog.schemas.in.h:6
 msgid "Username to use in accessing the blog"
 msgstr "Användarnamn för att komma åt webbloggen"
+
+#~ msgid "Blog"
+#~ msgstr "Webblogg"
+
+#~ msgid "Blogs"
+#~ msgstr "Webbloggar"
+
+#~ msgid "Preferences..."
+#~ msgstr "Inställningar..."
+
+#~ msgid "Preferences"
+#~ msgstr "Inställningar"
+
+#~ msgid "Password"
+#~ msgstr "Lösenord"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "Username"
+#~ msgstr "Användarnamn"

@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
-"POT-Creation-Date: 2003-09-02 15:46+0200\n"
-"PO-Revision-Date: 2003-09-02 15:46+0200\n"
+"POT-Creation-Date: 2003-09-03 20:25+0200\n"
+"PO-Revision-Date: 2003-09-03 20:25+0200\n"
 "Last-Translator: Danilo Šegan <danilo@prevod.org>\n"
 "Language-Team: Serbian (sr) <serbiangnome-listaL@nongnu.org>\n"
 "MIME-Version: 1.0\n"
@@ -25,6 +25,10 @@ msgid "Blogging tool"
 msgstr "Alat za blogovanje"
 
 #: GNOME_BlogApplet.xml.h:1
+msgid "_About..."
+msgstr "_O programu..."
+
+#: GNOME_BlogApplet.xml.h:2
 msgid "_Preferences..."
 msgstr "_Postavke"
 

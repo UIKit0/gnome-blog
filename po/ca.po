@@ -2,27 +2,31 @@
 # Copyright © 2003 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-blog package.
 # Aleix Badia i Bosch <abadia@ica.es>, 2003.
+# Jordi Mallach <jordi@sindominio.net>, 2003.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-09-09 04:14+0200\n"
-"PO-Revision-Date: 2003-10-29 20:14+0100\n"
+"POT-Creation-Date: 2003-11-12 16:30+0100\n"
+"PO-Revision-Date: 2003-11-12 16:39+0100\n"
 "Last-Translator: Aleix Badia i Bosch <abadia@ica.es>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 0.9.5\n"
 
 #: GNOME_BlogApplet.server.in.h:1
-msgid "Blogging Tool"
-msgstr "Eina de bitàcola"
+msgid "Accessories"
+msgstr "Accessoris"
 
-#: GNOME_BlogApplet.server.in.h:2
-msgid "Blogging tool"
-msgstr "Eina de bitàcola"
+#: GNOME_BlogApplet.server.in.h:2 gnome-blog.desktop.in.h:1
+msgid "Blog Entry Poster"
+msgstr "Envia entrades de bloc"
+
+#: GNOME_BlogApplet.server.in.h:3
+msgid "Post entries to a web log"
+msgstr "Envia entrades a un bloc"
 
 #: GNOME_BlogApplet.xml.h:1
 msgid "_About..."
@@ -32,131 +36,183 @@ msgstr "_Quant a..."
 msgid "_Preferences..."
 msgstr "_Preferències..."
 
+#: gnome-blog.desktop.in.h:2
+msgid "Post an entry to a web log"
+msgstr "Envia una entrada a un bloc"
+
 #: gnomeblog.schemas.in.h:1
 msgid "Password to use in accessing the blog"
-msgstr "Contrasenya per accedir a la bitàcola"
+msgstr "Contrasenya per accedir al bloc"
 
 #: gnomeblog.schemas.in.h:2
 msgid "Post blog entries to Blogger.com"
-msgstr "Envia entrades de la bitàcola a Blogger.com"
+msgstr "Envia entrades del bloc a Blogger.com"
 
 #: gnomeblog.schemas.in.h:3
 msgid "Protocol to use in accessing the blog"
-msgstr "Protocol per accedir a la bitàcola"
+msgstr "Protocol per accedir al bloc"
 
 #: gnomeblog.schemas.in.h:4
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr "Sufix a afegir a la URL base (per exemple \"xmlrpc.cgi\")"
+
+#: gnomeblog.schemas.in.h:5
 msgid "The application's preferences have been initialized"
 msgstr "S'han inicialitzat les prefèrencies de l'aplicació"
 
-#: gnomeblog.schemas.in.h:5
-msgid "The id or name of the particular blog to use on the XML-RPC server"
-msgstr "L'identificador o nom de la bitàcola particular a utilitzar al servidor de XML-RPC"
-
 #: gnomeblog.schemas.in.h:6
-msgid "URL to the bloggerAPI compatible XML-RPC server"
-msgstr "URL del servidor de XML-RPC compatible amb l'API de bitàcola"
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr "L'identificador o nom del bloc particular a utilitzar al servidor de XML-RPC"
 
 #: gnomeblog.schemas.in.h:7
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr "URL del servidor de XML-RPC compatible amb l'API de bloc"
+
+#: gnomeblog.schemas.in.h:8
 msgid "Username to use in accessing the blog"
-msgstr "Nom d'usuari per accedir a la bitàcola"
+msgstr "Nom d'usuari per accedir al bloc"
 
 #. !/usr/bin/env python
-#. FIXME: need to get this path from auto*
+#. maybe someone can do this trick without string?
 #: blog_applet.py:31
 msgid "About"
 msgstr "Quant a"
 
 #: blog_applet.py:34
 msgid "Blog"
-msgstr "Bitàcola"
+msgstr "Bloc"
 
-#: blog_applet.py:63
+#. self._showPrefDialog()
+#: blog_applet.py:67
 msgid "A GNOME Web Blogging Applet"
-msgstr "Miniaplicació de bitàcola web de GNOME"
+msgstr "Miniaplicació de bloc web de GNOME"
 
+#. take the XML_RPC value from GConf
+#. split the URL up into http:, '', domainname, extra
+#. join back up the URL into http://domainname
+#: blog_applet.py:102
+msgid "Create a blog entry for "
+msgstr "Crea una entrada de bloc per "
+
+#: blog_applet.py:104
+msgid " at "
+msgstr " en "
+
+#. Set tooltip to the applet button
 #: blog_poster.py:32
 msgid "_Post Entry"
 msgstr "_Envia una entrada"
 
-#. link_tag = self.blogBuffer.create_tag("a")
-#. link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
-#. link_tag.set_property("foreground", "#0000FF")
-#. linkButton = InsertButton
-#: blog_poster.py:64
+#: blog_poster.py:51
+msgid "Preferences..."
+msgstr "Preferències..."
+
+#: blog_poster.py:63
 msgid "Title:"
 msgstr "Títol:"
 
+#: blog_poster.py:85
+msgid "Couldn't upload images"
+msgstr "No s'ha pogut pujar imatges"
+
+#: blog_poster.py:85
+msgid "The blog protocol in use does not support uploading images"
+msgstr "El protocol de bloc en ús no suporta la pujada d'imatges"
+
 #. Don't post silly blog entries like blank ones
 #. Only delete the entry if posting was successful
+#. Call back our parent informing them the entry was posted
 #. Popup a dialogue confirming even if its deemed
 #. unreasonable
-#: blog_poster.py:102
+#: blog_poster.py:121
 msgid "Blog Entry is Blank"
-msgstr "L'entrada de la bitàcola està buida"
+msgstr "L'entrada del bloc és buida"
 
-#: blogger_prefs.py:20
+#: blog_poster.py:121
+msgid ""
+"No text was entered in the blog entry box. Please enter some text and try "
+"again"
+msgstr "No s'ha introduït cap text a la caixa d'entrada del bloc. Si us plau, introduïu el text i torneu a provar"
+
+#: blogger_prefs.py:19
 msgid "Blogger Preferences"
-msgstr "Preferències de la bitàcola"
+msgstr "Preferències del bloc"
 
-#: blogger_prefs.py:39
+#: blogger_prefs.py:37
 msgid "Self-Run MovableType"
 msgstr "MovableType auto-executable"
 
-#: blogger_prefs.py:40
+#: blogger_prefs.py:38
 msgid "Self-Run Pybloxsom"
 msgstr "Pybloxsom auto-executable"
 
-#: blogger_prefs.py:41
+#: blogger_prefs.py:39
 msgid "Self-Run Other"
 msgstr "Altres auto-executables"
 
-#: blogger_prefs.py:58
+#: blogger_prefs.py:43
+msgid "Blog Type:"
+msgstr "Tipus de bloc:"
+
+#: blogger_prefs.py:52
+msgid "Blog Protocol:"
+msgstr "Protocol del bloc:"
+
+#: blogger_prefs.py:56
 msgid "Blog Base URL:"
-msgstr "URL principal de la bitàcola:"
+msgstr "URL principal del bloc:"
+
+#: blogger_prefs.py:58
+msgid "Blog Name:"
+msgstr "Nom del bloc:"
 
 #: blogger_prefs.py:60
-msgid "Blog Name:"
-msgstr "Nom de la bitàcola:"
-
-#: blogger_prefs.py:62
 msgid "Lookup Blogs"
-msgstr "Cerca les bitàcoles"
+msgstr "Cerca els blocs"
 
-#: blogger_prefs.py:114 blogger_prefs.py:126 blogger_prefs.py:130
+#: blogger_prefs.py:70
+msgid "Username:"
+msgstr "Nom d'usuari:"
+
+#: blogger_prefs.py:71
+msgid "Password:"
+msgstr "Contrasenya:"
+
+#: blogger_prefs.py:113 blogger_prefs.py:128 blogger_prefs.py:133
 msgid "XML-RPC URL:"
 msgstr "URL de XML-RPC:"
 
-#: blogger_prefs.py:118 blogger_prefs.py:122
+#: blogger_prefs.py:118 blogger_prefs.py:123
 msgid "Base Blog URL:"
-msgstr "URL de la bitàcola principal:"
+msgstr "URL del bloc principal:"
 
-#: blogger_prefs.py:125
+#: blogger_prefs.py:127
 msgid "bloggerAPI"
-msgstr "API de bitàcola"
+msgstr "API del bloc"
 
 #. FIXME: popup an error dialog
-#: hig_alert.py:8
+#: hig_alert.py:7
 #, python-format
 msgid ""
 "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: <span style="
 "\"italic\">%s</span>."
-msgstr "L'URL \"%s\" no és, probablement, una API de bitàcola vàlida. El servidor de XML-RPC informa: <span style=\"italic\">%s</span>."
+msgstr "L'URL \"%s\" no és, probablement, una API de bloc vàlida. El servidor de XML-RPC informa: <span style=\"italic\">%s</span>."
 
-#: hig_alert.py:10
+#: hig_alert.py:9
 #, python-format
 msgid ""
 "Unknown username <span weight=\"bold\">%s</span> or password trying to post "
 "blog entry to XML-RPC server <span style=\"italic\">%s</span>."
 msgstr "S'està intentant enviar una entrada a un servidor XML-RPC <span style=\"italic\">%s</span> fent servir un nom d'usuari <span weight=\"bold\">%s</span> o contrasenya desconeguts."
 
-#: hig_alert.py:12
+#: hig_alert.py:11
 #, python-format
 msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
 "reported: <span style=\"italic\">%s</span>."
-msgstr "No s'ha pogut enviar a la bitàcola \"%s\" a l'API de bitàcola del servidor de XML-RPC \"%s\". Els servidor ha retornat la següent informació: <span style=\"italic\">%s</span>."
+msgstr "No s'ha pogut enviar al bloc \"%s\" a l'API de bloc del servidor de XML-RPC \"%s\". Els servidor ha retornat la següent informació: <span style=\"italic\">%s</span>."
 
-#: hig_alert.py:14
+#: hig_alert.py:13
 #, python-format
 msgid ""
 "The bloggerAPI server (%s) reported an error I don't understand: '%s, <span "
@@ -164,7 +220,47 @@ msgid ""
 "\n"
 "Please email this error message to seth@gnome.org so I can address it."
 msgstr ""
-"L'API del servidor de bitàcola (%s) informa d'un error desconegut: \"%s, <span style=\"italic\">%s</span>\". \n"
+"L'API del servidor de bloc (%s) informa d'un error desconegut: \"%s, <span style=\"italic\">%s</span>\". \n"
 "\n"
 "Envieu un correu electrònic amb el missatge d'error a seth@gnome.org per poder-lo solucionar, si us plau."
 
+#. GtkTextView already defines drag and drop targets, get them
+#. Unfortunately old_targets string field has a funny type
+#. that needs to be explicitly converted to string
+#. Add the DND type that we support and set the new list of types
+#. Hack for addHyperlink with old pygtk's
+#. this is an older version of pygtk that doesn't
+#. have a way to create anonymous tags, hack around it
+#. 398 means text/uri-list
+#: rich_entry.py:131 rich_entry.py:139
+msgid "Could not load dragged in image"
+msgstr "No s'ha pogut carregar la imatge arrossegada"
+
+#: rich_entry.py:132 rich_entry.py:140
+#, python-format
+msgid "Error loading <span style='italic'>%s</span> was: %s"
+msgstr "S'ha produït un error en carregar <span style='italic'>%s</span>: %s"
+
+#. Create a new image tag
+#. Insert the pixbuf, and then set the new image
+#. tag around it so that we can generate its HTML later
+#. Found Hyperlink, activating
+#: rich_entry.py:190
+msgid "Add _Link..."
+msgstr "Afegeix un en_llaç..."
+
+#: rich_entry.py:195
+msgid "Add Link"
+msgstr "Afegeix un enllaç"
+
+#: rich_entry.py:196
+msgid "_Add Link"
+msgstr "_Afegeix un enllaç"
+
+#: rich_entry.py:203
+msgid "Text:"
+msgstr "Text:"
+
+#: rich_entry.py:206
+msgid "URL:"
+msgstr "URL:"

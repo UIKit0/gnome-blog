@@ -7,7 +7,7 @@ AM_MAINTAINER_MODE
 
 AC_PATH_PROG(GCONFTOOL, gconftool-2)
 AM_GCONF_SOURCE_2
-AC_PROG_INTLTOOL([0.25])
+AC_PROG_INTLTOOL([0.21])
 
 dnl check for python
 dnl AM_PATH_PYTHON(2.2)
@@ -46,6 +46,13 @@ AC_MSG_CHECKING(for pygtk h2def)
 PYGTK_H2DEF=`$PKG_CONFIG --variable=datadir pygtk-2.0`/pygtk/2.0/codegen/h2def.py
 AC_SUBST(PYGTK_H2DEF)
 AC_MSG_RESULT($PYGTK_H2DEF)
+
+ALL_LINGUAS="sv"
+                                                                                
+GETTEXT_PACKAGE=gnome-blog
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [The gettext package])
+
 
 AC_OUTPUT([
 Makefile

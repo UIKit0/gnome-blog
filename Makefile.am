@@ -46,7 +46,7 @@ DISTCLEANFILES =                \
         intltool-update
 
 
-EXTRA_DIST = 			\
+EXTRA_DIST = config.rpath  			\
 	$(schema_in_files) 	\
 	$(ui_DATA)		\
 	$(pixmaps_DATA)		\

@@ -1,5 +1,16 @@
 2005-01-02  Seth Nickell  <seth@gnome.org>
 
+        Patch from Brian Pepple <bdpepple@ameritech.net>.
+	Also, thanks to Chris Shaffer for separately adding
+	Wordpress support.
+
+	* blogger_prefs.py:
+
+	Only append "xmlrpc.php" for Wordpress installs, not
+	"wordpress/xmlrpc.php" as we did before.
+	
+2005-01-02  Seth Nickell  <seth@gnome.org>
+
         Patch from Tommi Komulainen <tommi.komulainen@iki.fi>
 	
 	* blog_applet.py:

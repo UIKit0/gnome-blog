@@ -110,22 +110,27 @@ class BloggerPrefs(gtk.Dialog):
 
         if (blog_type == "custom"):
             url = None
+            url_ending = ""
             protocol = None
             url_description = _("XML-RPC URL:")
         elif (blog_type == "custom-mt"):
             url = None
+            url_ending = "/mt-xmlrpc.cgi"
             protocol = "MetaWeblog"
             url_description = _("Base Blog URL:")
         elif (blog_type == "custom-pybloxsom"):
             url = None
+            url_ending = "/xmlrpc.cgi"
             protocol = "bloggerAPI"
             url_description = _("Base Blog URL:")
         elif (blog_type == "blogger.com"):
             url = "http://plant.blogger.com/api/RPC2"
+            url_ending = ""
             protocol = _("bloggerAPI")
             url_description = _("XML-RPC URL:")
         elif (blog_type == "advogato.org"):
             url = "http://www.advogato.org/XMLRPC"
+            url_ending = ""
             protocol = "advogato"
             url_description = _("XML-RPC URL:")
 	    lookup = gtk.FALSE
@@ -152,6 +157,8 @@ class BloggerPrefs(gtk.Dialog):
 
         if (url_description):
             self.urlLabel.set_text(url_description)
+
+        client.set_string(gconf_prefix + "/url_ending", url_ending)
 
 	self.lookupButton.set_sensitive(lookup)
         self.blogMenu.set_sensitive(lookup)

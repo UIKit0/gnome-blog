@@ -1,3 +1,50 @@
+2003-09-13  Seth Nickell  <snickell@stanford.edu>
+
+	* configure.in:
+
+	Bump version to 0.7
+
+	* Makefile.am:
+	* gnome-blog-poster:
+	* blog_poster.py:
+	* gnome-blog.desktop.in:
+
+	Create a little standalone blog posting application.
+	Its not really well designed interface for now, but
+	it basically works.
+	
+	* GNOME_BlogApplet.server.in:
+
+	Use a different name, mark strings for translation.
+	
+	* gnomeblog.schemas.in:
+	* protocols/MetaWeblog.py:
+	* protocols/bloggerAPI.py:
+	* blogger_prefs.py:	
+
+	Fix stupid bug that prevented people from posting to
+	blogger.com.
+
+	* rich_entry.py:
+
+	Remove use of gnome-python API stuff that's not in
+	RedHat 9.
+
+2003-09-13  Seth Nickell  <snickell@stanford.edu>
+
+	reviewed by: <delete if not using a buddy>
+
+	* GNOME_BlogApplet.server.in:
+	* Makefile.am:
+	* blog_poster.py:
+	* blogger_prefs.py:
+	* configure.in:
+	* gnome-blog-poster:
+	* gnomeblog.schemas.in:
+	* protocols/MetaWeblog.py:
+	* protocols/bloggerAPI.py:
+	* rich_entry.py:
+
 2003-09-11  Seth Nickell  <snickell@stanford.edu>
 
 	* configure.in:

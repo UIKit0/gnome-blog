@@ -1,0 +1,51 @@
+#!/usr/bin/env python
+import pygtk
+pygtk.require('2.0')
+
+import gtk
+import gnome
+import gnome.ui
+import gconf
+
+import gettext
+_ = gettext.gettext
+
+from gnomeblog import blog_poster
+from gnomeblog import blogger_prefs
+from gnomeblog import gnome_blog_globals
+
+#FIXME: need to get this path from auto*
+gettext.bindtextdomain('gnome-blog', gnome_blog_globals.localedir)
+gettext.textdomain('gnome-blog')
+    
+class BloggerApp:
+    def __init__(self):
+        self.prefs_key = "/apps/gnome-blog"
+        client = gconf.client_get_default()
+        value = client.get_bool(self.prefs_key + "/initialized")
+        if (value == None or value == gtk.FALSE):
+            self._showPrefDialog()
+            client.set_bool(self.prefs_key + "/initialized", gtk.TRUE)
+            
+        prefs_button = gtk.Button(_("Preferences..."))
+        prefs_button.connect("clicked", self._onPrefsButtonClicked)
+        
+        poster        = blog_poster.BlogPoster(extra_button=prefs_button)
+        poster_window = gtk.Window(gtk.WINDOW_TOPLEVEL)
+        poster_window.set_title(_("Post Blog Entry"))
+        poster_window.connect('destroy', lambda w: gtk.main_quit())
+        
+        poster_window.add(poster)
+        poster_window.show_all()
+        
+    def _onPrefsButtonClicked(self, button):
+        self._showPrefDialog()
+
+    def _showPrefDialog(self):
+        prefs_dialog = blogger_prefs.BloggerPrefs(self.prefs_key)
+        prefs_dialog.show()
+        prefs_dialog.run()
+        prefs_dialog.hide()
+
+app = BloggerApp()
+gtk.main()

@@ -78,5 +78,15 @@
       </locale>
     </schema>
 
+    <schema>
+      <key>/schemas/apps/gnome-blogger/url_ending</key>
+      <applyto>/apps/gnome-blogger/url_ending</applyto>
+      <owner>gnome-blogger</owner>
+      <type>string</type>
+      <locale name="C">
+         <short>Suffix to attach to the base URL (e.g. "xmlrpc.cgi")</short>
+      </locale>
+    </schema>
+
 </schemalist>
 </gconfschemafile>

@@ -5,8 +5,8 @@
                 <item value="IDL:Bonobo/GenericFactory:1.0"/>
                 <item value="IDL:Bonobo/Unknown:1.0"/>
         </oaf_attribute>
-        <oaf_attribute name="name" type="string" _value="Blogging Tool"/>
-        <oaf_attribute name="description" type="string" _value="Blogging tool"/>
+        <oaf_attribute name="name" type="string" _value="Blog Entry Poster"/>
+        <oaf_attribute name="description" type="string" _value="Post entries to a web log"/>
 </oaf_server>
 
 <oaf_server iid="OAFIID:GNOME_BlogApplet" type="factory" location="OAFIID:GNOME_BlogApplet_Factory">
@@ -16,9 +16,9 @@
                 <item value="IDL:Bonobo/Control:1.0"/>
                 <item value="IDL:Bonobo/Unknown:1.0"/>
         </oaf_attribute>
-        <oaf_attribute name="name" type="string" value="Blogging Tool"/>
-        <oaf_attribute name="description" type="string" value="Post entries to any bloggerAPI compatible blog"/>
-        <oaf_attribute name="panel:category" type="string" value="Utility"/>
+        <oaf_attribute name="name" type="string" _value="Blog Entry Poster"/>
+        <oaf_attribute name="description" type="string" _value="Post entries to a web log"/>
+        <oaf_attribute name="panel:category" type="string" _value="Accessories"/>
         <oaf_attribute name="panel:icon" type="string" value="gnome-blog.png"/>
 </oaf_server>
 

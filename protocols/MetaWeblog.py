@@ -12,13 +12,10 @@ class Blog(bloggerAPI.Blog):
     def __init__(self):
         bloggerAPI.Blog.__init__(self)
 
-    def _getURL(self, base_url):
-        return base_url + "/mt-xmlrpc.cgi"
-
     def postEntry (self, username, password, base_url, title, entry, client, gconf_prefix):
         global appkey
 
-        url = self._getURL(base_url)
+        url = self._getURL(base_url, client, gconf_prefix)
 
         if (base_url == None):
             hig_alert.reportError("Could not post Blog entry", "No XML-RPC server URL to post blog entries to is set, or the value could not be retrieved from GConf. Your entry will remain in the blogger window.")

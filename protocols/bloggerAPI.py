@@ -11,13 +11,14 @@ class Blog:
     def __init__(self):
         pass
 
-    def _getURL(self, base_url):
-        return base_url + "/xmlrpc.cgi"
+    def _getURL(self, base_url, client, gconf_prefix):
+        url_ending = client.get_string (gconf_prefix + "/url_ending")
+        return base_url + url_ending
 
     def getBlogList(self, username, password, base_url, client, gconf_prefix):
         global appkey
         
-        url = self._getURL(base_url)
+        url = self._getURL(base_url, client, gconf_prefix)
 
         print ("Getting list for RPC interface %s" % (url))
         

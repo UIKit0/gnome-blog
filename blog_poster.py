@@ -12,14 +12,12 @@ from gnomeblog import blog
 gconf_prefix = "/apps/gnome-blogger"
 
 class BlogPoster(gtk.Frame):
-    def __init__(self, prefs_key):
+    def __init__(self, prefs_key="/apps/gnome-blogger", extra_button=None):
         gtk.Frame.__init__(self)
         self.set_shadow_type(gtk.SHADOW_OUT)
 
         global gconf_prefix
-
-        if (prefs_key != None):
-            gconf_prefix = prefs_key
+        gconf_prefix = prefs_key
 
         print ("Using gconf_prefix %s" % (gconf_prefix))
             
@@ -56,7 +54,9 @@ class BlogPoster(gtk.Frame):
         buttonBox.pack_start(boldToggle, expand=gtk.FALSE)
         buttonBox.pack_start(italicToggle, expand=gtk.FALSE)        
         buttonBox.pack_start(linkButton, expand=gtk.FALSE)
-        
+        if (extra_button != None):
+            buttonBox.pack_start(extra_button, expand=gtk.FALSE)
+            
         self.titleEntry = gtk.Entry()
 
         titleBox = gtk.HBox()

@@ -4,7 +4,7 @@ server_DATA = $(server_in_files:.server.in=.server)
 
 @INTLTOOL_SERVER_RULE@
 
-bin_SCRIPTS = blog_applet.py
+bin_SCRIPTS = blog_applet.py gnome-blog-poster
 
 gnomeblogdir = $(pythondir)/gnomeblog
 
@@ -40,6 +40,13 @@ schema_DATA = \
 
 @INTLTOOL_SCHEMAS_RULE@
 
+Desktopdir = $(datadir)/applications
+Desktop_in_files = gnome-blog.desktop.in
+Desktop_DATA = $(Desktop_in_files:.desktop.in=.desktop)
+@INTLTOOL_DESKTOP_RULE@
+
+
+
 install-data-local:
         GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) \
                 gconftool-2 --makefile-install-rule $(schema_DATA)
@@ -53,6 +60,8 @@ DISTCLEANFILES =                \
 
 
 EXTRA_DIST =  			\
+	$(Desktop_in_files)	\
+	$(Desktop_DATA)		\
 	$(schema_in_files) 	\
 	$(ui_DATA)		\
 	$(pixmaps_DATA)		\

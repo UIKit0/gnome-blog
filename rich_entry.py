@@ -21,7 +21,7 @@ class RichEntry(gtk.TextView):
         self.connect("event-after", self._onEventAfter)
 
     def addHyperlink(self, iter, text, uri, on_activate):
-        link_tag = self.buffer.create_tag()
+        link_tag = self.buffer.create_tag(None)
         link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
         link_tag.set_property("foreground", "#0000FF")
 
@@ -42,7 +42,7 @@ class RichEntry(gtk.TextView):
                            self.buffer.get_end_iter())
 
     def createStyleToggle(self, pango_markup_properties, stock_button, html_tag):
-        tag = self.buffer.create_tag()
+        tag = self.buffer.create_tag(None)
         for property in pango_markup_properties:
             tag.set_property(property[0], property[1])
         return StyleToggle(stock_button, tag, html_tag, self)

@@ -2,7 +2,13 @@ serverdir = $(libdir)/bonobo/servers
 server_DATA = GNOME_BloggerApplet.server
 
 bin_SCRIPTS = blogger_applet.py
-python_PYTHON = blog_poster.py aligned_window.py hig_alert.py
+
+python_PYTHON = 		\
+	blog_poster.py 		\
+	aligned_window.py 	\
+	hig_alert.py 		\
+	style_toggle.py		\
+	blogger_prefs.py
 
 pixmapsdir = $(datadir)/pixmaps
 pixmaps_DATA = gnome-blogger.png

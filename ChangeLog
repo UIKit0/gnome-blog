@@ -1,5 +1,15 @@
 2003-08-29  Seth Nickell  <snickell@stanford.edu>
 
+	* Makefile.am:
+
+	Make applet run from "system path" again.
+	
+	* blog_poster.py:
+
+	Screw up posting part. Do not pass go, do not collect $200.
+	
+2003-08-29  Seth Nickell  <snickell@stanford.edu>
+
 	* GNOME_BloggerApplet.server:
 	* gnome-blogger.png:
 	* Makefile.am:

@@ -125,10 +125,9 @@ class BlogPoster(gtk.Frame):
                 iter = buffer.get_end_iter()
 
             new_text = buffer.get_text(last_iter, iter)
-            print ("Adding text %s" % (new_text))
             html = html + new_text
 
-        print html
+        return html
         
     def _onPostButtonClicked(self, button):
         global gconf_prefix, appkey

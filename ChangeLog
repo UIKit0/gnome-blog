@@ -1,3 +1,7 @@
+2003-09-03  Takeshi AIHANA <aihana@gnome.gr.jp>
+
+	* configure.in: Added "ja" (Japanese) to ALL_LINGUAS.
+
 2003-09-03  Pablo Gonzalo del Campo  <pablodc@bigfoot.com>
 
         * configure.in: Added "es" (Spanish) to ALL_LINGUAS.

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-11-10 03:42+0100\n"
-"PO-Revision-Date: 2003-11-10 14:05+0100\n"
+"POT-Creation-Date: 2003-11-18 03:48+0100\n"
+"PO-Revision-Date: 2003-11-18 13:23+0100\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -90,12 +90,9 @@ msgstr "GNOME aplet pro blogování na WWW"
 #. split the URL up into http:, '', domainname, extra
 #. join back up the URL into http://domainname
 #: blog_applet.py:102
-msgid "Create a blog entry for "
-msgstr "Vytvořit položku blogu pro "
-
-#: blog_applet.py:104
-msgid " at "
-msgstr " na "
+#, python-format
+msgid "Create a blog entry for %s at %s"
+msgstr "Vytvořit položku blogu pro %s na %s"
 
 #. Set tooltip to the applet button
 #: blog_poster.py:32
@@ -144,8 +141,8 @@ msgid "Self-Run MovableType"
 msgstr "Vlastní MovableType"
 
 #: blogger_prefs.py:38
-msgid "Self-Run Pybloxsom"
-msgstr "Vlastní Pybloxsom"
+msgid "Self-Run Pyblosxom"
+msgstr "Vlastní Pyblosxom"
 
 #: blogger_prefs.py:39
 msgid "Self-Run Other"
@@ -234,44 +231,44 @@ msgstr ""
 "Pošlete prosím o tomto hlášení chyby e-mail na seth@gnome.org, abych na to "
 "mohl reagovat."
 
+#. Hack for addHyperlink with old pygtk's
 #. GtkTextView already defines drag and drop targets, get them
 #. Unfortunately old_targets string field has a funny type
 #. that needs to be explicitly converted to string
 #. Add the DND type that we support and set the new list of types
-#. Hack for addHyperlink with old pygtk's
 #. this is an older version of pygtk that doesn't
 #. have a way to create anonymous tags, hack around it
 #. 398 means text/uri-list
-#: rich_entry.py:131 rich_entry.py:139
+#: rich_entry.py:136 rich_entry.py:145
 msgid "Could not load dragged in image"
 msgstr "Nemohu načíst přetažený obrázek"
 
-#: rich_entry.py:132 rich_entry.py:140
+#: rich_entry.py:137 rich_entry.py:146
 #, python-format
-msgid "Error loading <span style='italic'>%s</span> was: %s"
-msgstr "Chyba při načítání <span style='italic'>%s</span> byla: %s"
+msgid "Error loading %s was: %s"
+msgstr "Chyba při načítání %s byla: %s"
 
 #. Create a new image tag
 #. Insert the pixbuf, and then set the new image
 #. tag around it so that we can generate its HTML later
 #. Found Hyperlink, activating
-#: rich_entry.py:190
+#: rich_entry.py:196
 msgid "Add _Link..."
 msgstr "Přidat _odkaz..."
 
-#: rich_entry.py:195
+#: rich_entry.py:201
 msgid "Add Link"
 msgstr "Přidat odkaz"
 
-#: rich_entry.py:196
+#: rich_entry.py:202
 msgid "_Add Link"
 msgstr "_Přidat odkaz"
 
-#: rich_entry.py:203
+#: rich_entry.py:210
 msgid "Text:"
 msgstr "Text:"
 
-#: rich_entry.py:206
+#: rich_entry.py:213
 msgid "URL:"
 msgstr "URL:"
 

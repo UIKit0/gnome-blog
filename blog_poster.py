@@ -76,20 +76,10 @@ class BlogPoster(gtk.Frame):
             server.blogger.newPost(appkey, blog_id, username, password,
                                    text, xmlrpclib.True)
         except xmlrpclib.Fault, e:
-            primary = "Could not post Blog entry"
-            print ("Error: %s" % e)
-            if (e == 'Method Error'):
-                hig_alert.reportError(primary, 'URL \'%s\' may not be a valid bloggerAPI. XML-RPC Server reported: <span style=\"italic\">%s</span>. Your entry will remain in the blogger window.' % (url, e.faultString))
-            elif (e == 'PasswordError'):
-                hig_alert.reportError(primary, 'Invalid username (%s) or password trying to post blog entry to XML-RPC server \'%s\'. Your entry will remain in the blogger window.' % (username, url))
-            elif (e == 'PostError'):
-                hig_alert.reportError(primary, 'Could not post to blog \'%s\' at bloggerAPI XML-RPC server \'%s\'. Server reported: <span style=\"italic\">%s</span>. Your entry will remain in the blogger window.' % (blog_id, url, e.faultString))
-            else:
-                hig_alert.reportError(primary, 'The bloggerAPI server returned the error: \'%s\'. Please send this error message to seth@gnome.org so I can address it.' % (e.faultString))
+            hig_alert.handleBloggerAPIFault(e, "Could not post blog entry", username, blog_id, url)
             success = gtk.FALSE
         except xmlrpclib.ProtocolError, e:
-            print ("here")
-            hig_alert.reportError("Could not post Blog entry", 'URL \'%s\' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: <span style=\"italic\">%s</span>. Your entry will remain in the blogger window.' % (url, e.errmsg))
+            hig_alert.reportError("Could not post Blog entry", 'URL \'%s\' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: <span style=\"italic\">%s</span>.' % (url, e.errmsg))
             success = gtk.FALSE
 
         print ("Success is....")

@@ -118,9 +118,12 @@ class BloggerPrefs(gtk.Dialog):
         try:
             bloglist = server.blogger.getUsersBlogs(appkey, username, password)
         except xmlrpclib.Fault, e:
-            hig_alert.reportError("Could not get list of Blogs", "bloggerAPI server reported: '%s'" % (e))
+            hig_alert.handleBloggerAPIFault(e, "Could not get list of blogs", username, None, url)
             return
-
+        except xmlrpclib.ProtocolError, e:            
+            hig_alert.reportError("Could not get list of blogs", 'URL \'%s\' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: <span style=\"italic\">%s</span>.' % (url, e.errmsg))
+            return
+            
         if ((bloglist == None) or (len(bloglist) == 0)):
             # No blogs found!
             hig_alert.reportError("No Blogs Found", "No errors were reported, but no blogs were found at %s for username %s\n" % ( url, username))

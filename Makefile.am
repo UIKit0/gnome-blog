@@ -46,7 +46,7 @@ DISTCLEANFILES =                \
         intltool-update
 
 
-EXTRA_DIST = config.rpath  			\
+EXTRA_DIST =  			\
 	$(schema_in_files) 	\
 	$(ui_DATA)		\
 	$(pixmaps_DATA)		\
@@ -57,3 +57,4 @@ EXTRA_DIST = config.rpath  			\
 	gnome-blog.spec	\
 	gnome-blog.spec.in
 
+SUBDIRS = po

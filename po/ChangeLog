@@ -1,3 +1,10 @@
+2003-09-01  Seth Nickell  <snickell@stanford.edu>
+
+	reviewed by: <delete if not using a buddy>
+
+	* Makevars:
+	* sv.po:
+
 2003-09-02  Christian Rose  <menthos@menthos.com>
 
 	* sv.po: Added Swedish translation.

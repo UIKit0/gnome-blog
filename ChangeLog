@@ -1,14 +1,10 @@
-2003-09-01  gettextize  <bug-gnu-gettext@gnu.org>
+2003-09-01  Seth Nickell  <snickell@stanford.edu>
 
-	* configure.in (AC_OUTPUT): Add po/Makefile.in.
+	* Makefile.am:
+	* configure.in:
 
-2003-09-01  gettextize  <bug-gnu-gettext@gnu.org>
-
-	* Makefile.am (SUBDIRS): New variable.
-	(ACLOCAL_AMFLAGS): New variable.
-	(EXTRA_DIST): Add config.rpath.
-	* configure.in (AC_OUTPUT): Add po/Makefile.in,
-
+	Finally get l10n working...
+	
 2003-09-01  Seth Nickell  <snickell@stanford.edu>
 
 	* GNOME_BlogApplet.server.in:

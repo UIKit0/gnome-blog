@@ -1,3 +1,9 @@
+2003-09-04  Seth Nickell  <snickell@stanford.edu>
+
+	* blog.py:
+
+	Add preliminary support for metaweblog API.
+
 2003-09-03  Bastien Nocera  <hadess@hadess.net>
 
 	* blog.py: better error handling with the advogato API, actually

@@ -1,0 +1,197 @@
+# Translation of gnome-blog to Croatian
+# Copyright (C) Croatian team
+# Translators: Automatski Prijevod <>,
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-blog 0\n"
+"POT-Creation-Date: 2003-11-06 18:08+0100\n"
+"PO-Revision-Date: 2003-11-07 18:42+CET\n"
+"Last-Translator: auto\n"
+"Language-Team: Croatian <lokalizacija@linux.hr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: TransDict server\n"
+
+#: GNOME_BlogApplet.server.in.h:1
+msgid "Accessories"
+msgstr "Pomoćni alati"
+
+#: GNOME_BlogApplet.server.in.h:2 gnome-blog.desktop.in.h:1
+msgid "Blog Entry Poster"
+msgstr ""
+
+#: GNOME_BlogApplet.server.in.h:3
+msgid "Post entries to a web log"
+msgstr ""
+
+#: GNOME_BlogApplet.xml.h:1
+msgid "_About..."
+msgstr "_O..."
+
+#: GNOME_BlogApplet.xml.h:2
+msgid "_Preferences..."
+msgstr "_Podešenja..."
+
+#: gnome-blog.desktop.in.h:2
+msgid "Post an entry to a web log"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:1
+msgid "Password to use in accessing the blog"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:2
+msgid "Post blog entries to Blogger.com"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:3
+msgid "Protocol to use in accessing the blog"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:4
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:5
+msgid "The application's preferences have been initialized"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:6
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:7
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:8
+msgid "Username to use in accessing the blog"
+msgstr ""
+
+#: blog_applet.py:31
+msgid "About"
+msgstr "O"
+
+#: blog_applet.py:34
+msgid "Blog"
+msgstr ""
+
+#: blog_applet.py:66
+msgid "A GNOME Web Blogging Applet"
+msgstr ""
+
+#: blog_applet.py:101
+msgid "Create a blog entry for "
+msgstr ""
+
+#: blog_poster.py:31
+msgid "_Post Entry"
+msgstr ""
+
+#: blog_poster.py:65
+msgid "Title:"
+msgstr "Naslov:"
+
+#: blog_poster.py:87
+msgid "Couldn't upload images"
+msgstr ""
+
+#: blog_poster.py:87
+msgid "The blog protocol in use does not support uploading images"
+msgstr ""
+
+#: blog_poster.py:115
+msgid "Blog Entry is Blank"
+msgstr ""
+
+#: blog_poster.py:115
+msgid ""
+"No text was entered in the blog entry box. Please enter some text and try "
+"again"
+msgstr ""
+
+#: blogger_prefs.py:19
+msgid "Blogger Preferences"
+msgstr ""
+
+#: blogger_prefs.py:37
+msgid "Self-Run MovableType"
+msgstr ""
+
+#: blogger_prefs.py:38
+msgid "Self-Run Pybloxsom"
+msgstr ""
+
+#: blogger_prefs.py:39
+msgid "Self-Run Other"
+msgstr ""
+
+#: blogger_prefs.py:43
+msgid "Blog Type:"
+msgstr ""
+
+#: blogger_prefs.py:52
+msgid "Blog Protocol:"
+msgstr ""
+
+#: blogger_prefs.py:56
+msgid "Blog Base URL:"
+msgstr ""
+
+#: blogger_prefs.py:58
+msgid "Blog Name:"
+msgstr ""
+
+#: blogger_prefs.py:60
+msgid "Lookup Blogs"
+msgstr ""
+
+#: blogger_prefs.py:70
+msgid "Username:"
+msgstr "Korisničko ime:"
+
+#: blogger_prefs.py:71
+msgid "Password:"
+msgstr "Lozinka:"
+
+#: blogger_prefs.py:113 blogger_prefs.py:128 blogger_prefs.py:133
+msgid "XML-RPC URL:"
+msgstr ""
+
+#: blogger_prefs.py:118 blogger_prefs.py:123
+msgid "Base Blog URL:"
+msgstr ""
+
+#: blogger_prefs.py:127
+msgid "bloggerAPI"
+msgstr ""
+
+#: rich_entry.py:131 rich_entry.py:139
+msgid "Could not load dragged in image"
+msgstr ""
+
+#: rich_entry.py:132 rich_entry.py:140
+msgid "Error loading <span style='italic'>%s</span> was: %s"
+msgstr ""
+
+#: rich_entry.py:190
+msgid "Add _Link"
+msgstr "_Dodaj link"
+
+#: rich_entry.py:195
+msgid "Add Link"
+msgstr "Dodaj link"
+
+#: rich_entry.py:196
+msgid "_Add Link"
+msgstr "_Dodaj link"
+
+#: rich_entry.py:203
+msgid "Text:"
+msgstr "Tekst:"
+
+#: rich_entry.py:206
+msgid "URL:"
+msgstr "URL:"
+

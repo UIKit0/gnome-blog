@@ -46,7 +46,7 @@ class BloggerApplet(gnome.applet.Applet):
         self.poster_window.set_modal(gtk.TRUE)
         self.prefs_key = self.get_preferences_key()
         print ("Applet prefs located at %s" % (self.prefs_key))
-        self.poster = blog_poster.BlogPoster(self.prefs_key)
+        self.poster = blog_poster.BlogPoster(prefs_key=self.prefs_key, on_entry_posted=self._onEntryPosted)
         self.poster_window.add(self.poster)
         self.poster.show()
 
@@ -79,6 +79,9 @@ class BloggerApplet(gnome.applet.Applet):
             self.poster.grab_focus()
         else:
             self.poster_window.hide()
+
+    def _onEntryPosted(self):
+        self.toggle.set_active(gtk.FALSE)
 
     def _onButtonPress(self, toggle, event):
         if (event.button != 1):

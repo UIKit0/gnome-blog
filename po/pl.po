@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
-"POT-Creation-Date: 2003-09-13 17:34-0700\n"
+"POT-Creation-Date: 2003-09-13 17:50-0700\n"
 "PO-Revision-Date: 2003-09-02 HO:MI+ZONE\n"
 "Last-Translator: Arkadiusz Lipiec <alipiec@elka.pw.edu.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"

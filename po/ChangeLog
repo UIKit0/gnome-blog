@@ -41,6 +41,19 @@
 
 	reviewed by: <delete if not using a buddy>
 
+	* es.po:
+	* it.po:
+	* ja.po:
+	* pl.po:
+	* pt.po:
+	* sr.po:
+	* sr@Latn.po:
+	* sv.po:
+
+2003-09-13  Seth Nickell  <snickell@stanford.edu>
+
+	reviewed by: <delete if not using a buddy>
+
 	* ChangeLog:
 	* POTFILES.in:
 

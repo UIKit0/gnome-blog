@@ -1,5 +1,11 @@
 2003-09-13  Seth Nickell  <snickell@stanford.edu>
 
+	* blog_applet.py:
+
+	Hide the applet posting window after a successful post.
+	
+2003-09-13  Seth Nickell  <snickell@stanford.edu>
+
 	* blog_poster.py:
 	* gnome-blog-poster:
 

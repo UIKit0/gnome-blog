@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
-"POT-Creation-Date: 2003-09-05 16:16+0200\n"
+"POT-Creation-Date: 2003-09-11 14:54-0700\n"
 "PO-Revision-Date: 2003-09-05 16:16+0200\n"
 "Last-Translator: Danilo Šegan <danilo@prevod.org>\n"
 "Language-Team: Serbian (sr) <serbiangnome-listaL@nongnu.org>\n"
@@ -152,8 +152,8 @@ msgid ""
 "blog entry to XML-RPC server <span style=\"italic\">%s</span>."
 msgstr ""
 "Nepoznato korisničko ime <span weight=\"bold\">%s</span> ili lozinka pri "
-"pokušaju slanja unosa u blog preko XML-RPC servera <span style=\"italic\">%s</"
-"span>."
+"pokušaju slanja unosa u blog preko XML-RPC servera <span style=\"italic\">%"
+"s</span>."
 
 #: hig_alert.py:12
 #, python-format
@@ -161,8 +161,8 @@ msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
 "reported: <span style=\"italic\">%s</span>."
 msgstr ""
-"Ne može da pošalje u blog „%s“ pomoću bloggerAPI XML-RPC servera „%s“. Server "
-"je prijavio: <span style=\"italic\">%s</span>."
+"Ne može da pošalje u blog „%s“ pomoću bloggerAPI XML-RPC servera „%s“. "
+"Server je prijavio: <span style=\"italic\">%s</span>."
 
 #: hig_alert.py:14
 #, python-format

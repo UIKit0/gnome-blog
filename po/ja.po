@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog HEAD\n"
-"POT-Creation-Date: 2003-09-05 00:04-0700\n"
+"POT-Creation-Date: 2003-09-11 14:54-0700\n"
 "PO-Revision-Date: 2003-09-03 23:58+0900\n"
 "Last-Translator: Takeshi AIHANA <aihana@gnome.gr.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"

@@ -1,3 +1,7 @@
+2003-09-02  Artur Flinta  <aflinta@cvs.gnome.org>
+
+        * configure.in: Added "pl" to ALL_LINGUAS.
+
 2003-09-02  Alex Duggan  <aldug@astrolinux.com>
 
 	* GNOME_BlogApplet.xml:

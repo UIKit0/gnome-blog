@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
-"POT-Creation-Date: 2003-09-05 00:04-0700\n"
-"PO-Revision-Date: 2003-09-04 02:41+0200\n"
+"POT-Creation-Date: 2003-09-06 01:58+0200\n"
+"PO-Revision-Date: 2003-09-06 01:59+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -40,9 +40,8 @@ msgid "Post blog entries to Blogger.com"
 msgstr "Posta webbloggsinlägg till Blogger.com"
 
 #: gnomeblog.schemas.in.h:3
-#, fuzzy
 msgid "Protocol to use in accessing the blog"
-msgstr "Lösenord för att komma åt webbloggen"
+msgstr "Protokoll att använda för åtkomst av webbloggen"
 
 #: gnomeblog.schemas.in.h:4
 msgid "The application's preferences have been initialized"
@@ -72,11 +71,11 @@ msgstr "Webblogg"
 
 #: blog_applet.py:63
 msgid "A GNOME Web Blogging Applet"
-msgstr ""
+msgstr "Ett GNOME-webbloggningspanelprogram"
 
 #: blog_poster.py:32
 msgid "_Post Entry"
-msgstr ""
+msgstr "_Posta inlägg"
 
 #. link_tag = self.blogBuffer.create_tag("a")
 #. link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
@@ -84,7 +83,7 @@ msgstr ""
 #. linkButton = InsertButton
 #: blog_poster.py:64
 msgid "Title:"
-msgstr ""
+msgstr "Titel:"
 
 #. Don't post silly blog entries like blank ones
 #. Only delete the entry if posting was successful
@@ -92,48 +91,47 @@ msgstr ""
 #. unreasonable
 #: blog_poster.py:102
 msgid "Blog Entry is Blank"
-msgstr ""
+msgstr "Webbloggsinlägget är tomt"
 
 #: blogger_prefs.py:20
-#, fuzzy
 msgid "Blogger Preferences"
-msgstr "Inställningar"
+msgstr "Inställningar för webbloggare"
 
 #: blogger_prefs.py:39
 msgid "Self-Run MovableType"
-msgstr ""
+msgstr "MovableType för självkörning"
 
 #: blogger_prefs.py:40
 msgid "Self-Run Pybloxsom"
-msgstr ""
+msgstr "Pybloxsom för självkörning"
 
 #: blogger_prefs.py:41
 msgid "Self-Run Other"
-msgstr ""
+msgstr "Annat för självkörning"
 
 #: blogger_prefs.py:58
 msgid "Blog Base URL:"
-msgstr ""
+msgstr "Webbloggsbas-URL:"
 
 #: blogger_prefs.py:60
 msgid "Blog Name:"
-msgstr ""
+msgstr "Webbloggsnamn:"
 
 #: blogger_prefs.py:62
 msgid "Lookup Blogs"
-msgstr ""
+msgstr "Slå upp webbloggar"
 
 #: blogger_prefs.py:114 blogger_prefs.py:126 blogger_prefs.py:130
 msgid "XML-RPC URL:"
-msgstr ""
+msgstr "XML-RPC-URL:"
 
 #: blogger_prefs.py:118 blogger_prefs.py:122
 msgid "Base Blog URL:"
-msgstr ""
+msgstr "Baswebbloggs-URL:"
 
 #: blogger_prefs.py:125
 msgid "bloggerAPI"
-msgstr ""
+msgstr "bloggerAPI"
 
 #. FIXME: popup an error dialog
 #: hig_alert.py:8
@@ -142,6 +140,8 @@ msgid ""
 "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: <span style="
 "\"italic\">%s</span>."
 msgstr ""
+"URL:en \"%s\" är kanske inte ett giltigt bloggerAPI. XML-RPC-server "
+"rapporterade: <span style=\"italic\">%s</span>."
 
 #: hig_alert.py:10
 #, python-format
@@ -149,6 +149,9 @@ msgid ""
 "Unknown username <span weight=\"bold\">%s</span> or password trying to post "
 "blog entry to XML-RPC server <span style=\"italic\">%s</span>."
 msgstr ""
+"Okänt användarnamn <span weight=\"bold\">%s</span> eller lösenord vid försök "
+"att posta webbloggsinlägg till XML-RPC-servern <span style=\"italic\">%s</"
+"span>."
 
 #: hig_alert.py:12
 #, python-format
@@ -156,6 +159,8 @@ msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
 "reported: <span style=\"italic\">%s</span>."
 msgstr ""
+"Kunde inte posta webbloggen \"%s\" vid bloggerAPI-XML-RPC-servern \"%s\". "
+"Servern rapporterade: <span style=\"italic\">%s</span>."
 
 #: hig_alert.py:14
 #, python-format
@@ -165,6 +170,13 @@ msgid ""
 "\n"
 "Please email this error message to seth@gnome.org so I can address it."
 msgstr ""
+"bloggerAPI-servern (%s) rapporterade ett fel som jag inte förstår: \"%s, "
+"<span style=\"italic\">%s</span>\". \n"
+"\n"
+"E-posta detta felmeddelande till seth@gnome.org så att jag kan åtgärda det."
+
+#~ msgid "Preferences"
+#~ msgstr "Inställningar"
 
 #~ msgid "About..."
 #~ msgstr "Om..."

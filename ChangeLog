@@ -2,6 +2,12 @@
 
 	* blog_poster.py:
 
+	Fix more dumb bugs.
+
+2003-08-29  Seth Nickell  <snickell@stanford.edu>
+
+	* blog_poster.py:
+
 	Forget self argument to member function :-P
 
 2003-08-29  Seth Nickell  <snickell@stanford.edu>

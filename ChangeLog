@@ -1,5 +1,12 @@
 2003-09-01  Seth Nickell  <snickell@stanford.edu>
 
+	* GNOME_BlogApplet.server.in:
+	* blogger_applet.py:
+
+	gnome-blogger now in its new home gnome-blog...
+
+2003-09-01  Seth Nickell  <snickell@stanford.edu>
+
 	* README:
 
 	Appease the auto* gods and add a README.

@@ -18,7 +18,7 @@ class BloggerApplet(gnome.applet.Applet):
         self.toggle = gtk.ToggleButton()
         verbs = ("Pref", self._openPrefs)
 
-        self.setup_menu_from_file (None, "GNOME_BloggerApplet.xml",
+        self.setup_menu_from_file (None, "GNOME_BlogApplet.xml",
                                    None, [("Pref", self._openPrefs)])
 
         button_box = gtk.HBox()

@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
-"POT-Creation-Date: 2003-09-13 17:50-0700\n"
-"PO-Revision-Date: 2003-09-06 01:59+0200\n"
+"POT-Creation-Date: 2003-09-14 13:02+0200\n"
+"PO-Revision-Date: 2003-09-14 13:03+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -17,17 +17,15 @@ msgstr ""
 
 #: GNOME_BlogApplet.server.in.h:1
 msgid "Accessories"
-msgstr ""
+msgstr "Tillbehör"
 
 #: GNOME_BlogApplet.server.in.h:2 gnome-blog.desktop.in.h:1
-#, fuzzy
 msgid "Blog Entry Poster"
-msgstr "Webbloggsinlägget är tomt"
+msgstr "Postare av webbloggsinlägg"
 
 #: GNOME_BlogApplet.server.in.h:3
-#, fuzzy
 msgid "Post entries to a web log"
-msgstr "Posta webbloggsinlägg till Blogger.com"
+msgstr "Posta inlägg i en webblogg"
 
 #: GNOME_BlogApplet.xml.h:1
 msgid "_About..."
@@ -168,7 +166,7 @@ msgstr "Protokoll att använda för åtkomst av webbloggen"
 
 #: gnomeblog.schemas.in.h:4
 msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
-msgstr ""
+msgstr "Ändelse för att fästa bas-URL:en (t.ex. \"xmlrpc.cgi\")"
 
 #: gnomeblog.schemas.in.h:5
 msgid "The application's preferences have been initialized"
@@ -188,7 +186,7 @@ msgstr "Användarnamn för att komma åt webbloggen"
 
 #: gnome-blog.desktop.in.h:2
 msgid "Post an entry to a web log"
-msgstr ""
+msgstr "Posta ett inlägg i en webblogg"
 
 #~ msgid "Blogging Tool"
 #~ msgstr "Webbloggsverktyg"

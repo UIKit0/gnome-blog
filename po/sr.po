@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-09-14 06:25+0200\n"
-"PO-Revision-Date: 2003-09-14 06:24+0200\n"
+"POT-Creation-Date: 2003-09-14 23:51+0200\n"
+"PO-Revision-Date: 2003-09-14 23:51+0200\n"
 "Last-Translator: Данило Шеган <danilo@prevod.org>\n"
 "Language-Team: Serbian (sr) <serbiangnome-listaL@nongnu.org>\n"
 "MIME-Version: 1.0\n"
@@ -36,6 +36,43 @@ msgstr "_О програму..."
 #: GNOME_BlogApplet.xml.h:2
 msgid "_Preferences..."
 msgstr "_Поставке"
+
+#: gnome-blog.desktop.in.h:2
+msgid "Post an entry to a web log"
+msgstr "Пошаљите унос у веб дневник"
+
+#: gnomeblog.schemas.in.h:1
+msgid "Password to use in accessing the blog"
+msgstr "Лозинка којом се приступа блогу"
+
+#: gnomeblog.schemas.in.h:2
+msgid "Post blog entries to Blogger.com"
+msgstr "Пошаљи унос у блог на Blogger.com"
+
+#: gnomeblog.schemas.in.h:3
+msgid "Protocol to use in accessing the blog"
+msgstr "Протокол којим се приступа блогу"
+
+#: gnomeblog.schemas.in.h:4
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr "Додатак који се качи на основну адресу (нпр. „xmlrpc.cgi“)"
+
+#: gnomeblog.schemas.in.h:5
+msgid "The application's preferences have been initialized"
+msgstr "Учитане су поставке програма"
+
+#: gnomeblog.schemas.in.h:6
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr ""
+"Идентификатор или име одређеног блога који да користи на XML-RPC серверу"
+
+#: gnomeblog.schemas.in.h:7
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr "Адреса за XML-RPC сервер сагласан са bloggerAPI-јем"
+
+#: gnomeblog.schemas.in.h:8
+msgid "Username to use in accessing the blog"
+msgstr "Корисничко име за приступ блогу"
 
 #. !/usr/bin/env python
 #. FIXME: need to get this path from auto*
@@ -76,39 +113,55 @@ msgstr "Унос за блог је празан"
 msgid "Blogger Preferences"
 msgstr "Поставке блогача"
 
-#: blogger_prefs.py:37
+#: blogger_prefs.py:38
 msgid "Self-Run MovableType"
 msgstr "Лични MovableType"
 
-#: blogger_prefs.py:38
+#: blogger_prefs.py:39
 msgid "Self-Run Pybloxsom"
 msgstr "Лични Pybloxsom"
 
-#: blogger_prefs.py:39
+#: blogger_prefs.py:40
 msgid "Self-Run Other"
 msgstr "Неки други лични"
 
-#: blogger_prefs.py:56
+#: blogger_prefs.py:44
+msgid "Blog Type:"
+msgstr "Врста блога:"
+
+#: blogger_prefs.py:53
+msgid "Blog Protocol:"
+msgstr "Протокол блога:"
+
+#: blogger_prefs.py:57
 msgid "Blog Base URL:"
 msgstr "Основна адреса блога:"
 
-#: blogger_prefs.py:58
+#: blogger_prefs.py:59
 msgid "Blog Name:"
 msgstr "Име блога:"
 
-#: blogger_prefs.py:60
+#: blogger_prefs.py:61
 msgid "Lookup Blogs"
 msgstr "Пронађи блогове"
 
-#: blogger_prefs.py:113 blogger_prefs.py:128 blogger_prefs.py:133
+#: blogger_prefs.py:71
+msgid "Username:"
+msgstr "Корисник:"
+
+#: blogger_prefs.py:72
+msgid "Password:"
+msgstr "Лозинка:"
+
+#: blogger_prefs.py:114 blogger_prefs.py:129 blogger_prefs.py:134
 msgid "XML-RPC URL:"
 msgstr "XML-RPC адреса:"
 
-#: blogger_prefs.py:118 blogger_prefs.py:123
+#: blogger_prefs.py:119 blogger_prefs.py:124
 msgid "Base Blog URL:"
 msgstr "Основна адреса блога:"
 
-#: blogger_prefs.py:127
+#: blogger_prefs.py:128
 msgid "bloggerAPI"
 msgstr "bloggerAPI"
 
@@ -155,45 +208,29 @@ msgstr ""
 "Молим пошаљите е-поштом ову поруку о грешци на seth@gnome.org како би могао "
 "да је обрадим."
 
-#: gnomeblog.schemas.in.h:1
-msgid "Password to use in accessing the blog"
-msgstr "Лозинка којом се приступа блогу"
+#. Hack for addHyperlink with old pygtk's
+#. this is an older version of pygtk that doesn't
+#. have a way to create anonymous tags, hack around it
+#. Found Hyperlink, activating
+#: rich_entry.py:88
+msgid "Add _Link"
+msgstr "Додај _везу"
 
-#: gnomeblog.schemas.in.h:2
-msgid "Post blog entries to Blogger.com"
-msgstr "Пошаљи унос у блог на Blogger.com"
+#: rich_entry.py:93
+msgid "Add Link"
+msgstr "Додај везу"
 
-#: gnomeblog.schemas.in.h:3
-msgid "Protocol to use in accessing the blog"
-msgstr "Протокол којим се приступа блогу"
+#: rich_entry.py:94
+msgid "_Add Link"
+msgstr "Додај _везу"
 
-#: gnomeblog.schemas.in.h:4
-msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
-msgstr "Додатак који се качи на основну адресу (нпр. „xmlrpc.cgi“)"
+#: rich_entry.py:101
+msgid "Text:"
+msgstr "Текст:"
 
-#: gnomeblog.schemas.in.h:5
-msgid "The application's preferences have been initialized"
-msgstr "Учитане су поставке програма"
-
-#: gnomeblog.schemas.in.h:6
-msgid "The id or name of the particular blog to use on the XML-RPC server"
-msgstr ""
-"Идентификатор или име одређеног блога који да користи на XML-RPC серверу"
-
-#: gnomeblog.schemas.in.h:7
-msgid "URL to the bloggerAPI compatible XML-RPC server"
-msgstr "Адреса за XML-RPC сервер сагласан са bloggerAPI-јем"
-
-#: gnomeblog.schemas.in.h:8
-msgid "Username to use in accessing the blog"
-msgstr "Корисничко име за приступ блогу"
-
-#: gnome-blog.desktop.in.h:2
-msgid "Post an entry to a web log"
-msgstr "Пошаљите унос у веб дневник"
+#: rich_entry.py:104
+msgid "URL:"
+msgstr "Адреса:"
 
 #~ msgid "Blogging Tool"
-#~ msgstr "Алат за блоговање"
-
-#~ msgid "Blogging tool"
 #~ msgstr "Алат за блоговање"

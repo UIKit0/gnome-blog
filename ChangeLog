@@ -1,3 +1,23 @@
+2005-01-12  Seth Nickell  <seth@gnome.org>
+
+	* blogger_prefs.py:
+
+	Change path to wordpress xml-rpc interface to include a
+	beginning slash.
+	
+	* configure.in:
+
+	Bump version to 0.8.1
+	
+	* protocols/MetaWeblog.py:
+
+	Fix image upload.
+
+	* blog.py:
+
+	Return an error message if imageUpload does not succeed
+	on a particular blog type.
+	
 2005-01-12  John (J5) Palmieri  <johnp@redhat.com>
 
 	* gnome-blog-poster:

@@ -30,14 +30,18 @@ def uploadImage (image, gconf_prefix):
     blog_backend = _getBlogBackend(protocol)
 
     try:
-        return blog_backend.uploadImage(username, password,
-                                        url,
-                                        image.name,
-                                        image.file_contents,
-                                        image.mime_type,
-                                        client, gconf_prefix)
+        imageurl = blog_backend.uploadImage(username, password,
+                                            url,
+                                            image.name,
+                                            image.file_contents,
+                                            image.mime_type,
+                                            client, gconf_prefix)
+        if imageurl == None:
+            raise FeatureNotSupported("uploadImage")
     except AttributeError, e:
         raise FeatureNotSupported("uploadImage")
+    
+    return imageurl
 
 def _getSettings(client, gconf_prefix):
     print "Using prefix %s" % (gconf_prefix)

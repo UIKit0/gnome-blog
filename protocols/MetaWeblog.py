@@ -10,6 +10,7 @@ _ = gettext.gettext
 from gnomeblog import hig_alert
 from gnomeblog import bloggerAPI
 from gnomeblog import proxy
+from gnomeblog import blog
 
 class Blog(bloggerAPI.Blog):
     def __init__(self):
@@ -41,6 +42,11 @@ class Blog(bloggerAPI.Blog):
         except xmlrpclib.Fault, e:
             hig_alert.handleBloggerAPIFault(e, "Could not post blog entry", username, blog_id, url)
             success = FALSE
+        except xmlrpclib.ResponseError, e:
+            print "ResponseError"
+            print e
+            hig_alert.reportError("Could not post Blog entry", 'Received an invalid response: %s.' % (url, hig_alert.italic(e)))
+            success = FALSE            
         except xmlrpclib.ProtocolError, e:
             hig_alert.reportError("Could not post Blog entry", 'URL \'%s\' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: %s.' % (url, hig_alert.italic(e.errmsg)))
             success = FALSE
@@ -65,13 +71,15 @@ class Blog(bloggerAPI.Blog):
         content['type'] = mime_type
         content['bits'] = base64.encodestring(file_contents)
 
+        imageurl = None
+
         try:
-            server.metaWeblog.newMediaObject(blog_id, username, password, content)
+            imageurl = (server.metaWeblog.newMediaObject(blog_id, username, password, content))['url']
         except xmlrpclib.Fault, e:
             hig_alert.handleBloggerAPIFault(e, "Could not post Image", username, blog_id, url)
-            success = FALSE
         except xmlrpclib.ProtocolError, e:
             hig_alert.reportError("Could not post Blog entry", 'URL \'%s\' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: %s.' % (url, hig_alert.italic(e.errmsg)))
-            success = FALSE
-            
+
+        return imageurl
+    
 blog = Blog()

@@ -1,7 +1,6 @@
 import gtk
 
-import gettext
-_ = gettext.gettext
+from gettext import gettext as _
 
 def handleBloggerAPIFault(e, primary, username, blog_id, url):
     if e.faultCode == 'Method Error':

@@ -1,8 +1,7 @@
 import gtk
 import gconf
 
-import gettext
-_ = gettext.gettext
+from gettext import gettext as _
 
 from gnomeblog import gconf_widgets
 from gnomeblog import hig_alert

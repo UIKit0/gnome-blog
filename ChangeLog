@@ -1,9 +1,12 @@
-2003-09-16  Johan Dahlin  <jdahlin@gnome.org>
+2003-09-16  Johan Dahlin  <jdahlin@gnome.org
 
         * aligned_window.py, blog.py, blog_applet.py
 	blog_poster.py, blogger_prefs.py, gconf_widgets.py
 	hig_alert.py, html_converter.py, rich_entry.py: pythonify
 
+	* blog_applet.py, blog_poster.py, blogger_prefs.py
+	hig_alert.py: prettify imports
+	
 2003-09-14  Christian Neumair  <chris@gnome-de.org>
 
 	* configure.in:

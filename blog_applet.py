@@ -9,17 +9,15 @@ import gnome.ui
 import gnome.applet
 import gconf
 
-import gettext
-_ = gettext.gettext
+from gettext import gettext as _, bindtextdomain, textdomain
 
 from gnomeblog import blog_poster
 from gnomeblog import aligned_window
 from gnomeblog import blogger_prefs
 from gnomeblog import gnome_blog_globals
 
-#FIXME: need to get this path from auto*
-gettext.bindtextdomain('gnome-blog', gnome_blog_globals.localedir)
-gettext.textdomain('gnome-blog')
+bindtextdomain('gnome-blog', gnome_blog_globals.localedir)
+textdomain('gnome-blog')
 
 class BloggerApplet(gnome.applet.Applet):
     def __init__(self):

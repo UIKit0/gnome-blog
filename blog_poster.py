@@ -2,8 +2,7 @@ import gtk
 import pango
 import gconf
 
-import gettext
-_ = gettext.gettext
+from gettext import gettext as _
 
 from gnomeblog import hig_alert
 from gnomeblog import rich_entry

@@ -1,3 +1,7 @@
+2003-09-09  Duarte Loreto <happyguy_pt@hotmail.com>
+
+	* configure.in: Added Portuguese (pt) to ALL_LINGUAS.
+
 2003-09-05  James Willcox  <jwillcox@gnome.org>
 
 	* protocols/MetaWeblog.py:

@@ -1,5 +1,14 @@
 2003-09-04  Seth Nickell  <snickell@stanford.edu>
 
+	* blog_poster.py:
+	* rich_entry.py:
+
+	Add support for inserting links.
+	
+	Hadess, I luv U.
+	
+2003-09-04  Seth Nickell  <snickell@stanford.edu>
+
 	* Makefile.am:
 	* blog_poster.py:
 	* html_converter.py:

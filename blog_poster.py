@@ -26,7 +26,7 @@ class BlogPoster(gtk.Frame):
         
         self.blogEntry   = rich_entry.RichEntry()
         scroller         = gtk.ScrolledWindow()
-        self.postButton  = gtk.Button("Post Entry")
+        self.postButton  = gtk.Button("_Post Entry")
         
         scroller.add(self.blogEntry)
         scroller.set_policy(gtk.POLICY_NEVER, gtk.POLICY_AUTOMATIC)
@@ -43,7 +43,8 @@ class BlogPoster(gtk.Frame):
 
         boldToggle   = self.blogEntry.createStyleToggle([("weight", pango.WEIGHT_BOLD)], gtk.STOCK_BOLD, "strong")
         italicToggle = self.blogEntry.createStyleToggle([("style", pango.STYLE_ITALIC)], gtk.STOCK_ITALIC, "em")        
-
+        linkButton   = rich_entry.InsertHyperlinkButton(self.blogEntry)
+        
         #link_tag = self.blogBuffer.create_tag("a")
         #link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
         #link_tag.set_property("foreground", "#0000FF")
@@ -51,7 +52,8 @@ class BlogPoster(gtk.Frame):
 
         buttonBox.pack_start(boldToggle, expand=gtk.FALSE)
         buttonBox.pack_start(italicToggle, expand=gtk.FALSE)        
-
+        buttonBox.pack_start(linkButton, expand=gtk.FALSE)
+        
         self.titleEntry = gtk.Entry()
 
         titleBox = gtk.HBox()

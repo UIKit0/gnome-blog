@@ -1,5 +1,8 @@
 import gtk
-from gtk import gdk
+import gtk.gdk
+import pango
+
+
 import html_converter
 
 class RichEntry(gtk.TextView):
@@ -20,12 +23,15 @@ class RichEntry(gtk.TextView):
         link_tag = self.buffer.create_tag()
         link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
         link_tag.set_property("foreground", "#0000FF")
+
+        link_tag.opening_tag = '<a href="%s">' % (uri)
+        link_tag.closing_tag = '</a>'
         
         link_tag.uri = uri
         link_tag.on_activate = on_activate
         link_tag.hyperlink = gtk.TRUE
 
-        self.buffer.insert_with_tags(text, link_tag)
+        self.buffer.insert_with_tags(iter, text, link_tag)
 
     def getHTML(self):
         return html_converter.getHTML(self.buffer)
@@ -41,7 +47,7 @@ class RichEntry(gtk.TextView):
         return StyleToggle(stock_button, tag, html_tag, self)
         
     def _onEventAfter(self, widget, event):
-        if ((event.type != gdk.BUTTON_RELEASE) or (event.button != 1)):
+        if ((event.type != gtk.gdk.BUTTON_RELEASE) or (event.button != 1)):
             return gtk.FALSE
 
         bounds = self.buffer.get_selection_bounds()
@@ -56,11 +62,59 @@ class RichEntry(gtk.TextView):
             try:
                 if (tag.hyperlink == gtk.TRUE):
                     # Found Hyperlink, activating
-                    tag.on_activate(uri)
+                    tag.on_activate(tag.uri)
             except AttributeError:
                 pass
             
         return gtk.FALSE
+
+class InsertHyperlinkButton(gtk.Button):
+    def __init__(self, rich_entry):
+        gtk.Button.__init__(self, "Add _Link")
+        self.rich_entry = rich_entry
+        self.connect("clicked", self._onClicked)
+
+    def _onClicked(self, button):
+        dialog = gtk.Dialog("Add Link", buttons=(gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
+                                                         "_Add Link", gtk.RESPONSE_ACCEPT))
+
+        dialog.set_border_width(6)
+        dialog.vbox.set_spacing(12)
+        
+        textLabel = gtk.Label("Text:")
+        textLabel.set_alignment(0.0, 0.5)
+
+        urlLabel = gtk.Label("URL:")
+        urlLabel.set_alignment(0.0, 0.5)
+
+        textEntry = gtk.Entry()
+        urlEntry  = gtk.Entry()
+
+        table = gtk.Table(rows=2, columns=2)
+        table.set_border_width(6)
+        
+        table.set_row_spacings(12)
+        table.set_col_spacings(5)
+
+        table.attach(textLabel, 0, 1, 0, 1, xoptions=gtk.FILL)
+        table.attach(urlLabel, 0, 1, 1, 2, xoptions=gtk.FILL)
+        table.attach(textEntry, 1, 2, 0, 1)
+        table.attach(urlEntry, 1, 2, 1, 2)
+
+        dialog.vbox.pack_start(table)
+
+        table.show_all()
+
+        response = dialog.run()
+
+        if (response == gtk.RESPONSE_ACCEPT):
+            iter = self.rich_entry.buffer.get_iter_at_mark(self.rich_entry.buffer.get_mark("insert"))
+            self.rich_entry.addHyperlink(iter, textEntry.get_text(), urlEntry.get_text(), self._onHyperlinkClicked)
+
+        dialog.hide()
+            
+    def _onHyperlinkClicked(self, uri):
+        print ("Clicked %s" % (uri))
         
 class StyleToggle(gtk.ToggleButton):
     def __init__(self, stock_icon_id, tag, htmltag, text_view):

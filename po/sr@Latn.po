@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-11-07 22:55+0100\n"
-"PO-Revision-Date: 2003-11-07 22:55+0100\n"
+"POT-Creation-Date: 2003-11-14 05:13+0100\n"
+"PO-Revision-Date: 2003-11-08 19:04+0100\n"
 "Last-Translator: Danilo Šegan <danilo@prevod.org>\n"
 "Language-Team: Serbian (sr) <serbiangnome-lista@nongnu.org>\n"
 "MIME-Version: 1.0\n"
@@ -89,18 +89,13 @@ msgstr "Blogče"
 msgid "A GNOME Web Blogging Applet"
 msgstr "Programče za blogčenje iz Gnoma"
 
-# bug: hard to translate, don't use string composition
 #. take the XML_RPC value from GConf
 #. split the URL up into http:, '', domainname, extra
 #. join back up the URL into http://domainname
 #: blog_applet.py:102
-msgid "Create a blog entry for "
-msgstr "Sastavi unos u blogče za "
-
-# bug: hard to translate
-#: blog_applet.py:104
-msgid " at "
-msgstr " na "
+#, python-format
+msgid "Create a blog entry for %s at %s"
+msgstr "Sastavi unos u blogče za korisnika „%s“ na %s"
 
 #. Set tooltip to the applet button
 #: blog_poster.py:32
@@ -280,6 +275,10 @@ msgstr "Tekst:"
 #: rich_entry.py:206
 msgid "URL:"
 msgstr "Adresa:"
+
+# bug: hard to translate
+#~ msgid " at "
+#~ msgstr " na "
 
 #~ msgid "Blogging Tool"
 #~ msgstr "Alat za blogčetanje"

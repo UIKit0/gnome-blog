@@ -46,6 +46,15 @@
       </locale>
     </schema>
 
+    <schema>
+      <key>/schemas/apps/gnome-blogger/blog_protocol</key>
+      <applyto>/apps/gnome-blogger/blog_protocol</applyto>
+      <owner>gnome-blogger</owner>
+      <type>string</type>
+      <locale name="C">
+         <short>Protocol to use in accessing the blog</short>
+      </locale>
+    </schema>
 
     <schema>
       <key>/schemas/apps/gnome-blogger/blog_id</key>

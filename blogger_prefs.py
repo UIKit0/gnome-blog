@@ -47,7 +47,8 @@ class BloggerPrefs(gtk.Dialog):
 
         self.blogProtocolMenu = gconf_widgets.OptionMenu(gconf_prefix + "/blog_protocol")
         self.blogProtocolMenu.setStringValuePairs([("BloggerAPI", "bloggerAPI"),
-                                                  ("Advogato", "advogato")])
+                                                   ("Advogato", "advogato"),
+                                                   ("MetaWeblog", "MetaWeblog")])
         self.blogProtocolLabel = LeftLabel("Blog Protocol")
         
         self.urlEntry = gconf_widgets.Entry(gconf_prefix + "/xmlrpc_url")
@@ -103,12 +104,14 @@ class BloggerPrefs(gtk.Dialog):
 
         lookup = gtk.TRUE
 
+	print 'blog type: ' + blog_type
+
         if (blog_type == "custom"):
             url = None
             protocol = None
         elif (blog_type == "custom-mt"):
             url = None
-            protocol = "bloggerAPI"
+            protocol = "MetaWeblog"
         elif (blog_type == "custom-pybloxsom"):
             url = None
             protocol = "bloggerAPI"
@@ -134,6 +137,7 @@ class BloggerPrefs(gtk.Dialog):
         if (protocol != None):
             self.blogProtocolMenu.set_sensitive(gtk.FALSE)
             self.blogProtocolLabel.set_sensitive(gtk.FALSE)
+            print 'Setting: ' + gconf_prefix + '/blog_protocol' + ' to ' + protocol
             client.set_string(gconf_prefix + "/blog_protocol", protocol)
         else:
             self.blogProtocolMenu.set_sensitive(gtk.TRUE)

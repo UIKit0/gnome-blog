@@ -106,14 +106,17 @@ def _postEntryMetaWeblog (username, password, url, title, entry, client, gconf_p
     
     server = xmlrpclib.Server(url)
 
-    content.title = title
-    content.description = entry
-    
+    content = {}
+    content['title'] = title
+    content['description'] = entry
+
     try:
-        server.metaWeblog.newPost(blog_id, username, password, content, xmlrpclib.True)
+        server.metaWeblog.newPost(blog_id, username, password, content, xmlrpclib.False)
     except xmlrpclib.Fault, e:
         hig_alert.handleBloggerAPIFault(e, "Could not post blog entry", username, blog_id, url)
         success = gtk.FALSE
     except xmlrpclib.ProtocolError, e:
         hig_alert.reportError("Could not post Blog entry", 'URL \'%s\' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: <span style=\"italic\">%s</span>.' % (url, e.errmsg))
         success = gtk.FALSE
+
+    return success

@@ -1,3 +1,11 @@
+2003-09-04  James Willcox  <jwillcox@gnome.org>
+
+	* blog.py:
+	* blogger_prefs.py:
+	* gnomeblog.schemas.in:
+
+	Fixup the metaweblog support a bit
+
 2003-09-04  Seth Nickell  <snickell@stanford.edu>
 
 	* blog.py:

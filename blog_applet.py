@@ -9,6 +9,7 @@ import gnome.applet
 import blog_poster
 import aligned_window
 import blogger_prefs
+import gconf
 
 class BloggerApplet(gnome.applet.Applet):
     def __init__(self):
@@ -40,14 +41,23 @@ class BloggerApplet(gnome.applet.Applet):
         self.poster = blog_poster.BlogPoster(self.prefs_key)
         self.poster_window.add(self.poster)
         self.poster.show()
+
+        client = gconf.client_get_default()
+        value = client.get_bool(self.prefs_key + "/initialized")
+        if (value == None or value == gtk.FALSE):
+            self._showPrefDialog()
+            client.set_bool(self.prefs_key + "/initialized", gtk.TRUE)
         
         return gtk.TRUE
-
-    def _openPrefs(self, uicomponent, verb):
+    
+    def _showPrefDialog(self):
         prefs_dialog = blogger_prefs.BloggerPrefs(self.prefs_key)
         prefs_dialog.show()
         prefs_dialog.run()
         prefs_dialog.hide()
+        
+    def _openPrefs(self, uicomponent, verb):
+        self._showPrefDialog()
         
     def _onToggle(self, toggle):
         if (toggle.get_active()):

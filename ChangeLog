@@ -1,5 +1,28 @@
 2003-09-01  Seth Nickell  <snickell@stanford.edu>
 
+	* blog_applet.py:
+
+	Open preferences dialog automatically the first
+	time the applet is launched.
+	
+	* gnome-blog.png:
+
+	Create a not-horrible icon.
+
+	* GNOME_BlogApplet.server.in:
+
+	Use the correct filename for the icon.
+	
+	* configure.in:
+
+	Drop version number to 0.5
+	
+	* gnome-blog.spec.in:
+
+	Fix typo so correct version of pygtk2 is required.
+	
+2003-09-01  Seth Nickell  <snickell@stanford.edu>
+
 	* GNOME_BlogApplet.server.in:
 	* aligned_window.py:
 	* blog_applet.py:

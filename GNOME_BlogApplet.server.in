@@ -19,7 +19,7 @@
         <oaf_attribute name="name" type="string" value="Blogging Tool"/>
         <oaf_attribute name="description" type="string" value="Post entries to any bloggerAPI compatible blog"/>
         <oaf_attribute name="panel:category" type="string" value="Utility"/>
-        <oaf_attribute name="panel:icon" type="string" value="gnome-blogger.png"/>
+        <oaf_attribute name="panel:icon" type="string" value="gnome-blog.png"/>
 </oaf_server>
 
 </oaf_info>

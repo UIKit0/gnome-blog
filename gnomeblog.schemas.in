@@ -8,10 +8,22 @@
       <applyto>/apps/gnome-blogger/use_blogger_dot_com</applyto>
       <owner>gnome-blogger</owner>
       <type>bool</type>
+      <default>false</default>
       <locale name="C">
          <short>Post blog entries to Blogger.com</short>
       </locale>
     </schema>
+
+    <schema>
+      <key>/schemas/apps/gnome-blogger/initialized</key>
+      <applyto>/apps/gnome-blogger/initialized</applyto>
+      <owner>gnome-blogger</owner>
+      <type>bool</type>
+      <default>false</default>
+      <locale name="C">
+         <short>The application's preferences have been initialized</short>
+      </locale>
+   </schema>
 
     <schema>
       <key>/schemas/apps/gnome-blogger/blog_username</key>

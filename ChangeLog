@@ -1,3 +1,9 @@
+2004-09-14  Seth Nickell  <seth@gnome.org>
+
+	* blogger_prefs.py:
+
+	Use correct /RPC path for Pybloxsom 1.x.
+
 2004-05-03  John (J5) Palmieri  <johnp@redhat.com>
 
 	* rich_entry: style toggles now work correctly

@@ -120,7 +120,7 @@ class BloggerPrefs(gtk.Dialog):
             url_description = _("Base Blog URL:")
         elif blog_type == "custom-pybloxsom":
             url = None
-            url_ending = "/xmlrpc.cgi"
+            url_ending = "/RPC"
             protocol = "bloggerAPI"
             url_description = _("Base Blog URL:")
         elif blog_type == "blogger.com":

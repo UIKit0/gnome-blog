@@ -1,5 +1,7 @@
 2004-01-11    <clarkbw@cvs.gnome.org>
 
+	* TODO: updated the TODO
+
 	* rich_entry.py: use new hig_alert methods for styled text
 
 	* protocols/livejournal.py: 

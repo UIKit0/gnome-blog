@@ -1,5 +1,11 @@
 2003-08-29  Seth Nickell  <snickell@stanford.edu>
 
+	* blog_poster.py:
+
+	Forget self argument to member function :-P
+
+2003-08-29  Seth Nickell  <snickell@stanford.edu>
+
 	* Makefile.am:
 
 	Make applet run from "system path" again.

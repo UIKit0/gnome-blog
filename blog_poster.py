@@ -60,7 +60,7 @@ class BlogPoster(gtk.Frame):
         box.show_all()
 
  
-    def _postEntry (username, password, blogid, url, text):
+    def _postEntry (self, username, password, blogid, url, text):
         if (url == None):
             self.reportError("Could not post Blog entry", "No XML-RPC server URL to post blog entries to is set, or the value could not be retrieved from GConf. Your entry will remain in the blogger window.")
             return gtk.FALSE

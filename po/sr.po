@@ -9,10 +9,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-09-14 23:51+0200\n"
-"PO-Revision-Date: 2003-09-14 23:51+0200\n"
+"POT-Creation-Date: 2003-10-25 04:36+0200\n"
+"PO-Revision-Date: 2003-10-25 04:37+0200\n"
 "Last-Translator: Данило Шеган <danilo@prevod.org>\n"
-"Language-Team: Serbian (sr) <serbiangnome-listaL@nongnu.org>\n"
+"Language-Team: Serbian (sr) <serbiangnome-lista@nongnu.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -75,20 +75,19 @@ msgid "Username to use in accessing the blog"
 msgstr "Корисничко име за приступ блогу"
 
 #. !/usr/bin/env python
-#. FIXME: need to get this path from auto*
-#: blog_applet.py:31
+#: blog_applet.py:29
 msgid "About"
 msgstr "О програму"
 
-#: blog_applet.py:34
+#: blog_applet.py:32
 msgid "Blog"
 msgstr "Блог"
 
-#: blog_applet.py:63
+#: blog_applet.py:61
 msgid "A GNOME Web Blogging Applet"
 msgstr "Програмче за блоговање из Гнома"
 
-#: blog_poster.py:32
+#: blog_poster.py:31
 msgid "_Post Entry"
 msgstr "_Пошаљи унос"
 
@@ -96,77 +95,91 @@ msgstr "_Пошаљи унос"
 #. link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
 #. link_tag.set_property("foreground", "#0000FF")
 #. linkButton = InsertButton
-#: blog_poster.py:66
+#: blog_poster.py:65
 msgid "Title:"
 msgstr "Наслов:"
+
+#: blog_poster.py:87
+msgid "Couldn't upload images"
+msgstr "Не могу да пошаљем слике"
+
+#: blog_poster.py:87
+msgid "The blog protocol in use does not support uploading images"
+msgstr "Блог протокол који се користи не подржава слање слика"
 
 #. Don't post silly blog entries like blank ones
 #. Only delete the entry if posting was successful
 #. Call back our parent informing them the entry was posted
 #. Popup a dialogue confirming even if its deemed
 #. unreasonable
-#: blog_poster.py:107
+#: blog_poster.py:115
 msgid "Blog Entry is Blank"
 msgstr "Унос за блог је празан"
 
-#: blogger_prefs.py:20
+#: blog_poster.py:115
+msgid ""
+"No text was entered in the blog entry box. Please enter some text and try "
+"again"
+msgstr "Текст није унет у пољу за унос блогчета. Молим унесите неки текст и покушајте поново"
+
+#: blogger_prefs.py:19
 msgid "Blogger Preferences"
 msgstr "Поставке блогача"
 
-#: blogger_prefs.py:38
+#: blogger_prefs.py:37
 msgid "Self-Run MovableType"
 msgstr "Лични MovableType"
 
-#: blogger_prefs.py:39
+#: blogger_prefs.py:38
 msgid "Self-Run Pybloxsom"
 msgstr "Лични Pybloxsom"
 
-#: blogger_prefs.py:40
+#: blogger_prefs.py:39
 msgid "Self-Run Other"
 msgstr "Неки други лични"
 
-#: blogger_prefs.py:44
+#: blogger_prefs.py:43
 msgid "Blog Type:"
 msgstr "Врста блога:"
 
-#: blogger_prefs.py:53
+#: blogger_prefs.py:52
 msgid "Blog Protocol:"
 msgstr "Протокол блога:"
 
-#: blogger_prefs.py:57
+#: blogger_prefs.py:56
 msgid "Blog Base URL:"
 msgstr "Основна адреса блога:"
 
-#: blogger_prefs.py:59
+#: blogger_prefs.py:58
 msgid "Blog Name:"
 msgstr "Име блога:"
 
-#: blogger_prefs.py:61
+#: blogger_prefs.py:60
 msgid "Lookup Blogs"
 msgstr "Пронађи блогове"
 
-#: blogger_prefs.py:71
+#: blogger_prefs.py:70
 msgid "Username:"
 msgstr "Корисник:"
 
-#: blogger_prefs.py:72
+#: blogger_prefs.py:71
 msgid "Password:"
 msgstr "Лозинка:"
 
-#: blogger_prefs.py:114 blogger_prefs.py:129 blogger_prefs.py:134
+#: blogger_prefs.py:113 blogger_prefs.py:128 blogger_prefs.py:133
 msgid "XML-RPC URL:"
 msgstr "XML-RPC адреса:"
 
-#: blogger_prefs.py:119 blogger_prefs.py:124
+#: blogger_prefs.py:118 blogger_prefs.py:123
 msgid "Base Blog URL:"
 msgstr "Основна адреса блога:"
 
-#: blogger_prefs.py:128
+#: blogger_prefs.py:127
 msgid "bloggerAPI"
 msgstr "bloggerAPI"
 
 #. FIXME: popup an error dialog
-#: hig_alert.py:8
+#: hig_alert.py:7
 #, python-format
 msgid ""
 "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: <span style="
@@ -175,7 +188,7 @@ msgstr ""
 "Адреса „%s“ можда не представља исправан bloggerAPI. XML-RPC сервер је "
 "пријавио: <span style=\"italic\">%s</span>."
 
-#: hig_alert.py:10
+#: hig_alert.py:9
 #, python-format
 msgid ""
 "Unknown username <span weight=\"bold\">%s</span> or password trying to post "
@@ -185,7 +198,7 @@ msgstr ""
 "покушају слања уноса у блог преко XML-RPC сервера <span style=\"italic\">%s</"
 "span>."
 
-#: hig_alert.py:12
+#: hig_alert.py:11
 #, python-format
 msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
@@ -194,7 +207,7 @@ msgstr ""
 "Не може да пошаље у блог „%s“ помоћу bloggerAPI XML-RPC сервера „%s“. Сервер "
 "је пријавио: <span style=\"italic\">%s</span>."
 
-#: hig_alert.py:14
+#: hig_alert.py:13
 #, python-format
 msgid ""
 "The bloggerAPI server (%s) reported an error I don't understand: '%s, <span "
@@ -208,27 +221,44 @@ msgstr ""
 "Молим пошаљите е-поштом ову поруку о грешци на seth@gnome.org како би могао "
 "да је обрадим."
 
+#. GtkTextView already defines drag and drop targets, get them
+#. Unfortunately old_targets string field has a funny type
+#. that needs to be explicitly converted to string
+#. Add the DND type that we support and set the new list of types
 #. Hack for addHyperlink with old pygtk's
 #. this is an older version of pygtk that doesn't
 #. have a way to create anonymous tags, hack around it
+#. 398 means text/uri-list
+#: rich_entry.py:116 rich_entry.py:124
+msgid "Could not load dragged in image"
+msgstr "Не могу да учитам превучену слику"
+
+#: rich_entry.py:117 rich_entry.py:125
+#, python-format
+msgid "Error loading <span style='italic'>%s</span> was: %s"
+msgstr "Грешка при учитавању <span style='italic'>%s</span> је била: %s"
+
+#. Create a new image tag
+#. Insert the pixbuf, and then set the new image
+#. tag around it so that we can generate its HTML later
 #. Found Hyperlink, activating
-#: rich_entry.py:88
+#: rich_entry.py:175
 msgid "Add _Link"
 msgstr "Додај _везу"
 
-#: rich_entry.py:93
+#: rich_entry.py:180
 msgid "Add Link"
 msgstr "Додај везу"
 
-#: rich_entry.py:94
+#: rich_entry.py:181
 msgid "_Add Link"
 msgstr "Додај _везу"
 
-#: rich_entry.py:101
+#: rich_entry.py:188
 msgid "Text:"
 msgstr "Текст:"
 
-#: rich_entry.py:104
+#: rich_entry.py:191
 msgid "URL:"
 msgstr "Адреса:"
 

@@ -37,6 +37,7 @@ class BloggerPrefs(gtk.Dialog):
                                          ("-", ""),
                                          (_("Self-Run MovableType"), "custom-mt"),
                                          (_("Self-Run Pyblosxom"), "custom-pybloxsom"),
+                                         (_("Self-Run WordPress"), "custom-wordpress"),                                          
                                          (_("Self-Run Other"), "custom")])
 
         blogTypeBox = gtk.HBox()
@@ -123,6 +124,11 @@ class BloggerPrefs(gtk.Dialog):
             url_ending = "/RPC"
             protocol = "bloggerAPI"
             url_description = _("Base Blog URL:")
+        elif blog_type == "custom-wordpress":
+            url = None
+            url_ending = "/wordpress/xmlrpc.php"
+            protocol = "MetaWeblog"
+            url_description = _("Base Blog URL:")            
         elif blog_type == "blogger.com":
             url = "http://www.blogger.com/api/RPC2"
             url_ending = ""

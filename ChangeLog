@@ -1,5 +1,12 @@
 2004-10-26  Seth Nickell  <seth@gnome.org>
 
+	* blogger_prefs.py:
+
+	Add WordPress to the list of known blog types, using
+	MetawebLog.
+
+2004-10-26  Seth Nickell  <seth@gnome.org>
+
 	* acinclude.m4:
 
 	Remove this, we no longer include any C Python modules.

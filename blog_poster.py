@@ -2,9 +2,9 @@ import gtk
 import pango
 import gconf
 
-import hig_alert
-import rich_entry
-import blog
+from gnomeblog import hig_alert
+from gnomeblog import rich_entry
+from gnomeblog import blog
 
 gconf_prefix = "/apps/gnome-blogger"
 

@@ -7,13 +7,12 @@ import gobject
 import gnome
 import gnome.ui
 import gnome.applet
-
-import blog_poster
-import aligned_window
-import blogger_prefs
 import gconf
 
-import gnome_blog_globals
+from gnomeblog import blog_poster
+from gnomeblog import aligned_window
+from gnomeblog import blogger_prefs
+from gnomeblog import gnome_blog_globals
 
 class BloggerApplet(gnome.applet.Applet):
     def __init__(self):

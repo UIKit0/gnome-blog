@@ -6,7 +6,10 @@ server_DATA = $(server_in_files:.server.in=.server)
 
 bin_SCRIPTS = blog_applet.py
 
-python_PYTHON = 		\
+gnomeblogdir = $(pythondir)/gnomeblog
+
+gnomeblog_PYTHON = 		\
+	__init__.py		\
 	blog_applet.py		\
 	blog_poster.py 		\
 	aligned_window.py 	\
@@ -60,4 +63,4 @@ EXTRA_DIST =  			\
 	gnome-blog.spec	\
 	gnome-blog.spec.in
 
-SUBDIRS = po
+SUBDIRS = protocols po

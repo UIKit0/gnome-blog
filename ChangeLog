@@ -1,5 +1,33 @@
 2003-09-04  Seth Nickell  <snickell@stanford.edu>
 
+	* configure.in:
+
+	Remove unnecessary statements (that were causing
+	problems on Debian too)
+
+	* Makefile.am:
+	* __init__.py:
+	* rich_entry.py:
+	* blogger_prefs.py:
+	* blog_applet.py:
+	
+	Create a gnomeblog namespace so we don't flood the
+	site-packages directory with our crap :-)
+	
+	* blog.py:
+	* blog_poster.py:
+	* blogger_prefs.py:
+	* protocols/.cvsignore:
+	* protocols/Makefile.am:
+	* protocols/MetaWeblog.py:
+	* protocols/advogato.py:
+	* protocols/bloggerAPI.py:
+
+	Move protocols out into their own modules. Neat trick
+	is that now MetaWeblog can inherit from bloggerAPI.
+	
+2003-09-04  Seth Nickell  <snickell@stanford.edu>
+
 	* blog_poster.py:
 	* rich_entry.py:
 

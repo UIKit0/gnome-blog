@@ -12,40 +12,10 @@ AC_PROG_INTLTOOL([0.21])
 dnl check for python
 dnl AM_PATH_PYTHON(2.2)
 AM_PATH_PYTHON
-AC_MSG_CHECKING(for python >= 2.2)
-prog="
-import sys, string
-minver = (2,2,0,'final',0)
-if sys.version_info < minver:
-  sys.exit(1)
-sys.exit(0)"
-if $PYTHON -c "$prog" 1>&AC_FD_CC 2>&AC_FD_CC
-then
-  AC_MSG_RESULT(okay)
-else
-  AC_MSG_ERROR(too old)
-fi
-AM_CHECK_PYTHON_HEADERS(,[AC_MSG_ERROR(could not find Python headers)])
-
 
 PKG_CHECK_MODULES(PYGTK, pygtk-2.0)
 AC_SUBST(PYGTK_CFLAGS)
 AC_SUBST(PYGTK_LIBS)
-
-AC_PATH_PROG(PYGTK_CODEGEN, pygtk-codegen-2.0, no)
-if test "x$PYGTK_CODEGEN" = xno; then
-  AC_MSG_ERROR(could not find pygtk-codegen-2.0 script)
-fi
-
-AC_MSG_CHECKING(for pygtk defs)
-PYGTK_DEFSDIR=`$PKG_CONFIG --variable=defsdir pygtk-2.0`
-AC_SUBST(PYGTK_DEFSDIR)
-AC_MSG_RESULT($PYGTK_DEFSDIR)
-
-AC_MSG_CHECKING(for pygtk h2def)
-PYGTK_H2DEF=`$PKG_CONFIG --variable=datadir pygtk-2.0`/pygtk/2.0/codegen/h2def.py
-AC_SUBST(PYGTK_H2DEF)
-AC_MSG_RESULT($PYGTK_H2DEF)
 
 ALL_LINGUAS="es ja pl sr sr@Latn sv"
                                                                                 
@@ -59,5 +29,6 @@ AC_OUTPUT([
 Makefile
 gnome_blog_globals.py
 gnome-blog.spec
+protocols/Makefile
 po/Makefile.in
 ])

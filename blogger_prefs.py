@@ -1,10 +1,9 @@
 import gtk
 import gconf
 
-import xmlrpclib
-
-import gconf_widgets
-import hig_alert
+from gnomeblog import gconf_widgets
+from gnomeblog import hig_alert
+from gnomeblog import blog
 
 gconf_prefix = "/apps/gnome-blogger"
 
@@ -149,33 +148,8 @@ class BloggerPrefs(gtk.Dialog):
 
     def _onLookupBlogsButton (self, button):
         client = gconf.client_get_default()
-                
-        username = client.get_string(gconf_prefix + "/blog_username")
-        password = client.get_string(gconf_prefix + "/blog_password")
-        url      = client.get_string(gconf_prefix + "/xmlrpc_url")
 
-        appkey = "6BF507937414229AEB450AB075001667C8BC8338"
-        
-        server = xmlrpclib.Server(url)
+        blog_id_pairs = blog.getBlogList(gconf_prefix)
 
-        try:
-            bloglist = server.blogger.getUsersBlogs(appkey, username, password)
-        except xmlrpclib.Fault, e:
-            hig_alert.handleBloggerAPIFault(e, "Could not get list of blogs", username, None, url)
-            return
-        except xmlrpclib.ProtocolError, e:            
-            hig_alert.reportError("Could not get list of blogs", 'URL \'%s\' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: <span style=\"italic\">%s</span>.' % (url, e.errmsg))
-            return
-            
-        if ((bloglist == None) or (len(bloglist) == 0)):
-            # No blogs found!
-            hig_alert.reportError("No Blogs Found", "No errors were reported, but no blogs were found at %s for username %s\n" % ( url, username))
-            return
-
-        string_value_pairs = []
-
-        for blog in bloglist:
-            string_value_pairs.append((blog["blogName"], blog["blogid"]))
-
-        self.blogMenu.setStringValuePairs(string_value_pairs)
-        
+        self.blogMenu.setStringValuePairs(blog_id_pairs)
+    

@@ -3,7 +3,7 @@ import gtk.gdk
 import pango
 
 
-import html_converter
+from gnomeblog import html_converter
 
 class RichEntry(gtk.TextView):
     def __init__(self):

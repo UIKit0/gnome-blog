@@ -147,8 +147,12 @@ class BloggerPrefs(gtk.Dialog):
             url_description = _("XML-RPC URL:")
 	    lookup = gtk.FALSE
         else:
-            # FIXME: popup an error dialog
-            print "Unknown blog type (!)"
+            url = None
+            url_ending = "" 
+            protocol = None
+            url_description = None
+            lookup = gtk.FALSE
+            hig_alert.reportError(_("Unknown blog type"), _("The detected blog type is not among the list of supported blogs"))
 
         if url != None:
             self.urlEntry.set_sensitive(gtk.FALSE)

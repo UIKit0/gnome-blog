@@ -1,3 +1,10 @@
+2004-07-08  Caleb Groom  <caleb@calebgroom.com>
+
+	* blogger_prefs.py: 
+
+	HIGAlert dialog now displays 'unknown blog type' error and plays well
+	with others if the blog type is invalid.
+
 2005-01-02  Seth Nickell  <seth@gnome.org>
 
         Patch from Brian Pepple <bdpepple@ameritech.net>.

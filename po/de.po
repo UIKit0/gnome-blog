@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the gnome-blog package.
 # Christian Neumair <chris@gnome-de.org>, 2003.
 # Stefan Gollnow <stefan.gollnow@web.de>, 2004.
-#
+# 
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-03 23:10-0500\n"
-"PO-Revision-Date: 2004-06-01 16:16+0200\n"
-"Last-Translator: <stefan.gollnow@web.de>\n"
+"POT-Creation-Date: 2005-01-11 21:58+0100\n"
+"PO-Revision-Date: 2005-01-11 21:58+0100\n"
+"Last-Translator: Frank Arnold <frank@scirocco-5v-turbo.de>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -99,9 +100,8 @@ msgid "Self-Run Pyblosxom"
 msgstr "Selbst betrieben, Pybloxsom"
 
 #: blogger_prefs.py:40
-#, fuzzy
 msgid "Self-Run WordPress"
-msgstr "Selbst betrieben, andere"
+msgstr "Selbst betrieben, WordPress"
 
 #: blogger_prefs.py:41
 msgid "Self-Run Other"
@@ -146,11 +146,13 @@ msgstr "Blog-Basisadresse:"
 
 #: blogger_prefs.py:155
 msgid "Unknown blog type"
-msgstr ""
+msgstr "Unbekannter Blog-Typ"
 
 #: blogger_prefs.py:155
 msgid "The detected blog type is not among the list of supported blogs"
 msgstr ""
+"Der erkannte Blog-Typ ist nicht in der Liste der unterstützten Blogs "
+"enthalten"
 
 #: gnome-blog.desktop.in.h:2
 msgid "Post an entry to a web log"

@@ -1,3 +1,31 @@
+2005-01-12  Seth Nickell  <seth@gnome.org>
+
+	reviewed by: <delete if not using a buddy>
+
+	* az.po:
+	* ca.po:
+	* cs.po:
+	* en_CA.po:
+	* en_GB.po:
+	* es.po:
+	* et.po:
+	* fr.po:
+	* hr.po:
+	* it.po:
+	* ja.po:
+	* ms.po:
+	* nb.po:
+	* nl.po:
+	* no.po:
+	* pl.po:
+	* pt.po:
+	* pt_BR.po:
+	* sq.po:
+	* sr.po:
+	* sr@Latn.po:
+	* sv.po:
+	* uk.po:
+
 2005-01-11  Frank Arnold  <farnold@cvs.gnome.org>
 
 	* de.po: Updated German translation.

@@ -1,3 +1,9 @@
+2003-09-05  James Willcox  <jwillcox@gnome.org>
+
+	* protocols/MetaWeblog.py:
+
+	Fix the metaweblog backend
+
 2003-09-05  Seth Nickell  <snickell@stanford.edu>
 
 	* blog_applet.py:

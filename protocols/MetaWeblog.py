@@ -8,12 +8,12 @@ from gnomeblog import bloggerAPI
 
 appkey = "6BF507937414229AEB450AB075001667C8BC8338"
 
-class Blog(bloggerAPI):
+class Blog(bloggerAPI.Blog):
     def __init__(self):
         bloggerAPI.Blog.__init__(self)
 
     def _getURL(self, base_url):
-        return base_url + "mt/mt-xmlrpc.cgi"
+        return base_url + "/mt-xmlrpc.cgi"
 
     def postEntry (self, username, password, base_url, title, entry, client, gconf_prefix):
         global appkey
@@ -35,7 +35,7 @@ class Blog(bloggerAPI):
         content['description'] = entry
 
         try:
-            server.metaWeblog.newPost(blog_id, username, password, content, xmlrpclib.False)
+            server.metaWeblog.newPost(blog_id, username, password, content, xmlrpclib.True)
         except xmlrpclib.Fault, e:
             hig_alert.handleBloggerAPIFault(e, "Could not post blog entry", username, blog_id, url)
             success = gtk.FALSE

@@ -2,15 +2,21 @@ import gtk
 
 from gettext import gettext as _
 
+def italic(s):
+	return "<span style=\"italic\">%s</span>" % s
+
+def bold(s):
+	return "<span weight=\"bold\">%s</span>" % s
+
 def handleBloggerAPIFault(e, primary, username, blog_id, url):
     if e.faultCode == 'Method Error':
-        reportError(primary, _('URL \'%s\' may not be a valid bloggerAPI. XML-RPC Server reported: <span style=\"italic\">%s</span>.') % (url, e.faultString))
+        reportError(primary, _('URL \'%s\' may not be a valid bloggerAPI. XML-RPC Server reported: %s.') % (url, italic(e.faultString)))
     elif e.faultCode == 'PasswordError':
-        reportError(primary, _('Unknown username <span weight="bold">%s</span> or password trying to post blog entry to XML-RPC server <span style="italic">%s</span>.') % (username, url))
+        reportError(primary, _('Unknown username %s or password trying to post blog entry to XML-RPC server %s.') % (bold(username), italic(url)))
     elif e.faultCode == 'PostError':
-        reportError(primary, _('Could not post to blog \'%s\' at bloggerAPI XML-RPC server \'%s\'. Server reported: <span style=\"italic\">%s</span>.') % (blog_id, url, e.faultString))
+        reportError(primary, _('Could not post to blog \'%s\' at bloggerAPI XML-RPC server \'%s\'. Server reported: %s.') % (blog_id, url, italic(e.faultString)))
     else:
-        reportError(primary, _('The bloggerAPI server (%s) reported an error I don\'t understand: \'%s, <span style="italic">%s</span>\'. \n\nPlease email this error message to seth@gnome.org so I can address it.') % (url, e.faultCode, e.faultString))
+        reportError(primary, _('The bloggerAPI server (%s) reported an error I don\'t understand: \'%s, %s\'. \n\nPlease email this error message to seth@gnome.org so I can address it.') % (url, italic(e.faultCode), e.faultString))
 
 def reportError(primaryText, secondaryText):
     alert = HIGAlert(primaryText, secondaryText,

@@ -1,7 +1,7 @@
 import xmlrpclib
 import time
 
-import gtk
+from gtk import TRUE, FALSE
 
 import gettext
 _ = gettext.gettext
@@ -28,9 +28,9 @@ class Blog:
           cookie = server.LJ.XMLRPC.login(info)
         except xmlrpclib.Fault, e:
             hig_alert.reportError(_("Could not post Blog entry"), _("Your username or password is invalid. Please double-check the preferences."))
-            return gtk.FALSE
+            return FALSE
 
-        success = gtk.TRUE
+        success = TRUE
 
         curtime = time.localtime()
         info = {
@@ -54,10 +54,10 @@ class Blog:
 
         except xmlrpclib.Fault, e:
           hig_alert.handleBloggerAPIFault(e, _("Could not post blog entry"), username, username, url)
-          success = gtk.FALSE
+          success = FALSE
         except xmlrpclib.ProtocolError, e:
-          hig_alert.reportError(_("Could not post Blog entry"), _('URL \'%s\' does not seem to be a valid LiveJournal XML-RPC server. Web server reported: <span style=\"italic\">%s</span>.') % (url, e.errmsg))
-          success = gtk.FALSE
+          hig_alert.reportError(_("Could not post Blog entry"), _('URL \'%s\' does not seem to be a valid LiveJournal XML-RPC server. Web server reported: %s.') % (url, hig_alert.italic(e.errmsg)))
+          success = FALSE
 
         print ("Success is....")
         print (success)

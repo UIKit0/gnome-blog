@@ -1,3 +1,18 @@
+2004-01-11    <clarkbw@cvs.gnome.org>
+
+	* rich_entry.py: use new hig_alert methods for styled text
+
+	* protocols/livejournal.py: 
+	* protocols/bloggerAPI.py: 
+	* protocols/advogato.py: 
+	* protocols/MetaWeblog.py: 
+	use new hig_alert methods
+	lightened gtk import
+
+	* hig_alert.py: 
+	new italic and bold methods to handle markup for alerts
+	replaced all markup in translatable text and moved to new methods
+
 2004-01-09    <clarkbw@cvs.gnome.org>
 
 	* gnomeblog.schemas.in: removed the useless use_blogger_dot_com entry

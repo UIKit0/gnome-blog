@@ -1,6 +1,6 @@
 import xmlrpclib
 
-import gtk
+from gtk import FALSE, TRUE
 import gconf
 
 import gettext
@@ -33,7 +33,7 @@ class Blog:
             hig_alert.handleBloggerAPIFault(e, _("Could not get list of blogs"), username, None, url)
             return
         except xmlrpclib.ProtocolError, e:            
-            hig_alert.reportError(_("Could not get list of blogs"), _('URL \'%s\' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: <span style=\"italic\">%s</span>.') % (url, e.errmsg))
+            hig_alert.reportError(_("Could not get list of blogs"), _('URL \'%s\' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: %s.') % (url, hig_alert.italic(e.errmsg)))
             return
 
         if ((bloglist == None) or (len(bloglist) == 0)):
@@ -57,7 +57,7 @@ class Blog:
         
         if (base_url == None):
             hig_alert.reportError(_("Could not post Blog entry"), _("No XML-RPC server URL to post blog entries to is set, or the value could not be retrieved from GConf. Your entry will remain in the blogger window."))
-            return gtk.FALSE
+            return FALSE
 
         blog_id  = client.get_string(gconf_prefix + "/blog_id")
 
@@ -71,7 +71,7 @@ class Blog:
             password = ""
             
         content = title + "\n" + entry
-        success = gtk.TRUE
+        success = TRUE
 
         server = xmlrpclib.Server(url)
 
@@ -80,10 +80,10 @@ class Blog:
                                    content, xmlrpclib.True)
         except xmlrpclib.Fault, e:
             hig_alert.handleBloggerAPIFault(e, _("Could not post blog entry"), username, blog_id, url)
-            success = gtk.FALSE
+            success = FALSE
         except xmlrpclib.ProtocolError, e:
-            hig_alert.reportError(_("Could not post Blog entry"), _('URL \'%s\' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: <span style=\"italic\">%s</span>.') % (url, e.errmsg))
-            success = gtk.FALSE
+            hig_alert.reportError(_("Could not post Blog entry"), _('URL \'%s\' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: %s.') % (url, hig_alert.italic(e.errmsg)))
+            success = FALSE
 
         print ("Success is....")
         print (success)

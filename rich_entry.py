@@ -132,18 +132,16 @@ class RichEntry(gtk.TextView):
                     file_info = gnome.vfs.get_file_info(uri, gnome.vfs.FILE_INFO_GET_MIME_TYPE)
                     file_contents = gnome.vfs.read_entire_file(uri)
                 except gnome.vfs.Error, e:
-                    i_uri = "<span style='italic'>" + uri + "</span>"
                     hig_alert.reportError(_("Could not load dragged in image"),
-                                          _("Error loading %s was: %s") % (i_uri, e))
+                                          _("Error loading %s was: %s") % (hig_alert.italic(uri), e))
                 loader.write(file_contents)
                 try:
                     loader.close()
                     pixbuf = loader.get_pixbuf()                    
                 except gobject.GError, e:
                     pixbuf = None
-                    i_uri = "<span style='italic'>" + uri + "</span>"
                     hig_alert.reportError(_("Could not load dragged in image"),
-                                          _("Error loading %s was: %s") % (i_uri, e))
+                                          _("Error loading %s was: %s") % (hig_alert.italic(uri), e))
                     
                 if (pixbuf):
                     # Create a new image tag

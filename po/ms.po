@@ -5,7 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
-"POT-Creation-Date: 2003-11-03 01:35+0800\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-11-24 05:53+0800\n"
 "PO-Revision-Date: 2003-11-03 05:03+0800\n"
 "Last-Translator: Hasbullah Bin Pit <sebol@ikhlas.com>\n"
 "Language-Team: Projek Gabai <gabai-penyumbang@lists.sourceforge.net>\n"
@@ -17,8 +18,7 @@ msgstr ""
 msgid "Accessories"
 msgstr "Aksesori"
 
-#: GNOME_BlogApplet.server.in.h:2
-#: gnome-blog.desktop.in.h:1
+#: GNOME_BlogApplet.server.in.h:2 gnome-blog.desktop.in.h:1
 msgid "Blog Entry Poster"
 msgstr "Pengepos Kemasukan Blog"
 
@@ -71,35 +71,46 @@ msgid "Username to use in accessing the blog"
 msgstr "Namapengguna digunakan untuk mengakses blog"
 
 #. !/usr/bin/env python
-#: blog_applet.py:29
+#. maybe someone can do this trick without string?
+#: blog_applet.py:31
 msgid "About"
 msgstr "Perihal"
 
-#: blog_applet.py:32
+#: blog_applet.py:34
 msgid "Blog"
 msgstr "Blog"
 
-#: blog_applet.py:61
+#. self._showPrefDialog()
+#: blog_applet.py:67
 msgid "A GNOME Web Blogging Applet"
 msgstr "Applet PemBlog Web GNOME"
 
-#: blog_poster.py:31
+#. take the XML_RPC value from GConf
+#. split the URL up into http:, '', domainname, extra
+#. join back up the URL into http://domainname
+#: blog_applet.py:102
+#, python-format
+msgid "Create a blog entry for %s at %s"
+msgstr "Cipta kemasukan bloh bagi %s pada %s"
+
+#. Set tooltip to the applet button
+#: blog_poster.py:32
 msgid "_Post Entry"
 msgstr "_Pos Kemasukan"
 
-#. link_tag = self.blogBuffer.create_tag("a")
-#. link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
-#. link_tag.set_property("foreground", "#0000FF")
-#. linkButton = InsertButton
-#: blog_poster.py:65
+#: blog_poster.py:51
+msgid "Preferences..."
+msgstr "Keutamaan..."
+
+#: blog_poster.py:63
 msgid "Title:"
 msgstr "Tajuk:"
 
-#: blog_poster.py:87
+#: blog_poster.py:85
 msgid "Couldn't upload images"
 msgstr "Tak dapat memuatnaikkan imej"
 
-#: blog_poster.py:87
+#: blog_poster.py:85
 msgid "The blog protocol in use does not support uploading images"
 msgstr "Protokol blog digunakan tak menyokong pemuatnaikan imej"
 
@@ -108,13 +119,17 @@ msgstr "Protokol blog digunakan tak menyokong pemuatnaikan imej"
 #. Call back our parent informing them the entry was posted
 #. Popup a dialogue confirming even if its deemed
 #. unreasonable
-#: blog_poster.py:115
+#: blog_poster.py:121
 msgid "Blog Entry is Blank"
 msgstr "Kemasukan Blog Kosong"
 
-#: blog_poster.py:115
-msgid "No text was entered in the blog entry box. Please enter some text and try again"
-msgstr "Tiada teks dimasukkan pada kekotak kemasukan blog. Sila masukkan teks dan cuba lagi"
+#: blog_poster.py:121
+msgid ""
+"No text was entered in the blog entry box. Please enter some text and try "
+"again"
+msgstr ""
+"Tiada teks dimasukkan pada kekotak kemasukan blog. Sila masukkan teks dan "
+"cuba lagi"
 
 #: blogger_prefs.py:19
 msgid "Blogger Preferences"
@@ -125,7 +140,7 @@ msgid "Self-Run MovableType"
 msgstr "Laksana-Sendiri Jenisbolehgerak"
 
 #: blogger_prefs.py:38
-msgid "Self-Run Pybloxsom"
+msgid "Self-Run Pyblosxom"
 msgstr "Laksana-Sendiri Pybloxsom"
 
 #: blogger_prefs.py:39
@@ -160,14 +175,11 @@ msgstr "Namapengguna"
 msgid "Password:"
 msgstr "Katalaluan:"
 
-#: blogger_prefs.py:113
-#: blogger_prefs.py:128
-#: blogger_prefs.py:133
+#: blogger_prefs.py:113 blogger_prefs.py:128 blogger_prefs.py:133
 msgid "XML-RPC URL:"
 msgstr "URL XML-RPC:"
 
-#: blogger_prefs.py:118
-#: blogger_prefs.py:123
+#: blogger_prefs.py:118 blogger_prefs.py:123
 msgid "Base Blog URL:"
 msgstr "URL Blog Dasar:"
 
@@ -178,70 +190,81 @@ msgstr "bloggerAPI"
 #. FIXME: popup an error dialog
 #: hig_alert.py:7
 #, python-format
-msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: <span style=\"italic\">%s</span>."
-msgstr "URL '%s' mungkin bukan bloggerAPI yg sah. Pelayan XML-RPC melaporkan: <span style=\"italic\">%s</span>."
+msgid ""
+"URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: <span style="
+"\"italic\">%s</span>."
+msgstr ""
+"URL '%s' mungkin bukan bloggerAPI yg sah. Pelayan XML-RPC melaporkan: <span "
+"style=\"italic\">%s</span>."
 
 #: hig_alert.py:9
 #, python-format
-msgid "Unknown username <span weight=\"bold\">%s</span> or password trying to post blog entry to XML-RPC server <span style=\"italic\">%s</span>."
-msgstr "Namapengguna  <span weight=\"bold\">%s</span> atau katalaluan tak diketahui untuk mengepos kemasukan blog ke pelayan XML-RPC<span style=\"italic\">%s</span>."
+msgid ""
+"Unknown username <span weight=\"bold\">%s</span> or password trying to post "
+"blog entry to XML-RPC server <span style=\"italic\">%s</span>."
+msgstr ""
+"Namapengguna  <span weight=\"bold\">%s</span> atau katalaluan tak diketahui "
+"untuk mengepos kemasukan blog ke pelayan XML-RPC<span style=\"italic\">%s</"
+"span>."
 
 #: hig_alert.py:11
 #, python-format
-msgid "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server reported: <span style=\"italic\">%s</span>."
-msgstr "Tak dapat mengepos ke blog '%s' pada bloggerAPI pelayan XML-RPC  '%s'. Pelayan melaporkan: <span style=\"italic\">%s</span>."
+msgid ""
+"Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
+"reported: <span style=\"italic\">%s</span>."
+msgstr ""
+"Tak dapat mengepos ke blog '%s' pada bloggerAPI pelayan XML-RPC  '%s'. "
+"Pelayan melaporkan: <span style=\"italic\">%s</span>."
 
 #: hig_alert.py:13
 #, python-format
 msgid ""
-"The bloggerAPI server (%s) reported an error I don't understand: '%s, <span style=\"italic\">%s</span>'. \n"
+"The bloggerAPI server (%s) reported an error I don't understand: '%s, <span "
+"style=\"italic\">%s</span>'. \n"
 "\n"
 "Please email this error message to seth@gnome.org so I can address it."
 msgstr ""
-"Pelayan  bloggerAPI (%s) melaporkan ralat yang tak diketahui: '%s, <span style=\"italic\">%s</span>'. \n"
+"Pelayan  bloggerAPI (%s) melaporkan ralat yang tak diketahui: '%s, <span "
+"style=\"italic\">%s</span>'. \n"
 "\n"
 "Sila emel mesej ralat ini ke seth@gnome.org supaya saya boleh mengenalinya."
 
+#. Hack for addHyperlink with old pygtk's
 #. GtkTextView already defines drag and drop targets, get them
 #. Unfortunately old_targets string field has a funny type
 #. that needs to be explicitly converted to string
 #. Add the DND type that we support and set the new list of types
-#. Hack for addHyperlink with old pygtk's
 #. this is an older version of pygtk that doesn't
 #. have a way to create anonymous tags, hack around it
 #. 398 means text/uri-list
-#: rich_entry.py:116
-#: rich_entry.py:124
+#: rich_entry.py:136 rich_entry.py:145
 msgid "Could not load dragged in image"
 msgstr "Tak dapat memuatkan yangf diheret pada imej"
 
-#: rich_entry.py:117
-#: rich_entry.py:125
-#, python-format
-msgid "Error loading <span style='italic'>%s</span> was: %s"
-msgstr "Ralat memuatkan <span style='italic'>%s</span> adalah: %s"
+#: rich_entry.py:137 rich_entry.py:146
+msgid "Error loading %s was: %s"
+msgstr "Ralat memuatkan %s adalah: %s"
 
 #. Create a new image tag
 #. Insert the pixbuf, and then set the new image
 #. tag around it so that we can generate its HTML later
 #. Found Hyperlink, activating
-#: rich_entry.py:175
-msgid "Add _Link"
-msgstr "Tambah _Pautan"
+#: rich_entry.py:196
+msgid "Add _Link..."
+msgstr "Tambah _Pautan..."
 
-#: rich_entry.py:180
+#: rich_entry.py:201
 msgid "Add Link"
 msgstr "Tambah Pautan"
 
-#: rich_entry.py:181
+#: rich_entry.py:202
 msgid "_Add Link"
 msgstr "_Tambah Pautan"
 
-#: rich_entry.py:188
+#: rich_entry.py:210
 msgid "Text:"
 msgstr "Teks:"
 
-#: rich_entry.py:191
+#: rich_entry.py:213
 msgid "URL:"
 msgstr "URL:"
-

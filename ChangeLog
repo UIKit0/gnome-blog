@@ -1,5 +1,11 @@
 2004-10-26  Seth Nickell  <seth@gnome.org>
 
+	* acinclude.m4:
+
+	Remove this, we no longer include any C Python modules.
+
+2004-10-26  Seth Nickell  <seth@gnome.org>
+
         Patch from Maciej Katafiasz <mnews2@wp.pl>
 	
 	* blog_applet.py:

@@ -1,0 +1,5 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+GNOME_BlogApplet.server.in
+GNOME_BlogApplet.xml
+gnomeblog.schemas.in

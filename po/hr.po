@@ -1,11 +1,11 @@
-# Translation of gnome-blog to Croatian
-# Copyright (C) Croatian team
-# Translators: Automatski Prijevod <>,
+# Translation of gnome-blog to Croatiann
+# Copyright (C) Croatiann team
+# Translators: Automatski Prijevod <>,Nikola Planinac <>,
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog 0\n"
-"POT-Creation-Date: 2003-11-06 18:08+0100\n"
-"PO-Revision-Date: 2003-11-10 16:50+CET\n"
+"POT-Creation-Date: 2004-02-01 16:59+0100\n"
+"PO-Revision-Date: 2004-02-05 23:47+CET\n"
 "Last-Translator: auto\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "MIME-Version: 1.0\n"
@@ -33,79 +33,48 @@ msgstr "_O..."
 msgid "_Preferences..."
 msgstr "_Podešenja..."
 
-#: gnome-blog.desktop.in.h:2
-msgid "Post an entry to a web log"
-msgstr ""
-
-#: gnomeblog.schemas.in.h:1
-msgid "Password to use in accessing the blog"
-msgstr ""
-
-#: gnomeblog.schemas.in.h:2
-msgid "Post blog entries to Blogger.com"
-msgstr ""
-
-#: gnomeblog.schemas.in.h:3
-msgid "Protocol to use in accessing the blog"
-msgstr ""
-
-#: gnomeblog.schemas.in.h:4
-msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
-msgstr ""
-
-#: gnomeblog.schemas.in.h:5
-msgid "The application's preferences have been initialized"
-msgstr ""
-
-#: gnomeblog.schemas.in.h:6
-msgid "The id or name of the particular blog to use on the XML-RPC server"
-msgstr ""
-
-#: gnomeblog.schemas.in.h:7
-msgid "URL to the bloggerAPI compatible XML-RPC server"
-msgstr ""
-
-#: gnomeblog.schemas.in.h:8
-msgid "Username to use in accessing the blog"
-msgstr ""
-
 #: blog_applet.py:31
 msgid "About"
 msgstr "O"
 
 #: blog_applet.py:34
 msgid "Blog"
-msgstr ""
+msgstr "Blogče"
 
-#: blog_applet.py:66
+#: blog_applet.py:67
 msgid "A GNOME Web Blogging Applet"
 msgstr ""
 
-#: blog_applet.py:101
-msgid "Create a blog entry for "
+#: blog_applet.py:102
+#, python-format
+msgid "Create a blog entry for %s at %s"
 msgstr ""
 
-#: blog_poster.py:31
+#: blog_poster.py:32
 msgid "_Post Entry"
 msgstr ""
 
-#: blog_poster.py:65
+#: blog_poster.py:51
+msgid "Preferences..."
+msgstr "Podešenja..."
+
+#: blog_poster.py:63
 msgid "Title:"
 msgstr "Naslov:"
 
-#: blog_poster.py:87
+#: blog_poster.py:98
 msgid "Couldn't upload images"
 msgstr ""
 
-#: blog_poster.py:87
+#: blog_poster.py:98
 msgid "The blog protocol in use does not support uploading images"
 msgstr ""
 
-#: blog_poster.py:115
+#: blog_poster.py:134
 msgid "Blog Entry is Blank"
 msgstr ""
 
-#: blog_poster.py:115
+#: blog_poster.py:134
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
@@ -115,83 +84,143 @@ msgstr ""
 msgid "Blogger Preferences"
 msgstr ""
 
-#: blogger_prefs.py:37
+#: blogger_prefs.py:38
 msgid "Self-Run MovableType"
 msgstr ""
 
-#: blogger_prefs.py:38
-msgid "Self-Run Pybloxsom"
+#: blogger_prefs.py:39
+msgid "Self-Run Pyblosxom"
 msgstr ""
 
-#: blogger_prefs.py:39
+#: blogger_prefs.py:40
 msgid "Self-Run Other"
 msgstr ""
 
-#: blogger_prefs.py:43
+#: blogger_prefs.py:44
 msgid "Blog Type:"
 msgstr ""
 
-#: blogger_prefs.py:52
+#: blogger_prefs.py:54
 msgid "Blog Protocol:"
 msgstr ""
 
-#: blogger_prefs.py:56
+#: blogger_prefs.py:58
 msgid "Blog Base URL:"
 msgstr ""
 
-#: blogger_prefs.py:58
+#: blogger_prefs.py:60
 msgid "Blog Name:"
 msgstr ""
 
-#: blogger_prefs.py:60
+#: blogger_prefs.py:62
 msgid "Lookup Blogs"
 msgstr ""
 
-#: blogger_prefs.py:70
+#: blogger_prefs.py:72
 msgid "Username:"
 msgstr "Korisničko ime:"
 
-#: blogger_prefs.py:71
+#: blogger_prefs.py:73
 msgid "Password:"
 msgstr "Lozinka:"
 
-#: blogger_prefs.py:113 blogger_prefs.py:128 blogger_prefs.py:133
+#: blogger_prefs.py:115 blogger_prefs.py:130 blogger_prefs.py:135
+#: blogger_prefs.py:141
 msgid "XML-RPC URL:"
 msgstr ""
 
-#: blogger_prefs.py:118 blogger_prefs.py:123
+#: blogger_prefs.py:120 blogger_prefs.py:125
 msgid "Base Blog URL:"
 msgstr ""
 
-#: blogger_prefs.py:127
-msgid "bloggerAPI"
+#: gnome-blog.desktop.in.h:2
+msgid "Post an entry to a web log"
 msgstr ""
 
-#: rich_entry.py:131 rich_entry.py:139
+#: gnomeblog.schemas.in.h:1
+msgid "Password to use in accessing the blog"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:2
+msgid "Protocol to use in accessing the blog"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:3
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:4
+msgid "The application's preferences have been initialized"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:5
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:6
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr ""
+
+#: gnomeblog.schemas.in.h:7
+msgid "Username to use in accessing the blog"
+msgstr ""
+
+#: protocols/advogato.py:23 protocols/advogato.py:26 protocols/advogato.py:38
+#: protocols/bloggerAPI.py:59 protocols/bloggerAPI.py:85
+#: protocols/livejournal.py:30 protocols/livejournal.py:59
+msgid "Could not post Blog entry"
+msgstr ""
+
+#: protocols/advogato.py:23
+msgid "Your username is invalid. Please double-check the preferences."
+msgstr ""
+
+#: protocols/advogato.py:26 protocols/livejournal.py:30
+msgid "Your username or password is invalid. Please double-check the preferences."
+msgstr ""
+
+#: protocols/advogato.py:35 protocols/bloggerAPI.py:82
+#: protocols/livejournal.py:56
+msgid "Could not post blog entry"
+msgstr ""
+
+#: protocols/bloggerAPI.py:33 protocols/bloggerAPI.py:36
+msgid "Could not get list of blogs"
+msgstr ""
+
+#: protocols/bloggerAPI.py:59
+msgid ""
+"No XML-RPC server URL to post blog entries to is set, or the value could not "
+"be retrieved from GConf. Your entry will remain in the blogger window."
+msgstr ""
+
+#: rich_entry.py:135 rich_entry.py:143
 msgid "Could not load dragged in image"
 msgstr ""
 
-#: rich_entry.py:132 rich_entry.py:140
-msgid "Error loading <span style='italic'>%s</span> was: %s"
+#: rich_entry.py:136 rich_entry.py:144
+#, python-format
+msgid "Error loading %s was: %s"
 msgstr ""
 
-#: rich_entry.py:190
-msgid "Add _Link"
+#: rich_entry.py:194
+#, fuzzy
+msgid "Add _Link..."
 msgstr "_Dodaj link"
 
-#: rich_entry.py:195
+#: rich_entry.py:199
 msgid "Add Link"
 msgstr "Dodaj link"
 
-#: rich_entry.py:196
+#: rich_entry.py:200
 msgid "_Add Link"
 msgstr "_Dodaj link"
 
-#: rich_entry.py:203
+#: rich_entry.py:208
 msgid "Text:"
 msgstr "Tekst:"
 
-#: rich_entry.py:206
+#: rich_entry.py:211
 msgid "URL:"
 msgstr "URL:"
 

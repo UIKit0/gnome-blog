@@ -9,10 +9,17 @@ import gnome.ui
 import gnome.applet
 import gconf
 
+import gettext
+_ = gettext.gettext
+
 from gnomeblog import blog_poster
 from gnomeblog import aligned_window
 from gnomeblog import blogger_prefs
 from gnomeblog import gnome_blog_globals
+
+#FIXME: need to get this path from auto*
+gettext.bindtextdomain('gnome-blog', gnmoe_blog_globals.localedir)
+gettext.textdomain('gnome-blog')
 
 class BloggerApplet(gnome.applet.Applet):
     def __init__(self):
@@ -21,10 +28,10 @@ class BloggerApplet(gnome.applet.Applet):
     def init(self):
         self.toggle = gtk.ToggleButton()
         self.setup_menu_from_file (None, "GNOME_BlogApplet.xml",
-                                   None, [("About", self._showAboutDialog), ("Pref", self._openPrefs)])
+                                   None, [(_("About"), self._showAboutDialog), ("Pref", self._openPrefs)])
 
         button_box = gtk.HBox()
-        button_box.pack_start(gtk.Label("Blog"))
+        button_box.pack_start(gtk.Label(_("Blog")))
         self.arrow = gtk.Arrow(gtk.ARROW_DOWN, gtk.SHADOW_IN)
         button_box.pack_start(self.arrow)
 
@@ -53,7 +60,7 @@ class BloggerApplet(gnome.applet.Applet):
     
     def _showAboutDialog(self, uicomponent, verb):
         gnome.ui.About(gnome_blog_globals.name, gnome_blog_globals.version, "Copyright 2003 Seth Nickell",
-                       "A GNOME Web Blogging Applet",["Seth Nickell <seth@gnome.org>"],[],
+                       _("A GNOME Web Blogging Applet"),["Seth Nickell <seth@gnome.org>"],[],
                        "",gtk.gdk.pixbuf_new_from_file(gnome_blog_globals.image_dir + "/gnome-blog.png")).show()
 
     def _showPrefDialog(self):

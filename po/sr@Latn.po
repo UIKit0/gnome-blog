@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
-"POT-Creation-Date: 2003-09-03 20:25+0200\n"
+"POT-Creation-Date: 2003-09-05 00:04-0700\n"
 "PO-Revision-Date: 2003-09-03 20:25+0200\n"
 "Last-Translator: Danilo Šegan <danilo@prevod.org>\n"
 "Language-Team: Serbian (sr) <serbiangnome-listaL@nongnu.org>\n"
@@ -41,18 +41,130 @@ msgid "Post blog entries to Blogger.com"
 msgstr "Pošalji unos u blog na Blogger.com"
 
 #: gnomeblog.schemas.in.h:3
+#, fuzzy
+msgid "Protocol to use in accessing the blog"
+msgstr "Lozinka kojom se pristupa blogu"
+
+#: gnomeblog.schemas.in.h:4
 msgid "The application's preferences have been initialized"
 msgstr "Učitane su postavke programa"
 
-#: gnomeblog.schemas.in.h:4
+#: gnomeblog.schemas.in.h:5
 msgid "The id or name of the particular blog to use on the XML-RPC server"
 msgstr ""
 "Identifikator ili ime određenog bloga koji da koristi na XML-RPC serveru"
 
-#: gnomeblog.schemas.in.h:5
+#: gnomeblog.schemas.in.h:6
 msgid "URL to the bloggerAPI compatible XML-RPC server"
 msgstr "Adresa za XML-RPC server saglasan sa bloggerAPI-jem"
 
-#: gnomeblog.schemas.in.h:6
+#: gnomeblog.schemas.in.h:7
 msgid "Username to use in accessing the blog"
 msgstr "Korisničko ime za pristup blogu"
+
+#. !/usr/bin/env python
+#. FIXME: need to get this path from auto*
+#: blog_applet.py:31
+#, fuzzy
+msgid "About"
+msgstr "_O programu..."
+
+#: blog_applet.py:34
+msgid "Blog"
+msgstr ""
+
+#: blog_applet.py:63
+msgid "A GNOME Web Blogging Applet"
+msgstr ""
+
+#: blog_poster.py:32
+msgid "_Post Entry"
+msgstr ""
+
+#. link_tag = self.blogBuffer.create_tag("a")
+#. link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
+#. link_tag.set_property("foreground", "#0000FF")
+#. linkButton = InsertButton
+#: blog_poster.py:64
+msgid "Title:"
+msgstr ""
+
+#. Don't post silly blog entries like blank ones
+#. Only delete the entry if posting was successful
+#. Popup a dialogue confirming even if its deemed
+#. unreasonable
+#: blog_poster.py:102
+msgid "Blog Entry is Blank"
+msgstr ""
+
+#: blogger_prefs.py:20
+#, fuzzy
+msgid "Blogger Preferences"
+msgstr "_Postavke"
+
+#: blogger_prefs.py:39
+msgid "Self-Run MovableType"
+msgstr ""
+
+#: blogger_prefs.py:40
+msgid "Self-Run Pybloxsom"
+msgstr ""
+
+#: blogger_prefs.py:41
+msgid "Self-Run Other"
+msgstr ""
+
+#: blogger_prefs.py:58
+msgid "Blog Base URL:"
+msgstr ""
+
+#: blogger_prefs.py:60
+msgid "Blog Name:"
+msgstr ""
+
+#: blogger_prefs.py:62
+msgid "Lookup Blogs"
+msgstr ""
+
+#: blogger_prefs.py:114 blogger_prefs.py:126 blogger_prefs.py:130
+msgid "XML-RPC URL:"
+msgstr ""
+
+#: blogger_prefs.py:118 blogger_prefs.py:122
+msgid "Base Blog URL:"
+msgstr ""
+
+#: blogger_prefs.py:125
+msgid "bloggerAPI"
+msgstr ""
+
+#. FIXME: popup an error dialog
+#: hig_alert.py:8
+#, python-format
+msgid ""
+"URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: <span style="
+"\"italic\">%s</span>."
+msgstr ""
+
+#: hig_alert.py:10
+#, python-format
+msgid ""
+"Unknown username <span weight=\"bold\">%s</span> or password trying to post "
+"blog entry to XML-RPC server <span style=\"italic\">%s</span>."
+msgstr ""
+
+#: hig_alert.py:12
+#, python-format
+msgid ""
+"Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
+"reported: <span style=\"italic\">%s</span>."
+msgstr ""
+
+#: hig_alert.py:14
+#, python-format
+msgid ""
+"The bloggerAPI server (%s) reported an error I don't understand: '%s, <span "
+"style=\"italic\">%s</span>'. \n"
+"\n"
+"Please email this error message to seth@gnome.org so I can address it."
+msgstr ""

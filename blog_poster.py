@@ -2,6 +2,9 @@ import gtk
 import pango
 import gconf
 
+import gettext
+_ = gettext.gettext
+
 from gnomeblog import hig_alert
 from gnomeblog import rich_entry
 from gnomeblog import blog
@@ -26,7 +29,7 @@ class BlogPoster(gtk.Frame):
         
         self.blogEntry   = rich_entry.RichEntry()
         scroller         = gtk.ScrolledWindow()
-        self.postButton  = gtk.Button("_Post Entry")
+        self.postButton  = gtk.Button(_("_Post Entry"))
         
         scroller.add(self.blogEntry)
         scroller.set_policy(gtk.POLICY_NEVER, gtk.POLICY_AUTOMATIC)
@@ -58,7 +61,7 @@ class BlogPoster(gtk.Frame):
 
         titleBox = gtk.HBox()
         titleBox.set_spacing(6)
-        titleBox.pack_start(gtk.Label("Title:"), expand=gtk.FALSE)
+        titleBox.pack_start(gtk.Label(_("Title:")), expand=gtk.FALSE)
         titleBox.pack_start(self.titleEntry)
 
         box.pack_start(titleBox)
@@ -96,7 +99,7 @@ class BlogPoster(gtk.Frame):
         # Popup a dialogue confirming even if its deemed
         # unreasonable
         if (text == None or text == ""):
-            hig_alert.reportError("Blog Entry is Blank", "No text was entered in the blog entry box. Please enter some text and try again")
+            hig_alert.reportError(_("Blog Entry is Blank", "No text was entered in the blog entry box. Please enter some text and try again"))
             return gtk.FALSE
         else:
             return gtk.TRUE

@@ -1,3 +1,15 @@
+2003-09-05  Seth Nickell  <snickell@stanford.edu>
+
+	* blog_applet.py:
+	* blog_poster.py:
+	* blogger_prefs.py:
+	* gnome_blog_globals.py.in:
+	* hig_alert.py:
+
+	Try to use gettext to allow localization of all
+	the strings in the python code...not sure if this
+	works.
+	
 2003-09-04  Seth Nickell  <snickell@stanford.edu>
 
 	* blogger_prefs.py:

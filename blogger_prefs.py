@@ -1,6 +1,9 @@
 import gtk
 import gconf
 
+import gettext
+_ = gettext.gettext
+
 from gnomeblog import gconf_widgets
 from gnomeblog import hig_alert
 from gnomeblog import blog
@@ -14,7 +17,7 @@ class LeftLabel(gtk.Label):
         
 class BloggerPrefs(gtk.Dialog):
     def __init__(self, prefs_key):
-        gtk.Dialog.__init__(self, title="Blogger Preferences", buttons=(gtk.STOCK_CLOSE, gtk.RESPONSE_CLOSE))
+        gtk.Dialog.__init__(self, title=_("Blogger Preferences"), buttons=(gtk.STOCK_CLOSE, gtk.RESPONSE_CLOSE))
 
         global gconf_prefix
 
@@ -33,9 +36,9 @@ class BloggerPrefs(gtk.Dialog):
         blogTypeMenu.setStringValuePairs([("Blogger.com", "blogger.com"),
                                          ("Advogato", "advogato.org"),
                                          ("-", ""),
-                                         ("Self-Run MovableType", "custom-mt"),
-                                         ("Self-Run Pybloxsom", "custom-pybloxsom"),
-                                         ("Self-Run Other", "custom")])
+                                         (_("Self-Run MovableType"), "custom-mt"),
+                                         (_("Self-Run Pybloxsom"), "custom-pybloxsom"),
+                                         (_("Self-Run Other"), "custom")])
 
         blogTypeBox = gtk.HBox()
         blogTypeBox.set_spacing(6)
@@ -52,11 +55,11 @@ class BloggerPrefs(gtk.Dialog):
         
         self.urlEntry = gconf_widgets.Entry(gconf_prefix + "/xmlrpc_url")
         self.urlEntry.set_width_chars(45)
-        self.urlLabel = LeftLabel("Blog Base URL:")
+        self.urlLabel = LeftLabel(_("Blog Base URL:"))
 
-	self.blogLabel = LeftLabel("Blog Name:")
+	self.blogLabel = LeftLabel(_("Blog Name:"))
         self.blogMenu = gconf_widgets.OptionMenu(gconf_prefix + "/blog_id")
-        self.lookupButton = gtk.Button("Lookup Blogs")
+        self.lookupButton = gtk.Button(_("Lookup Blogs"))
         self.lookupButton.connect("clicked", self._onLookupBlogsButton)
 
 
@@ -108,23 +111,23 @@ class BloggerPrefs(gtk.Dialog):
         if (blog_type == "custom"):
             url = None
             protocol = None
-            url_description = "XML-RPC URL:"
+            url_description = _("XML-RPC URL:")
         elif (blog_type == "custom-mt"):
             url = None
             protocol = "MetaWeblog"
-            url_description = "Base Blog URL:"
+            url_description = _("Base Blog URL:")
         elif (blog_type == "custom-pybloxsom"):
             url = None
             protocol = "bloggerAPI"
-            url_description = "Base Blog URL:"
+            url_description = _("Base Blog URL:")
         elif (blog_type == "blogger.com"):
             url = "http://plant.blogger.com/api/RPC2"
-            protocol = "bloggerAPI"
-            url_description = "XML-RPC URL:"
+            protocol = _("bloggerAPI")
+            url_description = _("XML-RPC URL:")
         elif (blog_type == "advogato.org"):
             url = "http://www.advogato.org/XMLRPC"
             protocol = "advogato"
-            url_description = "XML-RPC URL:"
+            url_description = _("XML-RPC URL:")
 	    lookup = gtk.FALSE
         else:
             # FIXME: popup an error dialog

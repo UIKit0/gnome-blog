@@ -1,3 +1,4 @@
 name = "gnome-blog"
 version = "@VERSION@"
 image_dir = "@prefix@/share/pixmaps"
+localedir = "@prefix@/@DATADIRNAME@/locale"

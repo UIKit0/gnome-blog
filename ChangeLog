@@ -1,3 +1,14 @@
+2003-10-22  Seth Nickell  <seth@gnome.org>
+
+	* blogger_prefs.py:
+	* rich_entry.py:
+
+	Phase 1 complete... Can now DND images into the text view.	
+	Phase 2 is to add support to appropriate backends to
+	actually upload images. Also... to incentivize myself I'll
+	need to add metaweblog API support to pyblosxom so I can
+	use/test the feature :-)
+
 2003-09-19  Christophe Merlet  <redfox@redfoxcenter.org>
 
 	* configure.in (ALL_LINGUAS): Added French (fr).

@@ -1,16 +1,35 @@
 import gtk
 import gtk.gdk
 import pango
+import gobject
+import gnome
+import gnome.vfs
 
 import gettext
 _ = gettext.gettext
 
 from gnomeblog import html_converter
+from gnomeblog import hig_alert
 
 class RichEntry(gtk.TextView):
     def __init__(self):
         self.buffer = gtk.TextBuffer()
         gtk.TextView.__init__(self, self.buffer)
+
+        # GtkTextView already defines drag and drop targets, get them
+        old_targets = self.drag_dest_get_target_list()
+
+        # Unfortunately old_targets string field has a funny type
+        # that needs to be explicitly converted to string
+        targets = []
+        for target in old_targets:
+            targets.append((str(target[0]), target[1], target[2]))
+
+        # Add the DND type that we support and set the new list of types
+        targets.append(("text/uri-list", 0, 398))
+        self.drag_dest_set_target_list(targets)
+        
+        self.connect("drag-data-received", self._onDragDataReceived)
         
         self.set_editable(gtk.TRUE)
         self.set_wrap_mode(gtk.WRAP_WORD)
@@ -60,6 +79,45 @@ class RichEntry(gtk.TextView):
         for property in pango_markup_properties:
             tag.set_property(property[0], property[1])
         return StyleToggle(stock_button, tag, html_tag, self)
+
+    def _onDragDataReceived(self, widget, drag_context, window_x, window_y,
+                            selection_data, info, timestamp):
+        if (info == 398):
+            # 15 means text/uri-list
+            assert(selection_data.format == 8)
+            uri_list = selection_data.data
+            uris = uri_list.split('\r\n')
+
+            (buffer_x, buffer_y) = self.window_to_buffer_coords(gtk.TEXT_WINDOW_WIDGET,
+                                                                window_x, window_y)
+
+            dnd_iter = self.get_iter_at_location(buffer_x, buffer_y)
+            
+            for uri in uris:
+                if (len(uri) <= 0):
+                    continue
+
+                loader = gtk.gdk.PixbufLoader()
+
+                try:
+                    file_contents = gnome.vfs.read_entire_file(uri)
+                except gnome.vfs.Error, e:
+                    hig_alert.reportError("Could not load dragged in image",
+                                          "Error loading <span style='italic'>%s</span> was: %s" % (uri, e))
+                loader.write(file_contents)
+                try:
+                    loader.close()
+                    pixbuf = loader.get_pixbuf()                    
+                except gobject.GError, e:
+                    pixbuf = None
+                    hig_alert.reportError("Could not load dragged in image",
+                                          "Error loading <span style='italic'>%s</span> was: %s" % (uri, e))
+                    
+                if (pixbuf):
+                    self.buffer.insert_pixbuf(dnd_iter, pixbuf)
+            
+        else:
+            print ("Some other sort of data received")
         
     def _onEventAfter(self, widget, event):
         if event.type != gtk.gdk.BUTTON_RELEASE or event.button != 1:

@@ -55,13 +55,7 @@ class BloggerPrefs(gtk.Dialog):
         self.urlEntry.set_width_chars(45)
         self.urlLabel = LeftLabel(_("Blog Base URL:"))
 
-	self.blogLabel = LeftLabel(_("Blog Name:"))
-        self.blogMenu = gconf_widgets.OptionMenu(gconf_prefix + "/blog_id")
-        self.lookupButton = gtk.Button(_("Lookup Blogs"))
-        self.lookupButton.connect("clicked", self._onLookupBlogsButton)
-
-
-        table = gtk.Table(rows=4, columns=3)
+        table = gtk.Table(rows=3, columns=3)
         table.set_row_spacings(6)
         table.set_col_spacings(12)
 
@@ -69,14 +63,11 @@ class BloggerPrefs(gtk.Dialog):
         table.attach(self.urlLabel, 0, 1, 1, 2, xoptions=gtk.FILL)
         table.attach(LeftLabel(_("Username:")), 0, 1, 2, 3, xoptions=gtk.FILL)
         table.attach(LeftLabel(_("Password:")), 0, 1, 3, 4, xoptions=gtk.FILL)
-        table.attach(self.blogLabel, 0, 1, 4, 5, xoptions=gtk.FILL)
 
         table.attach(self.blogProtocolMenu, 1, 3, 0, 1)
         table.attach(self.urlEntry, 1, 3, 1, 2)
         table.attach(gconf_widgets.Entry(gconf_prefix + "/blog_username"), 1, 3, 2, 3)
         table.attach(gconf_widgets.Entry(gconf_prefix + "/blog_password", gtk.TRUE), 1, 3, 3, 4)
-        table.attach(self.blogMenu, 1, 2, 4, 5)
-        table.attach(self.lookupButton, 2, 3, 4, 5, xoptions=gtk.FILL)
 
         vbox = gtk.VBox()
         vbox.pack_start(blogTypeBox)
@@ -158,14 +149,3 @@ class BloggerPrefs(gtk.Dialog):
 
         client.set_string(gconf_prefix + "/url_ending", url_ending)
 
-	self.lookupButton.set_sensitive(lookup)
-        self.blogMenu.set_sensitive(lookup)
-        self.blogLabel.set_sensitive(lookup)
-
-    def _onLookupBlogsButton (self, button):
-        client = gconf.client_get_default()
-
-        blog_id_pairs = blog.getBlogList(gconf_prefix)
-
-        self.blogMenu.setStringValuePairs(blog_id_pairs)
-    

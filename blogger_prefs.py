@@ -54,9 +54,10 @@ class BloggerPrefs(gtk.Dialog):
         self.urlEntry.set_width_chars(45)
         self.urlLabel = LeftLabel("XML-RPC URL:")
 
+	self.blogLabel = LeftLabel("Blog Name:")
         self.blogMenu = gconf_widgets.OptionMenu(gconf_prefix + "/blog_id")
-        lookupButton = gtk.Button("Lookup Blogs")
-        lookupButton.connect("clicked", self._onLookupBlogsButton)
+        self.lookupButton = gtk.Button("Lookup Blogs")
+        self.lookupButton.connect("clicked", self._onLookupBlogsButton)
 
 
         table = gtk.Table(rows=4, columns=3)
@@ -67,14 +68,14 @@ class BloggerPrefs(gtk.Dialog):
         table.attach(self.urlLabel, 0, 1, 1, 2, xoptions=gtk.FILL)
         table.attach(LeftLabel("Username:"), 0, 1, 2, 3, xoptions=gtk.FILL)
         table.attach(LeftLabel("Password:"), 0, 1, 3, 4, xoptions=gtk.FILL)
-        table.attach(LeftLabel("Blog Name:"), 0, 1, 4, 5, xoptions=gtk.FILL)
+        table.attach(self.blogLabel, 0, 1, 4, 5, xoptions=gtk.FILL)
 
         table.attach(self.blogProtocolMenu, 1, 3, 0, 1)
         table.attach(self.urlEntry, 1, 3, 1, 2)
         table.attach(gconf_widgets.Entry(gconf_prefix + "/blog_username"), 1, 3, 2, 3)
         table.attach(gconf_widgets.Entry(gconf_prefix + "/blog_password", gtk.TRUE), 1, 3, 3, 4)
         table.attach(self.blogMenu, 1, 2, 4, 5)
-        table.attach(lookupButton, 2, 3, 4, 5, xoptions=gtk.FILL)
+        table.attach(self.lookupButton, 2, 3, 4, 5, xoptions=gtk.FILL)
 
         vbox = gtk.VBox()
         vbox.pack_start(blogTypeBox)
@@ -99,7 +100,9 @@ class BloggerPrefs(gtk.Dialog):
 
     def _updateBlogType(self, blog_type):
         client = gconf.client_get_default()
-        
+
+        lookup = gtk.TRUE
+
         if (blog_type == "custom"):
             url = None
             protocol = None
@@ -115,6 +118,7 @@ class BloggerPrefs(gtk.Dialog):
         elif (blog_type == "advogato.org"):
             url = "http://www.advogato.org/XMLRPC"
             protocol = "advogato"
+	    lookup = gtk.FALSE
         else:
             # FIXME: popup an error dialog
             print ("Unknown blog type (!)")
@@ -125,7 +129,7 @@ class BloggerPrefs(gtk.Dialog):
             client.set_string(gconf_prefix + "/xmlrpc_url", url)
         else:
             self.urlEntry.set_sensitive(gtk.TRUE)
-            self.urlLabel.set_sensitive(gtk.TRUE)            
+            self.urlLabel.set_sensitive(gtk.TRUE)
 
         if (protocol != None):
             self.blogProtocolMenu.set_sensitive(gtk.FALSE)
@@ -134,6 +138,10 @@ class BloggerPrefs(gtk.Dialog):
         else:
             self.blogProtocolMenu.set_sensitive(gtk.TRUE)
             self.blogProtocolLabel.set_sensitive(gtk.TRUE)
+
+	self.lookupButton.set_sensitive(lookup)
+        self.blogMenu.set_sensitive(lookup)
+        self.blogLabel.set_sensitive(lookup)
 
     def _onLookupBlogsButton (self, button):
         client = gconf.client_get_default()

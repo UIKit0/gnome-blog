@@ -23,10 +23,11 @@ class BlogPoster(gtk.Frame):
         self.postButton  = gtk.Button("Post Entry")
         
         self.blogEntry.set_editable(gtk.TRUE)
+        self.blogEntry.set_wrap_mode(gtk.WRAP_WORD)
 
         scroller.add(self.blogEntry)
         scroller.set_policy(gtk.POLICY_NEVER, gtk.POLICY_AUTOMATIC)
-        scroller.set_size_request(300, 200)
+        scroller.set_size_request(400, 300)
         scroller.set_shadow_type(gtk.SHADOW_IN)
         
         self.postButton.connect("clicked", self.onPostButtonClicked)

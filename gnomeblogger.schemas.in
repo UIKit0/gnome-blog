@@ -1,0 +1,51 @@
+<gconfschemafile>
+  <schemalist>
+
+    <!-- General preferences -->        
+
+    <schema>
+      <key>/schemas/apps/gnome-blogger/blog_username</key>
+      <applyto>/apps/gnome-blogger/blog_username</applyto>
+      <owner>gnome-blogger</owner>
+      <type>string</type>
+      <locale name="C">
+         <short>Username to use in accessing the blog</short>
+      </locale>
+    </schema>
+
+
+    <schema>
+      <key>/schemas/apps/gnome-blogger/blog_password</key>
+      <applyto>/apps/gnome-blogger/blog_password</applyto>
+      <owner>gnome-blogger</owner>
+      <type>string</type>
+      <locale name="C">
+         <short>Password to use in accessing the blog</short>
+      </locale>
+    </schema>
+
+
+    <schema>
+      <key>/schemas/apps/gnome-blogger/blog_id</key>
+      <applyto>/apps/gnome-blogger/blog_id</applyto>
+      <owner>gnome-blogger</owner>
+      <type>string</type>
+      <default>/</default>
+      <locale name="C">
+         <short>The id or name of the particular blog to use on the XML-RPC server</short>
+      </locale>
+    </schema>
+
+
+    <schema>
+      <key>/schemas/apps/gnome-blogger/xmlrpc_url</key>
+      <applyto>/apps/gnome-blogger/xmlrpc_url</applyto>
+      <owner>gnome-blogger</owner>
+      <type>string</type>
+      <locale name="C">
+         <short>URL to the bloggerAPI compatible XML-RPC server</short>
+      </locale>
+    </schema>
+
+</schemalist>
+</gconfschemafile>

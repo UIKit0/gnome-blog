@@ -1,0 +1,32 @@
+2003-08-28  Seth Nickell  <snickell@stanford.edu>
+
+	* blog_poster.py:
+
+	Wrap text in the blog entry, and make the window wider.
+	
+	* gnomeblogger.schemas.in:
+
+	Add GConf schemas.
+	
+2003-08-26  Seth Nickell  <snickell@stanford.edu>
+
+	* .cvsignore:
+	* GNOME_BloggerApplet.server:
+	* Makefile.am:
+	* blog_poster.py:
+	* configure.in:
+	* hig_alert.py:
+
+	Add better error handling.
+	
+2003-08-26  Seth Nickell  <snickell@stanford.edu>
+
+	* aligned_window.py:
+
+	Don't use a POPUP. Instead just turn off decorations.
+	
+	* blogger_applet.py:
+
+	Move window before showing it... maybe stop the flashing.
+
+

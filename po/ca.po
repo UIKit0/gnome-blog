@@ -38,7 +38,7 @@ msgstr "Contrasenya per accedir a la bitàcola"
 
 #: gnomeblog.schemas.in.h:2
 msgid "Post blog entries to Blogger.com"
-msgstr "Enviar entrades de la bitàcola a Blogger.com"
+msgstr "Envia entrades de la bitàcola a Blogger.com"
 
 #: gnomeblog.schemas.in.h:3
 msgid "Protocol to use in accessing the blog"
@@ -147,7 +147,7 @@ msgstr "L'URL \"%s\" no és, probablement, una API de bitàcola vàlida. El serv
 msgid ""
 "Unknown username <span weight=\"bold\">%s</span> or password trying to post "
 "blog entry to XML-RPC server <span style=\"italic\">%s</span>."
-msgstr "El nom d'usuari <span weight=\"bold\">%s</span> o contrasenya desconeguts està intentant enviar una entrada de bitàcola al servidor de XML-RPC <span style=\"italic\">%s</span>."
+msgstr "S'està intentant enviar una entrada a un servidor XML-RPC <span style=\"italic\">%s</span> fent servir un nom d'usuari <span weight=\"bold\">%s</span> o contrasenya desconeguts."
 
 #: hig_alert.py:12
 #, python-format

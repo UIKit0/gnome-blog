@@ -74,6 +74,21 @@ class RichEntry(gtk.TextView):
 
         self.buffer.insert_with_tags(iter, text, link_tag)
 
+    def applyHyperlink(self, selection, uri, on_activate):
+        link_tag = self._getUniqueTag()
+            
+        link_tag.set_property("underline", pango.UNDERLINE_SINGLE)
+        link_tag.set_property("foreground", "#0000FF")
+
+        link_tag.opening_tag = '<a href="%s">' % (uri)
+        link_tag.closing_tag = '</a>'
+        
+        link_tag.uri = uri
+        link_tag.on_activate = on_activate
+        link_tag.hyperlink = gtk.TRUE
+
+        self.buffer.apply_tag(link_tag, selection[0], selection[1])
+
     def getImages(self):
         return self.images
         
@@ -191,8 +206,13 @@ class InsertHyperlinkButton(gtk.Button):
         urlLabel = gtk.Label(_("URL:"))
         urlLabel.set_alignment(0.0, 0.5)
 
-        textEntry = gtk.Entry()
+        textEntry = gtk.Entry()            
         urlEntry  = gtk.Entry()
+
+        selection = self.rich_entry.buffer.get_selection_bounds()
+
+        if selection:
+            textEntry.set_text(self.rich_entry.buffer.get_text(selection[0],selection[1]))
 
         table = gtk.Table(rows=2, columns=2)
         table.set_border_width(5)
@@ -212,8 +232,11 @@ class InsertHyperlinkButton(gtk.Button):
         response = dialog.run()
 
         if response == gtk.RESPONSE_ACCEPT:
-            iter = self.rich_entry.buffer.get_iter_at_mark(self.rich_entry.buffer.get_mark("insert"))
-            self.rich_entry.addHyperlink(iter, textEntry.get_text(), urlEntry.get_text(), self._onHyperlinkClicked)
+            if selection:
+                self.rich_entry.applyHyperlink(selection, urlEntry.get_text(), self._onHyperlinkClicked)
+            else:
+                iter = self.rich_entry.buffer.get_iter_at_mark(self.rich_entry.buffer.get_mark("insert"))
+                self.rich_entry.addHyperlink(iter, textEntry.get_text(), urlEntry.get_text(), self._onHyperlinkClicked)
 
         dialog.hide()
             

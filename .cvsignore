@@ -17,6 +17,9 @@ config.log
 config.status
 config.sub
 configure
+GNOME_BlogApplet.server
+gnome-blog.spec
+gnomeblog.schemas
 install-sh
 intl
 libtool
@@ -26,6 +29,7 @@ missing
 mkinstalldirs
 sgml
 stamp-h
+stamp-h1
 stamp-h.in
 intltool-extract
 intltool-extract.in
@@ -34,3 +38,4 @@ intltool-merge.in
 intltool-update
 intltool-update.in
 gnome-blogger.schemas
+

@@ -1,3 +1,12 @@
+2003-09-02  Bastien Nocera  <hadess@hadess.net>
+
+	* blog_poster.py: use the advogato API if the server url is
+	http://www.advogato.org/XMLRPC
+
+2003-09-02  Bastien Nocera  <hadess@hadess.net>
+
+	* .cvsignore: updated for the gnome-blogger -> gnome-blog changes
+
 2003-09-02  James Willcox  <jwillcox@gnome.org>
 
 	* aligned_window.py:  Show the window after moving it, not before

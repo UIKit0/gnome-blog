@@ -78,8 +78,12 @@ class BlogPoster(gtk.Frame):
 
         try:
             print ("Doing post")
-            server.blogger.newPost(appkey, blog_id, username, password,
-                                   text, xmlrpclib.True)
+	    if (url == "http://www.advogato.org/XMLRPC"):
+	      cookie = server.authenticate(username, password)
+	      server.diary.set(cookie, -1, text)
+            else:
+              server.blogger.newPost(appkey, blog_id, username, password,
+                                     text, xmlrpclib.True)
         except xmlrpclib.Fault, e:
             hig_alert.handleBloggerAPIFault(e, "Could not post blog entry", username, blog_id, url)
             success = gtk.FALSE

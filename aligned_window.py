@@ -11,6 +11,7 @@ class AlignedWindow(gtk.Window):
     def positionWindow(self):
         # Get our own dimensions & position
         self.realize()
+        gtk.gdk.flush()
         ourWidth  = (self.window.get_geometry())[2]
         ourHeight = (self.window.get_geometry())[3]
 

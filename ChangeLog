@@ -1,3 +1,10 @@
+2003-11-03  Bryan W Clark  <clarkbw@clarkson.edu>
+
+	* blog_applet.py: 
+
+	Added tooltip to applet button, on hover the applet now reads
+	"Create a blog entry for $user at $blog_url"
+
 2003-11-03  Hasbullah Bin Pit <sebol@ikhlas.com>
                                                                                 
         * configure.in: Added 'ms' (Malay) to ALL_LINGUAS.

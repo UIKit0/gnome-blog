@@ -8,6 +8,7 @@ import gnome
 import gnome.ui
 import gnome.applet
 import gconf
+import string  # maybe someone can do this trick without string?
 
 from gettext import gettext as _, bindtextdomain, textdomain
 
@@ -25,6 +26,7 @@ class BloggerApplet(gnome.applet.Applet):
 
     def init(self):
         self.toggle = gtk.ToggleButton()
+        self.applet_tooltips = gtk.Tooltips()
         self.setup_menu_from_file (None, "GNOME_BlogApplet.xml",
                                    None, [(_("About"), self._showAboutDialog), ("Pref", self._openPrefs)])
 
@@ -38,6 +40,7 @@ class BloggerApplet(gnome.applet.Applet):
         self.add(self.toggle)
         self.toggle.connect("toggled", self._onToggle)
         self.toggle.connect("button-press-event", self._onButtonPress)
+        
         self.show_all()
 
         self.poster_window = aligned_window.AlignedWindow(self.toggle)
@@ -53,6 +56,8 @@ class BloggerApplet(gnome.applet.Applet):
         if value == None or value == gtk.FALSE:
             self._showPrefDialog()
             client.set_bool(self.prefs_key + "/initialized", gtk.TRUE)
+
+        self._createToolTip(client)
         
         return gtk.TRUE
     
@@ -85,6 +90,22 @@ class BloggerApplet(gnome.applet.Applet):
         if event.button != 1:
             toggle.stop_emission("button-press-event")
             
+    def _createToolTip(self,client):
+        # take the XML_RPC value from GConf
+        blog_url = client.get_string(self.prefs_key + "/xmlrpc_url")
+        # split the URL up into http:, '', domainname, extra
+        blog_split = string.split(blog_url,"/",3);
+        # join back up the URL into http://domainname
+        blog_url = string.join(blog_split[:3],"/")
+        
+        tooltip = _("Create a blog entry for ") \
+                  + client.get_string(self.prefs_key + "/blog_username") \
+                  + " at " \
+                  + blog_url
+        
+        # Set tooltip to the applet button
+        self.applet_tooltips.set_tip(self.toggle,tooltip)        
+
         
 
 gobject.type_register(BloggerApplet)

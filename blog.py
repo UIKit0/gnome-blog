@@ -48,10 +48,6 @@ def _getSettings(client, gconf_prefix):
 
     return username, password, protocol, url
 
-#FIXME: we should not import this. It is done because if we don't
-#modules crash when we __import__ them below
-import xmlrpclib
-
 def _getBlogBackend(protocol):
     modulename = "gnomeblog.%s" % (protocol)
     protocolModule = __import__(modulename, globals(), locals(), ['blog'])

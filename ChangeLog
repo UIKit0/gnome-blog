@@ -2,6 +2,12 @@
 
 	* blog.py:
 
+	And... remove the hack :-)
+
+2005-01-04  Seth Nickell  <seth@gnome.org>
+
+	* blog.py:
+
 	Work around... a buggy python? If I do __import__ on
 	bloggerAPI.py before "import xmlrpclib", the "import xmlrpclib"
 	in bloggerAPI.py dies with horrible C exceptions in the Python

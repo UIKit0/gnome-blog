@@ -1,83 +1,83 @@
 # Catalan translation of gnome-blog.
-# Copyright © 2003, 2004 Free Software Foundation, Inc.
+# Copyright © 2003, 2004, 2005 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-blog package.
-# Aleix Badia i Bosch <abadia@ica.es>, 2003, 2004.
 # Jordi Mallach <jordi@sindominio.net>, 2003, 2004.
+# Aleix Badia i Bosch <a.badia@callusdigital.org>, 2003, 2004, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-12 03:10-0500\n"
-"PO-Revision-Date: 2004-03-24 12:55+0100\n"
-"Last-Translator: Aleix Badia i Bosch <abadia@ica.es>\n"
+"POT-Creation-Date: 2005-03-28 12:40+0200\n"
+"PO-Revision-Date: 2005-03-28 12:44+0200\n"
+"Last-Translator: Aleix Badia i Bosch <a.badia@callusdigital.org>\n"
 "Language-Team: catalan <tradgnome@softcatala.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: GNOME_BlogApplet.server.in.in.h:1
+#: ../GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr "Accessoris"
 
-#: GNOME_BlogApplet.server.in.in.h:2 gnome-blog.desktop.in.h:1
+#: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.h:1
 msgid "Blog Entry Poster"
 msgstr "Envia entrades de bloc"
 
-#: GNOME_BlogApplet.server.in.in.h:3
+#: ../GNOME_BlogApplet.server.in.in.h:3
 msgid "Post entries to a web log"
 msgstr "Envia entrades a un bloc"
 
-#: GNOME_BlogApplet.xml.h:1
+#: ../GNOME_BlogApplet.xml.h:1
 msgid "_About..."
 msgstr "_Quant a..."
 
-#: GNOME_BlogApplet.xml.h:2
+#: ../GNOME_BlogApplet.xml.h:2
 msgid "_Preferences..."
 msgstr "_Preferències..."
 
-#: blog_applet.py:35
+#: ../blog_applet.py:35
 msgid "About"
 msgstr "Quant a"
 
-#: blog_applet.py:38
+#: ../blog_applet.py:38
 msgid "Blog"
 msgstr "Bloc"
 
-#: blog_applet.py:73
+#: ../blog_applet.py:73
 msgid "A GNOME Web Blogging Applet"
 msgstr "Miniaplicació de bloc web de GNOME"
 
-#: blog_applet.py:108
+#: ../blog_applet.py:108
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Crea una entrada de bloc per %s en %s"
 
-#: blog_poster.py:44
+#: ../blog_poster.py:44
 msgid "_Post Entry"
 msgstr "_Envia una entrada"
 
-#: blog_poster.py:69
+#: ../blog_poster.py:69
 msgid "Preferences..."
 msgstr "Preferències..."
 
-#: blog_poster.py:81
+#: ../blog_poster.py:81
 msgid "Title:"
 msgstr "Títol:"
 
-#: blog_poster.py:116
+#: ../blog_poster.py:116
 msgid "Couldn't upload images"
 msgstr "No s'ha pogut pujar imatges"
 
-#: blog_poster.py:116
+#: ../blog_poster.py:116
 msgid "The blog protocol in use does not support uploading images"
 msgstr "El protocol de bloc en ús no suporta la pujada d'imatges"
 
-#: blog_poster.py:163
+#: ../blog_poster.py:163
 msgid "Blog Entry is Blank"
 msgstr "L'entrada del bloc és buida"
 
-#: blog_poster.py:163
+#: ../blog_poster.py:163
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
@@ -85,172 +85,178 @@ msgstr ""
 "No s'ha introduït cap text a la caixa d'entrada del bloc. Si us plau, "
 "introduïu el text i torneu a provar"
 
-#: blogger_prefs.py:19
+#: ../blogger_prefs.py:19
 msgid "Blogger Preferences"
 msgstr "Preferències del bloc"
 
-#: blogger_prefs.py:38
+#: ../blogger_prefs.py:38
 msgid "Self-Run MovableType"
 msgstr "MovableType personal"
 
-#: blogger_prefs.py:39
+#: ../blogger_prefs.py:39
 msgid "Self-Run Pyblosxom"
 msgstr "Pybloxsom personal"
 
-#: blogger_prefs.py:40
-#, fuzzy
+#: ../blogger_prefs.py:40
 msgid "Self-Run WordPress"
-msgstr "Altre personal"
+msgstr "WordPress personal"
 
-#: blogger_prefs.py:41
+#: ../blogger_prefs.py:41
 msgid "Self-Run Other"
 msgstr "Altre personal"
 
-#: blogger_prefs.py:45
+#: ../blogger_prefs.py:45
 msgid "Blog Type:"
 msgstr "Tipus de bloc:"
 
-#: blogger_prefs.py:55
+#: ../blogger_prefs.py:55
 msgid "Blog Protocol:"
 msgstr "Protocol del bloc:"
 
-#: blogger_prefs.py:59
+#: ../blogger_prefs.py:59
 msgid "Blog Base URL:"
 msgstr "URL principal del bloc:"
 
-#: blogger_prefs.py:61
+#: ../blogger_prefs.py:61
 msgid "Blog Name:"
 msgstr "Nom del bloc:"
 
-#: blogger_prefs.py:63
+#: ../blogger_prefs.py:63
 msgid "Lookup Blogs"
 msgstr "Cerca els blocs"
 
-#: blogger_prefs.py:73
+#: ../blogger_prefs.py:73
 msgid "Username:"
 msgstr "Nom d'usuari:"
 
-#: blogger_prefs.py:74
+#: ../blogger_prefs.py:74
 msgid "Password:"
 msgstr "Contrasenya:"
 
-#: blogger_prefs.py:116 blogger_prefs.py:136 blogger_prefs.py:141
-#: blogger_prefs.py:147
+#: ../blogger_prefs.py:116 ../blogger_prefs.py:136 ../blogger_prefs.py:141
+#: ../blogger_prefs.py:147
 msgid "XML-RPC URL:"
 msgstr "URL de XML-RPC:"
 
-#: blogger_prefs.py:121 blogger_prefs.py:126 blogger_prefs.py:131
+#: ../blogger_prefs.py:121 ../blogger_prefs.py:126 ../blogger_prefs.py:131
 msgid "Base Blog URL:"
 msgstr "URL del bloc principal:"
 
-#: blogger_prefs.py:155
+#: ../blogger_prefs.py:155
 msgid "Unknown blog type"
-msgstr ""
+msgstr "Es desconeix el tipus del bloc"
 
-#: blogger_prefs.py:155
+#: ../blogger_prefs.py:155
 msgid "The detected blog type is not among the list of supported blogs"
-msgstr ""
+msgstr "El tipus del bloc no és a la llista de blocs suportats"
 
-#: gnome-blog.desktop.in.h:2
+#: ../gnome-blog.desktop.in.h:2
 msgid "Post an entry to a web log"
 msgstr "Envia una entrada a un bloc"
 
-#: gnomeblog.schemas.in.h:1
+#: ../gnomeblog.schemas.in.h:1
 msgid "Password to use in accessing the blog"
 msgstr "Contrasenya per accedir al bloc"
 
-#: gnomeblog.schemas.in.h:2
+#: ../gnomeblog.schemas.in.h:2
 msgid "Protocol to use in accessing the blog"
 msgstr "Protocol per accedir al bloc"
 
-#: gnomeblog.schemas.in.h:3
+#: ../gnomeblog.schemas.in.h:3
 msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
 msgstr "Sufix a afegir a la URL base (per exemple \"xmlrpc.cgi\")"
 
-#: gnomeblog.schemas.in.h:4
+#: ../gnomeblog.schemas.in.h:4
 msgid "The application's preferences have been initialized"
 msgstr "S'han inicialitzat les prefèrencies de l'aplicació"
 
-#: gnomeblog.schemas.in.h:5
+#: ../gnomeblog.schemas.in.h:5
 msgid "The id or name of the particular blog to use on the XML-RPC server"
 msgstr ""
 "L'identificador o nom del bloc particular a utilitzar al servidor de XML-RPC"
 
-#: gnomeblog.schemas.in.h:6
+#: ../gnomeblog.schemas.in.h:6
 msgid "URL to the bloggerAPI compatible XML-RPC server"
 msgstr "URL del servidor de XML-RPC compatible amb el bloggerAPI"
 
-#: gnomeblog.schemas.in.h:7
+#: ../gnomeblog.schemas.in.h:7
 msgid "Username to use in accessing the blog"
 msgstr "Nom d'usuari per accedir al bloc"
 
-#: hig_alert.py:13
+#: ../hig_alert.py:13
 #, python-format
 msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
 msgstr ""
+"El bloggerAPI de l'URL '%s' probablement no és vàlid. L'informe del servidor "
+"d'XML-RPC és: %s."
 
-#: hig_alert.py:15
+#: ../hig_alert.py:15
 #, python-format
 msgid ""
 "Unknown username %s or password trying to post blog entry to XML-RPC server %"
 "s."
 msgstr ""
 "El servidor d'XML-RPC %s on s'està intentant enviar l'entrada de bloc, no "
-"reconeix l'usuari % s o la contrasenya."
+"reconeix l'usuari %s o la contrasenya."
 
-#: hig_alert.py:17
+#: ../hig_alert.py:17
 #, python-format
 msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
 "reported: %s."
 msgstr ""
+"No s'ha pogut enviar al bloc '%s' al servidor '%s' d'XML-RPC del bloggerAPI. "
+"L'informe del servidor és: %s."
 
-#: hig_alert.py:19
+#: ../hig_alert.py:19
 #, python-format
 msgid ""
 "The bloggerAPI server (%s) reported an error I don't understand: '%s, %s'. \n"
 "\n"
 "Please email this error message to seth@gnome.org so I can address it."
 msgstr ""
-"L'API del servidor de bloc (%s) informa d'un error desconegut: '%s, %s', \n"
+"L'API del servidor de bloc (%s) informa d'un error desconegut: '%s, %s'.\n"
 "\n"
 "Envieu un correu electrònic amb el missatge d'error a seth@gnome.org per "
 "poder solucionar-lo."
 
-#: protocols/advogato.py:27 protocols/advogato.py:30 protocols/advogato.py:42
-#: protocols/bloggerAPI.py:62 protocols/bloggerAPI.py:90
-#: protocols/livejournal.py:35 protocols/livejournal.py:64
+#: ../protocols/advogato.py:27 ../protocols/advogato.py:30
+#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:62
+#: ../protocols/bloggerAPI.py:90 ../protocols/livejournal.py:35
+#: ../protocols/livejournal.py:64
 msgid "Could not post Blog entry"
 msgstr "N'ha pogut enviar l'entrada del bloc"
 
-#: protocols/advogato.py:27
+#: ../protocols/advogato.py:27
 msgid "Your username is invalid. Please double-check the preferences."
 msgstr "El nom d'usuari no és vàlid. Comproveu les preferències."
 
-#: protocols/advogato.py:30 protocols/livejournal.py:35
+#: ../protocols/advogato.py:30 ../protocols/livejournal.py:35
 msgid ""
 "Your username or password is invalid. Please double-check the preferences."
 msgstr ""
 "El nom d'usuari o contrasenya no són vàlids. Comproveu les preferències."
 
-#: protocols/advogato.py:39 protocols/bloggerAPI.py:87
-#: protocols/livejournal.py:61
+#: ../protocols/advogato.py:39 ../protocols/bloggerAPI.py:87
+#: ../protocols/livejournal.py:61
 msgid "Could not post blog entry"
 msgstr "No s'ha pogut enviar l'entrada del bloc"
 
-#: protocols/advogato.py:42 protocols/bloggerAPI.py:39
-#: protocols/bloggerAPI.py:90
+#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:39
+#: ../protocols/bloggerAPI.py:90
 #, python-format
 msgid ""
 "URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
 "reported: %s."
 msgstr ""
+"L'URL '%s' no sembla ser un servidor d'XML-RPC del bloggerAPI vàlid. "
+"L'informe del servidor web és: %s."
 
-#: protocols/bloggerAPI.py:36 protocols/bloggerAPI.py:39
+#: ../protocols/bloggerAPI.py:36 ../protocols/bloggerAPI.py:39
 msgid "Could not get list of blogs"
 msgstr "No s'ha pogut obtenir la llista de blocs"
 
-#: protocols/bloggerAPI.py:62
+#: ../protocols/bloggerAPI.py:62
 msgid ""
 "No XML-RPC server URL to post blog entries to is set, or the value could not "
 "be retrieved from GConf. Your entry will remain in the blogger window."
@@ -259,38 +265,40 @@ msgstr ""
 "o no s'ha pogut obtenir del GConf. L'entrada es mantindrà a la finestra de "
 "bloc."
 
-#: protocols/livejournal.py:64
+#: ../protocols/livejournal.py:64
 #, python-format
 msgid ""
 "URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
 "reported: %s."
 msgstr ""
+"L'URL '%s' no sembla ser un servidor d'XML-RPC del LiveJournal vàlid. "
+"L'informe del servidor web és: %s."
 
-#: rich_entry.py:144 rich_entry.py:152
+#: ../rich_entry.py:144 ../rich_entry.py:152
 msgid "Could not load dragged in image"
 msgstr "No s'ha pogut carregar la imatge arrossegada"
 
-#: rich_entry.py:145 rich_entry.py:153
+#: ../rich_entry.py:145 ../rich_entry.py:153
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "L'error en carregar %s ha sigut: %s"
 
-#: rich_entry.py:210
+#: ../rich_entry.py:210
 msgid "Add _Link..."
 msgstr "Afegeix un en_llaç..."
 
-#: rich_entry.py:215
+#: ../rich_entry.py:215
 msgid "Add Link"
 msgstr "Afegeix un enllaç"
 
-#: rich_entry.py:216
+#: ../rich_entry.py:216
 msgid "_Add Link"
 msgstr "_Afegeix un enllaç"
 
-#: rich_entry.py:224
+#: ../rich_entry.py:224
 msgid "Text:"
 msgstr "Text:"
 
-#: rich_entry.py:227
+#: ../rich_entry.py:227
 msgid "URL:"
 msgstr "URL:"

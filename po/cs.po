@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-10-24 03:43+0200\n"
-"PO-Revision-Date: 2003-10-24 12:45+0200\n"
+"POT-Creation-Date: 2003-11-06 14:40+0100\n"
+"PO-Revision-Date: 2003-11-06 17:08+0100\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -72,18 +72,27 @@ msgid "Username to use in accessing the blog"
 msgstr "Jméno uživatele, které používat pro přístup k blogu"
 
 #. !/usr/bin/env python
-#: blog_applet.py:29
+#. maybe someone can do this trick without string?
+#: blog_applet.py:31
 msgid "About"
 msgstr "O aplikaci"
 
-#: blog_applet.py:32
+#: blog_applet.py:34
 msgid "Blog"
 msgstr "Blog"
 
-#: blog_applet.py:61
+#: blog_applet.py:66
 msgid "A GNOME Web Blogging Applet"
 msgstr "GNOME aplet pro blogování na WWW"
 
+#. take the XML_RPC value from GConf
+#. split the URL up into http:, '', domainname, extra
+#. join back up the URL into http://domainname
+#: blog_applet.py:101
+msgid "Create a blog entry for "
+msgstr "Vytvořit položku blogu pro "
+
+#. Set tooltip to the applet button
 #: blog_poster.py:31
 msgid "_Post Entry"
 msgstr "_Vystavit položku"
@@ -117,7 +126,9 @@ msgstr "Položka blogu je prázdná"
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
-msgstr "Do pole zadání blogu nebyl vložen žádný text. Vložte prosím nějaký text a zkuste to znovu"
+msgstr ""
+"Do pole zadání blogu nebyl vložen žádný text. Vložte prosím nějaký text a "
+"zkuste to znovu"
 
 #: blogger_prefs.py:19
 msgid "Blogger Preferences"
@@ -226,11 +237,11 @@ msgstr ""
 #. this is an older version of pygtk that doesn't
 #. have a way to create anonymous tags, hack around it
 #. 398 means text/uri-list
-#: rich_entry.py:116 rich_entry.py:124
+#: rich_entry.py:131 rich_entry.py:139
 msgid "Could not load dragged in image"
 msgstr "Nemohu načíst přetažený obrázek"
 
-#: rich_entry.py:117 rich_entry.py:125
+#: rich_entry.py:132 rich_entry.py:140
 #, python-format
 msgid "Error loading <span style='italic'>%s</span> was: %s"
 msgstr "Chyba při načítání <span style='italic'>%s</span> byla: %s"
@@ -239,23 +250,23 @@ msgstr "Chyba při načítání <span style='italic'>%s</span> byla: %s"
 #. Insert the pixbuf, and then set the new image
 #. tag around it so that we can generate its HTML later
 #. Found Hyperlink, activating
-#: rich_entry.py:175
+#: rich_entry.py:190
 msgid "Add _Link"
 msgstr "Přidat _odkaz"
 
-#: rich_entry.py:180
+#: rich_entry.py:195
 msgid "Add Link"
 msgstr "Přidat odkaz"
 
-#: rich_entry.py:181
+#: rich_entry.py:196
 msgid "_Add Link"
 msgstr "_Přidat odkaz"
 
-#: rich_entry.py:188
+#: rich_entry.py:203
 msgid "Text:"
 msgstr "Text:"
 
-#: rich_entry.py:191
+#: rich_entry.py:206
 msgid "URL:"
 msgstr "URL:"
 

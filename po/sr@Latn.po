@@ -1,0 +1,54 @@
+# Serbian translation of gnome-blog
+# Courtesy of Prevod.org team (http://www.prevod.org/) -- 2003.
+#
+# This file is distributed under the same license as the gnome-blog package.
+#
+# Maintainer: Danilo Šegan <dsegan@gmx.net>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-blog\n"
+"POT-Creation-Date: 2003-09-02 15:46+0200\n"
+"PO-Revision-Date: 2003-09-02 15:46+0200\n"
+"Last-Translator: Danilo Šegan <danilo@prevod.org>\n"
+"Language-Team: Serbian (sr) <serbiangnome-listaL@nongnu.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: GNOME_BlogApplet.server.in.h:1
+msgid "Blogging Tool"
+msgstr "Alat za blogovanje"
+
+#: GNOME_BlogApplet.server.in.h:2
+msgid "Blogging tool"
+msgstr "Alat za blogovanje"
+
+#: GNOME_BlogApplet.xml.h:1
+msgid "_Preferences..."
+msgstr "_Postavke"
+
+#: gnomeblog.schemas.in.h:1
+msgid "Password to use in accessing the blog"
+msgstr "Lozinka kojom se pristupa blogu"
+
+#: gnomeblog.schemas.in.h:2
+msgid "Post blog entries to Blogger.com"
+msgstr "Pošalji unos u blog na Blogger.com"
+
+#: gnomeblog.schemas.in.h:3
+msgid "The application's preferences have been initialized"
+msgstr "Učitane su postavke programa"
+
+#: gnomeblog.schemas.in.h:4
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr ""
+"Identifikator ili ime određenog bloga koji da koristi na XML-RPC serveru"
+
+#: gnomeblog.schemas.in.h:5
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr "Adresa za XML-RPC server saglasan sa bloggerAPI-jem"
+
+#: gnomeblog.schemas.in.h:6
+msgid "Username to use in accessing the blog"
+msgstr "Korisničko ime za pristup blogu"

@@ -61,7 +61,7 @@ class Blog(bloggerAPI.Blog):
         server = proxy_transport.get_server(url); 
 
         content = {}
-        content['name'] = filename
+        content['name'] = file_name
         content['type'] = mime_type
         content['bits'] = base64.encodestring(file_contents)
 

@@ -1,3 +1,10 @@
+2004-09-16  Luis Villa	<louie@novell.com>
+
+	* MetaWeblog.py:
+
+	fix obvious typo. I'm probably the first person to try image
+	upload, it looks like :)
+	
 2004-09-14  Seth Nickell  <seth@gnome.org>
 
 	* blogger_prefs.py:

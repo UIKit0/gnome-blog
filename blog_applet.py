@@ -100,7 +100,7 @@ class BloggerApplet(gnome.applet.Applet):
         
         tooltip = _("Create a blog entry for ") \
                   + client.get_string(self.prefs_key + "/blog_username") \
-                  + " at " \
+                  + _(" at ") \
                   + blog_url
         
         # Set tooltip to the applet button

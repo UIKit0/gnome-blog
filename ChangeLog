@@ -1,3 +1,7 @@
+2003-11-07  Bryan W Clark  <clarkbw@cvs.gnome.org>
+
+	* blog_applet.py: missed a string for translation
+
 2003-11-03  Bryan W Clark  <clarkbw@clarkson.edu>
 
 	* blog_applet.py: 

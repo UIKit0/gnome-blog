@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-11-17 22:55+0100\n"
-"PO-Revision-Date: 2003-11-17 23:01+0100\n"
+"POT-Creation-Date: 2004-01-15 06:43+0100\n"
+"PO-Revision-Date: 2004-01-15 06:47+0100\n"
 "Last-Translator: Danilo Šegan <danilo@prevod.org>\n"
 "Language-Team: Serbian (sr) <serbiangnome-lista@nongnu.org>\n"
 "MIME-Version: 1.0\n"
@@ -21,6 +21,7 @@ msgstr ""
 msgid "Accessories"
 msgstr "Pomoćni alati"
 
+#. FIXME: popup an error dialog
 #: GNOME_BlogApplet.server.in.h:2 gnome-blog.desktop.in.h:1
 msgid "Blog Entry Poster"
 msgstr "Slanje unosa u blogče"
@@ -36,43 +37,6 @@ msgstr "_O programu..."
 #: GNOME_BlogApplet.xml.h:2
 msgid "_Preferences..."
 msgstr "_Postavke"
-
-#: gnome-blog.desktop.in.h:2
-msgid "Post an entry to a web log"
-msgstr "Pošaljite unos u blogče"
-
-#: gnomeblog.schemas.in.h:1
-msgid "Password to use in accessing the blog"
-msgstr "Lozinka kojom se pristupa blogčetu"
-
-#: gnomeblog.schemas.in.h:2
-msgid "Post blog entries to Blogger.com"
-msgstr "Pošalji unos u blogče na Blogger.com"
-
-#: gnomeblog.schemas.in.h:3
-msgid "Protocol to use in accessing the blog"
-msgstr "Protokol kojim se pristupa blogčetu"
-
-#: gnomeblog.schemas.in.h:4
-msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
-msgstr "Dodatak koji se kači na osnovnu adresu (npr. „xmlrpc.cgi“)"
-
-#: gnomeblog.schemas.in.h:5
-msgid "The application's preferences have been initialized"
-msgstr "Učitane su postavke programa"
-
-#: gnomeblog.schemas.in.h:6
-msgid "The id or name of the particular blog to use on the XML-RPC server"
-msgstr ""
-"Identifikator ili ime određenog blogčeta koje da koristi na XML-RPC serveru"
-
-#: gnomeblog.schemas.in.h:7
-msgid "URL to the bloggerAPI compatible XML-RPC server"
-msgstr "Adresa za XML-RPC server saglasan sa bloggerAPI-jem"
-
-#: gnomeblog.schemas.in.h:8
-msgid "Username to use in accessing the blog"
-msgstr "Korisničko ime za pristup blogčetu"
 
 #. !/usr/bin/env python
 #. maybe someone can do this trick without string?
@@ -110,11 +74,11 @@ msgstr "Postavke..."
 msgid "Title:"
 msgstr "Naslov:"
 
-#: blog_poster.py:85
+#: blog_poster.py:98
 msgid "Couldn't upload images"
 msgstr "Ne mogu da pošaljem slike"
 
-#: blog_poster.py:85
+#: blog_poster.py:98
 msgid "The blog protocol in use does not support uploading images"
 msgstr "Protokol za blogče koji se koristi ne podržava slanje slika"
 
@@ -123,11 +87,11 @@ msgstr "Protokol za blogče koji se koristi ne podržava slanje slika"
 #. Call back our parent informing them the entry was posted
 #. Popup a dialogue confirming even if its deemed
 #. unreasonable
-#: blog_poster.py:121
+#: blog_poster.py:134
 msgid "Blog Entry is Blank"
 msgstr "Unos u blogče je prazan"
 
-#: blog_poster.py:121
+#: blog_poster.py:134
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
@@ -139,100 +103,163 @@ msgstr ""
 msgid "Blogger Preferences"
 msgstr "Postavke Blogger-a"
 
-#: blogger_prefs.py:37
+#: blogger_prefs.py:38
 msgid "Self-Run MovableType"
 msgstr "Lični MovableType"
 
-#: blogger_prefs.py:38
+#: blogger_prefs.py:39
 msgid "Self-Run Pyblosxom"
 msgstr "Lični Pyblosxom"
 
-#: blogger_prefs.py:39
+#: blogger_prefs.py:40
 msgid "Self-Run Other"
 msgstr "Neki drugi lični"
 
-#: blogger_prefs.py:43
+#: blogger_prefs.py:44
 msgid "Blog Type:"
 msgstr "Vrsta blogčeta:"
 
-#: blogger_prefs.py:52
+#: blogger_prefs.py:54
 msgid "Blog Protocol:"
 msgstr "Protokol blogčeta:"
 
-#: blogger_prefs.py:56
+#: blogger_prefs.py:58
 msgid "Blog Base URL:"
 msgstr "Osnovna adresa blogčeta:"
 
-#: blogger_prefs.py:58
+#: blogger_prefs.py:60
 msgid "Blog Name:"
 msgstr "Ime blogčeta:"
 
-#: blogger_prefs.py:60
+#: blogger_prefs.py:62
 msgid "Lookup Blogs"
 msgstr "Pronađi blogčad"
 
-#: blogger_prefs.py:70
+#: blogger_prefs.py:72
 msgid "Username:"
 msgstr "Korisnik:"
 
-#: blogger_prefs.py:71
+#: blogger_prefs.py:73
 msgid "Password:"
 msgstr "Lozinka:"
 
-#: blogger_prefs.py:113 blogger_prefs.py:128 blogger_prefs.py:133
+#: blogger_prefs.py:115 blogger_prefs.py:130 blogger_prefs.py:135
+#: blogger_prefs.py:141
 msgid "XML-RPC URL:"
 msgstr "XML-RPC adresa:"
 
-#: blogger_prefs.py:118 blogger_prefs.py:123
+#: blogger_prefs.py:120 blogger_prefs.py:125
 msgid "Base Blog URL:"
 msgstr "Osnovna adresa blogčeta:"
 
-#: blogger_prefs.py:127
-msgid "bloggerAPI"
-msgstr "bloggerAPI"
+#: gnome-blog.desktop.in.h:2
+msgid "Post an entry to a web log"
+msgstr "Pošaljite unos u blogče"
 
-#. FIXME: popup an error dialog
-#: hig_alert.py:7
-#, python-format
-msgid ""
-"URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: <span style="
-"\"italic\">%s</span>."
-msgstr ""
-"Adresa „%s“ možda ne predstavlja ispravan bloggerAPI. XML-RPC server je "
-"prijavio: <span style=\"italic\">%s</span>."
+#: gnomeblog.schemas.in.h:1
+msgid "Password to use in accessing the blog"
+msgstr "Lozinka kojom se pristupa blogčetu"
 
-#: hig_alert.py:9
-#, python-format
-msgid ""
-"Unknown username <span weight=\"bold\">%s</span> or password trying to post "
-"blog entry to XML-RPC server <span style=\"italic\">%s</span>."
-msgstr ""
-"Nepoznato korisničko ime <span weight=\"bold\">%s</span> ili lozinka pri "
-"pokušaju slanja unosa u blogče preko XML-RPC servera <span style=\"italic\">%"
-"s</span>."
+#: gnomeblog.schemas.in.h:2
+msgid "Protocol to use in accessing the blog"
+msgstr "Protokol kojim se pristupa blogčetu"
 
-#: hig_alert.py:11
-#, python-format
-msgid ""
-"Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
-"reported: <span style=\"italic\">%s</span>."
+#: gnomeblog.schemas.in.h:3
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr "Dodatak koji se kači na osnovnu adresu (npr. „xmlrpc.cgi“)"
+
+#: gnomeblog.schemas.in.h:4
+msgid "The application's preferences have been initialized"
+msgstr "Učitane su postavke programa"
+
+#: gnomeblog.schemas.in.h:5
+msgid "The id or name of the particular blog to use on the XML-RPC server"
 msgstr ""
-"Ne može da pošalje u blogče „%s“ pomoću bloggerAPI XML-RPC servera „%s“. "
-"Server je prijavio: <span style=\"italic\">%s</span>."
+"Identifikator ili ime određenog blogčeta koje da koristi na XML-RPC serveru"
+
+#: gnomeblog.schemas.in.h:6
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr "Adresa za XML-RPC server saglasan sa bloggerAPI-jem"
+
+#: gnomeblog.schemas.in.h:7
+msgid "Username to use in accessing the blog"
+msgstr "Korisničko ime za pristup blogčetu"
 
 #: hig_alert.py:13
 #, python-format
+msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
+msgstr "Adresa „%s“ možda ne predstavlja ispravan bloggerAPI. XML-RPC server je prijavio: %s."
+
+#: hig_alert.py:15
+#, python-format
 msgid ""
-"The bloggerAPI server (%s) reported an error I don't understand: '%s, <span "
-"style=\"italic\">%s</span>'. \n"
+"Unknown username %s or password trying to post blog entry to XML-RPC server %"
+"s."
+msgstr "Nepoznato korisničko ime „%s“ ili lozinka pri pokušaju slanja unosa u blogče preko XML-RPC servera %s."
+
+#: hig_alert.py:17
+#, python-format
+msgid ""
+"Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
+"reported: %s."
+msgstr "Ne mogu da pošaljem u blogče „%s“ pomoću bloggerAPI XML-RPC servera „%s“. Server je prijavio: %s."
+
+#: hig_alert.py:19
+#, python-format
+msgid ""
+"The bloggerAPI server (%s) reported an error I don't understand: '%s, %s'. \n"
 "\n"
 "Please email this error message to seth@gnome.org so I can address it."
 msgstr ""
-"Server sa bloggerAPI-jem (%s) je prijavio grešku koju ne razumem: „%s, <span "
-"style=\"italic\">%s</span>“. \n"
+"Server sa bloggerAPI-jem (%s) je prijavio grešku koju ne razumem: „%s, %s“. \n"
 "\n"
-"Molim pošaljite e-poštom ovu poruku o grešci na seth@gnome.org kako bi mogao "
-"da je obradim."
+"Molim pošaljite e-poštom ovu poruku o grešci na seth@gnome.org kako bi mogao da je obradim."
+
+#. No blogs found!
+#: protocols/advogato.py:23 protocols/advogato.py:26 protocols/advogato.py:38
+#: protocols/bloggerAPI.py:59 protocols/bloggerAPI.py:85
+#: protocols/livejournal.py:30 protocols/livejournal.py:59
+msgid "Could not post Blog entry"
+msgstr "Ne mogu da pošaljem unos u blogče"
+
+#: protocols/advogato.py:23
+msgid "Your username is invalid. Please double-check the preferences."
+msgstr "Vaše korisničko ime je neispravno. Proverite postavke."
+
+#: protocols/advogato.py:26 protocols/livejournal.py:30
+msgid ""
+"Your username or password is invalid. Please double-check the preferences."
+msgstr "Vaše korisničko ime ili lozinka su neispravni. Proverite postavke."
+
+#: protocols/advogato.py:35 protocols/bloggerAPI.py:82
+#: protocols/livejournal.py:56
+msgid "Could not post blog entry"
+msgstr "Ne mogu da pošaljem unos u blogče"
+
+#: protocols/advogato.py:38 protocols/bloggerAPI.py:36
+#: protocols/bloggerAPI.py:85
+#, python-format
+msgid ""
+"URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
+"reported: %s."
+msgstr "Adresa „%s“ možda ne predstavlja ispravan bloggerAPI. XML-RPC server je prijavio: %s."
+
+#: protocols/bloggerAPI.py:33 protocols/bloggerAPI.py:36
+msgid "Could not get list of blogs"
+msgstr "Ne mogu da saznam spisak blogčadi"
+
+#: protocols/bloggerAPI.py:59
+msgid ""
+"No XML-RPC server URL to post blog entries to is set, or the value could not "
+"be retrieved from GConf. Your entry will remain in the blogger window."
+msgstr "Nije postavljena adresa XML-RPC servera za slanje u blogče, ili se ne može preuzeti vrednost iz GKonfa. Vaš unos će ostati u prozoru blogčetara."
+
+#: protocols/livejournal.py:59
+#, python-format
+msgid ""
+"URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
+"reported: %s."
+msgstr "Adresa „%s“ izgleda ne predstavlja ispravan LajvDŽurnal (LiveJournal) XML-RPC server. Veb server je prijavio: %s."
 
 #. Hack for addHyperlink with old pygtk's
 #. GtkTextView already defines drag and drop targets, get them
@@ -242,11 +269,11 @@ msgstr ""
 #. this is an older version of pygtk that doesn't
 #. have a way to create anonymous tags, hack around it
 #. 398 means text/uri-list
-#: rich_entry.py:136 rich_entry.py:145
+#: rich_entry.py:135 rich_entry.py:143
 msgid "Could not load dragged in image"
 msgstr "Ne mogu da učitam prevučenu sliku"
 
-#: rich_entry.py:137 rich_entry.py:146
+#: rich_entry.py:136 rich_entry.py:144
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "Greška pri učitavanju %s je bila: %s"
@@ -255,25 +282,31 @@ msgstr "Greška pri učitavanju %s je bila: %s"
 #. Insert the pixbuf, and then set the new image
 #. tag around it so that we can generate its HTML later
 #. Found Hyperlink, activating
-#: rich_entry.py:196
+#: rich_entry.py:194
 msgid "Add _Link..."
 msgstr "Dodaj _vezu..."
 
-#: rich_entry.py:201
+#: rich_entry.py:199
 msgid "Add Link"
 msgstr "Dodaj vezu"
 
-#: rich_entry.py:202
+#: rich_entry.py:200
 msgid "_Add Link"
 msgstr "Dodaj _vezu"
 
-#: rich_entry.py:210
+#: rich_entry.py:208
 msgid "Text:"
 msgstr "Tekst:"
 
-#: rich_entry.py:213
+#: rich_entry.py:211
 msgid "URL:"
 msgstr "Adresa:"
+
+#~ msgid "Post blog entries to Blogger.com"
+#~ msgstr "Pošalji unos u blogče na Blogger.com"
+
+#~ msgid "bloggerAPI"
+#~ msgstr "bloggerAPI"
 
 # bug: hard to translate
 #~ msgid " at "

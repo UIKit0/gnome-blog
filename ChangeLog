@@ -1,3 +1,7 @@
+2003-11-03  Hasbullah Bin Pit <sebol@ikhlas.com>
+                                                                                
+        * configure.in: Added 'ms' (Malay) to ALL_LINGUAS.
+
 2003-10-29  Jordi Mallach  <jordi@sindominio.net>
 
 	* configure.in (ALL_LINGUAS): Added "ca" (Catalan).

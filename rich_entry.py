@@ -250,7 +250,9 @@ class InsertHyperlinkButton(gtk.Button):
                 self.rich_entry.addHyperlink(iter, textEntry.get_text(), urlEntry.get_text(), self._onHyperlinkClicked)
 
         dialog.hide()
-            
+
+        self.rich_entry.grab_focus()
+        
     def _onHyperlinkClicked(self, uri):
         print "Clicked %s" % (uri)
         

@@ -1,3 +1,23 @@
+2003-08-29  Seth Nickell  <snickell@stanford.edu>
+
+	* GNOME_BloggerApplet.server:
+	* gnome-blogger.png:
+	* Makefile.am:
+
+	Use the "new icon" (which is crap, I know)
+	
+	* GNOME_BloggerApplet.xml:
+	* blogger_applet.py:
+	* blogger_prefs.py:
+
+	Preferences dialog... point Blogger at the appropriate
+	URL, username, password, etc.
+
+	* blog_poster.py:
+	* style_toggle.py:
+
+	Initial support for rich text formatting (bold and italic).
+	
 2003-08-28  Seth Nickell  <snickell@stanford.edu>
 
 	* blog_poster.py:

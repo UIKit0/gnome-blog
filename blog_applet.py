@@ -48,7 +48,7 @@ class BloggerApplet(gnome.applet.Applet):
         self.show_all()
 
         self.poster_window = aligned_window.AlignedWindow(self.toggle)
-        self.poster_window.set_modal(gtk.TRUE)
+        self.poster_window.set_modal(True)
         accel_group = gtk.AccelGroup()
         self.poster_window.add_accel_group(accel_group)
         self.prefs_key = self.get_preferences_key()
@@ -59,14 +59,14 @@ class BloggerApplet(gnome.applet.Applet):
 
         client = gconf.client_get_default()
         value = client.get_bool(self.prefs_key + "/initialized")
-        if value == None or value == gtk.FALSE:
+        if value == None or value == False:
             self.poster._showPrefDialog()
 #            self._showPrefDialog()
-            client.set_bool(self.prefs_key + "/initialized", gtk.TRUE)
+            client.set_bool(self.prefs_key + "/initialized", True)
 
         self._createToolTip(client)
         
-        return gtk.TRUE
+        return True
     
     def _showAboutDialog(self, uicomponent, verb):
         gnome.ui.About(gnome_blog_globals.name, gnome_blog_globals.version, "Copyright 2003 Seth Nickell",
@@ -91,7 +91,7 @@ class BloggerApplet(gnome.applet.Applet):
             self.poster_window.hide()
 
     def _onEntryPosted(self):
-        self.toggle.set_active(gtk.FALSE)
+        self.toggle.set_active(False)
 
     def _onButtonPress(self, toggle, event):
         if event.button != 1:

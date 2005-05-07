@@ -13,7 +13,7 @@ class LeftLabel(gtk.Label):
     def __init__(self, string):
         gtk.Label.__init__(self, string)
         self.set_alignment(0.0, 0.5)
-        
+
 class BloggerPrefs(gtk.Dialog):
     def __init__(self, prefs_key):
         gtk.Dialog.__init__(self, title=_("Blogger Preferences"), buttons=(gtk.STOCK_CLOSE, gtk.RESPONSE_CLOSE))
@@ -25,24 +25,25 @@ class BloggerPrefs(gtk.Dialog):
         client.add_dir(gconf_prefix, gconf.CLIENT_PRELOAD_ONELEVEL)
 
         self.set_border_width(5)
-        self.set_resizable(gtk.FALSE)
-        self.set_has_separator(gtk.FALSE)
+        self.set_resizable(False)
+        self.set_has_separator(False)
 
         self.vbox.set_spacing(2)
 
         blogTypeMenu = gconf_widgets.OptionMenu(gconf_prefix + "/blog_type")
-        blogTypeMenu.setStringValuePairs([("Blogger.com", "blogger.com"),
-                                         ("Advogato", "advogato.org"),
-                                         ("LiveJournal", "livejournal.com"),
-                                         ("-", ""),
-                                         (_("Self-Run MovableType"), "custom-mt"),
-                                         (_("Self-Run Pyblosxom"), "custom-pybloxsom"),
-                                         (_("Self-Run WordPress"), "custom-wordpress"),                                          
-                                         (_("Self-Run Other"), "custom")])
+        blogTypeMenu.setStringValuePairs([("GNOME blogs", "blogs.gnome.org"),
+                                          ("Blogger.com", "blogger.com"),
+                                          ("Advogato", "advogato.org"),
+                                          ("LiveJournal", "livejournal.com"),
+                                          ("-", ""),
+                                          (_("Self-Run MovableType"), "custom-mt"),
+                                          (_("Self-Run Pyblosxom"), "custom-pybloxsom"),
+                                          (_("Self-Run WordPress"), "custom-wordpress"),
+                                          (_("Self-Run Other"), "custom")])
 
         blogTypeBox = gtk.HBox()
         blogTypeBox.set_spacing(12)
-        blogTypeBox.pack_start(LeftLabel(_("Blog Type:")), expand=gtk.FALSE)
+        blogTypeBox.pack_start(LeftLabel(_("Blog Type:")), expand=False)
         blogTypeBox.pack_end(blogTypeMenu)
 
 
@@ -53,7 +54,7 @@ class BloggerPrefs(gtk.Dialog):
                                                    ("LiveJournal", "livejournal"),
                                                    ("MetaWeblog", "MetaWeblog")])
         self.blogProtocolLabel = LeftLabel(_("Blog Protocol:"))
-        
+
         self.urlEntry = gconf_widgets.Entry(gconf_prefix + "/xmlrpc_url")
         self.urlEntry.set_width_chars(45)
         self.urlLabel = LeftLabel(_("Blog Base URL:"))
@@ -77,7 +78,7 @@ class BloggerPrefs(gtk.Dialog):
         table.attach(self.blogProtocolMenu, 1, 3, 0, 1)
         table.attach(self.urlEntry, 1, 3, 1, 2)
         table.attach(gconf_widgets.Entry(gconf_prefix + "/blog_username"), 1, 3, 2, 3)
-        table.attach(gconf_widgets.Entry(gconf_prefix + "/blog_password", gtk.TRUE), 1, 3, 3, 4)
+        table.attach(gconf_widgets.Entry(gconf_prefix + "/blog_password", True), 1, 3, 3, 4)
         table.attach(self.blogMenu, 1, 2, 4, 5)
         table.attach(self.lookupButton, 2, 3, 4, 5, xoptions=gtk.FILL)
 
@@ -87,7 +88,7 @@ class BloggerPrefs(gtk.Dialog):
         vbox.pack_start(table)
         vbox.set_spacing(6)
         vbox.set_border_width(5)
-        
+
         self.vbox.pack_start(vbox)
 
         vbox.show_all()
@@ -95,7 +96,7 @@ class BloggerPrefs(gtk.Dialog):
         self.notify = client.notify_add(gconf_prefix + "/blog_type", self._gconfBlogTypeChange)
         blog_type = client.get_string(gconf_prefix + "/blog_type")
         self._updateBlogType(blog_type)
-        
+
 
     def _gconfBlogTypeChange (self, client, cnxn_id, entry, what):
         blog_type = entry.value.get_string()
@@ -105,7 +106,7 @@ class BloggerPrefs(gtk.Dialog):
     def _updateBlogType(self, blog_type):
         client = gconf.client_get_default()
 
-        lookup = gtk.TRUE
+        lookup = True
 
 	print 'blog type: ' + blog_type
 
@@ -128,7 +129,13 @@ class BloggerPrefs(gtk.Dialog):
             url = None
             url_ending = "/wordpress/xmlrpc.php"
             protocol = "MetaWeblog"
-            url_description = _("Base Blog URL:")            
+            url_description = _("Base Blog URL:")
+        elif blog_type == "blogs.gnome.org":
+            url = "http://blogs.gnome.org/nb.cgi/xmlrpc/"
+            url_ending = ""
+            protocol = "MetaWeblog"
+            url_description = _("XML-RPC URL:")
+            lookup = False
         elif blog_type == "blogger.com":
             url = "http://www.blogger.com/api/RPC2"
             url_ending = ""
@@ -139,37 +146,37 @@ class BloggerPrefs(gtk.Dialog):
             url_ending = ""
             protocol = "advogato"
             url_description = _("XML-RPC URL:")
-	    lookup = gtk.FALSE
+	    lookup = False
         elif (blog_type == "livejournal.com"):
             url = "http://www.livejournal.com/interface/xmlrpc"
             url_ending = ""
             protocol = "livejournal"
             url_description = _("XML-RPC URL:")
-	    lookup = gtk.FALSE
+	    lookup = False
         else:
             url = None
-            url_ending = "" 
+            url_ending = ""
             protocol = None
             url_description = None
-            lookup = gtk.FALSE
+            lookup = False
             hig_alert.reportError(_("Unknown blog type"), _("The detected blog type is not among the list of supported blogs"))
 
         if url != None:
-            self.urlEntry.set_sensitive(gtk.FALSE)
-            self.urlLabel.set_sensitive(gtk.FALSE)
+            self.urlEntry.set_sensitive(False)
+            self.urlLabel.set_sensitive(False)
             client.set_string(gconf_prefix + "/xmlrpc_url", url)
         else:
-            self.urlEntry.set_sensitive(gtk.TRUE)
-            self.urlLabel.set_sensitive(gtk.TRUE)
+            self.urlEntry.set_sensitive(True)
+            self.urlLabel.set_sensitive(True)
 
         if protocol != None:
-            self.blogProtocolMenu.set_sensitive(gtk.FALSE)
-            self.blogProtocolLabel.set_sensitive(gtk.FALSE)
+            self.blogProtocolMenu.set_sensitive(False)
+            self.blogProtocolLabel.set_sensitive(False)
             print 'Setting: ' + gconf_prefix + '/blog_protocol' + ' to ' + protocol
             client.set_string(gconf_prefix + "/blog_protocol", protocol)
         else:
-            self.blogProtocolMenu.set_sensitive(gtk.TRUE)
-            self.blogProtocolLabel.set_sensitive(gtk.TRUE)
+            self.blogProtocolMenu.set_sensitive(True)
+            self.blogProtocolLabel.set_sensitive(True)
 
         if url_description:
             self.urlLabel.set_text(url_description)
@@ -186,4 +193,8 @@ class BloggerPrefs(gtk.Dialog):
         blog_id_pairs = blog.getBlogList(gconf_prefix)
 
         self.blogMenu.setStringValuePairs(blog_id_pairs)
-    
+
+
+if __name__ == '__main__':
+    dialog = BloggerPrefs ("/apps/gnome-blog")
+    dialog.run ()

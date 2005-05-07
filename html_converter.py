@@ -12,7 +12,7 @@ def getHTML(buffer):
         iter = next_iter
         next_iter = _getNextIter(iter)
 
-        new_text = buffer.get_text(iter, next_iter, gtk.TRUE)
+        new_text = buffer.get_text(iter, next_iter, True)
         html = html + new_text + _getTagsHTML(next_iter, open_tags)
 
     return html.decode('utf8')
@@ -39,8 +39,8 @@ def _getNextIter(iter):
 def _getTags(iter):
     global para_tag
     
-    turnontags  = iter.get_toggled_tags(gtk.TRUE)
-    turnofftags = iter.get_toggled_tags(gtk.FALSE)
+    turnontags  = iter.get_toggled_tags(True)
+    turnofftags = iter.get_toggled_tags(False)
 
     if iter.is_end():
         # Iter is at the end of the buffer

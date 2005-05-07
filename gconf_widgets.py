@@ -72,7 +72,7 @@ class Entry(gtk.Entry):
         gtk.Entry.__init__(self)
 
         if is_password:
-            self.set_visibility(gtk.FALSE)
+            self.set_visibility(False)
             self.set_invisible_char(u"*")
 
         self.gconf_key = gconf_key

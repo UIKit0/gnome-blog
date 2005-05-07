@@ -69,16 +69,16 @@ class BlogPoster(gtk.Frame):
         self.prefs_button = gtk.Button(_("Preferences..."))
         self.prefs_button.connect("clicked", self._onPrefsButtonClicked)
 
-        buttonBox.pack_start(boldToggle, expand=gtk.FALSE)
-        buttonBox.pack_start(italicToggle, expand=gtk.FALSE)        
-        buttonBox.pack_start(linkButton, expand=gtk.FALSE)
-        buttonBox.pack_start(self.prefs_button, expand=gtk.FALSE)
+        buttonBox.pack_start(boldToggle, expand=False)
+        buttonBox.pack_start(italicToggle, expand=False)        
+        buttonBox.pack_start(linkButton, expand=False)
+        buttonBox.pack_start(self.prefs_button, expand=False)
             
         self.titleEntry = gtk.Entry()
 
         titleBox = gtk.HBox()
         titleBox.set_spacing(12)
-        titleBox.pack_start(gtk.Label(_("Title:")), expand=gtk.FALSE)
+        titleBox.pack_start(gtk.Label(_("Title:")), expand=False)
         titleBox.pack_start(self.titleEntry)
 
         box.pack_start(titleBox)
@@ -161,9 +161,9 @@ class BlogPoster(gtk.Frame):
         # unreasonable
         if not text:
             hig_alert.reportError(_("Blog Entry is Blank"), _("No text was entered in the blog entry box. Please enter some text and try again"))
-            return gtk.FALSE
+            return False
         else:
-            return gtk.TRUE
+            return True
 
 class BlogPosterSimple(BlogPoster):
     def __init__(self, prefs_key="/apps/gnome-blog", on_entry_posted=None):    

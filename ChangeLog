@@ -1,3 +1,9 @@
+Sat May  7 16:59:22 2005  Jonathan Blandford  <jrb@redhat.com>
+
+	* *.py: gtk.TRUE/FALSE => True/False
+
+	* blogger_prefs.py: Add blogs.gnome.org to the preset list.
+
 2005-04-01  Steve Murphy  <murf@e-tools.com>
 
         * configure.in: Added "rw" to ALL_LINGUAS.

@@ -18,7 +18,7 @@ class RichEntry(gtk.TextView):
 
         self._initDND()
         
-        self.set_editable(gtk.TRUE)
+        self.set_editable(True)
         self.set_wrap_mode(gtk.WRAP_WORD)
         self.set_pixels_below_lines(16)
         
@@ -78,7 +78,7 @@ class RichEntry(gtk.TextView):
         
         link_tag.uri = uri
         link_tag.on_activate = on_activate
-        link_tag.hyperlink = gtk.TRUE
+        link_tag.hyperlink = True
 
         self.buffer.insert_with_tags(iter, text, link_tag)
 
@@ -93,7 +93,7 @@ class RichEntry(gtk.TextView):
         
         link_tag.uri = uri
         link_tag.on_activate = on_activate
-        link_tag.hyperlink = gtk.TRUE
+        link_tag.hyperlink = True
 
         self.buffer.apply_tag(link_tag, selection[0], selection[1])
 
@@ -178,18 +178,18 @@ class RichEntry(gtk.TextView):
 
     def _onInsertText(self, widget, pos, text, length):
         for style in self.toggle_list:
-            if (style.get_active() == gtk.TRUE):
+            if (style.get_active() == True):
                 pos_end = pos.copy()
                 pos_end.backward_chars(length)
                 self.buffer.apply_tag(style.style_tag, pos, pos_end)
 
     def _onEventAfter(self, widget, event):
         if event.type != gtk.gdk.BUTTON_RELEASE or event.button != 1:
-            return gtk.FALSE
+            return False
 
         bounds = self.buffer.get_selection_bounds()
         if not bounds:
-            return gtk.FALSE
+            return False
 
         x, y = self.window_to_buffer_coords (gtk.TEXT_WINDOW_WIDGET, int(event.x), int(event.y))
 
@@ -197,13 +197,13 @@ class RichEntry(gtk.TextView):
 
         for tag in iter.get_tags():
             try:
-                if tag.hyperlink == gtk.TRUE:
+                if tag.hyperlink == True:
                     # Found Hyperlink, activating
                     tag.on_activate(tag.uri)
             except AttributeError:
                 pass
             
-        return gtk.FALSE
+        return False
 
 class InsertHyperlinkButton(gtk.Button):
     def __init__(self, rich_entry):
@@ -216,8 +216,8 @@ class InsertHyperlinkButton(gtk.Button):
                                                        _("_Add Link"), gtk.RESPONSE_ACCEPT))
         
         dialog.set_default_response(gtk.RESPONSE_ACCEPT)
-        dialog.set_has_separator(gtk.FALSE)
-        dialog.set_resizable(gtk.FALSE)
+        dialog.set_has_separator(False)
+        dialog.set_resizable(False)
         dialog.set_border_width(5)
         dialog.vbox.set_spacing(2)
         
@@ -229,7 +229,7 @@ class InsertHyperlinkButton(gtk.Button):
 
         textEntry = gtk.Entry()            
         urlEntry  = gtk.Entry()
-        urlEntry.set_activates_default(gtk.TRUE)
+        urlEntry.set_activates_default(True)
 
         selection = self.rich_entry.buffer.get_selection_bounds()
 
@@ -311,9 +311,9 @@ class StyleToggle(gtk.ToggleButton):
     def _onMarkSet(self, textbuffer, iter, mark):
         if mark == self.cursor_mark:
             
-            self.programmatic_toggle = gtk.TRUE
+            self.programmatic_toggle = True
             if iter.has_tag(self.style_tag):
-                self.set_active(gtk.TRUE)
+                self.set_active(True)
             else:
-                self.set_active(gtk.FALSE)
-            self.programmatic_toggle = gtk.FALSE
+                self.set_active(False)
+            self.programmatic_toggle = False

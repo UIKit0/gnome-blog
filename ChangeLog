@@ -1,5 +1,14 @@
 2005-05-12  Seth Nickell  <seth@gnome.org>
 
+	* configure.in:
+	* rich_entry.py:
+
+	Fix gnome.vfs to be gnomevfs (gnome-python change).
+
+	Bump version to 0.8.5.
+	
+2005-05-12  Seth Nickell  <seth@gnome.org>
+
 	* blogger_prefs.py:
 	* hig_alert.py:
 	* protocols/MetaWeblog.py:

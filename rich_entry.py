@@ -138,9 +138,9 @@ class RichEntry(gtk.TextView):
                 loader = gtk.gdk.PixbufLoader()
 
                 try:
-                    file_info = gnome.vfs.get_file_info(uri, gnome.vfs.FILE_INFO_GET_MIME_TYPE)
-                    file_contents = gnome.vfs.read_entire_file(uri)
-                except gnome.vfs.Error, e:
+                    file_info = gnomevfs.get_file_info(uri, gnomevfs.FILE_INFO_GET_MIME_TYPE)
+                    file_contents = gnomevfs.read_entire_file(uri)
+                except gnomevfs.Error, e:
                     hig_alert.reportError(_("Could not load dragged in image"),
                                           _("Error loading %s was: %s") % (hig_alert.italic(uri), e))
                 loader.write(file_contents)

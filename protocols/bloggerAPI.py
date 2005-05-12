@@ -1,6 +1,5 @@
 import xmlrpclib
 
-from gtk import FALSE, TRUE
 import gconf
 
 import gettext
@@ -60,7 +59,7 @@ class Blog:
         
         if (base_url == None):
             hig_alert.reportError(_("Could not post Blog entry"), _("No XML-RPC server URL to post blog entries to is set, or the value could not be retrieved from GConf. Your entry will remain in the blogger window."))
-            return FALSE
+            return False
 
         blog_id  = client.get_string(gconf_prefix + "/blog_id")
 
@@ -74,7 +73,7 @@ class Blog:
             password = ""
             
         content = title + "\n" + entry
-        success = TRUE
+        success = True
 
         #check for GNOME proxy configurations and use if required
         proxy_transport = proxy.GnomeProxyTransport(client)
@@ -85,10 +84,10 @@ class Blog:
                                    content, xmlrpclib.True)
         except xmlrpclib.Fault, e:
             hig_alert.handleBloggerAPIFault(e, _("Could not post blog entry"), username, blog_id, url)
-            success = FALSE
+            success = False
         except xmlrpclib.ProtocolError, e:
             hig_alert.reportError(_("Could not post Blog entry"), _('URL \'%s\' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: %s.') % (url, hig_alert.italic(e.errmsg)))
-            success = FALSE
+            success = False
 
         print ("Success is....")
         print (success)

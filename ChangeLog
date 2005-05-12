@@ -1,3 +1,16 @@
+2005-05-12  Seth Nickell  <seth@gnome.org>
+
+	* blogger_prefs.py:
+	* hig_alert.py:
+	* protocols/MetaWeblog.py:
+	* protocols/bloggerAPI.py:
+	* proxy.py:
+	* rich_entry.py:
+
+	More gtk.TRUE/FALSE => True/False fixes.
+
+	Add lookup so you can set the right blog to post to.
+	
 Sat May  7 16:59:22 2005  Jonathan Blandford  <jrb@redhat.com>
 
 	* *.py: gtk.TRUE/FALSE => True/False

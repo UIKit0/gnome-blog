@@ -41,9 +41,9 @@ class GnomeProxyTransport(Transport):
         server = ""
 	
         if (self.useProxy):
-            server = xmlrpclib.Server(url, transport=self)
+            server = xmlrpclib.Server(url, transport=self, allow_none=True)
         else:
-            server = xmlrpclib.Server(url)
+            server = xmlrpclib.Server(url, allow_none=True)
 
         return server;
 

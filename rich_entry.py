@@ -3,7 +3,7 @@ import gtk.gdk
 import pango
 import gobject
 import gnome
-import gnome.vfs
+import gnomevfs
 
 import gettext
 _ = gettext.gettext

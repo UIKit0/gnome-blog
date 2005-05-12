@@ -31,7 +31,7 @@ class BloggerPrefs(gtk.Dialog):
         self.vbox.set_spacing(2)
 
         blogTypeMenu = gconf_widgets.OptionMenu(gconf_prefix + "/blog_type")
-        blogTypeMenu.setStringValuePairs([("GNOME blogs", "blogs.gnome.org"),
+        blogTypeMenu.setStringValuePairs([("blogs.gnome.org", "blogs.gnome.org"),
                                           ("Blogger.com", "blogger.com"),
                                           ("Advogato", "advogato.org"),
                                           ("LiveJournal", "livejournal.com"),
@@ -135,7 +135,6 @@ class BloggerPrefs(gtk.Dialog):
             url_ending = ""
             protocol = "MetaWeblog"
             url_description = _("XML-RPC URL:")
-            lookup = False
         elif blog_type == "blogger.com":
             url = "http://www.blogger.com/api/RPC2"
             url_ending = ""

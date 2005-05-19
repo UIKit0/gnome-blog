@@ -1,3 +1,10 @@
+2005-05-19  Olav Vitters <olav@bkor.dhs.org>
+
+	* blog_poster.py:
+
+	Do not expand the titleBox and buttonBox. Ensures these boxes stay the
+	same size when the window is re-sized. Fixes bug #133267.
+
 2005-05-12  Seth Nickell  <seth@gnome.org>
 
 	* configure.in:

@@ -81,9 +81,9 @@ class BlogPoster(gtk.Frame):
         titleBox.pack_start(gtk.Label(_("Title:")), expand=False)
         titleBox.pack_start(self.titleEntry)
 
-        box.pack_start(titleBox)
+        box.pack_start(titleBox, expand=False)
         box.pack_start(scroller)
-        box.pack_start(buttonBox)
+        box.pack_start(buttonBox, expand=False)
 
         self.add(box)
         box.show_all()

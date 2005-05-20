@@ -29,6 +29,7 @@ class BloggerApplet(gnome.applet.Applet):
         self.__gobject_init__()
 
     def init(self):
+        self.set_applet_flags(gnome.applet.EXPAND_MINOR)
         self.toggle = gtk.ToggleButton()
         self.applet_tooltips = gtk.Tooltips()
         self.setup_menu_from_file (None, "GNOME_BlogApplet.xml",
@@ -47,7 +48,7 @@ class BloggerApplet(gnome.applet.Applet):
         
         self.show_all()
 
-        self.poster_window = aligned_window.AlignedWindow(self.toggle)
+        self.poster_window = aligned_window.AlignedWindow(self.toggle, self.get_orient)
         self.poster_window.set_modal(True)
         accel_group = gtk.AccelGroup()
         self.poster_window.add_accel_group(accel_group)

@@ -1,3 +1,11 @@
+2005-05-20  Olav Vitters <olav@bkor.dhs.org>
+
+	* blog_applet.py: Expand applet to follow Fitt's law. This is required
+	to correctly determine where the window should popup.
+	
+	* aligned_window.py: Use the code from clock.c applet (function
+	position_calendar_popup) to position the window. Fixes bug #168202.
+
 2005-05-19  Olav Vitters <olav@bkor.dhs.org>
 
 	* blog_poster.py:

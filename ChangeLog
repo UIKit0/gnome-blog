@@ -1,5 +1,10 @@
 2005-05-20  Olav Vitters <olav@bkor.dhs.org>
 
+	* proxy.py: Do not solely rely on the use http_proxy flag; also
+	ensure host isn't blank and port isn't 0. Fixes bug #164151.
+
+2005-05-20  Olav Vitters <olav@bkor.dhs.org>
+
 	* blog_applet.py: Expand applet to follow Fitt's law. This is required
 	to correctly determine where the window should popup.
 	

@@ -20,7 +20,9 @@ class GnomeProxyTransport(Transport):
 
         self.proxyHost = client.get_string(host_key) 
         self.proxyPort = client.get_int(port_key)
-        self.useProxy = client.get_bool(use_proxy_key)
+        self.useProxy = ( client.get_bool(use_proxy_key) and \
+                          self.proxyHost != "" and \
+                          self.proxyPort != 0 )
 		
         #Authentication not yet supported 
         self.useAuthentication = client.get_bool(use_authentication_key)

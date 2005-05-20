@@ -1,3 +1,8 @@
+2005-05-21  Olav Vitters <olav@bkor.dhs.org>
+
+	* aligned_window.py: Stay on top, skip task bar and pager. Fixes 
+	bug #125535.
+	
 2005-05-20  Olav Vitters <olav@bkor.dhs.org>
 
 	* proxy.py: Do not solely rely on the use http_proxy flag; also

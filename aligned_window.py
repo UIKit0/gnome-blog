@@ -20,8 +20,9 @@ class AlignedWindow(gtk.Window):
 
         # Skip the taskbar, and the pager, stick and stay on top
         self.stick()
-        # not wrapped self.set_skip_taskbar_hint(True)
-        # not wrapped self.set_skip_pager_hint(True)
+        self.set_keep_above(True)
+        self.set_skip_pager_hint(True)
+        self.set_skip_taskbar_hint(True)
         self.set_type_hint (gtk.gdk.WINDOW_TYPE_HINT_DOCK)
 
         # Get the dimensions/position of the widgetToAlignWith

@@ -212,8 +212,10 @@ class InsertHyperlinkButton(gtk.Button):
         self.connect("clicked", self._onClicked)
 
     def _onClicked(self, button):
-        dialog = gtk.Dialog(_("Add Link"), buttons=(gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
-                                                       _("_Add Link"), gtk.RESPONSE_ACCEPT))
+        dialog = gtk.Dialog(_("Add Link"),
+		            parent=self.get_toplevel(),
+		            buttons=(gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
+                                     _("_Add Link"), gtk.RESPONSE_ACCEPT))
         
         dialog.set_default_response(gtk.RESPONSE_ACCEPT)
         dialog.set_has_separator(False)

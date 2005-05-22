@@ -1,3 +1,8 @@
+2005-05-22  Tommi Komulainen  <tommi.komulainen@iki.fi>
+
+	* rich_entry.py: Make "Add Link" dialog transient for the poster
+	window. Fixes bug #304985.
+
 2005-05-21  Olav Vitters <olav@bkor.dhs.org>
 
 	* aligned_window.py: Stay on top, skip task bar and pager. Fixes 

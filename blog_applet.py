@@ -54,7 +54,9 @@ class BloggerApplet(gnome.applet.Applet):
         self.poster_window.add_accel_group(accel_group)
         self.prefs_key = self.get_preferences_key()
         print "Applet prefs located at %s" % (self.prefs_key)
-        self.poster = blog_poster.BlogPosterSimple(prefs_key=self.prefs_key, on_entry_posted=self._onEntryPosted)
+        self.poster = blog_poster.BlogPosterSimple(prefs_key=self.prefs_key,
+                                                   on_entry_posted=self._onEntryPosted,
+                                                   accel_group=accel_group)
         self.poster_window.add(self.poster)
         self.poster.show()
 

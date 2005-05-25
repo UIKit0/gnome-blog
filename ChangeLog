@@ -1,3 +1,15 @@
+2005-05-25  Olav Vitters <olav@bkor.dhs.org>
+
+	* blog_poster.py:
+
+	Change constructor to add accel_group argument. Pass that to
+	BlogPoster.
+	
+	* blog_applet.py:
+	
+	Pass accel_group to BlogPosterSimple. Allows CTRL-B, CTRL-I to work
+	from the applet. Fixes bug #305474.
+
 2005-05-22  Tommi Komulainen  <tommi.komulainen@iki.fi>
 
 	* rich_entry.py: Make "Add Link" dialog transient for the poster

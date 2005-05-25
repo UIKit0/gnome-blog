@@ -166,6 +166,6 @@ class BlogPoster(gtk.Frame):
             return True
 
 class BlogPosterSimple(BlogPoster):
-    def __init__(self, prefs_key="/apps/gnome-blog", on_entry_posted=None):    
-        BlogPoster.__init__(self,prefs_key,on_entry_posted)
+    def __init__(self, prefs_key="/apps/gnome-blog", on_entry_posted=None, accel_group=None):
+        BlogPoster.__init__(self, prefs_key, on_entry_posted, accel_group)
         self.prefs_button.hide_all();

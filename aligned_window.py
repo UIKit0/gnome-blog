@@ -40,7 +40,7 @@ class AlignedWindow(gtk.Window):
         found_monitor = False
         n = screen.get_n_monitors()
         for i in range(0, n):
-                monitor = screen.get_monitor_geometry(x)
+                monitor = screen.get_monitor_geometry(i)
                 if (x >= monitor.x and x <= monitor.x + monitor.width and \
                     y >= monitor.y and y <= monitor.y + monitor.height):
                         found_monitor = True
@@ -53,7 +53,7 @@ class AlignedWindow(gtk.Window):
         if orient == gnomeapplet.ORIENT_RIGHT:
                 x += button_w
 
-                if ((y + ourHeight) > monitor.y + monitor.height):
+                if ((y + h) > monitor.y + monitor.height):
                         y -= (y + h) - (monitor.y + monitor.height)
                 
                 if ((y + h) > (monitor.height / 2)):

@@ -131,7 +131,7 @@ class BloggerPrefs(gtk.Dialog):
             protocol = "MetaWeblog"
             url_description = _("Base Blog URL:")
         elif blog_type == "blogs.gnome.org":
-            url = "http://blogs.gnome.org/nb.cgi/xmlrpc/"
+            url = "http://blogs.gnome.org/xmlrpc/"
             url_ending = ""
             protocol = "MetaWeblog"
             url_description = _("XML-RPC URL:")

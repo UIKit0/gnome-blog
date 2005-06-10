@@ -1,5 +1,10 @@
 2005-06-10  Olav Vitters <olav@bkor.dhs.org>
 
+	* blogger_prefs.py: Update blogs.gnome.org xmlrpc URL. Fixes bug
+	#307113.
+
+2005-06-10  Olav Vitters <olav@bkor.dhs.org>
+
 	* aligned_window.py: Fix typos
 
 2005-05-25  Olav Vitters <olav@bkor.dhs.org>

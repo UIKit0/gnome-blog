@@ -1,3 +1,9 @@
+2005-06-11  Olav Vitters <olav@bkor.dhs.org>
+
+	* blog_applet.py: Do not set the blog applet window to be modal. This
+	prevents the about and preference windows to be closed if the blog
+	applet window is shown. Fixes bug #148078.
+
 2005-06-10  Olav Vitters <olav@bkor.dhs.org>
 
 	* blogger_prefs.py: Update blogs.gnome.org xmlrpc URL. Fixes bug

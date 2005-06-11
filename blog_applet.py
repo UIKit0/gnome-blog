@@ -49,7 +49,6 @@ class BloggerApplet(gnome.applet.Applet):
         self.show_all()
 
         self.poster_window = aligned_window.AlignedWindow(self.toggle, self.get_orient)
-        self.poster_window.set_modal(True)
         accel_group = gtk.AccelGroup()
         self.poster_window.add_accel_group(accel_group)
         self.prefs_key = self.get_preferences_key()

@@ -1,3 +1,7 @@
+2005-06-23  Abel Cheung  <maddog@linuxhall.org>
+
+	* POTFILES.in: Add protocols/MetaWeblog.py
+
 2005-06-09  Guilherme de S. Pastore <gpastore@cvs.gnome.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation by

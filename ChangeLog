@@ -1,3 +1,7 @@
+2005-06-23  Abel Cheung  <maddog@linuxhall.org>
+
+	* configure.in: Add "bg" "zh_CN" to ALL_LINGUAS.
+
 2005-06-11  Olav Vitters <olav@bkor.dhs.org>
 
 	* blog_applet.py: Do not set the blog applet window to be modal. This

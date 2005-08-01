@@ -38,7 +38,7 @@ class BlogPoster(gtk.Frame):
 
 	#if we are using gtkspell, attach it to the blogEntry
 	if use_gtkspell:
-		gtkspell.Spell(self.blogEntry)
+            self._attach_gtkspell()
 
         scroller         = gtk.ScrolledWindow()
         self.postButton  = gtk.Button(_("_Post Entry"))
@@ -118,14 +118,13 @@ class BlogPoster(gtk.Frame):
         #we must turn off the spell checker so as not to confuse
         #the markup to html converter
         if use_gtkspell:
-            spell = gtkspell.get_from_text_view(self.blogEntry)
-            spell.detach()
-        
+            self._detach_gtkspell()
+
         html_text = self.blogEntry.getHTML()
 
 	#turn spelling back on
         if use_gtkspell:
-            gtkspell.Spell(self.blogEntry)
+            self._attach_gtkspell()
 
         print "Text is: {\n %s \n }\n" % (html_text)
         title = self.titleEntry.get_text().decode('utf-8')
@@ -164,6 +163,21 @@ class BlogPoster(gtk.Frame):
             return False
         else:
             return True
+
+    def _attach_gtkspell(self):
+        try:
+            gtkspell.Spell(self.blogEntry)
+        except:
+            # unable to initialise Spell object
+            # maybe there is no dictionary for $LANG installed
+            use_gtkspell = 0
+
+    def _detach_gtkspell(self):
+        try:
+            spell = gtkspell.get_from_text_view(self.blogEntry)
+            spell.detach()
+        except:
+            use_gtkspell = 0
 
 class BlogPosterSimple(BlogPoster):
     def __init__(self, prefs_key="/apps/gnome-blog", on_entry_posted=None, accel_group=None):

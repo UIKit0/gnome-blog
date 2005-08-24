@@ -1,0 +1,302 @@
+# translation of gnome-blog.HEAD.po to Nepali
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Pawan Chitrakar <pawan@mpp.org.np>, 2005.
+# Jyotshna Shrestha <shresthajyo@hotmail.com>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-blog.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-08-24 19:59+0545\n"
+"PO-Revision-Date: 2005-06-14 15:31+0545\n"
+"Last-Translator: Jyotshna Shrestha <shresthajyo@hotmail.com>\n"
+"Language-Team: Nepali <info@mpp.org.np>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+"Plural-Forms: nplurals=2;plural=(n!=0)\n"
+
+#: ../GNOME_BlogApplet.server.in.in.h:1
+msgid "Accessories"
+msgstr "सहायक उपकरणहरू"
+
+#: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.h:1
+msgid "Blog Entry Poster"
+msgstr "ब्लग प्रविष्ट गर्ने पोस्टर"
+
+#: ../GNOME_BlogApplet.server.in.in.h:3
+msgid "Post entries to a web log"
+msgstr "वेव लगमा प्रविष्टहरू पोस्ट गर्नुहोस्"
+
+#: ../GNOME_BlogApplet.xml.h:1
+msgid "_About..."
+msgstr "_बारेमा..."
+
+#: ../GNOME_BlogApplet.xml.h:2
+msgid "_Preferences..."
+msgstr "_प्राथमिकताहरु..."
+
+#: ../blog_applet.py:36
+msgid "About"
+msgstr "बारेमा"
+
+#: ../blog_applet.py:39
+msgid "Blog"
+msgstr "ब्लग"
+
+#: ../blog_applet.py:75
+msgid "A GNOME Web Blogging Applet"
+msgstr "जी नोम सञ्जाल ब्लग गर्ने एप्लेट"
+
+#: ../blog_applet.py:110
+#, python-format
+msgid "Create a blog entry for %s at %s"
+msgstr "%s मा %s को लागी ब्लग प्रविष्ट सृजान गर्नुहोस्"
+
+#: ../blog_poster.py:44
+msgid "_Post Entry"
+msgstr "पोस्ट प्रविष्ट"
+
+#: ../blog_poster.py:69
+msgid "Preferences..."
+msgstr "प्राथमिकताहरु..."
+
+#: ../blog_poster.py:81
+msgid "Title:"
+msgstr "शीर्षक:"
+
+#: ../blog_poster.py:116
+msgid "Couldn't upload images"
+msgstr "चित्रहरू अपलोड गर्न सकिएन"
+
+#: ../blog_poster.py:116
+msgid "The blog protocol in use does not support uploading images"
+msgstr "प्रयोगमा रहेको ब्लग प्रोटोकोलले चित्रहरू अपलोड गर्न सहयोग गरेन"
+
+#: ../blog_poster.py:162
+msgid "Blog Entry is Blank"
+msgstr "ब्लग प्रविष्ट खाली छ"
+
+#: ../blog_poster.py:162
+msgid ""
+"No text was entered in the blog entry box. Please enter some text and try "
+"again"
+msgstr ""
+"ब्लग प्रविष्ट बाकसमा कुनै पाठ प्रविष्ट गरेको छैन। कृपया केहि पाठहरू प्रविष्ट गर्नुहोस् र पुन:"
+"प्रयास गर्नुहोस्"
+
+#: ../blogger_prefs.py:19
+msgid "Blogger Preferences"
+msgstr "ब्लगर प्राथमिकताहरु"
+
+#: ../blogger_prefs.py:39
+msgid "Self-Run MovableType"
+msgstr "स्वयम-सञ्चालन हुने सार्न सकिने प्रकार"
+
+#: ../blogger_prefs.py:40
+msgid "Self-Run Pyblosxom"
+msgstr "स्वयम सञ्चालन हुने पि वाई ब्लज्जम"
+
+#: ../blogger_prefs.py:41
+msgid "Self-Run WordPress"
+msgstr "स्वयम सञ्चालन हुने शव्द दबाउने"
+
+#: ../blogger_prefs.py:42
+msgid "Self-Run Other"
+msgstr "स्वयम सञ्चालन हुने अन्य"
+
+#: ../blogger_prefs.py:46
+msgid "Blog Type:"
+msgstr "ब्लग प्रकार:"
+
+#: ../blogger_prefs.py:56
+msgid "Blog Protocol:"
+msgstr "ब्लग प्रोटोकल:"
+
+#: ../blogger_prefs.py:60
+msgid "Blog Base URL:"
+msgstr "ब्लगमा आधारित युआरएल:"
+
+#: ../blogger_prefs.py:62
+msgid "Blog Name:"
+msgstr "ब्लग नाम:"
+
+#: ../blogger_prefs.py:64
+msgid "Lookup Blogs"
+msgstr "ब्लगहरु पत्ता लगाउनुहोस्"
+
+#: ../blogger_prefs.py:74
+msgid "Username:"
+msgstr "प्रयोगकर्ताको नाम:"
+
+#: ../blogger_prefs.py:75
+msgid "Password:"
+msgstr "प्रवेशचिन्ह:"
+
+#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:142
+#: ../blogger_prefs.py:147 ../blogger_prefs.py:153
+msgid "XML-RPC URL:"
+msgstr "एक्स एम एल-आर पि सि युआरएल:"
+
+#: ../blogger_prefs.py:122 ../blogger_prefs.py:127 ../blogger_prefs.py:132
+msgid "Base Blog URL:"
+msgstr "आधार ब्लग युआरएल:"
+
+#: ../blogger_prefs.py:161
+msgid "Unknown blog type"
+msgstr "अज्ञात ब्लग प्रकार"
+
+#: ../blogger_prefs.py:161
+msgid "The detected blog type is not among the list of supported blogs"
+msgstr "पत्ता लगाएको ब्लग प्रकार समर्थन गर्ने ब्लगहरूको सुचि बिच छैन"
+
+#: ../gnome-blog.desktop.in.h:2
+msgid "Post an entry to a web log"
+msgstr "वेव लगमा प्रविष्ट पोस्ट गर्नुहोस्"
+
+#: ../gnomeblog.schemas.in.h:1
+msgid "Password to use in accessing the blog"
+msgstr "ब्लग हेर्नलाई प्रयोग गरिने प्रवेशचिन्ह"
+
+#: ../gnomeblog.schemas.in.h:2
+msgid "Protocol to use in accessing the blog"
+msgstr "ब्लग उपलब्धमा प्रोटोकोलको प्रयोग"
+
+#: ../gnomeblog.schemas.in.h:3
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr "युआरएल आधारमा संलग्न गर्न सफिक्स (उदाहरण \"xmlrpc.cgi\")"
+
+#: ../gnomeblog.schemas.in.h:4
+msgid "The application's preferences have been initialized"
+msgstr "अनुरोधपत्रको प्राथमिकता प्रारम्भ गरियो।"
+
+#: ../gnomeblog.schemas.in.h:5
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr "एक्स एम एल-आर पि सि सेवादायकमा प्रयोग गर्न निश्चित ब्लगको आईडि वा नाम"
+
+#: ../gnomeblog.schemas.in.h:6
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr "ब्लगर ए पि आई स्वीकार्य एक्स एम एल - आर पि सि सेवादायकमा यु आर एल"
+
+#: ../gnomeblog.schemas.in.h:7
+msgid "Username to use in accessing the blog"
+msgstr "ब्लग हेर्नलाई प्रयोग गरिने प्रयोगकर्ताको नाम"
+
+#: ../hig_alert.py:15
+#, python-format
+msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
+msgstr ""
+"यु आर एल '%s' मान्य ब्लोगरए पि आई नहुन सक्छ। एक्स एल एल - आर पि सि सेवादायकले गरेको "
+"रिपोर्ट : %s."
+
+#: ../hig_alert.py:17
+#, python-format
+msgid ""
+"Unknown username %s or password trying to post blog entry to XML-RPC server %"
+"s."
+msgstr ""
+"एक्स एम एल-आर पि सि सेवादायक %s मा अज्ञात प्रयोगकर्तानाम %s वा प्रवेशचिन्ह ्ह ब्लग "
+"प्रविष्ट पोस्ट गर्न कोशिश गर्दैछ।"
+
+#: ../hig_alert.py:19
+#, python-format
+msgid ""
+"Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
+"reported: %s."
+msgstr ""
+"ब्लगगर एपिआई एक्स एम एल-आर पि सि सेवादायक '%s' मा ब्लग '%s' पोस्ट गर्न सकिएन। "
+"सेवादायकले दिएको रिपोर्ट: %s।"
+
+#: ../hig_alert.py:21
+#, python-format
+msgid ""
+"The bloggerAPI server (%s) reported an error I don't understand: '%s, %s'. \n"
+"\n"
+"Please email this error message to seth@gnome.org so I can address it."
+msgstr ""
+"ब्लगर ए पि आई सेवादायक (%s) ले दिएको रिपोर्ट त्रुटि छ जुन मैले बुझिन: '%s, %s'. \n"
+"\n"
+"कृपया यो त्रुटि seth@gnome.org लाई ईमेल गर्नुहोस् जुन मैले सम्बोधन गर्न सक्छु।"
+
+#: ../protocols/advogato.py:27 ../protocols/advogato.py:30
+#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:61
+#: ../protocols/bloggerAPI.py:89 ../protocols/livejournal.py:35
+#: ../protocols/livejournal.py:64
+msgid "Could not post Blog entry"
+msgstr "ब्लग प्रविष्ट पोस्ट गरिएन"
+
+#: ../protocols/advogato.py:27
+msgid "Your username is invalid. Please double-check the preferences."
+msgstr "प्रयोगकर्तानाम अमान्य छ। कृपया प्राथमिकताहरू दुईपटक जाँच्नुहोस्।"
+
+#: ../protocols/advogato.py:30 ../protocols/livejournal.py:35
+msgid ""
+"Your username or password is invalid. Please double-check the preferences."
+msgstr "प्रयोगकर्तानाम र प्रवेशचिन्ह अमान्य छ। कृपया प्राथमिकताहरू दुईपटक जाँच्नुहोस्।"
+
+#: ../protocols/advogato.py:39 ../protocols/bloggerAPI.py:86
+#: ../protocols/livejournal.py:61
+msgid "Could not post blog entry"
+msgstr "ब्लग प्रविष्ट पोस्ट गरिएन"
+
+#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:38
+#: ../protocols/bloggerAPI.py:89
+#, python-format
+msgid ""
+"URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
+"reported: %s."
+msgstr ""
+"युआरएल '%s' मान्य ब्लोगर एपिआइ एक्स एम एल - आर पि सि सेवादायक जस्तो देखिएन। वेब "
+"सेवादायकले दिएको रिपोर्ट : %s."
+
+#: ../protocols/bloggerAPI.py:35 ../protocols/bloggerAPI.py:38
+msgid "Could not get list of blogs"
+msgstr "ब्लगहरूको सुचि पाउन सकिएन"
+
+#: ../protocols/bloggerAPI.py:61
+msgid ""
+"No XML-RPC server URL to post blog entries to is set, or the value could not "
+"be retrieved from GConf. Your entry will remain in the blogger window."
+msgstr ""
+"ब्लग प्रविष्टहरू पोस्ट गर्न कुनै एक्स एम एल - आर पि सि सेवादायक यु आर एल मिलिएको छैन, वा "
+"मान जि कन्फबाट पुन:प्राप्त भएको छैन। तपाईको प्रविष्ट ब्लगर विण्डोमा बाँकि रहन्छ।"
+
+#: ../protocols/livejournal.py:64
+#, python-format
+msgid ""
+"URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
+"reported: %s."
+msgstr ""
+"यु आर एल '%s' मान्य प्रत्यक्ष जर्नल एक्स एम एल - आर पि सि सेवादायक जस्तो देखिंदैन। वेव "
+"सर्भरले दिएको रिपोर्ट: %s"
+
+#: ../rich_entry.py:144 ../rich_entry.py:152
+msgid "Could not load dragged in image"
+msgstr "चित्रमा तानेको लोड भएन"
+
+#: ../rich_entry.py:145 ../rich_entry.py:153
+#, python-format
+msgid "Error loading %s was: %s"
+msgstr "%s: : %s लोड गर्दा को त्रुटि हो"
+
+#: ../rich_entry.py:210
+msgid "Add _Link..."
+msgstr "सम्बन्ध जोड्नुहोस्..."
+
+#: ../rich_entry.py:215
+msgid "Add Link"
+msgstr "सम्बन्ध जोड्नुहोस्"
+
+#: ../rich_entry.py:218
+msgid "_Add Link"
+msgstr "सम्बन्ध जोड्नुहोस्"
+
+#: ../rich_entry.py:226
+msgid "Text:"
+msgstr "पाठ:"
+
+#: ../rich_entry.py:229
+msgid "URL:"
+msgstr "यु आर एल:"

@@ -1,3 +1,7 @@
+2005-08-24  Pawan Chitrakar  <pchitrakar@gmail.com>
+
+	* configure.in: Added ne in ALL_LINGUAS
+
 2005-08-01  Olav Vitters <olav@bkor.dhs.org>
 
 	* blog_poster.py: Disable gtkspell when gtkspell.Spell() fails. This

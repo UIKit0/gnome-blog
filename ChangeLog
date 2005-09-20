@@ -1,3 +1,9 @@
+2005-09-20  Olav Vitters <olav@bkor.dhs.org>
+
+	* blogger_prefs.py: Change "Blog Base URL:" instance to "Base Blog
+	URL:" for consistency and at the request of the Vietnamese translator
+	Clytie Siddall. Fixes bug #313933.
+
 2005-08-24  Pawan Chitrakar  <pchitrakar@gmail.com>
 
 	* configure.in: Added ne in ALL_LINGUAS

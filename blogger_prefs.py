@@ -57,7 +57,7 @@ class BloggerPrefs(gtk.Dialog):
 
         self.urlEntry = gconf_widgets.Entry(gconf_prefix + "/xmlrpc_url")
         self.urlEntry.set_width_chars(45)
-        self.urlLabel = LeftLabel(_("Blog Base URL:"))
+        self.urlLabel = LeftLabel(_("Base Blog URL:"))
 
 	self.blogLabel = LeftLabel(_("Blog Name:"))
         self.blogMenu = gconf_widgets.OptionMenu(gconf_prefix + "/blog_id")

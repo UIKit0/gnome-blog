@@ -1,0 +1,308 @@
+# translation of gnome-blog_0.8-2_gl.po to Galego
+# Galician translation of gnome-blog
+# Copyright (C) 2005 Free Software Foundation
+# Proxecto Trasno - Adaptación do softare libre á lingua galega: Se desexas
+# colaborar connosco, podes atopar máis información en htt//www.trasno.net
+# First Version: 2005-06-26 17:00+0200
+# Pedro Silva <psf@pedrosilva.org>, 2005.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-blog_0.8-2_gl\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-11-21 14:27+0100\n"
+"PO-Revision-Date: 2005-11-21 14:21+0100\n"
+"Last-Translator: Pedro Silva <psf@pedrosilva.org>\n"
+"Language-Team: Galego\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);X-Generator: KBabel 1.10.2\n"
+
+#: ../GNOME_BlogApplet.server.in.in.h:1
+msgid "Accessories"
+msgstr "Accesorios"
+
+#: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.h:1
+msgid "Blog Entry Poster"
+msgstr "A persoa que enviou a entrada"
+
+#: ../GNOME_BlogApplet.server.in.in.h:3
+msgid "Post entries to a web log"
+msgstr "Publicar entradas nun blog"
+
+#: ../GNOME_BlogApplet.xml.h:1
+msgid "_About..."
+msgstr "_Acerca de..."
+
+#: ../GNOME_BlogApplet.xml.h:2
+msgid "_Preferences..."
+msgstr "_Preferencias..."
+
+#: ../blog_applet.py:36
+msgid "About"
+msgstr "Acerca de"
+
+#: ../blog_applet.py:39
+msgid "Blog"
+msgstr "Blog"
+
+#: ../blog_applet.py:75
+msgid "A GNOME Web Blogging Applet"
+msgstr "Unha applet de GNOME para publicar en weblogs"
+
+#: ../blog_applet.py:110
+#, python-format
+msgid "Create a blog entry for %s at %s"
+msgstr "Crear unha entrada para %s en %s"
+
+#: ../blog_poster.py:44
+msgid "_Post Entry"
+msgstr "_Publicar entrada"
+
+#: ../blog_poster.py:69
+msgid "Preferences..."
+msgstr "Preferencias..."
+
+#: ../blog_poster.py:81
+msgid "Title:"
+msgstr "Título:"
+
+#: ../blog_poster.py:116
+msgid "Couldn't upload images"
+msgstr "Non se puideron subir as imaxes"
+
+#: ../blog_poster.py:116
+msgid "The blog protocol in use does not support uploading images"
+msgstr "O protocolo da blog en uso non permite subir imaxes"
+
+#: ../blog_poster.py:162
+msgid "Blog Entry is Blank"
+msgstr "A entrada do blog esta baleira"
+
+#: ../blog_poster.py:162
+msgid ""
+"No text was entered in the blog entry box. Please enter some text and try "
+"again"
+msgstr ""
+"Non hai texto ningún na caixa de entrada. Escriba algún texto e ténteo de "
+"novo"
+
+#: ../blogger_prefs.py:19
+msgid "Blogger Preferences"
+msgstr "Preferencias de Blogger"
+
+#: ../blogger_prefs.py:39
+msgid "Self-Run MovableType"
+msgstr "Executar automaticamente MovableType"
+
+#: ../blogger_prefs.py:40
+msgid "Self-Run Pyblosxom"
+msgstr "Executar automaticamente Pybloxsom"
+
+#: ../blogger_prefs.py:41
+msgid "Self-Run WordPress"
+msgstr "Executar automaticamente WordPress"
+
+#: ../blogger_prefs.py:42
+msgid "Self-Run Other"
+msgstr "Executar automaticamente outro"
+
+#: ../blogger_prefs.py:46
+msgid "Blog Type:"
+msgstr "Tipo de blog:"
+
+#: ../blogger_prefs.py:56
+msgid "Blog Protocol:"
+msgstr "Protocolo do blog:"
+
+#: ../blogger_prefs.py:60 ../blogger_prefs.py:122 ../blogger_prefs.py:127
+#: ../blogger_prefs.py:132
+msgid "Base Blog URL:"
+msgstr "URL base do blog:"
+
+#: ../blogger_prefs.py:62
+msgid "Blog Name:"
+msgstr "Nome do blog:"
+
+#: ../blogger_prefs.py:64
+msgid "Lookup Blogs"
+msgstr "Procurar blogs"
+
+#: ../blogger_prefs.py:74
+msgid "Username:"
+msgstr "Nome de usuario:"
+
+#: ../blogger_prefs.py:75
+msgid "Password:"
+msgstr "Contrasinal:"
+
+#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:142
+#: ../blogger_prefs.py:147 ../blogger_prefs.py:153
+msgid "XML-RPC URL:"
+msgstr "URL de XML-RPC:"
+
+#: ../blogger_prefs.py:161
+msgid "Unknown blog type"
+msgstr "Tipo de blog descoñecido"
+
+#: ../blogger_prefs.py:161
+msgid "The detected blog type is not among the list of supported blogs"
+msgstr "O tipo de blog detectado non esta na lista de blogs soportados"
+
+#: ../gnome-blog.desktop.in.h:2
+msgid "Post an entry to a web log"
+msgstr "Publicar unha entrada nun weblog"
+
+#: ../gnomeblog.schemas.in.h:1
+msgid "Password to use in accessing the blog"
+msgstr "Contrasinal para acceder ó blog"
+
+#: ../gnomeblog.schemas.in.h:2
+msgid "Protocol to use in accessing the blog"
+msgstr "Protocolo empregado para acceder ó blog"
+
+#: ../gnomeblog.schemas.in.h:3
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr "Sufixo engadido á URL base (ex.: \"xmlrcp.cgi\")"
+
+#: ../gnomeblog.schemas.in.h:4
+msgid "The application's preferences have been initialized"
+msgstr "As preferencias do programa foron inicializadas"
+
+#: ../gnomeblog.schemas.in.h:5
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr "O ID ou nome do blog particular a empregar no servidor XML-RPC"
+
+#: ../gnomeblog.schemas.in.h:6
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr "URL do servicor XML-RPC compatible coa bloggerAPI"
+
+#: ../gnomeblog.schemas.in.h:7
+msgid "Username to use in accessing the blog"
+msgstr "Nome de usuario a empregar para acceder ó blog"
+
+#: ../hig_alert.py:15
+#, python-format
+msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
+msgstr ""
+"A URL '%s' pode que non sexa dun servidor compatible coa bloggerAPI. O "
+"servidor XML-RPC respostou: %s."
+
+#: ../hig_alert.py:17
+#, python-format
+msgid ""
+"Unknown username %s or password trying to post blog entry to XML-RPC server %"
+"s."
+msgstr ""
+"Nome de usuario %s ou contrasinal descoñecido ó tentar publicar a estrada no "
+"servidor XML-RPC %s"
+
+#: ../hig_alert.py:19
+#, python-format
+msgid ""
+"Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
+"reported: %s."
+msgstr ""
+"Non se puido publicar no blog '%s' do servidor XML-RPC no blogger '%s'. O "
+"servidor repostou: %s."
+
+#: ../hig_alert.py:21
+#, python-format
+msgid ""
+"The bloggerAPI server (%s) reported an error I don't understand: '%s, %s'. \n"
+"\n"
+"Please email this error message to seth@gnome.org so I can address it."
+msgstr ""
+"O servidor bloggerAPI (%s) repostou cun erro que non entendo: '%s, %s'. \n"
+"\n"
+"Sexa tan amable de facer chegar este erro ao email seth@gnome.org."
+
+#: ../protocols/advogato.py:27 ../protocols/advogato.py:30
+#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:61
+#: ../protocols/bloggerAPI.py:89 ../protocols/livejournal.py:35
+#: ../protocols/livejournal.py:64
+msgid "Could not post Blog entry"
+msgstr "No se puido publicar a entrada do blog"
+
+#: ../protocols/advogato.py:27
+msgid "Your username is invalid. Please double-check the preferences."
+msgstr ""
+"O seu nome de usuario non é valido. Sexa tan amable de revisar as "
+"preferencias."
+
+#: ../protocols/advogato.py:30 ../protocols/livejournal.py:35
+msgid ""
+"Your username or password is invalid. Please double-check the preferences."
+msgstr ""
+"O seu usuario ou contrasinal non é valido. Sexa tan amable de revisar as "
+"preferencias."
+
+#: ../protocols/advogato.py:39 ../protocols/bloggerAPI.py:86
+#: ../protocols/livejournal.py:61
+msgid "Could not post blog entry"
+msgstr "Non se puido publicar a entrada do blog"
+
+#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:38
+#: ../protocols/bloggerAPI.py:89
+#, python-format
+msgid ""
+"URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
+"reported: %s."
+msgstr ""
+"A URL '%s' non repostou coma un servidor bloggerAPI válido. A resposta do "
+"servidor foi: '%s'"
+
+#: ../protocols/bloggerAPI.py:35 ../protocols/bloggerAPI.py:38
+msgid "Could not get list of blogs"
+msgstr "Non se puido obter a lista de blogs"
+
+#: ../protocols/bloggerAPI.py:61
+msgid ""
+"No XML-RPC server URL to post blog entries to is set, or the value could not "
+"be retrieved from GConf. Your entry will remain in the blogger window."
+msgstr ""
+"Non hai informacion sobre o servidor XML-RPC no que publicar, ou o valor non "
+"se puido obter de GConf. A sua entrada permanecera na xanela do blogger."
+
+#: ../protocols/livejournal.py:64
+#, python-format
+msgid ""
+"URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
+"reported: %s."
+msgstr ""
+"A URL '%s' non parece ser un servidor XML-RPC LiveJournal válido. O servidor "
+"web repostou: %s."
+
+#: ../rich_entry.py:144 ../rich_entry.py:152
+msgid "Could not load dragged in image"
+msgstr "No se puido cargar a imaxe arrastrada dentro do programa"
+
+#: ../rich_entry.py:145 ../rich_entry.py:153
+#, python-format
+msgid "Error loading %s was: %s"
+msgstr "O erro cargando %s foi: %s"
+
+#: ../rich_entry.py:210
+msgid "Add _Link..."
+msgstr "Engadir _Ligazón..."
+
+#: ../rich_entry.py:215
+msgid "Add Link"
+msgstr "Engadir Ligazón"
+
+#: ../rich_entry.py:218
+msgid "_Add Link"
+msgstr "Eng_adir Ligazón"
+
+#: ../rich_entry.py:226
+msgid "Text:"
+msgstr "Texto:"
+
+#: ../rich_entry.py:229
+msgid "URL:"
+msgstr "URL:"
+
+#~ msgid "Blog Base URL:"
+#~ msgstr "URL base do blog:"

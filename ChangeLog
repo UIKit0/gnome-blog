@@ -1,3 +1,7 @@
+2005-11-21  Ignacio Casal Quinteiro  <nacho.resa@gmail.com>
+
+	* configure-in: Added 'gl' to ALL_LINGUAS.
+
 2005-09-20  Olav Vitters <olav@bkor.dhs.org>
 
 	* blogger_prefs.py: Change "Blog Base URL:" instance to "Base Blog

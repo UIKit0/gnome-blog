@@ -1,3 +1,7 @@
+2006-01-09  Olav Vitters  <olav@bkor.dhs.org>
+
+	* configure.in: Require at least pygtk 2.6.
+
 2006-01-07  Ilkka Tuohela  <hile@iki.fi>
 	
 	* configure.in: Added fi to ALL_LINGUAS.

@@ -59,7 +59,7 @@ class BloggerPrefs(gtk.Dialog):
         self.urlEntry.set_width_chars(45)
         self.urlLabel = LeftLabel(_("Base Blog URL:"))
 
-	self.blogLabel = LeftLabel(_("Blog Name:"))
+        self.blogLabel = LeftLabel(_("Blog Name:"))
         self.blogMenu = gconf_widgets.OptionMenu(gconf_prefix + "/blog_id")
         self.lookupButton = gtk.Button(_("Lookup Blogs"))
         self.lookupButton.connect("clicked", self._onLookupBlogsButton)
@@ -108,7 +108,7 @@ class BloggerPrefs(gtk.Dialog):
 
         lookup = True
 
-	print 'blog type: ' + blog_type
+        print 'blog type: ' + blog_type
 
         if blog_type == "custom":
             url = None
@@ -145,13 +145,13 @@ class BloggerPrefs(gtk.Dialog):
             url_ending = ""
             protocol = "advogato"
             url_description = _("XML-RPC URL:")
-	    lookup = False
+            lookup = False
         elif (blog_type == "livejournal.com"):
             url = "http://www.livejournal.com/interface/xmlrpc"
             url_ending = ""
             protocol = "livejournal"
             url_description = _("XML-RPC URL:")
-	    lookup = False
+            lookup = False
         else:
             url = None
             url_ending = ""
@@ -182,7 +182,7 @@ class BloggerPrefs(gtk.Dialog):
 
         client.set_string(gconf_prefix + "/url_ending", url_ending)
 
-	self.lookupButton.set_sensitive(lookup)
+        self.lookupButton.set_sensitive(lookup)
         self.blogMenu.set_sensitive(lookup)
         self.blogLabel.set_sensitive(lookup)
 

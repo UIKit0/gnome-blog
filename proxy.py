@@ -23,7 +23,7 @@ class GnomeProxyTransport(Transport):
         self.useProxy = ( client.get_bool(use_proxy_key) and \
                           self.proxyHost != "" and \
                           self.proxyPort != 0 )
-		
+
         #Authentication not yet supported 
         self.useAuthentication = client.get_bool(use_authentication_key)
         self.username = client.get_string(user_key) 
@@ -41,7 +41,7 @@ class GnomeProxyTransport(Transport):
 
     def get_server(self, url):
         server = ""
-	
+
         if (self.useProxy):
             server = xmlrpclib.Server(url, transport=self, allow_none=True)
         else:

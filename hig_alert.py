@@ -5,10 +5,10 @@ from gettext import gettext as _
 import xml.sax.saxutils
 
 def italic(s):
-	return "<span style=\"italic\">%s</span>" % xml.sax.saxutils.escape(str(s))
+    return "<span style=\"italic\">%s</span>" % xml.sax.saxutils.escape(str(s))
 
 def bold(s):
-	return "<span weight=\"bold\">%s</span>" % xml.sax.saxutils.escape(str(s))
+    return "<span weight=\"bold\">%s</span>" % xml.sax.saxutils.escape(str(s))
 
 def handleBloggerAPIFault(e, primary, username, blog_id, url):
     if e.faultCode == 'Method Error':

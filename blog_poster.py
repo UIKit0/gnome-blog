@@ -36,8 +36,8 @@ class BlogPoster(gtk.Frame):
         
         self.blogEntry   = rich_entry.RichEntry()
 
-	#if we are using gtkspell, attach it to the blogEntry
-	if use_gtkspell:
+        #if we are using gtkspell, attach it to the blogEntry
+        if use_gtkspell:
             self._attach_gtkspell()
 
         scroller         = gtk.ScrolledWindow()
@@ -122,7 +122,7 @@ class BlogPoster(gtk.Frame):
 
         html_text = self.blogEntry.getHTML()
 
-	#turn spelling back on
+        #turn spelling back on
         if use_gtkspell:
             self._attach_gtkspell()
 

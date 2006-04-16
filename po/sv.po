@@ -1,6 +1,7 @@
 # Swedish messages for gnome-blog.
-# Copyright (C) 2003 Free Software Foundation, Inc.
+# Copyright (C) 2003-2006 Free Software Foundation, Inc.
 # Christian Rose <menthos@menthos.com>, 2003.
+# Daniel Nylander <po@danielnylander.se>, 2006.
 #
 # $Id$
 #
@@ -8,344 +9,316 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-12 03:10-0500\n"
-"PO-Revision-Date: 2003-10-24 02:36+0200\n"
-"Last-Translator: Christian Rose <menthos@menthos.com>\n"
-"Language-Team: Swedish <sv@li.org>\n"
+"POT-Creation-Date: 2006-04-12 19:28+0200\n"
+"PO-Revision-Date: 2006-04-16 21:32+0100\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: GNOME_BlogApplet.server.in.in.h:1
+#: ../GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr "Tillbehör"
 
-#: GNOME_BlogApplet.server.in.in.h:2 gnome-blog.desktop.in.h:1
+#: ../GNOME_BlogApplet.server.in.in.h:2
+#: ../gnome-blog.desktop.in.h:1
 msgid "Blog Entry Poster"
-msgstr "Postare av webbloggsinlägg"
+msgstr "Postare av blogginlägg"
 
-#: GNOME_BlogApplet.server.in.in.h:3
+#: ../GNOME_BlogApplet.server.in.in.h:3
 msgid "Post entries to a web log"
 msgstr "Posta inlägg i en webblogg"
 
-#: GNOME_BlogApplet.xml.h:1
+#: ../GNOME_BlogApplet.xml.h:1
 msgid "_About..."
 msgstr "_Om..."
 
-#: GNOME_BlogApplet.xml.h:2
+#: ../GNOME_BlogApplet.xml.h:2
 msgid "_Preferences..."
 msgstr "_Inställningar..."
 
-#: blog_applet.py:35
+#: ../blog_applet.py:36
 msgid "About"
 msgstr "Om"
 
-#: blog_applet.py:38
+#: ../blog_applet.py:39
 msgid "Blog"
-msgstr "Webblogg"
+msgstr "Blogg"
 
-#: blog_applet.py:73
+#: ../blog_applet.py:75
 msgid "A GNOME Web Blogging Applet"
-msgstr "Ett GNOME-webbloggningspanelprogram"
+msgstr "Ett webbloggningspanelprogram för GNOME"
 
-#: blog_applet.py:108
+#: ../blog_applet.py:110
 #, python-format
 msgid "Create a blog entry for %s at %s"
-msgstr ""
+msgstr "Skapa ett blogginlägg för %s på %s"
 
-#: blog_poster.py:44
+#: ../blog_poster.py:44
 msgid "_Post Entry"
 msgstr "_Posta inlägg"
 
-#: blog_poster.py:69
+#: ../blog_poster.py:69
 msgid "Preferences..."
 msgstr "Inställningar..."
 
-#: blog_poster.py:81
+#: ../blog_poster.py:81
 msgid "Title:"
 msgstr "Titel:"
 
-#: blog_poster.py:116
+#: ../blog_poster.py:116
 msgid "Couldn't upload images"
 msgstr "Kunde inte lämna bilder"
 
-#: blog_poster.py:116
+#: ../blog_poster.py:116
 msgid "The blog protocol in use does not support uploading images"
-msgstr "Webbloggsprotokollet som används stöder inte lämnande av bilder"
+msgstr "Bloggprotokollet som används stöder inte lämnande av bilder"
 
-#: blog_poster.py:163
+#: ../blog_poster.py:162
 msgid "Blog Entry is Blank"
-msgstr "Webbloggsinlägget är tomt"
+msgstr "Blogginlägget är tomt"
 
-#: blog_poster.py:163
-msgid ""
-"No text was entered in the blog entry box. Please enter some text and try "
-"again"
-msgstr ""
-"Ingen text angavs i webbloggsinmatningsfältet. Ange någon text och försök "
-"igen"
+#: ../blog_poster.py:162
+msgid "No text was entered in the blog entry box. Please enter some text and try again"
+msgstr "Ingen text angavs i blogginmatningsfältet. Ange någon text och försök igen"
 
-#: blogger_prefs.py:19
+#: ../blogger_prefs.py:19
 msgid "Blogger Preferences"
-msgstr "Inställningar för webbloggare"
+msgstr "Inställningar för blogger"
 
-#: blogger_prefs.py:38
+#: ../blogger_prefs.py:39
 msgid "Self-Run MovableType"
 msgstr "MovableType för självkörning"
 
-#: blogger_prefs.py:39
-#, fuzzy
+#: ../blogger_prefs.py:40
 msgid "Self-Run Pyblosxom"
 msgstr "Pybloxsom för självkörning"
 
-#: blogger_prefs.py:40
-#, fuzzy
+#: ../blogger_prefs.py:41
 msgid "Self-Run WordPress"
-msgstr "Annat för självkörning"
+msgstr "WordPress för självkörning"
 
-#: blogger_prefs.py:41
+#: ../blogger_prefs.py:42
 msgid "Self-Run Other"
 msgstr "Annat för självkörning"
 
-#: blogger_prefs.py:45
+#: ../blogger_prefs.py:46
 msgid "Blog Type:"
-msgstr "Webbloggstyp:"
+msgstr "Bloggtyp:"
 
-#: blogger_prefs.py:55
+#: ../blogger_prefs.py:56
 msgid "Blog Protocol:"
-msgstr "Webbloggsprotokoll:"
+msgstr "Bloggprotokoll:"
 
-#: blogger_prefs.py:59
-msgid "Blog Base URL:"
-msgstr "Webbloggsbas-URL:"
+#: ../blogger_prefs.py:60
+#: ../blogger_prefs.py:122
+#: ../blogger_prefs.py:127
+#: ../blogger_prefs.py:132
+msgid "Base Blog URL:"
+msgstr "Basblogg-URL:"
 
-#: blogger_prefs.py:61
+#: ../blogger_prefs.py:62
 msgid "Blog Name:"
-msgstr "Webbloggsnamn:"
+msgstr "Bloggnamn:"
 
-#: blogger_prefs.py:63
+#: ../blogger_prefs.py:64
 msgid "Lookup Blogs"
-msgstr "Slå upp webbloggar"
+msgstr "Slå upp bloggar"
 
-#: blogger_prefs.py:73
+#: ../blogger_prefs.py:74
 msgid "Username:"
 msgstr "Användarnamn:"
 
-#: blogger_prefs.py:74
+#: ../blogger_prefs.py:75
 msgid "Password:"
 msgstr "Lösenord:"
 
-#: blogger_prefs.py:116 blogger_prefs.py:136 blogger_prefs.py:141
-#: blogger_prefs.py:147
+#: ../blogger_prefs.py:117
+#: ../blogger_prefs.py:137
+#: ../blogger_prefs.py:142
+#: ../blogger_prefs.py:147
+#: ../blogger_prefs.py:153
 msgid "XML-RPC URL:"
 msgstr "XML-RPC-URL:"
 
-#: blogger_prefs.py:121 blogger_prefs.py:126 blogger_prefs.py:131
-msgid "Base Blog URL:"
-msgstr "Baswebbloggs-URL:"
-
-#: blogger_prefs.py:155
+#: ../blogger_prefs.py:161
 msgid "Unknown blog type"
-msgstr ""
+msgstr "Okänd bloggtyp"
 
-#: blogger_prefs.py:155
+#: ../blogger_prefs.py:161
 msgid "The detected blog type is not among the list of supported blogs"
-msgstr ""
+msgstr "Den identifierade bloggtypen är inte bland de bloggar som stöds"
 
-#: gnome-blog.desktop.in.h:2
+#: ../gnome-blog.desktop.in.h:2
 msgid "Post an entry to a web log"
 msgstr "Posta ett inlägg i en webblogg"
 
-#: gnomeblog.schemas.in.h:1
+#: ../gnomeblog.schemas.in.h:1
 msgid "Password to use in accessing the blog"
-msgstr "Lösenord för att komma åt webbloggen"
+msgstr "Lösenord för att komma åt bloggen"
 
-#: gnomeblog.schemas.in.h:2
+#: ../gnomeblog.schemas.in.h:2
 msgid "Protocol to use in accessing the blog"
-msgstr "Protokoll att använda för åtkomst av webbloggen"
+msgstr "Protokoll att använda för åtkomst av bloggen"
 
-#: gnomeblog.schemas.in.h:3
+#: ../gnomeblog.schemas.in.h:3
 msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
 msgstr "Ändelse för att fästa bas-URL:en (t.ex. \"xmlrpc.cgi\")"
 
-#: gnomeblog.schemas.in.h:4
+#: ../gnomeblog.schemas.in.h:4
 msgid "The application's preferences have been initialized"
 msgstr "Programmets inställningar har initierats"
 
-#: gnomeblog.schemas.in.h:5
+#: ../gnomeblog.schemas.in.h:5
 msgid "The id or name of the particular blog to use on the XML-RPC server"
-msgstr "Id eller namnet för den webblog som ska användas på XML-RPC-servern"
+msgstr "Id eller namnet för den blogg som ska användas på XML-RPC-servern"
 
-#: gnomeblog.schemas.in.h:6
+#: ../gnomeblog.schemas.in.h:6
 msgid "URL to the bloggerAPI compatible XML-RPC server"
 msgstr "URL till den bloggerAPI-kompatibla XML-RPC-servern"
 
-#: gnomeblog.schemas.in.h:7
+#: ../gnomeblog.schemas.in.h:7
 msgid "Username to use in accessing the blog"
-msgstr "Användarnamn för att komma åt webbloggen"
+msgstr "Användarnamn för att komma åt bloggen"
 
-#: hig_alert.py:13
-#, fuzzy, python-format
+#: ../hig_alert.py:15
+#, python-format
 msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
-msgstr ""
-"URL:en \"%s\" är kanske inte ett giltigt bloggerAPI. XML-RPC-server "
-"rapporterade: <span style=\"italic\">%s</span>."
+msgstr "Url:en \"%s\" är kanske inte ett giltigt bloggerAPI. XML-RPC-server rapporterade: %s."
 
-#: hig_alert.py:15
-#, fuzzy, python-format
-msgid ""
-"Unknown username %s or password trying to post blog entry to XML-RPC server %"
-"s."
-msgstr ""
-"Okänt användarnamn <span weight=\"bold\">%s</span> eller lösenord vid försök "
-"att posta webbloggsinlägg till XML-RPC-servern <span style=\"italic\">%s</"
-"span>."
+#: ../hig_alert.py:17
+#, python-format
+msgid "Unknown username %s or password trying to post blog entry to XML-RPC server %s."
+msgstr "Okänt användarnamn %s eller lösenord vid försök att posta blogginlägg till XML-RPC-servern %s."
 
-#: hig_alert.py:17
-#, fuzzy, python-format
-msgid ""
-"Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
-"reported: %s."
-msgstr ""
-"Kunde inte posta webbloggen \"%s\" vid bloggerAPI-XML-RPC-servern \"%s\". "
-"Servern rapporterade: <span style=\"italic\">%s</span>."
+#: ../hig_alert.py:19
+#, python-format
+msgid "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server reported: %s."
+msgstr "Kunde inte posta till bloggen \"%s\" vid bloggerAPI-XML-RPC-servern \"%s\". Servern rapporterade: %s."
 
-#: hig_alert.py:19
-#, fuzzy, python-format
+#: ../hig_alert.py:21
+#, python-format
 msgid ""
 "The bloggerAPI server (%s) reported an error I don't understand: '%s, %s'. \n"
 "\n"
 "Please email this error message to seth@gnome.org so I can address it."
 msgstr ""
-"bloggerAPI-servern (%s) rapporterade ett fel som jag inte förstår: \"%s, "
-"<span style=\"italic\">%s</span>\". \n"
+"bloggerAPI-servern (%s) rapporterade ett fel som jag inte förstår: \"%s, %s\". \n"
 "\n"
-"E-posta detta felmeddelande till seth@gnome.org så att jag kan åtgärda det."
+"Skicka detta felmeddelande till seth@gnome.org så att jag kan åtgärda det."
 
-#: protocols/advogato.py:27 protocols/advogato.py:30 protocols/advogato.py:42
-#: protocols/bloggerAPI.py:62 protocols/bloggerAPI.py:90
-#: protocols/livejournal.py:35 protocols/livejournal.py:64
+#: ../protocols/advogato.py:27
+#: ../protocols/advogato.py:30
+#: ../protocols/advogato.py:42
+#: ../protocols/bloggerAPI.py:61
+#: ../protocols/bloggerAPI.py:89
+#: ../protocols/livejournal.py:35
+#: ../protocols/livejournal.py:64
 msgid "Could not post Blog entry"
-msgstr ""
+msgstr "Kunde inte posta blogginlägg"
 
-#: protocols/advogato.py:27
+#: ../protocols/advogato.py:27
 msgid "Your username is invalid. Please double-check the preferences."
-msgstr ""
+msgstr "Ditt användarnamn är ogiltigt. Dubbelkontrollera inställningarna."
 
-#: protocols/advogato.py:30 protocols/livejournal.py:35
-msgid ""
-"Your username or password is invalid. Please double-check the preferences."
-msgstr ""
+#: ../protocols/advogato.py:30
+#: ../protocols/livejournal.py:35
+msgid "Your username or password is invalid. Please double-check the preferences."
+msgstr "Ditt användarnamn eller lösenord är ogiltigt. Dubbelkontrollera inställningarna."
 
-#: protocols/advogato.py:39 protocols/bloggerAPI.py:87
-#: protocols/livejournal.py:61
+#: ../protocols/advogato.py:39
+#: ../protocols/bloggerAPI.py:86
+#: ../protocols/livejournal.py:61
 msgid "Could not post blog entry"
-msgstr ""
+msgstr "Kunde inte posta blogginlägg"
 
-#: protocols/advogato.py:42 protocols/bloggerAPI.py:39
-#: protocols/bloggerAPI.py:90
-#, fuzzy, python-format
-msgid ""
-"URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
-"reported: %s."
-msgstr ""
-"URL:en \"%s\" är kanske inte ett giltigt bloggerAPI. XML-RPC-server "
-"rapporterade: <span style=\"italic\">%s</span>."
-
-#: protocols/bloggerAPI.py:36 protocols/bloggerAPI.py:39
-msgid "Could not get list of blogs"
-msgstr ""
-
-#: protocols/bloggerAPI.py:62
-msgid ""
-"No XML-RPC server URL to post blog entries to is set, or the value could not "
-"be retrieved from GConf. Your entry will remain in the blogger window."
-msgstr ""
-
-#: protocols/livejournal.py:64
+#: ../protocols/advogato.py:42
+#: ../protocols/bloggerAPI.py:38
+#: ../protocols/bloggerAPI.py:89
 #, python-format
-msgid ""
-"URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
-"reported: %s."
-msgstr ""
+msgid "URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: %s."
+msgstr "URL:en \"%s\" verkar inte vara en giltig bloggerAPI XML-RPC-server. Webbservern rapporterade: %s."
 
-#: rich_entry.py:144 rich_entry.py:152
+#: ../protocols/bloggerAPI.py:35
+#: ../protocols/bloggerAPI.py:38
+msgid "Could not get list of blogs"
+msgstr "Kunde inte få tag på lista över bloggar"
+
+#: ../protocols/bloggerAPI.py:61
+msgid "No XML-RPC server URL to post blog entries to is set, or the value could not be retrieved from GConf. Your entry will remain in the blogger window."
+msgstr "Ingen XML-RPC server-url att posta blogginlägg till är inställd, eller så kunde värdet inte hämtas från GConf. Ditt inlägg kommer att förbli bloggerfönstret."
+
+#: ../protocols/livejournal.py:64
+#, python-format
+msgid "URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server reported: %s."
+msgstr "Url:en \"%s\" verkar inte vara en giltig LiveJournal XML-RPC-server. Webbservern rapporterade: %s."
+
+#: ../rich_entry.py:144
+#: ../rich_entry.py:152
 msgid "Could not load dragged in image"
 msgstr "Kunde inte läsa in indragen bild"
 
-#: rich_entry.py:145 rich_entry.py:153
+#: ../rich_entry.py:145
+#: ../rich_entry.py:153
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "Fel vid inläsning av %s var: %s"
 
-#: rich_entry.py:210
-#, fuzzy
+#: ../rich_entry.py:210
 msgid "Add _Link..."
-msgstr "Lägg till _länk"
+msgstr "Lägg till _länk..."
 
-#: rich_entry.py:215
+#: ../rich_entry.py:215
 msgid "Add Link"
 msgstr "Lägg till länk"
 
-#: rich_entry.py:216
+#: ../rich_entry.py:218
 msgid "_Add Link"
 msgstr "_Lägg till länk"
 
-#: rich_entry.py:224
+#: ../rich_entry.py:226
 msgid "Text:"
 msgstr "Text:"
 
-#: rich_entry.py:227
+#: ../rich_entry.py:229
 msgid "URL:"
 msgstr "URL:"
 
+#~ msgid "Blog Base URL:"
+#~ msgstr "Webbloggsbas-URL:"
 #~ msgid "Post blog entries to Blogger.com"
 #~ msgstr "Posta webbloggsinlägg till Blogger.com"
-
 #~ msgid "bloggerAPI"
 #~ msgstr "bloggerAPI"
-
 #~ msgid "Error loading <span style='italic'>%s</span> was: %s"
 #~ msgstr "Fel vid inläsning av <span style='italic'>%s</span> var: %s"
-
 #~ msgid "Title"
 #~ msgstr "Titel"
-
 #~ msgid "Blog Type"
 #~ msgstr "Webbloggstyp"
-
 #~ msgid "Blog Protocol"
 #~ msgstr "Webbloggsprotokoll"
-
 #~ msgid "Blog Base URL"
 #~ msgstr "Webbloggsbas-URL"
-
 #~ msgid "Blog Name"
 #~ msgstr "Webbloggsnamn"
-
 #~ msgid "Username"
 #~ msgstr "Användarnamn"
-
 #~ msgid "Password"
 #~ msgstr "Lösenord"
-
 #~ msgid "Text"
 #~ msgstr "Text"
-
 #~ msgid "URL"
 #~ msgstr "URL"
-
 #~ msgid "Blogging Tool"
 #~ msgstr "Webbloggsverktyg"
-
 #~ msgid "Preferences"
 #~ msgstr "Inställningar"
-
 #~ msgid "About..."
 #~ msgstr "Om..."
-
 #~ msgid "_About"
 #~ msgstr "_Om"
-
 #~ msgid "Blogs"
 #~ msgstr "Webbloggar"
+

@@ -23,7 +23,6 @@ class AlignedWindow(gtk.Window):
         self.set_keep_above(True)
         self.set_skip_pager_hint(True)
         self.set_skip_taskbar_hint(True)
-        self.set_type_hint (gtk.gdk.WINDOW_TYPE_HINT_DOCK)
 
         # Get the dimensions/position of the widgetToAlignWith
         self.widgetToAlignWith.realize()

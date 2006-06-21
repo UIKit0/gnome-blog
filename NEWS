@@ -1,0 +1,52 @@
+=============
+Version 0.9.1
+=============
+  * Fixes:
+	- Make add link dialog stay near and above the blog window (Tommi
+	  Komulainen)
+	- Do not crash when gtkspell is installed but lack a dictionary (Jan
+	  Alonzo)
+	- Ensure window looks sane when resized (Olav Vitters)
+	- Ensure blog applet window receives focus with newer metacity
+	  versions and make it stay on top (Olav Vitters)
+	- Correctly position blog window beside the applet when using a
+	  vertical panel (Olav Vitters)
+	- Make sure CTRL-B (bold), CTRL-I (italic) work when using the applet
+	  (Olav Vitters)
+	- Fix blogs.gnome.org XML-RPC URL (Olav Vitters)
+
+
+  * New and updated translations:
+	- Mətin Əmirov (az)
+	- Vladimir Petkov (bg)
+	- Aleix Badia i Bosch (ca)
+	- Miloslav Trmac (cs)
+	- Hendrik Richter (de)
+	- Adam Weinberger (en_CA)
+	- David Lodge (en_GB)
+	- Francisco Javier F. Serrador (es)
+	- Priit Laes (et)
+	- Ilkka Tuohela (fi)
+	- Christophe Merlet (RedFox) (fr)
+	- Pedro Silva (gl)
+	- Robert Sedak (hr)
+	- Gabor Kelemen (hu)
+	- Francesco Gigli (it)
+	- Takeshi AIHANA (ja)
+	- Hasbullah Bin Pit (ms)
+	- Kjartan Maraas (nb)
+	- Jyotshna Shrestha (ne)
+	- Taco Witte (nl)
+	- Arkadiusz Lipiec (pl)
+	- Afonso Celso Medina (pt_BR)
+	- Duarte Loreto (pt)
+	- Steve Murphy (rw)
+	- Laurent Dhima (sq)
+	- Danilo Šegan (sr@Latn)
+	- Данило Шеган (sr)
+	- Daniel Nylander (sv)
+	- Maxim Dziumanenko (uk)
+	- Clytie Siddall (vi)
+	- storm (zh_CN)
+	- Abel Cheung (zh_TW)
+

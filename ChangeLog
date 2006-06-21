@@ -1,5 +1,9 @@
 2006-06-21  Olav Vitters  <olav@bkor.dhs.org>
 
+	* configure.in: Version 0.9.2 (post release increment).
+
+2006-06-21  Olav Vitters  <olav@bkor.dhs.org>
+
 	* configure.in: Version 0.9.1. Fix ALL_LINGUAS
 
 2006-06-21  Olav Vitters  <olav@bkor.dhs.org>

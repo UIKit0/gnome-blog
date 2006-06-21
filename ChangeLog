@@ -1,5 +1,9 @@
 2006-06-21  Olav Vitters  <olav@bkor.dhs.org>
 
+	* configure.in: Version 0.9.1. Fix ALL_LINGUAS
+
+2006-06-21  Olav Vitters  <olav@bkor.dhs.org>
+
 	* aligned_window.py: gtk.gdk.WINDOW_TYPE_HINT_DOCK causes applet
 	window not to receive focus.
 

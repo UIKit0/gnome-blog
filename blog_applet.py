@@ -5,7 +5,6 @@ pygtk.require('2.0')
 import gtk
 import gobject
 import gnome
-import gnome.ui
 import gnomeapplet
 import gconf
 import string  # maybe someone can do this trick without string?
@@ -71,9 +70,16 @@ class BloggerApplet(gnomeapplet.Applet):
         return True
     
     def _showAboutDialog(self, uicomponent, verb):
-        gnome.ui.About(gnome_blog_globals.name, gnome_blog_globals.version, "Copyright 2003 Seth Nickell",
-                       _("A GNOME Web Blogging Applet"),["Seth Nickell <seth@gnome.org>"],[],
-                       "",gtk.gdk.pixbuf_new_from_file(gnome_blog_globals.image_dir + "/gnome-blog.png")).show()
+        about = gtk.AboutDialog()
+        about.set_name(gnome_blog_globals.name)
+        about.set_version(gnome_blog_globals.version)
+        about.set_copyright("Copyright 2003 Seth Nickell")
+        about.set_comments(_("A GNOME Web Blogging Applet"))
+        about.set_authors(["Seth Nickell <seth@gnome.org>"])
+        about.set_translator_credits(_("translator-credits"))
+        about.set_logo(gtk.gdk.pixbuf_new_from_file(gnome_blog_globals.image_dir + "/gnome-blog.png"))
+        about.connect("response", lambda dialog, response: dialog.destroy())
+        about.show()
 
     def _showPrefDialog(self):
         prefs_dialog = blogger_prefs.BloggerPrefs(self.prefs_key)

@@ -1,3 +1,8 @@
+2006-07-10  Olav Vitters  <olav@bkor.dhs.org>
+
+	* blog_applet.py: Use gtk.AboutDialog instead of gnome.ui.About.
+	Avoids use of gnome.ui.
+
 2006-07-08  Basilio Kublik <sourcercito@gmail.org>
 
 	Patch committed by Olav Vitters.

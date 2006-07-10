@@ -1,3 +1,10 @@
+2006-07-08  Basilio Kublik <sourcercito@gmail.org>
+
+	Patch committed by Olav Vitters.
+
+	* blog_applet.py: use of gnome.applet module is deprecated,
+	changed to gnomeapplet.
+
 2006-06-21  Olav Vitters  <olav@bkor.dhs.org>
 
 	* configure.in: Version 0.9.2 (post release increment).

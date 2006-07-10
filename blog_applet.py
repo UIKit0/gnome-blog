@@ -6,7 +6,7 @@ import gtk
 import gobject
 import gnome
 import gnome.ui
-import gnome.applet
+import gnomeapplet
 import gconf
 import string  # maybe someone can do this trick without string?
 
@@ -24,12 +24,12 @@ icon_theme = gtk.icon_theme_get_default()
 icon_info = icon_theme.lookup_icon('gnome-blog', -1, 0)
 gtk.window_set_default_icon_from_file(icon_info.get_filename())
         
-class BloggerApplet(gnome.applet.Applet):
+class BloggerApplet(gnomeapplet.Applet):
     def __init__(self):
         self.__gobject_init__()
 
     def init(self):
-        self.set_applet_flags(gnome.applet.EXPAND_MINOR)
+        self.set_applet_flags(gnomeapplet.EXPAND_MINOR)
         self.toggle = gtk.ToggleButton()
         self.applet_tooltips = gtk.Tooltips()
         self.setup_menu_from_file (None, "GNOME_BlogApplet.xml",
@@ -123,7 +123,7 @@ def foo(applet, iid):
     print "Returning blogger applet"
     return applet.init()
 
-gnome.applet.bonobo_factory("OAFIID:GNOME_BlogApplet_Factory", 
+gnomeapplet.bonobo_factory("OAFIID:GNOME_BlogApplet_Factory", 
                             BloggerApplet.__gtype__, 
                             "Blog", "0", foo)
 

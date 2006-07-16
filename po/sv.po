@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-04-12 19:28+0200\n"
-"PO-Revision-Date: 2006-04-16 21:32+0100\n"
+"POT-Creation-Date: 2006-07-16 03:50+0200\n"
+"PO-Revision-Date: 2006-07-16 16:40+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -38,19 +38,25 @@ msgstr "_Om..."
 msgid "_Preferences..."
 msgstr "_Inställningar..."
 
-#: ../blog_applet.py:36
+#: ../blog_applet.py:35
 msgid "About"
 msgstr "Om"
 
-#: ../blog_applet.py:39
+#: ../blog_applet.py:38
 msgid "Blog"
 msgstr "Blogg"
 
-#: ../blog_applet.py:75
+#: ../blog_applet.py:77
 msgid "A GNOME Web Blogging Applet"
 msgstr "Ett webbloggningspanelprogram för GNOME"
 
-#: ../blog_applet.py:110
+#: ../blog_applet.py:79
+msgid "translator-credits"
+msgstr ""
+"Daniel Nylander <po@danielnylander.se>\n"
+"Christian Rose <menthos@menthos.com>"
+
+#: ../blog_applet.py:116
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Skapa ett blogginlägg för %s på %s"

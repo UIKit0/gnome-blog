@@ -7,76 +7,82 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-16 18:10+0900\n"
-"PO-Revision-Date: 2005-01-16 18:09+0900\n"
+"POT-Creation-Date: 2006-07-23 16:17+0900\n"
+"PO-Revision-Date: 2006-07-23 16:17+0900\n"
 "Last-Translator: Takeshi AIHANA <aihana@gnome.gr.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: GNOME_BlogApplet.server.in.in.h:1
+#: ../GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr "アクセサリ"
 
-#: GNOME_BlogApplet.server.in.in.h:2 gnome-blog.desktop.in.h:1
+#: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.h:1
 msgid "Blog Entry Poster"
 msgstr "ブログ・エントリ投稿ツール"
 
-#: GNOME_BlogApplet.server.in.in.h:3
+#: ../GNOME_BlogApplet.server.in.in.h:3
 msgid "Post entries to a web log"
 msgstr "エントリをウェブ・ログへ投稿します"
 
-#: GNOME_BlogApplet.xml.h:1
+#: ../GNOME_BlogApplet.xml.h:1
 msgid "_About..."
 msgstr "情報(_A)..."
 
-#: GNOME_BlogApplet.xml.h:2
+#: ../GNOME_BlogApplet.xml.h:2
 msgid "_Preferences..."
 msgstr "設定(_P)..."
 
-#: blog_applet.py:35
+#: ../blog_applet.py:35
 msgid "About"
 msgstr "情報"
 
-#: blog_applet.py:38
+#: ../blog_applet.py:38
 msgid "Blog"
 msgstr "ブログ"
 
-#: blog_applet.py:73
+#: ../blog_applet.py:77
 msgid "A GNOME Web Blogging Applet"
 msgstr "GNOME ウェブ・ログ投稿アプレットです。"
 
-#: blog_applet.py:108
+#: ../blog_applet.py:79
+msgid "translator-credits"
+msgstr ""
+"相花 毅 <aihana@gnome.gr.jp>\n"
+"日本GNOMEユーザー会 http://www.gnome.gr.jp"
+
+#: ../blog_applet.py:116
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "%s のブログ・エントリを %s に作成します"
 
-#: blog_poster.py:44
+#: ../blog_poster.py:44
 msgid "_Post Entry"
 msgstr "エントリの投稿(_P)"
 
-#: blog_poster.py:69
+#: ../blog_poster.py:69
 msgid "Preferences..."
 msgstr "設定..."
 
-#: blog_poster.py:81
+#: ../blog_poster.py:81
 msgid "Title:"
 msgstr "タイトル:"
 
-#: blog_poster.py:116
+#: ../blog_poster.py:116
 msgid "Couldn't upload images"
 msgstr "画像をアップロードできませんでした"
 
-#: blog_poster.py:116
+#: ../blog_poster.py:116
 msgid "The blog protocol in use does not support uploading images"
 msgstr "使用中のブログ・プロトコルは画像のアップロードをサポートしていません"
 
-#: blog_poster.py:163
+#: ../blog_poster.py:162
 msgid "Blog Entry is Blank"
 msgstr "ブログのエントリが空です"
 
-#: blog_poster.py:163
+#: ../blog_poster.py:162
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
@@ -84,110 +90,107 @@ msgstr ""
 "ブログ・エントリ・ボックスにエントリの内容がありません。何かテキストを入力し"
 "て再実行して下さい"
 
-#: blogger_prefs.py:19
+#: ../blogger_prefs.py:19
 msgid "Blogger Preferences"
 msgstr "Blogger の設定"
 
-#: blogger_prefs.py:38
+#: ../blogger_prefs.py:39
 msgid "Self-Run MovableType"
 msgstr "自動実行型 [MovableType]"
 
-#: blogger_prefs.py:39
+#: ../blogger_prefs.py:40
 msgid "Self-Run Pyblosxom"
 msgstr "自動実行型 [Pybloxsom]"
 
-#: blogger_prefs.py:40
+#: ../blogger_prefs.py:41
 msgid "Self-Run WordPress"
 msgstr "自動実行型 [WordPress]"
 
-#: blogger_prefs.py:41
+#: ../blogger_prefs.py:42
 msgid "Self-Run Other"
 msgstr "自動実行型 [その他]"
 
-#: blogger_prefs.py:45
+#: ../blogger_prefs.py:46
 msgid "Blog Type:"
 msgstr "ブログの種類:"
 
-#: blogger_prefs.py:55
+#: ../blogger_prefs.py:56
 msgid "Blog Protocol:"
 msgstr "ブログのプロトコル:"
 
-#: blogger_prefs.py:59
-msgid "Blog Base URL:"
-msgstr "ブログの URL:"
-
-#: blogger_prefs.py:61
-msgid "Blog Name:"
-msgstr "ブログの名前:"
-
-#: blogger_prefs.py:63
-msgid "Lookup Blogs"
-msgstr "ブログの検索"
-
-#: blogger_prefs.py:73
-msgid "Username:"
-msgstr "ユーザ名:"
-
-#: blogger_prefs.py:74
-msgid "Password:"
-msgstr "パスワード:"
-
-#: blogger_prefs.py:116 blogger_prefs.py:136 blogger_prefs.py:141
-#: blogger_prefs.py:147
-msgid "XML-RPC URL:"
-msgstr "XML-RPC URL:"
-
-#: blogger_prefs.py:121 blogger_prefs.py:126 blogger_prefs.py:131
+#: ../blogger_prefs.py:60 ../blogger_prefs.py:122 ../blogger_prefs.py:127
+#: ../blogger_prefs.py:132
 msgid "Base Blog URL:"
 msgstr "ブログの URL:"
 
-#: blogger_prefs.py:155
+#: ../blogger_prefs.py:62
+msgid "Blog Name:"
+msgstr "ブログの名前:"
+
+#: ../blogger_prefs.py:64
+msgid "Lookup Blogs"
+msgstr "ブログの検索"
+
+#: ../blogger_prefs.py:74
+msgid "Username:"
+msgstr "ユーザ名:"
+
+#: ../blogger_prefs.py:75
+msgid "Password:"
+msgstr "パスワード:"
+
+#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:142
+#: ../blogger_prefs.py:147 ../blogger_prefs.py:153
+msgid "XML-RPC URL:"
+msgstr "XML-RPC URL:"
+
+#: ../blogger_prefs.py:161
 msgid "Unknown blog type"
 msgstr "不明なブログの種類です"
 
-#: blogger_prefs.py:155
+#: ../blogger_prefs.py:161
 msgid "The detected blog type is not among the list of supported blogs"
 msgstr "検出したブログの種類はサポートしている一覧の中にはありません"
 
-#: gnome-blog.desktop.in.h:2
+#: ../gnome-blog.desktop.in.h:2
 msgid "Post an entry to a web log"
 msgstr "エントリをウェブ・ログへ投稿します"
 
-#: gnomeblog.schemas.in.h:1
+#: ../gnomeblog.schemas.in.h:1
 msgid "Password to use in accessing the blog"
 msgstr "アクセスするブログで使用するパスワードです"
 
-#: gnomeblog.schemas.in.h:2
+#: ../gnomeblog.schemas.in.h:2
 msgid "Protocol to use in accessing the blog"
 msgstr "ブログにアクセスする際に使用するプロトコルです"
 
-#: gnomeblog.schemas.in.h:3
+#: ../gnomeblog.schemas.in.h:3
 msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
 msgstr "ベース URL に付与する拡張子です (例: \"xmlrpc.cgi\")"
 
-#: gnomeblog.schemas.in.h:4
+#: ../gnomeblog.schemas.in.h:4
 msgid "The application's preferences have been initialized"
 msgstr "アプリケーションの設定が初期化されました"
 
-#: gnomeblog.schemas.in.h:5
+#: ../gnomeblog.schemas.in.h:5
 msgid "The id or name of the particular blog to use on the XML-RPC server"
 msgstr "XML-RPC サーバで使用する特定のブログの名前/識別子 ID です"
 
-#: gnomeblog.schemas.in.h:6
+#: ../gnomeblog.schemas.in.h:6
 msgid "URL to the bloggerAPI compatible XML-RPC server"
 msgstr "XML-RPC サーバ互換の bloggerAPI に対する URL です"
 
-#: gnomeblog.schemas.in.h:7
+#: ../gnomeblog.schemas.in.h:7
 msgid "Username to use in accessing the blog"
 msgstr "アクセスするブログで使用するユーザ名です"
 
-#: hig_alert.py:13
+#: ../hig_alert.py:15
 #, python-format
 msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
 msgstr ""
 "URL '%s' は正しい bloggerAPI ではないようです。XML-RPC サーバからの報告: %s"
 
-#: hig_alert.py:15
+#: ../hig_alert.py:17
 #, python-format
 msgid ""
 "Unknown username %s or password trying to post blog entry to XML-RPC server %"
@@ -196,7 +199,7 @@ msgstr ""
 "ブログ・エントリを不明なユーザ名 %s あるいは不明なパスワードで XML-RPC サー"
 "バ %s へ投稿しようとしました"
 
-#: hig_alert.py:17
+#: ../hig_alert.py:19
 #, python-format
 msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
@@ -205,7 +208,7 @@ msgstr ""
 "ブログ '%s' を Blogger API XML-RPC サーバの '%s' へ投稿できませんでした (サー"
 "バからの報告: %s)"
 
-#: hig_alert.py:19
+#: ../hig_alert.py:21
 #, python-format
 msgid ""
 "The bloggerAPI server (%s) reported an error I don't understand: '%s, %s'. \n"
@@ -216,28 +219,29 @@ msgstr ""
 "\n"
 "このエラー・メッセージの内容を seth@gnome.org まで送付して下さい。"
 
-#: protocols/advogato.py:27 protocols/advogato.py:30 protocols/advogato.py:42
-#: protocols/bloggerAPI.py:62 protocols/bloggerAPI.py:90
-#: protocols/livejournal.py:35 protocols/livejournal.py:64
+#: ../protocols/advogato.py:27 ../protocols/advogato.py:30
+#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:61
+#: ../protocols/bloggerAPI.py:89 ../protocols/livejournal.py:35
+#: ../protocols/livejournal.py:64
 msgid "Could not post Blog entry"
 msgstr "ブログ・エントリを投稿できませんでした"
 
-#: protocols/advogato.py:27
+#: ../protocols/advogato.py:27
 msgid "Your username is invalid. Please double-check the preferences."
 msgstr "ユーザ名が正しくありません (設定をもう一度確認して下さい)"
 
-#: protocols/advogato.py:30 protocols/livejournal.py:35
+#: ../protocols/advogato.py:30 ../protocols/livejournal.py:35
 msgid ""
 "Your username or password is invalid. Please double-check the preferences."
 msgstr "ユーザ名とパスワードが正しくありません (設定をもう一度確認して下さい)"
 
-#: protocols/advogato.py:39 protocols/bloggerAPI.py:87
-#: protocols/livejournal.py:61
+#: ../protocols/advogato.py:39 ../protocols/bloggerAPI.py:86
+#: ../protocols/livejournal.py:61
 msgid "Could not post blog entry"
 msgstr "ブログ・エントリを投稿できませんでした"
 
-#: protocols/advogato.py:42 protocols/bloggerAPI.py:39
-#: protocols/bloggerAPI.py:90
+#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:38
+#: ../protocols/bloggerAPI.py:89
 #, python-format
 msgid ""
 "URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
@@ -245,11 +249,11 @@ msgid ""
 msgstr ""
 "URL '%s' は正しい bloggerAPI ではないようです (XML-RPC サーバからの報告: %s)"
 
-#: protocols/bloggerAPI.py:36 protocols/bloggerAPI.py:39
+#: ../protocols/bloggerAPI.py:35 ../protocols/bloggerAPI.py:38
 msgid "Could not get list of blogs"
 msgstr "ブログの一覧を取得できませんでした"
 
-#: protocols/bloggerAPI.py:62
+#: ../protocols/bloggerAPI.py:61
 msgid ""
 "No XML-RPC server URL to post blog entries to is set, or the value could not "
 "be retrieved from GConf. Your entry will remain in the blogger window."
@@ -258,7 +262,7 @@ msgstr ""
 "たはその値を GConf から取得できませんでした (エントリはブログ・ウィンドウの中"
 "に残します)"
 
-#: protocols/livejournal.py:64
+#: ../protocols/livejournal.py:64
 #, python-format
 msgid ""
 "URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
@@ -267,31 +271,31 @@ msgstr ""
 "URL '%s' は正しい LiveJournal XML-RPC サーバではないようです (ウェブ・サーバ"
 "からの報告: %s)"
 
-#: rich_entry.py:144 rich_entry.py:152
+#: ../rich_entry.py:144 ../rich_entry.py:152
 msgid "Could not load dragged in image"
 msgstr "ドラッグした画像をロードできませんでした"
 
-#: rich_entry.py:145 rich_entry.py:153
+#: ../rich_entry.py:145 ../rich_entry.py:153
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "%s をロードする際にエラー: %s"
 
-#: rich_entry.py:210
+#: ../rich_entry.py:210
 msgid "Add _Link..."
 msgstr "リンクの追加(_L)..."
 
-#: rich_entry.py:215
+#: ../rich_entry.py:215
 msgid "Add Link"
 msgstr "リンクの追加"
 
-#: rich_entry.py:216
+#: ../rich_entry.py:218
 msgid "_Add Link"
 msgstr "リンクの追加(_A)"
 
-#: rich_entry.py:224
+#: ../rich_entry.py:226
 msgid "Text:"
 msgstr "内容:"
 
-#: rich_entry.py:227
+#: ../rich_entry.py:229
 msgid "URL:"
 msgstr "URL:"

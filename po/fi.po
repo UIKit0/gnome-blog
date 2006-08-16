@@ -1,14 +1,14 @@
 # Finnish messages for gnome-blog
 # Copyright (C) 2005 Ilkka Tuohela 
 # This file is distributed under the same license as the gnome-blog package.
-# Ilkka Tuohela <hile@iki.fi>, 2005.
+# Ilkka Tuohela <hile@iki.fi>, 2005-2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-07 22:54+0200\n"
-"PO-Revision-Date: 2006-01-07 23:15+0200\n"
+"POT-Creation-Date: 2006-08-16 13:48+0300\n"
+"PO-Revision-Date: 2006-08-16 13:49+0300\n"
 "Last-Translator: Ilkka Tuohela <hile@iki.fi>\n"
 "Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -36,19 +36,26 @@ msgstr "_Tietoja..."
 msgid "_Preferences..."
 msgstr "_Asetukset..."
 
-#: ../blog_applet.py:36
+#: ../blog_applet.py:35
 msgid "About"
 msgstr "Tietoja"
 
-#: ../blog_applet.py:39
+#: ../blog_applet.py:38
 msgid "Blog"
 msgstr "Blog"
 
-#: ../blog_applet.py:75
+#: ../blog_applet.py:77
 msgid "A GNOME Web Blogging Applet"
 msgstr "Gnomen Blog-sovelma"
 
-#: ../blog_applet.py:110
+#: ../blog_applet.py:79
+msgid "translator-credits"
+msgstr ""
+"Ilkka Tuohela, 2005-2006."
+"\n"
+"http://www.gnome.fi/"
+
+#: ../blog_applet.py:116
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Luo blogimerkintä käyttäjälle %s palvelimella %s"
@@ -182,8 +189,8 @@ msgstr "Blogiin yhteyttä otettaessa käytettävä käyttäjätunnus"
 #: ../hig_alert.py:15
 #, python-format
 msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
-msgstr "URL \"%s\" ei välttämättä ole kelvollinen. XML-RPC-palvelin "
-"palautti: %s."
+msgstr ""
+"URL \"%s\" ei välttämättä ole kelvollinen. XML-RPC-palvelin palautti: %s."
 
 #: ../hig_alert.py:17
 #, python-format
@@ -210,10 +217,10 @@ msgid ""
 "\n"
 "Please email this error message to seth@gnome.org so I can address it."
 msgstr ""
-"BloggerAPI-palvelin \"%s\" palautti virheen, jota gnome-blog ei ymmärrä: "
-"\"%s, %s+\".\n"
-"Lähetä tämä virheviesti sähköpostilla osoitteeseen seth@gnome.org, jotta asia "
-"voidaan korjata gnome-blogiin."
+"BloggerAPI-palvelin \"%s\" palautti virheen, jota gnome-blog ei ymmärrä: \"%"
+"s, %s+\".\n"
+"Lähetä tämä virheviesti sähköpostilla osoitteeseen seth@gnome.org, jotta "
+"asia voidaan korjata gnome-blogiin."
 
 #: ../protocols/advogato.py:27 ../protocols/advogato.py:30
 #: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:61
@@ -229,8 +236,7 @@ msgstr "Käyttäjätunnus on väärin. Tarkista asetukset uudestaan."
 #: ../protocols/advogato.py:30 ../protocols/livejournal.py:35
 msgid ""
 "Your username or password is invalid. Please double-check the preferences."
-msgstr ""
-"Käyttäjätunnus tai salasana on väärin. Tarkista asetukset uudestaan."
+msgstr "Käyttäjätunnus tai salasana on väärin. Tarkista asetukset uudestaan."
 
 #: ../protocols/advogato.py:39 ../protocols/bloggerAPI.py:86
 #: ../protocols/livejournal.py:61
@@ -297,4 +303,3 @@ msgstr "Teksti:"
 #: ../rich_entry.py:229
 msgid "URL:"
 msgstr "URL:"
-

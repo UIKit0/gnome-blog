@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: es\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-03-26 21:18+0100\n"
-"PO-Revision-Date: 2005-03-26 21:23+0100\n"
+"POT-Creation-Date: 2006-08-21 11:20+0200\n"
+"PO-Revision-Date: 2006-08-21 11:20+0200\n"
 "Last-Translator: Francisco Javier F. Serrador <serrador@cvs.gnome.org>\n"
 "Language-Team: Spanish <traductores@es.gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -49,11 +49,15 @@ msgstr "Acerca de"
 msgid "Blog"
 msgstr "Blog"
 
-#: ../blog_applet.py:73
+#: ../blog_applet.py:77
 msgid "A GNOME Web Blogging Applet"
 msgstr "Una miniaplicación de Web Blogging para Gnome"
 
-#: ../blog_applet.py:108
+#: ../blog_applet.py:79
+msgid "translator-credits"
+msgstr "Francisco Javier F. Serrador <serrador@openshine.com>"
+
+#: ../blog_applet.py:116
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Crear una entrada blog para %s en %s"
@@ -78,11 +82,11 @@ msgstr "No se pudieron subir las imágenes"
 msgid "The blog protocol in use does not support uploading images"
 msgstr "El protocolo blog en uso no soporta subir imágenes"
 
-#: ../blog_poster.py:163
+#: ../blog_poster.py:162
 msgid "Blog Entry is Blank"
 msgstr "La entrada de blog está vacía"
 
-#: ../blog_poster.py:163
+#: ../blog_poster.py:162
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
@@ -94,64 +98,61 @@ msgstr ""
 msgid "Blogger Preferences"
 msgstr "Preferencias de Blogger"
 
-#: ../blogger_prefs.py:38
+#: ../blogger_prefs.py:39
 msgid "Self-Run MovableType"
 msgstr "Ejecutar automáticamente MovableType"
 
-#: ../blogger_prefs.py:39
+#: ../blogger_prefs.py:40
 msgid "Self-Run Pyblosxom"
 msgstr "Ejecutar automáticamente Pybloxsom"
 
-#: ../blogger_prefs.py:40
+#: ../blogger_prefs.py:41
 msgid "Self-Run WordPress"
 msgstr "Ejecutar automáticamente WordPress"
 
-#: ../blogger_prefs.py:41
+#: ../blogger_prefs.py:42
 msgid "Self-Run Other"
 msgstr "Ejecutar automáticamente otro"
 
-#: ../blogger_prefs.py:45
+#: ../blogger_prefs.py:46
 msgid "Blog Type:"
 msgstr "Tipo de Blog:"
 
-#: ../blogger_prefs.py:55
+#: ../blogger_prefs.py:56
 msgid "Blog Protocol:"
 msgstr "Protocolo del Blog:"
 
-#: ../blogger_prefs.py:59
-msgid "Blog Base URL:"
-msgstr "URL base del blog:"
-
-#: ../blogger_prefs.py:61
-msgid "Blog Name:"
-msgstr "Nombre del blog:"
-
-#: ../blogger_prefs.py:63
-msgid "Lookup Blogs"
-msgstr "Buscar blogs"
-
-#: ../blogger_prefs.py:73
-msgid "Username:"
-msgstr "Nombre de usuario:"
-
-#: ../blogger_prefs.py:74
-msgid "Password:"
-msgstr "Contraseña:"
-
-#: ../blogger_prefs.py:116 ../blogger_prefs.py:136 ../blogger_prefs.py:141
-#: ../blogger_prefs.py:147
-msgid "XML-RPC URL:"
-msgstr "URL de XML-RPC:"
-
-#: ../blogger_prefs.py:121 ../blogger_prefs.py:126 ../blogger_prefs.py:131
+#: ../blogger_prefs.py:60 ../blogger_prefs.py:122 ../blogger_prefs.py:127
+#: ../blogger_prefs.py:132
 msgid "Base Blog URL:"
 msgstr "URL base de blog:"
 
-#: ../blogger_prefs.py:155
+#: ../blogger_prefs.py:62
+msgid "Blog Name:"
+msgstr "Nombre del blog:"
+
+#: ../blogger_prefs.py:64
+msgid "Lookup Blogs"
+msgstr "Buscar blogs"
+
+#: ../blogger_prefs.py:74
+msgid "Username:"
+msgstr "Nombre de usuario:"
+
+#: ../blogger_prefs.py:75
+msgid "Password:"
+msgstr "Contraseña:"
+
+#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:142
+#: ../blogger_prefs.py:147 ../blogger_prefs.py:153
+msgid "XML-RPC URL:"
+msgstr "URL de XML-RPC:"
+
+#: ../blogger_prefs.py:161
 msgid "Unknown blog type"
 msgstr "Tipo de blog desconocido"
 
-#: ../blogger_prefs.py:155
+#: ../blogger_prefs.py:161
 msgid "The detected blog type is not among the list of supported blogs"
 msgstr "El tipo de blog detectado no está entre la lista de blogs soportados"
 
@@ -188,14 +189,14 @@ msgstr "URL hacia el servidor XML-RPC compatible con la bloggerAPI"
 msgid "Username to use in accessing the blog"
 msgstr "Usuario que se usará para acceder al blog"
 
-#: ../hig_alert.py:13
+#: ../hig_alert.py:15
 #, python-format
 msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
 msgstr ""
 "La URL «%s» podría no ser una API válida de blogger. El servidor XML-RPC ha "
 "devuelto: %s"
 
-#: ../hig_alert.py:15
+#: ../hig_alert.py:17
 #, python-format
 msgid ""
 "Unknown username %s or password trying to post blog entry to XML-RPC server %"
@@ -204,7 +205,7 @@ msgstr ""
 "Nombre de usuario %s o contraseña desconocido al intentar publicar la "
 "entrada de blog en el servidor XML-RPC %s."
 
-#: ../hig_alert.py:17
+#: ../hig_alert.py:19
 #, python-format
 msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
@@ -213,7 +214,7 @@ msgstr ""
 "No se ha podido publicar en el blog «%s» en la API del servidor XML-RPC de "
 "blogger «%s». El servidor ha reportado: %s."
 
-#: ../hig_alert.py:19
+#: ../hig_alert.py:21
 #, python-format
 msgid ""
 "The bloggerAPI server (%s) reported an error I don't understand: '%s, %s'. \n"
@@ -227,8 +228,8 @@ msgstr ""
 "solucionarlo."
 
 #: ../protocols/advogato.py:27 ../protocols/advogato.py:30
-#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:62
-#: ../protocols/bloggerAPI.py:90 ../protocols/livejournal.py:35
+#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:61
+#: ../protocols/bloggerAPI.py:89 ../protocols/livejournal.py:35
 #: ../protocols/livejournal.py:64
 msgid "Could not post Blog entry"
 msgstr "No se ha pudido publicar la entrada del Blog"
@@ -244,13 +245,13 @@ msgid ""
 msgstr ""
 "Su nombre de usuario o contraseñe es inválido. Compruebe las preferencias."
 
-#: ../protocols/advogato.py:39 ../protocols/bloggerAPI.py:87
+#: ../protocols/advogato.py:39 ../protocols/bloggerAPI.py:86
 #: ../protocols/livejournal.py:61
 msgid "Could not post blog entry"
 msgstr "No se pudo publicar la entrada del blog"
 
-#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:39
-#: ../protocols/bloggerAPI.py:90
+#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:38
+#: ../protocols/bloggerAPI.py:89
 #, python-format
 msgid ""
 "URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
@@ -259,11 +260,11 @@ msgstr ""
 "La URL «%s» podría no ser una API válida de blogger. El servidor XML-RPC ha "
 "informado: %s."
 
-#: ../protocols/bloggerAPI.py:36 ../protocols/bloggerAPI.py:39
+#: ../protocols/bloggerAPI.py:35 ../protocols/bloggerAPI.py:38
 msgid "Could not get list of blogs"
 msgstr "No se pudo obtener la lista de blogs"
 
-#: ../protocols/bloggerAPI.py:62
+#: ../protocols/bloggerAPI.py:61
 msgid ""
 "No XML-RPC server URL to post blog entries to is set, or the value could not "
 "be retrieved from GConf. Your entry will remain in the blogger window."
@@ -298,17 +299,20 @@ msgstr "Añadir en_lace..."
 msgid "Add Link"
 msgstr "Añadir enlace"
 
-#: ../rich_entry.py:216
+#: ../rich_entry.py:218
 msgid "_Add Link"
 msgstr "_Añadir enlace"
 
-#: ../rich_entry.py:224
+#: ../rich_entry.py:226
 msgid "Text:"
 msgstr "Texto:"
 
-#: ../rich_entry.py:227
+#: ../rich_entry.py:229
 msgid "URL:"
 msgstr "URL:"
+
+#~ msgid "Blog Base URL:"
+#~ msgstr "URL base del blog:"
 
 #~ msgid "Post blog entries to Blogger.com"
 #~ msgstr "Publicar las entradas blog en Blogger.com"

@@ -1,86 +1,94 @@
 # French translation of gnome-blog.
-# Copyright (C) 2003-2004 Free Software Foundation, Inc.
+# Copyright (C) 2003-2006 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-blog package.
 #
-# Baptiste MILLE-MATHIAS <bmm80@ifrance.com>, 2003.
+# Baptiste Mille-Mathias <bmm80@ifrance.com>, 2003.
 # Christophe Merlet (RedFox) <redfox@redfoxcenter.org>, 2004.
-# 
+# Damien Durand <splinux@fedoraproject.org>, 2006
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-blog 0.7\n"
+"Project-Id-Version: gnome-blog 0.9.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-12 03:10-0500\n"
-"PO-Revision-Date: 2004-01-17 13:26+0100\n"
-"Last-Translator: Christophe Merlet (RedFox) <redfox@redfoxcenter.org>\n"
+"POT-Creation-Date: 2006-08-25 21:09+0200\n"
+"PO-Revision-Date: 2006-08-25 21:09+0200\n"
+"Last-Translator: Robert-André Mauchin <zebob.m@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: GNOME_BlogApplet.server.in.in.h:1
+#: ../GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr "Accessoires"
 
-#: GNOME_BlogApplet.server.in.in.h:2 gnome-blog.desktop.in.h:1
+#: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.h:1
 msgid "Blog Entry Poster"
 msgstr "Posteur de l'entrée du blog"
 
-#: GNOME_BlogApplet.server.in.in.h:3
+#: ../GNOME_BlogApplet.server.in.in.h:3
 msgid "Post entries to a web log"
 msgstr "Poster une entrée à un web log"
 
-#: GNOME_BlogApplet.xml.h:1
+#: ../GNOME_BlogApplet.xml.h:1
 msgid "_About..."
 msgstr "À _propos..."
 
-#: GNOME_BlogApplet.xml.h:2
+#: ../GNOME_BlogApplet.xml.h:2
 msgid "_Preferences..."
 msgstr "_Préférences..."
 
-#: blog_applet.py:35
+#: ../blog_applet.py:35
 msgid "About"
 msgstr "À propos"
 
-#: blog_applet.py:38
+#: ../blog_applet.py:38
 msgid "Blog"
 msgstr "Blog"
 
-#: blog_applet.py:73
+#: ../blog_applet.py:77
 msgid "A GNOME Web Blogging Applet"
 msgstr "Une applet GNOME pour blogguer"
 
-#: blog_applet.py:108
+#: ../blog_applet.py:79
+msgid "translator-credits"
+msgstr ""
+"Baptiste Mille-Mathias <bmm80@ifrance.com>\n"
+"Christophe Merlet (RedFox) <redfox@redfoxcenter.org>\n"
+"Damien Durand <splinux@fedoraproject.org>"
+
+#: ../blog_applet.py:116
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Créer une entrée de blog pour %s à %s"
 
-#: blog_poster.py:44
+#: ../blog_poster.py:44
 msgid "_Post Entry"
 msgstr "_Poster l'entrée"
 
-#: blog_poster.py:69
+#: ../blog_poster.py:69
 msgid "Preferences..."
 msgstr "Préférences..."
 
-#: blog_poster.py:81
+#: ../blog_poster.py:81
 msgid "Title:"
 msgstr "Titre :"
 
-#: blog_poster.py:116
+#: ../blog_poster.py:116
 msgid "Couldn't upload images"
 msgstr "Impossible de publier les images"
 
-#: blog_poster.py:116
+#: ../blog_poster.py:116
 msgid "The blog protocol in use does not support uploading images"
 msgstr ""
-"Le protocole du blog en cours d'utilisation ne supporte pas la publication "
-"d'images"
+"Le protocole du blog en cours d'utilisation ne prend pas en charge la "
+"publication d'images"
 
-#: blog_poster.py:163
+#: ../blog_poster.py:162
 msgid "Blog Entry is Blank"
 msgstr "L'entrée du blog est vide"
 
-#: blog_poster.py:163
+#: ../blog_poster.py:162
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
@@ -88,113 +96,109 @@ msgstr ""
 "Aucun texte n'a été saisi dans la boîte de saisie du blog. Veuillez saisir "
 "du texte et réessayer"
 
-#: blogger_prefs.py:19
+#: ../blogger_prefs.py:19
 msgid "Blogger Preferences"
-msgstr "Préférences du blogger"
+msgstr "Préférences de Blogger"
 
-#: blogger_prefs.py:38
+#: ../blogger_prefs.py:39
 msgid "Self-Run MovableType"
 msgstr "Self-Run MovableType"
 
-#: blogger_prefs.py:39
+#: ../blogger_prefs.py:40
 msgid "Self-Run Pyblosxom"
 msgstr "Self-Run Pyblosxom"
 
-#: blogger_prefs.py:40
-#, fuzzy
+#: ../blogger_prefs.py:41
 msgid "Self-Run WordPress"
-msgstr "Self-Run Other"
+msgstr "Self-Run WordPress"
 
-#: blogger_prefs.py:41
+#: ../blogger_prefs.py:42
 msgid "Self-Run Other"
 msgstr "Self-Run Other"
 
-#: blogger_prefs.py:45
+#: ../blogger_prefs.py:46
 msgid "Blog Type:"
 msgstr "Type de blog :"
 
-#: blogger_prefs.py:55
+#: ../blogger_prefs.py:56
 msgid "Blog Protocol:"
 msgstr "Protocole de blog :"
 
-#: blogger_prefs.py:59
-msgid "Blog Base URL:"
-msgstr "URL de base du blog :"
-
-#: blogger_prefs.py:61
-msgid "Blog Name:"
-msgstr "Nom du blog :"
-
-#: blogger_prefs.py:63
-msgid "Lookup Blogs"
-msgstr "Rechercher les blogs"
-
-#: blogger_prefs.py:73
-msgid "Username:"
-msgstr "Nom d'utilisateur :"
-
-#: blogger_prefs.py:74
-msgid "Password:"
-msgstr "Mot de passe :"
-
-#: blogger_prefs.py:116 blogger_prefs.py:136 blogger_prefs.py:141
-#: blogger_prefs.py:147
-msgid "XML-RPC URL:"
-msgstr "URL XLM-RPC :"
-
-#: blogger_prefs.py:121 blogger_prefs.py:126 blogger_prefs.py:131
+#: ../blogger_prefs.py:60 ../blogger_prefs.py:122 ../blogger_prefs.py:127
+#: ../blogger_prefs.py:132
 msgid "Base Blog URL:"
 msgstr "URL de base du blog :"
 
-#: blogger_prefs.py:155
+#: ../blogger_prefs.py:62
+msgid "Blog Name:"
+msgstr "Nom du blog :"
+
+#: ../blogger_prefs.py:64
+msgid "Lookup Blogs"
+msgstr "Rechercher les blogs"
+
+#: ../blogger_prefs.py:74
+msgid "Username:"
+msgstr "Nom d'utilisateur :"
+
+#: ../blogger_prefs.py:75
+msgid "Password:"
+msgstr "Mot de passe :"
+
+#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:142
+#: ../blogger_prefs.py:147 ../blogger_prefs.py:153
+msgid "XML-RPC URL:"
+msgstr "URL XLM-RPC :"
+
+#: ../blogger_prefs.py:161
 msgid "Unknown blog type"
-msgstr ""
+msgstr "Type de blog inconnu"
 
-#: blogger_prefs.py:155
+#: ../blogger_prefs.py:161
 msgid "The detected blog type is not among the list of supported blogs"
-msgstr ""
+msgstr "Le blog détecté ne figure pas parmi la liste de blogs pris en charge"
 
-#: gnome-blog.desktop.in.h:2
+#: ../gnome-blog.desktop.in.h:2
 msgid "Post an entry to a web log"
 msgstr "Postez une entrée dans un web log"
 
-#: gnomeblog.schemas.in.h:1
+#: ../gnomeblog.schemas.in.h:1
 msgid "Password to use in accessing the blog"
 msgstr "Mot de passe permettant l'accès au blog"
 
-#: gnomeblog.schemas.in.h:2
+#: ../gnomeblog.schemas.in.h:2
 msgid "Protocol to use in accessing the blog"
-msgstr "Protocole à utiliser pour accèder au blog"
+msgstr "Protocole à utiliser pour accéder au blog"
 
-#: gnomeblog.schemas.in.h:3
+#: ../gnomeblog.schemas.in.h:3
 msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
 msgstr "Suffixe à ajouter à l'url de base (ex : « xmlrpc.cgi »)"
 
-#: gnomeblog.schemas.in.h:4
+#: ../gnomeblog.schemas.in.h:4
 msgid "The application's preferences have been initialized"
 msgstr "Les préférences de l'application ont été initialisées"
 
-#: gnomeblog.schemas.in.h:5
+#: ../gnomeblog.schemas.in.h:5
 msgid "The id or name of the particular blog to use on the XML-RPC server"
 msgstr ""
-"L'identifiant ou le nomdu blog particulier à utiliser sur le serveur XML-RPC"
+"L'identifiant ou le nom du blog particulier à utiliser sur le serveur XML-RPC"
 
-#: gnomeblog.schemas.in.h:6
+#: ../gnomeblog.schemas.in.h:6
 msgid "URL to the bloggerAPI compatible XML-RPC server"
 msgstr "URL du serveur compatible XML-RPC BloggerAPI"
 
-#: gnomeblog.schemas.in.h:7
+#: ../gnomeblog.schemas.in.h:7
 msgid "Username to use in accessing the blog"
 msgstr "Nom d'utilisateur permettant l'accès au blog"
 
-#: hig_alert.py:13
+#: ../hig_alert.py:15
 #, python-format
 msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
 msgstr ""
-"L'URL « %s » semble ne pas être une bloggerAPI valide. Le serveur XML-RPC a "
+"L'URL « %s » ne semble pas être une bloggerAPI valide. Le serveur XML-RPC a "
 "rapporté : %s."
 
-#: hig_alert.py:15
+#: ../hig_alert.py:17
 #, python-format
 msgid ""
 "Unknown username %s or password trying to post blog entry to XML-RPC server %"
@@ -203,7 +207,7 @@ msgstr ""
 "Nom d'utilisateur ou mot de passe inconnu %s lors de la tentative de "
 "publication de l'entrée du blog vers le serveur XML-RPC %s."
 
-#: hig_alert.py:17
+#: ../hig_alert.py:19
 #, python-format
 msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
@@ -212,7 +216,7 @@ msgstr ""
 "Impossible de poster dans le blog « %s » sur le serveur bloggerAPI XML-RPC "
 "« %s ». Le serveur a rapporté : %s."
 
-#: hig_alert.py:19
+#: ../hig_alert.py:21
 #, python-format
 msgid ""
 "The bloggerAPI server (%s) reported an error I don't understand: '%s, %s'. \n"
@@ -225,53 +229,54 @@ msgstr ""
 "Veuillez envoyer par courriel ce message d'erreur à seth@gnome.org afin que "
 "je puisse le corriger."
 
-#: protocols/advogato.py:27 protocols/advogato.py:30 protocols/advogato.py:42
-#: protocols/bloggerAPI.py:62 protocols/bloggerAPI.py:90
-#: protocols/livejournal.py:35 protocols/livejournal.py:64
+#: ../protocols/advogato.py:27 ../protocols/advogato.py:30
+#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:61
+#: ../protocols/bloggerAPI.py:89 ../protocols/livejournal.py:35
+#: ../protocols/livejournal.py:64
 msgid "Could not post Blog entry"
 msgstr "Impossible de poster l'entrée du blog"
 
-#: protocols/advogato.py:27
+#: ../protocols/advogato.py:27
 msgid "Your username is invalid. Please double-check the preferences."
 msgstr ""
 "Votre nom d'utilisateur n'est pas valide. Veuillez vérifier vos préférences."
 
-#: protocols/advogato.py:30 protocols/livejournal.py:35
+#: ../protocols/advogato.py:30 ../protocols/livejournal.py:35
 msgid ""
 "Your username or password is invalid. Please double-check the preferences."
 msgstr ""
 "Votre nom d'utilisateur ou mot de passe n'est pas valide. Veuillez vérifier "
 "vos préférences."
 
-#: protocols/advogato.py:39 protocols/bloggerAPI.py:87
-#: protocols/livejournal.py:61
+#: ../protocols/advogato.py:39 ../protocols/bloggerAPI.py:86
+#: ../protocols/livejournal.py:61
 msgid "Could not post blog entry"
 msgstr "Impossible de poster l'entrée du blog"
 
-#: protocols/advogato.py:42 protocols/bloggerAPI.py:39
-#: protocols/bloggerAPI.py:90
+#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:38
+#: ../protocols/bloggerAPI.py:89
 #, python-format
 msgid ""
 "URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
 "reported: %s."
 msgstr ""
-"L'URL « %s » semble ne pas être un serveur XML-RPC bloggerAPI valide. Le "
+"L'URL « %s » ne semble pas être un serveur XML-RPC bloggerAPI valide. Le "
 "serveur Web a rapporté : %s."
 
-#: protocols/bloggerAPI.py:36 protocols/bloggerAPI.py:39
+#: ../protocols/bloggerAPI.py:35 ../protocols/bloggerAPI.py:38
 msgid "Could not get list of blogs"
 msgstr "Impossible d'obtenir la liste des blogs"
 
-#: protocols/bloggerAPI.py:62
+#: ../protocols/bloggerAPI.py:61
 msgid ""
 "No XML-RPC server URL to post blog entries to is set, or the value could not "
 "be retrieved from GConf. Your entry will remain in the blogger window."
 msgstr ""
 "Aucune URL de serveur XML-RPC vers lequel poster les entrées de blog n'est "
-"défini, ou la valeur ne peut être récupéré depuis GConf. Votre entrée "
+"définie, ou la valeur ne peut être récupérée depuis GConf. Votre entrée "
 "restera dans la fenêtre du blogger."
 
-#: protocols/livejournal.py:64
+#: ../protocols/livejournal.py:64
 #, python-format
 msgid ""
 "URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
@@ -280,37 +285,31 @@ msgstr ""
 "L'URL « %s » ne semble pas être un serveur XML-RPC LiveJournal valide. Le "
 "serveur Web a rapporté : %s."
 
-#: rich_entry.py:144 rich_entry.py:152
+#: ../rich_entry.py:144 ../rich_entry.py:152
 msgid "Could not load dragged in image"
-msgstr "Impossible de charger l'image déposé"
+msgstr "Impossible de charger l'image déposée"
 
-#: rich_entry.py:145 rich_entry.py:153
+#: ../rich_entry.py:145 ../rich_entry.py:153
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "L'erreur lors du chargement de %s était : %s"
 
-#: rich_entry.py:210
+#: ../rich_entry.py:210
 msgid "Add _Link..."
 msgstr "Ajouter un _lien..."
 
-#: rich_entry.py:215
+#: ../rich_entry.py:215
 msgid "Add Link"
 msgstr "Ajouter un lien"
 
-#: rich_entry.py:216
+#: ../rich_entry.py:218
 msgid "_Add Link"
 msgstr "A_jouter un lien"
 
-#: rich_entry.py:224
+#: ../rich_entry.py:226
 msgid "Text:"
 msgstr "Texte :"
 
-#: rich_entry.py:227
+#: ../rich_entry.py:229
 msgid "URL:"
 msgstr "URL :"
-
-#~ msgid "Post blog entries to Blogger.com"
-#~ msgstr "Poster les entrées blog à Blogger.com"
-
-#~ msgid "bloggerAPI"
-#~ msgstr "bloggerAPI"

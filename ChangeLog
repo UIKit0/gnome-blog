@@ -1,3 +1,7 @@
+2006-09-19  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* configure.in: Added Danish (da) to ALL_LINGUAS
+
 2006-07-10  Olav Vitters  <olav@bkor.dhs.org>
 
 	* blog_applet.py: Use gtk.AboutDialog instead of gnome.ui.About.

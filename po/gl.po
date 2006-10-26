@@ -1,24 +1,26 @@
-# translation of gnome-blog_0.8-2_gl.po to Galego
+# translation of gl.po to Galego
 # Galician translation of gnome-blog
 # Copyright (C) 2005 Free Software Foundation
 # Proxecto Trasno - Adaptación do softare libre á lingua galega: Se desexas
 # colaborar connosco, podes atopar máis información en htt//www.trasno.net
 # First Version: 2005-06-26 17:00+0200
+#
+#
 # Pedro Silva <psf@pedrosilva.org>, 2005.
-#
-#
+# Ignacio Casal Quinteiro <nacho.resa@gmail.com>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-blog_0.8-2_gl\n"
+"Project-Id-Version: gl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-11-21 14:27+0100\n"
-"PO-Revision-Date: 2005-11-21 14:21+0100\n"
-"Last-Translator: Pedro Silva <psf@pedrosilva.org>\n"
-"Language-Team: Galego\n"
+"POT-Creation-Date: 2006-10-26 20:44+0200\n"
+"PO-Revision-Date: 2006-10-26 20:45+0200\n"
+"Last-Translator: Ignacio Casal Quinteiro <nacho.resa@gmail.com>\n"
+"Language-Team: Galego <trasno@ceu.fi.udc.es>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);X-Generator: KBabel 1.10.2\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: ../GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
@@ -40,19 +42,23 @@ msgstr "_Acerca de..."
 msgid "_Preferences..."
 msgstr "_Preferencias..."
 
-#: ../blog_applet.py:36
+#: ../blog_applet.py:35
 msgid "About"
 msgstr "Acerca de"
 
-#: ../blog_applet.py:39
+#: ../blog_applet.py:38
 msgid "Blog"
 msgstr "Blog"
 
-#: ../blog_applet.py:75
+#: ../blog_applet.py:77
 msgid "A GNOME Web Blogging Applet"
 msgstr "Unha applet de GNOME para publicar en weblogs"
 
-#: ../blog_applet.py:110
+#: ../blog_applet.py:79
+msgid "translator-credits"
+msgstr "Pedro Silva <psf@pedrosilva.org>"
+
+#: ../blog_applet.py:116
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Crear unha entrada para %s en %s"
@@ -233,8 +239,7 @@ msgstr ""
 "preferencias."
 
 #: ../protocols/advogato.py:30 ../protocols/livejournal.py:35
-msgid ""
-"Your username or password is invalid. Please double-check the preferences."
+msgid "Your username or password is invalid. Please double-check the preferences."
 msgstr ""
 "O seu usuario ou contrasinal non é valido. Sexa tan amable de revisar as "
 "preferencias."
@@ -304,5 +309,3 @@ msgstr "Texto:"
 msgid "URL:"
 msgstr "URL:"
 
-#~ msgid "Blog Base URL:"
-#~ msgstr "URL base do blog:"

@@ -17,7 +17,7 @@ PKG_CHECK_MODULES(PYGTK, pygtk-2.0 >= 2.6)
 AC_SUBST(PYGTK_CFLAGS)
 AC_SUBST(PYGTK_LIBS)
 
-ALL_LINGUAS="az bg ca cs da de en_CA en_GB es et fi fr gl hr hu it ja ms nb ne nl pl pt pt_BR rw sq sr sr@Latn sv uk vi zh_CN zh_TW"
+ALL_LINGUAS="ar az bg ca cs da de en_CA en_GB es et fi fr gl hr hu it ja ms nb ne nl pl pt pt_BR rw sq sr sr@Latn sv uk vi zh_CN zh_TW"
 
 GETTEXT_PACKAGE=gnome-blog
 AC_SUBST(GETTEXT_PACKAGE)

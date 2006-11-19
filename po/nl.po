@@ -1,21 +1,22 @@
 # Dutch translation of GNOME-blog
 # Copyright (C) 2004 The Free Software Foundation, Inc.
-# This file is distributed under the same license as the GNOME package.
+#
+# This file is distributed under the same license as the Gnome-blog package.
+#
 # Reinout van Schouwen <reinout@cs.vu.nl>, 2004
 # Taco Witte <tcwitte@cs.uu.nl>, 2005
-# 
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-05-13 03:29+0000\n"
-"PO-Revision-Date: 2005-05-13 16:34+0200\n"
+"POT-Creation-Date: 2006-11-19 21:39+0100\n"
+"PO-Revision-Date: 2006-11-19 21:39+0100 \n"
 "Last-Translator: Taco Witte <tcwitte@cs.uu.nl>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
 
 #: ../GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
@@ -45,11 +46,19 @@ msgstr "Info"
 msgid "Blog"
 msgstr "Blog"
 
-#: ../blog_applet.py:73
+#: ../blog_applet.py:77
 msgid "A GNOME Web Blogging Applet"
 msgstr "Een weblog-applet voor GNOME"
 
-#: ../blog_applet.py:108
+#: ../blog_applet.py:79
+msgid "translator-credits"
+msgstr ""
+"Reinout van Schouwen\n"
+"Taco Witte <tcwitte@cs.uu.nl>\n"
+"\n"
+"Kijk voor meer informatie op http://nl.gnome.org/"
+
+#: ../blog_applet.py:116
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Een blog ingang maken voor %s bij %s"
@@ -76,11 +85,11 @@ msgstr ""
 "Het blog protocol dat wordt gebruikt ondersteunt niet de verzenden van "
 "afbeeldingen"
 
-#: ../blog_poster.py:163
+#: ../blog_poster.py:162
 msgid "Blog Entry is Blank"
 msgstr "Blog-aantekening is leeg"
 
-#: ../blog_poster.py:163
+#: ../blog_poster.py:162
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
@@ -116,9 +125,10 @@ msgstr "Blog soort:"
 msgid "Blog Protocol:"
 msgstr "Blog protocol:"
 
-#: ../blogger_prefs.py:60
-msgid "Blog Base URL:"
-msgstr "Blog base-URL:"
+#: ../blogger_prefs.py:60 ../blogger_prefs.py:122 ../blogger_prefs.py:127
+#: ../blogger_prefs.py:132
+msgid "Base Blog URL:"
+msgstr "Basis-URL van blog:"
 
 #: ../blogger_prefs.py:62
 msgid "Blog Name:"
@@ -140,10 +150,6 @@ msgstr "Wachtwoord:"
 #: ../blogger_prefs.py:147 ../blogger_prefs.py:153
 msgid "XML-RPC URL:"
 msgstr "XML-RPC URL:"
-
-#: ../blogger_prefs.py:122 ../blogger_prefs.py:127 ../blogger_prefs.py:132
-msgid "Base Blog URL:"
-msgstr "Basis-URL van blog:"
 
 #: ../blogger_prefs.py:161
 msgid "Unknown blog type"
@@ -295,17 +301,20 @@ msgstr "_Koppeling toevoegen..."
 msgid "Add Link"
 msgstr "Koppeling toevoegen"
 
-#: ../rich_entry.py:216
+#: ../rich_entry.py:218
 msgid "_Add Link"
 msgstr "Koppeling _toevoegen"
 
-#: ../rich_entry.py:224
+#: ../rich_entry.py:226
 msgid "Text:"
 msgstr "Tekst:"
 
-#: ../rich_entry.py:227
+#: ../rich_entry.py:229
 msgid "URL:"
 msgstr "URL:"
+
+#~ msgid "Blog Base URL:"
+#~ msgstr "Blog base-URL:"
 
 #~ msgid "bloggerAPI"
 #~ msgstr "bloggerAPI"

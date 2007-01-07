@@ -1,5 +1,12 @@
 2007-01-07  Olav Vitters  <olav@bkor.dhs.org>
 
+	* autogen.sh: Use the one from deskbar-applet as that one at least
+	works.
+	* m4: See above.
+	* m4/python.m4: See above.
+
+2007-01-07  Olav Vitters  <olav@bkor.dhs.org>
+
 	* configure.in: Use po/LINGUAS instead of ALL_LANGUAS.
 
 2006-09-19  Martin Willemoes Hansen  <mwh@sysrq.dk>

@@ -1,3 +1,7 @@
+2007-01-07  Olav Vitters  <olav@bkor.dhs.org>
+
+	* configure.in: Use po/LINGUAS instead of ALL_LANGUAS.
+
 2006-09-19  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* configure.in: Added Danish (da) to ALL_LINGUAS

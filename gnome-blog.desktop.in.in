@@ -11,3 +11,4 @@ Categories=GNOME;Application;Utility;
 X-GNOME-Bugzilla-Bugzilla=GNOME
 X-GNOME-Bugzilla-Product=gnome-blog
 X-GNOME-Bugzilla-Component=general
+X-Gnome-Bugzilla-Version=@VERSION@

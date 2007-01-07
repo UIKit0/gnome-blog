@@ -29,4 +29,5 @@ gnome_blog_globals.py
 gnome-blog.spec
 protocols/Makefile
 po/Makefile.in
+gnome-blog.desktop.in
 ])

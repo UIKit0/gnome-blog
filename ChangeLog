@@ -1,5 +1,13 @@
 2007-01-07  Olav Vitters  <olav@bkor.dhs.org>
 
+	* Makefile.am:
+	* configure.in:
+	* gnome-blog.desktop.in: Remove/rename.
+	* gnome-blog.desktop.in.in: Add/rename. Add @VERSION@ to the bug-buddy
+	headers.
+
+2007-01-07  Olav Vitters  <olav@bkor.dhs.org>
+
 	* autogen.sh: Use the one from deskbar-applet as that one at least
 	works.
 	* m4: See above.

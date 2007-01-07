@@ -47,8 +47,8 @@ schema_DATA = \
 @INTLTOOL_SCHEMAS_RULE@
 
 Desktopdir = $(datadir)/applications
-Desktop_in_files = gnome-blog.desktop.in
-Desktop_DATA = $(Desktop_in_files:.desktop.in=.desktop)
+Desktop_in_files = gnome-blog.desktop.in.in
+Desktop_DATA = $(Desktop_in_files:.desktop.in.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
 

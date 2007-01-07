@@ -1,3 +1,8 @@
+2007-01-07  Olav Vitters  <olav@bkor.dhs.org>
+
+	* POTFILES.in: Change gnome-blog.desktop.in to
+	gnome-blog.desktop.in.in.
+
 2006-11-18  Djihed Afifi <djihed@gmail.com> 
 
 	* ar.po: Added Arabic Translation.

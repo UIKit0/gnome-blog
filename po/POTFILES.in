@@ -5,7 +5,7 @@ GNOME_BlogApplet.xml
 blog_applet.py
 blog_poster.py
 blogger_prefs.py
-gnome-blog.desktop.in
+gnome-blog.desktop.in.in
 gnomeblog.schemas.in
 hig_alert.py
 protocols/advogato.py

@@ -1,5 +1,27 @@
 2007-01-07  Olav Vitters  <olav@bkor.dhs.org>
 
+	* Makefile.am:
+	* blog_applet.py:
+	* gnome-blog-poster:
+	* gnome-blog.spec.in: Convert to gtk-icon-factory.
+
+	* icons:
+	* icons/22x22:
+	* icons/22x22/gnome-blog.png:
+	* icons/48x48:
+	* icons/48x48/gnome-blog.png:
+	* icons/32x32:
+	* icons/32x32/gnome-blog.png:
+	* icons/24x24:
+	* icons/24x24/gnome-blog.png:
+	* icons/16x16:
+	* icons/16x16/gnome-blog.png:
+	* icons/scalable:
+	* icons/scalable/gnome-blog.svg: Add Tango style icons created by
+	Josef Vybíral. Fixes bug 347682 (Josef Vybíral).
+
+2007-01-07  Olav Vitters  <olav@bkor.dhs.org>
+
 	*  .: Update svn:ignore.
 	* protocols/.cvsignore: Using SVN now.
 	* .cvsignore: 

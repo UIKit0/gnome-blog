@@ -17,9 +17,7 @@ from gnomeblog import gnome_blog_globals
 gettext.bindtextdomain('gnome-blog', gnome_blog_globals.localedir)
 gettext.textdomain('gnome-blog')
     
-icon_theme = gtk.icon_theme_get_default()
-icon_info = icon_theme.lookup_icon('gnome-blog', -1, 0)
-gtk.window_set_default_icon_from_file(icon_info.get_filename())
+gtk.window_set_default_icon_name('gnome-blog')
         
 class BloggerApp:
     def __init__(self):

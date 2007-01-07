@@ -19,9 +19,7 @@ from gnomeblog import gnome_blog_globals
 bindtextdomain('gnome-blog', gnome_blog_globals.localedir)
 textdomain('gnome-blog')
 
-icon_theme = gtk.icon_theme_get_default()
-icon_info = icon_theme.lookup_icon('gnome-blog', -1, 0)
-gtk.window_set_default_icon_from_file(icon_info.get_filename())
+gtk.window_set_default_icon_name('gnome-blog')
         
 class BloggerApplet(gnomeapplet.Applet):
     def __init__(self):
@@ -77,7 +75,7 @@ class BloggerApplet(gnomeapplet.Applet):
         about.set_comments(_("A GNOME Web Blogging Applet"))
         about.set_authors(["Seth Nickell <seth@gnome.org>"])
         about.set_translator_credits(_("translator-credits"))
-        about.set_logo(gtk.gdk.pixbuf_new_from_file(gnome_blog_globals.image_dir + "/gnome-blog.png"))
+        about.set_logo_icon_name('gnome-blog')
         about.connect("response", lambda dialog, response: dialog.destroy())
         about.show()
 

@@ -64,7 +64,7 @@ msgstr "Preferéncias..."
 
 #: blog_poster.py:81
 msgid "Title:"
-msgstr "Titol:"
+msgstr "Títol:"
 
 #: blog_poster.py:116
 msgid "Couldn't upload images"

@@ -1,21 +1,24 @@
+# translation of oc.po to Occitan
 # Occitan translation of gnome-blog.
-# Copyright (C) 2003-2006 Free Software Foundation, Inc.
+# Copyright (C) 2003-2006, 2007 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-blog package.
 #
 # Yannig MARCHEGAY (yannig@marchegay.org) - 2006-2007
 #
+# Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-blog 0.9.2\n"
+"Project-Id-Version: oc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-08-25 21:09+0200\n"
-"PO-Revision-Date: 2006-08-25 21:09+0200\n"
-"Last-Translator: Yannig MARCHEGAY (Kokoyaya) <yannig@marchegay.org>\n"
-"Language-Team: Occitan (post 1500) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
+"PO-Revision-Date: 2007-11-20 14:30+0100\n"
+"Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
+"Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);"
+"Plural-Forms: nplurals=2; plural=(n > 1);X-Generator: KBabel 1.11.4\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
@@ -219,8 +222,7 @@ msgid "Your username is invalid. Please double-check the preferences."
 msgstr ""
 
 #: protocols/advogato.py:30 protocols/livejournal.py:35
-msgid ""
-"Your username or password is invalid. Please double-check the preferences."
+msgid "Your username or password is invalid. Please double-check the preferences."
 msgstr ""
 
 #: protocols/advogato.py:39 protocols/bloggerAPI.py:87
@@ -282,8 +284,3 @@ msgstr "Tèxt :"
 msgid "URL:"
 msgstr "URL :"
 
-#~ msgid "Post blog entries to Blogger.com"
-#~ msgstr "Umieszczanie wpisów bloga na Blogger.com"
-
-#~ msgid "Blogging Tool"
-#~ msgstr "Narzędzie do blogowania"

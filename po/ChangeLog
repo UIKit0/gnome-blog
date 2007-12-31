@@ -1,4 +1,7 @@
-2007-07-12  Simos Xenitellis  <simos@gnome.org>
+2007-12-31  Yannig Marchegay <yannig@marchegay.org>
+
+	* oc.po: Updated Occitan translation.
+2007-07-12  Simos Xenitellis  <simos@gnome.org>
 
 	* LINGUAS: Added 'el' for Greek.
 	* el.po: Added Greek translation by Nick Agianniotis <nickagian@gmail.

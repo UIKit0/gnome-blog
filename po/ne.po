@@ -1,27 +1,27 @@
 # translation of gnome-blog.HEAD.ne.po to Nepali
-# translation of gnome-blog.HEAD.po to Nepali
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
 # Pawan Chitrakar <pawan@mpp.org.np>, 2005.
 # Jyotshna Shrestha <shresthajyo@hotmail.com>, 2005.
 # Ganesh Ghimire <gghimire@gmail.com>, 2005.
 # Shiva  Pokharel <pokharelshiva@hotmail.com>, 2005.
 # Jaydeep Bhusal <zaydeep@hotmail.com>, 2005.
 # Mahesh subedi <submanesh@hotmail.com>, 2006.
-#
+# Shyam Krishna Bal <balshyam24@yahoo.com>, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog.HEAD.ne\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-15 11:25+0200\n"
-"PO-Revision-Date: 2006-06-11 12:04+0545\n"
-"Last-Translator: Mahesh subedi <submanesh@hotmail.com>\n"
+"POT-Creation-Date: 2007-01-07 17:20+0000\n"
+"PO-Revision-Date: 2007-11-30 17:17+0545\n"
+"Last-Translator: Shyam Krishna Bal <balshyam24@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.10.2\n"
-"Plural-Forms: nplurals=2;plural=(n!=1)\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=n !=1\n"
 
 #: ../GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
@@ -29,7 +29,7 @@ msgstr "सहायक उपकरणहरू"
 
 #: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.h:1
 msgid "Blog Entry Poster"
-msgstr "प्रविष्टि पोस्टर ब्लग गर्नुहोस्"
+msgstr "ब्लग प्रविष्टि पोस्टर"
 
 #: ../GNOME_BlogApplet.server.in.in.h:3
 msgid "Post entries to a web log"
@@ -43,19 +43,23 @@ msgstr "बारेमा..."
 msgid "_Preferences..."
 msgstr "प्राथमिकताहरू..."
 
-#: ../blog_applet.py:36
+#: ../blog_applet.py:35
 msgid "About"
 msgstr "बारेमा"
 
-#: ../blog_applet.py:39
+#: ../blog_applet.py:38
 msgid "Blog"
 msgstr "ब्लग"
 
-#: ../blog_applet.py:75
+#: ../blog_applet.py:77
 msgid "A GNOME Web Blogging Applet"
 msgstr "जिनोम वेब ब्लग गर्ने एप्लेट"
 
-#: ../blog_applet.py:110
+#: ../blog_applet.py:79
+msgid "translator-credits"
+msgstr "श्यामकृष्ण बल"
+
+#: ../blog_applet.py:116
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "%s मा %s का लागि एउटा ब्लग प्रविष्टि सिर्जना गर्नुहोस्"
@@ -106,7 +110,7 @@ msgstr "स्वयं-सञ्चालन हुने Pyblosxom"
 
 #: ../blogger_prefs.py:41
 msgid "Self-Run WordPress"
-msgstr "स्वयं-सञ्चालन हुने शव्द थिचाई"
+msgstr "स्वयं-सञ्चालन वर्डप्रेस"
 
 #: ../blogger_prefs.py:42
 msgid "Self-Run Other"
@@ -123,7 +127,7 @@ msgstr "ब्लग प्रोटोकल:"
 #: ../blogger_prefs.py:60 ../blogger_prefs.py:122 ../blogger_prefs.py:127
 #: ../blogger_prefs.py:132
 msgid "Base Blog URL:"
-msgstr "आधार ब्लग URL:"
+msgstr "आधार ब्लग यूआरएल:"
 
 #: ../blogger_prefs.py:62
 msgid "Blog Name:"
@@ -152,7 +156,7 @@ msgstr "अज्ञात ब्लग प्रकार"
 
 #: ../blogger_prefs.py:161
 msgid "The detected blog type is not among the list of supported blogs"
-msgstr "पत्ता लगाएको ब्लग प्रकार समर्थन गर्ने ब्लगहरूको सूची बिच छैन"
+msgstr "पत्ता लगाएको ब्लग प्रकार समर्थन गर्ने ब्लगहरूको सूची बीच छैन"
 
 #: ../gnome-blog.desktop.in.h:2
 msgid "Post an entry to a web log"
@@ -168,15 +172,15 @@ msgstr "ब्लग पहुँचमा प्रयोग गर्ने �
 
 #: ../gnomeblog.schemas.in.h:3
 msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
-msgstr "URL आधारमा संलग्न गर्न प्रत्यय (उदाहरण \"xmlrpc.cgi\")"
+msgstr "यूआरएल आधारमा संलग्न गर्न प्रत्यय (उदाहरण \"xmlrpc.cgi\")"
 
 #: ../gnomeblog.schemas.in.h:4
 msgid "The application's preferences have been initialized"
-msgstr "अनुप्रयोगको प्राथमिकता प्रारम्भ गरियो।"
+msgstr "अनुप्रयोगको प्राथमिकता प्रारम्भ गरियो"
 
 #: ../gnomeblog.schemas.in.h:5
 msgid "The id or name of the particular blog to use on the XML-RPC server"
-msgstr "XML-RPC सर्भरमा प्रयोग गर्न निश्चित ब्लगको आईडि वा नाम"
+msgstr "XML-RPC सर्भरमा प्रयोग गर्न निश्चित ब्लगको आईडी वा नाम"
 
 #: ../gnomeblog.schemas.in.h:6
 msgid "URL to the bloggerAPI compatible XML-RPC server"
@@ -227,7 +231,7 @@ msgstr "ब्लग प्रविष्टि पोस्ट गर्न �
 
 #: ../protocols/advogato.py:27
 msgid "Your username is invalid. Please double-check the preferences."
-msgstr "तपाईँको प्रयोगकर्तानाम अवैध छ। कृपया प्राथमिकताहरू दुई पटक जाँच्नुहोस्।"
+msgstr "तपाईँको प्रयोगकर्तानाम अवैध छ। कृपया प्राथमिकताहरू दुई पटक जाँच्नुहोस् ।"
 
 #: ../protocols/advogato.py:30 ../protocols/livejournal.py:35
 msgid "Your username or password is invalid. Please double-check the preferences."
@@ -254,7 +258,9 @@ msgstr "ब्लगहरूको सूची पाउन सकिएन"
 msgid ""
 "No XML-RPC server URL to post blog entries to is set, or the value could not "
 "be retrieved from GConf. Your entry will remain in the blogger window."
-msgstr "ब्लग प्रविष्टिहरू पोस्ट गर्न कुनै XML-RPC सर्भर URL मिलिएको छैन, वा मान GConf बाट पुन:प्राप्त भएको छैन। तपाईँको प्रविष्टि ब्लगर सञ्झ्यालमा बाँकी रहन्छ।"
+msgstr ""
+"ब्लग प्रविष्टिहरू पोस्ट गर्न कुनै XML-RPC सर्भर URL मिलिएको छैन, वा मान GConf बाट पुन:"
+"प्राप्त भएको छैन। तपाईँको प्रविष्टि ब्लगर सञ्झ्यालमा बाँकी रहन्छ।"
 
 #: ../protocols/livejournal.py:64
 #, python-format
@@ -274,15 +280,15 @@ msgstr "%s लोड गर्दा को त्रुटि:%s थियो"
 
 #: ../rich_entry.py:210
 msgid "Add _Link..."
-msgstr "लिङ्क जोड्नुहोस्..."
+msgstr "लिङ्क थप्नुहोस्..."
 
 #: ../rich_entry.py:215
 msgid "Add Link"
-msgstr "लिङ्क जोड्नुहोस्"
+msgstr "लिङ्क थप्नुहोस्"
 
 #: ../rich_entry.py:218
 msgid "_Add Link"
-msgstr "लिङ्क जोड्नुहोस्"
+msgstr "लिङ्क थप्नुहोस्"
 
 #: ../rich_entry.py:226
 msgid "Text:"
@@ -290,5 +296,5 @@ msgstr "पाठ:"
 
 #: ../rich_entry.py:229
 msgid "URL:"
-msgstr "URL:"
+msgstr "यूआरएल:"
 

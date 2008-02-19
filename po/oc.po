@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: oc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-02 21:52+0100\n"
-"PO-Revision-Date: 2007-12-27 13:38+0100\n"
+"POT-Creation-Date: 2008-02-19 20:22+0100\n"
+"PO-Revision-Date: 2008-02-05 16:40+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
 "MIME-Version: 1.0\n"
@@ -43,7 +43,7 @@ msgstr "A prepaus de"
 
 #: ../blog_applet.py:36
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
 #: ../blog_applet.py:75
 msgid "A GNOME Web Blogging Applet"
@@ -72,7 +72,7 @@ msgstr "Títol:"
 
 #: ../blog_poster.py:116
 msgid "Couldn't upload images"
-msgstr ""
+msgstr "Impossible d'enviar d'imatges"
 
 #: ../blog_poster.py:116
 msgid "The blog protocol in use does not support uploading images"
@@ -90,7 +90,7 @@ msgstr ""
 
 #: ../blogger_prefs.py:19
 msgid "Blogger Preferences"
-msgstr ""
+msgstr "Preferéncias de Blogger"
 
 #: ../blogger_prefs.py:39
 msgid "Self-Run MovableType"
@@ -110,11 +110,11 @@ msgstr ""
 
 #: ../blogger_prefs.py:46
 msgid "Blog Type:"
-msgstr ""
+msgstr "Mena de blog :"
 
 #: ../blogger_prefs.py:56
 msgid "Blog Protocol:"
-msgstr ""
+msgstr "Protocòl del blog :"
 
 #: ../blogger_prefs.py:60 ../blogger_prefs.py:122 ../blogger_prefs.py:127
 #: ../blogger_prefs.py:132
@@ -123,7 +123,7 @@ msgstr ""
 
 #: ../blogger_prefs.py:62
 msgid "Blog Name:"
-msgstr ""
+msgstr "Nom del blog :"
 
 #: ../blogger_prefs.py:64
 msgid "Lookup Blogs"

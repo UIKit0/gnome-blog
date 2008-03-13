@@ -1,3 +1,8 @@
+2008-03-13  Olav Vitters  <olav@bkor.dhs.org>
+
+	* GNOME_BlogApplet.xml: Replace gnome-about icon usage by gtk
+	equivalent. Fixes bug #522332 (Gilles Dartiguelongue).
+
 2007-01-07  Olav Vitters  <olav@bkor.dhs.org>
 
 	* Makefile.am:

@@ -1,3 +1,7 @@
+2008-03-22  Sven Herzberg  <sven@imendio.com>
+
+	* po/de.po: updated German
+
 2008-02-18  Pawan Chitrakar <chautari@gmail.com>
 
 	* ne.po: Updated Nepali Translation.
@@ -5,7 +9,8 @@
 2007-12-31  Yannig Marchegay <yannig@marchegay.org>
 
 	* oc.po: Updated Occitan translation.
-2007-07-12  Simos Xenitellis  <simos@gnome.org>
+
+2007-07-12  Simos Xenitellis  <simos@gnome.org>
 
 	* LINGUAS: Added 'el' for Greek.
 	* el.po: Added Greek translation by Nick Agianniotis <nickagian@gmail.

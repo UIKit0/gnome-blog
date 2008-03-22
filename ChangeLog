@@ -1,5 +1,11 @@
 2008-03-22  Sven Herzberg  <sven@imendio.com>
 
+	Fix #522327: italian translation file isn't UTF-8 encoded
+
+	* po/it.po: convert the .po file to UTF-8
+
+2008-03-22  Sven Herzberg  <sven@imendio.com>
+
 	Fix #522329: gnome-blog doesn't pass 'make distcheck'
 
 	* po/POTFILES.skip: added files to be ignored

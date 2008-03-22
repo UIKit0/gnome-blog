@@ -1,5 +1,13 @@
 2008-03-22  Sven Herzberg  <sven@imendio.com>
 
+	Fix #433060: Run gtk-update-icon-cache in uninstall-hook
+	Patch by: Brian Pepple <bpepple@fedoraproject.org>
+
+	* Makefile.am (update-icon-cache): fix gtk-update-icon-cache for 
+	uninstall-hook
+
+2008-03-22  Sven Herzberg  <sven@imendio.com>
+
 	Fix #522327: italian translation file isn't UTF-8 encoded
 
 	* po/it.po: convert the .po file to UTF-8

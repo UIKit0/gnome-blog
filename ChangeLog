@@ -1,5 +1,12 @@
 2008-03-22  Sven Herzberg  <sven@imendio.com>
 
+	Find the UI file even in a nonstandard prefix
+
+	* blog_applet.py: pass the datadir hint
+	* gnome_blog_globals.py.in: added a variable for the datadir
+
+2008-03-22  Sven Herzberg  <sven@imendio.com>
+
 	Use the panel color for the background (just like the clock applet
 	does)
 

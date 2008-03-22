@@ -30,7 +30,7 @@ class BloggerApplet(gnomeapplet.Applet):
         self.toggle = gtk.ToggleButton()
 	self.toggle.set_relief(gtk.RELIEF_NONE)
         self.applet_tooltips = gtk.Tooltips()
-        self.setup_menu_from_file (None, "GNOME_BlogApplet.xml",
+        self.setup_menu_from_file (gnome_blog_globals.datadir, "GNOME_BlogApplet.xml",
                                    None, [(_("About"), self._showAboutDialog), ("Pref", self._openPrefs)])
 
         button_box = gtk.HBox()

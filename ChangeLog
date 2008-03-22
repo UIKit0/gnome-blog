@@ -1,5 +1,13 @@
 2008-03-22  Sven Herzberg  <sven@imendio.com>
 
+	Use the panel color for the background (just like the clock applet
+	does)
+
+	* blog_applet.py: set the widget itself to be the one managing the
+	background
+
+2008-03-22  Sven Herzberg  <sven@imendio.com>
+
 	Don't display the frame of the GtkToggleButton (just like the clock
 	applet does)
 

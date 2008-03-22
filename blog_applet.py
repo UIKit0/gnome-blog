@@ -44,6 +44,7 @@ class BloggerApplet(gnomeapplet.Applet):
         self.toggle.connect("toggled", self._onToggle)
         self.toggle.connect("button-press-event", self._onButtonPress)
         
+	self.set_background_widget(self)
         self.show_all()
 
         self.poster_window = aligned_window.AlignedWindow(self.toggle, self.get_orient)

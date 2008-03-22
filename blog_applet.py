@@ -28,6 +28,7 @@ class BloggerApplet(gnomeapplet.Applet):
     def init(self):
         self.set_applet_flags(gnomeapplet.EXPAND_MINOR)
         self.toggle = gtk.ToggleButton()
+	self.toggle.set_relief(gtk.RELIEF_NONE)
         self.applet_tooltips = gtk.Tooltips()
         self.setup_menu_from_file (None, "GNOME_BlogApplet.xml",
                                    None, [(_("About"), self._showAboutDialog), ("Pref", self._openPrefs)])

@@ -1,5 +1,12 @@
 2008-03-22  Sven Herzberg  <sven@imendio.com>
 
+	Don't display the frame of the GtkToggleButton (just like the clock
+	applet does)
+
+	* blog_applet.py: set the relief to RELIEF_NONE
+
+2008-03-22  Sven Herzberg  <sven@imendio.com>
+
 	Support keywords in the MetaWeblog API
 
 	* blog_poster.py: added some widgets for entering tags

@@ -98,9 +98,18 @@ class BlogPoster(gtk.Frame):
 
         self.titleEntry.connect('activate', lambda entry,box=box: box.child_focus(gtk.DIR_TAB_FORWARD))
 
+        self.titleEntry.connect('changed', self._setWindowTitle)
         self.titleEntry.connect('changed', self._checkEmptyPost)
         self.blogEntry.buffer.connect('changed', self._checkEmptyPost)
         self._checkEmptyPost()
+
+    def _setWindowTitle(self, *args):
+	title = self.titleEntry.get_text().strip()
+	if not title:
+	    title = _("Post Blog Entry")
+
+	window = self.get_toplevel()
+	window.set_title(title)
 
     def _checkEmptyPost(self, *args):
         sensitive = 1

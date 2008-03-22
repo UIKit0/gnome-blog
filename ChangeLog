@@ -1,5 +1,12 @@
 2008-03-22  Sven Herzberg  <sven@imendio.com>
 
+	Fix #304972: Should set unique window title
+	Patch by: Tommi Komulainen <tommi.komulainen@iki.fi>
+
+	* blog_poster.py: use the title of the blog post as the window title
+
+2008-03-22  Sven Herzberg  <sven@imendio.com>
+
 	Fix #433060: Run gtk-update-icon-cache in uninstall-hook
 	Patch by: Brian Pepple <bpepple@fedoraproject.org>
 

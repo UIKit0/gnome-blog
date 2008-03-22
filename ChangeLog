@@ -1,5 +1,11 @@
 2008-03-22  Sven Herzberg  <sven@imendio.com>
 
+	Fix #522329: gnome-blog doesn't pass 'make distcheck'
+
+	* po/POTFILES.skip: added files to be ignored
+
+2008-03-22  Sven Herzberg  <sven@imendio.com>
+
 	Align the label properly (now it's baseline matches the one of the
 	clock applet)
 

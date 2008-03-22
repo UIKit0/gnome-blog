@@ -1,3 +1,10 @@
+2008-03-22  Sven Herzberg  <sven@imendio.com>
+
+	Updated maintainers file to be able to commit (bkor told me to add
+	myself)
+
+	* MAINTAINERS: jaja
+
 2008-03-13  Olav Vitters  <olav@bkor.dhs.org>
 
 	* GNOME_BlogApplet.xml: Replace gnome-about icon usage by gtk

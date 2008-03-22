@@ -17,7 +17,7 @@ class Blog(bloggerAPI.Blog):
         bloggerAPI.Blog.__init__(self)
 
     def postEntry (self, username, password, base_url, title,
-                   entry, client, gconf_prefix):
+                   entry, keywords, client, gconf_prefix):
 
         url = self._getURL(base_url, client, gconf_prefix)
 
@@ -36,6 +36,7 @@ class Blog(bloggerAPI.Blog):
         content = {}
         content['title'] = title
         content['description'] = entry
+	content['mt_keywords'] = keywords
 
         try:
             server.metaWeblog.newPost(blog_id, username, password, content, xmlrpclib.True)

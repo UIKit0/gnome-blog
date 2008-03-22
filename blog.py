@@ -15,13 +15,14 @@ def getBlogList (gconf_prefix):
         raise FeatureNotSupported("getBlogList")
 
     
-def postEntry (title, entry, gconf_prefix):
+def postEntry (title, entry, gconf_prefix, keywords):
     client = gconf.client_get_default()
     username, password, protocol, url = _getSettings(client, gconf_prefix)
     blog_backend = _getBlogBackend(protocol)
           
     return blog_backend.postEntry(username, password,
                                   url, title, entry,
+				  keywords,
                                   client, gconf_prefix)
         
 def uploadImage (image, gconf_prefix):

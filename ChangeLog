@@ -1,5 +1,18 @@
 2008-03-22  Sven Herzberg  <sven@imendio.com>
 
+	Support keywords in the MetaWeblog API
+
+	* blog_poster.py: added some widgets for entering tags
+	* blog.py,
+	* protocols/MetaWeblog.py,
+	* protocols/advogato.py,
+	* protocols/bloggerAPI.py,
+	* protocols/livejournal.py: added a "keywords" parameter to
+	postEntry(); implement keywords for MetaWeblog using the "mt_keywords"
+	field
+
+2008-03-22  Sven Herzberg  <sven@imendio.com>
+
 	Updated maintainers file to be able to commit (bkor told me to add
 	myself)
 

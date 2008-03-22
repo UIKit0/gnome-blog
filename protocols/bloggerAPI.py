@@ -52,7 +52,7 @@ class Blog:
 
 
 
-    def postEntry (self, username, password, base_url, title, entry, client, gconf_prefix):
+    def postEntry (self, username, password, base_url, title, entry, keywords, client, gconf_prefix):
         global appkey
 
         url = self._getURL(base_url, client, gconf_prefix)

@@ -81,8 +81,16 @@ class BlogPoster(gtk.Frame):
         titleBox.pack_start(gtk.Label(_("Title:")), expand=False)
         titleBox.pack_start(self.titleEntry)
 
+	self.tagEntry = gtk.Entry()
+
+	taggingBox = gtk.HBox()
+	taggingBox.set_spacing(12)
+	taggingBox.pack_start(gtk.Label(_("Tags:")), expand=False)
+	taggingBox.pack_start(self.tagEntry)
+
         box.pack_start(titleBox, expand=False)
         box.pack_start(scroller)
+	box.pack_start(taggingBox, expand=False)
         box.pack_start(buttonBox, expand=False)
 
         self.add(box)
@@ -133,7 +141,10 @@ class BlogPoster(gtk.Frame):
         if not self._postIsReasonable(html_text):
             return
 
-        successful_post = blog.postEntry(title, html_text, gconf_prefix)
+        successful_post = blog.postEntry(title,
+					 html_text,
+					 gconf_prefix,
+					 self.tagEntry.get_text().decode('utf-8'))
 
         if successful_post:
             # Only delete the entry if posting was successful
@@ -145,6 +156,7 @@ class BlogPoster(gtk.Frame):
     def _clearBlogEntryText(self):
         self.blogEntry.clear()
         self.titleEntry.delete_text(0, -1)
+	self.tagEntry.delete_text(0, -1)
 
     def _onPrefsButtonClicked(self, button):
         self._showPrefDialog()

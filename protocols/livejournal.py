@@ -17,7 +17,7 @@ class Blog:
     def __init__(self):
         pass
 
-    def postEntry (self, username, password, url, title, entry, client, gconf_prefix):
+    def postEntry (self, username, password, url, title, entry, keywords, client, gconf_prefix):
 
         #check for GNOME proxy configurations and use if required
         proxy_transport = proxy.GnomeProxyTransport(client)

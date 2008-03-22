@@ -1,5 +1,12 @@
 2008-03-22  Sven Herzberg  <sven@imendio.com>
 
+	Align the label properly (now it's baseline matches the one of the
+	clock applet)
+
+	* blog_applet.py: copied the hack from the clock applet
+
+2008-03-22  Sven Herzberg  <sven@imendio.com>
+
 	Find the UI file even in a nonstandard prefix
 
 	* blog_applet.py: pass the datadir hint

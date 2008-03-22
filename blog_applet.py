@@ -38,6 +38,18 @@ class BloggerApplet(gnomeapplet.Applet):
         self.arrow = gtk.Arrow(gtk.ARROW_DOWN, gtk.SHADOW_IN)
         button_box.pack_start(self.arrow)
 
+	gtk.rc_parse_string ("""
+style "gnome-blog-applet-button-style"
+{
+   GtkWidget::focus-line-width=0
+   GtkWidget::focus-padding=0
+}
+
+widget "*.gnome-blog-applet-button" style "gnome-blog-applet-button-style"
+""");
+
+	self.toggle.set_name("gnome-blog-applet-button")
+
         self.toggle.add(button_box)
         
         self.add(self.toggle)

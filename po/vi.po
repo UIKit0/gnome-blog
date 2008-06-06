@@ -1,33 +1,32 @@
-# Vietnamese translation for Gnome Blog.
-# Copyright © 2006 Gnome i18n Project for Vietnamese.
-# Clytie Siddall <clytie@riverland.net.au>, 2005-2006.
+# Vietnamese translation for GNOME Blog.
+# Copyright © 2008 GNOME i18n Project for Vietnamese.
+# Clytie Siddall <clytie@riverland.net.au>, 2005-2008.
 # 
 msgid ""
-""
-msgstr "Project-Id-Version: gnome-blog Gnome HEAD\n"
+msgstr ""
+"Project-Id-Version: gnome-blog GNOME TRUNK\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-23 12:20+0200\n"
-"PO-Revision-Date: 2006-08-23 20:56+0930\n"
+"POT-Creation-Date: 2008-03-22 03:21+0000\n"
+"PO-Revision-Date: 2008-06-06 18:00+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
-"Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
+"Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: LocFactoryEditor 1.6fc1\n"
+"X-Generator: LocFactoryEditor 1.7b3\n"
 
 #: ../GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr "Phụ tùng"
 
-#: ../GNOME_BlogApplet.server.in.in.h:2
-#: ../gnome-blog.desktop.in.h:1
+#: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.in.h:1
 msgid "Blog Entry Poster"
-msgstr "Bộ gởi bài vào Nhật ký Mạng"
+msgstr "Bộ gửi bài vào Nhật ký Web"
 
 #: ../GNOME_BlogApplet.server.in.in.h:3
 msgid "Post entries to a web log"
-msgstr "Gởi bài vào một nhật ký Mạng"
+msgstr "Gửi bài vào một nhật ký Web"
 
 #: ../GNOME_BlogApplet.xml.h:1
 msgid "_About..."
@@ -37,30 +36,30 @@ msgstr "_Giới thiệu..."
 msgid "_Preferences..."
 msgstr "Tù_y thích..."
 
-#: ../blog_applet.py:35
+#: ../blog_applet.py:34
 msgid "About"
 msgstr "Giới thiệu"
 
-#: ../blog_applet.py:38
+#: ../blog_applet.py:37
 msgid "Blog"
-msgstr "Nhật ký Mạng"
+msgstr "Nhật ký Web"
 
-#: ../blog_applet.py:77
+#: ../blog_applet.py:89
 msgid "A GNOME Web Blogging Applet"
-msgstr "Tiểu dụng tạo Nhật ký Mạng của GNOME."
+msgstr "Tiểu dụng tạo Nhật ký Web của GNOME."
 
-#: ../blog_applet.py:79
+#: ../blog_applet.py:91
 msgid "translator-credits"
 msgstr "Nhóm Việt hóa Gnome <gnomevi-list@lists.sourceforge.net>"
 
-#: ../blog_applet.py:116
+#: ../blog_applet.py:128
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Tạo bài nhật ký cho %s tại %s"
 
 #: ../blog_poster.py:44
 msgid "_Post Entry"
-msgstr "_Gởi bài"
+msgstr "_Gửi bài"
 
 #: ../blog_poster.py:69
 msgid "Preferences..."
@@ -68,29 +67,37 @@ msgstr "Tùy thích..."
 
 #: ../blog_poster.py:81
 msgid "Title:"
-msgstr "Tựa:"
+msgstr "Tựa đề:"
 
-#: ../blog_poster.py:116
+#: ../blog_poster.py:88
+msgid "Tags:"
+msgstr "Thẻ:"
+
+#: ../blog_poster.py:109
+msgid "Post Blog Entry"
+msgstr "Gửi bài nhật ký"
+
+#: ../blog_poster.py:133
 msgid "Couldn't upload images"
 msgstr "Không thể tải ảnh lên"
 
-#: ../blog_poster.py:116
+#: ../blog_poster.py:133
 msgid "The blog protocol in use does not support uploading images"
-msgstr "Giao thức nhật ký Mạng đang dùng không hỗ trợ khả năng tải ảnh lên"
+msgstr "Giao thức nhật ký Web đang dùng không hỗ trợ khả năng tải ảnh lên"
 
-#: ../blog_poster.py:162
+#: ../blog_poster.py:183
 msgid "Blog Entry is Blank"
-msgstr "Bài nhật ký Mạng là trắng"
+msgstr "Bài nhật ký Web còn trống"
 
-#: ../blog_poster.py:162
+#: ../blog_poster.py:183
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
-msgstr "Chưa nhập câu nào vào hộp gõ bài nhật ký. Hãy gõ đoạn rồi thử lại"
+msgstr "Chưa nhập câu nào vào hộp gõ bài nhật ký. Hãy gõ đoạn văn rồi thử lại"
 
 #: ../blogger_prefs.py:19
 msgid "Blogger Preferences"
-msgstr "Tùy thích Nhật ký Mạng"
+msgstr "Tùy thích Blogger"
 
 #: ../blogger_prefs.py:39
 msgid "Self-Run MovableType"
@@ -106,30 +113,28 @@ msgstr "WordPress tự chạy"
 
 #: ../blogger_prefs.py:42
 msgid "Self-Run Other"
-msgstr "Điều khác tự chạy"
+msgstr "Trình khác tự chạy"
 
 #: ../blogger_prefs.py:46
 msgid "Blog Type:"
-msgstr "Kiểu nhật ký Mạng:"
+msgstr "Kiểu nhật ký Web:"
 
 #: ../blogger_prefs.py:56
 msgid "Blog Protocol:"
-msgstr "Giao thức nhật ký Mạng:"
+msgstr "Giao thức nhật ký Web:"
 
-#: ../blogger_prefs.py:60
-#: ../blogger_prefs.py:122
-#: ../blogger_prefs.py:127
+#: ../blogger_prefs.py:60 ../blogger_prefs.py:122 ../blogger_prefs.py:127
 #: ../blogger_prefs.py:132
 msgid "Base Blog URL:"
 msgstr "URL nhật ký cơ bản:"
 
 #: ../blogger_prefs.py:62
 msgid "Blog Name:"
-msgstr "Tên nhật ký Mạng:"
+msgstr "Tên nhật ký Web:"
 
 #: ../blogger_prefs.py:64
 msgid "Lookup Blogs"
-msgstr "Tìm tra nhật ký Mạng"
+msgstr "Tìm tra nhật ký Web"
 
 #: ../blogger_prefs.py:74
 msgid "Username:"
@@ -139,33 +144,31 @@ msgstr "Tên người dùng:"
 msgid "Password:"
 msgstr "Mật khẩu :"
 
-#: ../blogger_prefs.py:117
-#: ../blogger_prefs.py:137
-#: ../blogger_prefs.py:142
-#: ../blogger_prefs.py:147
-#: ../blogger_prefs.py:153
+#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:142
+#: ../blogger_prefs.py:147 ../blogger_prefs.py:153
 msgid "XML-RPC URL:"
 msgstr "URL XML-RPC:"
 
 #: ../blogger_prefs.py:161
 msgid "Unknown blog type"
-msgstr "Không biết kiểu nhật ký Mạng"
+msgstr "Không rõ kiểu nhật ký Web"
 
 #: ../blogger_prefs.py:161
 msgid "The detected blog type is not among the list of supported blogs"
-msgstr "Kiểu nhật ký Mạng đã phát hiện không nằm trong danh sách các nhật ký Mạng được hỗ trợ"
+msgstr ""
+"Kiểu nhật ký Web đã phát hiện không nằm trong danh sách các nhật ký Web được hỗ trợ"
 
-#: ../gnome-blog.desktop.in.h:2
+#: ../gnome-blog.desktop.in.in.h:2
 msgid "Post an entry to a web log"
-msgstr "Gởi bài vào nhật ký Mạng"
+msgstr "Gửi bài vào nhật ký Web"
 
 #: ../gnomeblog.schemas.in.h:1
 msgid "Password to use in accessing the blog"
-msgstr "Mật khẩu cần dùng khi truy cập nhật ký Mạng"
+msgstr "Mật khẩu cần dùng khi truy cập đến nhật ký Web"
 
 #: ../gnomeblog.schemas.in.h:2
 msgid "Protocol to use in accessing the blog"
-msgstr "Giao thức cần dùng khi truy cập nhật ký Mạng"
+msgstr "Giao thức cần dùng khi truy cập đến nhật ký Web"
 
 #: ../gnomeblog.schemas.in.h:3
 msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
@@ -173,11 +176,12 @@ msgstr "Hấu tố cần đính kèm địa chỉ URL cơ bản (v.d. « xmlrpc.
 
 #: ../gnomeblog.schemas.in.h:4
 msgid "The application's preferences have been initialized"
-msgstr "Tùy thích của ứng dụng đã được khởi động"
+msgstr "Tùy thích của ứng dụng đã được sơ khởi"
 
 #: ../gnomeblog.schemas.in.h:5
 msgid "The id or name of the particular blog to use on the XML-RPC server"
-msgstr "Mã nhận diện hay tên của nhật ký riêng cần dùng trên máy phục vụ XML-RPC"
+msgstr ""
+"Mã số hay tên của nhật ký cụ thể cần dùng trên máy phục vụ XML-RPC"
 
 #: ../gnomeblog.schemas.in.h:6
 msgid "URL to the bloggerAPI compatible XML-RPC server"
@@ -185,26 +189,30 @@ msgstr "Địa chỉ URL tới máy phục vụ XML-RPC tương thích với blo
 
 #: ../gnomeblog.schemas.in.h:7
 msgid "Username to use in accessing the blog"
-msgstr "Tên người dùng cần dùng khi truy cập nhật ký Mạng"
+msgstr "Tên người dùng cần dùng khi truy cập đến nhật ký Web"
 
 #: ../hig_alert.py:15
 #, python-format
 msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
-msgstr "Địa chỉ URL « %s » có lẽ không phải là một bloggerAPI hợp lệ. Máy phục vụ XML-RPC thông báo: %s"
+msgstr ""
+"Địa chỉ URL « %s » có lẽ không phải là một bloggerAPI hợp lệ. Máy phục vụ XML-RPC thông báo: %s"
 
 #: ../hig_alert.py:17
 #, python-format
 msgid ""
 "Unknown username %s or password trying to post blog entry to XML-RPC server %"
 "s."
-msgstr "Gặp tên người dùng %s hay mật khẩu lạ đang thử gởi bài nhật ký Mạng vào máy phục vụ XML-RPC %s"
+msgstr ""
+"Không rõ tên người dùng %s hay mật khẩu đang thử gửi bài nhật ký Web vào máy phục vụ XML-RPC %s"
 
 #: ../hig_alert.py:19
 #, python-format
 msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
 "reported: %s."
-msgstr "Không thể gởi bài vào nhật ký Mạng « %s » tại máy phục vụ XML-RPC bloggerAPI « %s ». Máy phục vụ thông báo: %s"
+msgstr ""
+"Không thể gửi bài vào nhật ký Web « %s » tại máy phục vụ XML-RPC bloggerAPI "
+"« %s ». Máy phục vụ thông báo: %s"
 
 #: ../hig_alert.py:21
 #, python-format
@@ -212,70 +220,73 @@ msgid ""
 "The bloggerAPI server (%s) reported an error I don't understand: '%s, %s'. \n"
 "\n"
 "Please email this error message to seth@gnome.org so I can address it."
-msgstr "Máy phục vụ bloggerAPI (%s) đã thông báo một lỗi khó hiểu: « %s %s ».\n"
+msgstr ""
+"Máy phục vụ bloggerAPI (%s) đã thông báo một lỗi khó hiểu: « %s %s ».\n"
 "\n"
-"Xin hãy gởi thông điệp lỗi này cho « seth@gnome.org » để nhà phát triển có dịp sửa lỗi."
+"Xin hãy gửi thông điệp lỗi này cho « seth@gnome.org » để nhà phát triển có "
+"dịp sửa lỗi."
 
-#: ../protocols/advogato.py:27
-#: ../protocols/advogato.py:30
-#: ../protocols/advogato.py:42
-#: ../protocols/bloggerAPI.py:61
-#: ../protocols/bloggerAPI.py:89
-#: ../protocols/livejournal.py:35
+#: ../protocols/advogato.py:27 ../protocols/advogato.py:30
+#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:61
+#: ../protocols/bloggerAPI.py:89 ../protocols/livejournal.py:35
 #: ../protocols/livejournal.py:64
 msgid "Could not post Blog entry"
-msgstr "Không thể gởi bài nhật ký Mạng"
+msgstr "Không thể gửi bài nhật ký Web"
 
 #: ../protocols/advogato.py:27
 msgid "Your username is invalid. Please double-check the preferences."
-msgstr "Tên người dùng của bạn không phải là hợp lệ. Hãy kiểm tra lại tùy thích."
+msgstr ""
+"Tên người dùng của bạn không phải là hợp lệ. Hãy kiểm tra lại tùy thích."
 
-#: ../protocols/advogato.py:30
-#: ../protocols/livejournal.py:35
+#: ../protocols/advogato.py:30 ../protocols/livejournal.py:35
 msgid ""
 "Your username or password is invalid. Please double-check the preferences."
-msgstr "Tên người dùng hay mật khẩu của bạn không phải là hợp lệ. Hãy kiểm tra lại tùy thích."
+msgstr ""
+"Tên người dùng hay mật khẩu của bạn không phải là hợp lệ. Hãy kiểm tra lại "
+"tùy thích."
 
-#: ../protocols/advogato.py:39
-#: ../protocols/bloggerAPI.py:86
+#: ../protocols/advogato.py:39 ../protocols/bloggerAPI.py:86
 #: ../protocols/livejournal.py:61
 msgid "Could not post blog entry"
-msgstr "Không thể gởi bài nhật ký Mạng"
+msgstr "Không thể gửi bài nhật ký Web"
 
-#: ../protocols/advogato.py:42
-#: ../protocols/bloggerAPI.py:38
+#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:38
 #: ../protocols/bloggerAPI.py:89
 #, python-format
 msgid ""
 "URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
 "reported: %s."
-msgstr "Hình như địa chỉ URL « %s » không phải là máy phục vụ XML-RPC bloggerAPI hợp lệ. Máy phục vụ Mạng thông báo: %s."
+msgstr ""
+"Hình như địa chỉ URL « %s » không phải là máy phục vụ XML-RPC bloggerAPI hợp "
+"lệ. Máy phục vụ Mạng thông báo: %s."
 
-#: ../protocols/bloggerAPI.py:35
-#: ../protocols/bloggerAPI.py:38
+#: ../protocols/bloggerAPI.py:35 ../protocols/bloggerAPI.py:38
 msgid "Could not get list of blogs"
-msgstr "Không thể lấy danh sách các nhật ký Mạng"
+msgstr "Không thể lấy danh sách các nhật ký Web"
 
 #: ../protocols/bloggerAPI.py:61
 msgid ""
 "No XML-RPC server URL to post blog entries to is set, or the value could not "
 "be retrieved from GConf. Your entry will remain in the blogger window."
-msgstr "Chưa đặt địa chỉ URL của máy phục vụ XML-RPC tới đó cần gởi bài nhật ký, hoặc không thể lấy giá trị đó từ GConf. Như thế thì bài của bạn sẽ còn lại trong cửa sổ nhật ký Mạng."
+msgstr ""
+"Chưa đặt địa chỉ URL của máy phục vụ XML-RPC tới đó cần gửi bài nhật ký, "
+"hoặc không thể lấy giá trị đó từ GConf. Như thế thì bài của bạn sẽ còn lại "
+"trong cửa sổ nhật ký Web."
 
 #: ../protocols/livejournal.py:64
 #, python-format
 msgid ""
 "URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
 "reported: %s."
-msgstr "Hình như địa chỉ URL « %s » không phải là máy phục vụ XML-RPC LiveJournal hợp lệ. Máy phục vụ Mạng thông báo: %s."
+msgstr ""
+"Hình như địa chỉ URL « %s » không phải là máy phục vụ XML-RPC LiveJournal "
+"hợp lệ. Máy phục vụ Mạng thông báo: %s."
 
-#: ../rich_entry.py:144
-#: ../rich_entry.py:152
+#: ../rich_entry.py:144 ../rich_entry.py:152
 msgid "Could not load dragged in image"
 msgstr "Không thể tải ảnh đã kéo vào"
 
-#: ../rich_entry.py:145
-#: ../rich_entry.py:153
+#: ../rich_entry.py:145 ../rich_entry.py:153
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "Khi tải %s, gặp lỗi: %s"
@@ -294,7 +305,7 @@ msgstr "Thê_m liên kết"
 
 #: ../rich_entry.py:226
 msgid "Text:"
-msgstr "Đoạn:"
+msgstr "Chuỗi:"
 
 #: ../rich_entry.py:229
 msgid "URL:"

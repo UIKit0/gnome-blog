@@ -6,14 +6,15 @@
 # Mayck Philippe Batista Xavier <mayckxavier@gmail.com>, 2007.
 # Washington Ferreira Lins Neto <washington-lins@uol.com.br>, 2007.
 # Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>, 2007.
+# Fábio Nogueira <deb-user-ba@ubuntu.com> 2008.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-03-31 16:20-0300\n"
-"PO-Revision-Date: 2007-03-31 16:24-0300\n"
-"Last-Translator: Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>\n"
+"POT-Creation-Date: 2008-06-20 10:54-0300\n"
+"PO-Revision-Date: 2008-06-19 20:05-0300\n"
+"Last-Translator: Fábio Nogueira <deb-user-ba@ubuntu.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-l10n-br@listas.cipsga.org.br>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,11 +26,11 @@ msgstr "Acessórios"
 
 #: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.in.h:1
 msgid "Blog Entry Poster"
-msgstr "Plubicador de Artigos de Blog"
+msgstr "Publicador de artigos de blog"
 
 #: ../GNOME_BlogApplet.server.in.in.h:3
 msgid "Post entries to a web log"
-msgstr "Publique artigos em um blog"
+msgstr "Publique artigos num blog"
 
 #: ../GNOME_BlogApplet.xml.h:1
 msgid "_About..."
@@ -39,35 +40,36 @@ msgstr "_Sobre..."
 msgid "_Preferences..."
 msgstr "_Preferências..."
 
-#: ../blog_applet.py:33
+#: ../blog_applet.py:34
 msgid "About"
 msgstr "Sobre"
 
-#: ../blog_applet.py:36
+#: ../blog_applet.py:37
 msgid "Blog"
 msgstr "Blog"
 
-#: ../blog_applet.py:75
+#: ../blog_applet.py:89
 msgid "A GNOME Web Blogging Applet"
-msgstr "Um Miniaplicativo para Blogar no GNOME"
+msgstr "Um miniaplicativo para blogar no GNOME"
 
-#: ../blog_applet.py:77
+#: ../blog_applet.py:91
 msgid "translator-credits"
 msgstr ""
 "Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Afonso Celso Medina <medina@maua.br>\n"
 "Mayck Philippe Batista Xavier <mayckxavier@gmail.com>\n"
 "Washington Ferreira Lins Neto <washington-lins@uol.com.br>\n"
-"Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>"
+"Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>\n"
+"Fábio Nogueira <deb-user-ba@ubuntu.com>"
 
-#: ../blog_applet.py:114
+#: ../blog_applet.py:128
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Cria um artigo de blog para %s em %s"
 
 #: ../blog_poster.py:44
 msgid "_Post Entry"
-msgstr "_Publicar Artigo"
+msgstr "_Publicar artigo"
 
 #: ../blog_poster.py:69
 msgid "Preferences..."
@@ -77,20 +79,28 @@ msgstr "Preferências..."
 msgid "Title:"
 msgstr "Título:"
 
-#: ../blog_poster.py:116
+#: ../blog_poster.py:88
+msgid "Tags:"
+msgstr "Etiquetas:"
+
+#: ../blog_poster.py:109
+msgid "Post Blog Entry"
+msgstr "Publicar artigo de blog"
+
+#: ../blog_poster.py:133
 msgid "Couldn't upload images"
 msgstr "Não foi possível transferir imagens"
 
-#: ../blog_poster.py:116
+#: ../blog_poster.py:133
 msgid "The blog protocol in use does not support uploading images"
 msgstr ""
 "O protocolo utilizado pelo blog não dá suporte a transferência de imagens"
 
-#: ../blog_poster.py:162
+#: ../blog_poster.py:183
 msgid "Blog Entry is Blank"
-msgstr "O Artigo do Blog está Vazio"
+msgstr "O artigo do blog está vazio"
 
-#: ../blog_poster.py:162
+#: ../blog_poster.py:183
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
@@ -103,11 +113,11 @@ msgstr "Preferências do Blogger"
 
 #: ../blogger_prefs.py:39
 msgid "Self-Run MovableType"
-msgstr "MovableType Auto-Executável"
+msgstr "MovableType auto-executável"
 
 #: ../blogger_prefs.py:40
 msgid "Self-Run Pyblosxom"
-msgstr "Pybloxsom Auto-Executável"
+msgstr "Pybloxsom auto-executável"
 
 #: ../blogger_prefs.py:41
 msgid "Self-Run WordPress"
@@ -123,7 +133,7 @@ msgstr "Tipo de blog:"
 
 #: ../blogger_prefs.py:56
 msgid "Blog Protocol:"
-msgstr "Protocolo do Blog:"
+msgstr "Protocolo do blog:"
 
 #: ../blogger_prefs.py:60 ../blogger_prefs.py:122 ../blogger_prefs.py:127
 #: ../blogger_prefs.py:132
@@ -295,15 +305,15 @@ msgstr "O erro ao carregar %s foi: %s"
 
 #: ../rich_entry.py:210
 msgid "Add _Link..."
-msgstr "Adicionar _Link..."
+msgstr "Adicionar _link..."
 
 #: ../rich_entry.py:215
 msgid "Add Link"
-msgstr "Adiciona um Link"
+msgstr "Adiciona um link"
 
 #: ../rich_entry.py:218
 msgid "_Add Link"
-msgstr "_Adicionar Link"
+msgstr "_Adicionar link"
 
 #: ../rich_entry.py:226
 msgid "Text:"

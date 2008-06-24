@@ -1,16 +1,16 @@
 # Swedish messages for gnome-blog.
-# Copyright (C) 2003-2006 Free Software Foundation, Inc.
+# Copyright (C) 2003-2008 Free Software Foundation, Inc.
 # Christian Rose <menthos@menthos.com>, 2003.
-# Daniel Nylander <po@danielnylander.se>, 2006.
+# Daniel Nylander <po@danielnylander.se>, 2006, 2008.
 #
-# $Id$
+# $Id: sv.po,v 1.23 2006/07/16 14:59:39 dnylande Exp $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-07-16 03:50+0200\n"
-"PO-Revision-Date: 2006-07-16 16:40+0100\n"
+"POT-Creation-Date: 2008-06-24 11:04+0200\n"
+"PO-Revision-Date: 2008-06-24 11:04+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgid "Accessories"
 msgstr "Tillbehör"
 
 #: ../GNOME_BlogApplet.server.in.in.h:2
-#: ../gnome-blog.desktop.in.h:1
+#: ../gnome-blog.desktop.in.in.h:1
 msgid "Blog Entry Poster"
 msgstr "Postare av blogginlägg"
 
@@ -38,25 +38,25 @@ msgstr "_Om..."
 msgid "_Preferences..."
 msgstr "_Inställningar..."
 
-#: ../blog_applet.py:35
+#: ../blog_applet.py:34
 msgid "About"
 msgstr "Om"
 
-#: ../blog_applet.py:38
+#: ../blog_applet.py:37
 msgid "Blog"
 msgstr "Blogg"
 
-#: ../blog_applet.py:77
+#: ../blog_applet.py:89
 msgid "A GNOME Web Blogging Applet"
 msgstr "Ett webbloggningspanelprogram för GNOME"
 
-#: ../blog_applet.py:79
+#: ../blog_applet.py:91
 msgid "translator-credits"
 msgstr ""
 "Daniel Nylander <po@danielnylander.se>\n"
 "Christian Rose <menthos@menthos.com>"
 
-#: ../blog_applet.py:116
+#: ../blog_applet.py:128
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Skapa ett blogginlägg för %s på %s"
@@ -73,19 +73,27 @@ msgstr "Inställningar..."
 msgid "Title:"
 msgstr "Titel:"
 
-#: ../blog_poster.py:116
+#: ../blog_poster.py:88
+msgid "Tags:"
+msgstr "Taggar:"
+
+#: ../blog_poster.py:109
+msgid "Post Blog Entry"
+msgstr "Posta blogginlägg"
+
+#: ../blog_poster.py:133
 msgid "Couldn't upload images"
 msgstr "Kunde inte lämna bilder"
 
-#: ../blog_poster.py:116
+#: ../blog_poster.py:133
 msgid "The blog protocol in use does not support uploading images"
 msgstr "Bloggprotokollet som används stöder inte lämnande av bilder"
 
-#: ../blog_poster.py:162
+#: ../blog_poster.py:183
 msgid "Blog Entry is Blank"
 msgstr "Blogginlägget är tomt"
 
-#: ../blog_poster.py:162
+#: ../blog_poster.py:183
 msgid "No text was entered in the blog entry box. Please enter some text and try again"
 msgstr "Ingen text angavs i blogginmatningsfältet. Ange någon text och försök igen"
 
@@ -156,7 +164,7 @@ msgstr "Okänd bloggtyp"
 msgid "The detected blog type is not among the list of supported blogs"
 msgstr "Den identifierade bloggtypen är inte bland de bloggar som stöds"
 
-#: ../gnome-blog.desktop.in.h:2
+#: ../gnome-blog.desktop.in.in.h:2
 msgid "Post an entry to a web log"
 msgstr "Posta ett inlägg i en webblogg"
 

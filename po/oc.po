@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: oc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-07 10:20+0100\n"
+"POT-Creation-Date: 2008-07-02 08:58+0200\n"
 "PO-Revision-Date: 2008-02-05 16:40+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -37,23 +37,23 @@ msgstr "_A prepaus..."
 msgid "_Preferences..."
 msgstr "_Preferéncias..."
 
-#: ../blog_applet.py:33
+#: ../blog_applet.py:34
 msgid "About"
 msgstr "A prepaus de"
 
-#: ../blog_applet.py:36
+#: ../blog_applet.py:37
 msgid "Blog"
 msgstr "Blog"
 
-#: ../blog_applet.py:75
+#: ../blog_applet.py:89
 msgid "A GNOME Web Blogging Applet"
 msgstr ""
 
-#: ../blog_applet.py:77
+#: ../blog_applet.py:91
 msgid "translator-credits"
 msgstr "Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>"
 
-#: ../blog_applet.py:114
+#: ../blog_applet.py:128
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr ""
@@ -70,19 +70,27 @@ msgstr "Preferéncias..."
 msgid "Title:"
 msgstr "Títol:"
 
-#: ../blog_poster.py:116
+#: ../blog_poster.py:88
+msgid "Tags:"
+msgstr ""
+
+#: ../blog_poster.py:109
+msgid "Post Blog Entry"
+msgstr ""
+
+#: ../blog_poster.py:133
 msgid "Couldn't upload images"
 msgstr "Impossible d'enviar d'imatges"
 
-#: ../blog_poster.py:116
+#: ../blog_poster.py:133
 msgid "The blog protocol in use does not support uploading images"
 msgstr ""
 
-#: ../blog_poster.py:162
+#: ../blog_poster.py:183
 msgid "Blog Entry is Blank"
 msgstr ""
 
-#: ../blog_poster.py:162
+#: ../blog_poster.py:183
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"

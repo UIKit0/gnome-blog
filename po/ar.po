@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arabic\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-21 22:52+0100\n"
+"POT-Creation-Date: 2008-07-31 11:07+0100\n"
 "PO-Revision-Date: 2007-04-14 18:49+0100\n"
 "Last-Translator: Djihed Afifi <djihed@gmail.com>\n"
 "Language-Team: Arabeyes <doc@arabeyes.org>\n"
@@ -37,25 +37,25 @@ msgstr "_حول..."
 msgid "_Preferences..."
 msgstr "تفضيلات..."
 
-#: ../blog_applet.py:33
+#: ../blog_applet.py:34
 #, fuzzy
 msgid "About"
 msgstr "اجهض"
 
-#: ../blog_applet.py:36
+#: ../blog_applet.py:37
 msgid "Blog"
 msgstr "المدوّنة"
 
-#: ../blog_applet.py:75
+#: ../blog_applet.py:89
 msgid "A GNOME Web Blogging Applet"
 msgstr ""
 
-#: ../blog_applet.py:77
+#: ../blog_applet.py:91
 #, fuzzy
 msgid "translator-credits"
 msgstr "المترجمون:"
 
-#: ../blog_applet.py:114
+#: ../blog_applet.py:128
 #, fuzzy, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "التقويم: من %s إلى %s"
@@ -74,22 +74,31 @@ msgstr "تفضيلات..."
 msgid "Title:"
 msgstr "الع_نوان:"
 
-#: ../blog_poster.py:116
+#: ../blog_poster.py:88
+msgid "Tags:"
+msgstr ""
+
+#: ../blog_poster.py:109
+#, fuzzy
+msgid "Post Blog Entry"
+msgstr "له مَدخل"
+
+#: ../blog_poster.py:133
 #, fuzzy
 msgid "Couldn't upload images"
 msgstr "لم يمكن تحميل الصور"
 
-#: ../blog_poster.py:116
+#: ../blog_poster.py:133
 #, fuzzy
 msgid "The blog protocol in use does not support uploading images"
 msgstr "بناء gdk-pixbuf هذا لا يدعم حفظ صيغة الصور: %s"
 
-#: ../blog_poster.py:162
+#: ../blog_poster.py:183
 #, fuzzy
 msgid "Blog Entry is Blank"
 msgstr "مُدْخل في اللوحة"
 
-#: ../blog_poster.py:162
+#: ../blog_poster.py:183
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
@@ -308,4 +317,3 @@ msgstr "_نص"
 #: ../rich_entry.py:229
 msgid "URL:"
 msgstr "العنوان:"
-

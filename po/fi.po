@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-16 13:48+0300\n"
-"PO-Revision-Date: 2006-08-16 13:49+0300\n"
+"POT-Creation-Date: 2008-08-27 15:08+0300\n"
+"PO-Revision-Date: 2008-08-27 15:00+0300\n"
 "Last-Translator: Ilkka Tuohela <hile@iki.fi>\n"
 "Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid "Accessories"
 msgstr "Apuohjelmat"
 
-#: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.h:1
+#: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.in.h:1
 msgid "Blog Entry Poster"
 msgstr "Blog-merkinnän lähettäjä"
 
@@ -36,26 +36,25 @@ msgstr "_Tietoja..."
 msgid "_Preferences..."
 msgstr "_Asetukset..."
 
-#: ../blog_applet.py:35
+#: ../blog_applet.py:34
 msgid "About"
 msgstr "Tietoja"
 
-#: ../blog_applet.py:38
+#: ../blog_applet.py:37
 msgid "Blog"
 msgstr "Blog"
 
-#: ../blog_applet.py:77
+#: ../blog_applet.py:89
 msgid "A GNOME Web Blogging Applet"
 msgstr "Gnomen Blog-sovelma"
 
-#: ../blog_applet.py:79
+#: ../blog_applet.py:91
 msgid "translator-credits"
 msgstr ""
-"Ilkka Tuohela, 2005-2006."
-"\n"
+"Ilkka Tuohela, 2005-2006.\n"
 "http://www.gnome.fi/"
 
-#: ../blog_applet.py:116
+#: ../blog_applet.py:128
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Luo blogimerkintä käyttäjälle %s palvelimella %s"
@@ -72,19 +71,27 @@ msgstr "Asetukset..."
 msgid "Title:"
 msgstr "Otsikko:"
 
-#: ../blog_poster.py:116
+#: ../blog_poster.py:88
+msgid "Tags:"
+msgstr "Merkinnät:"
+
+#: ../blog_poster.py:109
+msgid "Post Blog Entry"
+msgstr "Lähetä blogimerkintä"
+
+#: ../blog_poster.py:133
 msgid "Couldn't upload images"
 msgstr "Kuvia ei voitu lähettää"
 
-#: ../blog_poster.py:116
+#: ../blog_poster.py:133
 msgid "The blog protocol in use does not support uploading images"
 msgstr "Käytetty blog-protokolla ei tue kuvien lähettämistä"
 
-#: ../blog_poster.py:162
+#: ../blog_poster.py:183
 msgid "Blog Entry is Blank"
 msgstr "Blog-merkintä on tyhjä"
 
-#: ../blog_poster.py:162
+#: ../blog_poster.py:183
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
@@ -154,7 +161,7 @@ msgstr "Blogin tyyppi on tuntematon"
 msgid "The detected blog type is not among the list of supported blogs"
 msgstr "Havaittu blogityyppi ei ole yksi tuetuista blogityypeistä"
 
-#: ../gnome-blog.desktop.in.h:2
+#: ../gnome-blog.desktop.in.in.h:2
 msgid "Post an entry to a web log"
 msgstr "Lähetä viestisi web-logiin"
 

@@ -1,0 +1,293 @@
+# translation of gnome-blog.HEAD.po to Gujarati
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Sweta Kothari <swkothar@redhat.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-blog.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-11-09 11:54+0000\n"
+"PO-Revision-Date: 2009-01-07 13:59+0530\n"
+"Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
+"Language-Team: Gujarati\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: ../GNOME_BlogApplet.server.in.in.h:1
+msgid "Accessories"
+msgstr "સહાયક સામગ્રી"
+
+#: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.in.h:1
+msgid "Blog Entry Poster"
+msgstr ""
+
+#: ../GNOME_BlogApplet.server.in.in.h:3
+msgid "Post entries to a web log"
+msgstr ""
+
+#: ../GNOME_BlogApplet.xml.h:1
+msgid "_About..."
+msgstr "વિશે (_A)..."
+
+#: ../GNOME_BlogApplet.xml.h:2
+msgid "_Preferences..."
+msgstr "પસંદગીઓ (_P)..."
+
+#: ../blog_applet.py:34
+msgid "About"
+msgstr "વિશે"
+
+#: ../blog_applet.py:37
+msgid "Blog"
+msgstr "બ્લૉગ "
+
+#: ../blog_applet.py:89
+msgid "A GNOME Web Blogging Applet"
+msgstr "GNOME વેબ બ્લોગીંગ એપલેટ"
+
+#: ../blog_applet.py:91
+msgid "translator-credits"
+msgstr "શ્ર્વેકા કોઠારી <swkothar@redhat.com>"
+
+#: ../blog_applet.py:128
+#, python-format
+msgid "Create a blog entry for %s at %s"
+msgstr "%s પર %s માટે બ્લોક નોંધણી ને બનાવો"
+
+#: ../blog_poster.py:44
+msgid "_Post Entry"
+msgstr ""
+
+#: ../blog_poster.py:69
+msgid "Preferences..."
+msgstr "પસંદગીઓ..."
+
+#: ../blog_poster.py:81
+msgid "Title:"
+msgstr "શિર્ષક:"
+
+#: ../blog_poster.py:88
+msgid "Tags:"
+msgstr "ટેગો:"
+
+#: ../blog_poster.py:109
+msgid "Post Blog Entry"
+msgstr "બ્લૉગ નોંધ ને પોસ્ટ કરો"
+
+#: ../blog_poster.py:133
+msgid "Couldn't upload images"
+msgstr "ઇમેજો ને અપલોડ કરી શકાતી નથી"
+
+#: ../blog_poster.py:133
+msgid "The blog protocol in use does not support uploading images"
+msgstr ""
+
+#: ../blog_poster.py:183
+msgid "Blog Entry is Blank"
+msgstr ""
+
+#: ../blog_poster.py:183
+msgid ""
+"No text was entered in the blog entry box. Please enter some text and try "
+"again"
+msgstr ""
+
+#: ../blogger_prefs.py:19
+msgid "Blogger Preferences"
+msgstr "બ્લૉગર પસંદગીઓ"
+
+#: ../blogger_prefs.py:39
+msgid "Self-Run MovableType"
+msgstr ""
+
+#: ../blogger_prefs.py:40
+msgid "Self-Run Pyblosxom"
+msgstr ""
+
+#: ../blogger_prefs.py:41
+msgid "Self-Run WordPress"
+msgstr ""
+
+#: ../blogger_prefs.py:42
+msgid "Self-Run Other"
+msgstr ""
+
+#: ../blogger_prefs.py:46
+msgid "Blog Type:"
+msgstr "બ્લૉગ પ્રકાર:"
+
+#: ../blogger_prefs.py:56
+msgid "Blog Protocol:"
+msgstr "બ્લૉગ પ્રોટોકોલ:"
+
+#: ../blogger_prefs.py:60 ../blogger_prefs.py:122 ../blogger_prefs.py:127
+#: ../blogger_prefs.py:132
+msgid "Base Blog URL:"
+msgstr "આધારિત બ્લૉગ URL:"
+
+#: ../blogger_prefs.py:62
+msgid "Blog Name:"
+msgstr "બ્લૉગ નામ:"
+
+#: ../blogger_prefs.py:64
+msgid "Lookup Blogs"
+msgstr "બ્લૉગો ને જુઓ"
+
+#: ../blogger_prefs.py:74
+msgid "Username:"
+msgstr "વપરાશકર્તા નામ:"
+
+#: ../blogger_prefs.py:75
+msgid "Password:"
+msgstr "પાસવર્ડ:"
+
+#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:142
+#: ../blogger_prefs.py:147 ../blogger_prefs.py:153
+msgid "XML-RPC URL:"
+msgstr "XML-RPC URL:"
+
+#: ../blogger_prefs.py:161
+msgid "Unknown blog type"
+msgstr "અજ્ઞાત બ્લૉગ પ્રકાર"
+
+#: ../blogger_prefs.py:161
+msgid "The detected blog type is not among the list of supported blogs"
+msgstr ""
+
+#: ../gnome-blog.desktop.in.in.h:2
+msgid "Post an entry to a web log"
+msgstr ""
+
+#: ../gnomeblog.schemas.in.h:1
+msgid "Password to use in accessing the blog"
+msgstr "બ્લૉગ ને દાખલ થવાનું વાપરવા માટે પાસવર્ડ"
+
+#: ../gnomeblog.schemas.in.h:2
+msgid "Protocol to use in accessing the blog"
+msgstr "બ્લૉગ ને દાખલ થવાનું વાપરવા માટે પ્રોટોકોલ"
+
+#: ../gnomeblog.schemas.in.h:3
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr ""
+
+#: ../gnomeblog.schemas.in.h:4
+msgid "The application's preferences have been initialized"
+msgstr "કાર્યક્રમોની પસંદગીઓ ની શરૂઆત કરી દેવામાં આવી છે"
+
+#: ../gnomeblog.schemas.in.h:5
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr ""
+
+#: ../gnomeblog.schemas.in.h:6
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr ""
+
+#: ../gnomeblog.schemas.in.h:7
+msgid "Username to use in accessing the blog"
+msgstr "બ્લૉગ ને દાખલ થવાનું વાપરવા માટે વપરાશકર્તા નામ"
+
+#: ../hig_alert.py:15
+#, python-format
+msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
+msgstr ""
+
+#: ../hig_alert.py:17
+#, python-format
+msgid ""
+"Unknown username %s or password trying to post blog entry to XML-RPC server %"
+"s."
+msgstr ""
+
+#: ../hig_alert.py:19
+#, python-format
+msgid ""
+"Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
+"reported: %s."
+msgstr ""
+
+#: ../hig_alert.py:21
+#, python-format
+msgid ""
+"The bloggerAPI server (%s) reported an error I don't understand: '%s, %s'. \n"
+"\n"
+"Please email this error message to seth@gnome.org so I can address it."
+msgstr ""
+
+#: ../protocols/advogato.py:27 ../protocols/advogato.py:30
+#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:61
+#: ../protocols/bloggerAPI.py:89 ../protocols/livejournal.py:35
+#: ../protocols/livejournal.py:64
+msgid "Could not post Blog entry"
+msgstr ""
+
+#: ../protocols/advogato.py:27
+msgid "Your username is invalid. Please double-check the preferences."
+msgstr "તમારો વપરાશકર્તા નામ અયોગ્ય છે. મહેરબાની કરીને પસંદગીઓને બે વાર ચકાસો."
+
+#: ../protocols/advogato.py:30 ../protocols/livejournal.py:35
+msgid "Your username or password is invalid. Please double-check the preferences."
+msgstr "તમારા વપરાશકર્તા નામ અથવા પાસવર્ડ અયોગ્ય છે. મહેરબાની કરીને પસંદગીઓને બે વાર ચકાસો."
+
+#: ../protocols/advogato.py:39 ../protocols/bloggerAPI.py:86
+#: ../protocols/livejournal.py:61
+msgid "Could not post blog entry"
+msgstr "ા"
+
+#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:38
+#: ../protocols/bloggerAPI.py:89
+#, python-format
+msgid ""
+"URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
+"reported: %s."
+msgstr ""
+
+#: ../protocols/bloggerAPI.py:35 ../protocols/bloggerAPI.py:38
+msgid "Could not get list of blogs"
+msgstr "બ્લૉગો ની યાદી મેળવી શકાતી નથી"
+
+#: ../protocols/bloggerAPI.py:61
+msgid ""
+"No XML-RPC server URL to post blog entries to is set, or the value could not "
+"be retrieved from GConf. Your entry will remain in the blogger window."
+msgstr ""
+
+#: ../protocols/livejournal.py:64
+#, python-format
+msgid ""
+"URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
+"reported: %s."
+msgstr ""
+
+#: ../rich_entry.py:144 ../rich_entry.py:152
+msgid "Could not load dragged in image"
+msgstr ""
+
+#: ../rich_entry.py:145 ../rich_entry.py:153
+#, python-format
+msgid "Error loading %s was: %s"
+msgstr ""
+
+#: ../rich_entry.py:210
+msgid "Add _Link..."
+msgstr "કડી ને ઉમેરો (_L)..."
+
+#: ../rich_entry.py:215
+msgid "Add Link"
+msgstr "કડી ને ઉમેરો"
+
+#: ../rich_entry.py:218
+msgid "_Add Link"
+msgstr "કડી ને ઉમેરો (_A)"
+
+#: ../rich_entry.py:226
+msgid "Text:"
+msgstr "લખાણ:"
+
+#: ../rich_entry.py:229
+msgid "URL:"
+msgstr "URL:"
+

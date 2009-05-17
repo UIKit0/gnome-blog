@@ -23,6 +23,20 @@ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [The gettext package])
 
 AM_GLIB_GNU_GETTEXT
 
+dnl  -------------------
+dnl | freedesktop stuff |
+dnl  -------------------
+
+AC_PATH_PROGS(DESKTOP_FILE_VALIDATE,[desktop-file-validate],[no])
+if test "${DESKTOP_FILE_VALIDATE}" = "no"; then
+        AC_MSG_ERROR([desktop-file-validate not found, please install desktop-file-utils from
+                      http://www.freedesktop.org/software/desktop-file-utils/releases/])
+fi
+
+dnl  --------
+dnl | output |
+dnl  --------
+
 AC_OUTPUT([
 Makefile
 gnome_blog_globals.py

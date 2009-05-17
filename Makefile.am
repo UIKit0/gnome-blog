@@ -69,6 +69,14 @@ Desktop_in_files = gnome-blog.desktop.in.in
 Desktop_DATA = $(Desktop_in_files:.desktop.in.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
+check-local:: $(Desktop_DATA)
+	@echo "[TEST] $<"
+	@tmpfile=`mktemp`; \
+		if ! $(DESKTOP_FILE_VALIDATE) $< > $$tmpfile || test "`wc -l $$tmpfile | $(AWK) '{print $$1}'`" -gt 0; then \
+		cat $$tmpfile >&2; \
+		false; \
+	fi
+
 install-data-hook: update-icon-cache
 uninstall-hook: update-icon-cache
 update-icon-cache:

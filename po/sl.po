@@ -2,15 +2,15 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-blog package.
 #
-# Matej Urbančič <matej.urban@gmail.com>, 2006, 2007.
+# Matej Urbančič <mateju@svn.gnome.org>, 2006, 2007 - 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog HEAD\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-11-18 03:35+0100\n"
-"PO-Revision-Date: 2006-11-22 14:19+0100\n"
-"Last-Translator: Matej Urbančič <matej.urban@gmail.com>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-blog&component=general\n"
+"POT-Creation-Date: 2009-08-01 12:09+0000\n"
+"PO-Revision-Date: 2009-09-10 20:47+0100\n"
+"Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,12 +22,12 @@ msgstr ""
 
 #: ../GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
-msgstr "Dodatki"
+msgstr "Pripomočki"
 
 #: ../GNOME_BlogApplet.server.in.in.h:2
-#: ../gnome-blog.desktop.in.h:1
+#: ../gnome-blog.desktop.in.in.h:1
 msgid "Blog Entry Poster"
-msgstr "Objavljalec blog člankov"
+msgstr "Objavljalec blogov"
 
 #: ../GNOME_BlogApplet.server.in.in.h:3
 msgid "Post entries to a web log"
@@ -41,26 +41,26 @@ msgstr "_O Programu ..."
 msgid "_Preferences..."
 msgstr "_Lastnosti ..."
 
-#: ../blog_applet.py:35
+#: ../blog_applet.py:34
 msgid "About"
 msgstr "O Programu"
 
-#: ../blog_applet.py:38
+#: ../blog_applet.py:37
 msgid "Blog"
 msgstr "Blog"
 
-#: ../blog_applet.py:77
+#: ../blog_applet.py:89
 msgid "A GNOME Web Blogging Applet"
 msgstr "GNOME-ov spletni aplet bloganja"
 
-#: ../blog_applet.py:79
+#: ../blog_applet.py:91
 msgid "translator-credits"
 msgstr "Matej Urbančič"
 
-#: ../blog_applet.py:116
+#: ../blog_applet.py:128
 #, python-format
 msgid "Create a blog entry for %s at %s"
-msgstr "Ustvari blog članek za %s na %s"
+msgstr "Ustvari vsebino bloga za %s na %s"
 
 #: ../blog_poster.py:44
 msgid "_Post Entry"
@@ -74,21 +74,29 @@ msgstr "Lastnosti ..."
 msgid "Title:"
 msgstr "Naslov:"
 
-#: ../blog_poster.py:116
+#: ../blog_poster.py:88
+msgid "Tags:"
+msgstr "Oznake:"
+
+#: ../blog_poster.py:109
+msgid "Post Blog Entry"
+msgstr "_Objavi vsebino bloga"
+
+#: ../blog_poster.py:133
 msgid "Couldn't upload images"
 msgstr "Ni mogoče poslati slik"
 
-#: ../blog_poster.py:116
+#: ../blog_poster.py:133
 msgid "The blog protocol in use does not support uploading images"
-msgstr "Blog protokol v uporabi, ne omogoča pošiljanja slik"
+msgstr "Blog protokol v uporabi ne omogoča pošiljanja slik"
 
-#: ../blog_poster.py:162
+#: ../blog_poster.py:183
 msgid "Blog Entry is Blank"
 msgstr "Vsebina bloga je prazna"
 
-#: ../blog_poster.py:162
+#: ../blog_poster.py:183
 msgid "No text was entered in the blog entry box. Please enter some text and try again"
-msgstr "Vsebina besedila ni vnesena. Prosim, vnesite besedilo in poskusite znova."
+msgstr "Besedilo ni vneseno. Prosim, vnesite besedilo in poskusite znova."
 
 #: ../blogger_prefs.py:19
 msgid "Blogger Preferences"
@@ -112,7 +120,7 @@ msgstr "Samodejni zagon; ostalo"
 
 #: ../blogger_prefs.py:46
 msgid "Blog Type:"
-msgstr "Tip bloga"
+msgstr "Vrsta bloga"
 
 #: ../blogger_prefs.py:56
 msgid "Blog Protocol:"
@@ -155,9 +163,9 @@ msgstr "Neznan tip bloga"
 
 #: ../blogger_prefs.py:161
 msgid "The detected blog type is not among the list of supported blogs"
-msgstr "Zaznani tip bloga ni med podprtimi tipi."
+msgstr "Zaznana vrsta bloga ni med podprtimi vrstami."
 
-#: ../gnome-blog.desktop.in.h:2
+#: ../gnome-blog.desktop.in.in.h:2
 msgid "Post an entry to a web log"
 msgstr "Objavljanje vsebine na spletni blog"
 

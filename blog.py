@@ -12,6 +12,7 @@ def getBlogList (gconf_prefix):
     try:
         return blog_backend.getBlogList(username, password, url, client, gconf_prefix)
     except AttributeError, e:
+        print "Error retrieving list of blogs: %s" % e.message
         raise FeatureNotSupported("getBlogList")
 
     

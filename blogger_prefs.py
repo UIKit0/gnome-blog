@@ -49,7 +49,7 @@ class BloggerPrefs(gtk.Dialog):
 
 
         self.blogProtocolMenu = gconf_widgets.OptionMenu(gconf_prefix + "/blog_protocol")
-        self.blogProtocolMenu.setStringValuePairs([("BloggerAPI", "bloggerAPI"),
+        self.blogProtocolMenu.setStringValuePairs([("BloggerAPI", "atomBloggerAPI"),
                                                    ("Advogato", "advogato"),
                                                    ("LiveJournal", "livejournal"),
                                                    ("MetaWeblog", "MetaWeblog")])
@@ -136,10 +136,10 @@ class BloggerPrefs(gtk.Dialog):
             protocol = "MetaWeblog"
             url_description = _("XML-RPC URL:")
         elif blog_type == "blogger.com":
-            url = "http://www.blogger.com/api/RPC2"
+            url = "http://code.blogger.com/"
             url_ending = ""
-            protocol = "bloggerAPI"
-            url_description = _("XML-RPC URL:")
+            protocol = "atomBloggerAPI"
+            url_description = _("ATOM-based")
         elif blog_type == "advogato.org":
             url = "http://www.advogato.org/XMLRPC"
             url_ending = ""
@@ -188,7 +188,7 @@ class BloggerPrefs(gtk.Dialog):
 
     def _onLookupBlogsButton (self, button):
         client = gconf.client_get_default()
-
+        
         blog_id_pairs = blog.getBlogList(gconf_prefix)
 
         self.blogMenu.setStringValuePairs(blog_id_pairs)

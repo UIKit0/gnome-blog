@@ -6,13 +6,14 @@
 # Pablo del Campo <pablodc@bigfoot.com>, 2003.
 # Francisco Javier F. Serrador <serrador@arrakis.es>, 2003.
 # Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004.
-# Jorge González <jorgegonz@svn.gnome.org>, 2008.
+# Jorge González <jorgegonz@svn.gnome.org>, 200, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog.HEAD\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-22 03:21+0000\n"
-"PO-Revision-Date: 2008-03-28 20:31+0100\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"blog&component=general\n"
+"POT-Creation-Date: 2009-11-04 10:14+0000\n"
+"PO-Revision-Date: 2009-11-04 22:21+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -153,10 +154,14 @@ msgstr "Nombre de usuario:"
 msgid "Password:"
 msgstr "Contraseña:"
 
-#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:142
-#: ../blogger_prefs.py:147 ../blogger_prefs.py:153
+#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:147
+#: ../blogger_prefs.py:153
 msgid "XML-RPC URL:"
 msgstr "URL de XML-RPC:"
+
+#: ../blogger_prefs.py:142
+msgid "ATOM-based"
+msgstr "Basado en ATOM"
 
 #: ../blogger_prefs.py:161
 msgid "Unknown blog type"
@@ -188,7 +193,8 @@ msgstr "Las preferencias de la aplicación han sido inicializadas"
 
 #: ../gnomeblog.schemas.in.h:5
 msgid "The id or name of the particular blog to use on the XML-RPC server"
-msgstr "El ID o el nombre de un blog en particular a utilizar en el servidor XML-RPC"
+msgstr ""
+"El ID o el nombre de un blog en particular a utilizar en el servidor XML-RPC"
 
 #: ../gnomeblog.schemas.in.h:6
 msgid "URL to the bloggerAPI compatible XML-RPC server"
@@ -245,11 +251,14 @@ msgstr "No se ha pudido publicar la entrada del Blog"
 
 #: ../protocols/advogato.py:27
 msgid "Your username is invalid. Please double-check the preferences."
-msgstr "Su nombre de usuario en inválido. Compruebe atentamente las preferencias."
+msgstr ""
+"Su nombre de usuario en inválido. Compruebe atentamente las preferencias."
 
 #: ../protocols/advogato.py:30 ../protocols/livejournal.py:35
-msgid "Your username or password is invalid. Please double-check the preferences."
-msgstr "Su nombre de usuario o contraseñe es inválido. Compruebe las preferencias."
+msgid ""
+"Your username or password is invalid. Please double-check the preferences."
+msgstr ""
+"Su nombre de usuario o contraseñe es inválido. Compruebe las preferencias."
 
 #: ../protocols/advogato.py:39 ../protocols/bloggerAPI.py:86
 #: ../protocols/livejournal.py:61
@@ -285,8 +294,8 @@ msgid ""
 "URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
 "reported: %s."
 msgstr ""
-"La URL «%s» no parece ser un servicor XML-RPC LiveJournal válido. El "
-"servidor web devolvió: %s."
+"La URL «%s» no parece ser un servicor XML-RPC LiveJournal válido. El servidor "
+"web devolvió: %s."
 
 #: ../rich_entry.py:144 ../rich_entry.py:152
 msgid "Could not load dragged in image"
@@ -316,4 +325,3 @@ msgstr "Texto:"
 #: ../rich_entry.py:229
 msgid "URL:"
 msgstr "URL:"
-

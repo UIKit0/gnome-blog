@@ -4,18 +4,22 @@
 # This file is distributed under the same license as the gnome-blog package.
 # Miloslav Trmac <mitr@volny.cz>, 2003, 2004.
 # Lucas Lommer <llommer@svn.gnome.org>, 2009. (just an update)
+# Marek Černocký <marek@manet.cz>, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-04 20:08+0200\n"
-"PO-Revision-Date: 2005-01-02 14:57+0100\n"
-"Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
+"POT-Creation-Date: 2009-11-04 20:53+0100\n"
+"PO-Revision-Date: 2009-11-04 11:49+0100\n"
+"Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
+"X-Poedit-Language: Czech\n"
+"X-Poedit-SourceCharset: utf-8\n"
 
 #: ../GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
@@ -31,11 +35,11 @@ msgstr "Odeslat položky do web logu"
 
 #: ../GNOME_BlogApplet.xml.h:1
 msgid "_About..."
-msgstr "_O aplikaci..."
+msgstr "_O aplikaci…"
 
 #: ../GNOME_BlogApplet.xml.h:2
 msgid "_Preferences..."
-msgstr "_Nastavení..."
+msgstr "_Předvolby…"
 
 #: ../blog_applet.py:34
 msgid "About"
@@ -66,7 +70,7 @@ msgstr "_Vystavit položku"
 
 #: ../blog_poster.py:69
 msgid "Preferences..."
-msgstr "Nastavení..."
+msgstr "Předvolby…"
 
 #: ../blog_poster.py:81
 msgid "Title:"
@@ -149,10 +153,14 @@ msgstr "Jméno uživatele:"
 msgid "Password:"
 msgstr "Heslo:"
 
-#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:142
-#: ../blogger_prefs.py:147 ../blogger_prefs.py:153
+#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:147
+#: ../blogger_prefs.py:153
 msgid "XML-RPC URL:"
 msgstr "URL XML-RPC:"
+
+#: ../blogger_prefs.py:142
+msgid "ATOM-based"
+msgstr "Založeno na ATOM"
 
 #: ../blogger_prefs.py:161
 msgid "Unknown blog type"
@@ -176,7 +184,7 @@ msgstr "Protokol, který používat pro přístup k blogu"
 
 #: ../gnomeblog.schemas.in.h:3
 msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
-msgstr "Přípona, kterou připojit k základnímu URL (např. \"xmlrpc.cgi\")"
+msgstr "Přípona, kterou připojit k základnímu URL (např. „xmlrpc.cgi“)"
 
 #: ../gnomeblog.schemas.in.h:4
 msgid "The application's preferences have been initialized"
@@ -197,7 +205,7 @@ msgstr "Jméno uživatele, které používat pro přístup k blogu"
 #: ../hig_alert.py:15
 #, python-format
 msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
-msgstr "URL '%s' možná není platné bloggerAPI. Server XML-RPC odpověděl: %s."
+msgstr "URL „%s“ možná není platné bloggerAPI. Server XML-RPC odpověděl: %s."
 
 #: ../hig_alert.py:17
 #, python-format
@@ -214,7 +222,7 @@ msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
 "reported: %s."
 msgstr ""
-"Nelze vystavit na blog '%s' na XML-RPC serveru bloggerAPI '%s'. Server "
+"Nelze vystavit na blog „%s“ na XML-RPC serveru bloggerAPI „%s“. Server "
 "odpověděl: %s."
 
 #: ../hig_alert.py:21
@@ -258,7 +266,7 @@ msgid ""
 "URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
 "reported: %s."
 msgstr ""
-"URL '%s' zřejmě není platný XML-RPC server bloggerAPI. WWW server odpověděl: "
+"URL „%s“ zřejmě není platný XML-RPC server bloggerAPI. WWW server odpověděl: "
 "%s."
 
 #: ../protocols/bloggerAPI.py:35 ../protocols/bloggerAPI.py:38
@@ -279,7 +287,7 @@ msgid ""
 "URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
 "reported: %s."
 msgstr ""
-"URL '%s' zřejmě není platný XML-RPC server LiveJournal. WWW server "
+"URL „%s“ zřejmě není platný XML-RPC server LiveJournal. WWW server "
 "odpověděl: %s."
 
 #: ../rich_entry.py:144 ../rich_entry.py:152
@@ -293,7 +301,7 @@ msgstr "Chyba při načítání %s byla: %s"
 
 #: ../rich_entry.py:210
 msgid "Add _Link..."
-msgstr "Přidat _odkaz..."
+msgstr "Přidat _odkaz…"
 
 #: ../rich_entry.py:215
 msgid "Add Link"

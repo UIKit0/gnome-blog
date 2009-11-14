@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-blog&component=general\n"
-"POT-Creation-Date: 2009-08-01 12:09+0000\n"
-"PO-Revision-Date: 2009-09-10 20:47+0100\n"
+"POT-Creation-Date: 2009-11-04 10:14+0000\n"
+"PO-Revision-Date: 2009-11-14 09:49+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n%100==4 ? 3 : 0);\n"
 "X-Poedit-Language: Slovenian\n"
 "X-Poedit-Country: SLOVENIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -27,7 +27,7 @@ msgstr "Pripomočki"
 #: ../GNOME_BlogApplet.server.in.in.h:2
 #: ../gnome-blog.desktop.in.in.h:1
 msgid "Blog Entry Poster"
-msgstr "Objavljalec blogov"
+msgstr "Objavljalnik blogov"
 
 #: ../GNOME_BlogApplet.server.in.in.h:3
 msgid "Post entries to a web log"
@@ -55,7 +55,7 @@ msgstr "GNOME-ov spletni aplet bloganja"
 
 #: ../blog_applet.py:91
 msgid "translator-credits"
-msgstr "Matej Urbančič"
+msgstr "Matej Urbančič <mateju@svn.gnome.org>"
 
 #: ../blog_applet.py:128
 #, python-format
@@ -96,7 +96,7 @@ msgstr "Vsebina bloga je prazna"
 
 #: ../blog_poster.py:183
 msgid "No text was entered in the blog entry box. Please enter some text and try again"
-msgstr "Besedilo ni vneseno. Prosim, vnesite besedilo in poskusite znova."
+msgstr "Besedilo ni vneseno. Vnesite besedilo in poskusite znova."
 
 #: ../blogger_prefs.py:19
 msgid "Blogger Preferences"
@@ -151,15 +151,18 @@ msgstr "Geslo:"
 
 #: ../blogger_prefs.py:117
 #: ../blogger_prefs.py:137
-#: ../blogger_prefs.py:142
 #: ../blogger_prefs.py:147
 #: ../blogger_prefs.py:153
 msgid "XML-RPC URL:"
 msgstr "XML-RPC URL:"
 
+#: ../blogger_prefs.py:142
+msgid "ATOM-based"
+msgstr "ATOM podpora"
+
 #: ../blogger_prefs.py:161
 msgid "Unknown blog type"
-msgstr "Neznan tip bloga"
+msgstr "Neznana vrsta bloga"
 
 #: ../blogger_prefs.py:161
 msgid "The detected blog type is not among the list of supported blogs"
@@ -179,7 +182,7 @@ msgstr "Protokol za dostop do bloga"
 
 #: ../gnomeblog.schemas.in.h:3
 msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
-msgstr "Pripeta končnica osnovnega naslova bloga (na primer: \"xmlrpc.cgi\")"
+msgstr "Pripeta pripona osnovnega naslova bloga (na primer: \"xmlrpc.cgi\")"
 
 #: ../gnomeblog.schemas.in.h:4
 msgid "The application's preferences have been initialized"
@@ -235,12 +238,12 @@ msgstr "Ni mogoče objaviti vsebine bloga."
 
 #: ../protocols/advogato.py:27
 msgid "Your username is invalid. Please double-check the preferences."
-msgstr "Uporabniško ime ni veljavno. Prosim, preverite nastavitve."
+msgstr "Uporabniško ime ni veljavno. Preverite nastavitve."
 
 #: ../protocols/advogato.py:30
 #: ../protocols/livejournal.py:35
 msgid "Your username or password is invalid. Please double-check the preferences."
-msgstr "Uporabniško ime ali geslo ni veljavno. Prosim, preverite nastavitve."
+msgstr "Uporabniško ime ali geslo ni veljavno. Preverite nastavitve."
 
 #: ../protocols/advogato.py:39
 #: ../protocols/bloggerAPI.py:86
@@ -258,7 +261,7 @@ msgstr "URL naslov '%s' ni videti kot veljavni bloggerAPI XML-RPC strežnik. Por
 #: ../protocols/bloggerAPI.py:35
 #: ../protocols/bloggerAPI.py:38
 msgid "Could not get list of blogs"
-msgstr "Ni mogoče pridobiti liste blogov."
+msgstr "Ni mogoče pridobiti seznama blogov."
 
 #: ../protocols/bloggerAPI.py:61
 msgid "No XML-RPC server URL to post blog entries to is set, or the value could not be retrieved from GConf. Your entry will remain in the blogger window."
@@ -272,7 +275,7 @@ msgstr "URL naslov '%s' ni videti kot veljavni LiveJournal XML-RPC strežnik. Po
 #: ../rich_entry.py:144
 #: ../rich_entry.py:152
 msgid "Could not load dragged in image"
-msgstr "Ni mogoče naložiti potegnjanega na sliko."
+msgstr "Ni mogoče naložiti potegnjane slike."
 
 #: ../rich_entry.py:145
 #: ../rich_entry.py:153

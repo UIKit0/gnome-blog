@@ -1,0 +1,301 @@
+# Hebrew translation for gnome-blog.
+# Copyright (C) 2009 gnome-blog's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-blog package.
+# Yaron Shahrabani <sh.yaron@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-blog master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-blog&component=general\n"
+"POT-Creation-Date: 2009-11-04 10:14+0000\n"
+"PO-Revision-Date: 2009-11-30 00:55+0200\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew <he@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../GNOME_BlogApplet.server.in.in.h:1
+msgid "Accessories"
+msgstr "עזרים"
+
+#: ../GNOME_BlogApplet.server.in.in.h:2
+#: ../gnome-blog.desktop.in.in.h:1
+msgid "Blog Entry Poster"
+msgstr "מפרסם רשומת הבלוג"
+
+#: ../GNOME_BlogApplet.server.in.in.h:3
+msgid "Post entries to a web log"
+msgstr "פרסום רשומות ליומן מקוון"
+
+#: ../GNOME_BlogApplet.xml.h:1
+msgid "_About..."
+msgstr "_אודות..."
+
+#: ../GNOME_BlogApplet.xml.h:2
+msgid "_Preferences..."
+msgstr "ה_עדפות..."
+
+#: ../blog_applet.py:34
+msgid "About"
+msgstr "אודות"
+
+#: ../blog_applet.py:37
+msgid "Blog"
+msgstr "בלוג"
+
+#: ../blog_applet.py:89
+msgid "A GNOME Web Blogging Applet"
+msgstr "יישומון לניהול בלוגים מקוונים של GNOME"
+
+#: ../blog_applet.py:91
+msgid "translator-credits"
+msgstr "ירון שהרבני <sh.yaron@gmail.com>"
+
+#: ../blog_applet.py:128
+#, python-format
+msgid "Create a blog entry for %s at %s"
+msgstr "צור רשומת בלוג עבור %s בתאריך %s"
+
+#: ../blog_poster.py:44
+msgid "_Post Entry"
+msgstr "_פרסום רשומה"
+
+#: ../blog_poster.py:69
+msgid "Preferences..."
+msgstr "העדפות..."
+
+#: ../blog_poster.py:81
+msgid "Title:"
+msgstr "כותרת:"
+
+#: ../blog_poster.py:88
+msgid "Tags:"
+msgstr "תגיות:"
+
+#: ../blog_poster.py:109
+msgid "Post Blog Entry"
+msgstr "פרסם רשומת בלוג"
+
+#: ../blog_poster.py:133
+msgid "Couldn't upload images"
+msgstr "לא ניתן להעלות תמונות"
+
+#: ../blog_poster.py:133
+msgid "The blog protocol in use does not support uploading images"
+msgstr "פרוטוקול הבלוג הנמצא בשימוש אינו תומך בהעלאת תמונות"
+
+#: ../blog_poster.py:183
+msgid "Blog Entry is Blank"
+msgstr "רשומת הבלוג ריקה"
+
+#: ../blog_poster.py:183
+msgid "No text was entered in the blog entry box. Please enter some text and try again"
+msgstr "לא הוזן טקסט בתיבת הזנת הבלוג. אנא הזן מעט טקסט ונסה שוב."
+
+#: ../blogger_prefs.py:19
+msgid "Blogger Preferences"
+msgstr "העדפות הבלוגר"
+
+#: ../blogger_prefs.py:39
+msgid "Self-Run MovableType"
+msgstr "‏MovableType בהרצה עצמאית"
+
+#: ../blogger_prefs.py:40
+msgid "Self-Run Pyblosxom"
+msgstr "‏Pyblosxom בהרצה עצמאית"
+
+#: ../blogger_prefs.py:41
+msgid "Self-Run WordPress"
+msgstr "‏WordPress בהרצה עצמאית"
+
+#: ../blogger_prefs.py:42
+msgid "Self-Run Other"
+msgstr "אחר בהרצה עצמאית"
+
+#: ../blogger_prefs.py:46
+msgid "Blog Type:"
+msgstr "סוג הבלוג:"
+
+#: ../blogger_prefs.py:56
+msgid "Blog Protocol:"
+msgstr "פרוטוקול הבלוג:"
+
+#: ../blogger_prefs.py:60
+#: ../blogger_prefs.py:122
+#: ../blogger_prefs.py:127
+#: ../blogger_prefs.py:132
+msgid "Base Blog URL:"
+msgstr "כתובת הבסיס של הבלוג:"
+
+#: ../blogger_prefs.py:62
+msgid "Blog Name:"
+msgstr "שם הבלוג:"
+
+#: ../blogger_prefs.py:64
+msgid "Lookup Blogs"
+msgstr "חיפוש בלוגים"
+
+#: ../blogger_prefs.py:74
+msgid "Username:"
+msgstr "שם המשתמש:"
+
+#: ../blogger_prefs.py:75
+msgid "Password:"
+msgstr "סיסמה:"
+
+#: ../blogger_prefs.py:117
+#: ../blogger_prefs.py:137
+#: ../blogger_prefs.py:147
+#: ../blogger_prefs.py:153
+msgid "XML-RPC URL:"
+msgstr "כתובת ה־XML-RPC:"
+
+#: ../blogger_prefs.py:142
+msgid "ATOM-based"
+msgstr ""
+
+#: ../blogger_prefs.py:161
+msgid "Unknown blog type"
+msgstr "סוג הבלוג אינו מוכר"
+
+#: ../blogger_prefs.py:161
+msgid "The detected blog type is not among the list of supported blogs"
+msgstr "סוג הבלוג שזוהה אינו מבין רשימת הבלוגים הנתמכים"
+
+#: ../gnome-blog.desktop.in.in.h:2
+msgid "Post an entry to a web log"
+msgstr "פרסום רשומה ליומן מקוון"
+
+#: ../gnomeblog.schemas.in.h:1
+msgid "Password to use in accessing the blog"
+msgstr "הסיסמה המשמשת לצורך גישה לבלוג"
+
+#: ../gnomeblog.schemas.in.h:2
+msgid "Protocol to use in accessing the blog"
+msgstr "הפרוטוקול המשמש לצורך גישה לבלוג"
+
+#: ../gnomeblog.schemas.in.h:3
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr "סיומת שיש לצרף לכתובת הבסיס (לדוגמה \"xmlrpc.cgi\")"
+
+#: ../gnomeblog.schemas.in.h:4
+msgid "The application's preferences have been initialized"
+msgstr "העדפות היישום הופעלו"
+
+#: ../gnomeblog.schemas.in.h:5
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr "מספר הזיהוי או שם הבלוג בהם יעשה שימוש בשרת ה־XML-RPC"
+
+#: ../gnomeblog.schemas.in.h:6
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr "הכתובת אל שרת XML-RPC התומך ב־bloggerAPI"
+
+#: ../gnomeblog.schemas.in.h:7
+msgid "Username to use in accessing the blog"
+msgstr "שם המשתמש לשימוש בעת הגישה אל הבלוג"
+
+#: ../hig_alert.py:15
+#, python-format
+msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
+msgstr "יתכן כי הכתובת '%s' אינה bloggerAPI תקני. שרת ה־XML-RPC דיווח: %s."
+
+#: ../hig_alert.py:17
+#, python-format
+msgid "Unknown username %s or password trying to post blog entry to XML-RPC server %s."
+msgstr "שם המשתמש %s או הסיסמה בהם יעשה שימוש בעת הנסיון לפרסום רשומת בלוג אל שרת XML-RPC‏ %s."
+
+#: ../hig_alert.py:19
+#, python-format
+msgid "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server reported: %s."
+msgstr "לא ניתן לפרסם אל הבלוג '%s' בשרת ה־XML-RPC בעל התמיכה ב־bloggerAPI בכתובת '%s'. השרת דיווח: %s."
+
+#: ../hig_alert.py:21
+#, python-format
+msgid ""
+"The bloggerAPI server (%s) reported an error I don't understand: '%s, %s'. \n"
+"\n"
+"Please email this error message to seth@gnome.org so I can address it."
+msgstr ""
+"שרת ה־bloggerAPI‏ (%s) דיווח על שגיאה בלתי מובנת: '%s, ‏%s'. \n"
+"\n"
+"אנא שלחו הודעת שגיאה זו בדוא\"ל אל seth@gnome.org כדי שאוכל לאתר אותה."
+
+#: ../protocols/advogato.py:27
+#: ../protocols/advogato.py:30
+#: ../protocols/advogato.py:42
+#: ../protocols/bloggerAPI.py:61
+#: ../protocols/bloggerAPI.py:89
+#: ../protocols/livejournal.py:35
+#: ../protocols/livejournal.py:64
+msgid "Could not post Blog entry"
+msgstr "לא ניתן לפרסם רשומה בבלוג"
+
+#: ../protocols/advogato.py:27
+msgid "Your username is invalid. Please double-check the preferences."
+msgstr "שם המשתמש שלך שגוי. אנא בדוק את ההעדפות שוב."
+
+#: ../protocols/advogato.py:30
+#: ../protocols/livejournal.py:35
+msgid "Your username or password is invalid. Please double-check the preferences."
+msgstr "שם המשתמש או הסיסמה שלך אינם תקניים. אנא בדוק את ההעדפות שוב."
+
+#: ../protocols/advogato.py:39
+#: ../protocols/bloggerAPI.py:86
+#: ../protocols/livejournal.py:61
+msgid "Could not post blog entry"
+msgstr "לא ניתן לפרסם רשומה בבלוג"
+
+#: ../protocols/advogato.py:42
+#: ../protocols/bloggerAPI.py:38
+#: ../protocols/bloggerAPI.py:89
+#, python-format
+msgid "URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: %s."
+msgstr "נראה כי הכתובת '%s' אינה מפנה אל שרת XML-RPC עם bloggerAPI תקני. השרת דיווח: %s."
+
+#: ../protocols/bloggerAPI.py:35
+#: ../protocols/bloggerAPI.py:38
+msgid "Could not get list of blogs"
+msgstr "לא ניתן לקבל את רשימת הבלוגים"
+
+#: ../protocols/bloggerAPI.py:61
+msgid "No XML-RPC server URL to post blog entries to is set, or the value could not be retrieved from GConf. Your entry will remain in the blogger window."
+msgstr "אין כתובת של שרת XML-RPC כדי לפרסם אליה רשומות בלוג, או שלא ניתן לאחזר את הערך מ־GConf. הרשומה שלך תשאר בחלון הבלוגר."
+
+#: ../protocols/livejournal.py:64
+#, python-format
+msgid "URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server reported: %s."
+msgstr "נראה כי הכתובת '%s'  אינה שרת XML-RPC תקני של LiveJournal. השרת דיווח: %s."
+
+#: ../rich_entry.py:144
+#: ../rich_entry.py:152
+msgid "Could not load dragged in image"
+msgstr "לא ניתן לטעון תמונה שנגררה פנימה"
+
+#: ../rich_entry.py:145
+#: ../rich_entry.py:153
+#, python-format
+msgid "Error loading %s was: %s"
+msgstr "השגיאה בטעינת %s הינה: %s"
+
+#: ../rich_entry.py:210
+msgid "Add _Link..."
+msgstr "הוספת _קישור..."
+
+#: ../rich_entry.py:215
+msgid "Add Link"
+msgstr "הוספת קישור"
+
+#: ../rich_entry.py:218
+msgid "_Add Link"
+msgstr "_הוספת קישור"
+
+#: ../rich_entry.py:226
+msgid "Text:"
+msgstr "טקסט:"
+
+#: ../rich_entry.py:229
+msgid "URL:"
+msgstr "כתובת:"
+

@@ -9,6 +9,7 @@ gnome-blog.desktop.in.in
 gnomeblog.schemas.in
 hig_alert.py
 protocols/advogato.py
+protocols/atomBloggerAPI.py
 protocols/bloggerAPI.py
 protocols/livejournal.py
 protocols/MetaWeblog.py

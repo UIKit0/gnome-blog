@@ -68,7 +68,7 @@ class Blog(bloggerAPI.Blog):
         content = {}
         content['name'] = file_name
         content['type'] = mime_type
-        content['bits'] = base64.encodestring(file_contents)
+        content['bits'] = xmlrpclib.Binary(file_contents)
 
         imageurl = None
 

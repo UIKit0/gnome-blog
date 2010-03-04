@@ -1,89 +1,99 @@
-# translation of gnome-blog to Hungarian
+# Hungarian translation of gnome-blog
 # This file is distributed under the same license as the gnome-blog package.
-# Copyright (C) 2005, Free Software Foundation, Inc.
-# Szabolcs Varga <shirokuma@shirokuma.hu>, 2005.
-# Gabor Kelemen <kelemeng@gnome.hu>, 2005.
+# Copyright (C) 2005, 2010, Free Software Foundation, Inc.
 #
+# Szabolcs Varga <shirokuma at shirokuma dot hu>, 2005.
+# Gabor Kelemen <kelemeng at gnome dot hu>, 2005. 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-blog.HEAD\n"
+"Project-Id-Version: gnome-blog master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-15 03:46+0200\n"
-"PO-Revision-Date: 2005-03-18 09:20+0100\n"
-"Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
-"Language-Team: Hungarian <gnome@gnome.hu>\n"
+"POT-Creation-Date: 2010-03-04 22:54+0100\n"
+"PO-Revision-Date: 2010-03-04 22:57+0100\n"
+"Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
+"Language-Team: Hungarian <gnome at fsf dot hu>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.3.1\n"
-"Plural-Forms:   nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: ../GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr "Kellékek"
 
-#: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.h:1
+#: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.in.h:1
 msgid "Blog Entry Poster"
-msgstr "Blogbejegyzés-feladó"
+msgstr "Blogbejegyzés-beküldő"
 
 #: ../GNOME_BlogApplet.server.in.in.h:3
 msgid "Post entries to a web log"
-msgstr "Bejegyzések feladása egy webes naplóra (blogra)"
+msgstr "Bejegyzések beküldése blogba"
 
 #: ../GNOME_BlogApplet.xml.h:1
 msgid "_About..."
-msgstr "_Névjegy..."
+msgstr "_Névjegy…"
 
 #: ../GNOME_BlogApplet.xml.h:2
 msgid "_Preferences..."
 msgstr "_Beállítások"
 
-#: ../blog_applet.py:35
+#: ../blog_applet.py:34
 msgid "About"
 msgstr "Névjegy"
 
-#: ../blog_applet.py:38
+#: ../blog_applet.py:37
 msgid "Blog"
 msgstr "Blog"
 
-#: ../blog_applet.py:77
+#: ../blog_applet.py:89
 msgid "A GNOME Web Blogging Applet"
-msgstr "Egy GNOME alapú webes bloggoló kisalkalmazás"
+msgstr "Egy GNOME-alapú webes bloggoló kisalkalmazás"
 
-#: ../blog_applet.py:79
+#: ../blog_applet.py:91
 msgid "translator-credits"
 msgstr ""
+"Kelemen Gábor <kelemeng at gnome dot hu>\n"
+"Varga Szabolcs <shirokuma at shirokuma dot hu>"
 
-#: ../blog_applet.py:116
+#: ../blog_applet.py:128
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Blogbejegyzés készítése %s számára a(z) %s címen"
 
 #: ../blog_poster.py:44
 msgid "_Post Entry"
-msgstr "Bejegyzés _feladása"
+msgstr "Bejegyzés be_küldése"
 
 #: ../blog_poster.py:69
 msgid "Preferences..."
-msgstr "Beállítások..."
+msgstr "Beállítások…"
 
 #: ../blog_poster.py:81
 msgid "Title:"
 msgstr "Cím:"
 
-#: ../blog_poster.py:116
+#: ../blog_poster.py:88
+msgid "Tags:"
+msgstr "Címkék:"
+
+#: ../blog_poster.py:109
+msgid "Post Blog Entry"
+msgstr "Bejegyzés beküldése"
+
+#: ../blog_poster.py:133
 msgid "Couldn't upload images"
 msgstr "Nem sikerült feltölteni a képeket"
 
-#: ../blog_poster.py:116
+#: ../blog_poster.py:133
 msgid "The blog protocol in use does not support uploading images"
 msgstr "A használt blogprotokoll nem támogatja a képek feltöltését"
 
-#: ../blog_poster.py:162
+#: ../blog_poster.py:183
 msgid "Blog Entry is Blank"
 msgstr "A blogbejegyzés üres"
 
-#: ../blog_poster.py:162
+#: ../blog_poster.py:183
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
@@ -140,10 +150,14 @@ msgstr "Felhasználónév:"
 msgid "Password:"
 msgstr "Jelszó:"
 
-#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:142
-#: ../blogger_prefs.py:147 ../blogger_prefs.py:153
+#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:147
+#: ../blogger_prefs.py:153
 msgid "XML-RPC URL:"
 msgstr "XML-RPC URL:"
+
+#: ../blogger_prefs.py:142
+msgid "ATOM-based"
+msgstr "ATOM-alapú"
 
 #: ../blogger_prefs.py:161
 msgid "Unknown blog type"
@@ -153,7 +167,7 @@ msgstr "Ismeretlen blogtípus"
 msgid "The detected blog type is not among the list of supported blogs"
 msgstr "A felismert blogtípus nem szerepel a támogatottak között"
 
-#: ../gnome-blog.desktop.in.h:2
+#: ../gnome-blog.desktop.in.in.h:2
 msgid "Post an entry to a web log"
 msgstr "Bejegyzés feladása egy webes naplóra (blogra)"
 
@@ -167,7 +181,7 @@ msgstr "A blog elérésére használt protokoll"
 
 #: ../gnomeblog.schemas.in.h:3
 msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
-msgstr "Az alap URL mögé illesztendő utótag (például \"xmlrpc.cgi\")"
+msgstr "Az alap URL mögé illesztendő utótag (például „xmlrpc.cgi”)"
 
 #: ../gnomeblog.schemas.in.h:4
 msgid "The application's preferences have been initialized"
@@ -189,7 +203,7 @@ msgstr "A blog elérésére használt felhasználónév"
 #, python-format
 msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
 msgstr ""
-"A(z) '%s' URL lehet, hogy nem érvényes bloggerAPI. Az XML-RPC kiszolgáló "
+"A(z) „%s” URL lehet, hogy nem érvényes bloggerAPI. Az XML-RPC kiszolgáló "
 "által visszaadott üzenet: %s."
 
 #: ../hig_alert.py:17
@@ -207,7 +221,7 @@ msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
 "reported: %s."
 msgstr ""
-"Nem sikerült írni a(z) '%s' blogra a bloggerAPI-val a(z) %s XML-RPC "
+"Nem sikerült írni a(z) „%s” blogra a bloggerAPI-val a(z) %s XML-RPC "
 "kiszolgálóra. A kiszolgáló által visszaadott üzenet: %s."
 
 #: ../hig_alert.py:21
@@ -217,7 +231,7 @@ msgid ""
 "\n"
 "Please email this error message to seth@gnome.org so I can address it."
 msgstr ""
-"A bloggerAPI kiszolgáló (%s) érthetetlen hibát jelzett: '%s, %s'. \n"
+"A bloggerAPI kiszolgáló (%s) érthetetlen hibát jelzett: „%s, %s'. \n"
 "\n"
 "Küldje el ezt a hibaüzenetet a seth@gnome.org címre, hogy foglalkozni "
 "tudjunk vele."
@@ -234,10 +248,8 @@ msgid "Your username is invalid. Please double-check the preferences."
 msgstr "A felhasználónév érvénytelen. Ellenőrizze újból a beállításokat."
 
 #: ../protocols/advogato.py:30 ../protocols/livejournal.py:35
-msgid ""
-"Your username or password is invalid. Please double-check the preferences."
-msgstr ""
-"A felhasználónév vagy jelszó érvénytelen. Ellenőrizze újból a beállításokat."
+msgid "Your username or password is invalid. Please double-check the preferences."
+msgstr "A felhasználónév vagy jelszó érvénytelen. Ellenőrizze újból a beállításokat."
 
 #: ../protocols/advogato.py:39 ../protocols/bloggerAPI.py:86
 #: ../protocols/livejournal.py:61
@@ -251,8 +263,50 @@ msgid ""
 "URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
 "reported: %s."
 msgstr ""
-"A(z) '%s' nem tűnik érvényes bloggerAPI XML-RPC kiszolgálónak. A "
+"A(z) „%s” nem tűnik érvényes bloggerAPI XML-RPC kiszolgálónak. A "
 "webkiszolgáló által visszaadott üzenet: %s."
+
+#. TODO: consider GNOME proxy configurations, as in bloggerAPI.py
+#: ../protocols/atomBloggerAPI.py:24
+msgid "Could not get list of blogs."
+msgstr "Nem sikerült lekérni a blogok listáját."
+
+#: ../protocols/atomBloggerAPI.py:29 ../protocols/atomBloggerAPI.py:99
+msgid "A captcha was required for authentication."
+msgstr "A hitelesítéshez captcha szükséges."
+
+#: ../protocols/atomBloggerAPI.py:32 ../protocols/atomBloggerAPI.py:102
+msgid "Username or password was invalid."
+msgstr "A felhasználónév vagy jelszó érvénytelen."
+
+#: ../protocols/atomBloggerAPI.py:35 ../protocols/atomBloggerAPI.py:105
+#, python-format
+msgid "Failed to login: %s"
+msgstr "Nem sikerült bejelentkezni: %s"
+
+#: ../protocols/atomBloggerAPI.py:38 ../protocols/atomBloggerAPI.py:108
+#, python-format
+msgid "Socket error: %s.  Perhaps try again."
+msgstr "Foglalathiba: %s. Próbálja újra."
+
+#. No blogs found
+#: ../protocols/atomBloggerAPI.py:45
+msgid "No Blogs Found"
+msgstr "Nem találhatók blogok"
+
+#: ../protocols/atomBloggerAPI.py:45
+#, python-format
+msgid "No errors were reported, but no blogs were found at %s for %s\n"
+msgstr "Nem történt hiba, de nem találhatók blogok itt: %s a következőhöz: %s\n"
+
+#: ../protocols/atomBloggerAPI.py:95
+msgid "Could not post entry."
+msgstr "Nem sikerült beküldeni a bejegyzést."
+
+#: ../protocols/atomBloggerAPI.py:115
+#, python-format
+msgid "Failed to post: %s"
+msgstr "A beküldés nem sikerült: %s"
 
 #: ../protocols/bloggerAPI.py:35 ../protocols/bloggerAPI.py:38
 msgid "Could not get list of blogs"
@@ -273,7 +327,7 @@ msgid ""
 "URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
 "reported: %s."
 msgstr ""
-"A(z) '%s' nem tűnik érvényes LiveJournal XML-RPC kiszolgálónak. A "
+"A(z) „%s” nem tűnik érvényes LiveJournal XML-RPC kiszolgálónak. A "
 "webkiszolgáló által visszaadott üzenet: %s."
 
 #: ../rich_entry.py:144 ../rich_entry.py:152
@@ -287,7 +341,7 @@ msgstr "Hiba %s betöltése közben: %s"
 
 #: ../rich_entry.py:210
 msgid "Add _Link..."
-msgstr "_Hivatkozás hozzáadása..."
+msgstr "_Hivatkozás hozzáadása…"
 
 #: ../rich_entry.py:215
 msgid "Add Link"
@@ -305,5 +359,3 @@ msgstr "Szöveg:"
 msgid "URL:"
 msgstr "URL:"
 
-#~ msgid "Blog Base URL:"
-#~ msgstr "Blog alap URL:"

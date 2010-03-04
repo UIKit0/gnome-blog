@@ -5,14 +5,16 @@
 # Baptiste Mille-Mathias <bmm80@ifrance.com>, 2003.
 # Christophe Merlet (RedFox) <redfox@redfoxcenter.org>, 2004.
 # Damien Durand <splinux@fedoraproject.org>, 2006
+# Claude Paroz <claude@2xlibre.net>, 2010
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog 0.9.2\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-25 21:09+0200\n"
-"PO-Revision-Date: 2006-08-25 21:09+0200\n"
-"Last-Translator: Robert-André Mauchin <zebob.m@gmail.com>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"blog&component=general\n"
+"POT-Creation-Date: 2010-03-04 21:10+0000\n"
+"PO-Revision-Date: 2010-03-04 23:45+0100\n"
+"Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,13 +24,13 @@ msgstr ""
 msgid "Accessories"
 msgstr "Accessoires"
 
-#: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.h:1
+#: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.in.h:1
 msgid "Blog Entry Poster"
-msgstr "Posteur de l'entrée du blog"
+msgstr "Éditeur d'article de blog"
 
 #: ../GNOME_BlogApplet.server.in.in.h:3
 msgid "Post entries to a web log"
-msgstr "Poster une entrée à un web log"
+msgstr "Publier des articles sur un web log"
 
 #: ../GNOME_BlogApplet.xml.h:1
 msgid "_About..."
@@ -38,33 +40,34 @@ msgstr "À _propos..."
 msgid "_Preferences..."
 msgstr "_Préférences..."
 
-#: ../blog_applet.py:35
+#: ../blog_applet.py:34
 msgid "About"
 msgstr "À propos"
 
-#: ../blog_applet.py:38
+#: ../blog_applet.py:37
 msgid "Blog"
 msgstr "Blog"
 
-#: ../blog_applet.py:77
+#: ../blog_applet.py:89
 msgid "A GNOME Web Blogging Applet"
 msgstr "Une applet GNOME pour blogguer"
 
-#: ../blog_applet.py:79
+#: ../blog_applet.py:91
 msgid "translator-credits"
 msgstr ""
 "Baptiste Mille-Mathias <bmm80@ifrance.com>\n"
 "Christophe Merlet (RedFox) <redfox@redfoxcenter.org>\n"
-"Damien Durand <splinux@fedoraproject.org>"
+"Damien Durand <splinux@fedoraproject.org>\n"
+"Claude Paroz <claude@2xlibre.net>"
 
-#: ../blog_applet.py:116
+#: ../blog_applet.py:128
 #, python-format
 msgid "Create a blog entry for %s at %s"
-msgstr "Créer une entrée de blog pour %s à %s"
+msgstr "Créer un article de blog pour %s à %s"
 
 #: ../blog_poster.py:44
 msgid "_Post Entry"
-msgstr "_Poster l'entrée"
+msgstr "_Publier l'article"
 
 #: ../blog_poster.py:69
 msgid "Preferences..."
@@ -74,21 +77,29 @@ msgstr "Préférences..."
 msgid "Title:"
 msgstr "Titre :"
 
-#: ../blog_poster.py:116
+#: ../blog_poster.py:88
+msgid "Tags:"
+msgstr "Étiquettes :"
+
+#: ../blog_poster.py:109
+msgid "Post Blog Entry"
+msgstr "Publier l'article de blog"
+
+#: ../blog_poster.py:133
 msgid "Couldn't upload images"
 msgstr "Impossible de publier les images"
 
-#: ../blog_poster.py:116
+#: ../blog_poster.py:133
 msgid "The blog protocol in use does not support uploading images"
 msgstr ""
 "Le protocole du blog en cours d'utilisation ne prend pas en charge la "
 "publication d'images"
 
-#: ../blog_poster.py:162
+#: ../blog_poster.py:183
 msgid "Blog Entry is Blank"
-msgstr "L'entrée du blog est vide"
+msgstr "L'article du blog est vide"
 
-#: ../blog_poster.py:162
+#: ../blog_poster.py:183
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
@@ -102,19 +113,19 @@ msgstr "Préférences de Blogger"
 
 #: ../blogger_prefs.py:39
 msgid "Self-Run MovableType"
-msgstr "Self-Run MovableType"
+msgstr "MovableType auto-géré"
 
 #: ../blogger_prefs.py:40
 msgid "Self-Run Pyblosxom"
-msgstr "Self-Run Pyblosxom"
+msgstr "Pyblosxom auto-géré"
 
 #: ../blogger_prefs.py:41
 msgid "Self-Run WordPress"
-msgstr "Self-Run WordPress"
+msgstr "WordPress auto-géré"
 
 #: ../blogger_prefs.py:42
 msgid "Self-Run Other"
-msgstr "Self-Run Other"
+msgstr "Autre auto-géré"
 
 #: ../blogger_prefs.py:46
 msgid "Blog Type:"
@@ -145,10 +156,14 @@ msgstr "Nom d'utilisateur :"
 msgid "Password:"
 msgstr "Mot de passe :"
 
-#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:142
-#: ../blogger_prefs.py:147 ../blogger_prefs.py:153
+#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:147
+#: ../blogger_prefs.py:153
 msgid "XML-RPC URL:"
 msgstr "URL XLM-RPC :"
+
+#: ../blogger_prefs.py:142
+msgid "ATOM-based"
+msgstr "basé sur ATOM"
 
 #: ../blogger_prefs.py:161
 msgid "Unknown blog type"
@@ -158,9 +173,9 @@ msgstr "Type de blog inconnu"
 msgid "The detected blog type is not among the list of supported blogs"
 msgstr "Le blog détecté ne figure pas parmi la liste de blogs pris en charge"
 
-#: ../gnome-blog.desktop.in.h:2
+#: ../gnome-blog.desktop.in.in.h:2
 msgid "Post an entry to a web log"
-msgstr "Postez une entrée dans un web log"
+msgstr "Publiez un article dans un web log"
 
 #: ../gnomeblog.schemas.in.h:1
 msgid "Password to use in accessing the blog"
@@ -204,8 +219,8 @@ msgid ""
 "Unknown username %s or password trying to post blog entry to XML-RPC server %"
 "s."
 msgstr ""
-"Nom d'utilisateur ou mot de passe inconnu %s lors de la tentative de "
-"publication de l'entrée du blog vers le serveur XML-RPC %s."
+"Nom d'utilisateur %s ou mot de passe inconnu lors de la tentative de "
+"publication de l'article du blog vers le serveur XML-RPC %s."
 
 #: ../hig_alert.py:19
 #, python-format
@@ -213,8 +228,8 @@ msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
 "reported: %s."
 msgstr ""
-"Impossible de poster dans le blog « %s » sur le serveur bloggerAPI XML-RPC "
-"« %s ». Le serveur a rapporté : %s."
+"Impossible de publier dans le blog « %s » sur le serveur bloggerAPI XML-RPC « %"
+"s ». Le serveur a rapporté : %s."
 
 #: ../hig_alert.py:21
 #, python-format
@@ -223,8 +238,8 @@ msgid ""
 "\n"
 "Please email this error message to seth@gnome.org so I can address it."
 msgstr ""
-"Le serveur bloggerAPI (%s) a rapporté une erreur que je ne comprends pas : "
-"« %s, %s ». \n"
+"Le serveur bloggerAPI (%s) a rapporté une erreur que je ne comprends pas : « %"
+"s, %s ». \n"
 "\n"
 "Veuillez envoyer par courriel ce message d'erreur à seth@gnome.org afin que "
 "je puisse le corriger."
@@ -234,7 +249,7 @@ msgstr ""
 #: ../protocols/bloggerAPI.py:89 ../protocols/livejournal.py:35
 #: ../protocols/livejournal.py:64
 msgid "Could not post Blog entry"
-msgstr "Impossible de poster l'entrée du blog"
+msgstr "Impossible de publier l'article du blog"
 
 #: ../protocols/advogato.py:27
 msgid "Your username is invalid. Please double-check the preferences."
@@ -251,7 +266,7 @@ msgstr ""
 #: ../protocols/advogato.py:39 ../protocols/bloggerAPI.py:86
 #: ../protocols/livejournal.py:61
 msgid "Could not post blog entry"
-msgstr "Impossible de poster l'entrée du blog"
+msgstr "Impossible de publier l'article du blog"
 
 #: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:38
 #: ../protocols/bloggerAPI.py:89
@@ -263,6 +278,48 @@ msgstr ""
 "L'URL « %s » ne semble pas être un serveur XML-RPC bloggerAPI valide. Le "
 "serveur Web a rapporté : %s."
 
+#. TODO: consider GNOME proxy configurations, as in bloggerAPI.py
+#: ../protocols/atomBloggerAPI.py:24
+msgid "Could not get list of blogs."
+msgstr "Impossible d'obtenir la liste des blogs."
+
+#: ../protocols/atomBloggerAPI.py:29 ../protocols/atomBloggerAPI.py:99
+msgid "A captcha was required for authentication."
+msgstr "L'authentification nécessite la saisie d'un captcha."
+
+#: ../protocols/atomBloggerAPI.py:32 ../protocols/atomBloggerAPI.py:102
+msgid "Username or password was invalid."
+msgstr "Le nom d'utilisateur ou le mot de passe n'est pas correct."
+
+#: ../protocols/atomBloggerAPI.py:35 ../protocols/atomBloggerAPI.py:105
+#, python-format
+msgid "Failed to login: %s"
+msgstr "Échec de connexion : %s"
+
+#: ../protocols/atomBloggerAPI.py:38 ../protocols/atomBloggerAPI.py:108
+#, python-format
+msgid "Socket error: %s.  Perhaps try again."
+msgstr "Erreur de connecteur réseau : %s. Essayez encore une fois."
+
+#. No blogs found
+#: ../protocols/atomBloggerAPI.py:45
+msgid "No Blogs Found"
+msgstr "Aucun blog"
+
+#: ../protocols/atomBloggerAPI.py:45
+#, python-format
+msgid "No errors were reported, but no blogs were found at %s for %s\n"
+msgstr "Aucune erreur n'a été signalée, mais aucun blog n'a été trouvé sur %s pour %s\n"
+
+#: ../protocols/atomBloggerAPI.py:95
+msgid "Could not post entry."
+msgstr "Impossible de publier l'article."
+
+#: ../protocols/atomBloggerAPI.py:115
+#, python-format
+msgid "Failed to post: %s"
+msgstr "Échec de publication : %s"
+
 #: ../protocols/bloggerAPI.py:35 ../protocols/bloggerAPI.py:38
 msgid "Could not get list of blogs"
 msgstr "Impossible d'obtenir la liste des blogs"
@@ -272,8 +329,8 @@ msgid ""
 "No XML-RPC server URL to post blog entries to is set, or the value could not "
 "be retrieved from GConf. Your entry will remain in the blogger window."
 msgstr ""
-"Aucune URL de serveur XML-RPC vers lequel poster les entrées de blog n'est "
-"définie, ou la valeur ne peut être récupérée depuis GConf. Votre entrée "
+"Aucune URL de serveur XML-RPC vers lequel publier les articles de blog n'est "
+"définie, ou la valeur ne peut être récupérée depuis GConf. Votre article "
 "restera dans la fenêtre du blogger."
 
 #: ../protocols/livejournal.py:64

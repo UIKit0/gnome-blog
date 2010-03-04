@@ -1,0 +1,17 @@
+<Project xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:gnome="http://api.gnome.org/doap-extensions#"
+         xmlns="http://usefulinc.com/ns/doap#">
+
+  <name xml:lang="en">gnome-blog</name>
+  <shortdesc xml:lang="en">GNOME panel object for posting blog entries</shortdesc>
+  <homepage rdf:resource="http://people.gnome.org/~seth/gnome-blog/" />
+
+  <maintainer>
+    <foaf:Person>
+      <foaf:name>Sven Herzberg</foaf:name>
+      <gnome:userid>herzi</gnome:userid>
+    </foaf:Person>
+  </maintainer>
+</Project>

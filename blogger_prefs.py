@@ -127,7 +127,7 @@ class BloggerPrefs(gtk.Dialog):
             url_description = _("Base Blog URL:")
         elif blog_type == "custom-wordpress":
             url = None
-            url_ending = "/wordpress/xmlrpc.php"
+            url_ending = "/xmlrpc.php"
             protocol = "MetaWeblog"
             url_description = _("Base Blog URL:")
         elif blog_type == "blogs.gnome.org":

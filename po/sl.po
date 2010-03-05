@@ -2,14 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-blog package.
 #
-# Matej Urbančič <mateju@svn.gnome.org>, 2006, 2007 - 2009.
+# Matej Urbančič <mateju@svn.gnome.org>, 2006 - 2010.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-blog HEAD\n"
+"Project-Id-Version: gnome-blog master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-blog&component=general\n"
-"POT-Creation-Date: 2009-11-04 10:14+0000\n"
-"PO-Revision-Date: 2009-11-14 09:49+0100\n"
+"POT-Creation-Date: 2010-03-04 22:51+0000\n"
+"PO-Revision-Date: 2010-03-05 07:25+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgstr "_O Programu ..."
 
 #: ../GNOME_BlogApplet.xml.h:2
 msgid "_Preferences..."
-msgstr "_Lastnosti ..."
+msgstr "_Možnosti ..."
 
 #: ../blog_applet.py:34
 msgid "About"
@@ -68,7 +68,7 @@ msgstr "_Objavi vsebino"
 
 #: ../blog_poster.py:69
 msgid "Preferences..."
-msgstr "Lastnosti ..."
+msgstr "Možnosti ..."
 
 #: ../blog_poster.py:81
 msgid "Title:"
@@ -80,7 +80,7 @@ msgstr "Oznake:"
 
 #: ../blog_poster.py:109
 msgid "Post Blog Entry"
-msgstr "_Objavi vsebino bloga"
+msgstr "Objavi vsebino bloga"
 
 #: ../blog_poster.py:133
 msgid "Couldn't upload images"
@@ -88,7 +88,7 @@ msgstr "Ni mogoče poslati slik"
 
 #: ../blog_poster.py:133
 msgid "The blog protocol in use does not support uploading images"
-msgstr "Blog protokol v uporabi ne omogoča pošiljanja slik"
+msgstr "Uporabljeni protokol bloga ne omogoča pošiljanja slik"
 
 #: ../blog_poster.py:183
 msgid "Blog Entry is Blank"
@@ -100,7 +100,7 @@ msgstr "Besedilo ni vneseno. Vnesite besedilo in poskusite znova."
 
 #: ../blogger_prefs.py:19
 msgid "Blogger Preferences"
-msgstr "Nastavitve bloganja"
+msgstr "Možnosti bloganja"
 
 #: ../blogger_prefs.py:39
 msgid "Self-Run MovableType"
@@ -186,7 +186,7 @@ msgstr "Pripeta pripona osnovnega naslova bloga (na primer: \"xmlrpc.cgi\")"
 
 #: ../gnomeblog.schemas.in.h:4
 msgid "The application's preferences have been initialized"
-msgstr "Lastnosti programa so pridobljene"
+msgstr "Možnosti programa so pridobljene"
 
 #: ../gnomeblog.schemas.in.h:5
 msgid "The id or name of the particular blog to use on the XML-RPC server"
@@ -234,7 +234,7 @@ msgstr ""
 #: ../protocols/livejournal.py:35
 #: ../protocols/livejournal.py:64
 msgid "Could not post Blog entry"
-msgstr "Ni mogoče objaviti vsebine bloga."
+msgstr "Vsebine bloga ni mogoče objaviti."
 
 #: ../protocols/advogato.py:27
 msgid "Your username is invalid. Please double-check the preferences."
@@ -257,6 +257,52 @@ msgstr "Vsebine bloga ni mogoče objaviti."
 #, python-format
 msgid "URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: %s."
 msgstr "URL naslov '%s' ni videti kot veljavni bloggerAPI XML-RPC strežnik. Poročilo strežnika: %s."
+
+#. TODO: consider GNOME proxy configurations, as in bloggerAPI.py
+#: ../protocols/atomBloggerAPI.py:24
+msgid "Could not get list of blogs."
+msgstr "Ni mogoče pridobiti seznama blogov."
+
+#: ../protocols/atomBloggerAPI.py:29
+#: ../protocols/atomBloggerAPI.py:99
+msgid "A captcha was required for authentication."
+msgstr "za overitev je zahtevana captcha."
+
+#: ../protocols/atomBloggerAPI.py:32
+#: ../protocols/atomBloggerAPI.py:102
+msgid "Username or password was invalid."
+msgstr "Uporabniško ime oziroma geslo ni veljavno."
+
+#: ../protocols/atomBloggerAPI.py:35
+#: ../protocols/atomBloggerAPI.py:105
+#, python-format
+msgid "Failed to login: %s"
+msgstr "Napaka med prijavljanjem: %s"
+
+#: ../protocols/atomBloggerAPI.py:38
+#: ../protocols/atomBloggerAPI.py:108
+#, python-format
+msgid "Socket error: %s.  Perhaps try again."
+msgstr "Napaka vtiča: %s. Poskusite znova."
+
+#. No blogs found
+#: ../protocols/atomBloggerAPI.py:45
+msgid "No Blogs Found"
+msgstr "Ni najdenih blogov"
+
+#: ../protocols/atomBloggerAPI.py:45
+#, python-format
+msgid "No errors were reported, but no blogs were found at %s for %s\n"
+msgstr "Ni javljenih napak, vendar pa blogov na %s za %s ni mogoče najti.\n"
+
+#: ../protocols/atomBloggerAPI.py:95
+msgid "Could not post entry."
+msgstr "Ni mogoče objaviti vsebine"
+
+#: ../protocols/atomBloggerAPI.py:115
+#, python-format
+msgid "Failed to post: %s"
+msgstr "Napaka med pošiljanjem: %s"
 
 #: ../protocols/bloggerAPI.py:35
 #: ../protocols/bloggerAPI.py:38

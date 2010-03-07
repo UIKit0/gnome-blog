@@ -2,16 +2,18 @@
 # Copyright (C) 2003, 2004, 2009 the author(s) of gnome-blog.
 # Copyright (C) 2004 Miloslav Trmac <mitr@volny.cz>.
 # This file is distributed under the same license as the gnome-blog package.
+#
 # Miloslav Trmac <mitr@volny.cz>, 2003, 2004.
 # Lucas Lommer <llommer@svn.gnome.org>, 2009. (just an update)
-# Marek Černocký <marek@manet.cz>, 2009.
+# Marek Černocký <marek@manet.cz>, 2009, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-04 20:53+0100\n"
-"PO-Revision-Date: 2009-11-04 11:49+0100\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"blog&component=general\n"
+"POT-Creation-Date: 2010-03-04 21:28+0000\n"
+"PO-Revision-Date: 2010-03-04 22:42+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -269,6 +271,49 @@ msgstr ""
 "URL „%s“ zřejmě není platný XML-RPC server bloggerAPI. WWW server odpověděl: "
 "%s."
 
+#. TODO: consider GNOME proxy configurations, as in bloggerAPI.py
+#: ../protocols/atomBloggerAPI.py:24
+msgid "Could not get list of blogs."
+msgstr "Nelze získat seznam blogů."
+
+#: ../protocols/atomBloggerAPI.py:29 ../protocols/atomBloggerAPI.py:99
+msgid "A captcha was required for authentication."
+msgstr "Pro ověřování je vyžadovaná captcha."
+
+#: ../protocols/atomBloggerAPI.py:32 ../protocols/atomBloggerAPI.py:102
+msgid "Username or password was invalid."
+msgstr "Jméno uživatele nebo heslo jsou neplatné."
+
+#: ../protocols/atomBloggerAPI.py:35 ../protocols/atomBloggerAPI.py:105
+#, python-format
+msgid "Failed to login: %s"
+msgstr "Selhalo přihlášení: %s"
+
+#: ../protocols/atomBloggerAPI.py:38 ../protocols/atomBloggerAPI.py:108
+#, python-format
+msgid "Socket error: %s.  Perhaps try again."
+msgstr "Chyba soketu: %s.  Možná to zkuste znovu."
+
+#. No blogs found
+#: ../protocols/atomBloggerAPI.py:45
+msgid "No Blogs Found"
+msgstr "Nenalezen žádný blog."
+
+#: ../protocols/atomBloggerAPI.py:45
+#, python-format
+msgid "No errors were reported, but no blogs were found at %s for %s\n"
+msgstr ""
+"Nebyla hlášena žádná chyba, ale na %s nebyl nalezen žádný blog pro %s\n"
+
+#: ../protocols/atomBloggerAPI.py:95
+msgid "Could not post entry."
+msgstr "Nelze odeslat položku."
+
+#: ../protocols/atomBloggerAPI.py:115
+#, python-format
+msgid "Failed to post: %s"
+msgstr "Selhalo odeslání: %s"
+
 #: ../protocols/bloggerAPI.py:35 ../protocols/bloggerAPI.py:38
 msgid "Could not get list of blogs"
 msgstr "Nelze získat seznam blogů"
@@ -318,3 +363,4 @@ msgstr "Text:"
 #: ../rich_entry.py:229
 msgid "URL:"
 msgstr "URL:"
+

@@ -9,3 +9,5 @@ gnomeblog_PYTHON = 		\
 	advogato.py		\
 	livejournal.py		\
 	$(NULL)
+
+-include $(top_srcdir)/git.mk

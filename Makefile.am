@@ -101,6 +101,17 @@ DISTCLEANFILES =                \
         intltool-merge          \
         intltool-update
 
+MAINTAINERCLEANFILES =		\
+	$(srcdir)/COPYING	\
+	$(srcdir)/GNOME_BlogApplet.server.in	\
+	$(srcdir)/INSTALL	\
+	$(srcdir)/aclocal.m4	\
+	$(srcdir)/config.h.in	\
+	$(srcdir)/install-sh	\
+	$(srcdir)/missing	\
+	$(srcdir)/mkinstalldirs	\
+	$(srcdir)/py-compile
+
 
 EXTRA_DIST =  			\
 	$(Desktop_in_files)	\
@@ -122,3 +133,5 @@ EXTRA_DIST =  			\
 	$(server_in_files)
 
 SUBDIRS = protocols po
+
+-include $(top_srcdir)/git.mk

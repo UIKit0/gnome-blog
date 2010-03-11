@@ -1,4 +1,52 @@
 =============
+Version 0.9.2
+=============
+
+  - Packagers:
+     - New dependency: atom Python module
+     - New dependency: gdata Python module
+
+  - Enhancements
+    - Support keywords in the MetaWeblog API (Sven Herzberg)
+    - Make blog button look more like the clock applet (Sven Herzberg)
+    - Add Tango style icons created by Josef Vybíral
+
+  - Fixes
+    - Remove usage of deprecated Python modules (Basilio Kublik, Olav Vitters)
+    - Replace gnome-about icon usage by gtk equivalent (Gilles Dartiguelongue)
+    - Use the title of the blog post as the window title (Tommi Komulainen)
+    - Make Blogger.com use Atom API rather than BloggerAPI (Richard Schwarting)
+    - Fixed MetaWeblog image upload (Tommi Asiala)
+    - Change Self-Run Wordpress directory to be given base URL (Tommi Asiala)
+
+  - added/updated translations
+    - ar, courtesy of Djihed Afifi
+    - ca, courtesy of Aleix Badia i Bosch
+    - cs, courtesy of Marek Černocký
+    - da, courtesy of Peter Bach
+    - de, courtesy of Mario Blättermann
+    - dz, courtesy of norbu
+    - el, courtesy of Athanasios Lefteris
+    - en_GB, courtesy of David Lodge
+    - es, courtesy of Jorge González
+    - et, courtesy of Mattias Põldaru
+    - fi, courtesy of Ilkka Tuohela
+    - fr, courtesy of Claude Paroz
+    - gl, courtesy of Ignacio Casal Quinteiro
+    - gu, courtesy of Sweta Kothari
+    - he, courtesy of Yaron Shahrabani
+    - hu, courtesy of Gabor Kelemen
+    - it, courtesy of Francesco Gigli
+    - ja, courtesy of Takeshi AIHANA
+    - ne, courtesy of Shyam Krishna Bal
+    - nl, courtesy of Taco Witte
+    - oc, courtesy of Yannig Marchegay (Kokoyaya)
+    - pt_BR, courtesy of Fábio Nogueira
+    - sl, courtesy of Matej Urbančič
+    - sv, courtesy of Daniel Nylander
+    - vi, courtesy of Clytie Siddall
+
+=============
 Version 0.9.1
 =============
   * Fixes:

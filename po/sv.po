@@ -1,7 +1,7 @@
 # Swedish messages for gnome-blog.
-# Copyright (C) 2003-2008 Free Software Foundation, Inc.
+# Copyright (C) 2003-2010 Free Software Foundation, Inc.
 # Christian Rose <menthos@menthos.com>, 2003.
-# Daniel Nylander <po@danielnylander.se>, 2006, 2008.
+# Daniel Nylander <po@danielnylander.se>, 2006, 2008, 2009, 2010.
 #
 # $Id: sv.po,v 1.23 2006/07/16 14:59:39 dnylande Exp $
 #
@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-05 07:40+0100\n"
-"PO-Revision-Date: 2009-11-05 07:40+0100\n"
+"POT-Creation-Date: 2010-03-12 07:54+0100\n"
+"PO-Revision-Date: 2010-03-12 07:57+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -54,7 +54,10 @@ msgstr "Ett webbloggningspanelprogram för GNOME"
 msgid "translator-credits"
 msgstr ""
 "Daniel Nylander <po@danielnylander.se>\n"
-"Christian Rose <menthos@menthos.com>"
+"Christian Rose <menthos@menthos.com>\n"
+"\n"
+"Skicka synpunkter på översättningen till\n"
+"<tp-sv@listor.tp-sv.se>."
 
 #: ../blog_applet.py:128
 #, python-format
@@ -83,7 +86,7 @@ msgstr "Posta blogginlägg"
 
 #: ../blog_poster.py:133
 msgid "Couldn't upload images"
-msgstr "Kunde inte lämna bilder"
+msgstr "Kunde inte skicka upp bilder"
 
 #: ../blog_poster.py:133
 msgid "The blog protocol in use does not support uploading images"
@@ -256,6 +259,52 @@ msgstr "Kunde inte posta blogginlägg"
 #, python-format
 msgid "URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: %s."
 msgstr "URL:en \"%s\" verkar inte vara en giltig bloggerAPI XML-RPC-server. Webbservern rapporterade: %s."
+
+#. TODO: consider GNOME proxy configurations, as in bloggerAPI.py
+#: ../protocols/atomBloggerAPI.py:24
+msgid "Could not get list of blogs."
+msgstr "Kunde inte få tag på lista över bloggar."
+
+#: ../protocols/atomBloggerAPI.py:29
+#: ../protocols/atomBloggerAPI.py:99
+msgid "A captcha was required for authentication."
+msgstr "En captcha krävdes för autentisering."
+
+#: ../protocols/atomBloggerAPI.py:32
+#: ../protocols/atomBloggerAPI.py:102
+msgid "Username or password was invalid."
+msgstr "Användarnamnet eller lösenordet var ogiltigt."
+
+#: ../protocols/atomBloggerAPI.py:35
+#: ../protocols/atomBloggerAPI.py:105
+#, python-format
+msgid "Failed to login: %s"
+msgstr "Misslyckades med att logga in: %s"
+
+#: ../protocols/atomBloggerAPI.py:38
+#: ../protocols/atomBloggerAPI.py:108
+#, python-format
+msgid "Socket error: %s.  Perhaps try again."
+msgstr "Uttagsfel: %s.  Prova igen kanske."
+
+#. No blogs found
+#: ../protocols/atomBloggerAPI.py:45
+msgid "No Blogs Found"
+msgstr "Inga bloggar hittades"
+
+#: ../protocols/atomBloggerAPI.py:45
+#, python-format
+msgid "No errors were reported, but no blogs were found at %s for %s\n"
+msgstr "Inga fel rapporterades men inga bloggar hittades på %s för %s\n"
+
+#: ../protocols/atomBloggerAPI.py:95
+msgid "Could not post entry."
+msgstr "Kunde inte posta blogginlägg."
+
+#: ../protocols/atomBloggerAPI.py:115
+#, python-format
+msgid "Failed to post: %s"
+msgstr "Misslyckades med att posta: %s"
 
 #: ../protocols/bloggerAPI.py:35
 #: ../protocols/bloggerAPI.py:38

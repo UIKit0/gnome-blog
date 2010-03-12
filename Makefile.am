@@ -1,11 +1,12 @@
 serverdir = $(libdir)/bonobo/servers
-server_in_files = GNOME_BlogApplet.server.in
-server_DATA = $(server_in_files:.server.in=.server)
-
-$(server_in_files): $(server_in_files:.server.in=.server.in.in)
-	sed -e "s|\@LIBEXECDIR\@|$(libexecdir)|" $< > $@
-
+server_DATA = GNOME_BlogApplet.server
+server_in_files = $(server_DATA:=.in)
+server_in_in_files = $(server_in_files:=.in)
 @INTLTOOL_SERVER_RULE@
+
+$(server_in_files): $(server_in_in_files) Makefile
+	sed s,@LIBEXECDIR@,$(libexecdir),g <$< >$@
+
 
 bin_SCRIPTS = gnome-blog-poster
 libexec_SCRIPTS = blog_applet.py
@@ -93,9 +94,11 @@ install-data-local:
         GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) \
                 gconftool-2 --makefile-install-rule $(schema_DATA)
 
+CLEANFILES = $(server_DATA)
+
 DISTCLEANFILES =                \
 	$(schema_DATA)		\
-	$(server_DATA)		\
+	$(server_in_files)	\
 	$(Desktop_DATA)		\
         intltool-extract        \
         intltool-merge          \
@@ -129,8 +132,7 @@ EXTRA_DIST =  			\
         intltool-extract.in     \
         intltool-merge.in       \
 	gnome-blog.spec		\
-	gnome-blog.spec.in 	\
-	$(server_in_files)
+	gnome-blog.spec.in
 
 SUBDIRS = protocols po
 

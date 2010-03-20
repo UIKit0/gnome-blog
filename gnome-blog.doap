@@ -6,7 +6,7 @@
 
   <name xml:lang="en">gnome-blog</name>
   <shortdesc xml:lang="en">GNOME panel object for posting blog entries</shortdesc>
-  <homepage rdf:resource="http://people.gnome.org/~seth/gnome-blog/" />
+  <homepage rdf:resource="http://projects.gnome.org/gnome-blog/" />
 
   <maintainer>
     <foaf:Person>

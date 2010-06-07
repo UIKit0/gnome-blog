@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gnome-blog master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-blog&component=general\n"
 "POT-Creation-Date: 2010-03-04 22:51+0000\n"
-"PO-Revision-Date: 2010-03-05 07:25+0100\n"
+"PO-Revision-Date: 2010-06-04 19:32+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -51,7 +51,7 @@ msgstr "Blog"
 
 #: ../blog_applet.py:89
 msgid "A GNOME Web Blogging Applet"
-msgstr "GNOME-ov spletni aplet bloganja"
+msgstr "GNOME spletni aplet bloganja"
 
 #: ../blog_applet.py:91
 msgid "translator-credits"
@@ -321,7 +321,7 @@ msgstr "URL naslov '%s' ni videti kot veljavni LiveJournal XML-RPC strežnik. Po
 #: ../rich_entry.py:144
 #: ../rich_entry.py:152
 msgid "Could not load dragged in image"
-msgstr "Ni mogoče naložiti potegnjane slike."
+msgstr "Ni mogoče naložiti potegnjene slike."
 
 #: ../rich_entry.py:145
 #: ../rich_entry.py:153
@@ -348,4 +348,3 @@ msgstr "Besedilo:"
 #: ../rich_entry.py:229
 msgid "URL:"
 msgstr "URL:"
-

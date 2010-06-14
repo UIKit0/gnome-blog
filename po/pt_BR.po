@@ -7,18 +7,21 @@
 # Washington Ferreira Lins Neto <washington-lins@uol.com.br>, 2007.
 # Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>, 2007.
 # Fábio Nogueira <deb-user-ba@ubuntu.com> 2008.
-#
+# Djavan Fagundes <djavan@comum.org>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-06-20 10:54-0300\n"
-"PO-Revision-Date: 2008-06-19 20:05-0300\n"
-"Last-Translator: Fábio Nogueira <deb-user-ba@ubuntu.com>\n"
-"Language-Team: Brazilian Portuguese <gnome-l10n-br@listas.cipsga.org.br>\n"
+"POT-Creation-Date: 2010-06-13 22:39-0300\n"
+"PO-Revision-Date: 2010-06-06 13:35-0200\n"
+"Last-Translator: Djavan Fagundes <djavan@comum.org>\n"
+"Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Virtaal 0.5.2\n"
 
 #: ../GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
@@ -60,7 +63,8 @@ msgstr ""
 "Mayck Philippe Batista Xavier <mayckxavier@gmail.com>\n"
 "Washington Ferreira Lins Neto <washington-lins@uol.com.br>\n"
 "Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>\n"
-"Fábio Nogueira <deb-user-ba@ubuntu.com>"
+"Fábio Nogueira <deb-user-ba@ubuntu.com>\n"
+"Djavan Fagundes <djavan@comum.org>"
 
 #: ../blog_applet.py:128
 #, python-format
@@ -156,10 +160,14 @@ msgstr "Nome do usuário:"
 msgid "Password:"
 msgstr "Senha:"
 
-#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:142
-#: ../blogger_prefs.py:147 ../blogger_prefs.py:153
+#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:147
+#: ../blogger_prefs.py:153
 msgid "XML-RPC URL:"
 msgstr "URL XML-RPC:"
+
+#: ../blogger_prefs.py:142
+msgid "ATOM-based"
+msgstr "ATOM-based"
 
 #: ../blogger_prefs.py:161
 msgid "Unknown blog type"
@@ -211,8 +219,8 @@ msgstr ""
 #: ../hig_alert.py:17
 #, python-format
 msgid ""
-"Unknown username %s or password trying to post blog entry to XML-RPC server %"
-"s."
+"Unknown username %s or password trying to post blog entry to XML-RPC server "
+"%s."
 msgstr ""
 "Nome de usuário %s desconhecido ou senha inválida ao tentar publicar um "
 "artigo de blog do servidor XML-RPC %s."
@@ -272,6 +280,48 @@ msgid ""
 msgstr ""
 "A URL \"%s\" não parece ser um servidor de XML-RPC bloggerAPI válido. O "
 "servidor relatou: %s."
+
+#. TODO: consider GNOME proxy configurations, as in bloggerAPI.py
+#: ../protocols/atomBloggerAPI.py:24
+msgid "Could not get list of blogs."
+msgstr "Não foi possível obter a lista de blogs."
+
+#: ../protocols/atomBloggerAPI.py:29 ../protocols/atomBloggerAPI.py:99
+msgid "A captcha was required for authentication."
+msgstr "Um captcha foi requerido para autenticação."
+
+#: ../protocols/atomBloggerAPI.py:32 ../protocols/atomBloggerAPI.py:102
+msgid "Username or password was invalid."
+msgstr "O nome de usuário ou senha são inválidos"
+
+#: ../protocols/atomBloggerAPI.py:35 ../protocols/atomBloggerAPI.py:105
+#, python-format
+msgid "Failed to login: %s"
+msgstr "Falhou ao iniciar sessão: %s"
+
+#: ../protocols/atomBloggerAPI.py:38 ../protocols/atomBloggerAPI.py:108
+#, python-format
+msgid "Socket error: %s.  Perhaps try again."
+msgstr "Erro n socket: %s. Quem sabe tentando novamente."
+
+#. No blogs found
+#: ../protocols/atomBloggerAPI.py:45
+msgid "No Blogs Found"
+msgstr "Nenhum blog encontrado"
+
+#: ../protocols/atomBloggerAPI.py:45
+#, python-format
+msgid "No errors were reported, but no blogs were found at %s for %s\n"
+msgstr "Sem erros reportados, mas nenhum blog foi encontrado em %s para %s\n"
+
+#: ../protocols/atomBloggerAPI.py:95
+msgid "Could not post entry."
+msgstr "Não foi possível publicar o artigo de blog."
+
+#: ../protocols/atomBloggerAPI.py:115
+#, python-format
+msgid "Failed to post: %s"
+msgstr "Falhou ao publicar: %s"
 
 #: ../protocols/bloggerAPI.py:35 ../protocols/bloggerAPI.py:38
 msgid "Could not get list of blogs"

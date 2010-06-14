@@ -1,17 +1,23 @@
 # Danish translation of gnome-blog.
-# Copyright (C) 2006 Free Software Foundation, Inc.
+# Copyright (C) 2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-blog package.
 # Peter Bach <bach.peter@gmail.com>, 2006.
-# 
-# 
-# 
+# Joe Hansen (joedalton2@yahoo.dk), 2010.
+#
+# blogs -> blog eller blogge (ikke fundet noget hos Dansk Sprognævn. 
+#          De kalder det også en netdagbog. kunne også være journal).
+#          en nudanskordbog har kun den engelske flertalsendelse 's.
+#          har valgt blogge i den her.
+# post -> send
+# web -> internet
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-09-19 16:39+0200\n"
-"PO-Revision-Date: 2006-09-19 16:34+0200\n"
-"Last-Translator: Peter Bach <bach.peter@gmail.com>\n"
+"POT-Creation-Date: 2010-06-14 10:19+0200\n"
+"PO-Revision-Date: 2010-03-19 18:29+0200\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,13 +27,13 @@ msgstr ""
 msgid "Accessories"
 msgstr "Tilbehør"
 
-#: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.h:1
+#: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.in.h:1
 msgid "Blog Entry Poster"
 msgstr "Blogindlægsposter"
 
 #: ../GNOME_BlogApplet.server.in.in.h:3
 msgid "Post entries to a web log"
-msgstr "Postindlæg til en weblog"
+msgstr "Send indlæg til en internetlog"
 
 #: ../GNOME_BlogApplet.xml.h:1
 msgid "_About..."
@@ -37,34 +43,35 @@ msgstr "_Om..."
 msgid "_Preferences..."
 msgstr "_Indstillinger..."
 
-#: ../blog_applet.py:35
+#: ../blog_applet.py:34
 msgid "About"
 msgstr "Om"
 
-#: ../blog_applet.py:38
+#: ../blog_applet.py:37
 msgid "Blog"
 msgstr "Blog"
 
-#: ../blog_applet.py:77
+#: ../blog_applet.py:89
 msgid "A GNOME Web Blogging Applet"
-msgstr "Et GNOME Webblogger-panelprogram"
+msgstr "Et internetbloggerpanelprogram til GNOME"
 
-#: ../blog_applet.py:79
+#: ../blog_applet.py:91
 msgid "translator-credits"
 msgstr ""
-"Peter Bach\n"
+"Joe Hansen, 2010\n"
+"Peter Bach, 2006\n"
 "\n"
 "Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
 "Mere info: http://www.dansk-gruppen.dk"
 
-#: ../blog_applet.py:116
+#: ../blog_applet.py:128
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Opret et blogindlæg for %s på %s"
 
 #: ../blog_poster.py:44
 msgid "_Post Entry"
-msgstr "_Post indlæg"
+msgstr "_Send indlæg"
 
 #: ../blog_poster.py:69
 msgid "Preferences..."
@@ -74,29 +81,37 @@ msgstr "Indstillinger..."
 msgid "Title:"
 msgstr "Titel:"
 
-#: ../blog_poster.py:116
+#: ../blog_poster.py:88
+msgid "Tags:"
+msgstr "Mærker:"
+
+#: ../blog_poster.py:109
+msgid "Post Blog Entry"
+msgstr "Send blogindlæg"
+
+#: ../blog_poster.py:133
 msgid "Couldn't upload images"
 msgstr "Kunne ikke sende billeder"
 
-#: ../blog_poster.py:116
+#: ../blog_poster.py:133
 msgid "The blog protocol in use does not support uploading images"
-msgstr "Nuværende blog-protokol understøtter ikke overførelse af billeder"
+msgstr "Nuværende blogprotokol understøtter ikke overførelse af billeder"
 
-#: ../blog_poster.py:162
+#: ../blog_poster.py:183
 msgid "Blog Entry is Blank"
 msgstr "Blogindlæg er tomt"
 
-#: ../blog_poster.py:162
+#: ../blog_poster.py:183
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
 msgstr ""
-"Ingen tekst angivet i bloggens indtastningsboks. Vær venlig at skrive "
-"nogettekst og prøv igen."
+"Ingen tekst angivet i bloggens indtastningsboks. Vær venlig at skrive noget "
+"tekst og prøv igen."
 
 #: ../blogger_prefs.py:19
 msgid "Blogger Preferences"
-msgstr "Indstillinger for Blogger"
+msgstr "Indstillinger for blogger"
 
 #: ../blogger_prefs.py:39
 msgid "Self-Run MovableType"
@@ -125,7 +140,7 @@ msgstr "Blogprotokol:"
 #: ../blogger_prefs.py:60 ../blogger_prefs.py:122 ../blogger_prefs.py:127
 #: ../blogger_prefs.py:132
 msgid "Base Blog URL:"
-msgstr "Basis blog-adresse:"
+msgstr "Basis blogadresse:"
 
 #: ../blogger_prefs.py:62
 msgid "Blog Name:"
@@ -133,7 +148,7 @@ msgstr "Blognavn:"
 
 #: ../blogger_prefs.py:64
 msgid "Lookup Blogs"
-msgstr "Slå op i blogs"
+msgstr "Slå op i blogge"
 
 #: ../blogger_prefs.py:74
 msgid "Username:"
@@ -143,10 +158,14 @@ msgstr "Brugernavn:"
 msgid "Password:"
 msgstr "Adgangskode:"
 
-#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:142
-#: ../blogger_prefs.py:147 ../blogger_prefs.py:153
+#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:147
+#: ../blogger_prefs.py:153
 msgid "XML-RPC URL:"
 msgstr "XML-RPC-adresse:"
+
+#: ../blogger_prefs.py:142
+msgid "ATOM-based"
+msgstr "ATOM-baseret"
 
 #: ../blogger_prefs.py:161
 msgid "Unknown blog type"
@@ -154,11 +173,11 @@ msgstr "Ukendt blogtype"
 
 #: ../blogger_prefs.py:161
 msgid "The detected blog type is not among the list of supported blogs"
-msgstr "Den genkendte blogtype er ikke i listen over understøttede blogs"
+msgstr "Den genkendte blogtype er ikke i listen over understøttede blogge"
 
-#: ../gnome-blog.desktop.in.h:2
+#: ../gnome-blog.desktop.in.in.h:2
 msgid "Post an entry to a web log"
-msgstr "Post et indlæg til en weblog"
+msgstr "Send et indlæg til en internetlog"
 
 #: ../gnomeblog.schemas.in.h:1
 msgid "Password to use in accessing the blog"
@@ -166,11 +185,11 @@ msgstr "Adgangskode som bruges ved adgang til bloggen"
 
 #: ../gnomeblog.schemas.in.h:2
 msgid "Protocol to use in accessing the blog"
-msgstr "Protokol som bruges ved adgang til blog"
+msgstr "Protokol som bruges ved adgang til bloggen"
 
 #: ../gnomeblog.schemas.in.h:3
 msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
-msgstr "Endelse som tilføjes til basis-adressen (fx \"xmlrpc.cgi\")"
+msgstr "Endelse som tilføjes til basisadressen (for eksempel \"xmlrpc.cgi\")"
 
 #: ../gnomeblog.schemas.in.h:4
 msgid "The application's preferences have been initialized"
@@ -178,7 +197,7 @@ msgstr "Programmets indstillinger er blevet klargjort"
 
 #: ../gnomeblog.schemas.in.h:5
 msgid "The id or name of the particular blog to use on the XML-RPC server"
-msgstr "Det ID eller navn på den bestemte blog der bruges på XML-RPC-serveren"
+msgstr "Det id eller navn på den bestemte blog der bruges på XML-RPC-serveren"
 
 #: ../gnomeblog.schemas.in.h:6
 msgid "URL to the bloggerAPI compatible XML-RPC server"
@@ -201,8 +220,8 @@ msgid ""
 "Unknown username %s or password trying to post blog entry to XML-RPC server %"
 "s."
 msgstr ""
-"Ukendt brugernavn %s eller adgangskode ved postning af blogindlæg til XML-"
-"RPC server %s."
+"Ukendt brugernavn %s eller adgangskode ved indsendelse af blogindlæg til XML-"
+"RPC-server %s."
 
 #: ../hig_alert.py:19
 #, python-format
@@ -210,7 +229,7 @@ msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
 "reported: %s."
 msgstr ""
-"Kunne ikke poste til blog \"%s\" på bloggerAPI XML-RPC-server \"%s\". "
+"Kunne ikke indsende til blog \"%s\" på bloggerAPI XML-RPC-server \"%s\". "
 "Serveren rapporterede: %s."
 
 #: ../hig_alert.py:21
@@ -220,32 +239,32 @@ msgid ""
 "\n"
 "Please email this error message to seth@gnome.org so I can address it."
 msgstr ""
-"bloggerAPI-serveren (%s) rapporterede en fejl jeg ikke forstår: \"%s, %s"
+"BloggerAPI-serveren (%s) rapporterede en fejl, jeg ikke forstår: \"%s, %s"
 "\". \n"
 "\n"
-"Send venligst fejlen i en email til seth@gnome.org så jeg kan gennemse den."
+"Send venligst fejlen i en e-post til seth@gnome.org så jeg kan gennemse den."
 
 #: ../protocols/advogato.py:27 ../protocols/advogato.py:30
 #: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:61
 #: ../protocols/bloggerAPI.py:89 ../protocols/livejournal.py:35
 #: ../protocols/livejournal.py:64
 msgid "Could not post Blog entry"
-msgstr "Kunne ikke poste blogindlæg"
+msgstr "Kunne ikke sende blogindlæg"
 
 #: ../protocols/advogato.py:27
 msgid "Your username is invalid. Please double-check the preferences."
-msgstr "Dit brugernavn er ugyldigt. Kontrollér indstillingerne igen."
+msgstr "Dit brugernavn er ugyldigt. Kontroller indstillingerne igen."
 
 #: ../protocols/advogato.py:30 ../protocols/livejournal.py:35
 msgid ""
 "Your username or password is invalid. Please double-check the preferences."
 msgstr ""
-"Dit brugernavn eller adgangskode er ugyldigt. Kontrollér indstillinger igen."
+"Dit brugernavn eller adgangskode er ugyldigt. Kontroller indstillinger igen."
 
 #: ../protocols/advogato.py:39 ../protocols/bloggerAPI.py:86
 #: ../protocols/livejournal.py:61
 msgid "Could not post blog entry"
-msgstr "Kunne ikke poste blogindlæg"
+msgstr "Kunne ikke sende blogindlæg"
 
 #: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:38
 #: ../protocols/bloggerAPI.py:89
@@ -255,19 +274,63 @@ msgid ""
 "reported: %s."
 msgstr ""
 "Adressen \"%s\" ser ikke ud til at være en gyldig bloggerAPI XML-RPC-server. "
-"Webserveren rapporterede: %s."
+"Internetserveren rapporterede: %s."
+
+#. TODO: consider GNOME proxy configurations, as in bloggerAPI.py
+#: ../protocols/atomBloggerAPI.py:24
+msgid "Could not get list of blogs."
+msgstr "Kunne ikke indhente liste over blogge."
+
+#: ../protocols/atomBloggerAPI.py:29 ../protocols/atomBloggerAPI.py:99
+msgid "A captcha was required for authentication."
+msgstr "En captcha var påkrævet til godkendelse."
+
+#: ../protocols/atomBloggerAPI.py:32 ../protocols/atomBloggerAPI.py:102
+msgid "Username or password was invalid."
+msgstr "Brugernavn eller adgangskode var ugyldige."
+
+#: ../protocols/atomBloggerAPI.py:35 ../protocols/atomBloggerAPI.py:105
+#, python-format
+msgid "Failed to login: %s"
+msgstr "Kunne ikke logge ind: %s"
+
+#: ../protocols/atomBloggerAPI.py:38 ../protocols/atomBloggerAPI.py:108
+#, python-format
+msgid "Socket error: %s.  Perhaps try again."
+msgstr "Sokkelfejl: %s. Prøv eventuelt igen."
+
+#. No blogs found
+#: ../protocols/atomBloggerAPI.py:45
+msgid "No Blogs Found"
+msgstr "Ingen blogge fundet"
+
+#: ../protocols/atomBloggerAPI.py:45
+#, python-format
+msgid "No errors were reported, but no blogs were found at %s for %s\n"
+msgstr ""
+"Ingen fejl blev rapporteret, men ingen blogge blev fundet ved %s for %s\n"
+
+#: ../protocols/atomBloggerAPI.py:95
+msgid "Could not post entry."
+msgstr "Kunne ikke sende indlæg."
+
+#: ../protocols/atomBloggerAPI.py:115
+#, python-format
+msgid "Failed to post: %s"
+msgstr "Kunne ikke sende: %s"
 
 #: ../protocols/bloggerAPI.py:35 ../protocols/bloggerAPI.py:38
 msgid "Could not get list of blogs"
-msgstr "Kunne ikke hente liste over blogs"
+msgstr "Kunne ikke hente liste over blogge"
 
 #: ../protocols/bloggerAPI.py:61
 msgid ""
 "No XML-RPC server URL to post blog entries to is set, or the value could not "
 "be retrieved from GConf. Your entry will remain in the blogger window."
 msgstr ""
-"XML-RPC-server-adresse til at poste blogindlæg ikke angivet, eller værdien "
-"kunne ikke hentes fra GConf. Dit indlæg vil forblive i blogger-vinduet."
+"XML-RPC-server-adresse til at indsende blogindlæg ikke angivet, eller "
+"værdien kunne ikke hentes fra GConf. Dit indlæg vil forblive i "
+"bloggervinduet."
 
 #: ../protocols/livejournal.py:64
 #, python-format
@@ -276,7 +339,7 @@ msgid ""
 "reported: %s."
 msgstr ""
 "Adressen \"%s\" ser ikke ud til at være en gyldig LiveJournal XML-RPC-"
-"server. Webserveren rapporterede: %s."
+"server. Internetserveren rapporterede: %s."
 
 #: ../rich_entry.py:144 ../rich_entry.py:152
 msgid "Could not load dragged in image"
@@ -289,15 +352,15 @@ msgstr "Fejl ved indlæsning af %s var: %s"
 
 #: ../rich_entry.py:210
 msgid "Add _Link..."
-msgstr "Tilføj _link..."
+msgstr "Tilføj _henvisning..."
 
 #: ../rich_entry.py:215
 msgid "Add Link"
-msgstr "Tilføj link"
+msgstr "Tilføj henvisning"
 
 #: ../rich_entry.py:218
 msgid "_Add Link"
-msgstr "_Tilføj link"
+msgstr "_Tilføj henvisning"
 
 #: ../rich_entry.py:226
 msgid "Text:"

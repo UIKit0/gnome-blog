@@ -11,10 +11,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Gnome-blog HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"blog&component=general\n"
-"POT-Creation-Date: 2009-04-17 16:29+0000\n"
-"PO-Revision-Date: 2009-07-31 13:59+0300\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-blog&component=general\n"
+"POT-Creation-Date: 2010-06-24 08:57+0000\n"
+"PO-Revision-Date: 2010-06-24 17:07+0300\n"
 "Last-Translator: Mattias Põldaru <mahfiaz gmail com>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -67,7 +66,6 @@ msgstr "Pealkiri:"
 msgid "Tags:"
 msgstr "Märksõnad:"
 
-#| msgid "_Post Entry"
 msgid "Post Blog Entry"
 msgstr "Sissekande postitamine"
 
@@ -80,12 +78,8 @@ msgstr "Kasutuselolev blogimisprotokoll ei toeta piltide üleslaadimist"
 msgid "Blog Entry is Blank"
 msgstr "Blogisissekanne on tühi"
 
-msgid ""
-"No text was entered in the blog entry box. Please enter some text and try "
-"again"
-msgstr ""
-"Blogikirje sisestuskasti pole teksti sisestatud. Palun sisesta tekst ja "
-"proovi uuesti."
+msgid "No text was entered in the blog entry box. Please enter some text and try again"
+msgstr "Blogikirje sisestuskasti pole teksti sisestatud. Palun sisesta tekst ja proovi uuesti."
 
 msgid "Blogger Preferences"
 msgstr "Blogger'i seaded"
@@ -126,6 +120,9 @@ msgstr "Parool:"
 msgid "XML-RPC URL:"
 msgstr "XML-RPC URL:"
 
+msgid "ATOM-based"
+msgstr "ATOM-i baasil"
+
 msgid "Unknown blog type"
 msgstr "Tundmatu blogiliik"
 
@@ -158,24 +155,15 @@ msgstr "Kasutajanimi blogile ligipääsuks"
 
 #, python-format
 msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
-msgstr ""
-"URL '%s' ei tundu olevat korrektne bloggerAPI. XML-RPC server  teatas: %s."
+msgstr "URL '%s' ei tundu olevat korrektne bloggerAPI. XML-RPC server  teatas: %s."
 
 #, python-format
-msgid ""
-"Unknown username %s or password trying to post blog entry to XML-RPC server %"
-"s."
-msgstr ""
-"Tundmatu kasutajanimi %s või parool uue blogikirje postitamisel XML-RPC "
-"serverisse %s."
+msgid "Unknown username %s or password trying to post blog entry to XML-RPC server %s."
+msgstr "Tundmatu kasutajanimi %s või parool uue blogikirje postitamisel XML-RPC serverisse %s."
 
 #, python-format
-msgid ""
-"Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
-"reported: %s."
-msgstr ""
-"Blogisse '%s' bloggerAPI XML-RPC serveris '%s' pole võimalik postitada. "
-"Server teatas: %s."
+msgid "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server reported: %s."
+msgstr "Blogisse '%s' bloggerAPI XML-RPC serveris '%s' pole võimalik postitada. Server teatas: %s."
 
 #, python-format
 msgid ""
@@ -183,8 +171,7 @@ msgid ""
 "\n"
 "Please email this error message to seth@gnome.org so I can address it."
 msgstr ""
-"bloggerAPI server (%s) raporteeris sellele rakendusele mõistetamatust veast: "
-"'%s, %s'. \n"
+"bloggerAPI server (%s) raporteeris sellele rakendusele mõistetamatust veast: '%s, %s'. \n"
 "\n"
 "Saada see teade aadressil seth@gnome.org, et ma saaksin selle parandada."
 
@@ -194,39 +181,58 @@ msgstr "Uut postitust pole võimalik lisada"
 msgid "Your username is invalid. Please double-check the preferences."
 msgstr "Kasutajanimi on vigane. Palun vaata oma eelistused üle."
 
-msgid ""
-"Your username or password is invalid. Please double-check the preferences."
-msgstr ""
-"Sinu kasutajanimi või parool on vigane. Palun vaata oma eelistused üle."
+msgid "Your username or password is invalid. Please double-check the preferences."
+msgstr "Sinu kasutajanimi või parool on vigane. Palun vaata oma eelistused üle."
 
 msgid "Could not post blog entry"
 msgstr "Uut postitust pole võimalik lisada"
 
 #, python-format
-msgid ""
-"URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
-"reported: %s."
-msgstr ""
-"URL '%s' ei tundu olevat korrektne bloggerAPI XML-RPC server. Veebiserver "
-"teatas: %s."
+msgid "URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: %s."
+msgstr "URL '%s' ei tundu olevat korrektne bloggerAPI XML-RPC server. Veebiserver teatas: %s."
+
+#. TODO: consider GNOME proxy configurations, as in bloggerAPI.py
+msgid "Could not get list of blogs."
+msgstr "Blogide loetelu pole võimalik hankida."
+
+msgid "A captcha was required for authentication."
+msgstr "Autentimiseks oli vajalik 'captcha'."
+
+msgid "Username or password was invalid."
+msgstr "Kasutajanimi või parool ei olnud õige."
+
+#, python-format
+msgid "Failed to login: %s"
+msgstr "Sisselogimine nurjus: %s"
+
+#, python-format
+msgid "Socket error: %s.  Perhaps try again."
+msgstr "Pistiku viga: %s. Võib-olla aitab uuesti proovimine."
+
+#. No blogs found
+msgid "No Blogs Found"
+msgstr "Blogisid ei leitud"
+
+#, python-format
+msgid "No errors were reported, but no blogs were found at %s for %s\n"
+msgstr "Vigadest ei teatatud, kuid ühegi blogi ei leitud aadressilt %s %s jaoks\n"
+
+msgid "Could not post entry."
+msgstr "Uut postitust pole võimalik lisada."
+
+#, python-format
+msgid "Failed to post: %s"
+msgstr "Postitamine nurjus: %s"
 
 msgid "Could not get list of blogs"
 msgstr "Blogide loetelu pole võimalik hankida"
 
-msgid ""
-"No XML-RPC server URL to post blog entries to is set, or the value could not "
-"be retrieved from GConf. Your entry will remain in the blogger window."
-msgstr ""
-"XML-RPC serveri URL pole blogisissekannete jaoks seatud, või pole selle "
-"väärtust võimalik hankida GConfist. Sinu sissekanne jääb ainult bloggerisse."
+msgid "No XML-RPC server URL to post blog entries to is set, or the value could not be retrieved from GConf. Your entry will remain in the blogger window."
+msgstr "XML-RPC serveri URL pole blogisissekannete jaoks seatud, või pole selle väärtust võimalik hankida GConfist. Sinu sissekanne jääb ainult bloggerisse."
 
 #, python-format
-msgid ""
-"URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
-"reported: %s."
-msgstr ""
-"URL '%s' ei tundu olevat korrektne LiveJournal'i XML-RPC server. Veebiserver "
-"teatas: %s."
+msgid "URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server reported: %s."
+msgstr "URL '%s' ei tundu olevat korrektne LiveJournal'i XML-RPC server. Veebiserver teatas: %s."
 
 msgid "Could not load dragged in image"
 msgstr "Lohistatud pilti pole võimalik laadida"

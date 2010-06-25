@@ -8,25 +8,27 @@
 #
 # Pedro Silva <psf@pedrosilva.org>, 2005.
 # Ignacio Casal Quinteiro <nacho.resa@gmail.com>, 2006.
+# Fran Diéguez <frandieguez@ubuntu.com>, 2010.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-10-26 20:44+0200\n"
-"PO-Revision-Date: 2006-10-26 20:45+0200\n"
-"Last-Translator: Ignacio Casal Quinteiro <nacho.resa@gmail.com>\n"
-"Language-Team: Galego <trasno@ceu.fi.udc.es>\n"
+"POT-Creation-Date: 2010-06-25 22:37+0200\n"
+"PO-Revision-Date: 2010-06-25 22:41+0200\n"
+"Last-Translator: Fran Diéguez <frandieguez@ubuntu.com>\n"
+"Language-Team: Galician <gnome@g11n.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms:  nplurals=2; plural=(n != 1);X-Generator: KBabel 1.10.2\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: KBabel 1.11.4\n"
 
 #: ../GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr "Accesorios"
 
-#: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.h:1
+#: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.in.h:1
 msgid "Blog Entry Poster"
 msgstr "A persoa que enviou a entrada"
 
@@ -42,23 +44,23 @@ msgstr "_Acerca de..."
 msgid "_Preferences..."
 msgstr "_Preferencias..."
 
-#: ../blog_applet.py:35
+#: ../blog_applet.py:34
 msgid "About"
 msgstr "Acerca de"
 
-#: ../blog_applet.py:38
+#: ../blog_applet.py:37
 msgid "Blog"
 msgstr "Blog"
 
-#: ../blog_applet.py:77
+#: ../blog_applet.py:89
 msgid "A GNOME Web Blogging Applet"
 msgstr "Unha applet de GNOME para publicar en weblogs"
 
-#: ../blog_applet.py:79
+#: ../blog_applet.py:91
 msgid "translator-credits"
 msgstr "Pedro Silva <psf@pedrosilva.org>"
 
-#: ../blog_applet.py:116
+#: ../blog_applet.py:128
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Crear unha entrada para %s en %s"
@@ -75,19 +77,27 @@ msgstr "Preferencias..."
 msgid "Title:"
 msgstr "Título:"
 
-#: ../blog_poster.py:116
+#: ../blog_poster.py:88
+msgid "Tags:"
+msgstr "Etiquetas:"
+
+#: ../blog_poster.py:109
+msgid "Post Blog Entry"
+msgstr "Publicar a entrada de bloque"
+
+#: ../blog_poster.py:133
 msgid "Couldn't upload images"
 msgstr "Non se puideron subir as imaxes"
 
-#: ../blog_poster.py:116
+#: ../blog_poster.py:133
 msgid "The blog protocol in use does not support uploading images"
 msgstr "O protocolo da blog en uso non permite subir imaxes"
 
-#: ../blog_poster.py:162
+#: ../blog_poster.py:183
 msgid "Blog Entry is Blank"
 msgstr "A entrada do blog esta baleira"
 
-#: ../blog_poster.py:162
+#: ../blog_poster.py:183
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
@@ -144,10 +154,14 @@ msgstr "Nome de usuario:"
 msgid "Password:"
 msgstr "Contrasinal:"
 
-#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:142
-#: ../blogger_prefs.py:147 ../blogger_prefs.py:153
+#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:147
+#: ../blogger_prefs.py:153
 msgid "XML-RPC URL:"
 msgstr "URL de XML-RPC:"
+
+#: ../blogger_prefs.py:142
+msgid "ATOM-based"
+msgstr "Baseado en ATOM"
 
 #: ../blogger_prefs.py:161
 msgid "Unknown blog type"
@@ -157,7 +171,7 @@ msgstr "Tipo de blog descoñecido"
 msgid "The detected blog type is not among the list of supported blogs"
 msgstr "O tipo de blog detectado non esta na lista de blogs soportados"
 
-#: ../gnome-blog.desktop.in.h:2
+#: ../gnome-blog.desktop.in.in.h:2
 msgid "Post an entry to a web log"
 msgstr "Publicar unha entrada nun weblog"
 
@@ -239,7 +253,8 @@ msgstr ""
 "preferencias."
 
 #: ../protocols/advogato.py:30 ../protocols/livejournal.py:35
-msgid "Your username or password is invalid. Please double-check the preferences."
+msgid ""
+"Your username or password is invalid. Please double-check the preferences."
 msgstr ""
 "O seu usuario ou contrasinal non é valido. Sexa tan amable de revisar as "
 "preferencias."
@@ -258,6 +273,50 @@ msgid ""
 msgstr ""
 "A URL '%s' non repostou coma un servidor bloggerAPI válido. A resposta do "
 "servidor foi: '%s'"
+
+#. TODO: consider GNOME proxy configurations, as in bloggerAPI.py
+#: ../protocols/atomBloggerAPI.py:24
+msgid "Could not get list of blogs."
+msgstr "Non se puido obter a lista de blogs."
+
+#: ../protocols/atomBloggerAPI.py:29 ../protocols/atomBloggerAPI.py:99
+msgid "A captcha was required for authentication."
+msgstr "Requírese un «captcha» para a autenticación"
+
+#: ../protocols/atomBloggerAPI.py:32 ../protocols/atomBloggerAPI.py:102
+msgid "Username or password was invalid."
+msgstr "O nome de usuario ou contrasinal non é válido."
+
+#: ../protocols/atomBloggerAPI.py:35 ../protocols/atomBloggerAPI.py:105
+#, python-format
+msgid "Failed to login: %s"
+msgstr "Produciuse un fallo ao iniciar a sesión: %s"
+
+#: ../protocols/atomBloggerAPI.py:38 ../protocols/atomBloggerAPI.py:108
+#, python-format
+msgid "Socket error: %s.  Perhaps try again."
+msgstr "Erro no socket: %s... Ténteo de novo."
+
+#. No blogs found
+#: ../protocols/atomBloggerAPI.py:45
+msgid "No Blogs Found"
+msgstr "Non foi posíbel encontrar ningún blog"
+
+#: ../protocols/atomBloggerAPI.py:45
+#, python-format
+msgid "No errors were reported, but no blogs were found at %s for %s\n"
+msgstr ""
+"non se informou de ningún erro, pero non se encontrou ningún blog en %s para "
+"%s\n"
+
+#: ../protocols/atomBloggerAPI.py:95
+msgid "Could not post entry."
+msgstr "No se puido publicar a entrada."
+
+#: ../protocols/atomBloggerAPI.py:115
+#, python-format
+msgid "Failed to post: %s"
+msgstr "Produciuse un fallo ao publicar: %s"
 
 #: ../protocols/bloggerAPI.py:35 ../protocols/bloggerAPI.py:38
 msgid "Could not get list of blogs"
@@ -308,4 +367,3 @@ msgstr "Texto:"
 #: ../rich_entry.py:229
 msgid "URL:"
 msgstr "URL:"
-

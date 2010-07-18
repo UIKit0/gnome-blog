@@ -1,192 +1,221 @@
-# GNOME BLOG
-# Copyright (C)  2004  Free Software Foundation, Inc.
-# This file is distributed under the same license as the PACKAGE package.
+# Chinese (simplified) translation of gnome-blog
+# Copyright (C) 2004, 2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-blog package.
 # Li Shaojie <storm-119@163.com>, 2004.
+# du baodao <centerpoint@139.com>, 2010.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"POT-Creation-Date: 2004-05-14 20:06+0200\n"
-"PO-Revision-Date: 2004-05-12 14:38+0800\n"
-"Last-Translator: storm <storm-119@163.com>\n"
-"Language-Team: zh_CN <i18n-translation@lists.linux.net.cn>\n"
+"Project-Id-Version: gnome-blog master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"blog&component=general\n"
+"POT-Creation-Date: 2010-06-25 20:42+0000\n"
+"PO-Revision-Date: 2010-07-19 00:49+0800\n"
+"Last-Translator: du baodao <centerpoint@139.com>\n"
+"Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 
-#: GNOME_BlogApplet.server.in.h:1
+#: ../GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
 msgstr "附件"
 
-#: GNOME_BlogApplet.server.in.h:2 gnome-blog.desktop.in.h:1
+#: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.in.h:1
 msgid "Blog Entry Poster"
-msgstr "Blog 条目张贴器"
+msgstr "Blog 条目发布器"
 
-#: GNOME_BlogApplet.server.in.h:3
+#: ../GNOME_BlogApplet.server.in.in.h:3
 msgid "Post entries to a web log"
-msgstr "张贴条目到 web blog"
+msgstr "发布条目到 web blog"
 
-#: GNOME_BlogApplet.xml.h:1
+#: ../GNOME_BlogApplet.xml.h:1
 msgid "_About..."
 msgstr "关于(_A)..."
 
-#: GNOME_BlogApplet.xml.h:2
+#: ../GNOME_BlogApplet.xml.h:2
 msgid "_Preferences..."
 msgstr "首选项(_P)..."
 
-#: blog_applet.py:31
+#: ../blog_applet.py:34
 msgid "About"
 msgstr "关于"
 
-#: blog_applet.py:34
+#: ../blog_applet.py:37
 msgid "Blog"
 msgstr "Blog"
 
-#: blog_applet.py:67
+#: ../blog_applet.py:89
 msgid "A GNOME Web Blogging Applet"
 msgstr "一个 GNOME Web Blogging 小程序"
 
-#: blog_applet.py:102
+#: ../blog_applet.py:91
+msgid "translator-credits"
+msgstr ""
+"Li Shaojie <storm-119@163.com>, 2004\n"
+"du baodao <centerpoint@139.com>, 2010"
+
+#: ../blog_applet.py:128
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "为 %s 创建一个 blog 条目在 %s"
 
-#: blog_poster.py:44
+#: ../blog_poster.py:44
 msgid "_Post Entry"
-msgstr "张贴条目(_P)"
+msgstr "发布条目(_P)"
 
-#: blog_poster.py:63
+#: ../blog_poster.py:69
 msgid "Preferences..."
 msgstr "首选项..."
 
-#: blog_poster.py:75
+#: ../blog_poster.py:81
 msgid "Title:"
 msgstr "标题："
 
-#: blog_poster.py:110
+#: ../blog_poster.py:88
+msgid "Tags:"
+msgstr "标签："
+
+#: ../blog_poster.py:109
+msgid "Post Blog Entry"
+msgstr "发布博客条目"
+
+#: ../blog_poster.py:133
 msgid "Couldn't upload images"
 msgstr "不能上传图像"
 
-#: blog_poster.py:110
+#: ../blog_poster.py:133
 msgid "The blog protocol in use does not support uploading images"
 msgstr "在使用的 blog 协议不支持上传图像"
 
-#: blog_poster.py:157
+#: ../blog_poster.py:183
 msgid "Blog Entry is Blank"
 msgstr "Blog 条目为空白"
 
-#: blog_poster.py:157
+#: ../blog_poster.py:183
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
 msgstr "在 Blog 的输入区没有输入文本。请输入一些文本再试一次。"
 
-#: blogger_prefs.py:19
+#: ../blogger_prefs.py:19
 msgid "Blogger Preferences"
 msgstr "Blogger 首选项"
 
-#: blogger_prefs.py:38
+#: ../blogger_prefs.py:39
 msgid "Self-Run MovableType"
 msgstr "自运行的可移动类型"
 
-#: blogger_prefs.py:39
+#: ../blogger_prefs.py:40
 msgid "Self-Run Pyblosxom"
 msgstr "自运行的 Pyblosxom"
 
-#: blogger_prefs.py:40
+#: ../blogger_prefs.py:41
+msgid "Self-Run WordPress"
+msgstr "自运行的 WordPress"
+
+#: ../blogger_prefs.py:42
 msgid "Self-Run Other"
 msgstr "自运行的其他类型"
 
-#: blogger_prefs.py:44
+#: ../blogger_prefs.py:46
 msgid "Blog Type:"
 msgstr "Blog 类型："
 
-#: blogger_prefs.py:54
+#: ../blogger_prefs.py:56
 msgid "Blog Protocol:"
 msgstr "Blog 协议："
 
-#: blogger_prefs.py:58
-msgid "Blog Base URL:"
-msgstr "Blog 根 URL:"
-
-#: blogger_prefs.py:60
-msgid "Blog Name:"
-msgstr "Blog 名称："
-
-#: blogger_prefs.py:62
-msgid "Lookup Blogs"
-msgstr "查找 Blogs"
-
-#: blogger_prefs.py:72
-msgid "Username:"
-msgstr "用户名："
-
-#: blogger_prefs.py:73
-msgid "Password:"
-msgstr "密码："
-
-#: blogger_prefs.py:115 blogger_prefs.py:130 blogger_prefs.py:135
-#: blogger_prefs.py:141
-msgid "XML-RPC URL:"
-msgstr "XML-RPC URL："
-
-#: blogger_prefs.py:120 blogger_prefs.py:125
+#: ../blogger_prefs.py:60 ../blogger_prefs.py:122 ../blogger_prefs.py:127
+#: ../blogger_prefs.py:132
 msgid "Base Blog URL:"
 msgstr "根 Blog URL："
 
-#: gnome-blog.desktop.in.h:2
+#: ../blogger_prefs.py:62
+msgid "Blog Name:"
+msgstr "Blog 名称："
+
+#: ../blogger_prefs.py:64
+msgid "Lookup Blogs"
+msgstr "查找 Blogs"
+
+#: ../blogger_prefs.py:74
+msgid "Username:"
+msgstr "用户名："
+
+#: ../blogger_prefs.py:75
+msgid "Password:"
+msgstr "密码："
+
+#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:147
+#: ../blogger_prefs.py:153
+msgid "XML-RPC URL:"
+msgstr "XML-RPC URL："
+
+#: ../blogger_prefs.py:142
+msgid "ATOM-based"
+msgstr "基于 ATOM 协议"
+
+#: ../blogger_prefs.py:161
+msgid "Unknown blog type"
+msgstr "未知的博客类型"
+
+#: ../blogger_prefs.py:161
+msgid "The detected blog type is not among the list of supported blogs"
+msgstr "被删除的博客类型不在支持的类型列表中"
+
+#: ../gnome-blog.desktop.in.in.h:2
 msgid "Post an entry to a web log"
 msgstr "记录一个条目到 web blog"
 
-#: gnomeblog.schemas.in.h:1
+#: ../gnomeblog.schemas.in.h:1
 msgid "Password to use in accessing the blog"
 msgstr "访问 Blog 的密码"
 
-#: gnomeblog.schemas.in.h:2
+#: ../gnomeblog.schemas.in.h:2
 msgid "Protocol to use in accessing the blog"
 msgstr "访问 Blog 的协议"
 
-#: gnomeblog.schemas.in.h:3
+#: ../gnomeblog.schemas.in.h:3
 msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
 msgstr "添加到根 URL 的后缀(例如：“xmlrpc.cgi”)"
 
-#: gnomeblog.schemas.in.h:4
+#: ../gnomeblog.schemas.in.h:4
 msgid "The application's preferences have been initialized"
 msgstr "应用程序的参数已经初始化了"
 
-#: gnomeblog.schemas.in.h:5
+#: ../gnomeblog.schemas.in.h:5
 msgid "The id or name of the particular blog to use on the XML-RPC server"
 msgstr "用于 XML-RPC 服务器的特殊 blog 的 ID 或用户名"
 
-#: gnomeblog.schemas.in.h:6
+#: ../gnomeblog.schemas.in.h:6
 msgid "URL to the bloggerAPI compatible XML-RPC server"
 msgstr "与 XML-RPC 服务器兼容的 BloggerAPI 的 URL"
 
-#: gnomeblog.schemas.in.h:7
+#: ../gnomeblog.schemas.in.h:7
 msgid "Username to use in accessing the blog"
 msgstr "用来访问 Blog 的用户名"
 
-#: hig_alert.py:13
+#: ../hig_alert.py:15
 #, python-format
 msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
 msgstr "URL“%s”可能是一个无效的 bloggerAPI。XML-RPC 服务器报告：%s。"
 
-#: hig_alert.py:15
+#: ../hig_alert.py:17
 #, python-format
 msgid ""
 "Unknown username %s or password trying to post blog entry to XML-RPC server %"
 "s."
-msgstr "未知的用户名 %s 或密码尝试在 XML-RPC 服务器 %s 张贴 blog。"
+msgstr "未知的用户名 %s 或密码尝试在 XML-RPC 服务器 %s 发布 blog。"
 
-#: hig_alert.py:17
+#: ../hig_alert.py:19
 #, python-format
 msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
 "reported: %s."
-msgstr "不能张贴 blog“%s”到 bloggerAPI XML-RPC 服务器“%s”。服务器报告：%s。"
+msgstr "不能发布 blog“%s”到 bloggerAPI XML-RPC 服务器“%s”。服务器报告：%s。"
 
-#: hig_alert.py:19
+#: ../hig_alert.py:21
 #, python-format
 msgid ""
 "The bloggerAPI server (%s) reported an error I don't understand: '%s, %s'. \n"
@@ -197,28 +226,29 @@ msgstr ""
 "\n"
 "请将这个错误消息用电子邮件发送到 seth@gnome.org 以让我们可以解决它。"
 
-#: protocols/advogato.py:27 protocols/advogato.py:30 protocols/advogato.py:42
-#: protocols/bloggerAPI.py:62 protocols/bloggerAPI.py:90
-#: protocols/livejournal.py:35 protocols/livejournal.py:64
+#: ../protocols/advogato.py:27 ../protocols/advogato.py:30
+#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:61
+#: ../protocols/bloggerAPI.py:89 ../protocols/livejournal.py:35
+#: ../protocols/livejournal.py:64
 msgid "Could not post Blog entry"
-msgstr "不能张贴 Blog 条目"
+msgstr "不能发布 Blog 条目"
 
-#: protocols/advogato.py:27
+#: ../protocols/advogato.py:27
 msgid "Your username is invalid. Please double-check the preferences."
 msgstr "您的用户名无效。请检查首选项。"
 
-#: protocols/advogato.py:30 protocols/livejournal.py:35
+#: ../protocols/advogato.py:30 ../protocols/livejournal.py:35
 msgid ""
 "Your username or password is invalid. Please double-check the preferences."
 msgstr "您的用户名或密码无效。请检查首选项。"
 
-#: protocols/advogato.py:39 protocols/bloggerAPI.py:87
-#: protocols/livejournal.py:61
+#: ../protocols/advogato.py:39 ../protocols/bloggerAPI.py:86
+#: ../protocols/livejournal.py:61
 msgid "Could not post blog entry"
 msgstr "不能记录 Blog 条目"
 
-#: protocols/advogato.py:42 protocols/bloggerAPI.py:39
-#: protocols/bloggerAPI.py:90
+#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:38
+#: ../protocols/bloggerAPI.py:89
 #, python-format
 msgid ""
 "URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
@@ -226,11 +256,53 @@ msgid ""
 msgstr ""
 "URL“%s”看起来不是一个有效的 bloggerAPI XML-RPC 服务器。Web 服务器报告：%s。"
 
-#: protocols/bloggerAPI.py:36 protocols/bloggerAPI.py:39
+#. TODO: consider GNOME proxy configurations, as in bloggerAPI.py
+#: ../protocols/atomBloggerAPI.py:24
+msgid "Could not get list of blogs."
+msgstr "不能获得博客列表"
+
+#: ../protocols/atomBloggerAPI.py:29 ../protocols/atomBloggerAPI.py:99
+msgid "A captcha was required for authentication."
+msgstr "验证需要输入验证码"
+
+#: ../protocols/atomBloggerAPI.py:32 ../protocols/atomBloggerAPI.py:102
+msgid "Username or password was invalid."
+msgstr "用户名或密码错误。"
+
+#: ../protocols/atomBloggerAPI.py:35 ../protocols/atomBloggerAPI.py:105
+#, python-format
+msgid "Failed to login: %s"
+msgstr "登录失败：%s"
+
+#: ../protocols/atomBloggerAPI.py:38 ../protocols/atomBloggerAPI.py:108
+#, python-format
+msgid "Socket error: %s.  Perhaps try again."
+msgstr "端口错误：%s。请重试。"
+
+#. No blogs found
+#: ../protocols/atomBloggerAPI.py:45
+msgid "No Blogs Found"
+msgstr "没有发现博客"
+
+#: ../protocols/atomBloggerAPI.py:45
+#, python-format
+msgid "No errors were reported, but no blogs were found at %s for %s\n"
+msgstr "没有检测出错误，但是没有在 %s 发现 %s 博客\n"
+
+#: ../protocols/atomBloggerAPI.py:95
+msgid "Could not post entry."
+msgstr "不能发布博客条目"
+
+#: ../protocols/atomBloggerAPI.py:115
+#, python-format
+msgid "Failed to post: %s"
+msgstr "发布失败：%s"
+
+#: ../protocols/bloggerAPI.py:35 ../protocols/bloggerAPI.py:38
 msgid "Could not get list of blogs"
 msgstr "不能获得 Blog 列表"
 
-#: protocols/bloggerAPI.py:62
+#: ../protocols/bloggerAPI.py:61
 msgid ""
 "No XML-RPC server URL to post blog entries to is set, or the value could not "
 "be retrieved from GConf. Your entry will remain in the blogger window."
@@ -238,7 +310,7 @@ msgstr ""
 "没有设置记录 Blog 条目的 XML-PRC 服务器 URL，或者设置的值不能被 GConf 检索"
 "到。您的条目仍会停留在 Blogger 的窗口中。"
 
-#: protocols/livejournal.py:64
+#: ../protocols/livejournal.py:64
 #, python-format
 msgid ""
 "URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
@@ -246,31 +318,34 @@ msgid ""
 msgstr ""
 "URL“%s”看起来不是一个有效的 LiveJournal XML-RPC 服务器。Web 服务器报告：%s。"
 
-#: rich_entry.py:142 rich_entry.py:150
+#: ../rich_entry.py:144 ../rich_entry.py:152
 msgid "Could not load dragged in image"
 msgstr "不能拖动加载图像"
 
-#: rich_entry.py:143 rich_entry.py:151
+#: ../rich_entry.py:145 ../rich_entry.py:153
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "加载 %s 错误是：%s "
 
-#: rich_entry.py:208
+#: ../rich_entry.py:210
 msgid "Add _Link..."
 msgstr "添加链接(_L)..."
 
-#: rich_entry.py:213
+#: ../rich_entry.py:215
 msgid "Add Link"
 msgstr "添加链接"
 
-#: rich_entry.py:214
+#: ../rich_entry.py:218
 msgid "_Add Link"
 msgstr "添加链接(_A)"
 
-#: rich_entry.py:222
+#: ../rich_entry.py:226
 msgid "Text:"
 msgstr "文本："
 
-#: rich_entry.py:225
+#: ../rich_entry.py:229
 msgid "URL:"
 msgstr "URL："
+
+#~ msgid "Blog Base URL:"
+#~ msgstr "Blog 根 URL:"

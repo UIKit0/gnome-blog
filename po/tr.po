@@ -1,0 +1,362 @@
+# Turkish translation for gnome-blog.
+# Copyright (C) 2011 gnome-blog's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-blog package.
+# Server Acim <serveracim@gmail.com>, 2010.
+# Muhammet Kara <muhammet.k@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-blog-master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"blog&component=general\n"
+"POT-Creation-Date: 2010-12-20 13:32+0000\n"
+"PO-Revision-Date: 2011-05-06 01:28+0300\n"
+"Last-Translator: Muhammet Kara <muhammet.k@gmail.com>\n"
+"Language-Team: Turkish <gnome-turk@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../GNOME_BlogApplet.server.in.in.h:1
+msgid "Accessories"
+msgstr "Donatılar"
+
+#: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.in.h:1
+msgid "Blog Entry Poster"
+msgstr "Blog Girdisi Gönderici"
+
+#: ../GNOME_BlogApplet.server.in.in.h:3
+msgid "Post entries to a web log"
+msgstr "Bir web günlüğüne (blog) girdi gönderin"
+
+#: ../GNOME_BlogApplet.xml.h:1
+msgid "_About..."
+msgstr "_Hakkında..."
+
+#: ../GNOME_BlogApplet.xml.h:2
+msgid "_Preferences..."
+msgstr "_Tercihler..."
+
+#: ../blog_applet.py:34
+msgid "About"
+msgstr "Hakkında"
+
+#: ../blog_applet.py:37
+msgid "Blog"
+msgstr "Blog"
+
+#: ../blog_applet.py:89
+msgid "A GNOME Web Blogging Applet"
+msgstr "Bir GNOME Web Blog Yazma Uygulamacığı"
+
+#: ../blog_applet.py:91
+msgid "translator-credits"
+msgstr "Server Acim"
+
+#: ../blog_applet.py:128
+#, python-format
+msgid "Create a blog entry for %s at %s"
+msgstr "%s için %s konumunda bir blog girdisi oluştur"
+
+#: ../blog_poster.py:44
+msgid "_Post Entry"
+msgstr "_Girdi Gönder"
+
+#: ../blog_poster.py:69
+msgid "Preferences..."
+msgstr "Tercihler..."
+
+#: ../blog_poster.py:81
+msgid "Title:"
+msgstr "Başlık:"
+
+#: ../blog_poster.py:88
+msgid "Tags:"
+msgstr "Etiketler:"
+
+#: ../blog_poster.py:109
+msgid "Post Blog Entry"
+msgstr "Blog Girdisi Gönder"
+
+#: ../blog_poster.py:133
+msgid "Couldn't upload images"
+msgstr "Resimler yüklenemedi"
+
+#: ../blog_poster.py:133
+msgid "The blog protocol in use does not support uploading images"
+msgstr "Kullanılmakta olan blog iletişim kuralı resim yüklemeyi desteklemiyor"
+
+#: ../blog_poster.py:183
+msgid "Blog Entry is Blank"
+msgstr "Blog Girdisi Boş"
+
+#: ../blog_poster.py:183
+msgid ""
+"No text was entered in the blog entry box. Please enter some text and try "
+"again"
+msgstr ""
+"Blog giriş kutusuna metin girilmedi. Lütfen bir metin yazın ve tekrar deneyin"
+
+#: ../blogger_prefs.py:19
+msgid "Blogger Preferences"
+msgstr "Blogger Tercihleri"
+
+#: ../blogger_prefs.py:39
+msgid "Self-Run MovableType"
+msgstr "Kendi MovableType Kurulumunuz"
+
+#: ../blogger_prefs.py:40
+msgid "Self-Run Pyblosxom"
+msgstr "Kendi Pyblosxom Kurulumunuz"
+
+#: ../blogger_prefs.py:41
+msgid "Self-Run WordPress"
+msgstr "Kendi WordPress Kurulumunuz"
+
+#: ../blogger_prefs.py:42
+msgid "Self-Run Other"
+msgstr "Diğer Kurulumlarınız"
+
+#: ../blogger_prefs.py:46
+msgid "Blog Type:"
+msgstr "Blog Türü:"
+
+#: ../blogger_prefs.py:56
+msgid "Blog Protocol:"
+msgstr "Blog İletişim Kuralı:"
+
+#: ../blogger_prefs.py:60 ../blogger_prefs.py:122 ../blogger_prefs.py:127
+#: ../blogger_prefs.py:132
+msgid "Base Blog URL:"
+msgstr "Ana Blog URL adresi:"
+
+#: ../blogger_prefs.py:62
+msgid "Blog Name:"
+msgstr "Blog Adı:"
+
+#: ../blogger_prefs.py:64
+msgid "Lookup Blogs"
+msgstr "Blogları Ara"
+
+#: ../blogger_prefs.py:74
+msgid "Username:"
+msgstr "Kullanıcı Adı:"
+
+#: ../blogger_prefs.py:75
+msgid "Password:"
+msgstr "Parola:"
+
+#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:147
+#: ../blogger_prefs.py:153
+msgid "XML-RPC URL:"
+msgstr "XML-RPC URL Adresi:"
+
+#: ../blogger_prefs.py:142
+msgid "ATOM-based"
+msgstr "ATOM temelli"
+
+#: ../blogger_prefs.py:161
+msgid "Unknown blog type"
+msgstr "Bilinmeyen blog türü"
+
+#: ../blogger_prefs.py:161
+msgid "The detected blog type is not among the list of supported blogs"
+msgstr "Algılanan blog türü desteklenen bloglar arasında değildir"
+
+#: ../gnome-blog.desktop.in.in.h:2
+msgid "Post an entry to a web log"
+msgstr "Web günlüğüne bir girdi gönderin"
+
+#: ../gnomeblog.schemas.in.h:1
+msgid "Password to use in accessing the blog"
+msgstr "Bloga girerken kullanılacak parola"
+
+#: ../gnomeblog.schemas.in.h:2
+msgid "Protocol to use in accessing the blog"
+msgstr "Bloga girmek için kullanılan iletişim kuralı"
+
+#: ../gnomeblog.schemas.in.h:3
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr "Ana URL adresine eklenecek olan sonek (örneğin \"xmlrpc.cgi\")"
+
+#: ../gnomeblog.schemas.in.h:4
+msgid "The application's preferences have been initialized"
+msgstr "Uygulama tercihleri ilklendirildi"
+
+#: ../gnomeblog.schemas.in.h:5
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr "XML-RPC sunucusunda kullanılacak olan blogun kimliği veya adı"
+
+#: ../gnomeblog.schemas.in.h:6
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr "BloggerAPI uyumlu XML-RPC sunucusunun URL adresi"
+
+#: ../gnomeblog.schemas.in.h:7
+msgid "Username to use in accessing the blog"
+msgstr "Bloga girerken kullanılacak kullanıcı adı"
+
+#: ../hig_alert.py:15
+#, python-format
+msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
+msgstr ""
+"'%s' URL adresi geçerli bir bloggerAPI'ye ait olmayabilir. XML-RPC Sunucusu "
+"raporuna göre: %s."
+
+#: ../hig_alert.py:17
+#, python-format
+msgid ""
+"Unknown username %s or password trying to post blog entry to XML-RPC server "
+"%s."
+msgstr ""
+"Bilinmeyen kullanıcı adı %s veya parola ile XML-RPC suncusu %s'e bir blog "
+"girdisi göndermeye çalışılıyor."
+
+#: ../hig_alert.py:19
+#, python-format
+msgid ""
+"Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
+"reported: %s."
+msgstr ""
+"'%s' bloguna ('%s' bloggerAPI XML-RPC sunucusunda) girdi gönderilemiyor. "
+"Sunucu raporuna göre: %s."
+
+#: ../hig_alert.py:21
+#, python-format
+msgid ""
+"The bloggerAPI server (%s) reported an error I don't understand: '%s, %s'. \n"
+"\n"
+"Please email this error message to seth@gnome.org so I can address it."
+msgstr ""
+"BloggerAPI sunucusu (%s) anlamadığım bir hata gönderdi: '%s, %s'. \n"
+"\n"
+"Lütfen bu hata mesajını seth@gnome.org adresine gönderiniz; böylece, bununla "
+"ilgilenebilirim."
+
+#: ../protocols/advogato.py:27 ../protocols/advogato.py:30
+#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:61
+#: ../protocols/bloggerAPI.py:89 ../protocols/livejournal.py:35
+#: ../protocols/livejournal.py:64
+msgid "Could not post Blog entry"
+msgstr "Blog girdisi gönderilemedi"
+
+#: ../protocols/advogato.py:27
+msgid "Your username is invalid. Please double-check the preferences."
+msgstr ""
+"Kullanıcı adınız geçersiz. Lütfen tercihleri bir kez daha kontrol ediniz."
+
+#: ../protocols/advogato.py:30 ../protocols/livejournal.py:35
+msgid ""
+"Your username or password is invalid. Please double-check the preferences."
+msgstr ""
+"Kullanıcı adı veya parolanız geçersiz. Lütfen tercihleri bir kez daha "
+"kontrol ediniz."
+
+#: ../protocols/advogato.py:39 ../protocols/bloggerAPI.py:86
+#: ../protocols/livejournal.py:61
+msgid "Could not post blog entry"
+msgstr "Blog girdisi gönderilemedi"
+
+#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:38
+#: ../protocols/bloggerAPI.py:89
+#, python-format
+msgid ""
+"URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
+"reported: %s."
+msgstr ""
+"URL adresi '%s', geçerli bir bloggerAPI XML-RPC sunucusu gibi görünmüyor. "
+"Web sunucusu raporuna göre: %s."
+
+#. TODO: consider GNOME proxy configurations, as in bloggerAPI.py
+#: ../protocols/atomBloggerAPI.py:24
+msgid "Could not get list of blogs."
+msgstr "Blogların listesi alınamadı."
+
+#: ../protocols/atomBloggerAPI.py:29 ../protocols/atomBloggerAPI.py:99
+msgid "A captcha was required for authentication."
+msgstr "Kimlik doğrulaması için bir görsel doğrulama kodu istendi."
+
+#: ../protocols/atomBloggerAPI.py:32 ../protocols/atomBloggerAPI.py:102
+msgid "Username or password was invalid."
+msgstr "Kullanıcı adı veya parola geçersiz."
+
+#: ../protocols/atomBloggerAPI.py:35 ../protocols/atomBloggerAPI.py:105
+#, python-format
+msgid "Failed to login: %s"
+msgstr "Giriş yapılamadı: %s"
+
+#: ../protocols/atomBloggerAPI.py:38 ../protocols/atomBloggerAPI.py:108
+#, python-format
+msgid "Socket error: %s.  Perhaps try again."
+msgstr "Yuva (soket) hatası: %s.  Lütfen tekrar deneyin."
+
+#. No blogs found
+#: ../protocols/atomBloggerAPI.py:45
+msgid "No Blogs Found"
+msgstr "Hiç Blog Bulunamadı"
+
+#: ../protocols/atomBloggerAPI.py:45
+#, python-format
+msgid "No errors were reported, but no blogs were found at %s for %s\n"
+msgstr ""
+"Hiç hata bildirilmedi, fakat %s konumunda %s için bir blog bulunamadı\n"
+
+#: ../protocols/atomBloggerAPI.py:95
+msgid "Could not post entry."
+msgstr "Girdi gönderilemedi."
+
+#: ../protocols/atomBloggerAPI.py:115
+#, python-format
+msgid "Failed to post: %s"
+msgstr "Gönderilemedi: %s"
+
+#: ../protocols/bloggerAPI.py:35 ../protocols/bloggerAPI.py:38
+msgid "Could not get list of blogs"
+msgstr "Bloglar listesi alınamadı"
+
+#: ../protocols/bloggerAPI.py:61
+msgid ""
+"No XML-RPC server URL to post blog entries to is set, or the value could not "
+"be retrieved from GConf. Your entry will remain in the blogger window."
+msgstr ""
+"Blog girdilerinin gönderilmesi için hiç bir XML-RPC sunucu adresi "
+"ayarlanmamış veya GConf'da buna denk bir değer bulunamadı. Girdiniz blogger "
+"penceresinde duracak."
+
+#: ../protocols/livejournal.py:64
+#, python-format
+msgid ""
+"URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
+"reported: %s."
+msgstr ""
+"'%s' URL adresi, geçerli bir LiveJournal XML-RPC sunucusuymuş gibi "
+"görünmüyor. Web sunucusu raporuna göre: %s."
+
+#: ../rich_entry.py:144 ../rich_entry.py:152
+msgid "Could not load dragged in image"
+msgstr "Sürüklenmiş resim yüklenemedi"
+
+#: ../rich_entry.py:145 ../rich_entry.py:153
+#, python-format
+msgid "Error loading %s was: %s"
+msgstr "%s yüklenirken oluşan hata: %s"
+
+#: ../rich_entry.py:210
+msgid "Add _Link..."
+msgstr "_Bağlantı Ekle..."
+
+#: ../rich_entry.py:215
+msgid "Add Link"
+msgstr "Bağlantı Ekle"
+
+#: ../rich_entry.py:218
+msgid "_Add Link"
+msgstr "Bağlantı _Ekle"
+
+#: ../rich_entry.py:226
+msgid "Text:"
+msgstr "Metin:"
+
+#: ../rich_entry.py:229
+msgid "URL:"
+msgstr "URL Adresi:"

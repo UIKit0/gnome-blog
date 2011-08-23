@@ -1,8 +1,8 @@
 # Serbian translation of gnome-blog
 # Courtesy of Prevod.org team (http://prevod.org/) -- 2003, 2004.
 # This file is distributed under the same license as the gnome-blog package.
-# Maintainer: Данило Шеган <dsegan@gmx.net>
-# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2011.
+# Maintainer: Danilo Šegan <dsegan@gmx.net>
+# Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
@@ -10,7 +10,7 @@ msgstr ""
 "blog&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2011-07-27 20:06+0000\n"
 "PO-Revision-Date: 2011-07-21 23:52+0200\n"
-"Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
+"Last-Translator: Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,189 +23,189 @@ msgstr ""
 
 #: ../GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
-msgstr "Прибори"
+msgstr "Pribori"
 
 #: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.in.h:1
 msgid "Blog Entry Poster"
-msgstr "Слање уноса у блогче"
+msgstr "Slanje unosa u blogče"
 
 #: ../GNOME_BlogApplet.server.in.in.h:3
 msgid "Post entries to a web log"
-msgstr "Пошаљи уносе у блогче"
+msgstr "Pošalji unose u blogče"
 
 #: ../GNOME_BlogApplet.xml.h:1
 msgid "_About..."
-msgstr "_О програму..."
+msgstr "_O programu..."
 
 #: ../GNOME_BlogApplet.xml.h:2
 msgid "_Preferences..."
-msgstr "_Поставке"
+msgstr "_Postavke"
 
 #: ../blog_applet.py:34
 msgid "About"
-msgstr "О програму"
+msgstr "O programu"
 
 #: ../blog_applet.py:37
 msgid "Blog"
-msgstr "Блогче"
+msgstr "Blogče"
 
 #: ../blog_applet.py:89
 msgid "A GNOME Web Blogging Applet"
-msgstr "Гномово програмче за блогчење"
+msgstr "Gnomovo programče za blogčenje"
 
 #: ../blog_applet.py:91
 msgid "translator-credits"
-msgstr "Српски преводилачки тим — <http://prevod.org/>"
+msgstr "Srpski prevodilački tim — <http://prevod.org/>"
 
 #: ../blog_applet.py:128
 #, python-format
 msgid "Create a blog entry for %s at %s"
-msgstr "Састави унос блогчета за корисника „%s“ на %s"
+msgstr "Sastavi unos blogčeta za korisnika „%s“ na %s"
 
 #: ../blog_poster.py:44
 msgid "_Post Entry"
-msgstr "_Пошаљи унос"
+msgstr "_Pošalji unos"
 
 #: ../blog_poster.py:69
 msgid "Preferences..."
-msgstr "Поставке..."
+msgstr "Postavke..."
 
 #: ../blog_poster.py:81
 msgid "Title:"
-msgstr "Наслов:"
+msgstr "Naslov:"
 
 #: ../blog_poster.py:88
 msgid "Tags:"
-msgstr "Ознаке:"
+msgstr "Oznake:"
 
 #: ../blog_poster.py:109
 msgid "Post Blog Entry"
-msgstr "Пошаљи унос блогчета"
+msgstr "Pošalji unos blogčeta"
 
 #: ../blog_poster.py:133
 msgid "Couldn't upload images"
-msgstr "Не могу да пошаљем слике"
+msgstr "Ne mogu da pošaljem slike"
 
 #: ../blog_poster.py:133
 msgid "The blog protocol in use does not support uploading images"
-msgstr "Протокол за блогче који се користи не подржава слање слика"
+msgstr "Protokol za blogče koji se koristi ne podržava slanje slika"
 
 #: ../blog_poster.py:183
 msgid "Blog Entry is Blank"
-msgstr "Унос у блогче је празан"
+msgstr "Unos u blogče je prazan"
 
 #: ../blog_poster.py:183
 msgid ""
 "No text was entered in the blog entry box. Please enter some text and try "
 "again"
 msgstr ""
-"Текст није унет у пољу за унос блогчета. Молим унесите неки текст и "
-"покушајте поново"
+"Tekst nije unet u polju za unos blogčeta. Molim unesite neki tekst i "
+"pokušajte ponovo"
 
 #: ../blogger_prefs.py:19
 msgid "Blogger Preferences"
-msgstr "Поставке Блогера"
+msgstr "Postavke Blogera"
 
 #: ../blogger_prefs.py:39
 msgid "Self-Run MovableType"
-msgstr "Самопокретачка Преместива врста"
+msgstr "Samopokretačka Premestiva vrsta"
 
 #: ../blogger_prefs.py:40
 msgid "Self-Run Pyblosxom"
-msgstr "Самопокретачка Пиблосксом"
+msgstr "Samopokretačka Piblosksom"
 
 #: ../blogger_prefs.py:41
 msgid "Self-Run WordPress"
-msgstr "Самопокретачка Светска штампа"
+msgstr "Samopokretačka Svetska štampa"
 
 #: ../blogger_prefs.py:42
 msgid "Self-Run Other"
-msgstr "Самопокретачки Остали"
+msgstr "Samopokretački Ostali"
 
 #: ../blogger_prefs.py:46
 msgid "Blog Type:"
-msgstr "Врста блогчета:"
+msgstr "Vrsta blogčeta:"
 
 #: ../blogger_prefs.py:56
 msgid "Blog Protocol:"
-msgstr "Протокол блогчета:"
+msgstr "Protokol blogčeta:"
 
 #: ../blogger_prefs.py:60 ../blogger_prefs.py:122 ../blogger_prefs.py:127
 #: ../blogger_prefs.py:132
 msgid "Base Blog URL:"
-msgstr "Основна адреса блогчета:"
+msgstr "Osnovna adresa blogčeta:"
 
 #: ../blogger_prefs.py:62
 msgid "Blog Name:"
-msgstr "Име блогчета:"
+msgstr "Ime blogčeta:"
 
 #: ../blogger_prefs.py:64
 msgid "Lookup Blogs"
-msgstr "Пронађи блогчад"
+msgstr "Pronađi blogčad"
 
 #: ../blogger_prefs.py:74
 msgid "Username:"
-msgstr "Корисник:"
+msgstr "Korisnik:"
 
 #: ../blogger_prefs.py:75
 msgid "Password:"
-msgstr "Лозинка:"
+msgstr "Lozinka:"
 
 #: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:147
 #: ../blogger_prefs.py:153
 msgid "XML-RPC URL:"
-msgstr "ХМЛ-РПЦ адреса:"
+msgstr "HML-RPC adresa:"
 
 #: ../blogger_prefs.py:142
 msgid "ATOM-based"
-msgstr "Засновано на АТОМ-у"
+msgstr "Zasnovano na ATOM-u"
 
 #: ../blogger_prefs.py:161
 msgid "Unknown blog type"
-msgstr "Непозната врста блогчета"
+msgstr "Nepoznata vrsta blogčeta"
 
 #: ../blogger_prefs.py:161
 msgid "The detected blog type is not among the list of supported blogs"
-msgstr "Откривена врста блогчета се не налази на списку подржаних блогчади"
+msgstr "Otkrivena vrsta blogčeta se ne nalazi na spisku podržanih blogčadi"
 
 #: ../gnome-blog.desktop.in.in.h:2
 msgid "Post an entry to a web log"
-msgstr "Пошаљите унос у блогче"
+msgstr "Pošaljite unos u blogče"
 
 #: ../gnomeblog.schemas.in.h:1
 msgid "Password to use in accessing the blog"
-msgstr "Лозинка за приступ блогчету"
+msgstr "Lozinka za pristup blogčetu"
 
 #: ../gnomeblog.schemas.in.h:2
 msgid "Protocol to use in accessing the blog"
-msgstr "Протокол за приступ блогчету"
+msgstr "Protokol za pristup blogčetu"
 
 #: ../gnomeblog.schemas.in.h:3
 msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
-msgstr "Додатак који се качи на основну адресу (нпр. „xmlrpc.cgi“)"
+msgstr "Dodatak koji se kači na osnovnu adresu (npr. „xmlrpc.cgi“)"
 
 #: ../gnomeblog.schemas.in.h:4
 msgid "The application's preferences have been initialized"
-msgstr "Учитане су поставке програма"
+msgstr "Učitane su postavke programa"
 
 #: ../gnomeblog.schemas.in.h:5
 msgid "The id or name of the particular blog to use on the XML-RPC server"
 msgstr ""
-"Идентификатор или име одређеног блогчета за коришћење на ХМЛ-РПЦ серверу"
+"Identifikator ili ime određenog blogčeta za korišćenje na HML-RPC serveru"
 
 #: ../gnomeblog.schemas.in.h:6
 msgid "URL to the bloggerAPI compatible XML-RPC server"
-msgstr "Адреса ХМЛ-РПЦ сервера сагласаног са блогерАПИ-јем"
+msgstr "Adresa HML-RPC servera saglasanog sa blogerAPI-jem"
 
 #: ../gnomeblog.schemas.in.h:7
 msgid "Username to use in accessing the blog"
-msgstr "Корисничко име за приступ блогчету"
+msgstr "Korisničko ime za pristup blogčetu"
 
 #: ../hig_alert.py:15
 #, python-format
 msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
 msgstr ""
-"Адреса „%s“ можда није исправан блогерАПИ. ХМЛ-РПЦ сервер извештава: %s."
+"Adresa „%s“ možda nije ispravan blogerAPI. HML-RPC server izveštava: %s."
 
 #: ../hig_alert.py:17
 #, python-format
@@ -213,8 +213,8 @@ msgid ""
 "Unknown username %s or password trying to post blog entry to XML-RPC server %"
 "s."
 msgstr ""
-"Непознато корисничко име „%s“ или лозинка при покушају слања уноса блогчета "
-"на ХМЛ-РПЦ сервер „%s“."
+"Nepoznato korisničko ime „%s“ ili lozinka pri pokušaju slanja unosa blogčeta "
+"na HML-RPC server „%s“."
 
 #: ../hig_alert.py:19
 #, python-format
@@ -222,8 +222,8 @@ msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
 "reported: %s."
 msgstr ""
-"Не могу да пошаљем у блогче „%s“ на блогерАПИ ХМЛ-РПЦ серверу „%s“. Сервер "
-"је пријавио: %s."
+"Ne mogu da pošaljem u blogče „%s“ na blogerAPI HML-RPC serveru „%s“. Server "
+"je prijavio: %s."
 
 #: ../hig_alert.py:21
 #, python-format
@@ -232,31 +232,31 @@ msgid ""
 "\n"
 "Please email this error message to seth@gnome.org so I can address it."
 msgstr ""
-"Блогер-АПИ сервер (%s) је пријавио грешку коју не разумем: „%s, %s“. \n"
+"Bloger-API server (%s) je prijavio grešku koju ne razumem: „%s, %s“. \n"
 "\n"
-"Молим пошаљите е-поштом ову поруку о грешци на „seth@gnome.org“ како би "
-"могао да је обрадим."
+"Molim pošaljite e-poštom ovu poruku o grešci na „seth@gnome.org“ kako bi "
+"mogao da je obradim."
 
 #: ../protocols/advogato.py:27 ../protocols/advogato.py:30
 #: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:61
 #: ../protocols/bloggerAPI.py:89 ../protocols/livejournal.py:35
 #: ../protocols/livejournal.py:64
 msgid "Could not post Blog entry"
-msgstr "Не могу да пошаљем унос у блогче"
+msgstr "Ne mogu da pošaljem unos u blogče"
 
 #: ../protocols/advogato.py:27
 msgid "Your username is invalid. Please double-check the preferences."
-msgstr "Ваше корисничко име је неисправно. Проверите поставке."
+msgstr "Vaše korisničko ime je neispravno. Proverite postavke."
 
 #: ../protocols/advogato.py:30 ../protocols/livejournal.py:35
 msgid ""
 "Your username or password is invalid. Please double-check the preferences."
-msgstr "Ваше корисничко име или лозинка су неисправни. Проверите поставке."
+msgstr "Vaše korisničko ime ili lozinka su neispravni. Proverite postavke."
 
 #: ../protocols/advogato.py:39 ../protocols/bloggerAPI.py:86
 #: ../protocols/livejournal.py:61
 msgid "Could not post blog entry"
-msgstr "Не могу да пошаљем унос у блогче"
+msgstr "Ne mogu da pošaljem unos u blogče"
 
 #: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:38
 #: ../protocols/bloggerAPI.py:89
@@ -265,62 +265,62 @@ msgid ""
 "URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
 "reported: %s."
 msgstr ""
-"Адреса „%s“ изгледа да није исправан блогерАПИ ХМЛ-РПЦ сервер. Веб сервер је "
-"пријавио: %s."
+"Adresa „%s“ izgleda da nije ispravan blogerAPI HML-RPC server. Veb server je "
+"prijavio: %s."
 
 #. TODO: consider GNOME proxy configurations, as in bloggerAPI.py
 #: ../protocols/atomBloggerAPI.py:24
 msgid "Could not get list of blogs."
-msgstr "Не могу да добавим списак блогчади."
+msgstr "Ne mogu da dobavim spisak blogčadi."
 
 #: ../protocols/atomBloggerAPI.py:29 ../protocols/atomBloggerAPI.py:99
 msgid "A captcha was required for authentication."
-msgstr "Била је потребна стопка за потврђивање идентитета."
+msgstr "Bila je potrebna stopka za potvrđivanje identiteta."
 
 #: ../protocols/atomBloggerAPI.py:32 ../protocols/atomBloggerAPI.py:102
 msgid "Username or password was invalid."
-msgstr "Корисничко име или лозинка бејаху неисправни."
+msgstr "Korisničko ime ili lozinka bejahu neispravni."
 
 #: ../protocols/atomBloggerAPI.py:35 ../protocols/atomBloggerAPI.py:105
 #, python-format
 msgid "Failed to login: %s"
-msgstr "Нисам успео да се пријавим: %s"
+msgstr "Nisam uspeo da se prijavim: %s"
 
 #: ../protocols/atomBloggerAPI.py:38 ../protocols/atomBloggerAPI.py:108
 #, python-format
 msgid "Socket error: %s.  Perhaps try again."
-msgstr "Грешка прикључка: %s.  Покушате поново."
+msgstr "Greška priključka: %s.  Pokušate ponovo."
 
 #. No blogs found
 #: ../protocols/atomBloggerAPI.py:45
 msgid "No Blogs Found"
-msgstr "Нисам пронашао Блогчад"
+msgstr "Nisam pronašao Blogčad"
 
 #: ../protocols/atomBloggerAPI.py:45
 #, python-format
 msgid "No errors were reported, but no blogs were found at %s for %s\n"
-msgstr "Нема пријављених грешака, али нисам нашао блогчад на „%s“ за „%s“\n"
+msgstr "Nema prijavljenih grešaka, ali nisam našao blogčad na „%s“ za „%s“\n"
 
 #: ../protocols/atomBloggerAPI.py:95
 msgid "Could not post entry."
-msgstr "Не могу да пошаљем унос."
+msgstr "Ne mogu da pošaljem unos."
 
 #: ../protocols/atomBloggerAPI.py:115
 #, python-format
 msgid "Failed to post: %s"
-msgstr "Не могу да објавим: %s"
+msgstr "Ne mogu da objavim: %s"
 
 #: ../protocols/bloggerAPI.py:35 ../protocols/bloggerAPI.py:38
 msgid "Could not get list of blogs"
-msgstr "Не могу да добавим списак блогчади"
+msgstr "Ne mogu da dobavim spisak blogčadi"
 
 #: ../protocols/bloggerAPI.py:61
 msgid ""
 "No XML-RPC server URL to post blog entries to is set, or the value could not "
 "be retrieved from GConf. Your entry will remain in the blogger window."
 msgstr ""
-"Није подешена адреса ХМЛ-РПЦ сервера за слање у блогче, или се не може "
-"преузети вредност из ГКонфа. Ваш унос ће остати у прозору блогчетара."
+"Nije podešena adresa HML-RPC servera za slanje u blogče, ili se ne može "
+"preuzeti vrednost iz GKonfa. Vaš unos će ostati u prozoru blogčetara."
 
 #: ../protocols/livejournal.py:64
 #, python-format
@@ -328,50 +328,50 @@ msgid ""
 "URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
 "reported: %s."
 msgstr ""
-"Адреса „%s“ изгледа не представља исправан ЛајвЖурнал ХМЛ-РПЦ сервер. Веб "
-"сервер је пријавио: %s."
+"Adresa „%s“ izgleda ne predstavlja ispravan LajvŽurnal HML-RPC server. Veb "
+"server je prijavio: %s."
 
 #: ../rich_entry.py:144 ../rich_entry.py:152
 msgid "Could not load dragged in image"
-msgstr "Не могу да учитам превучену слику"
+msgstr "Ne mogu da učitam prevučenu sliku"
 
 #: ../rich_entry.py:145 ../rich_entry.py:153
 #, python-format
 msgid "Error loading %s was: %s"
-msgstr "Грешка при учитавању „%s“ је била: %s"
+msgstr "Greška pri učitavanju „%s“ je bila: %s"
 
 #: ../rich_entry.py:210
 msgid "Add _Link..."
-msgstr "Додај _везу..."
+msgstr "Dodaj _vezu..."
 
 #: ../rich_entry.py:215
 msgid "Add Link"
-msgstr "Додај везу"
+msgstr "Dodaj vezu"
 
 #: ../rich_entry.py:218
 msgid "_Add Link"
-msgstr "Додај _везу"
+msgstr "Dodaj _vezu"
 
 #: ../rich_entry.py:226
 msgid "Text:"
-msgstr "Текст:"
+msgstr "Tekst:"
 
 #: ../rich_entry.py:229
 msgid "URL:"
-msgstr "Адреса:"
+msgstr "Adresa:"
 
 #~ msgid "Blog Base URL:"
-#~ msgstr "Основна адреса блогчета:"
+#~ msgstr "Osnovna adresa blogčeta:"
 
 #~ msgid "Post blog entries to Blogger.com"
-#~ msgstr "Пошаљи унос у блогче на Blogger.com"
+#~ msgstr "Pošalji unos u blogče na Blogger.com"
 
 #~ msgid "bloggerAPI"
 #~ msgstr "bloggerAPI"
 
 # bug: hard to translate
 #~ msgid " at "
-#~ msgstr " на "
+#~ msgstr " na "
 
 #~ msgid "Blogging Tool"
-#~ msgstr "Алат за блогчетање"
+#~ msgstr "Alat za blogčetanje"

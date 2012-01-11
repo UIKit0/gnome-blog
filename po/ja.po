@@ -6,10 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog trunk\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-15 14:57+0900\n"
-"PO-Revision-Date: 2010-05-15 14:57+0900\n"
-"Last-Translator: Takeshi AIHANA <aihana@gnome.gr.jp>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"blog&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-08-23 18:22+0000\n"
+"PO-Revision-Date: 2012-01-01 19:55+0900\n"
+"Last-Translator: Jiro Matsuzawa <jmatsuzawa@src.gnome.org>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -141,7 +142,7 @@ msgstr "ブログの検索"
 
 #: ../blogger_prefs.py:74
 msgid "Username:"
-msgstr "ユーザ名:"
+msgstr "ユーザー名:"
 
 #: ../blogger_prefs.py:75
 msgid "Password:"
@@ -186,21 +187,21 @@ msgstr "アプリケーションの設定が初期化されました"
 
 #: ../gnomeblog.schemas.in.h:5
 msgid "The id or name of the particular blog to use on the XML-RPC server"
-msgstr "XML-RPC サーバで使用する特定のブログの名前/識別子 ID です"
+msgstr "XML-RPC サーバーで使用する特定のブログの名前/識別子 ID です"
 
 #: ../gnomeblog.schemas.in.h:6
 msgid "URL to the bloggerAPI compatible XML-RPC server"
-msgstr "XML-RPC サーバ互換の bloggerAPI に対する URL です"
+msgstr "XML-RPC サーバー互換の bloggerAPI に対する URL です"
 
 #: ../gnomeblog.schemas.in.h:7
 msgid "Username to use in accessing the blog"
-msgstr "アクセスするブログで使用するユーザ名です"
+msgstr "アクセスするブログで使用するユーザー名です"
 
 #: ../hig_alert.py:15
 #, python-format
 msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
 msgstr ""
-"URL '%s' は正しい bloggerAPI ではないようです。XML-RPC サーバからの報告: %s"
+"URL '%s' は正しい bloggerAPI ではないようです。XML-RPC サーバーからの報告: %s"
 
 #: ../hig_alert.py:17
 #, python-format
@@ -208,8 +209,8 @@ msgid ""
 "Unknown username %s or password trying to post blog entry to XML-RPC server %"
 "s."
 msgstr ""
-"ブログ・エントリを不明なユーザ名 %s あるいは不明なパスワードで XML-RPC サー"
-"バ %s へ投稿しようとしました"
+"ブログ・エントリを不明なユーザー名 %s あるいは不明なパスワードで XML-RPC サー"
+"バー %s へ投稿しようとしました"
 
 #: ../hig_alert.py:19
 #, python-format
@@ -217,8 +218,8 @@ msgid ""
 "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
 "reported: %s."
 msgstr ""
-"ブログ '%s' を Blogger API XML-RPC サーバの '%s' へ投稿できませんでした (サー"
-"バからの報告: %s)"
+"ブログ '%s' を Blogger API XML-RPC サーバーの '%s' へ投稿できませんでした "
+"(サーバーからの報告: %s)"
 
 #: ../hig_alert.py:21
 #, python-format
@@ -227,7 +228,7 @@ msgid ""
 "\n"
 "Please email this error message to seth@gnome.org so I can address it."
 msgstr ""
-"bloggerAPI サーバ (%s) が不明なエラーを報告してきました: '%s, %s'\n"
+"bloggerAPI サーバー (%s) が不明なエラーを報告してきました: '%s, %s'\n"
 "\n"
 "このエラー・メッセージの内容を seth@gnome.org まで送付して下さい。"
 
@@ -240,12 +241,13 @@ msgstr "ブログ・エントリを投稿できませんでした"
 
 #: ../protocols/advogato.py:27
 msgid "Your username is invalid. Please double-check the preferences."
-msgstr "ユーザ名が正しくありません (設定をもう一度確認して下さい)"
+msgstr "ユーザー名が正しくありません (設定をもう一度確認して下さい)"
 
 #: ../protocols/advogato.py:30 ../protocols/livejournal.py:35
 msgid ""
 "Your username or password is invalid. Please double-check the preferences."
-msgstr "ユーザ名とパスワードが正しくありません (設定をもう一度確認して下さい)"
+msgstr ""
+"ユーザー名とパスワードが正しくありません (設定をもう一度確認して下さい)"
 
 #: ../protocols/advogato.py:39 ../protocols/bloggerAPI.py:86
 #: ../protocols/livejournal.py:61
@@ -259,7 +261,8 @@ msgid ""
 "URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
 "reported: %s."
 msgstr ""
-"URL '%s' は正しい bloggerAPI ではないようです (XML-RPC サーバからの報告: %s)"
+"URL '%s' は正しい bloggerAPI ではないようです (XML-RPC サーバーからの報告: %"
+"s)"
 
 #. TODO: consider GNOME proxy configurations, as in bloggerAPI.py
 #: ../protocols/atomBloggerAPI.py:24
@@ -272,7 +275,7 @@ msgstr "認証には CAPTCHA が必要でした。"
 
 #: ../protocols/atomBloggerAPI.py:32 ../protocols/atomBloggerAPI.py:102
 msgid "Username or password was invalid."
-msgstr "ユーザ名またはパスワードが間違っています。"
+msgstr "ユーザー名またはパスワードが間違っています。"
 
 #: ../protocols/atomBloggerAPI.py:35 ../protocols/atomBloggerAPI.py:105
 #, python-format
@@ -314,9 +317,9 @@ msgid ""
 "No XML-RPC server URL to post blog entries to is set, or the value could not "
 "be retrieved from GConf. Your entry will remain in the blogger window."
 msgstr ""
-"ブログ・エントリを投稿する先の XML-RPC サーバ URL がセットされていないか、ま"
-"たはその値を GConf から取得できませんでした (エントリはブログ・ウィンドウの中"
-"に残します)"
+"ブログ・エントリを投稿する先の XML-RPC サーバー URL がセットされていないか、"
+"またはその値を GConf から取得できませんでした (エントリはブログ・ウィンドウの"
+"中に残します)"
 
 #: ../protocols/livejournal.py:64
 #, python-format
@@ -324,8 +327,8 @@ msgid ""
 "URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
 "reported: %s."
 msgstr ""
-"URL '%s' は正しい LiveJournal XML-RPC サーバではないようです (ウェブ・サーバ"
-"からの報告: %s)"
+"URL '%s' は正しい LiveJournal XML-RPC サーバーではないようです (ウェブ・サー"
+"バーからの報告: %s)"
 
 #: ../rich_entry.py:144 ../rich_entry.py:152
 msgid "Could not load dragged in image"

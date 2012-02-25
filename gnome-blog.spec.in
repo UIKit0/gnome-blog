@@ -10,7 +10,6 @@ Source:		%{name}-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 Requires:	gnome-python2-applet >= %{gnome_python2_version}
 Requires:	gnome-python2-gconf  >= %{gnome_python2_version}
-Requires:	gnome-python2-gnomevfs >= %{gnome_python2_version}
 Requires:	pygtk2 >= %{gnome_python2_version}
 
 Prereq:         GConf2

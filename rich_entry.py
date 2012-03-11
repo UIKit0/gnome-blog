@@ -2,7 +2,6 @@ import gtk
 import gtk.gdk
 import pango
 import gobject
-import gnome
 import gio
 
 import gettext

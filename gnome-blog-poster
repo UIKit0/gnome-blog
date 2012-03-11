@@ -3,7 +3,6 @@ import pygtk
 pygtk.require('2.0')
 
 import gtk
-import gnome
 import gconf
 import gettext
 _ = gettext.gettext

@@ -4,7 +4,6 @@ pygtk.require('2.0')
 
 import gtk
 import gobject
-import gnome
 import gnomeapplet
 import gconf
 import string  # maybe someone can do this trick without string?

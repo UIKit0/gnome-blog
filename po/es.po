@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: gnome-blog.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "blog&component=general\n"
-"POT-Creation-Date: 2010-03-04 21:10+0000\n"
+"POT-Creation-Date: 2010-03-07 14:11+0000\n"
 "PO-Revision-Date: 2010-03-07 14:58+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
@@ -253,13 +253,13 @@ msgstr "No se ha pudido publicar la entrada del Blog"
 #: ../protocols/advogato.py:27
 msgid "Your username is invalid. Please double-check the preferences."
 msgstr ""
-"Su nombre de usuario en inválido. Compruebe atentamente las preferencias."
+"Su nombre de usuario no es válido. Compruebe atentamente las preferencias."
 
 #: ../protocols/advogato.py:30 ../protocols/livejournal.py:35
 msgid ""
 "Your username or password is invalid. Please double-check the preferences."
 msgstr ""
-"Su nombre de usuario o contraseñe es inválido. Compruebe las preferencias."
+"Su nombre de usuario o contraseña no son válidos. Compruebe las preferencias."
 
 #: ../protocols/advogato.py:39 ../protocols/bloggerAPI.py:86
 #: ../protocols/livejournal.py:61
@@ -278,7 +278,6 @@ msgstr ""
 
 #. TODO: consider GNOME proxy configurations, as in bloggerAPI.py
 #: ../protocols/atomBloggerAPI.py:24
-#| msgid "Could not get list of blogs"
 msgid "Could not get list of blogs."
 msgstr "No se pudo obtener la lista de blogs."
 
@@ -313,7 +312,6 @@ msgstr ""
 "s\n"
 
 #: ../protocols/atomBloggerAPI.py:95
-#| msgid "Could not post Blog entry"
 msgid "Could not post entry."
 msgstr "No se pudo publicar la entrada."
 

@@ -1,0 +1,352 @@
+# Latvian translation for gnome-blog.
+# Copyright (C) 2012 gnome-blog's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-blog package.
+#
+# Līga Stepe <ligux16x@gmail.com>, 2012.
+# Anita Reitere <nitalynx@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-blog master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-blog&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-07-26 09:12+0000\n"
+"PO-Revision-Date: 2012-08-08 16:38+0300\n"
+"Last-Translator: Anita Reitere <nitalynx@gmail.com>\n"
+"Language-Team: Latviešu <kde-i18n-doc@kde.org>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+"X-Generator: Lokalize 1.0\n"
+
+#: ../GNOME_BlogApplet.server.in.in.h:1
+#: ../gnome-blog.desktop.in.in.h:1
+msgid "Blog Entry Poster"
+msgstr "Emuāra ierakstu nosūtītājs"
+
+#: ../GNOME_BlogApplet.server.in.in.h:2
+msgid "Post entries to a web log"
+msgstr "Nosūtīt emuāra (bloga) ierakstus"
+
+#: ../GNOME_BlogApplet.server.in.in.h:3
+msgid "Accessories"
+msgstr "Piederumi"
+
+#: ../GNOME_BlogApplet.xml.h:1
+msgid "_Preferences..."
+msgstr "_Iestatījumi..."
+
+#: ../GNOME_BlogApplet.xml.h:2
+msgid "_About..."
+msgstr "P_ar..."
+
+#: ../blog_applet.py:33
+msgid "About"
+msgstr "Par"
+
+#: ../blog_applet.py:36
+msgid "Blog"
+msgstr "Emuārs"
+
+#: ../blog_applet.py:88
+msgid "A GNOME Web Blogging Applet"
+msgstr "GNOME emuāru sīklietotne"
+
+#: ../blog_applet.py:90
+msgid "translator-credits"
+msgstr "Līga Stepe"
+
+#: ../blog_applet.py:127
+#, python-format
+msgid "Create a blog entry for %s at %s"
+msgstr "Izveidot ierakstu emuārā %s , kas atrodas %s"
+
+#: ../blog_poster.py:44
+msgid "_Post Entry"
+msgstr "_Nosūtīt ierakstu"
+
+#: ../blog_poster.py:69
+msgid "Preferences..."
+msgstr "Iestatījumi..."
+
+#: ../blog_poster.py:81
+msgid "Title:"
+msgstr "Virsraksts:"
+
+#: ../blog_poster.py:88
+msgid "Tags:"
+msgstr "Birkas:"
+
+#: ../blog_poster.py:109
+msgid "Post Blog Entry"
+msgstr "Nosūtīt emuāra ierakstu"
+
+#: ../blog_poster.py:133
+msgid "Couldn't upload images"
+msgstr "Neizdevās augšupielādēt attēlus"
+
+#: ../blog_poster.py:133
+msgid "The blog protocol in use does not support uploading images"
+msgstr "Izmantotais emuāra protokols neatbalsta attēlu augšupielādi"
+
+#: ../blog_poster.py:183
+msgid "Blog Entry is Blank"
+msgstr "Emuāra ieraksts ir tukšs"
+
+#: ../blog_poster.py:183
+msgid "No text was entered in the blog entry box. Please enter some text and try again"
+msgstr "Emuāra ieraksta laukā netika ievadīts teksts. Lūdzu, ierakstiet tekstu un mēģiniet vēlreiz"
+
+#: ../blogger_prefs.py:19
+msgid "Blogger Preferences"
+msgstr "Blogger iestatījumi"
+
+#: ../blogger_prefs.py:39
+msgid "Self-Run MovableType"
+msgstr "Pašuzturēts MovableType"
+
+#: ../blogger_prefs.py:40
+msgid "Self-Run Pyblosxom"
+msgstr "Pašuzturēts Pyblosxom"
+
+#: ../blogger_prefs.py:41
+msgid "Self-Run WordPress"
+msgstr "Pašuzturēts WordPress"
+
+#: ../blogger_prefs.py:42
+msgid "Self-Run Other"
+msgstr "Pašuzturēts cits"
+
+#: ../blogger_prefs.py:46
+msgid "Blog Type:"
+msgstr "Emuāra veids:"
+
+#: ../blogger_prefs.py:56
+msgid "Blog Protocol:"
+msgstr "Emuāra protokols:"
+
+#: ../blogger_prefs.py:60
+#: ../blogger_prefs.py:122
+#: ../blogger_prefs.py:127
+#: ../blogger_prefs.py:132
+msgid "Base Blog URL:"
+msgstr "Pamata emuāra URL:"
+
+#: ../blogger_prefs.py:62
+msgid "Blog Name:"
+msgstr "Emuāra nosaukums:"
+
+#: ../blogger_prefs.py:64
+msgid "Lookup Blogs"
+msgstr "Meklēt emuārus"
+
+#: ../blogger_prefs.py:74
+msgid "Username:"
+msgstr "Lietotājvārds:"
+
+#: ../blogger_prefs.py:75
+msgid "Password:"
+msgstr "Parole:"
+
+#: ../blogger_prefs.py:117
+#: ../blogger_prefs.py:137
+#: ../blogger_prefs.py:147
+#: ../blogger_prefs.py:153
+msgid "XML-RPC URL:"
+msgstr "XML-RPC URL:"
+
+#: ../blogger_prefs.py:142
+msgid "ATOM-based"
+msgstr "ATOM-veida"
+
+#: ../blogger_prefs.py:161
+msgid "Unknown blog type"
+msgstr "Nezināms emuāra veids"
+
+#: ../blogger_prefs.py:161
+msgid "The detected blog type is not among the list of supported blogs"
+msgstr "Atpazītais emuāra veids nav atbalstīto emuāru sarakstā"
+
+#: ../gnome-blog.desktop.in.in.h:2
+msgid "Post an entry to a web log"
+msgstr "Nosūtīt emuāra ierakstu"
+
+#: ../gnomeblog.schemas.in.h:1
+msgid "The application's preferences have been initialized"
+msgstr "Lietotnes iestatījumi ir inicializēti"
+
+#: ../gnomeblog.schemas.in.h:2
+msgid "Username to use in accessing the blog"
+msgstr "Lietotājvārds, lai piekļūtu emuāram"
+
+#: ../gnomeblog.schemas.in.h:3
+msgid "Password to use in accessing the blog"
+msgstr "Parole, lai piekļūtu emuāram"
+
+#: ../gnomeblog.schemas.in.h:4
+msgid "Protocol to use in accessing the blog"
+msgstr "Protokols, lai piekļūtu emuāram"
+
+#: ../gnomeblog.schemas.in.h:5
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr "Konkrētā emuāra ID vai nosaukums, ko izmantot ar XML-RPC serveri"
+
+#: ../gnomeblog.schemas.in.h:6
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr "bloggerAPI saderīga XML-RPC servera URL"
+
+#: ../gnomeblog.schemas.in.h:7
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr "Sufikss, kas jāpievieno pamata URL (piemēram, \"xmlrpc.cgi\")"
+
+#: ../hig_alert.py:15
+#, python-format
+msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
+msgstr "URL “%s” var nebūt derīgs bloggerAPI. XML-RPC serveris atbildēja — %s."
+
+#: ../hig_alert.py:17
+#, python-format
+msgid "Unknown username %s or password trying to post blog entry to XML-RPC server %s."
+msgstr "Nezināms lietotājvārds %s vai parole, mēģinot nosūtīt emuāra ierakstu XML-RPC serverim %s."
+
+#: ../hig_alert.py:19
+#, python-format
+msgid "Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server reported: %s."
+msgstr "Neizdevās nosūtīt emuāram “%s” uz bloggerAPI XML-RPC serveri “%s”. Serveris atbildēja — %s."
+
+#: ../hig_alert.py:21
+#, python-format
+msgid ""
+"The bloggerAPI server (%s) reported an error I don't understand: '%s, %s'. \n"
+"\n"
+"Please email this error message to seth@gnome.org so I can address it."
+msgstr ""
+"bloggerAPI serveris (%s) ziņoja par man nepazīstamu kļūdu — “%s, %s”. \n"
+"\n"
+"Lūdzu, nosūtiet e-pasta ziņojumu ar šo kļūdu uz seth@gnome.org, lai kļūdu varētu pareizi apstrādāt."
+
+#: ../protocols/advogato.py:27
+#: ../protocols/advogato.py:30
+#: ../protocols/advogato.py:42
+#: ../protocols/bloggerAPI.py:61
+#: ../protocols/bloggerAPI.py:89
+#: ../protocols/livejournal.py:35
+#: ../protocols/livejournal.py:64
+msgid "Could not post Blog entry"
+msgstr "Neizdevās nosūtīt emuāra ierakstu"
+
+#: ../protocols/advogato.py:27
+msgid "Your username is invalid. Please double-check the preferences."
+msgstr "Jūsu lietotājvārds ir nepareizs. Lūdzu, vēlreiz pārbaudiet iestatījumus."
+
+#: ../protocols/advogato.py:30
+#: ../protocols/livejournal.py:35
+msgid "Your username or password is invalid. Please double-check the preferences."
+msgstr "Jūsu lietotājvārds vai parole ir nepareiza. Lūdzu, vēlreiz pārbaudiet iestatījumus."
+
+#: ../protocols/advogato.py:39
+#: ../protocols/bloggerAPI.py:86
+#: ../protocols/livejournal.py:61
+msgid "Could not post blog entry"
+msgstr "Neizdevās nosūtīt emuāra ierakstu"
+
+#: ../protocols/advogato.py:42
+#: ../protocols/bloggerAPI.py:38
+#: ../protocols/bloggerAPI.py:89
+#, python-format
+msgid "URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server reported: %s."
+msgstr "Šķiet, URL “%s” nav derīgs bloggerAPI XML-RPC serveris. Tīmekļa serveris atbildēja — %s."
+
+#. TODO: consider GNOME proxy configurations, as in bloggerAPI.py
+#: ../protocols/atomBloggerAPI.py:24
+msgid "Could not get list of blogs."
+msgstr "Neizdevās iegūt emuāru sarakstu."
+
+#: ../protocols/atomBloggerAPI.py:29
+#: ../protocols/atomBloggerAPI.py:99
+msgid "A captcha was required for authentication."
+msgstr "Autentifikācijai bija vajadzīga CAPTCHA pārbaude."
+
+#: ../protocols/atomBloggerAPI.py:32
+#: ../protocols/atomBloggerAPI.py:102
+msgid "Username or password was invalid."
+msgstr "Lietotājvārds vai parole ir nepareiza."
+
+#: ../protocols/atomBloggerAPI.py:35
+#: ../protocols/atomBloggerAPI.py:105
+#, python-format
+msgid "Failed to login: %s"
+msgstr "Neizdevās pieteikties — %s"
+
+#: ../protocols/atomBloggerAPI.py:38
+#: ../protocols/atomBloggerAPI.py:108
+#, python-format
+msgid "Socket error: %s.  Perhaps try again."
+msgstr "Soketa kļūda — %s. Varbūt mēģiniet vēlreiz."
+
+#. No blogs found
+#: ../protocols/atomBloggerAPI.py:45
+msgid "No Blogs Found"
+msgstr "Emuāri nav atrasti"
+
+#: ../protocols/atomBloggerAPI.py:45
+#, python-format
+msgid "No errors were reported, but no blogs were found at %s for %s\n"
+msgstr "Meklēšana notika bez kļūdām, taču %s netika atrasts neviens emuārs lietotājam %s\n"
+
+#: ../protocols/atomBloggerAPI.py:95
+msgid "Could not post entry."
+msgstr "Neizdevās nosūtīt ierakstu."
+
+#: ../protocols/atomBloggerAPI.py:115
+#, python-format
+msgid "Failed to post: %s"
+msgstr "Neizdevās nosūtīt: %s"
+
+#: ../protocols/bloggerAPI.py:35
+#: ../protocols/bloggerAPI.py:38
+msgid "Could not get list of blogs"
+msgstr "Neizdevās iegūt emuāru sarakstu"
+
+#: ../protocols/bloggerAPI.py:61
+msgid "No XML-RPC server URL to post blog entries to is set, or the value could not be retrieved from GConf. Your entry will remain in the blogger window."
+msgstr ""
+"Nav iestatīts XML-RPC servera URL, kurp nosūtīt emuāra ierakstus, vai arī šo vērtību neizdevās iegūt no GConf. Jūsu ieraksts paliks emuāra rakstīšanas logā."
+
+#: ../protocols/livejournal.py:64
+#, python-format
+msgid "URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server reported: %s."
+msgstr "Šķiet, URL “%s” nav derīgs LIveJournal XML-RPC serveris. Tīmekļa serveris atbildēja — %s."
+
+#: ../rich_entry.py:145
+#: ../rich_entry.py:153
+msgid "Could not load dragged in image"
+msgstr "Neizdevās ielādēt ievilkto attēlu"
+
+#: ../rich_entry.py:146
+#: ../rich_entry.py:154
+#, python-format
+msgid "Error loading %s was: %s"
+msgstr "Kļūda, ielādējot %s — %s"
+
+#: ../rich_entry.py:211
+msgid "Add _Link..."
+msgstr "Pievienot _saiti..."
+
+#: ../rich_entry.py:216
+msgid "Add Link"
+msgstr "Pievienot saiti"
+
+#: ../rich_entry.py:219
+msgid "_Add Link"
+msgstr "Pievienot s_aiti"
+
+#: ../rich_entry.py:227
+msgid "Text:"
+msgstr "Teksts:"
+
+#: ../rich_entry.py:230
+msgid "URL:"
+msgstr "URL:"
+
+

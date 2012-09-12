@@ -1,20 +1,24 @@
 # Finnish messages for gnome-blog
-# Copyright (C) 2005 Ilkka Tuohela 
+# Copyright (C) 2005 Ilkka Tuohela
 # This file is distributed under the same license as the gnome-blog package.
-# Ilkka Tuohela <hile@iki.fi>, 2005-2006.
 #
+# Ilkka Tuohela <hile@iki.fi>, 2005-2006.
+# Jiri Grönroos <jiri.gronroos@iki.fi>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-08-27 15:08+0300\n"
-"PO-Revision-Date: 2008-08-27 15:00+0300\n"
-"Last-Translator: Ilkka Tuohela <hile@iki.fi>\n"
-"Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"blog&component=general\n"
+"POT-Creation-Date: 2010-03-04 21:10+0000\n"
+"PO-Revision-Date: 2012-09-10 22:31+0300\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
+"Language-Team: Finnish <>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: fi\n"
+"X-Generator: Lokalize 1.5\n"
 
 #: ../GNOME_BlogApplet.server.in.in.h:1
 msgid "Accessories"
@@ -22,7 +26,7 @@ msgstr "Apuohjelmat"
 
 #: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.in.h:1
 msgid "Blog Entry Poster"
-msgstr "Blog-merkinnän lähettäjä"
+msgstr "Blogimerkinnän lähettäjä"
 
 #: ../GNOME_BlogApplet.server.in.in.h:3
 msgid "Post entries to a web log"
@@ -42,11 +46,11 @@ msgstr "Tietoja"
 
 #: ../blog_applet.py:37
 msgid "Blog"
-msgstr "Blog"
+msgstr "Blogi"
 
 #: ../blog_applet.py:89
 msgid "A GNOME Web Blogging Applet"
-msgstr "Gnomen Blog-sovelma"
+msgstr "Gnomen blogisovelma"
 
 #: ../blog_applet.py:91
 msgid "translator-credits"
@@ -89,7 +93,7 @@ msgstr "Käytetty blog-protokolla ei tue kuvien lähettämistä"
 
 #: ../blog_poster.py:183
 msgid "Blog Entry is Blank"
-msgstr "Blog-merkintä on tyhjä"
+msgstr "Blogimerkintä on tyhjä"
 
 #: ../blog_poster.py:183
 msgid ""
@@ -148,10 +152,14 @@ msgstr "Käyttäjätunnus:"
 msgid "Password:"
 msgstr "Salasana:"
 
-#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:142
-#: ../blogger_prefs.py:147 ../blogger_prefs.py:153
+#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:147
+#: ../blogger_prefs.py:153
 msgid "XML-RPC URL:"
 msgstr "XML-RPC URL:"
+
+#: ../blogger_prefs.py:142
+msgid "ATOM-based"
+msgstr "ATOM-pohjainen"
 
 #: ../blogger_prefs.py:161
 msgid "Unknown blog type"
@@ -260,6 +268,50 @@ msgstr ""
 "URL \"%s\" ei näytä olevan kelvollinen BloggerAPI XML-RPC-palvelin. WWW-"
 "palvelin palautti: %s"
 
+#. TODO: consider GNOME proxy configurations, as in bloggerAPI.py
+#: ../protocols/atomBloggerAPI.py:24
+#| msgid "Could not get list of blogs"
+msgid "Could not get list of blogs."
+msgstr "Listaa blogeista ei voitu hakea"
+
+#: ../protocols/atomBloggerAPI.py:29 ../protocols/atomBloggerAPI.py:99
+msgid "A captcha was required for authentication."
+msgstr "Tunnistautuminen vaati captchan ratkaisemisen."
+
+#: ../protocols/atomBloggerAPI.py:32 ../protocols/atomBloggerAPI.py:102
+msgid "Username or password was invalid."
+msgstr "Käyttäjätunnus tai salasana oli väärin."
+
+#: ../protocols/atomBloggerAPI.py:35 ../protocols/atomBloggerAPI.py:105
+#, python-format
+msgid "Failed to login: %s"
+msgstr "Kirjautuminen epäonnistui: %s"
+
+#: ../protocols/atomBloggerAPI.py:38 ../protocols/atomBloggerAPI.py:108
+#, python-format
+msgid "Socket error: %s.  Perhaps try again."
+msgstr "Socket-virhe: %s. Yritä uudelleen."
+
+#. No blogs found
+#: ../protocols/atomBloggerAPI.py:45
+msgid "No Blogs Found"
+msgstr "Blogeja ei löytynyt"
+
+#: ../protocols/atomBloggerAPI.py:45
+#, python-format
+msgid "No errors were reported, but no blogs were found at %s for %s\n"
+msgstr "Virheitä ei raportoitu, mutta blogeja ei löytynyt %s - %s\n"
+
+#: ../protocols/atomBloggerAPI.py:95
+#| msgid "Could not post Blog entry"
+msgid "Could not post entry."
+msgstr "Blogimerkinnän lähetys ei onnistunut."
+
+#: ../protocols/atomBloggerAPI.py:115
+#, python-format
+msgid "Failed to post: %s"
+msgstr "Lähetys epäonnistui: %s"
+
 #: ../protocols/bloggerAPI.py:35 ../protocols/bloggerAPI.py:38
 msgid "Could not get list of blogs"
 msgstr "Listaa blogeista ei voitu hakea"
@@ -310,3 +362,4 @@ msgstr "Teksti:"
 #: ../rich_entry.py:229
 msgid "URL:"
 msgstr "URL:"
+

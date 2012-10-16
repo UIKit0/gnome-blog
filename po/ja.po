@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: gnome-blog trunk\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "blog&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-08-23 18:22+0000\n"
-"PO-Revision-Date: 2012-01-01 19:55+0900\n"
-"Last-Translator: Jiro Matsuzawa <jmatsuzawa@src.gnome.org>\n"
+"POT-Creation-Date: 2012-01-11 13:58+0000\n"
+"PO-Revision-Date: 2012-10-13 16:41+0900\n"
+"Last-Translator: OKANO Takayoshi <kano@na.rim.or.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -109,7 +109,7 @@ msgstr "自動実行型 [MovableType]"
 
 #: ../blogger_prefs.py:40
 msgid "Self-Run Pyblosxom"
-msgstr "自動実行型 [Pybloxsom]"
+msgstr "自動実行型 [Pyblosxom]"
 
 #: ../blogger_prefs.py:41
 msgid "Self-Run WordPress"
@@ -296,7 +296,7 @@ msgstr "ブログが見つかりませんでした"
 #, python-format
 msgid "No errors were reported, but no blogs were found at %s for %s\n"
 msgstr ""
-"エラーは報告されませんでしたが、%s で %s にタイするブログが見つかりませんでし"
+"エラーは報告されませんでしたが、%s で %s に対するブログが見つかりませんでし"
 "た。\n"
 
 #: ../protocols/atomBloggerAPI.py:95

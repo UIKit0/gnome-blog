@@ -26,7 +26,7 @@ class Blog:
         try:
             blogger_service = self._login (username, password)
         except service.CaptchaRequired as message:
-            hig_alert.reportError (error_name, _("A captcha was required for authentication.")) # TODO: propagadate captcha
+            hig_alert.reportError (error_name, _("A CAPTCHA was required for authentication.")) # TODO: propagadate captcha
             return None
         except service.BadAuthentication as message:
             hig_alert.reportError (error_name, _("Username or password was invalid."))

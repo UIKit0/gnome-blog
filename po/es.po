@@ -7,61 +7,64 @@
 # Francisco Javier F. Serrador <serrador@arrakis.es>, 2003.
 # Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004.
 # Jorge González <jorgegonz@svn.gnome.org>, 2008, 2009, 2010.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"blog&component=general\n"
-"POT-Creation-Date: 2010-03-07 14:11+0000\n"
-"PO-Revision-Date: 2010-03-07 14:58+0100\n"
-"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
+"blog&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-10-28 19:05+0000\n"
+"PO-Revision-Date: 2012-10-29 12:01+0100\n"
+"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: ../GNOME_BlogApplet.server.in.in.h:1
-msgid "Accessories"
-msgstr "Accesorios"
-
-#: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.in.h:1
+#: ../GNOME_BlogApplet.server.in.in.h:1 ../gnome-blog.desktop.in.in.h:1
 msgid "Blog Entry Poster"
 msgstr "Publicador de entradas a blogs"
 
-#: ../GNOME_BlogApplet.server.in.in.h:3
+#: ../GNOME_BlogApplet.server.in.in.h:2
 msgid "Post entries to a web log"
 msgstr "Publicaque entradas a un weblog"
 
-#: ../GNOME_BlogApplet.xml.h:1
-msgid "_About..."
-msgstr "A_cerca de..."
+#: ../GNOME_BlogApplet.server.in.in.h:3
+msgid "Accessories"
+msgstr "Accesorios"
 
-#: ../GNOME_BlogApplet.xml.h:2
+#: ../GNOME_BlogApplet.xml.h:1
 msgid "_Preferences..."
 msgstr "_Preferencias..."
 
-#: ../blog_applet.py:34
+#: ../GNOME_BlogApplet.xml.h:2
+msgid "_About..."
+msgstr "A_cerca de..."
+
+#: ../blog_applet.py:33
 msgid "About"
 msgstr "Acerca de"
 
-#: ../blog_applet.py:37
+#: ../blog_applet.py:36
 msgid "Blog"
 msgstr "Blog"
 
-#: ../blog_applet.py:89
+#: ../blog_applet.py:88
 msgid "A GNOME Web Blogging Applet"
 msgstr "Una miniaplicación de Web Blogging para Gnome"
 
-#: ../blog_applet.py:91
+#: ../blog_applet.py:90
 msgid "translator-credits"
 msgstr ""
 "Jorge González <jorgegonz@svn.gnome.org>, 2008-2010\n"
 "Francisco Javier F. Serrador <serrador@openshine.com>, 2003, 2004\n"
 "Pablo del Campo <pablodc@bigfoot.com>, 2003"
 
-#: ../blog_applet.py:128
+#: ../blog_applet.py:127
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Crear una entrada blog para %s en %s"
@@ -177,20 +180,20 @@ msgid "Post an entry to a web log"
 msgstr "Publicar una entrada en un weblog"
 
 #: ../gnomeblog.schemas.in.h:1
+msgid "The application's preferences have been initialized"
+msgstr "Las preferencias de la aplicación han sido inicializadas"
+
+#: ../gnomeblog.schemas.in.h:2
+msgid "Username to use in accessing the blog"
+msgstr "Usuario que se usará para acceder al blog"
+
+#: ../gnomeblog.schemas.in.h:3
 msgid "Password to use in accessing the blog"
 msgstr "Contraseña a utilizar al acceder al blog"
 
-#: ../gnomeblog.schemas.in.h:2
+#: ../gnomeblog.schemas.in.h:4
 msgid "Protocol to use in accessing the blog"
 msgstr "Protocolo a utilizar al acceder al blog"
-
-#: ../gnomeblog.schemas.in.h:3
-msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
-msgstr "Sufijo para adjuntar a la URL base (ej: \"xmlrcp.cgi\")"
-
-#: ../gnomeblog.schemas.in.h:4
-msgid "The application's preferences have been initialized"
-msgstr "Las preferencias de la aplicación han sido inicializadas"
 
 #: ../gnomeblog.schemas.in.h:5
 msgid "The id or name of the particular blog to use on the XML-RPC server"
@@ -202,8 +205,8 @@ msgid "URL to the bloggerAPI compatible XML-RPC server"
 msgstr "URL hacia el servidor XML-RPC compatible con la bloggerAPI"
 
 #: ../gnomeblog.schemas.in.h:7
-msgid "Username to use in accessing the blog"
-msgstr "Usuario que se usará para acceder al blog"
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr "Sufijo para adjuntar a la URL base (ej: \"xmlrcp.cgi\")"
 
 #: ../hig_alert.py:15
 #, python-format
@@ -281,9 +284,10 @@ msgstr ""
 msgid "Could not get list of blogs."
 msgstr "No se pudo obtener la lista de blogs."
 
-#: ../protocols/atomBloggerAPI.py:29 ../protocols/atomBloggerAPI.py:99
-msgid "A captcha was required for authentication."
-msgstr "Se requiere un «captcha» para la autenticación."
+#: ../protocols/atomBloggerAPI.py:29
+#| msgid "A captcha was required for authentication."
+msgid "A CAPTCHA was required for authentication."
+msgstr "Se requiere un «CAPTCHA» para la autenticación."
 
 #: ../protocols/atomBloggerAPI.py:32 ../protocols/atomBloggerAPI.py:102
 msgid "Username or password was invalid."
@@ -315,6 +319,10 @@ msgstr ""
 msgid "Could not post entry."
 msgstr "No se pudo publicar la entrada."
 
+#: ../protocols/atomBloggerAPI.py:99
+msgid "A captcha was required for authentication."
+msgstr "Se requiere un «captcha» para la autenticación."
+
 #: ../protocols/atomBloggerAPI.py:115
 #, python-format
 msgid "Failed to post: %s"
@@ -342,31 +350,31 @@ msgstr ""
 "La URL «%s» no parece ser un servicor XML-RPC LiveJournal válido. El servidor "
 "web devolvió: %s."
 
-#: ../rich_entry.py:144 ../rich_entry.py:152
+#: ../rich_entry.py:145 ../rich_entry.py:153
 msgid "Could not load dragged in image"
 msgstr "No se pudo cargar la imagen arrastrada dentro"
 
-#: ../rich_entry.py:145 ../rich_entry.py:153
+#: ../rich_entry.py:146 ../rich_entry.py:154
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "El error al cargar %s fue: %s"
 
-#: ../rich_entry.py:210
+#: ../rich_entry.py:211
 msgid "Add _Link..."
 msgstr "Añadir en_lace..."
 
-#: ../rich_entry.py:215
+#: ../rich_entry.py:216
 msgid "Add Link"
 msgstr "Añadir enlace"
 
-#: ../rich_entry.py:218
+#: ../rich_entry.py:219
 msgid "_Add Link"
 msgstr "_Añadir enlace"
 
-#: ../rich_entry.py:226
+#: ../rich_entry.py:227
 msgid "Text:"
 msgstr "Texto:"
 
-#: ../rich_entry.py:229
+#: ../rich_entry.py:230
 msgid "URL:"
 msgstr "URL:"

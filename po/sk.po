@@ -1,0 +1,412 @@
+# Slovak translation for gnome-blog.
+# Copyright (C) 2012 gnome-blog's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-blog package.
+# Dušan Kazik <prescott66@gmail.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-blog master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"blog&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-10-28 19:05+0000\n"
+"PO-Revision-Date: 2012-10-29 10:13+0000\n"
+"Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
+"Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
+"X-Generator: Poedit 1.5.4\n"
+
+# DK: nazov aplikacie zobrazovany v Aktivitach Gnome
+# desktop entry name
+#: ../GNOME_BlogApplet.server.in.in.h:1 ../gnome-blog.desktop.in.in.h:1
+msgid "Blog Entry Poster"
+msgstr "Publikovanie článkov na blog"
+
+# description
+#: ../GNOME_BlogApplet.server.in.in.h:2
+msgid "Post entries to a web log"
+msgstr "Publikujte články na webovom denníku"
+
+# panel:category
+#: ../GNOME_BlogApplet.server.in.in.h:3
+msgid "Accessories"
+msgstr "Príslušenstvo"
+
+# menuitem
+#: ../GNOME_BlogApplet.xml.h:1
+msgid "_Preferences..."
+msgstr "Nas_tavenia…"
+
+# menuitem
+#: ../GNOME_BlogApplet.xml.h:2
+msgid "_About..."
+msgstr "_O programe…"
+
+# widnow title
+#: ../blog_applet.py:33
+msgid "About"
+msgstr "O programe"
+
+# button box label
+#: ../blog_applet.py:36
+msgid "Blog"
+msgstr "Blog"
+
+# text v about dialógu
+#: ../blog_applet.py:88
+msgid "A GNOME Web Blogging Applet"
+msgstr "Aplet na webové blogovanie pre prostredie GNOME"
+
+#: ../blog_applet.py:90
+msgid "translator-credits"
+msgstr "Dušan Kazik <prescott66@gmail.com>"
+
+# tooltip
+#: ../blog_applet.py:127
+#, python-format
+msgid "Create a blog entry for %s at %s"
+msgstr "Vytvorí článok na blogu používateľa %s na URL adrese %s"
+
+# button
+#: ../blog_poster.py:44
+msgid "_Post Entry"
+msgstr "_Uverejniť článok"
+
+# button
+#: ../blog_poster.py:69
+msgid "Preferences..."
+msgstr "Nastavenia…"
+
+# title box label
+#: ../blog_poster.py:81
+msgid "Title:"
+msgstr "Titulok:"
+
+# tagging box label
+#: ../blog_poster.py:88
+msgid "Tags:"
+msgstr "Značky:"
+
+# window title
+#: ../blog_poster.py:109
+msgid "Post Blog Entry"
+msgstr "Zverejnenie článku na blogu"
+
+#: ../blog_poster.py:133
+msgid "Couldn't upload images"
+msgstr "Nepodarilo sa nahrať obrázky"
+
+#: ../blog_poster.py:133
+msgid "The blog protocol in use does not support uploading images"
+msgstr "Používaný protokol blogu nepodporuje nahrávanie obrázkov"
+
+#: ../blog_poster.py:183
+msgid "Blog Entry is Blank"
+msgstr "Blogový článok je prázdny"
+
+#: ../blog_poster.py:183
+msgid ""
+"No text was entered in the blog entry box. Please enter some text and try "
+"again"
+msgstr ""
+"Nebol zadaný žiadny text do poľa blogového článku. Prosím, zadajte svoj text "
+"a skúste to znova"
+
+# dialog window title
+#: ../blogger_prefs.py:19
+msgid "Blogger Preferences"
+msgstr "Nastavenia blogera"
+
+# DK: "MovableType" je nazov blogovej sluzby
+# blog type menu
+#: ../blogger_prefs.py:39
+msgid "Self-Run MovableType"
+msgstr "Samospustenie služby MovableType"
+
+# blog type menu
+#: ../blogger_prefs.py:40
+msgid "Self-Run Pyblosxom"
+msgstr "Samospustenie služby Pyblosxom"
+
+# blog type menu
+#: ../blogger_prefs.py:41
+msgid "Self-Run WordPress"
+msgstr "Samospustenie služby WordPress"
+
+# blog type menu
+#: ../blogger_prefs.py:42
+msgid "Self-Run Other"
+msgstr "Samospustenie inej služby"
+
+# blog type box label
+#: ../blogger_prefs.py:46
+msgid "Blog Type:"
+msgstr "Typ blogu:"
+
+#: ../blogger_prefs.py:56
+msgid "Blog Protocol:"
+msgstr "Protokol blogu:"
+
+# label
+#: ../blogger_prefs.py:60 ../blogger_prefs.py:122 ../blogger_prefs.py:127
+#: ../blogger_prefs.py:132
+msgid "Base Blog URL:"
+msgstr "Základná URL adresa blogu:"
+
+# label
+#: ../blogger_prefs.py:62
+msgid "Blog Name:"
+msgstr "Názov blogu:"
+
+# DK:https://bugzilla.gnome.org/show_bug.cgi?id=686665
+# button
+#: ../blogger_prefs.py:64
+msgid "Lookup Blogs"
+msgstr "Prehľadať blogy"
+
+# label
+#: ../blogger_prefs.py:74
+msgid "Username:"
+msgstr "Používateľské meno:"
+
+# label
+#: ../blogger_prefs.py:75
+msgid "Password:"
+msgstr "Heslo:"
+
+# url descritption
+#: ../blogger_prefs.py:117 ../blogger_prefs.py:137 ../blogger_prefs.py:147
+#: ../blogger_prefs.py:153
+msgid "XML-RPC URL:"
+msgstr "URL adresa XML-RPC:"
+
+# url descritption
+#: ../blogger_prefs.py:142
+msgid "ATOM-based"
+msgstr "Založený na ATOM"
+
+#: ../blogger_prefs.py:161
+msgid "Unknown blog type"
+msgstr "Neznámy typ blogu"
+
+#: ../blogger_prefs.py:161
+msgid "The detected blog type is not among the list of supported blogs"
+msgstr "Zistený typ blogu nie je medzi podporovanými blogmi"
+
+# desktop entry comment
+#: ../gnome-blog.desktop.in.in.h:2
+msgid "Post an entry to a web log"
+msgstr "Publikujte články na webovom denníku"
+
+# gconf short
+#: ../gnomeblog.schemas.in.h:1
+msgid "The application's preferences have been initialized"
+msgstr "Nastavenia aplikácie boli nastavené a použité"
+
+# gconf short
+#: ../gnomeblog.schemas.in.h:2
+msgid "Username to use in accessing the blog"
+msgstr "Používateľské meno použité na prístup k blogu"
+
+# gconf short
+#: ../gnomeblog.schemas.in.h:3
+msgid "Password to use in accessing the blog"
+msgstr "Heslo použité na prístup k blogu"
+
+# gconf short
+#: ../gnomeblog.schemas.in.h:4
+msgid "Protocol to use in accessing the blog"
+msgstr "Protokol použitý na prístup k blogu"
+
+# gconf short
+#: ../gnomeblog.schemas.in.h:5
+msgid "The id or name of the particular blog to use on the XML-RPC server"
+msgstr "Identifikátor alebo názov konkrétneho blogu použitý na serveri XML-RPC"
+
+# gconf short
+#: ../gnomeblog.schemas.in.h:6
+msgid "URL to the bloggerAPI compatible XML-RPC server"
+msgstr "URL adresa servera XML-RPC s kompatibilným blogovacím API rozhraním"
+
+# gconf short
+#: ../gnomeblog.schemas.in.h:7
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr "Prípona pridaná k základnej URL adrese (napr. „xmlrpc.cgi“)"
+
+#: ../hig_alert.py:15
+#, python-format
+msgid "URL '%s' may not be a valid bloggerAPI. XML-RPC Server reported: %s."
+msgstr ""
+"URL adresa „%s“ nie je platným blogovacím API rozhraním. Server XML-RPC "
+"nahlásil: %s."
+
+#: ../hig_alert.py:17
+#, python-format
+msgid ""
+"Unknown username %s or password trying to post blog entry to XML-RPC server "
+"%s."
+msgstr ""
+"Neznámy používateľ s menom %s alebo heslom sa pokúša publikovať článok na "
+"blog na serveri XML-RPC %s."
+
+#: ../hig_alert.py:19
+#, python-format
+msgid ""
+"Could not post to blog '%s' at bloggerAPI XML-RPC server '%s'. Server "
+"reported: %s."
+msgstr ""
+"Nepodarilo sa publikovať článok na blogu „%s“ na server XML-RPC „%s“ cez "
+"blogovacie API rozhranie. Server nahlásil: %s."
+
+#: ../hig_alert.py:21
+#, python-format
+msgid ""
+"The bloggerAPI server (%s) reported an error I don't understand: '%s, %s'. \n"
+"\n"
+"Please email this error message to seth@gnome.org so I can address it."
+msgstr ""
+"Server blogovacieho API rozhrania (%s) nahlásil chybu, že nerozumie tomuto: "
+"„%s, %s“. \n"
+"\n"
+"Prosím, odošlite toto chybové hlásenie emailom na seth@gnome.org, aby som "
+"bol o nej informovaný."
+
+#: ../protocols/advogato.py:27 ../protocols/advogato.py:30
+#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:61
+#: ../protocols/bloggerAPI.py:89 ../protocols/livejournal.py:35
+#: ../protocols/livejournal.py:64
+msgid "Could not post Blog entry"
+msgstr "Nepodarilo sa publikovať článok na blog"
+
+#: ../protocols/advogato.py:27
+msgid "Your username is invalid. Please double-check the preferences."
+msgstr "Vaše používateľské meno je neplatné. Prosím, skontrolujte nastavenia."
+
+#: ../protocols/advogato.py:30 ../protocols/livejournal.py:35
+msgid ""
+"Your username or password is invalid. Please double-check the preferences."
+msgstr ""
+"Vaše používateľské meno alebo heslo je neplatné. Prosím, skontrolujte "
+"nastavenia."
+
+#: ../protocols/advogato.py:39 ../protocols/bloggerAPI.py:86
+#: ../protocols/livejournal.py:61
+msgid "Could not post blog entry"
+msgstr "Nepodarilo sa uverejniť článok na blog"
+
+#: ../protocols/advogato.py:42 ../protocols/bloggerAPI.py:38
+#: ../protocols/bloggerAPI.py:89
+#, python-format
+msgid ""
+"URL '%s' does not seem to be a valid bloggerAPI XML-RPC server. Web server "
+"reported: %s."
+msgstr ""
+"Zdá sa, že URL adresa „%s“ nie je platnou službou blogovacieho API rozhrania "
+"servera XML-RPC. Webový server nahlásil: %s."
+
+#. TODO: consider GNOME proxy configurations, as in bloggerAPI.py
+#: ../protocols/atomBloggerAPI.py:24
+msgid "Could not get list of blogs."
+msgstr "Nepodarilo sa získať zoznam blogov."
+
+#: ../protocols/atomBloggerAPI.py:29
+msgid "A CAPTCHA was required for authentication."
+msgstr "Bolo požadované CAPTCHA na overenie totožnosti."
+
+#: ../protocols/atomBloggerAPI.py:32 ../protocols/atomBloggerAPI.py:102
+msgid "Username or password was invalid."
+msgstr "Používateľské meno alebo heslo bolo neplatné."
+
+#: ../protocols/atomBloggerAPI.py:35 ../protocols/atomBloggerAPI.py:105
+#, python-format
+msgid "Failed to login: %s"
+msgstr "Zlyhalo prihlásenie: %s"
+
+#: ../protocols/atomBloggerAPI.py:38 ../protocols/atomBloggerAPI.py:108
+#, python-format
+msgid "Socket error: %s.  Perhaps try again."
+msgstr "Chyba soketu: %s. Skúste to znovu."
+
+#. No blogs found
+#: ../protocols/atomBloggerAPI.py:45
+msgid "No Blogs Found"
+msgstr "Nenašli sa žiadne blogy"
+
+#: ../protocols/atomBloggerAPI.py:45
+#, python-format
+msgid "No errors were reported, but no blogs were found at %s for %s\n"
+msgstr ""
+"Neboli nahlásené žiadne chyby, ale taktiež sa nenašli žiadne blogy na %s pre "
+"%s\n"
+
+#: ../protocols/atomBloggerAPI.py:95
+msgid "Could not post entry."
+msgstr "Nepodarilo sa publikovať článok."
+
+# DK: vsimol som si v inych moduloch, ze "captcha" neprekladame
+#: ../protocols/atomBloggerAPI.py:99
+msgid "A captcha was required for authentication."
+msgstr "Bolo požadované captcha na overenie totožnosti."
+
+#: ../protocols/atomBloggerAPI.py:115
+#, python-format
+msgid "Failed to post: %s"
+msgstr "Zlyhala publikácia: %s"
+
+#: ../protocols/bloggerAPI.py:35 ../protocols/bloggerAPI.py:38
+msgid "Could not get list of blogs"
+msgstr "Nepodarilo sa získať zoznam blogov"
+
+#: ../protocols/bloggerAPI.py:61
+msgid ""
+"No XML-RPC server URL to post blog entries to is set, or the value could not "
+"be retrieved from GConf. Your entry will remain in the blogger window."
+msgstr ""
+"Nie je nastavená žiadna URL adresa servera XML-RPC, alebo sa nepodarilo "
+"získať hodnotu zo systému GConf. Váš článok zostane v blogovom okne."
+
+#: ../protocols/livejournal.py:64
+#, python-format
+msgid ""
+"URL '%s' does not seem to be a valid LiveJournal XML-RPC server. Web server "
+"reported: %s."
+msgstr ""
+"Zdá sa, že URL adresa „%s“ nie je platnou službou pre službu LiveJournal "
+"servera XML-RPC. Webový server nahlásil: %s."
+
+#: ../rich_entry.py:145 ../rich_entry.py:153
+msgid "Could not load dragged in image"
+msgstr "Nepodarilo sa načítať prenesený obrázok"
+
+#: ../rich_entry.py:146 ../rich_entry.py:154
+#, python-format
+msgid "Error loading %s was: %s"
+msgstr "Pri načítavaní %s sa vyskytla chyba: %s"
+
+# button
+#: ../rich_entry.py:211
+msgid "Add _Link..."
+msgstr "Pridať _odkaz..."
+
+# dialog title
+#: ../rich_entry.py:216
+msgid "Add Link"
+msgstr "Pridanie odkazu"
+
+# button
+#: ../rich_entry.py:219
+msgid "_Add Link"
+msgstr "_Pridať odkaz"
+
+# label
+#: ../rich_entry.py:227
+msgid "Text:"
+msgstr "Text:"
+
+# label
+#: ../rich_entry.py:230
+msgid "URL:"
+msgstr "URL adresa:"

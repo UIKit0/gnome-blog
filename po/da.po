@@ -2,7 +2,7 @@
 # Copyright (C) 2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-blog package.
 # Peter Bach <bach.peter@gmail.com>, 2006.
-# Joe Hansen (joedalton2@yahoo.dk), 2010.
+# Joe Hansen (joedalton2@yahoo.dk), 2010, 2013.
 #
 # blogs -> blog eller blogge (ikke fundet noget hos Dansk Sprognævn. 
 #          De kalder det også en netdagbog. kunne også være journal).
@@ -15,56 +15,57 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-14 10:19+0200\n"
-"PO-Revision-Date: 2010-03-19 18:29+0200\n"
+"POT-Creation-Date: 2013-04-06 11:08+0200\n"
+"PO-Revision-Date: 2012-03-21 18:29+0200\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../GNOME_BlogApplet.server.in.in.h:1
-msgid "Accessories"
-msgstr "Tilbehør"
-
-#: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.in.h:1
+#: ../GNOME_BlogApplet.server.in.in.h:1 ../gnome-blog.desktop.in.in.h:1
 msgid "Blog Entry Poster"
 msgstr "Blogindlægsposter"
 
-#: ../GNOME_BlogApplet.server.in.in.h:3
+#: ../GNOME_BlogApplet.server.in.in.h:2
 msgid "Post entries to a web log"
 msgstr "Send indlæg til en internetlog"
 
+#: ../GNOME_BlogApplet.server.in.in.h:3
+msgid "Accessories"
+msgstr "Tilbehør"
+
 #: ../GNOME_BlogApplet.xml.h:1
-msgid "_About..."
-msgstr "_Om..."
+msgid "_Preferences..."
+msgstr "_Indstillinger ..."
 
 #: ../GNOME_BlogApplet.xml.h:2
-msgid "_Preferences..."
-msgstr "_Indstillinger..."
+msgid "_About..."
+msgstr "_Om ..."
 
-#: ../blog_applet.py:34
+#: ../blog_applet.py:33
 msgid "About"
 msgstr "Om"
 
-#: ../blog_applet.py:37
+#: ../blog_applet.py:36
 msgid "Blog"
 msgstr "Blog"
 
-#: ../blog_applet.py:89
+#: ../blog_applet.py:88
 msgid "A GNOME Web Blogging Applet"
 msgstr "Et internetbloggerpanelprogram til GNOME"
 
-#: ../blog_applet.py:91
+#: ../blog_applet.py:90
 msgid "translator-credits"
 msgstr ""
-"Joe Hansen, 2010\n"
+"Joe Hansen, 2010, 2013\n"
 "Peter Bach, 2006\n"
 "\n"
 "Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
 "Mere info: http://www.dansk-gruppen.dk"
 
-#: ../blog_applet.py:128
+#: ../blog_applet.py:127
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Opret et blogindlæg for %s på %s"
@@ -75,7 +76,7 @@ msgstr "_Send indlæg"
 
 #: ../blog_poster.py:69
 msgid "Preferences..."
-msgstr "Indstillinger..."
+msgstr "Indstillinger ..."
 
 #: ../blog_poster.py:81
 msgid "Title:"
@@ -180,20 +181,20 @@ msgid "Post an entry to a web log"
 msgstr "Send et indlæg til en internetlog"
 
 #: ../gnomeblog.schemas.in.h:1
+msgid "The application's preferences have been initialized"
+msgstr "Programmets indstillinger er blevet klargjort"
+
+#: ../gnomeblog.schemas.in.h:2
+msgid "Username to use in accessing the blog"
+msgstr "Brugernavn som bruges ved adgang til bloggen"
+
+#: ../gnomeblog.schemas.in.h:3
 msgid "Password to use in accessing the blog"
 msgstr "Adgangskode som bruges ved adgang til bloggen"
 
-#: ../gnomeblog.schemas.in.h:2
+#: ../gnomeblog.schemas.in.h:4
 msgid "Protocol to use in accessing the blog"
 msgstr "Protokol som bruges ved adgang til bloggen"
-
-#: ../gnomeblog.schemas.in.h:3
-msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
-msgstr "Endelse som tilføjes til basisadressen (for eksempel \"xmlrpc.cgi\")"
-
-#: ../gnomeblog.schemas.in.h:4
-msgid "The application's preferences have been initialized"
-msgstr "Programmets indstillinger er blevet klargjort"
 
 #: ../gnomeblog.schemas.in.h:5
 msgid "The id or name of the particular blog to use on the XML-RPC server"
@@ -204,8 +205,8 @@ msgid "URL to the bloggerAPI compatible XML-RPC server"
 msgstr "Adresse til bloggerAPI-kompatibel XML-RPC-server"
 
 #: ../gnomeblog.schemas.in.h:7
-msgid "Username to use in accessing the blog"
-msgstr "Brugernavn som bruges ved adgang til bloggen"
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr "Endelse som tilføjes til basisadressen (for eksempel \"xmlrpc.cgi\")"
 
 #: ../hig_alert.py:15
 #, python-format
@@ -217,8 +218,8 @@ msgstr ""
 #: ../hig_alert.py:17
 #, python-format
 msgid ""
-"Unknown username %s or password trying to post blog entry to XML-RPC server %"
-"s."
+"Unknown username %s or password trying to post blog entry to XML-RPC server "
+"%s."
 msgstr ""
 "Ukendt brugernavn %s eller adgangskode ved indsendelse af blogindlæg til XML-"
 "RPC-server %s."
@@ -281,9 +282,9 @@ msgstr ""
 msgid "Could not get list of blogs."
 msgstr "Kunne ikke indhente liste over blogge."
 
-#: ../protocols/atomBloggerAPI.py:29 ../protocols/atomBloggerAPI.py:99
-msgid "A captcha was required for authentication."
-msgstr "En captcha var påkrævet til godkendelse."
+#: ../protocols/atomBloggerAPI.py:29
+msgid "A CAPTCHA was required for authentication."
+msgstr "En CAPTCHA var påkrævet til godkendelse."
 
 #: ../protocols/atomBloggerAPI.py:32 ../protocols/atomBloggerAPI.py:102
 msgid "Username or password was invalid."
@@ -314,6 +315,10 @@ msgstr ""
 msgid "Could not post entry."
 msgstr "Kunne ikke sende indlæg."
 
+#: ../protocols/atomBloggerAPI.py:99
+msgid "A captcha was required for authentication."
+msgstr "En captcha var påkrævet til godkendelse."
+
 #: ../protocols/atomBloggerAPI.py:115
 #, python-format
 msgid "Failed to post: %s"
@@ -341,31 +346,31 @@ msgstr ""
 "Adressen \"%s\" ser ikke ud til at være en gyldig LiveJournal XML-RPC-"
 "server. Internetserveren rapporterede: %s."
 
-#: ../rich_entry.py:144 ../rich_entry.py:152
+#: ../rich_entry.py:145 ../rich_entry.py:153
 msgid "Could not load dragged in image"
 msgstr "Kunne ikke indlæse billede"
 
-#: ../rich_entry.py:145 ../rich_entry.py:153
+#: ../rich_entry.py:146 ../rich_entry.py:154
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "Fejl ved indlæsning af %s var: %s"
 
-#: ../rich_entry.py:210
+#: ../rich_entry.py:211
 msgid "Add _Link..."
-msgstr "Tilføj _henvisning..."
+msgstr "Tilføj _henvisning ..."
 
-#: ../rich_entry.py:215
+#: ../rich_entry.py:216
 msgid "Add Link"
 msgstr "Tilføj henvisning"
 
-#: ../rich_entry.py:218
+#: ../rich_entry.py:219
 msgid "_Add Link"
 msgstr "_Tilføj henvisning"
 
-#: ../rich_entry.py:226
+#: ../rich_entry.py:227
 msgid "Text:"
 msgstr "Tekst:"
 
-#: ../rich_entry.py:229
+#: ../rich_entry.py:230
 msgid "URL:"
 msgstr "Adresse:"

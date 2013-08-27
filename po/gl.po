@@ -4,63 +4,62 @@
 # Proxecto Trasno - Adaptación do softare libre á lingua galega: Se desexas
 # colaborar connosco, podes atopar máis información en htt//www.trasno.net
 # First Version: 2005-06-26 17:00+0200
-#
-#
 # Pedro Silva <psf@pedrosilva.org>, 2005.
 # Ignacio Casal Quinteiro <nacho.resa@gmail.com>, 2006.
 # Fran Diéguez <frandieguez@ubuntu.com>, 2010.
-#
+# Fran Dieguez <frandieguez@gnome.org>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: gl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-25 22:37+0200\n"
-"PO-Revision-Date: 2010-06-25 22:41+0200\n"
-"Last-Translator: Fran Diéguez <frandieguez@ubuntu.com>\n"
-"Language-Team: Galician <gnome@g11n.net>\n"
+"POT-Creation-Date: 2013-08-28 01:07+0200\n"
+"PO-Revision-Date: 2013-08-28 01:07+0200\n"
+"Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
+"Language-Team: gnome-l10n-gl@gnome.org\n"
+"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
 
-#: ../GNOME_BlogApplet.server.in.in.h:1
-msgid "Accessories"
-msgstr "Accesorios"
-
-#: ../GNOME_BlogApplet.server.in.in.h:2 ../gnome-blog.desktop.in.in.h:1
+#: ../GNOME_BlogApplet.server.in.in.h:1 ../gnome-blog.desktop.in.in.h:1
 msgid "Blog Entry Poster"
 msgstr "A persoa que enviou a entrada"
 
-#: ../GNOME_BlogApplet.server.in.in.h:3
+#: ../GNOME_BlogApplet.server.in.in.h:2
 msgid "Post entries to a web log"
 msgstr "Publicar entradas nun blog"
 
-#: ../GNOME_BlogApplet.xml.h:1
-msgid "_About..."
-msgstr "_Acerca de..."
+#: ../GNOME_BlogApplet.server.in.in.h:3
+msgid "Accessories"
+msgstr "Accesorios"
 
-#: ../GNOME_BlogApplet.xml.h:2
+#: ../GNOME_BlogApplet.xml.h:1
 msgid "_Preferences..."
 msgstr "_Preferencias..."
 
-#: ../blog_applet.py:34
+#: ../GNOME_BlogApplet.xml.h:2
+msgid "_About..."
+msgstr "_Acerca de..."
+
+#: ../blog_applet.py:33
 msgid "About"
 msgstr "Acerca de"
 
-#: ../blog_applet.py:37
+#: ../blog_applet.py:36
 msgid "Blog"
 msgstr "Blog"
 
-#: ../blog_applet.py:89
+#: ../blog_applet.py:88
 msgid "A GNOME Web Blogging Applet"
 msgstr "Unha applet de GNOME para publicar en weblogs"
 
-#: ../blog_applet.py:91
+#: ../blog_applet.py:90
 msgid "translator-credits"
 msgstr "Pedro Silva <psf@pedrosilva.org>"
 
-#: ../blog_applet.py:128
+#: ../blog_applet.py:127
 #, python-format
 msgid "Create a blog entry for %s at %s"
 msgstr "Crear unha entrada para %s en %s"
@@ -176,20 +175,20 @@ msgid "Post an entry to a web log"
 msgstr "Publicar unha entrada nun weblog"
 
 #: ../gnomeblog.schemas.in.h:1
+msgid "The application's preferences have been initialized"
+msgstr "As preferencias do programa foron inicializadas"
+
+#: ../gnomeblog.schemas.in.h:2
+msgid "Username to use in accessing the blog"
+msgstr "Nome de usuario a empregar para acceder ó blog"
+
+#: ../gnomeblog.schemas.in.h:3
 msgid "Password to use in accessing the blog"
 msgstr "Contrasinal para acceder ó blog"
 
-#: ../gnomeblog.schemas.in.h:2
+#: ../gnomeblog.schemas.in.h:4
 msgid "Protocol to use in accessing the blog"
 msgstr "Protocolo empregado para acceder ó blog"
-
-#: ../gnomeblog.schemas.in.h:3
-msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
-msgstr "Sufixo engadido á URL base (ex.: \"xmlrcp.cgi\")"
-
-#: ../gnomeblog.schemas.in.h:4
-msgid "The application's preferences have been initialized"
-msgstr "As preferencias do programa foron inicializadas"
 
 #: ../gnomeblog.schemas.in.h:5
 msgid "The id or name of the particular blog to use on the XML-RPC server"
@@ -200,8 +199,8 @@ msgid "URL to the bloggerAPI compatible XML-RPC server"
 msgstr "URL do servicor XML-RPC compatible coa bloggerAPI"
 
 #: ../gnomeblog.schemas.in.h:7
-msgid "Username to use in accessing the blog"
-msgstr "Nome de usuario a empregar para acceder ó blog"
+msgid "Suffix to attach to the base URL (e.g. \"xmlrpc.cgi\")"
+msgstr "Sufixo engadido á URL base (ex.: \"xmlrcp.cgi\")"
 
 #: ../hig_alert.py:15
 #, python-format
@@ -213,8 +212,8 @@ msgstr ""
 #: ../hig_alert.py:17
 #, python-format
 msgid ""
-"Unknown username %s or password trying to post blog entry to XML-RPC server %"
-"s."
+"Unknown username %s or password trying to post blog entry to XML-RPC server "
+"%s."
 msgstr ""
 "Nome de usuario %s ou contrasinal descoñecido ó tentar publicar a estrada no "
 "servidor XML-RPC %s"
@@ -279,9 +278,9 @@ msgstr ""
 msgid "Could not get list of blogs."
 msgstr "Non se puido obter a lista de blogs."
 
-#: ../protocols/atomBloggerAPI.py:29 ../protocols/atomBloggerAPI.py:99
-msgid "A captcha was required for authentication."
-msgstr "Requírese un «captcha» para a autenticación"
+#: ../protocols/atomBloggerAPI.py:29
+msgid "A CAPTCHA was required for authentication."
+msgstr "Requírese un «captcha» para a autenticación."
 
 #: ../protocols/atomBloggerAPI.py:32 ../protocols/atomBloggerAPI.py:102
 msgid "Username or password was invalid."
@@ -313,6 +312,10 @@ msgstr ""
 msgid "Could not post entry."
 msgstr "No se puido publicar a entrada."
 
+#: ../protocols/atomBloggerAPI.py:99
+msgid "A captcha was required for authentication."
+msgstr "Requírese un «captcha» para a autenticación"
+
 #: ../protocols/atomBloggerAPI.py:115
 #, python-format
 msgid "Failed to post: %s"
@@ -339,31 +342,31 @@ msgstr ""
 "A URL '%s' non parece ser un servidor XML-RPC LiveJournal válido. O servidor "
 "web repostou: %s."
 
-#: ../rich_entry.py:144 ../rich_entry.py:152
+#: ../rich_entry.py:145 ../rich_entry.py:153
 msgid "Could not load dragged in image"
 msgstr "No se puido cargar a imaxe arrastrada dentro do programa"
 
-#: ../rich_entry.py:145 ../rich_entry.py:153
+#: ../rich_entry.py:146 ../rich_entry.py:154
 #, python-format
 msgid "Error loading %s was: %s"
 msgstr "O erro cargando %s foi: %s"
 
-#: ../rich_entry.py:210
+#: ../rich_entry.py:211
 msgid "Add _Link..."
 msgstr "Engadir _Ligazón..."
 
-#: ../rich_entry.py:215
+#: ../rich_entry.py:216
 msgid "Add Link"
 msgstr "Engadir Ligazón"
 
-#: ../rich_entry.py:218
+#: ../rich_entry.py:219
 msgid "_Add Link"
 msgstr "Eng_adir Ligazón"
 
-#: ../rich_entry.py:226
+#: ../rich_entry.py:227
 msgid "Text:"
 msgstr "Texto:"
 
-#: ../rich_entry.py:229
+#: ../rich_entry.py:230
 msgid "URL:"
 msgstr "URL:"
